@@ -340,3 +340,31 @@
 [2024-04-07 00:30:29] INFO root fetch - processPackages [pytest-databases]: Remove: archive file [/home/abi/fetcher/tmp/pytest_databases-0.2.2.tar.gz]
 [2024-04-07 00:30:29] INFO root fetch - main [MainThread]: End processing [pytest-databases]: success
 [2024-04-07 00:30:29] INFO root fetch - main [MainThread]: Store serial: [22651532]
+[2024-04-07 00:32:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651532]
+[2024-04-07 00:32:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 00:32:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cypartagraphqlsubscriptionstools
+[2024-04-07 00:32:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pdb-openai
+[2024-04-07 00:32:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bacpypes3
+[2024-04-07 00:32:38] WARNING root fetch - processPackages [pdb-openai]: Skipping, unable to determine old version
+[2024-04-07 00:32:38] INFO root fetch - main [MainThread]: End processing [pdb-openai] error
+[2024-04-07 00:32:38] INFO root fetch - processPackages [bacpypes3]: New version: [0.0.91] Old Version: [0.0.86]
+[2024-04-07 00:32:38] INFO root fetch - processPackages [cypartagraphqlsubscriptionstools]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-07 00:32:38] INFO root fetch - processPackages [cypartagraphqlsubscriptionstools]: Downloading https://files.pythonhosted.org/packages/b8/64/13f885824e79d4bca3cc5644a7e419aa97f7393ee9c5be13bdf2d5e258ce/cypartagraphqlsubscriptionstools-1.0.0.tar.gz
+[2024-04-07 00:32:38] INFO root fetch - processPackages [bacpypes3]: Downloading https://files.pythonhosted.org/packages/31/10/d14293386ee977fc90df13a16d29898ccb43c57e231c7718542363adf857/bacpypes3-0.0.86.tar.gz
+[2024-04-07 00:32:38] WARNING root fetch - processPackages [bacpypes3]: Timeout reached during download
+[2024-04-07 00:32:38] WARNING root fetch - processPackages [cypartagraphqlsubscriptionstools]: Timeout reached during download
+[2024-04-07 00:32:38] INFO root fetch - processPackages [bacpypes3]: Downloading https://files.pythonhosted.org/packages/e3/6c/096edfb8472ad0353ad8b89622889f2e22147ce9e1c9b655a9c6b457f88e/bacpypes3-0.0.91.tar.gz
+[2024-04-07 00:32:38] INFO root fetch - processPackages [cypartagraphqlsubscriptionstools]: Downloading https://files.pythonhosted.org/packages/49/a1/c98f73814db66406b2ec49c763c689193a6155409c6ebd3572b364949b66/cypartagraphqlsubscriptionstools-1.1.0.tar.gz
+[2024-04-07 00:32:38] WARNING root fetch - processPackages [cypartagraphqlsubscriptionstools]: Timeout reached during download
+[2024-04-07 00:32:38] INFO root fetch - processPackages [cypartagraphqlsubscriptionstools]: executing diffoscope
+[2024-04-07 00:32:38] INFO root fetch - processPackages [cypartagraphqlsubscriptionstools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cypartagraphqlsubscriptionstools-1.0.0.tar.gz tmp/cypartagraphqlsubscriptionstools-1.1.0.tar.gz --markdown 20240407/c/cypartagraphqlsubscriptionstools/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2024-04-07 00:32:39] WARNING root fetch - processPackages [bacpypes3]: Timeout reached during download
+[2024-04-07 00:32:39] INFO root fetch - processPackages [bacpypes3]: executing diffoscope
+[2024-04-07 00:32:39] INFO root fetch - processPackages [bacpypes3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bacpypes3-0.0.86.tar.gz tmp/bacpypes3-0.0.91.tar.gz --markdown 20240407/b/bacpypes3/0.0.86-0.0.91/diff.md --exclude *.pyd
+[2024-04-07 00:32:39] INFO root fetch - processPackages [cypartagraphqlsubscriptionstools]: Remove: archive file [/home/abi/fetcher/tmp/cypartagraphqlsubscriptionstools-1.0.0.tar.gz]
+[2024-04-07 00:32:39] INFO root fetch - processPackages [cypartagraphqlsubscriptionstools]: Remove: archive file [/home/abi/fetcher/tmp/cypartagraphqlsubscriptionstools-1.1.0.tar.gz]
+[2024-04-07 00:32:39] INFO root fetch - main [MainThread]: End processing [cypartagraphqlsubscriptionstools]: success
+[2024-04-07 00:32:40] INFO root fetch - processPackages [bacpypes3]: Remove: archive file [/home/abi/fetcher/tmp/bacpypes3-0.0.86.tar.gz]
+[2024-04-07 00:32:40] INFO root fetch - processPackages [bacpypes3]: Remove: archive file [/home/abi/fetcher/tmp/bacpypes3-0.0.91.tar.gz]
+[2024-04-07 00:32:40] INFO root fetch - main [MainThread]: End processing [bacpypes3]: success
+[2024-04-07 00:32:40] INFO root fetch - main [MainThread]: Store serial: [22651542]
