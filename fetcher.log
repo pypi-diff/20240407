@@ -214,3 +214,17 @@
 [2024-04-07 00:19:38] INFO root fetch - processPackages [besos]: Remove: archive file [/home/abi/fetcher/tmp/besos-2.2.2.tar.gz]
 [2024-04-07 00:19:38] INFO root fetch - main [MainThread]: End processing [besos]: success
 [2024-04-07 00:19:38] INFO root fetch - main [MainThread]: Store serial: [22651492]
+[2024-04-07 00:21:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651492]
+[2024-04-07 00:21:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 00:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: football-stats-scraper
+[2024-04-07 00:21:46] INFO root fetch - processPackages [football-stats-scraper]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-07 00:21:46] INFO root fetch - processPackages [football-stats-scraper]: Downloading https://files.pythonhosted.org/packages/67/8f/1e897d96c1748eaaa109bcfce87039c0d76eb311cc39ac25edb700a024eb/football_stats_scraper-0.1.5-py3-none-any.whl
+[2024-04-07 00:21:46] WARNING root fetch - processPackages [football-stats-scraper]: Timeout reached during download
+[2024-04-07 00:21:46] INFO root fetch - processPackages [football-stats-scraper]: Downloading https://files.pythonhosted.org/packages/18/ec/11e7f65f04ebe45102ffd7e22512c2e0292421f975b484f7e28dddbbefa5/football_stats_scraper-0.1.6-py3-none-any.whl
+[2024-04-07 00:21:47] WARNING root fetch - processPackages [football-stats-scraper]: Timeout reached during download
+[2024-04-07 00:21:47] INFO root fetch - processPackages [football-stats-scraper]: executing diffoscope
+[2024-04-07 00:21:47] INFO root fetch - processPackages [football-stats-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/football_stats_scraper-0.1.5-py3-none-any.whl.zip tmp/football_stats_scraper-0.1.6-py3-none-any.whl.zip --markdown 20240407/f/football-stats-scraper/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2024-04-07 00:21:47] INFO root fetch - processPackages [football-stats-scraper]: Remove: archive file [/home/abi/fetcher/tmp/football_stats_scraper-0.1.5-py3-none-any.whl.zip]
+[2024-04-07 00:21:47] INFO root fetch - processPackages [football-stats-scraper]: Remove: archive file [/home/abi/fetcher/tmp/football_stats_scraper-0.1.6-py3-none-any.whl.zip]
+[2024-04-07 00:21:47] INFO root fetch - main [MainThread]: End processing [football-stats-scraper]: success
+[2024-04-07 00:21:47] INFO root fetch - main [MainThread]: Store serial: [22651494]
