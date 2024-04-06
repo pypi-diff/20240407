@@ -973,3 +973,35 @@
 [2024-04-07 01:31:07] INFO root fetch - processPackages [chainlo]: Remove: archive file [/home/abi/fetcher/tmp/chainlo-1.1.412.tar.gz]
 [2024-04-07 01:31:07] INFO root fetch - main [MainThread]: End processing [chainlo]: success
 [2024-04-07 01:31:07] INFO root fetch - main [MainThread]: Store serial: [22651824]
+[2024-04-07 01:33:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651824]
+[2024-04-07 01:33:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 01:33:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polars-ds
+[2024-04-07 01:33:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: interrogate
+[2024-04-07 01:33:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: octomy-common
+[2024-04-07 01:33:17] INFO root fetch - processPackages [octomy-common]: New version: [2.0.4] Old Version: [2.0.3]
+[2024-04-07 01:33:17] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/56/f4/3f5b9174c16f5e5e89390ed88e2f557f6f2084a6fe0661abb9a04dc24735/octomy-common-2.0.3.tar.gz
+[2024-04-07 01:33:17] INFO root fetch - processPackages [interrogate]: New version: [1.6.0] Old Version: [1.5.0]
+[2024-04-07 01:33:17] WARNING root fetch - processPackages [octomy-common]: Timeout reached during download
+[2024-04-07 01:33:17] INFO root fetch - processPackages [interrogate]: Downloading https://files.pythonhosted.org/packages/82/71/36679473d57fb844ebd1bb2dbda0974f4b72b1677a6864622fceb4f89891/interrogate-1.5.0.tar.gz
+[2024-04-07 01:33:17] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/68/50/6d740552079985a28d0cbd9432460207e15e4b6b0e4e16eb84eab2ed3ac6/octomy-common-2.0.4.tar.gz
+[2024-04-07 01:33:17] INFO root fetch - processPackages [polars-ds]: New version: [0.4.0] Old Version: [0.3.5]
+[2024-04-07 01:33:17] WARNING root fetch - processPackages [interrogate]: Timeout reached during download
+[2024-04-07 01:33:18] WARNING root fetch - processPackages [octomy-common]: Timeout reached during download
+[2024-04-07 01:33:18] INFO root fetch - processPackages [octomy-common]: executing diffoscope
+[2024-04-07 01:33:18] INFO root fetch - processPackages [octomy-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-common-2.0.3.tar.gz tmp/octomy-common-2.0.4.tar.gz --markdown 20240407/o/octomy-common/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2024-04-07 01:33:18] INFO root fetch - processPackages [polars-ds]: Downloading https://files.pythonhosted.org/packages/97/bd/6a771eee339837b020d93d9699ab87cb29029a6b348f21aec17fc2d1ae30/polars_ds-0.3.5.tar.gz
+[2024-04-07 01:33:18] INFO root fetch - processPackages [interrogate]: Downloading https://files.pythonhosted.org/packages/fb/0d/50e4c9ce6331e0a161b13a46b32437de7628063806fac86e71a0a8c9fa26/interrogate-1.6.0.tar.gz
+[2024-04-07 01:33:18] WARNING root fetch - processPackages [interrogate]: Timeout reached during download
+[2024-04-07 01:33:18] INFO root fetch - processPackages [interrogate]: executing diffoscope
+[2024-04-07 01:33:18] INFO root fetch - processPackages [interrogate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interrogate-1.5.0.tar.gz tmp/interrogate-1.6.0.tar.gz --markdown 20240407/i/interrogate/1.5.0-1.6.0/diff.md --exclude *.pyd
+[2024-04-07 01:33:18] WARNING root fetch - processPackages [polars-ds]: Timeout reached during download
+[2024-04-07 01:33:18] INFO root fetch - processPackages [polars-ds]: Downloading https://files.pythonhosted.org/packages/46/cb/49a79df7754336b293502543a291c8a2d9e3ac482d742b73d27a019aea3e/polars_ds-0.4.0-cp310-cp310-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl
+[2024-04-07 01:33:18] WARNING root fetch - processPackages [polars-ds]: Skipping package: exceeds size limit 13488713>=10485760
+[2024-04-07 01:33:18] INFO root fetch - main [MainThread]: End processing [polars-ds] error
+[2024-04-07 01:33:18] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.3.tar.gz]
+[2024-04-07 01:33:18] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.4.tar.gz]
+[2024-04-07 01:33:18] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
+[2024-04-07 01:33:19] INFO root fetch - processPackages [interrogate]: Remove: archive file [/home/abi/fetcher/tmp/interrogate-1.5.0.tar.gz]
+[2024-04-07 01:33:19] INFO root fetch - processPackages [interrogate]: Remove: archive file [/home/abi/fetcher/tmp/interrogate-1.6.0.tar.gz]
+[2024-04-07 01:33:19] INFO root fetch - main [MainThread]: End processing [interrogate]: success
+[2024-04-07 01:33:19] INFO root fetch - main [MainThread]: Store serial: [22651840]
