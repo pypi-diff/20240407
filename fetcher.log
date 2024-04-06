@@ -1005,3 +1005,28 @@
 [2024-04-07 01:33:19] INFO root fetch - processPackages [interrogate]: Remove: archive file [/home/abi/fetcher/tmp/interrogate-1.6.0.tar.gz]
 [2024-04-07 01:33:19] INFO root fetch - main [MainThread]: End processing [interrogate]: success
 [2024-04-07 01:33:19] INFO root fetch - main [MainThread]: Store serial: [22651840]
+[2024-04-07 01:35:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651840]
+[2024-04-07 01:35:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 01:35:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yt-dlp
+[2024-04-07 01:35:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xcolumns
+[2024-04-07 01:35:28] INFO root fetch - processPackages [xcolumns]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-07 01:35:28] INFO root fetch - processPackages [yt-dlp]: New version: [2024.4.6.232655.dev0] Old Version: [2024.4.4.232729.dev0]
+[2024-04-07 01:35:28] INFO root fetch - processPackages [xcolumns]: Downloading https://files.pythonhosted.org/packages/2c/ba/8dc7aa3a798b1831b6ee1b9d2635fae6e87b4787f367c8122abca0f137fd/xcolumns-0.0.1.tar.gz
+[2024-04-07 01:35:28] WARNING root fetch - processPackages [xcolumns]: Timeout reached during download
+[2024-04-07 01:35:28] INFO root fetch - processPackages [yt-dlp]: Downloading https://files.pythonhosted.org/packages/6e/b4/bb8760dc21b87592d2295ecc5978fefcd9221ea074011261cb81bc8e56aa/yt_dlp-2024.4.4.232729.dev0.tar.gz
+[2024-04-07 01:35:29] INFO root fetch - processPackages [xcolumns]: Downloading https://files.pythonhosted.org/packages/cf/01/69c473153bbcd3aaae375b8e57b0035afe3b17e1ba65462faff5377a2304/xcolumns-0.0.2.tar.gz
+[2024-04-07 01:35:29] WARNING root fetch - processPackages [xcolumns]: Timeout reached during download
+[2024-04-07 01:35:29] INFO root fetch - processPackages [xcolumns]: executing diffoscope
+[2024-04-07 01:35:29] INFO root fetch - processPackages [xcolumns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcolumns-0.0.1.tar.gz tmp/xcolumns-0.0.2.tar.gz --markdown 20240407/x/xcolumns/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-07 01:35:29] WARNING root fetch - processPackages [yt-dlp]: Timeout reached during download
+[2024-04-07 01:35:29] INFO root fetch - processPackages [yt-dlp]: Downloading https://files.pythonhosted.org/packages/a0/be/b7cb4fc747d070a6dc2c649dd9e3de365fa90dc950f116c35003ba22e1e1/yt_dlp-2024.4.6.232655.dev0.tar.gz
+[2024-04-07 01:35:29] INFO root fetch - processPackages [xcolumns]: Remove: archive file [/home/abi/fetcher/tmp/xcolumns-0.0.1.tar.gz]
+[2024-04-07 01:35:29] INFO root fetch - processPackages [xcolumns]: Remove: archive file [/home/abi/fetcher/tmp/xcolumns-0.0.2.tar.gz]
+[2024-04-07 01:35:29] INFO root fetch - main [MainThread]: End processing [xcolumns]: success
+[2024-04-07 01:35:29] WARNING root fetch - processPackages [yt-dlp]: Timeout reached during download
+[2024-04-07 01:35:29] INFO root fetch - processPackages [yt-dlp]: executing diffoscope
+[2024-04-07 01:35:29] INFO root fetch - processPackages [yt-dlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt_dlp-2024.4.4.232729.dev0.tar.gz tmp/yt_dlp-2024.4.6.232655.dev0.tar.gz --markdown 20240407/y/yt-dlp/2024.4.4.232729.dev0-2024.4.6.232655.dev0/diff.md --exclude *.pyd
+[2024-04-07 01:35:35] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.4.4.232729.dev0.tar.gz]
+[2024-04-07 01:35:35] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.4.6.232655.dev0.tar.gz]
+[2024-04-07 01:35:35] INFO root fetch - main [MainThread]: End processing [yt-dlp]: success
+[2024-04-07 01:35:35] INFO root fetch - main [MainThread]: Store serial: [22651845]
