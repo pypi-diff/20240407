@@ -128,3 +128,17 @@
 [2024-04-07 00:13:06] INFO root fetch - processPackages [objathor]: Remove: archive file [/home/abi/fetcher/tmp/objathor-0.0.4.tar.gz]
 [2024-04-07 00:13:06] INFO root fetch - main [MainThread]: End processing [objathor]: success
 [2024-04-07 00:13:06] INFO root fetch - main [MainThread]: Store serial: [22651474]
+[2024-04-07 00:15:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651474]
+[2024-04-07 00:15:15] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 00:15:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NNSOM
+[2024-04-07 00:15:15] INFO root fetch - processPackages [NNSOM]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-04-07 00:15:15] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/7a/ad/498ae18336802a84733c4a2b043585e6ca3584dd1deef648a27e331fd836/nnsom-1.4.8.tar.gz
+[2024-04-07 00:15:15] WARNING root fetch - processPackages [NNSOM]: Timeout reached during download
+[2024-04-07 00:15:15] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/c4/01/f688102969462696bc7d3cc0eb2dd22675dea191e4f926f73baea33940dc/nnsom-1.4.9.tar.gz
+[2024-04-07 00:15:15] WARNING root fetch - processPackages [NNSOM]: Timeout reached during download
+[2024-04-07 00:15:15] INFO root fetch - processPackages [NNSOM]: executing diffoscope
+[2024-04-07 00:15:15] INFO root fetch - processPackages [NNSOM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnsom-1.4.8.tar.gz tmp/nnsom-1.4.9.tar.gz --markdown 20240407/N/NNSOM/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2024-04-07 00:15:16] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.4.8.tar.gz]
+[2024-04-07 00:15:16] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.4.9.tar.gz]
+[2024-04-07 00:15:16] INFO root fetch - main [MainThread]: End processing [NNSOM]: success
+[2024-04-07 00:15:16] INFO root fetch - main [MainThread]: Store serial: [22651477]
