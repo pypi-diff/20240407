@@ -771,3 +771,31 @@
 [2024-04-07 01:07:20] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240405.tar.gz]
 [2024-04-07 01:07:20] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
 [2024-04-07 01:07:20] INFO root fetch - main [MainThread]: Store serial: [22651727]
+[2024-04-07 01:09:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651727]
+[2024-04-07 01:09:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 01:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rubpy
+[2024-04-07 01:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bambot
+[2024-04-07 01:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: forcealign
+[2024-04-07 01:09:28] INFO root fetch - processPackages [forcealign]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-07 01:09:28] WARNING root fetch - processPackages [bambot]: Skipping, unable to determine old version
+[2024-04-07 01:09:28] INFO root fetch - main [MainThread]: End processing [bambot] error
+[2024-04-07 01:09:28] INFO root fetch - processPackages [forcealign]: Downloading https://files.pythonhosted.org/packages/48/2c/499dcb3e21a255eac5b1e92860017765c16928607cb500092034a764e65a/forcealign-1.1.1.tar.gz
+[2024-04-07 01:09:28] INFO root fetch - processPackages [rubpy]: New version: [7.0.1b0] Old Version: [7.0.1]
+[2024-04-07 01:09:28] WARNING root fetch - processPackages [forcealign]: Timeout reached during download
+[2024-04-07 01:09:28] INFO root fetch - processPackages [forcealign]: Downloading https://files.pythonhosted.org/packages/52/eb/9dbc5f0133a9951248e99245cd60a4007a6578416e31bec7a4803b6726e1/forcealign-1.1.2.tar.gz
+[2024-04-07 01:09:28] INFO root fetch - processPackages [rubpy]: Downloading https://files.pythonhosted.org/packages/5e/36/1f2ce5745a6d5cb5381f420c89a20323f1d0057a4643fa3fed4b97149c07/rubpy-7.0.1.tar.gz
+[2024-04-07 01:09:29] WARNING root fetch - processPackages [forcealign]: Timeout reached during download
+[2024-04-07 01:09:29] INFO root fetch - processPackages [forcealign]: executing diffoscope
+[2024-04-07 01:09:29] INFO root fetch - processPackages [forcealign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/forcealign-1.1.1.tar.gz tmp/forcealign-1.1.2.tar.gz --markdown 20240407/f/forcealign/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2024-04-07 01:09:29] WARNING root fetch - processPackages [rubpy]: Timeout reached during download
+[2024-04-07 01:09:29] INFO root fetch - processPackages [rubpy]: Downloading https://files.pythonhosted.org/packages/ab/78/dd4259e3b5d945f17f11167746e62f659ee856fe5a2eb33fba5d23ea9cb5/rubpy-7.0.1b0.tar.gz
+[2024-04-07 01:09:29] WARNING root fetch - processPackages [rubpy]: Timeout reached during download
+[2024-04-07 01:09:29] INFO root fetch - processPackages [rubpy]: executing diffoscope
+[2024-04-07 01:09:29] INFO root fetch - processPackages [rubpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rubpy-7.0.1.tar.gz tmp/rubpy-7.0.1b0.tar.gz --markdown 20240407/r/rubpy/7.0.1-7.0.1b0/diff.md --exclude *.pyd
+[2024-04-07 01:09:29] INFO root fetch - processPackages [forcealign]: Remove: archive file [/home/abi/fetcher/tmp/forcealign-1.1.1.tar.gz]
+[2024-04-07 01:09:29] INFO root fetch - processPackages [forcealign]: Remove: archive file [/home/abi/fetcher/tmp/forcealign-1.1.2.tar.gz]
+[2024-04-07 01:09:29] INFO root fetch - main [MainThread]: End processing [forcealign]: success
+[2024-04-07 01:09:30] INFO root fetch - processPackages [rubpy]: Remove: archive file [/home/abi/fetcher/tmp/rubpy-7.0.1.tar.gz]
+[2024-04-07 01:09:30] INFO root fetch - processPackages [rubpy]: Remove: archive file [/home/abi/fetcher/tmp/rubpy-7.0.1b0.tar.gz]
+[2024-04-07 01:09:30] INFO root fetch - main [MainThread]: End processing [rubpy]: success
+[2024-04-07 01:09:30] INFO root fetch - main [MainThread]: Store serial: [22651735]
