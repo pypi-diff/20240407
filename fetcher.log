@@ -658,3 +658,39 @@
 [2024-04-07 00:58:35] INFO root fetch - processPackages [hexdoc-hexcasting]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc_hexcasting-0.9.6.1.0.dev24.tar.gz]
 [2024-04-07 00:58:35] INFO root fetch - main [MainThread]: End processing [hexdoc-hexcasting]: success
 [2024-04-07 00:58:35] INFO root fetch - main [MainThread]: Store serial: [22651693]
+[2024-04-07 01:00:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651693]
+[2024-04-07 01:00:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 01:00:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simple-background-remover
+[2024-04-07 01:00:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chainlo
+[2024-04-07 01:00:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hexdoc-hexcasting
+[2024-04-07 01:00:43] INFO root fetch - processPackages [hexdoc-hexcasting]: New version: [0.9.6.1.0.dev24] Old Version: [0.9.6.1.0.dev22]
+[2024-04-07 01:00:43] INFO root fetch - processPackages [simple-background-remover]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-07 01:00:43] INFO root fetch - processPackages [chainlo]: New version: [1.1.412] Old Version: [1.1.411]
+[2024-04-07 01:00:43] INFO root fetch - processPackages [hexdoc-hexcasting]: Downloading https://files.pythonhosted.org/packages/7b/97/ccc91c47f9f2f9bc922afa1230882f75e5f990d9b4bc9dcd66a73e9d8e90/hexdoc_hexcasting-0.9.6.1.0.dev22.tar.gz
+[2024-04-07 01:00:43] INFO root fetch - processPackages [simple-background-remover]: Downloading https://files.pythonhosted.org/packages/64/80/eb629cffadd3333d132c55b3ef4e379cf9db5632658633c2355f43865957/simple_background_remover-0.0.4.tar.gz
+[2024-04-07 01:00:44] INFO root fetch - processPackages [chainlo]: Downloading https://files.pythonhosted.org/packages/35/64/9e6d40f7b4ae6106d65510f51f54c96fec3bda601ea3bdad2fa10ed1d18e/chainlo-1.1.411.tar.gz
+[2024-04-07 01:00:44] WARNING root fetch - processPackages [simple-background-remover]: Timeout reached during download
+[2024-04-07 01:00:44] WARNING root fetch - processPackages [hexdoc-hexcasting]: Timeout reached during download
+[2024-04-07 01:00:44] INFO root fetch - processPackages [hexdoc-hexcasting]: Downloading https://files.pythonhosted.org/packages/e1/45/2baf4400c325cafbc68a9585eb8c3b1502ceb00dea63fadd17e30caed5ae/hexdoc_hexcasting-0.9.6.1.0.dev24.tar.gz
+[2024-04-07 01:00:44] INFO root fetch - processPackages [simple-background-remover]: Downloading https://files.pythonhosted.org/packages/f0/45/a6ec7a757e3b75ecf74e95ff9043b84147c38572b3f56da2dbda2c24a5b6/simple_background_remover-0.0.5.tar.gz
+[2024-04-07 01:00:44] WARNING root fetch - processPackages [simple-background-remover]: Timeout reached during download
+[2024-04-07 01:00:44] INFO root fetch - processPackages [simple-background-remover]: executing diffoscope
+[2024-04-07 01:00:44] INFO root fetch - processPackages [simple-background-remover]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_background_remover-0.0.4.tar.gz tmp/simple_background_remover-0.0.5.tar.gz --markdown 20240407/s/simple-background-remover/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-07 01:00:44] WARNING root fetch - processPackages [hexdoc-hexcasting]: Timeout reached during download
+[2024-04-07 01:00:44] INFO root fetch - processPackages [hexdoc-hexcasting]: executing diffoscope
+[2024-04-07 01:00:44] INFO root fetch - processPackages [hexdoc-hexcasting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hexdoc_hexcasting-0.9.6.1.0.dev22.tar.gz tmp/hexdoc_hexcasting-0.9.6.1.0.dev24.tar.gz --markdown 20240407/h/hexdoc-hexcasting/0.9.6.1.0.dev22-0.9.6.1.0.dev24/diff.md --exclude *.pyd
+[2024-04-07 01:00:44] WARNING root fetch - processPackages [chainlo]: Timeout reached during download
+[2024-04-07 01:00:44] INFO root fetch - processPackages [chainlo]: Downloading https://files.pythonhosted.org/packages/b4/48/67a03c173ba4d78a201b3d6b68f9effface5b56992b748b79e477328bfc3/chainlo-1.1.412.tar.gz
+[2024-04-07 01:00:45] INFO root fetch - processPackages [simple-background-remover]: Remove: archive file [/home/abi/fetcher/tmp/simple_background_remover-0.0.4.tar.gz]
+[2024-04-07 01:00:45] INFO root fetch - processPackages [simple-background-remover]: Remove: archive file [/home/abi/fetcher/tmp/simple_background_remover-0.0.5.tar.gz]
+[2024-04-07 01:00:45] INFO root fetch - main [MainThread]: End processing [simple-background-remover]: success
+[2024-04-07 01:00:45] WARNING root fetch - processPackages [chainlo]: Timeout reached during download
+[2024-04-07 01:00:45] INFO root fetch - processPackages [chainlo]: executing diffoscope
+[2024-04-07 01:00:45] INFO root fetch - processPackages [chainlo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainlo-1.1.411.tar.gz tmp/chainlo-1.1.412.tar.gz --markdown 20240407/c/chainlo/1.1.411-1.1.412/diff.md --exclude *.pyd
+[2024-04-07 01:00:46] INFO root fetch - processPackages [hexdoc-hexcasting]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc_hexcasting-0.9.6.1.0.dev22.tar.gz]
+[2024-04-07 01:00:46] INFO root fetch - processPackages [hexdoc-hexcasting]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc_hexcasting-0.9.6.1.0.dev24.tar.gz]
+[2024-04-07 01:00:46] INFO root fetch - main [MainThread]: End processing [hexdoc-hexcasting]: success
+[2024-04-07 01:00:46] INFO root fetch - processPackages [chainlo]: Remove: archive file [/home/abi/fetcher/tmp/chainlo-1.1.411.tar.gz]
+[2024-04-07 01:00:46] INFO root fetch - processPackages [chainlo]: Remove: archive file [/home/abi/fetcher/tmp/chainlo-1.1.412.tar.gz]
+[2024-04-07 01:00:46] INFO root fetch - main [MainThread]: End processing [chainlo]: success
+[2024-04-07 01:00:46] INFO root fetch - main [MainThread]: Store serial: [22651702]
