@@ -156,3 +156,61 @@
 [2024-04-07 00:17:26] INFO root fetch - processPackages [simple-background-remover]: Remove: archive file [/home/abi/fetcher/tmp/simple_background_remover-0.0.3.tar.gz]
 [2024-04-07 00:17:26] INFO root fetch - main [MainThread]: End processing [simple-background-remover]: success
 [2024-04-07 00:17:26] INFO root fetch - main [MainThread]: Store serial: [22651480]
+[2024-04-07 00:19:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651480]
+[2024-04-07 00:19:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 00:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: besos
+[2024-04-07 00:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: galileo-core
+[2024-04-07 00:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sprocketship
+[2024-04-07 00:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: devopsdriver
+[2024-04-07 00:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: football-stats-scraper
+[2024-04-07 00:19:35] INFO root fetch - processPackages [devopsdriver]: New version: [0.1.37] Old Version: [0.1.36]
+[2024-04-07 00:19:35] INFO root fetch - processPackages [galileo-core]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-04-07 00:19:35] INFO root fetch - processPackages [sprocketship]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-07 00:19:35] INFO root fetch - processPackages [football-stats-scraper]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-07 00:19:35] INFO root fetch - processPackages [galileo-core]: Downloading https://files.pythonhosted.org/packages/ad/70/f63385955d0d09360b9ef844d36498c7a8431b9e1bbfe050bc03645fe37d/galileo_core-0.4.1.tar.gz
+[2024-04-07 00:19:35] INFO root fetch - processPackages [devopsdriver]: Downloading https://files.pythonhosted.org/packages/03/07/50c1c5f57d50904c2e4ff2fccd341411e6952d8a400e8a300cf1e4109452/devopsdriver-0.1.36.tar.gz
+[2024-04-07 00:19:35] INFO root fetch - processPackages [besos]: New version: [2.2.2] Old Version: [2.2.0]
+[2024-04-07 00:19:35] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/4f/98/06e448db2195bc92ad82df747001fa95a4d3b671d3f77162d3db9156a03d/sprocketship-0.1.2.tar.gz
+[2024-04-07 00:19:35] INFO root fetch - processPackages [football-stats-scraper]: Downloading https://files.pythonhosted.org/packages/3e/2e/47f03d0367694704280fcfdd11857a897fdffc590dd685b78688d98e2b0d/football_stats_scraper-0.1.4-py3-none-any.whl
+[2024-04-07 00:19:35] WARNING root fetch - processPackages [galileo-core]: Timeout reached during download
+[2024-04-07 00:19:35] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-07 00:19:35] WARNING root fetch - processPackages [devopsdriver]: Timeout reached during download
+[2024-04-07 00:19:35] WARNING root fetch - processPackages [football-stats-scraper]: Timeout reached during download
+[2024-04-07 00:19:35] INFO root fetch - processPackages [besos]: Downloading https://files.pythonhosted.org/packages/4b/f4/7e08ed6d7a6a18519218f95f511b3e8ac5e589b8ccb691bacdb9103319c3/besos-2.2.0.tar.gz
+[2024-04-07 00:19:35] INFO root fetch - processPackages [devopsdriver]: Downloading https://files.pythonhosted.org/packages/4e/73/9137ce746440781c8aab3c0b6c43a20decb8abcce345ee3188e589e9c032/devopsdriver-0.1.37.tar.gz
+[2024-04-07 00:19:35] INFO root fetch - processPackages [galileo-core]: Downloading https://files.pythonhosted.org/packages/d2/03/c51ede67328c7173ccc8bb0dea072c7f9e50b7612e2d261ce32d678d1b55/galileo_core-0.5.0.tar.gz
+[2024-04-07 00:19:35] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/bf/c4/37473acd3c048f806049504a239868b0dad8e7c4f850a0870f737019f10d/sprocketship-0.1.3.tar.gz
+[2024-04-07 00:19:35] WARNING root fetch - processPackages [devopsdriver]: Timeout reached during download
+[2024-04-07 00:19:35] INFO root fetch - processPackages [devopsdriver]: executing diffoscope
+[2024-04-07 00:19:35] INFO root fetch - processPackages [devopsdriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devopsdriver-0.1.36.tar.gz tmp/devopsdriver-0.1.37.tar.gz --markdown 20240407/d/devopsdriver/0.1.36-0.1.37/diff.md --exclude *.pyd
+[2024-04-07 00:19:35] WARNING root fetch - processPackages [galileo-core]: Timeout reached during download
+[2024-04-07 00:19:35] INFO root fetch - processPackages [galileo-core]: executing diffoscope
+[2024-04-07 00:19:35] INFO root fetch - processPackages [galileo-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/galileo_core-0.4.1.tar.gz tmp/galileo_core-0.5.0.tar.gz --markdown 20240407/g/galileo-core/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2024-04-07 00:19:35] INFO root fetch - processPackages [football-stats-scraper]: Downloading https://files.pythonhosted.org/packages/67/8f/1e897d96c1748eaaa109bcfce87039c0d76eb311cc39ac25edb700a024eb/football_stats_scraper-0.1.5-py3-none-any.whl
+[2024-04-07 00:19:35] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-07 00:19:35] INFO root fetch - processPackages [sprocketship]: executing diffoscope
+[2024-04-07 00:19:35] INFO root fetch - processPackages [sprocketship]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sprocketship-0.1.2.tar.gz tmp/sprocketship-0.1.3.tar.gz --markdown 20240407/s/sprocketship/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2024-04-07 00:19:35] WARNING root fetch - processPackages [football-stats-scraper]: Timeout reached during download
+[2024-04-07 00:19:35] INFO root fetch - processPackages [football-stats-scraper]: executing diffoscope
+[2024-04-07 00:19:35] INFO root fetch - processPackages [football-stats-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/football_stats_scraper-0.1.4-py3-none-any.whl.zip tmp/football_stats_scraper-0.1.5-py3-none-any.whl.zip --markdown 20240407/f/football-stats-scraper/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2024-04-07 00:19:36] WARNING root fetch - processPackages [besos]: Timeout reached during download
+[2024-04-07 00:19:36] INFO root fetch - processPackages [besos]: Downloading https://files.pythonhosted.org/packages/3d/d8/89a31151c9456e9a3fb6a9e820d88f33b14571e65d4fd847728e905216a0/besos-2.2.2.tar.gz
+[2024-04-07 00:19:36] INFO root fetch - processPackages [galileo-core]: Remove: archive file [/home/abi/fetcher/tmp/galileo_core-0.4.1.tar.gz]
+[2024-04-07 00:19:36] INFO root fetch - processPackages [galileo-core]: Remove: archive file [/home/abi/fetcher/tmp/galileo_core-0.5.0.tar.gz]
+[2024-04-07 00:19:36] INFO root fetch - main [MainThread]: End processing [galileo-core]: success
+[2024-04-07 00:19:36] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.1.2.tar.gz]
+[2024-04-07 00:19:36] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.1.3.tar.gz]
+[2024-04-07 00:19:36] INFO root fetch - main [MainThread]: End processing [sprocketship]: success
+[2024-04-07 00:19:36] INFO root fetch - processPackages [devopsdriver]: Remove: archive file [/home/abi/fetcher/tmp/devopsdriver-0.1.36.tar.gz]
+[2024-04-07 00:19:36] INFO root fetch - processPackages [devopsdriver]: Remove: archive file [/home/abi/fetcher/tmp/devopsdriver-0.1.37.tar.gz]
+[2024-04-07 00:19:36] INFO root fetch - main [MainThread]: End processing [devopsdriver]: success
+[2024-04-07 00:19:36] INFO root fetch - processPackages [football-stats-scraper]: Remove: archive file [/home/abi/fetcher/tmp/football_stats_scraper-0.1.4-py3-none-any.whl.zip]
+[2024-04-07 00:19:36] INFO root fetch - processPackages [football-stats-scraper]: Remove: archive file [/home/abi/fetcher/tmp/football_stats_scraper-0.1.5-py3-none-any.whl.zip]
+[2024-04-07 00:19:36] INFO root fetch - main [MainThread]: End processing [football-stats-scraper]: success
+[2024-04-07 00:19:36] WARNING root fetch - processPackages [besos]: Timeout reached during download
+[2024-04-07 00:19:36] INFO root fetch - processPackages [besos]: executing diffoscope
+[2024-04-07 00:19:36] INFO root fetch - processPackages [besos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/besos-2.2.0.tar.gz tmp/besos-2.2.2.tar.gz --markdown 20240407/b/besos/2.2.0-2.2.2/diff.md --exclude *.pyd
+[2024-04-07 00:19:38] INFO root fetch - processPackages [besos]: Remove: archive file [/home/abi/fetcher/tmp/besos-2.2.0.tar.gz]
+[2024-04-07 00:19:38] INFO root fetch - processPackages [besos]: Remove: archive file [/home/abi/fetcher/tmp/besos-2.2.2.tar.gz]
+[2024-04-07 00:19:38] INFO root fetch - main [MainThread]: End processing [besos]: success
+[2024-04-07 00:19:38] INFO root fetch - main [MainThread]: Store serial: [22651492]
