@@ -881,3 +881,39 @@
 [2024-04-07 01:22:27] WARNING root fetch - processPackages [csv_test_package]: Skipping, unable to determine old version
 [2024-04-07 01:22:27] INFO root fetch - main [MainThread]: End processing [csv_test_package] error
 [2024-04-07 01:22:27] INFO root fetch - main [MainThread]: Store serial: [22651775]
+[2024-04-07 01:24:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651775]
+[2024-04-07 01:24:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 01:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bambot
+[2024-04-07 01:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vulcan-logger
+[2024-04-07 01:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymssql
+[2024-04-07 01:24:35] INFO root fetch - processPackages [vulcan-logger]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-04-07 01:24:35] INFO root fetch - processPackages [bambot]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-07 01:24:35] INFO root fetch - processPackages [vulcan-logger]: Downloading https://files.pythonhosted.org/packages/e3/8a/250c28f9022ee310c0b8cdcd50160ea16352a694e517d343bc03ec6f1de1/vulcan-logger-1.4.1.tar.gz
+[2024-04-07 01:24:36] INFO root fetch - processPackages [pymssql]: New version: [2.3.0] Old Version: [2.2.9]
+[2024-04-07 01:24:36] INFO root fetch - processPackages [bambot]: Downloading https://files.pythonhosted.org/packages/8c/1b/b6011078cefa9d08c31b6033ece21207c0e3ad899d7aa1cd14afc10d315e/bambot-0.1.0.tar.gz
+[2024-04-07 01:24:36] WARNING root fetch - processPackages [vulcan-logger]: Timeout reached during download
+[2024-04-07 01:24:36] INFO root fetch - processPackages [pymssql]: Downloading https://files.pythonhosted.org/packages/d2/98/8fa8670cc74107385ffb2680f6869d54ca41bcf02ca7b9b2222aca334d0a/pymssql-2.2.9.tar.gz
+[2024-04-07 01:24:36] WARNING root fetch - processPackages [bambot]: Timeout reached during download
+[2024-04-07 01:24:36] INFO root fetch - processPackages [vulcan-logger]: Downloading https://files.pythonhosted.org/packages/41/eb/2cdfd852bd26a017fd8ec1a121c3fb4ed4f3adf5a0498933020aa739844d/vulcan-logger-1.4.2.tar.gz
+[2024-04-07 01:24:36] WARNING root fetch - processPackages [pymssql]: Timeout reached during download
+[2024-04-07 01:24:36] INFO root fetch - processPackages [bambot]: Downloading https://files.pythonhosted.org/packages/cf/79/20228a9191be26c0121c1d46573f59a9e34a9513c6fad60228b7c0a38b5b/bambot-0.2.0.tar.gz
+[2024-04-07 01:24:36] WARNING root fetch - processPackages [vulcan-logger]: Timeout reached during download
+[2024-04-07 01:24:36] INFO root fetch - processPackages [vulcan-logger]: executing diffoscope
+[2024-04-07 01:24:36] INFO root fetch - processPackages [vulcan-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vulcan-logger-1.4.1.tar.gz tmp/vulcan-logger-1.4.2.tar.gz --markdown 20240407/v/vulcan-logger/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2024-04-07 01:24:36] WARNING root fetch - processPackages [bambot]: Timeout reached during download
+[2024-04-07 01:24:36] INFO root fetch - processPackages [bambot]: executing diffoscope
+[2024-04-07 01:24:36] INFO root fetch - processPackages [bambot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bambot-0.1.0.tar.gz tmp/bambot-0.2.0.tar.gz --markdown 20240407/b/bambot/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2024-04-07 01:24:36] INFO root fetch - processPackages [pymssql]: Downloading https://files.pythonhosted.org/packages/89/55/6f2b4b5edbe76bc0e5790bb8ad5fab2a612059cacd097e539dbe4ab450dc/pymssql-2.3.0-cp36-cp36m-macosx_10_14_x86_64.whl
+[2024-04-07 01:24:36] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.4.1.tar.gz]
+[2024-04-07 01:24:36] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.4.2.tar.gz]
+[2024-04-07 01:24:36] INFO root fetch - main [MainThread]: End processing [vulcan-logger]: success
+[2024-04-07 01:24:37] INFO root fetch - processPackages [bambot]: Remove: archive file [/home/abi/fetcher/tmp/bambot-0.1.0.tar.gz]
+[2024-04-07 01:24:37] INFO root fetch - processPackages [bambot]: Remove: archive file [/home/abi/fetcher/tmp/bambot-0.2.0.tar.gz]
+[2024-04-07 01:24:37] INFO root fetch - main [MainThread]: End processing [bambot]: success
+[2024-04-07 01:24:37] WARNING root fetch - processPackages [pymssql]: Timeout reached during download
+[2024-04-07 01:24:37] INFO root fetch - processPackages [pymssql]: executing diffoscope
+[2024-04-07 01:24:37] INFO root fetch - processPackages [pymssql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymssql-2.2.9.tar.gz tmp/pymssql-2.3.0-cp36-cp36m-macosx_10_14_x86_64.whl.zip --markdown 20240407/p/pymssql/2.2.9-2.3.0/diff.md --exclude *.pyd
+[2024-04-07 01:24:37] INFO root fetch - processPackages [pymssql]: Remove: archive file [/home/abi/fetcher/tmp/pymssql-2.2.9.tar.gz]
+[2024-04-07 01:24:37] INFO root fetch - processPackages [pymssql]: Remove: archive file [/home/abi/fetcher/tmp/pymssql-2.3.0-cp36-cp36m-macosx_10_14_x86_64.whl.zip]
+[2024-04-07 01:24:37] INFO root fetch - main [MainThread]: End processing [pymssql]: success
+[2024-04-07 01:24:37] INFO root fetch - main [MainThread]: Store serial: [22651785]
