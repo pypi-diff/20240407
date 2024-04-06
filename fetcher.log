@@ -1202,3 +1202,22 @@
 [2024-04-07 01:52:51] INFO root fetch - processPackages [chainlo]: Remove: archive file [/home/abi/fetcher/tmp/chainlo-1.1.413.tar.gz]
 [2024-04-07 01:52:51] INFO root fetch - main [MainThread]: End processing [chainlo]: success
 [2024-04-07 01:52:51] INFO root fetch - main [MainThread]: Store serial: [22651899]
+[2024-04-07 01:54:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651899]
+[2024-04-07 01:54:59] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 01:57:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651924]
+[2024-04-07 01:57:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 01:57:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytector
+[2024-04-07 01:57:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-dynamic-theme
+[2024-04-07 01:57:06] WARNING root fetch - processPackages [pytector]: Skipping, unable to determine old version
+[2024-04-07 01:57:06] INFO root fetch - main [MainThread]: End processing [pytector] error
+[2024-04-07 01:57:06] INFO root fetch - processPackages [django-dynamic-theme]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 01:57:06] INFO root fetch - processPackages [django-dynamic-theme]: Downloading https://files.pythonhosted.org/packages/ef/c5/15072b85753a338ac4fe43e36c21c4febece46cd33bc1a7f7c7516105a90/django_dynamic_theme-0.0.2.tar.gz
+[2024-04-07 01:57:06] WARNING root fetch - processPackages [django-dynamic-theme]: Timeout reached during download
+[2024-04-07 01:57:07] INFO root fetch - processPackages [django-dynamic-theme]: Downloading https://files.pythonhosted.org/packages/97/d4/64fac5dd1990a3722f7f1e562b058560a7b674fa246407b12ce06d390930/django_dynamic_theme-0.0.3.tar.gz
+[2024-04-07 01:57:07] WARNING root fetch - processPackages [django-dynamic-theme]: Timeout reached during download
+[2024-04-07 01:57:07] INFO root fetch - processPackages [django-dynamic-theme]: executing diffoscope
+[2024-04-07 01:57:07] INFO root fetch - processPackages [django-dynamic-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_dynamic_theme-0.0.2.tar.gz tmp/django_dynamic_theme-0.0.3.tar.gz --markdown 20240407/d/django-dynamic-theme/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 01:57:07] INFO root fetch - processPackages [django-dynamic-theme]: Remove: archive file [/home/abi/fetcher/tmp/django_dynamic_theme-0.0.2.tar.gz]
+[2024-04-07 01:57:07] INFO root fetch - processPackages [django-dynamic-theme]: Remove: archive file [/home/abi/fetcher/tmp/django_dynamic_theme-0.0.3.tar.gz]
+[2024-04-07 01:57:07] INFO root fetch - main [MainThread]: End processing [django-dynamic-theme]: success
+[2024-04-07 01:57:07] INFO root fetch - main [MainThread]: Store serial: [22651931]
