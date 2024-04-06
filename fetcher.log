@@ -1163,3 +1163,42 @@
 [2024-04-07 01:50:40] INFO root fetch - processPackages [cpop]: Remove: archive file [/home/abi/fetcher/tmp/cpop-32.0.0.tar.gz]
 [2024-04-07 01:50:40] INFO root fetch - main [MainThread]: End processing [cpop]: success
 [2024-04-07 01:50:40] INFO root fetch - main [MainThread]: Store serial: [22651884]
+[2024-04-07 01:52:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651884]
+[2024-04-07 01:52:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 01:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pop-cli
+[2024-04-07 01:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chainlo
+[2024-04-07 01:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ffxiv_stats
+[2024-04-07 01:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xxh-xxh
+[2024-04-07 01:52:48] INFO root fetch - processPackages [ffxiv_stats]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-07 01:52:48] INFO root fetch - processPackages [chainlo]: New version: [1.1.413] Old Version: [1.1.412]
+[2024-04-07 01:52:48] INFO root fetch - processPackages [ffxiv_stats]: Downloading https://files.pythonhosted.org/packages/40/93/88cbb40b0e8088728e691f58afda242af201113348ce2f4ce320b9462539/ffxiv_stats-0.4.1.tar.gz
+[2024-04-07 01:52:48] WARNING root fetch - processPackages [pop-cli]: Skipping, unable to determine old version
+[2024-04-07 01:52:48] INFO root fetch - main [MainThread]: End processing [pop-cli] error
+[2024-04-07 01:52:48] INFO root fetch - processPackages [xxh-xxh]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-04-07 01:52:48] INFO root fetch - processPackages [chainlo]: Downloading https://files.pythonhosted.org/packages/b4/48/67a03c173ba4d78a201b3d6b68f9effface5b56992b748b79e477328bfc3/chainlo-1.1.412.tar.gz
+[2024-04-07 01:52:48] WARNING root fetch - processPackages [ffxiv_stats]: Timeout reached during download
+[2024-04-07 01:52:49] INFO root fetch - processPackages [xxh-xxh]: Downloading https://files.pythonhosted.org/packages/21/10/ecf32b1205e9e5be1eeb0e9f9bac665d1c978d2ae2c8c1c54e2d4945f8f0/xxh-xxh-0.8.8.tar.gz
+[2024-04-07 01:52:49] INFO root fetch - processPackages [ffxiv_stats]: Downloading https://files.pythonhosted.org/packages/39/60/1067fc67a247e2e1ee596b3300fb10ea38ba0757d41eb82b9c6db29451d3/ffxiv_stats-0.4.2.tar.gz
+[2024-04-07 01:52:49] WARNING root fetch - processPackages [chainlo]: Timeout reached during download
+[2024-04-07 01:52:49] WARNING root fetch - processPackages [ffxiv_stats]: Timeout reached during download
+[2024-04-07 01:52:49] INFO root fetch - processPackages [ffxiv_stats]: executing diffoscope
+[2024-04-07 01:52:49] INFO root fetch - processPackages [ffxiv_stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ffxiv_stats-0.4.1.tar.gz tmp/ffxiv_stats-0.4.2.tar.gz --markdown 20240407/f/ffxiv_stats/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2024-04-07 01:52:49] INFO root fetch - processPackages [chainlo]: Downloading https://files.pythonhosted.org/packages/33/dc/2f4550d25f4e1a296d2327798c089892edca9c448bc04cdec31ff3fedcea/chainlo-1.1.413.tar.gz
+[2024-04-07 01:52:49] WARNING root fetch - processPackages [xxh-xxh]: Timeout reached during download
+[2024-04-07 01:52:49] WARNING root fetch - processPackages [chainlo]: Timeout reached during download
+[2024-04-07 01:52:49] INFO root fetch - processPackages [chainlo]: executing diffoscope
+[2024-04-07 01:52:49] INFO root fetch - processPackages [chainlo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainlo-1.1.412.tar.gz tmp/chainlo-1.1.413.tar.gz --markdown 20240407/c/chainlo/1.1.412-1.1.413/diff.md --exclude *.pyd
+[2024-04-07 01:52:49] INFO root fetch - processPackages [xxh-xxh]: Downloading https://files.pythonhosted.org/packages/7a/43/5be60206c870b9a0e7091ed5204ed63fb03b12780f52c10c94e1451db7ec/xxh-xxh-0.8.9.tar.gz
+[2024-04-07 01:52:50] WARNING root fetch - processPackages [xxh-xxh]: Timeout reached during download
+[2024-04-07 01:52:50] INFO root fetch - processPackages [xxh-xxh]: executing diffoscope
+[2024-04-07 01:52:50] INFO root fetch - processPackages [xxh-xxh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xxh-xxh-0.8.8.tar.gz tmp/xxh-xxh-0.8.9.tar.gz --markdown 20240407/x/xxh-xxh/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2024-04-07 01:52:50] INFO root fetch - processPackages [ffxiv_stats]: Remove: archive file [/home/abi/fetcher/tmp/ffxiv_stats-0.4.1.tar.gz]
+[2024-04-07 01:52:50] INFO root fetch - processPackages [ffxiv_stats]: Remove: archive file [/home/abi/fetcher/tmp/ffxiv_stats-0.4.2.tar.gz]
+[2024-04-07 01:52:50] INFO root fetch - main [MainThread]: End processing [ffxiv_stats]: success
+[2024-04-07 01:52:50] INFO root fetch - processPackages [xxh-xxh]: Remove: archive file [/home/abi/fetcher/tmp/xxh-xxh-0.8.8.tar.gz]
+[2024-04-07 01:52:50] INFO root fetch - processPackages [xxh-xxh]: Remove: archive file [/home/abi/fetcher/tmp/xxh-xxh-0.8.9.tar.gz]
+[2024-04-07 01:52:50] INFO root fetch - main [MainThread]: End processing [xxh-xxh]: success
+[2024-04-07 01:52:51] INFO root fetch - processPackages [chainlo]: Remove: archive file [/home/abi/fetcher/tmp/chainlo-1.1.412.tar.gz]
+[2024-04-07 01:52:51] INFO root fetch - processPackages [chainlo]: Remove: archive file [/home/abi/fetcher/tmp/chainlo-1.1.413.tar.gz]
+[2024-04-07 01:52:51] INFO root fetch - main [MainThread]: End processing [chainlo]: success
+[2024-04-07 01:52:51] INFO root fetch - main [MainThread]: Store serial: [22651899]
