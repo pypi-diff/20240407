@@ -490,3 +490,55 @@
 [2024-04-07 00:47:42] INFO root fetch - processPackages [nuon]: Remove: archive file [/home/abi/fetcher/tmp/nuon-0.19.90.tar.gz]
 [2024-04-07 00:47:42] INFO root fetch - main [MainThread]: End processing [nuon]: success
 [2024-04-07 00:47:42] INFO root fetch - main [MainThread]: Store serial: [22651642]
+[2024-04-07 00:49:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651642]
+[2024-04-07 00:49:50] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 00:49:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ultralytics
+[2024-04-07 00:49:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xibabel
+[2024-04-07 00:49:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-azure-communication-email
+[2024-04-07 00:49:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rp
+[2024-04-07 00:49:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyrtz2
+[2024-04-07 00:49:51] INFO root fetch - processPackages [xibabel]: New version: [0.0.1b1] Old Version: [0.0.1a3]
+[2024-04-07 00:49:51] INFO root fetch - processPackages [rp]: New version: [0.1.999] Old Version: [0.1.998]
+[2024-04-07 00:49:51] INFO root fetch - processPackages [django-azure-communication-email]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-04-07 00:49:51] INFO root fetch - processPackages [pyrtz2]: New version: [1.1.21] Old Version: [1.1.20]
+[2024-04-07 00:49:51] INFO root fetch - processPackages [ultralytics]: New version: [8.1.9] Old Version: [8.1.8]
+[2024-04-07 00:49:51] INFO root fetch - processPackages [rp]: Downloading https://files.pythonhosted.org/packages/97/b0/bbb87ca94637473610e58828e8e7e0307bbbbd99a7ad7b0ce8abf94b5e15/rp-0.1.998.tar.gz
+[2024-04-07 00:49:51] INFO root fetch - processPackages [xibabel]: Downloading https://files.pythonhosted.org/packages/80/4a/0f46fef465114a2fe74fea3895fde47a3c18a56fb2b1aa17947a81f68ed0/xibabel-0.0.1a3.tar.gz
+[2024-04-07 00:49:51] WARNING root fetch - processPackages [rp]: Skipping package: exceeds size limit 16581479>=10485760
+[2024-04-07 00:49:51] INFO root fetch - main [MainThread]: End processing [rp] error
+[2024-04-07 00:49:51] INFO root fetch - processPackages [django-azure-communication-email]: Downloading https://files.pythonhosted.org/packages/45/05/24141ef702b41afdaf1bb55aab056ecb3722007f728f11c1bd57ea9e743a/django_azure_communication_email-1.0.1.tar.gz
+[2024-04-07 00:49:51] WARNING root fetch - processPackages [xibabel]: Timeout reached during download
+[2024-04-07 00:49:51] INFO root fetch - processPackages [pyrtz2]: Downloading https://files.pythonhosted.org/packages/91/41/22460307120512c8d633d78063a7ce7cc284e9e68f1273506b70acad3c5b/pyrtz2-1.1.20.tar.gz
+[2024-04-07 00:49:51] INFO root fetch - processPackages [ultralytics]: Downloading https://files.pythonhosted.org/packages/2c/9f/b8fbc96b626cd7fa56aa383ed824b5475ef86c22efaa5bc701992f8a5b12/ultralytics-8.1.8.tar.gz
+[2024-04-07 00:49:51] INFO root fetch - processPackages [xibabel]: Downloading https://files.pythonhosted.org/packages/14/de/f70aa6ab216836b90146200c3647698f47fa1039dc55df60a5224cb0cf08/xibabel-0.0.1b1.tar.gz
+[2024-04-07 00:49:51] WARNING root fetch - processPackages [django-azure-communication-email]: Timeout reached during download
+[2024-04-07 00:49:51] WARNING root fetch - processPackages [xibabel]: Timeout reached during download
+[2024-04-07 00:49:51] INFO root fetch - processPackages [xibabel]: executing diffoscope
+[2024-04-07 00:49:51] INFO root fetch - processPackages [xibabel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xibabel-0.0.1a3.tar.gz tmp/xibabel-0.0.1b1.tar.gz --markdown 20240407/x/xibabel/0.0.1a3-0.0.1b1/diff.md --exclude *.pyd
+[2024-04-07 00:49:51] INFO root fetch - processPackages [django-azure-communication-email]: Downloading https://files.pythonhosted.org/packages/65/81/fea90b2c89691c2b15e4493b591e21db8294227157fc8259a0f74ef780e8/django_azure_communication_email-1.1.0.tar.gz
+[2024-04-07 00:49:51] WARNING root fetch - processPackages [ultralytics]: Timeout reached during download
+[2024-04-07 00:49:51] WARNING root fetch - processPackages [pyrtz2]: Timeout reached during download
+[2024-04-07 00:49:51] WARNING root fetch - processPackages [django-azure-communication-email]: Timeout reached during download
+[2024-04-07 00:49:51] INFO root fetch - processPackages [django-azure-communication-email]: executing diffoscope
+[2024-04-07 00:49:51] INFO root fetch - processPackages [django-azure-communication-email]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_azure_communication_email-1.0.1.tar.gz tmp/django_azure_communication_email-1.1.0.tar.gz --markdown 20240407/d/django-azure-communication-email/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2024-04-07 00:49:51] INFO root fetch - processPackages [ultralytics]: Downloading https://files.pythonhosted.org/packages/70/2c/d7de774dece06044c0162dcf39caf5794871e45144cda9998425196f776f/ultralytics-8.1.9.tar.gz
+[2024-04-07 00:49:51] INFO root fetch - processPackages [pyrtz2]: Downloading https://files.pythonhosted.org/packages/64/e5/d25dec727eeaa2e3048d777382d7aaf491344243f6fb191a0258f9108b64/pyrtz2-1.1.21-py3-none-any.whl
+[2024-04-07 00:49:52] WARNING root fetch - processPackages [ultralytics]: Timeout reached during download
+[2024-04-07 00:49:52] INFO root fetch - processPackages [ultralytics]: executing diffoscope
+[2024-04-07 00:49:52] INFO root fetch - processPackages [ultralytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultralytics-8.1.8.tar.gz tmp/ultralytics-8.1.9.tar.gz --markdown 20240407/u/ultralytics/8.1.8-8.1.9/diff.md --exclude *.pyd
+[2024-04-07 00:49:52] INFO root fetch - processPackages [xibabel]: Remove: archive file [/home/abi/fetcher/tmp/xibabel-0.0.1a3.tar.gz]
+[2024-04-07 00:49:52] INFO root fetch - processPackages [xibabel]: Remove: archive file [/home/abi/fetcher/tmp/xibabel-0.0.1b1.tar.gz]
+[2024-04-07 00:49:52] INFO root fetch - main [MainThread]: End processing [xibabel]: success
+[2024-04-07 00:49:52] INFO root fetch - processPackages [django-azure-communication-email]: Remove: archive file [/home/abi/fetcher/tmp/django_azure_communication_email-1.0.1.tar.gz]
+[2024-04-07 00:49:52] INFO root fetch - processPackages [django-azure-communication-email]: Remove: archive file [/home/abi/fetcher/tmp/django_azure_communication_email-1.1.0.tar.gz]
+[2024-04-07 00:49:52] INFO root fetch - main [MainThread]: End processing [django-azure-communication-email]: success
+[2024-04-07 00:49:52] WARNING root fetch - processPackages [pyrtz2]: Timeout reached during download
+[2024-04-07 00:49:52] INFO root fetch - processPackages [pyrtz2]: executing diffoscope
+[2024-04-07 00:49:52] INFO root fetch - processPackages [pyrtz2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrtz2-1.1.20.tar.gz tmp/pyrtz2-1.1.21-py3-none-any.whl.zip --markdown 20240407/p/pyrtz2/1.1.20-1.1.21/diff.md --exclude *.pyd
+[2024-04-07 00:49:53] INFO root fetch - processPackages [pyrtz2]: Remove: archive file [/home/abi/fetcher/tmp/pyrtz2-1.1.20.tar.gz]
+[2024-04-07 00:49:53] INFO root fetch - processPackages [pyrtz2]: Remove: archive file [/home/abi/fetcher/tmp/pyrtz2-1.1.21-py3-none-any.whl.zip]
+[2024-04-07 00:49:53] INFO root fetch - main [MainThread]: End processing [pyrtz2]: success
+[2024-04-07 00:49:53] INFO root fetch - processPackages [ultralytics]: Remove: archive file [/home/abi/fetcher/tmp/ultralytics-8.1.8.tar.gz]
+[2024-04-07 00:49:53] INFO root fetch - processPackages [ultralytics]: Remove: archive file [/home/abi/fetcher/tmp/ultralytics-8.1.9.tar.gz]
+[2024-04-07 00:49:53] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
+[2024-04-07 00:49:53] INFO root fetch - main [MainThread]: Store serial: [22651652]
