@@ -465,3 +465,28 @@
 [2024-04-07 00:45:29] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.61.tar.gz]
 [2024-04-07 00:45:29] INFO root fetch - main [MainThread]: End processing [pyroblack]: success
 [2024-04-07 00:45:29] INFO root fetch - main [MainThread]: Store serial: [22651637]
+[2024-04-07 00:47:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651637]
+[2024-04-07 00:47:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 00:47:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nuon
+[2024-04-07 00:47:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deltachat-faqbot
+[2024-04-07 00:47:39] INFO root fetch - processPackages [nuon]: New version: [0.19.90] Old Version: [0.19.88]
+[2024-04-07 00:47:39] INFO root fetch - processPackages [deltachat-faqbot]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-07 00:47:39] INFO root fetch - processPackages [nuon]: Downloading https://files.pythonhosted.org/packages/04/72/2a330fe129663376c872d649c386e26dd209995888ee9c6420e0ca77e538/nuon-0.19.88.tar.gz
+[2024-04-07 00:47:39] INFO root fetch - processPackages [deltachat-faqbot]: Downloading https://files.pythonhosted.org/packages/82/40/d8f71fc841c9168b5400ecb3500a3ed62f304231749055bd27c701dc0213/deltachat_faqbot-0.4.0-py3-none-any.whl
+[2024-04-07 00:47:40] WARNING root fetch - processPackages [deltachat-faqbot]: Timeout reached during download
+[2024-04-07 00:47:40] WARNING root fetch - processPackages [nuon]: Timeout reached during download
+[2024-04-07 00:47:40] INFO root fetch - processPackages [deltachat-faqbot]: Downloading https://files.pythonhosted.org/packages/6d/3e/ada5944c6f6143242ed7d23b90408f5ab9c3e2ce3f489eb95751a30ed32d/deltachat_faqbot-0.5.0-py3-none-any.whl
+[2024-04-07 00:47:40] INFO root fetch - processPackages [nuon]: Downloading https://files.pythonhosted.org/packages/72/e6/70302b9110d3ae95c373143ec2ce0290ed12e4fbba5f6634687f7a260777/nuon-0.19.90.tar.gz
+[2024-04-07 00:47:40] WARNING root fetch - processPackages [deltachat-faqbot]: Timeout reached during download
+[2024-04-07 00:47:40] INFO root fetch - processPackages [deltachat-faqbot]: executing diffoscope
+[2024-04-07 00:47:40] INFO root fetch - processPackages [deltachat-faqbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltachat_faqbot-0.4.0-py3-none-any.whl.zip tmp/deltachat_faqbot-0.5.0-py3-none-any.whl.zip --markdown 20240407/d/deltachat-faqbot/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2024-04-07 00:47:40] WARNING root fetch - processPackages [nuon]: Timeout reached during download
+[2024-04-07 00:47:40] INFO root fetch - processPackages [nuon]: executing diffoscope
+[2024-04-07 00:47:40] INFO root fetch - processPackages [nuon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nuon-0.19.88.tar.gz tmp/nuon-0.19.90.tar.gz --markdown 20240407/n/nuon/0.19.88-0.19.90/diff.md --exclude *.pyd
+[2024-04-07 00:47:41] INFO root fetch - processPackages [deltachat-faqbot]: Remove: archive file [/home/abi/fetcher/tmp/deltachat_faqbot-0.4.0-py3-none-any.whl.zip]
+[2024-04-07 00:47:41] INFO root fetch - processPackages [deltachat-faqbot]: Remove: archive file [/home/abi/fetcher/tmp/deltachat_faqbot-0.5.0-py3-none-any.whl.zip]
+[2024-04-07 00:47:41] INFO root fetch - main [MainThread]: End processing [deltachat-faqbot]: success
+[2024-04-07 00:47:42] INFO root fetch - processPackages [nuon]: Remove: archive file [/home/abi/fetcher/tmp/nuon-0.19.88.tar.gz]
+[2024-04-07 00:47:42] INFO root fetch - processPackages [nuon]: Remove: archive file [/home/abi/fetcher/tmp/nuon-0.19.90.tar.gz]
+[2024-04-07 00:47:42] INFO root fetch - main [MainThread]: End processing [nuon]: success
+[2024-04-07 00:47:42] INFO root fetch - main [MainThread]: Store serial: [22651642]
