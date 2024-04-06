@@ -1221,3 +1221,28 @@
 [2024-04-07 01:57:07] INFO root fetch - processPackages [django-dynamic-theme]: Remove: archive file [/home/abi/fetcher/tmp/django_dynamic_theme-0.0.3.tar.gz]
 [2024-04-07 01:57:07] INFO root fetch - main [MainThread]: End processing [django-dynamic-theme]: success
 [2024-04-07 01:57:07] INFO root fetch - main [MainThread]: Store serial: [22651931]
+[2024-04-07 01:59:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651931]
+[2024-04-07 01:59:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 01:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: awsecr
+[2024-04-07 01:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gguf-connector
+[2024-04-07 01:59:16] INFO root fetch - processPackages [gguf-connector]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-07 01:59:16] INFO root fetch - processPackages [awsecr]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-07 01:59:16] INFO root fetch - processPackages [awsecr]: Downloading https://files.pythonhosted.org/packages/6c/e1/e5902b8bd6c70c88252b904b56330925e21f5dce9523c4ada7fdc712bfb3/awsecr-0.5.0.tar.gz
+[2024-04-07 01:59:16] INFO root fetch - processPackages [gguf-connector]: Downloading https://files.pythonhosted.org/packages/4e/c2/08f2cd0b156a16296c2279074113989e3762b7ef1ae47820fc4326010569/gguf_connector-0.7.8.tar.gz
+[2024-04-07 01:59:16] WARNING root fetch - processPackages [awsecr]: Timeout reached during download
+[2024-04-07 01:59:16] WARNING root fetch - processPackages [gguf-connector]: Timeout reached during download
+[2024-04-07 01:59:17] INFO root fetch - processPackages [awsecr]: Downloading https://files.pythonhosted.org/packages/d0/06/88be602b1e2851ed6ac975cdf5f7283c2159d4de63e4e71ce5624da57c46/awsecr-0.5.1.tar.gz
+[2024-04-07 01:59:17] INFO root fetch - processPackages [gguf-connector]: Downloading https://files.pythonhosted.org/packages/c5/93/ebcc584e4eb599309af430b8b5eaa29ee085f7ae6cfb7134ca4789e27778/gguf_connector-0.7.9.tar.gz
+[2024-04-07 01:59:17] WARNING root fetch - processPackages [awsecr]: Timeout reached during download
+[2024-04-07 01:59:17] INFO root fetch - processPackages [awsecr]: executing diffoscope
+[2024-04-07 01:59:17] INFO root fetch - processPackages [awsecr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awsecr-0.5.0.tar.gz tmp/awsecr-0.5.1.tar.gz --markdown 20240407/a/awsecr/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2024-04-07 01:59:17] WARNING root fetch - processPackages [gguf-connector]: Timeout reached during download
+[2024-04-07 01:59:17] INFO root fetch - processPackages [gguf-connector]: executing diffoscope
+[2024-04-07 01:59:17] INFO root fetch - processPackages [gguf-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gguf_connector-0.7.8.tar.gz tmp/gguf_connector-0.7.9.tar.gz --markdown 20240407/g/gguf-connector/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2024-04-07 01:59:17] INFO root fetch - processPackages [awsecr]: Remove: archive file [/home/abi/fetcher/tmp/awsecr-0.5.0.tar.gz]
+[2024-04-07 01:59:17] INFO root fetch - processPackages [awsecr]: Remove: archive file [/home/abi/fetcher/tmp/awsecr-0.5.1.tar.gz]
+[2024-04-07 01:59:17] INFO root fetch - main [MainThread]: End processing [awsecr]: success
+[2024-04-07 01:59:17] INFO root fetch - processPackages [gguf-connector]: Remove: archive file [/home/abi/fetcher/tmp/gguf_connector-0.7.8.tar.gz]
+[2024-04-07 01:59:17] INFO root fetch - processPackages [gguf-connector]: Remove: archive file [/home/abi/fetcher/tmp/gguf_connector-0.7.9.tar.gz]
+[2024-04-07 01:59:17] INFO root fetch - main [MainThread]: End processing [gguf-connector]: success
+[2024-04-07 01:59:17] INFO root fetch - main [MainThread]: Store serial: [22651940]
