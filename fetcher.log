@@ -406,3 +406,48 @@
 [2024-04-07 00:36:56] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.7-pp37-pypy37_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip]
 [2024-04-07 00:36:56] INFO root fetch - main [MainThread]: End processing [aws-packages]: success
 [2024-04-07 00:36:56] INFO root fetch - main [MainThread]: Store serial: [22651604]
+[2024-04-07 00:39:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651604]
+[2024-04-07 00:39:04] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 00:41:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651624]
+[2024-04-07 00:41:10] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 00:43:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651624]
+[2024-04-07 00:43:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 00:43:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: octomy-batch
+[2024-04-07 00:43:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vellum-ai
+[2024-04-07 00:43:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rp
+[2024-04-07 00:43:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: netbound
+[2024-04-07 00:43:15] INFO root fetch - processPackages [vellum-ai]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-07 00:43:15] INFO root fetch - processPackages [rp]: New version: [0.1.999] Old Version: [0.1.998]
+[2024-04-07 00:43:15] INFO root fetch - processPackages [octomy-batch]: New version: [2.0.0] Old Version: [1.0.9]
+[2024-04-07 00:43:15] INFO root fetch - processPackages [vellum-ai]: Downloading https://files.pythonhosted.org/packages/78/ae/720d382b9ede37557842d97cf6c0d3aebc8a231a8345d6a89d68671b088f/vellum_ai-0.3.8.tar.gz
+[2024-04-07 00:43:15] INFO root fetch - processPackages [netbound]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 00:43:15] INFO root fetch - processPackages [rp]: Downloading https://files.pythonhosted.org/packages/97/b0/bbb87ca94637473610e58828e8e7e0307bbbbd99a7ad7b0ce8abf94b5e15/rp-0.1.998.tar.gz
+[2024-04-07 00:43:15] WARNING root fetch - processPackages [rp]: Skipping package: exceeds size limit 16581479>=10485760
+[2024-04-07 00:43:15] INFO root fetch - main [MainThread]: End processing [rp] error
+[2024-04-07 00:43:15] WARNING root fetch - processPackages [vellum-ai]: Timeout reached during download
+[2024-04-07 00:43:15] INFO root fetch - processPackages [netbound]: Downloading https://files.pythonhosted.org/packages/9c/ee/f89027b09e67ef76da5b4193174903df8d97c42510bc6e06d0cb30c508a2/netbound-0.1.8.tar.gz
+[2024-04-07 00:43:15] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/8f/b8/f40cfe3726cf0445df314a72fd0bf3691aaea93fd6b6cec9b432b9ec0236/octomy-batch-1.0.9.tar.gz
+[2024-04-07 00:43:15] INFO root fetch - processPackages [vellum-ai]: Downloading https://files.pythonhosted.org/packages/bf/5a/2c938e0073e88220605a43e67a92e6c57f274bcaee9d8d1b369db835cd0c/vellum_ai-0.3.9.tar.gz
+[2024-04-07 00:43:15] WARNING root fetch - processPackages [netbound]: Timeout reached during download
+[2024-04-07 00:43:15] WARNING root fetch - processPackages [vellum-ai]: Timeout reached during download
+[2024-04-07 00:43:15] INFO root fetch - processPackages [vellum-ai]: executing diffoscope
+[2024-04-07 00:43:15] INFO root fetch - processPackages [vellum-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vellum_ai-0.3.8.tar.gz tmp/vellum_ai-0.3.9.tar.gz --markdown 20240407/v/vellum-ai/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-07 00:43:15] WARNING root fetch - processPackages [octomy-batch]: Timeout reached during download
+[2024-04-07 00:43:16] INFO root fetch - processPackages [netbound]: Downloading https://files.pythonhosted.org/packages/e1/c7/9bed379e99d5f984cf1fa304c3bebcf19b87ce8e3507b5ee0028fae5631f/netbound-0.1.9.tar.gz
+[2024-04-07 00:43:16] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/ed/44/0c3632796827aed6e9f67ff7cb7f6cee8d5bb9c35dc6ca0d6ee2b5ee639d/octomy-batch-2.0.0.tar.gz
+[2024-04-07 00:43:16] WARNING root fetch - processPackages [netbound]: Timeout reached during download
+[2024-04-07 00:43:16] INFO root fetch - processPackages [netbound]: executing diffoscope
+[2024-04-07 00:43:16] INFO root fetch - processPackages [netbound]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbound-0.1.8.tar.gz tmp/netbound-0.1.9.tar.gz --markdown 20240407/n/netbound/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 00:43:16] WARNING root fetch - processPackages [octomy-batch]: Timeout reached during download
+[2024-04-07 00:43:16] INFO root fetch - processPackages [octomy-batch]: executing diffoscope
+[2024-04-07 00:43:16] INFO root fetch - processPackages [octomy-batch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-batch-1.0.9.tar.gz tmp/octomy-batch-2.0.0.tar.gz --markdown 20240407/o/octomy-batch/1.0.9-2.0.0/diff.md --exclude *.pyd
+[2024-04-07 00:43:16] INFO root fetch - processPackages [netbound]: Remove: archive file [/home/abi/fetcher/tmp/netbound-0.1.8.tar.gz]
+[2024-04-07 00:43:16] INFO root fetch - processPackages [netbound]: Remove: archive file [/home/abi/fetcher/tmp/netbound-0.1.9.tar.gz]
+[2024-04-07 00:43:16] INFO root fetch - main [MainThread]: End processing [netbound]: success
+[2024-04-07 00:43:16] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-1.0.9.tar.gz]
+[2024-04-07 00:43:16] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.0.tar.gz]
+[2024-04-07 00:43:16] INFO root fetch - main [MainThread]: End processing [octomy-batch]: success
+[2024-04-07 00:43:17] INFO root fetch - processPackages [vellum-ai]: Remove: archive file [/home/abi/fetcher/tmp/vellum_ai-0.3.8.tar.gz]
+[2024-04-07 00:43:17] INFO root fetch - processPackages [vellum-ai]: Remove: archive file [/home/abi/fetcher/tmp/vellum_ai-0.3.9.tar.gz]
+[2024-04-07 00:43:17] INFO root fetch - main [MainThread]: End processing [vellum-ai]: success
+[2024-04-07 00:43:17] INFO root fetch - main [MainThread]: Store serial: [22651634]
