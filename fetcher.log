@@ -253,3 +253,31 @@
 [2024-04-07 00:23:57] INFO root fetch - processPackages [nexus-cat]: Remove: archive file [/home/abi/fetcher/tmp/nexus-cat-0.1.1.tar.gz]
 [2024-04-07 00:23:57] INFO root fetch - main [MainThread]: End processing [nexus-cat]: success
 [2024-04-07 00:23:57] INFO root fetch - main [MainThread]: Store serial: [22651500]
+[2024-04-07 00:26:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651500]
+[2024-04-07 00:26:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 00:26:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vivintpy
+[2024-04-07 00:26:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: medimage-pkg
+[2024-04-07 00:26:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smolt
+[2024-04-07 00:26:05] WARNING root fetch - processPackages [medimage-pkg]: Skipping, unable to determine old version
+[2024-04-07 00:26:05] INFO root fetch - main [MainThread]: End processing [medimage-pkg] error
+[2024-04-07 00:26:06] INFO root fetch - processPackages [vivintpy]: New version: [2023.3.9] Old Version: [2023.3.8]
+[2024-04-07 00:26:06] INFO root fetch - processPackages [smolt]: New version: [0.2] Old Version: [0.1]
+[2024-04-07 00:26:06] INFO root fetch - processPackages [vivintpy]: Downloading https://files.pythonhosted.org/packages/3f/d9/3fedf2aa62813c782431ab8edbc52a5316213910c480bae14aee2477592f/vivintpy-2023.3.8.tar.gz
+[2024-04-07 00:26:06] INFO root fetch - processPackages [smolt]: Downloading https://files.pythonhosted.org/packages/54/c4/fedce1abcdfec95283cfaa14e54e009aac798b039c92283e2c268cf8e53f/smolt-0.1.tar.gz
+[2024-04-07 00:26:07] WARNING root fetch - processPackages [smolt]: Timeout reached during download
+[2024-04-07 00:26:07] WARNING root fetch - processPackages [vivintpy]: Timeout reached during download
+[2024-04-07 00:26:07] INFO root fetch - processPackages [vivintpy]: Downloading https://files.pythonhosted.org/packages/4c/89/27b3c49db1dc9273397bef6b2bc649b8238048587d874b512ff176e34b99/vivintpy-2023.3.9.tar.gz
+[2024-04-07 00:26:08] INFO root fetch - processPackages [smolt]: Downloading https://files.pythonhosted.org/packages/80/34/36830797aac4021842f51081d044a6b0cb19a10a482259f0ddfa9b9bb8da/smolt-0.2.tar.gz
+[2024-04-07 00:26:08] WARNING root fetch - processPackages [vivintpy]: Timeout reached during download
+[2024-04-07 00:26:08] INFO root fetch - processPackages [vivintpy]: executing diffoscope
+[2024-04-07 00:26:08] INFO root fetch - processPackages [vivintpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vivintpy-2023.3.8.tar.gz tmp/vivintpy-2023.3.9.tar.gz --markdown 20240407/v/vivintpy/2023.3.8-2023.3.9/diff.md --exclude *.pyd
+[2024-04-07 00:26:08] WARNING root fetch - processPackages [smolt]: Timeout reached during download
+[2024-04-07 00:26:08] INFO root fetch - processPackages [smolt]: executing diffoscope
+[2024-04-07 00:26:08] INFO root fetch - processPackages [smolt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smolt-0.1.tar.gz tmp/smolt-0.2.tar.gz --markdown 20240407/s/smolt/0.1-0.2/diff.md --exclude *.pyd
+[2024-04-07 00:26:08] INFO root fetch - processPackages [smolt]: Remove: archive file [/home/abi/fetcher/tmp/smolt-0.1.tar.gz]
+[2024-04-07 00:26:08] INFO root fetch - processPackages [smolt]: Remove: archive file [/home/abi/fetcher/tmp/smolt-0.2.tar.gz]
+[2024-04-07 00:26:08] INFO root fetch - main [MainThread]: End processing [smolt]: success
+[2024-04-07 00:26:08] INFO root fetch - processPackages [vivintpy]: Remove: archive file [/home/abi/fetcher/tmp/vivintpy-2023.3.8.tar.gz]
+[2024-04-07 00:26:08] INFO root fetch - processPackages [vivintpy]: Remove: archive file [/home/abi/fetcher/tmp/vivintpy-2023.3.9.tar.gz]
+[2024-04-07 00:26:08] INFO root fetch - main [MainThread]: End processing [vivintpy]: success
+[2024-04-07 00:26:08] INFO root fetch - main [MainThread]: Store serial: [22651512]
