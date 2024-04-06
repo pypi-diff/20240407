@@ -542,3 +542,33 @@
 [2024-04-07 00:49:53] INFO root fetch - processPackages [ultralytics]: Remove: archive file [/home/abi/fetcher/tmp/ultralytics-8.1.9.tar.gz]
 [2024-04-07 00:49:53] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
 [2024-04-07 00:49:53] INFO root fetch - main [MainThread]: Store serial: [22651652]
+[2024-04-07 00:51:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651652]
+[2024-04-07 00:52:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 00:52:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrtz2
+[2024-04-07 00:52:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkdocs-alias-plugin
+[2024-04-07 00:52:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: transit2
+[2024-04-07 00:52:01] INFO root fetch - processPackages [transit2]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-07 00:52:01] INFO root fetch - processPackages [pyrtz2]: New version: [1.1.21] Old Version: [1.1.20]
+[2024-04-07 00:52:01] INFO root fetch - processPackages [mkdocs-alias-plugin]: New version: [0.8.0] Old Version: [0.7.1]
+[2024-04-07 00:52:01] INFO root fetch - processPackages [pyrtz2]: Downloading https://files.pythonhosted.org/packages/91/41/22460307120512c8d633d78063a7ce7cc284e9e68f1273506b70acad3c5b/pyrtz2-1.1.20.tar.gz
+[2024-04-07 00:52:01] INFO root fetch - processPackages [transit2]: Downloading https://files.pythonhosted.org/packages/5b/da/e76a18ef4b158a6682fd59588bf1bbce15437ccbb18eec6f351db60c6ec5/transit2-1.0.8.tar.gz
+[2024-04-07 00:52:01] WARNING root fetch - processPackages [transit2]: Skipping package: exceeds size limit 83779554>=10485760
+[2024-04-07 00:52:01] INFO root fetch - main [MainThread]: End processing [transit2] error
+[2024-04-07 00:52:01] INFO root fetch - processPackages [mkdocs-alias-plugin]: Downloading https://files.pythonhosted.org/packages/c5/9c/b8532c1e03f6961d3d1c2680c88ab7f298275e5b2bd8b3a81901458eecfa/mkdocs-alias-plugin-0.7.1.tar.gz
+[2024-04-07 00:52:02] WARNING root fetch - processPackages [mkdocs-alias-plugin]: Timeout reached during download
+[2024-04-07 00:52:02] WARNING root fetch - processPackages [pyrtz2]: Timeout reached during download
+[2024-04-07 00:52:02] INFO root fetch - processPackages [mkdocs-alias-plugin]: Downloading https://files.pythonhosted.org/packages/62/a5/2f281f1b6ea2864350a9432c1a823231c65608b3c60b991ebe535684641d/mkdocs-alias-plugin-0.8.0.tar.gz
+[2024-04-07 00:52:02] INFO root fetch - processPackages [pyrtz2]: Downloading https://files.pythonhosted.org/packages/64/e5/d25dec727eeaa2e3048d777382d7aaf491344243f6fb191a0258f9108b64/pyrtz2-1.1.21-py3-none-any.whl
+[2024-04-07 00:52:02] WARNING root fetch - processPackages [mkdocs-alias-plugin]: Timeout reached during download
+[2024-04-07 00:52:02] INFO root fetch - processPackages [mkdocs-alias-plugin]: executing diffoscope
+[2024-04-07 00:52:02] INFO root fetch - processPackages [mkdocs-alias-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-alias-plugin-0.7.1.tar.gz tmp/mkdocs-alias-plugin-0.8.0.tar.gz --markdown 20240407/m/mkdocs-alias-plugin/0.7.1-0.8.0/diff.md --exclude *.pyd
+[2024-04-07 00:52:02] WARNING root fetch - processPackages [pyrtz2]: Timeout reached during download
+[2024-04-07 00:52:02] INFO root fetch - processPackages [pyrtz2]: executing diffoscope
+[2024-04-07 00:52:02] INFO root fetch - processPackages [pyrtz2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrtz2-1.1.20.tar.gz tmp/pyrtz2-1.1.21-py3-none-any.whl.zip --markdown 20240407/p/pyrtz2/1.1.20-1.1.21/diff.md --exclude *.pyd
+[2024-04-07 00:52:02] INFO root fetch - processPackages [mkdocs-alias-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-alias-plugin-0.7.1.tar.gz]
+[2024-04-07 00:52:02] INFO root fetch - processPackages [mkdocs-alias-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-alias-plugin-0.8.0.tar.gz]
+[2024-04-07 00:52:02] INFO root fetch - main [MainThread]: End processing [mkdocs-alias-plugin]: success
+[2024-04-07 00:52:03] INFO root fetch - processPackages [pyrtz2]: Remove: archive file [/home/abi/fetcher/tmp/pyrtz2-1.1.20.tar.gz]
+[2024-04-07 00:52:03] INFO root fetch - processPackages [pyrtz2]: Remove: archive file [/home/abi/fetcher/tmp/pyrtz2-1.1.21-py3-none-any.whl.zip]
+[2024-04-07 00:52:03] INFO root fetch - main [MainThread]: End processing [pyrtz2]: success
+[2024-04-07 00:52:03] INFO root fetch - main [MainThread]: Store serial: [22651661]
