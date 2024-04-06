@@ -228,3 +228,28 @@
 [2024-04-07 00:21:47] INFO root fetch - processPackages [football-stats-scraper]: Remove: archive file [/home/abi/fetcher/tmp/football_stats_scraper-0.1.6-py3-none-any.whl.zip]
 [2024-04-07 00:21:47] INFO root fetch - main [MainThread]: End processing [football-stats-scraper]: success
 [2024-04-07 00:21:47] INFO root fetch - main [MainThread]: Store serial: [22651494]
+[2024-04-07 00:23:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651494]
+[2024-04-07 00:23:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 00:23:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nexus-cat
+[2024-04-07 00:23:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dekpkglock
+[2024-04-07 00:23:56] INFO root fetch - processPackages [nexus-cat]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-07 00:23:56] INFO root fetch - processPackages [dekpkglock]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-07 00:23:56] INFO root fetch - processPackages [dekpkglock]: Downloading https://files.pythonhosted.org/packages/d3/18/64d1a49119a4aaec23819d6716bf5186ba497e800506bc6479f76438a76a/dekpkglock-0.1.4.tar.gz
+[2024-04-07 00:23:56] INFO root fetch - processPackages [nexus-cat]: Downloading https://files.pythonhosted.org/packages/b8/8d/2130e0a389ca11aa37aec775c0f47abe5aff2299c46aff1d337aa4f348f6/nexus-cat-0.1.0.tar.gz
+[2024-04-07 00:23:56] WARNING root fetch - processPackages [dekpkglock]: Timeout reached during download
+[2024-04-07 00:23:56] WARNING root fetch - processPackages [nexus-cat]: Timeout reached during download
+[2024-04-07 00:23:56] INFO root fetch - processPackages [dekpkglock]: Downloading https://files.pythonhosted.org/packages/7e/3b/24cd519f35e2b96902046d38ce13d18025161f7818162e3335df740637d5/dekpkglock-0.1.5.tar.gz
+[2024-04-07 00:23:56] INFO root fetch - processPackages [nexus-cat]: Downloading https://files.pythonhosted.org/packages/93/43/a7793a6949bf34791fef6f5e770e6ecb8604f0c6890dab3455713e1803f1/nexus-cat-0.1.1.tar.gz
+[2024-04-07 00:23:56] WARNING root fetch - processPackages [dekpkglock]: Timeout reached during download
+[2024-04-07 00:23:56] INFO root fetch - processPackages [dekpkglock]: executing diffoscope
+[2024-04-07 00:23:56] INFO root fetch - processPackages [dekpkglock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dekpkglock-0.1.4.tar.gz tmp/dekpkglock-0.1.5.tar.gz --markdown 20240407/d/dekpkglock/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2024-04-07 00:23:56] WARNING root fetch - processPackages [nexus-cat]: Timeout reached during download
+[2024-04-07 00:23:56] INFO root fetch - processPackages [nexus-cat]: executing diffoscope
+[2024-04-07 00:23:56] INFO root fetch - processPackages [nexus-cat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nexus-cat-0.1.0.tar.gz tmp/nexus-cat-0.1.1.tar.gz --markdown 20240407/n/nexus-cat/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 00:23:57] INFO root fetch - processPackages [dekpkglock]: Remove: archive file [/home/abi/fetcher/tmp/dekpkglock-0.1.4.tar.gz]
+[2024-04-07 00:23:57] INFO root fetch - processPackages [dekpkglock]: Remove: archive file [/home/abi/fetcher/tmp/dekpkglock-0.1.5.tar.gz]
+[2024-04-07 00:23:57] INFO root fetch - main [MainThread]: End processing [dekpkglock]: success
+[2024-04-07 00:23:57] INFO root fetch - processPackages [nexus-cat]: Remove: archive file [/home/abi/fetcher/tmp/nexus-cat-0.1.0.tar.gz]
+[2024-04-07 00:23:57] INFO root fetch - processPackages [nexus-cat]: Remove: archive file [/home/abi/fetcher/tmp/nexus-cat-0.1.1.tar.gz]
+[2024-04-07 00:23:57] INFO root fetch - main [MainThread]: End processing [nexus-cat]: success
+[2024-04-07 00:23:57] INFO root fetch - main [MainThread]: Store serial: [22651500]
