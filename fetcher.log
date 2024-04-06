@@ -844,3 +844,28 @@
 [2024-04-07 01:15:59] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Remove: archive file [/home/abi/fetcher/tmp/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz]
 [2024-04-07 01:15:59] INFO root fetch - main [MainThread]: End processing [sleipnirgroup-jormungandr]: success
 [2024-04-07 01:15:59] INFO root fetch - main [MainThread]: Store serial: [22651762]
+[2024-04-07 01:18:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651762]
+[2024-04-07 01:18:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 01:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: modgeosys-graph-algorithms
+[2024-04-07 01:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deltachat-faqbot
+[2024-04-07 01:18:09] INFO root fetch - processPackages [modgeosys-graph-algorithms]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-07 01:18:09] INFO root fetch - processPackages [deltachat-faqbot]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-07 01:18:09] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Downloading https://files.pythonhosted.org/packages/db/da/3745dcbdb4099ec78980cdd47b9a4bc2b2517d053bc2ddb6e7e056605c66/modgeosys_graph_algorithms-0.2.0.tar.gz
+[2024-04-07 01:18:09] INFO root fetch - processPackages [deltachat-faqbot]: Downloading https://files.pythonhosted.org/packages/82/40/d8f71fc841c9168b5400ecb3500a3ed62f304231749055bd27c701dc0213/deltachat_faqbot-0.4.0-py3-none-any.whl
+[2024-04-07 01:18:09] WARNING root fetch - processPackages [modgeosys-graph-algorithms]: Timeout reached during download
+[2024-04-07 01:18:09] WARNING root fetch - processPackages [deltachat-faqbot]: Timeout reached during download
+[2024-04-07 01:18:09] INFO root fetch - processPackages [deltachat-faqbot]: Downloading https://files.pythonhosted.org/packages/6d/3e/ada5944c6f6143242ed7d23b90408f5ab9c3e2ce3f489eb95751a30ed32d/deltachat_faqbot-0.5.0-py3-none-any.whl
+[2024-04-07 01:18:09] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Downloading https://files.pythonhosted.org/packages/44/a1/ddbf26f5aa5e697fe6248acf939a6924b77050218a3f8013312ed05638c9/modgeosys_graph_algorithms-0.2.1.tar.gz
+[2024-04-07 01:18:09] WARNING root fetch - processPackages [deltachat-faqbot]: Timeout reached during download
+[2024-04-07 01:18:09] INFO root fetch - processPackages [deltachat-faqbot]: executing diffoscope
+[2024-04-07 01:18:09] INFO root fetch - processPackages [deltachat-faqbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltachat_faqbot-0.4.0-py3-none-any.whl.zip tmp/deltachat_faqbot-0.5.0-py3-none-any.whl.zip --markdown 20240407/d/deltachat-faqbot/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2024-04-07 01:18:09] WARNING root fetch - processPackages [modgeosys-graph-algorithms]: Timeout reached during download
+[2024-04-07 01:18:09] INFO root fetch - processPackages [modgeosys-graph-algorithms]: executing diffoscope
+[2024-04-07 01:18:09] INFO root fetch - processPackages [modgeosys-graph-algorithms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modgeosys_graph_algorithms-0.2.0.tar.gz tmp/modgeosys_graph_algorithms-0.2.1.tar.gz --markdown 20240407/m/modgeosys-graph-algorithms/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2024-04-07 01:18:10] INFO root fetch - processPackages [deltachat-faqbot]: Remove: archive file [/home/abi/fetcher/tmp/deltachat_faqbot-0.4.0-py3-none-any.whl.zip]
+[2024-04-07 01:18:10] INFO root fetch - processPackages [deltachat-faqbot]: Remove: archive file [/home/abi/fetcher/tmp/deltachat_faqbot-0.5.0-py3-none-any.whl.zip]
+[2024-04-07 01:18:10] INFO root fetch - main [MainThread]: End processing [deltachat-faqbot]: success
+[2024-04-07 01:18:10] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Remove: archive file [/home/abi/fetcher/tmp/modgeosys_graph_algorithms-0.2.0.tar.gz]
+[2024-04-07 01:18:10] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Remove: archive file [/home/abi/fetcher/tmp/modgeosys_graph_algorithms-0.2.1.tar.gz]
+[2024-04-07 01:18:10] INFO root fetch - main [MainThread]: End processing [modgeosys-graph-algorithms]: success
+[2024-04-07 01:18:10] INFO root fetch - main [MainThread]: Store serial: [22651767]
