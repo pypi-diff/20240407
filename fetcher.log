@@ -869,3 +869,9 @@
 [2024-04-07 01:18:10] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Remove: archive file [/home/abi/fetcher/tmp/modgeosys_graph_algorithms-0.2.1.tar.gz]
 [2024-04-07 01:18:10] INFO root fetch - main [MainThread]: End processing [modgeosys-graph-algorithms]: success
 [2024-04-07 01:18:10] INFO root fetch - main [MainThread]: Store serial: [22651767]
+[2024-04-07 01:20:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651767]
+[2024-04-07 01:20:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 01:20:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pybresenham-tspspi
+[2024-04-07 01:20:18] WARNING root fetch - processPackages [pybresenham-tspspi]: Skipping, unable to determine old version
+[2024-04-07 01:20:18] INFO root fetch - main [MainThread]: End processing [pybresenham-tspspi] error
+[2024-04-07 01:20:18] INFO root fetch - main [MainThread]: Store serial: [22651770]
