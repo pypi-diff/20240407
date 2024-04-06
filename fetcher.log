@@ -875,3 +875,9 @@
 [2024-04-07 01:20:18] WARNING root fetch - processPackages [pybresenham-tspspi]: Skipping, unable to determine old version
 [2024-04-07 01:20:18] INFO root fetch - main [MainThread]: End processing [pybresenham-tspspi] error
 [2024-04-07 01:20:18] INFO root fetch - main [MainThread]: Store serial: [22651770]
+[2024-04-07 01:22:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651770]
+[2024-04-07 01:22:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 01:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: csv_test_package
+[2024-04-07 01:22:27] WARNING root fetch - processPackages [csv_test_package]: Skipping, unable to determine old version
+[2024-04-07 01:22:27] INFO root fetch - main [MainThread]: End processing [csv_test_package] error
+[2024-04-07 01:22:27] INFO root fetch - main [MainThread]: Store serial: [22651775]
