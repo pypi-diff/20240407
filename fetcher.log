@@ -281,3 +281,23 @@
 [2024-04-07 00:26:08] INFO root fetch - processPackages [vivintpy]: Remove: archive file [/home/abi/fetcher/tmp/vivintpy-2023.3.9.tar.gz]
 [2024-04-07 00:26:08] INFO root fetch - main [MainThread]: End processing [vivintpy]: success
 [2024-04-07 00:26:08] INFO root fetch - main [MainThread]: Store serial: [22651512]
+[2024-04-07 00:28:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651512]
+[2024-04-07 00:28:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 00:28:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nexus-cat
+[2024-04-07 00:28:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simple-background-remover
+[2024-04-07 00:28:17] INFO root fetch - processPackages [nexus-cat]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-07 00:28:17] INFO root fetch - processPackages [simple-background-remover]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-07 00:28:17] INFO root fetch - processPackages [nexus-cat]: Downloading https://files.pythonhosted.org/packages/93/43/a7793a6949bf34791fef6f5e770e6ecb8604f0c6890dab3455713e1803f1/nexus-cat-0.1.1.tar.gz
+[2024-04-07 00:28:17] INFO root fetch - processPackages [simple-background-remover]: Downloading https://files.pythonhosted.org/packages/d2/43/8c80bc806d2838ad1475b7779c3220f3938c84e7d5255bcdf60301e52d28/simple_background_remover-0.0.3.tar.gz
+[2024-04-07 00:28:17] WARNING root fetch - processPackages [simple-background-remover]: Timeout reached during download
+[2024-04-07 00:28:17] WARNING root fetch - processPackages [nexus-cat]: Timeout reached during download
+[2024-04-07 00:28:17] ERROR root fetch - processPackages [nexus-cat]: Unable to fetch info: No such project/version 'nexus-cat' 0.1.2
+[2024-04-07 00:28:17] INFO root fetch - main [MainThread]: End processing [nexus-cat] error
+[2024-04-07 00:28:18] INFO root fetch - processPackages [simple-background-remover]: Downloading https://files.pythonhosted.org/packages/64/80/eb629cffadd3333d132c55b3ef4e379cf9db5632658633c2355f43865957/simple_background_remover-0.0.4.tar.gz
+[2024-04-07 00:28:18] WARNING root fetch - processPackages [simple-background-remover]: Timeout reached during download
+[2024-04-07 00:28:18] INFO root fetch - processPackages [simple-background-remover]: executing diffoscope
+[2024-04-07 00:28:18] INFO root fetch - processPackages [simple-background-remover]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_background_remover-0.0.3.tar.gz tmp/simple_background_remover-0.0.4.tar.gz --markdown 20240407/s/simple-background-remover/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 00:28:18] INFO root fetch - processPackages [simple-background-remover]: Remove: archive file [/home/abi/fetcher/tmp/simple_background_remover-0.0.3.tar.gz]
+[2024-04-07 00:28:18] INFO root fetch - processPackages [simple-background-remover]: Remove: archive file [/home/abi/fetcher/tmp/simple_background_remover-0.0.4.tar.gz]
+[2024-04-07 00:28:18] INFO root fetch - main [MainThread]: End processing [simple-background-remover]: success
+[2024-04-07 00:28:18] INFO root fetch - main [MainThread]: Store serial: [22651519]
