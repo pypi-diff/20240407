@@ -942,3 +942,17 @@
 [2024-04-07 01:26:46] INFO root fetch - processPackages [latch]: Remove: archive file [/home/abi/fetcher/tmp/latch-2.9.6.tar.gz]
 [2024-04-07 01:26:46] INFO root fetch - main [MainThread]: End processing [latch]: success
 [2024-04-07 01:26:46] INFO root fetch - main [MainThread]: Store serial: [22651794]
+[2024-04-07 01:28:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651794]
+[2024-04-07 01:28:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 01:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tred
+[2024-04-07 01:28:55] INFO root fetch - processPackages [tred]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-07 01:28:55] INFO root fetch - processPackages [tred]: Downloading https://files.pythonhosted.org/packages/4e/b7/e1a7116c2d26303eddf0e002c8b0ef33084b5f07c8228691891e6c44d8a4/tred-0.1.0.tar.gz
+[2024-04-07 01:28:55] WARNING root fetch - processPackages [tred]: Timeout reached during download
+[2024-04-07 01:28:55] INFO root fetch - processPackages [tred]: Downloading https://files.pythonhosted.org/packages/c0/96/39bfa199ab00b89e37b94c450f39406ae394bf82a1d770264ccf530a9069/tred-0.1.1.tar.gz
+[2024-04-07 01:28:56] WARNING root fetch - processPackages [tred]: Timeout reached during download
+[2024-04-07 01:28:56] INFO root fetch - processPackages [tred]: executing diffoscope
+[2024-04-07 01:28:56] INFO root fetch - processPackages [tred]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tred-0.1.0.tar.gz tmp/tred-0.1.1.tar.gz --markdown 20240407/t/tred/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 01:28:56] INFO root fetch - processPackages [tred]: Remove: archive file [/home/abi/fetcher/tmp/tred-0.1.0.tar.gz]
+[2024-04-07 01:28:56] INFO root fetch - processPackages [tred]: Remove: archive file [/home/abi/fetcher/tmp/tred-0.1.1.tar.gz]
+[2024-04-07 01:28:56] INFO root fetch - main [MainThread]: End processing [tred]: success
+[2024-04-07 01:28:56] INFO root fetch - main [MainThread]: Store serial: [22651813]
