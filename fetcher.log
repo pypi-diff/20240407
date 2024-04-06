@@ -142,3 +142,17 @@
 [2024-04-07 00:15:16] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.4.9.tar.gz]
 [2024-04-07 00:15:16] INFO root fetch - main [MainThread]: End processing [NNSOM]: success
 [2024-04-07 00:15:16] INFO root fetch - main [MainThread]: Store serial: [22651477]
+[2024-04-07 00:17:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651477]
+[2024-04-07 00:17:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 00:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simple-background-remover
+[2024-04-07 00:17:25] INFO root fetch - processPackages [simple-background-remover]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 00:17:25] INFO root fetch - processPackages [simple-background-remover]: Downloading https://files.pythonhosted.org/packages/62/17/6522fb2d57952dbc4e31abd0bf3ce220bfd4fbe094a0f3aad36591a15e49/simple_background_remover-0.0.2.tar.gz
+[2024-04-07 00:17:26] WARNING root fetch - processPackages [simple-background-remover]: Timeout reached during download
+[2024-04-07 00:17:26] INFO root fetch - processPackages [simple-background-remover]: Downloading https://files.pythonhosted.org/packages/d2/43/8c80bc806d2838ad1475b7779c3220f3938c84e7d5255bcdf60301e52d28/simple_background_remover-0.0.3.tar.gz
+[2024-04-07 00:17:26] WARNING root fetch - processPackages [simple-background-remover]: Timeout reached during download
+[2024-04-07 00:17:26] INFO root fetch - processPackages [simple-background-remover]: executing diffoscope
+[2024-04-07 00:17:26] INFO root fetch - processPackages [simple-background-remover]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_background_remover-0.0.2.tar.gz tmp/simple_background_remover-0.0.3.tar.gz --markdown 20240407/s/simple-background-remover/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 00:17:26] INFO root fetch - processPackages [simple-background-remover]: Remove: archive file [/home/abi/fetcher/tmp/simple_background_remover-0.0.2.tar.gz]
+[2024-04-07 00:17:26] INFO root fetch - processPackages [simple-background-remover]: Remove: archive file [/home/abi/fetcher/tmp/simple_background_remover-0.0.3.tar.gz]
+[2024-04-07 00:17:26] INFO root fetch - main [MainThread]: End processing [simple-background-remover]: success
+[2024-04-07 00:17:26] INFO root fetch - main [MainThread]: Store serial: [22651480]
