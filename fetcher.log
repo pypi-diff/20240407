@@ -301,3 +301,42 @@
 [2024-04-07 00:28:18] INFO root fetch - processPackages [simple-background-remover]: Remove: archive file [/home/abi/fetcher/tmp/simple_background_remover-0.0.4.tar.gz]
 [2024-04-07 00:28:18] INFO root fetch - main [MainThread]: End processing [simple-background-remover]: success
 [2024-04-07 00:28:18] INFO root fetch - main [MainThread]: Store serial: [22651519]
+[2024-04-07 00:30:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651519]
+[2024-04-07 00:30:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 00:30:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rdfhelpers
+[2024-04-07 00:30:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MonkeyScope
+[2024-04-07 00:30:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: service-toolkit
+[2024-04-07 00:30:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytest-databases
+[2024-04-07 00:30:27] INFO root fetch - processPackages [pytest-databases]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-07 00:30:27] WARNING root fetch - processPackages [service-toolkit]: Skipping, unable to determine old version
+[2024-04-07 00:30:27] INFO root fetch - main [MainThread]: End processing [service-toolkit] error
+[2024-04-07 00:30:27] INFO root fetch - processPackages [MonkeyScope]: New version: [1.6.0] Old Version: [1.5.0]
+[2024-04-07 00:30:27] INFO root fetch - processPackages [rdfhelpers]: New version: [0.6.3] Old Version: [0.6.2]
+[2024-04-07 00:30:27] INFO root fetch - processPackages [rdfhelpers]: Downloading https://files.pythonhosted.org/packages/ab/ce/76e3bdbb041e097ca1e66787d9cee774a8f70da63a00ed885ab55d37c839/rdfhelpers-0.6.2.tar.gz
+[2024-04-07 00:30:27] INFO root fetch - processPackages [MonkeyScope]: Downloading https://files.pythonhosted.org/packages/92/85/2b8899cf809e50d9d2b9a05f59027f173f2ee3f26cdcf946fb4894bfd713/MonkeyScope-1.5.0.tar.gz
+[2024-04-07 00:30:27] INFO root fetch - processPackages [pytest-databases]: Downloading https://files.pythonhosted.org/packages/c8/60/8b83e2c315ca09b273d7adc80c5fdc67839b238c0dad41c0cc0e29b6fd49/pytest_databases-0.2.1.tar.gz
+[2024-04-07 00:30:27] WARNING root fetch - processPackages [pytest-databases]: Timeout reached during download
+[2024-04-07 00:30:27] WARNING root fetch - processPackages [MonkeyScope]: Timeout reached during download
+[2024-04-07 00:30:28] WARNING root fetch - processPackages [rdfhelpers]: Timeout reached during download
+[2024-04-07 00:30:28] INFO root fetch - processPackages [MonkeyScope]: Downloading https://files.pythonhosted.org/packages/d7/15/35e9d445eb9ab61aed3bfdf5416760196a8ef8b617ae473725fafea03baa/MonkeyScope-1.6.0.tar.gz
+[2024-04-07 00:30:28] INFO root fetch - processPackages [pytest-databases]: Downloading https://files.pythonhosted.org/packages/76/49/dd17599a9919b74ab1bddf26cdff4b9e269416937fd665bfab16ff9673bc/pytest_databases-0.2.2.tar.gz
+[2024-04-07 00:30:28] INFO root fetch - processPackages [rdfhelpers]: Downloading https://files.pythonhosted.org/packages/fb/6a/d311545a5c682cece142e78f2509de21f808cf933c0878e85ad27145c801/rdfhelpers-0.6.3.tar.gz
+[2024-04-07 00:30:28] WARNING root fetch - processPackages [MonkeyScope]: Timeout reached during download
+[2024-04-07 00:30:28] INFO root fetch - processPackages [MonkeyScope]: executing diffoscope
+[2024-04-07 00:30:28] INFO root fetch - processPackages [MonkeyScope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MonkeyScope-1.5.0.tar.gz tmp/MonkeyScope-1.6.0.tar.gz --markdown 20240407/M/MonkeyScope/1.5.0-1.6.0/diff.md --exclude *.pyd
+[2024-04-07 00:30:28] WARNING root fetch - processPackages [rdfhelpers]: Timeout reached during download
+[2024-04-07 00:30:28] INFO root fetch - processPackages [rdfhelpers]: executing diffoscope
+[2024-04-07 00:30:28] INFO root fetch - processPackages [rdfhelpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rdfhelpers-0.6.2.tar.gz tmp/rdfhelpers-0.6.3.tar.gz --markdown 20240407/r/rdfhelpers/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2024-04-07 00:30:28] WARNING root fetch - processPackages [pytest-databases]: Timeout reached during download
+[2024-04-07 00:30:28] INFO root fetch - processPackages [pytest-databases]: executing diffoscope
+[2024-04-07 00:30:28] INFO root fetch - processPackages [pytest-databases]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_databases-0.2.1.tar.gz tmp/pytest_databases-0.2.2.tar.gz --markdown 20240407/p/pytest-databases/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2024-04-07 00:30:28] INFO root fetch - processPackages [rdfhelpers]: Remove: archive file [/home/abi/fetcher/tmp/rdfhelpers-0.6.2.tar.gz]
+[2024-04-07 00:30:28] INFO root fetch - processPackages [rdfhelpers]: Remove: archive file [/home/abi/fetcher/tmp/rdfhelpers-0.6.3.tar.gz]
+[2024-04-07 00:30:28] INFO root fetch - main [MainThread]: End processing [rdfhelpers]: success
+[2024-04-07 00:30:28] INFO root fetch - processPackages [MonkeyScope]: Remove: archive file [/home/abi/fetcher/tmp/MonkeyScope-1.5.0.tar.gz]
+[2024-04-07 00:30:28] INFO root fetch - processPackages [MonkeyScope]: Remove: archive file [/home/abi/fetcher/tmp/MonkeyScope-1.6.0.tar.gz]
+[2024-04-07 00:30:28] INFO root fetch - main [MainThread]: End processing [MonkeyScope]: success
+[2024-04-07 00:30:29] INFO root fetch - processPackages [pytest-databases]: Remove: archive file [/home/abi/fetcher/tmp/pytest_databases-0.2.1.tar.gz]
+[2024-04-07 00:30:29] INFO root fetch - processPackages [pytest-databases]: Remove: archive file [/home/abi/fetcher/tmp/pytest_databases-0.2.2.tar.gz]
+[2024-04-07 00:30:29] INFO root fetch - main [MainThread]: End processing [pytest-databases]: success
+[2024-04-07 00:30:29] INFO root fetch - main [MainThread]: Store serial: [22651532]
