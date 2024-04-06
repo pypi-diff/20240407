@@ -619,3 +619,17 @@
 [2024-04-07 00:54:15] INFO root fetch - processPackages [hexdoc-hexcasting]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc_hexcasting-0.9.6.1.0.dev24.tar.gz]
 [2024-04-07 00:54:15] INFO root fetch - main [MainThread]: End processing [hexdoc-hexcasting]: success
 [2024-04-07 00:54:15] INFO root fetch - main [MainThread]: Store serial: [22651684]
+[2024-04-07 00:56:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651684]
+[2024-04-07 00:56:23] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 00:56:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: token-throttler
+[2024-04-07 00:56:23] INFO root fetch - processPackages [token-throttler]: New version: [1.5.1] Old Version: [1.5.0]
+[2024-04-07 00:56:24] INFO root fetch - processPackages [token-throttler]: Downloading https://files.pythonhosted.org/packages/13/1a/d2713238dd27e9441cf2f563662fef95a43d5d7014330b996ced641d2934/token_throttler-1.5.0.tar.gz
+[2024-04-07 00:56:24] WARNING root fetch - processPackages [token-throttler]: Timeout reached during download
+[2024-04-07 00:56:24] INFO root fetch - processPackages [token-throttler]: Downloading https://files.pythonhosted.org/packages/65/52/925c07f16cc4825225800f848f7a72a5ba0b039b2e5bb7850c27110879a0/token_throttler-1.5.1.tar.gz
+[2024-04-07 00:56:24] WARNING root fetch - processPackages [token-throttler]: Timeout reached during download
+[2024-04-07 00:56:24] INFO root fetch - processPackages [token-throttler]: executing diffoscope
+[2024-04-07 00:56:24] INFO root fetch - processPackages [token-throttler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/token_throttler-1.5.0.tar.gz tmp/token_throttler-1.5.1.tar.gz --markdown 20240407/t/token-throttler/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2024-04-07 00:56:25] INFO root fetch - processPackages [token-throttler]: Remove: archive file [/home/abi/fetcher/tmp/token_throttler-1.5.0.tar.gz]
+[2024-04-07 00:56:25] INFO root fetch - processPackages [token-throttler]: Remove: archive file [/home/abi/fetcher/tmp/token_throttler-1.5.1.tar.gz]
+[2024-04-07 00:56:25] INFO root fetch - main [MainThread]: End processing [token-throttler]: success
+[2024-04-07 00:56:25] INFO root fetch - main [MainThread]: Store serial: [22651687]
