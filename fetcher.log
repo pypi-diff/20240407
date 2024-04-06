@@ -572,3 +572,50 @@
 [2024-04-07 00:52:03] INFO root fetch - processPackages [pyrtz2]: Remove: archive file [/home/abi/fetcher/tmp/pyrtz2-1.1.21-py3-none-any.whl.zip]
 [2024-04-07 00:52:03] INFO root fetch - main [MainThread]: End processing [pyrtz2]: success
 [2024-04-07 00:52:03] INFO root fetch - main [MainThread]: Store serial: [22651661]
+[2024-04-07 00:54:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651661]
+[2024-04-07 00:54:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 00:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aioradio
+[2024-04-07 00:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sleipnirgroup-jormungandr
+[2024-04-07 00:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hexdoc-hexcasting
+[2024-04-07 00:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vulcan-logger
+[2024-04-07 00:54:12] INFO root fetch - processPackages [vulcan-logger]: New version: [1.4.0] Old Version: [1.3.9]
+[2024-04-07 00:54:12] INFO root fetch - processPackages [vulcan-logger]: Downloading https://files.pythonhosted.org/packages/99/24/090cc2eb216035dfa61b40cefdc573a33824a23677c4b9a8b5eabeeb5b70/vulcan-logger-1.3.9.tar.gz
+[2024-04-07 00:54:13] INFO root fetch - processPackages [hexdoc-hexcasting]: New version: [0.9.6.1.0.dev24] Old Version: [0.9.6.1.0.dev22]
+[2024-04-07 00:54:13] INFO root fetch - processPackages [aioradio]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-04-07 00:54:13] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: New version: [0.0.1.dev99] Old Version: [0.0.1.dev98]
+[2024-04-07 00:54:13] WARNING root fetch - processPackages [vulcan-logger]: Timeout reached during download
+[2024-04-07 00:54:13] INFO root fetch - processPackages [aioradio]: Downloading https://files.pythonhosted.org/packages/d2/18/57808f4b8e509bc38bb69be08d3e08dfae0469982b40a3ae79c5605730f2/aioradio-0.9.7.tar.gz
+[2024-04-07 00:54:13] INFO root fetch - processPackages [hexdoc-hexcasting]: Downloading https://files.pythonhosted.org/packages/7b/97/ccc91c47f9f2f9bc922afa1230882f75e5f990d9b4bc9dcd66a73e9d8e90/hexdoc_hexcasting-0.9.6.1.0.dev22.tar.gz
+[2024-04-07 00:54:13] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Downloading https://files.pythonhosted.org/packages/cc/12/913e734462cf5d457ad69ec174744b76c771c8b63ebfb55efeb3cf02373e/sleipnirgroup_jormungandr-0.0.1.dev98.tar.gz
+[2024-04-07 00:54:13] INFO root fetch - processPackages [vulcan-logger]: Downloading https://files.pythonhosted.org/packages/78/47/af6d3998511ee2b6c4d6bc4e723e4807610a1e9238d767eba74b2fc6910a/vulcan-logger-1.4.0.tar.gz
+[2024-04-07 00:54:13] WARNING root fetch - processPackages [aioradio]: Timeout reached during download
+[2024-04-07 00:54:13] WARNING root fetch - processPackages [sleipnirgroup-jormungandr]: Timeout reached during download
+[2024-04-07 00:54:13] WARNING root fetch - processPackages [hexdoc-hexcasting]: Timeout reached during download
+[2024-04-07 00:54:13] WARNING root fetch - processPackages [vulcan-logger]: Timeout reached during download
+[2024-04-07 00:54:13] INFO root fetch - processPackages [vulcan-logger]: executing diffoscope
+[2024-04-07 00:54:13] INFO root fetch - processPackages [vulcan-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vulcan-logger-1.3.9.tar.gz tmp/vulcan-logger-1.4.0.tar.gz --markdown 20240407/v/vulcan-logger/1.3.9-1.4.0/diff.md --exclude *.pyd
+[2024-04-07 00:54:13] INFO root fetch - processPackages [aioradio]: Downloading https://files.pythonhosted.org/packages/de/2b/d6ba34d3b1ab60d69e4975ff8f4e9183f3976260de0df1b82565252ccc65/aioradio-0.9.8.tar.gz
+[2024-04-07 00:54:13] WARNING root fetch - processPackages [aioradio]: Timeout reached during download
+[2024-04-07 00:54:13] INFO root fetch - processPackages [aioradio]: executing diffoscope
+[2024-04-07 00:54:13] INFO root fetch - processPackages [aioradio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioradio-0.9.7.tar.gz tmp/aioradio-0.9.8.tar.gz --markdown 20240407/a/aioradio/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2024-04-07 00:54:13] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Downloading https://files.pythonhosted.org/packages/c4/65/9e9a4eafe0a550c5be12a69cf1665a71a4b5c434089722b18386b65569f5/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz
+[2024-04-07 00:54:13] INFO root fetch - processPackages [hexdoc-hexcasting]: Downloading https://files.pythonhosted.org/packages/e1/45/2baf4400c325cafbc68a9585eb8c3b1502ceb00dea63fadd17e30caed5ae/hexdoc_hexcasting-0.9.6.1.0.dev24.tar.gz
+[2024-04-07 00:54:13] WARNING root fetch - processPackages [sleipnirgroup-jormungandr]: Timeout reached during download
+[2024-04-07 00:54:13] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: executing diffoscope
+[2024-04-07 00:54:13] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleipnirgroup_jormungandr-0.0.1.dev98.tar.gz tmp/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz --markdown 20240407/s/sleipnirgroup-jormungandr/0.0.1.dev98-0.0.1.dev99/diff.md --exclude *.pyd
+[2024-04-07 00:54:13] WARNING root fetch - processPackages [hexdoc-hexcasting]: Timeout reached during download
+[2024-04-07 00:54:13] INFO root fetch - processPackages [hexdoc-hexcasting]: executing diffoscope
+[2024-04-07 00:54:13] INFO root fetch - processPackages [hexdoc-hexcasting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hexdoc_hexcasting-0.9.6.1.0.dev22.tar.gz tmp/hexdoc_hexcasting-0.9.6.1.0.dev24.tar.gz --markdown 20240407/h/hexdoc-hexcasting/0.9.6.1.0.dev22-0.9.6.1.0.dev24/diff.md --exclude *.pyd
+[2024-04-07 00:54:14] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.3.9.tar.gz]
+[2024-04-07 00:54:14] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.4.0.tar.gz]
+[2024-04-07 00:54:14] INFO root fetch - main [MainThread]: End processing [vulcan-logger]: success
+[2024-04-07 00:54:14] INFO root fetch - processPackages [aioradio]: Remove: archive file [/home/abi/fetcher/tmp/aioradio-0.9.7.tar.gz]
+[2024-04-07 00:54:14] INFO root fetch - processPackages [aioradio]: Remove: archive file [/home/abi/fetcher/tmp/aioradio-0.9.8.tar.gz]
+[2024-04-07 00:54:14] INFO root fetch - main [MainThread]: End processing [aioradio]: success
+[2024-04-07 00:54:14] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Remove: archive file [/home/abi/fetcher/tmp/sleipnirgroup_jormungandr-0.0.1.dev98.tar.gz]
+[2024-04-07 00:54:14] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Remove: archive file [/home/abi/fetcher/tmp/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz]
+[2024-04-07 00:54:14] INFO root fetch - main [MainThread]: End processing [sleipnirgroup-jormungandr]: success
+[2024-04-07 00:54:15] INFO root fetch - processPackages [hexdoc-hexcasting]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc_hexcasting-0.9.6.1.0.dev22.tar.gz]
+[2024-04-07 00:54:15] INFO root fetch - processPackages [hexdoc-hexcasting]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc_hexcasting-0.9.6.1.0.dev24.tar.gz]
+[2024-04-07 00:54:15] INFO root fetch - main [MainThread]: End processing [hexdoc-hexcasting]: success
+[2024-04-07 00:54:15] INFO root fetch - main [MainThread]: Store serial: [22651684]
