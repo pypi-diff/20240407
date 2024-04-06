@@ -1,0 +1,43 @@
+[2024-04-07 00:02:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651426]
+[2024-04-07 00:02:20] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 00:04:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651426]
+[2024-04-07 00:04:26] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 00:06:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651426]
+[2024-04-07 00:06:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 00:06:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: message-local
+[2024-04-07 00:06:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scrapy-playwright-full
+[2024-04-07 00:06:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bambot
+[2024-04-07 00:06:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xibabel
+[2024-04-07 00:06:33] INFO root fetch - processPackages [scrapy-playwright-full]: New version: [0.0.3402] Old Version: [0.0.3401]
+[2024-04-07 00:06:33] WARNING root fetch - processPackages [bambot]: Skipping, unable to determine old version
+[2024-04-07 00:06:33] INFO root fetch - main [MainThread]: End processing [bambot] error
+[2024-04-07 00:06:33] INFO root fetch - processPackages [xibabel]: New version: [0.0.1b1] Old Version: [0.0.1a3]
+[2024-04-07 00:06:33] INFO root fetch - processPackages [message-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 00:06:33] INFO root fetch - processPackages [scrapy-playwright-full]: Downloading https://files.pythonhosted.org/packages/96/47/5c079f18af26677e88c4455196304c27b43a81c7a085af455068faa93144/scrapy-playwright-full-0.0.3401.tar.gz
+[2024-04-07 00:06:33] INFO root fetch - processPackages [message-local]: Downloading https://files.pythonhosted.org/packages/58/98/6002a91d9f0eb23b635ecf892333a787e13c1e810b92090bc53584aa2f18/message-local-0.0.98.tar.gz
+[2024-04-07 00:06:33] INFO root fetch - processPackages [xibabel]: Downloading https://files.pythonhosted.org/packages/80/4a/0f46fef465114a2fe74fea3895fde47a3c18a56fb2b1aa17947a81f68ed0/xibabel-0.0.1a3.tar.gz
+[2024-04-07 00:06:34] WARNING root fetch - processPackages [scrapy-playwright-full]: Timeout reached during download
+[2024-04-07 00:06:34] WARNING root fetch - processPackages [message-local]: Timeout reached during download
+[2024-04-07 00:06:34] INFO root fetch - processPackages [scrapy-playwright-full]: Downloading https://files.pythonhosted.org/packages/f3/c2/38a8b95344345595e9add36822225adda6179cf8aa3b9ed3fe2eb1b74e29/scrapy-playwright-full-0.0.3402.tar.gz
+[2024-04-07 00:06:34] WARNING root fetch - processPackages [xibabel]: Timeout reached during download
+[2024-04-07 00:06:34] INFO root fetch - processPackages [message-local]: Downloading https://files.pythonhosted.org/packages/78/17/d149670c7821186afe25a7b74020f68bd8db48497b170965d75952fbe2d8/message-local-0.0.99.tar.gz
+[2024-04-07 00:06:34] WARNING root fetch - processPackages [scrapy-playwright-full]: Timeout reached during download
+[2024-04-07 00:06:34] INFO root fetch - processPackages [scrapy-playwright-full]: executing diffoscope
+[2024-04-07 00:06:34] INFO root fetch - processPackages [scrapy-playwright-full]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapy-playwright-full-0.0.3401.tar.gz tmp/scrapy-playwright-full-0.0.3402.tar.gz --markdown 20240407/s/scrapy-playwright-full/0.0.3401-0.0.3402/diff.md --exclude *.pyd
+[2024-04-07 00:06:34] WARNING root fetch - processPackages [message-local]: Timeout reached during download
+[2024-04-07 00:06:34] INFO root fetch - processPackages [message-local]: executing diffoscope
+[2024-04-07 00:06:34] INFO root fetch - processPackages [message-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/message-local-0.0.98.tar.gz tmp/message-local-0.0.99.tar.gz --markdown 20240407/m/message-local/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 00:06:34] INFO root fetch - processPackages [xibabel]: Downloading https://files.pythonhosted.org/packages/14/de/f70aa6ab216836b90146200c3647698f47fa1039dc55df60a5224cb0cf08/xibabel-0.0.1b1.tar.gz
+[2024-04-07 00:06:34] WARNING root fetch - processPackages [xibabel]: Timeout reached during download
+[2024-04-07 00:06:34] INFO root fetch - processPackages [xibabel]: executing diffoscope
+[2024-04-07 00:06:34] INFO root fetch - processPackages [xibabel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xibabel-0.0.1a3.tar.gz tmp/xibabel-0.0.1b1.tar.gz --markdown 20240407/x/xibabel/0.0.1a3-0.0.1b1/diff.md --exclude *.pyd
+[2024-04-07 00:06:34] INFO root fetch - processPackages [scrapy-playwright-full]: Remove: archive file [/home/abi/fetcher/tmp/scrapy-playwright-full-0.0.3401.tar.gz]
+[2024-04-07 00:06:34] INFO root fetch - processPackages [scrapy-playwright-full]: Remove: archive file [/home/abi/fetcher/tmp/scrapy-playwright-full-0.0.3402.tar.gz]
+[2024-04-07 00:06:34] INFO root fetch - main [MainThread]: End processing [scrapy-playwright-full]: success
+[2024-04-07 00:06:35] INFO root fetch - processPackages [message-local]: Remove: archive file [/home/abi/fetcher/tmp/message-local-0.0.98.tar.gz]
+[2024-04-07 00:06:35] INFO root fetch - processPackages [message-local]: Remove: archive file [/home/abi/fetcher/tmp/message-local-0.0.99.tar.gz]
+[2024-04-07 00:06:35] INFO root fetch - main [MainThread]: End processing [message-local]: success
+[2024-04-07 00:06:35] INFO root fetch - processPackages [xibabel]: Remove: archive file [/home/abi/fetcher/tmp/xibabel-0.0.1a3.tar.gz]
+[2024-04-07 00:06:35] INFO root fetch - processPackages [xibabel]: Remove: archive file [/home/abi/fetcher/tmp/xibabel-0.0.1b1.tar.gz]
+[2024-04-07 00:06:35] INFO root fetch - main [MainThread]: End processing [xibabel]: success
+[2024-04-07 00:06:35] INFO root fetch - main [MainThread]: Store serial: [22651441]
