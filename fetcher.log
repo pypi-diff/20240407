@@ -1118,3 +1118,17 @@
 [2024-04-07 01:44:11] INFO root fetch - processPackages [latch]: Remove: archive file [/home/abi/fetcher/tmp/latch-2.9.6.tar.gz]
 [2024-04-07 01:44:11] INFO root fetch - main [MainThread]: End processing [latch]: success
 [2024-04-07 01:44:11] INFO root fetch - main [MainThread]: Store serial: [22651865]
+[2024-04-07 01:46:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651865]
+[2024-04-07 01:46:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 01:46:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shipper-shippy
+[2024-04-07 01:46:19] INFO root fetch - processPackages [shipper-shippy]: New version: [2.33.5] Old Version: [2.33.4]
+[2024-04-07 01:46:19] INFO root fetch - processPackages [shipper-shippy]: Downloading https://files.pythonhosted.org/packages/f6/0c/caa309d3f86b51a23957ee9a1c0535d143b347532830b456912608b9246b/shipper-shippy-2.33.4.tar.gz
+[2024-04-07 01:46:19] WARNING root fetch - processPackages [shipper-shippy]: Timeout reached during download
+[2024-04-07 01:46:19] INFO root fetch - processPackages [shipper-shippy]: Downloading https://files.pythonhosted.org/packages/9f/7b/4f9381815817ba5af1d8753277a428944bbd5cfe76c751a2d8d42500f348/shipper-shippy-2.33.5.tar.gz
+[2024-04-07 01:46:19] WARNING root fetch - processPackages [shipper-shippy]: Timeout reached during download
+[2024-04-07 01:46:19] INFO root fetch - processPackages [shipper-shippy]: executing diffoscope
+[2024-04-07 01:46:19] INFO root fetch - processPackages [shipper-shippy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shipper-shippy-2.33.4.tar.gz tmp/shipper-shippy-2.33.5.tar.gz --markdown 20240407/s/shipper-shippy/2.33.4-2.33.5/diff.md --exclude *.pyd
+[2024-04-07 01:46:20] INFO root fetch - processPackages [shipper-shippy]: Remove: archive file [/home/abi/fetcher/tmp/shipper-shippy-2.33.4.tar.gz]
+[2024-04-07 01:46:20] INFO root fetch - processPackages [shipper-shippy]: Remove: archive file [/home/abi/fetcher/tmp/shipper-shippy-2.33.5.tar.gz]
+[2024-04-07 01:46:20] INFO root fetch - main [MainThread]: End processing [shipper-shippy]: success
+[2024-04-07 01:46:20] INFO root fetch - main [MainThread]: Store serial: [22651873]
