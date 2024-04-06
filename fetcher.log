@@ -956,3 +956,20 @@
 [2024-04-07 01:28:56] INFO root fetch - processPackages [tred]: Remove: archive file [/home/abi/fetcher/tmp/tred-0.1.1.tar.gz]
 [2024-04-07 01:28:56] INFO root fetch - main [MainThread]: End processing [tred]: success
 [2024-04-07 01:28:56] INFO root fetch - main [MainThread]: Store serial: [22651813]
+[2024-04-07 01:31:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651813]
+[2024-04-07 01:31:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 01:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chainlo
+[2024-04-07 01:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flaskfy
+[2024-04-07 01:31:05] INFO root fetch - processPackages [chainlo]: New version: [1.1.412] Old Version: [1.1.411]
+[2024-04-07 01:31:05] WARNING root fetch - processPackages [flaskfy]: Skipping, unable to determine old version
+[2024-04-07 01:31:05] INFO root fetch - main [MainThread]: End processing [flaskfy] error
+[2024-04-07 01:31:05] INFO root fetch - processPackages [chainlo]: Downloading https://files.pythonhosted.org/packages/35/64/9e6d40f7b4ae6106d65510f51f54c96fec3bda601ea3bdad2fa10ed1d18e/chainlo-1.1.411.tar.gz
+[2024-04-07 01:31:05] WARNING root fetch - processPackages [chainlo]: Timeout reached during download
+[2024-04-07 01:31:05] INFO root fetch - processPackages [chainlo]: Downloading https://files.pythonhosted.org/packages/b4/48/67a03c173ba4d78a201b3d6b68f9effface5b56992b748b79e477328bfc3/chainlo-1.1.412.tar.gz
+[2024-04-07 01:31:06] WARNING root fetch - processPackages [chainlo]: Timeout reached during download
+[2024-04-07 01:31:06] INFO root fetch - processPackages [chainlo]: executing diffoscope
+[2024-04-07 01:31:06] INFO root fetch - processPackages [chainlo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainlo-1.1.411.tar.gz tmp/chainlo-1.1.412.tar.gz --markdown 20240407/c/chainlo/1.1.411-1.1.412/diff.md --exclude *.pyd
+[2024-04-07 01:31:07] INFO root fetch - processPackages [chainlo]: Remove: archive file [/home/abi/fetcher/tmp/chainlo-1.1.411.tar.gz]
+[2024-04-07 01:31:07] INFO root fetch - processPackages [chainlo]: Remove: archive file [/home/abi/fetcher/tmp/chainlo-1.1.412.tar.gz]
+[2024-04-07 01:31:07] INFO root fetch - main [MainThread]: End processing [chainlo]: success
+[2024-04-07 01:31:07] INFO root fetch - main [MainThread]: Store serial: [22651824]
