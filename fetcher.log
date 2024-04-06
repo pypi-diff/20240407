@@ -1149,3 +1149,17 @@
 [2024-04-07 01:48:30] INFO root fetch - processPackages [alchemyrohan]: Remove: archive file [/home/abi/fetcher/tmp/alchemyrohan-0.4.1.tar.gz]
 [2024-04-07 01:48:30] INFO root fetch - main [MainThread]: End processing [alchemyrohan]: success
 [2024-04-07 01:48:30] INFO root fetch - main [MainThread]: Store serial: [22651880]
+[2024-04-07 01:50:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651880]
+[2024-04-07 01:50:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 01:50:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cpop
+[2024-04-07 01:50:38] INFO root fetch - processPackages [cpop]: New version: [32.0.0] Old Version: [31.0.0]
+[2024-04-07 01:50:39] INFO root fetch - processPackages [cpop]: Downloading https://files.pythonhosted.org/packages/92/a7/54372d07da0ff76093ea9a6b313f26effae951c9f2b39cba062cec28199d/cpop-31.0.0.tar.gz
+[2024-04-07 01:50:39] WARNING root fetch - processPackages [cpop]: Timeout reached during download
+[2024-04-07 01:50:39] INFO root fetch - processPackages [cpop]: Downloading https://files.pythonhosted.org/packages/d5/a9/21e5bb705e0488c2c74ca1bf4499de66114b7e429966f4e941a432e5c667/cpop-32.0.0.tar.gz
+[2024-04-07 01:50:39] WARNING root fetch - processPackages [cpop]: Timeout reached during download
+[2024-04-07 01:50:39] INFO root fetch - processPackages [cpop]: executing diffoscope
+[2024-04-07 01:50:39] INFO root fetch - processPackages [cpop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpop-31.0.0.tar.gz tmp/cpop-32.0.0.tar.gz --markdown 20240407/c/cpop/31.0.0-32.0.0/diff.md --exclude *.pyd
+[2024-04-07 01:50:40] INFO root fetch - processPackages [cpop]: Remove: archive file [/home/abi/fetcher/tmp/cpop-31.0.0.tar.gz]
+[2024-04-07 01:50:40] INFO root fetch - processPackages [cpop]: Remove: archive file [/home/abi/fetcher/tmp/cpop-32.0.0.tar.gz]
+[2024-04-07 01:50:40] INFO root fetch - main [MainThread]: End processing [cpop]: success
+[2024-04-07 01:50:40] INFO root fetch - main [MainThread]: Store serial: [22651884]
