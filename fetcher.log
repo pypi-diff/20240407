@@ -1132,3 +1132,20 @@
 [2024-04-07 01:46:20] INFO root fetch - processPackages [shipper-shippy]: Remove: archive file [/home/abi/fetcher/tmp/shipper-shippy-2.33.5.tar.gz]
 [2024-04-07 01:46:20] INFO root fetch - main [MainThread]: End processing [shipper-shippy]: success
 [2024-04-07 01:46:20] INFO root fetch - main [MainThread]: Store serial: [22651873]
+[2024-04-07 01:48:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651873]
+[2024-04-07 01:48:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 01:48:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytector
+[2024-04-07 01:48:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alchemyrohan
+[2024-04-07 01:48:29] WARNING root fetch - processPackages [pytector]: Skipping, unable to determine old version
+[2024-04-07 01:48:29] INFO root fetch - main [MainThread]: End processing [pytector] error
+[2024-04-07 01:48:29] INFO root fetch - processPackages [alchemyrohan]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-04-07 01:48:29] INFO root fetch - processPackages [alchemyrohan]: Downloading https://files.pythonhosted.org/packages/63/d3/db390250a829e47615c267265f082976a619ba2074d9a17c6fe6ed0b4bb2/alchemyrohan-0.4.0.tar.gz
+[2024-04-07 01:48:29] WARNING root fetch - processPackages [alchemyrohan]: Timeout reached during download
+[2024-04-07 01:48:29] INFO root fetch - processPackages [alchemyrohan]: Downloading https://files.pythonhosted.org/packages/f3/61/8828f7b13cfea928d70c1db13745b9b86a0c7dfc89cc4638b1d1a450d157/alchemyrohan-0.4.1.tar.gz
+[2024-04-07 01:48:29] WARNING root fetch - processPackages [alchemyrohan]: Timeout reached during download
+[2024-04-07 01:48:29] INFO root fetch - processPackages [alchemyrohan]: executing diffoscope
+[2024-04-07 01:48:29] INFO root fetch - processPackages [alchemyrohan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alchemyrohan-0.4.0.tar.gz tmp/alchemyrohan-0.4.1.tar.gz --markdown 20240407/a/alchemyrohan/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2024-04-07 01:48:30] INFO root fetch - processPackages [alchemyrohan]: Remove: archive file [/home/abi/fetcher/tmp/alchemyrohan-0.4.0.tar.gz]
+[2024-04-07 01:48:30] INFO root fetch - processPackages [alchemyrohan]: Remove: archive file [/home/abi/fetcher/tmp/alchemyrohan-0.4.1.tar.gz]
+[2024-04-07 01:48:30] INFO root fetch - main [MainThread]: End processing [alchemyrohan]: success
+[2024-04-07 01:48:30] INFO root fetch - main [MainThread]: Store serial: [22651880]
