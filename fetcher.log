@@ -633,3 +633,28 @@
 [2024-04-07 00:56:25] INFO root fetch - processPackages [token-throttler]: Remove: archive file [/home/abi/fetcher/tmp/token_throttler-1.5.1.tar.gz]
 [2024-04-07 00:56:25] INFO root fetch - main [MainThread]: End processing [token-throttler]: success
 [2024-04-07 00:56:25] INFO root fetch - main [MainThread]: Store serial: [22651687]
+[2024-04-07 00:58:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651687]
+[2024-04-07 00:58:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 00:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: forcealign
+[2024-04-07 00:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hexdoc-hexcasting
+[2024-04-07 00:58:33] INFO root fetch - processPackages [hexdoc-hexcasting]: New version: [0.9.6.1.0.dev24] Old Version: [0.9.6.1.0.dev22]
+[2024-04-07 00:58:33] INFO root fetch - processPackages [hexdoc-hexcasting]: Downloading https://files.pythonhosted.org/packages/7b/97/ccc91c47f9f2f9bc922afa1230882f75e5f990d9b4bc9dcd66a73e9d8e90/hexdoc_hexcasting-0.9.6.1.0.dev22.tar.gz
+[2024-04-07 00:58:33] INFO root fetch - processPackages [forcealign]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-07 00:58:33] WARNING root fetch - processPackages [hexdoc-hexcasting]: Timeout reached during download
+[2024-04-07 00:58:33] INFO root fetch - processPackages [forcealign]: Downloading https://files.pythonhosted.org/packages/48/2c/499dcb3e21a255eac5b1e92860017765c16928607cb500092034a764e65a/forcealign-1.1.1.tar.gz
+[2024-04-07 00:58:33] INFO root fetch - processPackages [hexdoc-hexcasting]: Downloading https://files.pythonhosted.org/packages/e1/45/2baf4400c325cafbc68a9585eb8c3b1502ceb00dea63fadd17e30caed5ae/hexdoc_hexcasting-0.9.6.1.0.dev24.tar.gz
+[2024-04-07 00:58:33] WARNING root fetch - processPackages [forcealign]: Timeout reached during download
+[2024-04-07 00:58:34] WARNING root fetch - processPackages [hexdoc-hexcasting]: Timeout reached during download
+[2024-04-07 00:58:34] INFO root fetch - processPackages [hexdoc-hexcasting]: executing diffoscope
+[2024-04-07 00:58:34] INFO root fetch - processPackages [hexdoc-hexcasting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hexdoc_hexcasting-0.9.6.1.0.dev22.tar.gz tmp/hexdoc_hexcasting-0.9.6.1.0.dev24.tar.gz --markdown 20240407/h/hexdoc-hexcasting/0.9.6.1.0.dev22-0.9.6.1.0.dev24/diff.md --exclude *.pyd
+[2024-04-07 00:58:34] INFO root fetch - processPackages [forcealign]: Downloading https://files.pythonhosted.org/packages/52/eb/9dbc5f0133a9951248e99245cd60a4007a6578416e31bec7a4803b6726e1/forcealign-1.1.2.tar.gz
+[2024-04-07 00:58:34] WARNING root fetch - processPackages [forcealign]: Timeout reached during download
+[2024-04-07 00:58:34] INFO root fetch - processPackages [forcealign]: executing diffoscope
+[2024-04-07 00:58:34] INFO root fetch - processPackages [forcealign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/forcealign-1.1.1.tar.gz tmp/forcealign-1.1.2.tar.gz --markdown 20240407/f/forcealign/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2024-04-07 00:58:34] INFO root fetch - processPackages [forcealign]: Remove: archive file [/home/abi/fetcher/tmp/forcealign-1.1.1.tar.gz]
+[2024-04-07 00:58:34] INFO root fetch - processPackages [forcealign]: Remove: archive file [/home/abi/fetcher/tmp/forcealign-1.1.2.tar.gz]
+[2024-04-07 00:58:34] INFO root fetch - main [MainThread]: End processing [forcealign]: success
+[2024-04-07 00:58:35] INFO root fetch - processPackages [hexdoc-hexcasting]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc_hexcasting-0.9.6.1.0.dev22.tar.gz]
+[2024-04-07 00:58:35] INFO root fetch - processPackages [hexdoc-hexcasting]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc_hexcasting-0.9.6.1.0.dev24.tar.gz]
+[2024-04-07 00:58:35] INFO root fetch - main [MainThread]: End processing [hexdoc-hexcasting]: success
+[2024-04-07 00:58:35] INFO root fetch - main [MainThread]: Store serial: [22651693]
