@@ -451,3 +451,17 @@
 [2024-04-07 00:43:17] INFO root fetch - processPackages [vellum-ai]: Remove: archive file [/home/abi/fetcher/tmp/vellum_ai-0.3.9.tar.gz]
 [2024-04-07 00:43:17] INFO root fetch - main [MainThread]: End processing [vellum-ai]: success
 [2024-04-07 00:43:17] INFO root fetch - main [MainThread]: Store serial: [22651634]
+[2024-04-07 00:45:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651634]
+[2024-04-07 00:45:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 00:45:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyroblack
+[2024-04-07 00:45:25] INFO root fetch - processPackages [pyroblack]: New version: [2.3.61] Old Version: [2.3.60]
+[2024-04-07 00:45:26] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/bf/0f/1b9184213c4d5fd381747828a9973d89b804169904ae1a8807a91c8fa631/pyroblack-2.3.60.tar.gz
+[2024-04-07 00:45:26] WARNING root fetch - processPackages [pyroblack]: Timeout reached during download
+[2024-04-07 00:45:26] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/e7/8d/005fae0dcdffb76bb6122c2887abc4322e57ebd90fe4c6ef971b6a882d48/pyroblack-2.3.61.tar.gz
+[2024-04-07 00:45:26] WARNING root fetch - processPackages [pyroblack]: Timeout reached during download
+[2024-04-07 00:45:26] INFO root fetch - processPackages [pyroblack]: executing diffoscope
+[2024-04-07 00:45:26] INFO root fetch - processPackages [pyroblack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroblack-2.3.60.tar.gz tmp/pyroblack-2.3.61.tar.gz --markdown 20240407/p/pyroblack/2.3.60-2.3.61/diff.md --exclude *.pyd
+[2024-04-07 00:45:29] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.60.tar.gz]
+[2024-04-07 00:45:29] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.61.tar.gz]
+[2024-04-07 00:45:29] INFO root fetch - main [MainThread]: End processing [pyroblack]: success
+[2024-04-07 00:45:29] INFO root fetch - main [MainThread]: Store serial: [22651637]
