@@ -17738,3 +17738,14 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 20:25:51] INFO root fetch - processPackages [gammarer.aws-secure-cloudfront-origin-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-cloudfront-origin-bucket-1.4.1.tar.gz]
 [2024-04-07 20:25:51] INFO root fetch - main [MainThread]: End processing [gammarer.aws-secure-cloudfront-origin-bucket]: success
 [2024-04-07 20:25:51] INFO root fetch - main [MainThread]: Store serial: [22658291]
+[2024-04-07 20:27:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658291]
+[2024-04-07 20:28:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 20:28:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prayer-times-calculator-offline
+[2024-04-07 20:28:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: highcharts-core
+[2024-04-07 20:28:01] INFO root fetch - processPackages [highcharts-core]: New version: [1.6.0] Old Version: [1.5.1]
+[2024-04-07 20:28:01] WARNING root fetch - processPackages [prayer-times-calculator-offline]: Skipping, unable to determine old version
+[2024-04-07 20:28:01] INFO root fetch - main [MainThread]: End processing [prayer-times-calculator-offline] error
+[2024-04-07 20:28:01] INFO root fetch - processPackages [highcharts-core]: Downloading https://files.pythonhosted.org/packages/c8/73/c7754d9c9d5c83ef5b5eb140e3b22e81799e1e2a040d297e7a7d7dbd6d2a/highcharts_core-1.5.1.tar.gz
+[2024-04-07 20:28:01] WARNING root fetch - processPackages [highcharts-core]: Skipping package: exceeds size limit 12088743>=10485760
+[2024-04-07 20:28:01] INFO root fetch - main [MainThread]: End processing [highcharts-core] error
+[2024-04-07 20:28:01] INFO root fetch - main [MainThread]: Store serial: [22658317]
