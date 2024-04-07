@@ -10081,3 +10081,20 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 12:36:04] INFO root fetch - processPackages [fusio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/fusio-sdk-5.0.4.tar.gz]
 [2024-04-07 12:36:04] INFO root fetch - main [MainThread]: End processing [fusio-sdk]: success
 [2024-04-07 12:36:04] INFO root fetch - main [MainThread]: Store serial: [22655441]
+[2024-04-07 12:38:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655441]
+[2024-04-07 12:38:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 12:38:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ait-surgeon
+[2024-04-07 12:38:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mdpython
+[2024-04-07 12:38:12] INFO root fetch - processPackages [mdpython]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 12:38:12] WARNING root fetch - processPackages [ait-surgeon]: Skipping, unable to determine old version
+[2024-04-07 12:38:12] INFO root fetch - main [MainThread]: End processing [ait-surgeon] error
+[2024-04-07 12:38:12] INFO root fetch - processPackages [mdpython]: Downloading https://files.pythonhosted.org/packages/85/d2/2fc7a6013d10c5b8844b051c30042047873d222408344e76f2379d35212d/mdpython-0.0.2.tar.gz
+[2024-04-07 12:38:13] WARNING root fetch - processPackages [mdpython]: Timeout reached during download
+[2024-04-07 12:38:13] INFO root fetch - processPackages [mdpython]: Downloading https://files.pythonhosted.org/packages/40/44/e1552764bf29316f0ab76ce02f444f2ae1e2ce17e015e682f55d01538bc2/mdpython-0.0.3.tar.gz
+[2024-04-07 12:38:13] WARNING root fetch - processPackages [mdpython]: Timeout reached during download
+[2024-04-07 12:38:13] INFO root fetch - processPackages [mdpython]: executing diffoscope
+[2024-04-07 12:38:13] INFO root fetch - processPackages [mdpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdpython-0.0.2.tar.gz tmp/mdpython-0.0.3.tar.gz --markdown 20240407/m/mdpython/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 12:38:13] INFO root fetch - processPackages [mdpython]: Remove: archive file [/home/abi/fetcher/tmp/mdpython-0.0.2.tar.gz]
+[2024-04-07 12:38:13] INFO root fetch - processPackages [mdpython]: Remove: archive file [/home/abi/fetcher/tmp/mdpython-0.0.3.tar.gz]
+[2024-04-07 12:38:13] INFO root fetch - main [MainThread]: End processing [mdpython]: success
+[2024-04-07 12:38:13] INFO root fetch - main [MainThread]: Store serial: [22655448]
