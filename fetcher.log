@@ -18741,3 +18741,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 21:29:15] INFO root fetch - processPackages [app-lib-py]: Remove: archive file [/home/abi/fetcher/tmp/app_lib_py-0.0.8.tar.gz]
 [2024-04-07 21:29:15] INFO root fetch - main [MainThread]: End processing [app-lib-py]: success
 [2024-04-07 21:29:15] INFO root fetch - main [MainThread]: Store serial: [22658665]
+[2024-04-07 21:31:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658665]
+[2024-04-07 21:31:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 21:31:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: StonerPlots
+[2024-04-07 21:31:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: GeoHD
+[2024-04-07 21:31:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spotify-win-cli
+[2024-04-07 21:31:24] INFO root fetch - processPackages [spotify-win-cli]: New version: [4.0.1] Old Version: [3.0.0]
+[2024-04-07 21:31:24] INFO root fetch - processPackages [GeoHD]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-07 21:31:24] INFO root fetch - processPackages [StonerPlots]: New version: [1.3.4] Old Version: [1.3.3]
+[2024-04-07 21:31:24] INFO root fetch - processPackages [spotify-win-cli]: Downloading https://files.pythonhosted.org/packages/7e/a5/9cd25ab0672c13b7cfcccdb8ac116f55076e4b8e27c86b253a843bfc3b08/spotify-win-cli-3.0.0.tar.gz
+[2024-04-07 21:31:24] INFO root fetch - processPackages [GeoHD]: Downloading https://files.pythonhosted.org/packages/fe/f4/ec8dd912805ded547a974073e16296bb043f8957953a592bfe59f1c9d0a9/GeoHD-0.1.5.tar.gz
+[2024-04-07 21:31:24] INFO root fetch - processPackages [StonerPlots]: Downloading https://files.pythonhosted.org/packages/c3/2f/df6ec69bb7d6f96a4856e11cc846fb2f4829390d3b8aaafaeb329dfc9aa0/StonerPlots-1.3.3.tar.gz
+[2024-04-07 21:31:24] WARNING root fetch - processPackages [spotify-win-cli]: Timeout reached during download
+[2024-04-07 21:31:24] WARNING root fetch - processPackages [GeoHD]: Timeout reached during download
+[2024-04-07 21:31:24] INFO root fetch - processPackages [spotify-win-cli]: Downloading https://files.pythonhosted.org/packages/5c/cb/91a7bd35b55727275fb269d379a38fea02bafc84f7f98c67464057cf316a/spotify-win-cli-4.0.1.tar.gz
+[2024-04-07 21:31:24] INFO root fetch - processPackages [GeoHD]: Downloading https://files.pythonhosted.org/packages/e9/7f/91cb8931bcf06d5f3da837ae1de7f470e60ad649271ce2a499cc79e4a7cc/GeoHD-0.1.6.tar.gz
+[2024-04-07 21:31:24] WARNING root fetch - processPackages [StonerPlots]: Timeout reached during download
+[2024-04-07 21:31:24] WARNING root fetch - processPackages [spotify-win-cli]: Timeout reached during download
+[2024-04-07 21:31:24] INFO root fetch - processPackages [spotify-win-cli]: executing diffoscope
+[2024-04-07 21:31:24] INFO root fetch - processPackages [spotify-win-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotify-win-cli-3.0.0.tar.gz tmp/spotify-win-cli-4.0.1.tar.gz --markdown 20240407/s/spotify-win-cli/3.0.0-4.0.1/diff.md --exclude *.pyd
+[2024-04-07 21:31:24] WARNING root fetch - processPackages [GeoHD]: Timeout reached during download
+[2024-04-07 21:31:24] INFO root fetch - processPackages [GeoHD]: executing diffoscope
+[2024-04-07 21:31:24] INFO root fetch - processPackages [GeoHD]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GeoHD-0.1.5.tar.gz tmp/GeoHD-0.1.6.tar.gz --markdown 20240407/G/GeoHD/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2024-04-07 21:31:24] INFO root fetch - processPackages [StonerPlots]: Downloading https://files.pythonhosted.org/packages/d0/38/6fb4d5a884cc28283adf84ea3adb8c1014aad865608125e62595262fd2b5/StonerPlots-1.3.4.tar.gz
+[2024-04-07 21:31:25] WARNING root fetch - processPackages [StonerPlots]: Timeout reached during download
+[2024-04-07 21:31:25] INFO root fetch - processPackages [StonerPlots]: executing diffoscope
+[2024-04-07 21:31:25] INFO root fetch - processPackages [StonerPlots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/StonerPlots-1.3.3.tar.gz tmp/StonerPlots-1.3.4.tar.gz --markdown 20240407/S/StonerPlots/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2024-04-07 21:31:25] INFO root fetch - processPackages [spotify-win-cli]: Remove: archive file [/home/abi/fetcher/tmp/spotify-win-cli-3.0.0.tar.gz]
+[2024-04-07 21:31:25] INFO root fetch - processPackages [spotify-win-cli]: Remove: archive file [/home/abi/fetcher/tmp/spotify-win-cli-4.0.1.tar.gz]
+[2024-04-07 21:31:25] INFO root fetch - main [MainThread]: End processing [spotify-win-cli]: success
+[2024-04-07 21:31:25] INFO root fetch - processPackages [GeoHD]: Remove: archive file [/home/abi/fetcher/tmp/GeoHD-0.1.5.tar.gz]
+[2024-04-07 21:31:25] INFO root fetch - processPackages [GeoHD]: Remove: archive file [/home/abi/fetcher/tmp/GeoHD-0.1.6.tar.gz]
+[2024-04-07 21:31:25] INFO root fetch - main [MainThread]: End processing [GeoHD]: success
+[2024-04-07 21:31:27] INFO root fetch - processPackages [StonerPlots]: Remove: archive file [/home/abi/fetcher/tmp/StonerPlots-1.3.3.tar.gz]
+[2024-04-07 21:31:27] INFO root fetch - processPackages [StonerPlots]: Remove: archive file [/home/abi/fetcher/tmp/StonerPlots-1.3.4.tar.gz]
+[2024-04-07 21:31:27] INFO root fetch - main [MainThread]: End processing [StonerPlots]: success
+[2024-04-07 21:31:27] INFO root fetch - main [MainThread]: Store serial: [22658671]
