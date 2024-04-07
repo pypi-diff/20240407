@@ -2248,3 +2248,28 @@
 [2024-04-07 03:30:58] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-0.13.0.dev202404070128.tar.gz]
 [2024-04-07 03:30:58] INFO root fetch - main [MainThread]: End processing [onediffx]: success
 [2024-04-07 03:30:58] INFO root fetch - main [MainThread]: Store serial: [22652619]
+[2024-04-07 03:33:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652619]
+[2024-04-07 03:33:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 03:33:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: youtube-selenium-py
+[2024-04-07 03:33:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ausankey
+[2024-04-07 03:33:08] INFO root fetch - processPackages [youtube-selenium-py]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-07 03:33:08] INFO root fetch - processPackages [ausankey]: New version: [1.3] Old Version: [1.2a0]
+[2024-04-07 03:33:08] INFO root fetch - processPackages [youtube-selenium-py]: Downloading https://files.pythonhosted.org/packages/c3/0e/6774bad7bed7df56a117e77561ff9317230749f824d8910e1e8ac098f4da/youtube_selenium_py-1.0.7.tar.gz
+[2024-04-07 03:33:08] WARNING root fetch - processPackages [youtube-selenium-py]: Timeout reached during download
+[2024-04-07 03:33:08] INFO root fetch - processPackages [youtube-selenium-py]: Downloading https://files.pythonhosted.org/packages/a1/5a/a3ba2ae3abc5e728a140cd7c005391123a3ac9a89d5772be9fe2f439be85/youtube_selenium_py-1.0.8.tar.gz
+[2024-04-07 03:33:08] WARNING root fetch - processPackages [youtube-selenium-py]: Timeout reached during download
+[2024-04-07 03:33:08] INFO root fetch - processPackages [youtube-selenium-py]: executing diffoscope
+[2024-04-07 03:33:08] INFO root fetch - processPackages [youtube-selenium-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/youtube_selenium_py-1.0.7.tar.gz tmp/youtube_selenium_py-1.0.8.tar.gz --markdown 20240407/y/youtube-selenium-py/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2024-04-07 03:33:08] INFO root fetch - processPackages [ausankey]: Downloading https://files.pythonhosted.org/packages/30/af/ce65bc7d34c3e74ffcbd797704799395566f517d873ef2e5d0457aec4664/ausankey-1.2a0.tar.gz
+[2024-04-07 03:33:08] WARNING root fetch - processPackages [ausankey]: Timeout reached during download
+[2024-04-07 03:33:09] INFO root fetch - processPackages [ausankey]: Downloading https://files.pythonhosted.org/packages/48/45/5384452612d33ccd1f32c54badc7abc5b2e84b9977486573b38eabfe2612/ausankey-1.3.tar.gz
+[2024-04-07 03:33:09] WARNING root fetch - processPackages [ausankey]: Timeout reached during download
+[2024-04-07 03:33:09] INFO root fetch - processPackages [ausankey]: executing diffoscope
+[2024-04-07 03:33:09] INFO root fetch - processPackages [ausankey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ausankey-1.2a0.tar.gz tmp/ausankey-1.3.tar.gz --markdown 20240407/a/ausankey/1.2a0-1.3/diff.md --exclude *.pyd
+[2024-04-07 03:33:09] INFO root fetch - processPackages [youtube-selenium-py]: Remove: archive file [/home/abi/fetcher/tmp/youtube_selenium_py-1.0.7.tar.gz]
+[2024-04-07 03:33:09] INFO root fetch - processPackages [youtube-selenium-py]: Remove: archive file [/home/abi/fetcher/tmp/youtube_selenium_py-1.0.8.tar.gz]
+[2024-04-07 03:33:09] INFO root fetch - main [MainThread]: End processing [youtube-selenium-py]: success
+[2024-04-07 03:33:10] INFO root fetch - processPackages [ausankey]: Remove: archive file [/home/abi/fetcher/tmp/ausankey-1.2a0.tar.gz]
+[2024-04-07 03:33:10] INFO root fetch - processPackages [ausankey]: Remove: archive file [/home/abi/fetcher/tmp/ausankey-1.3.tar.gz]
+[2024-04-07 03:33:10] INFO root fetch - main [MainThread]: End processing [ausankey]: success
+[2024-04-07 03:33:10] INFO root fetch - main [MainThread]: Store serial: [22652632]
