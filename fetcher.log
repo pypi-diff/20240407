@@ -20935,3 +20935,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:46:40] INFO root fetch - processPackages [aind-slurm-rest]: Remove: archive file [/home/abi/fetcher/tmp/aind-slurm-rest-0.1.0.tar.gz]
 [2024-04-07 23:46:40] INFO root fetch - main [MainThread]: End processing [aind-slurm-rest]: success
 [2024-04-07 23:46:40] INFO root fetch - main [MainThread]: Store serial: [22659577]
+[2024-04-07 23:48:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659577]
+[2024-04-07 23:48:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 23:48:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: obsidown
+[2024-04-07 23:48:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: auth-middleware
+[2024-04-07 23:48:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyunitconverter
+[2024-04-07 23:48:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quickfin
+[2024-04-07 23:48:50] WARNING root fetch - processPackages [pyunitconverter]: Skipping, unable to determine old version
+[2024-04-07 23:48:50] INFO root fetch - main [MainThread]: End processing [pyunitconverter] error
+[2024-04-07 23:48:50] INFO root fetch - processPackages [obsidown]: New version: [0.2.0] Old Version: [0.1.4]
+[2024-04-07 23:48:50] INFO root fetch - processPackages [auth-middleware]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-07 23:48:50] INFO root fetch - processPackages [quickfin]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-04-07 23:48:50] INFO root fetch - processPackages [obsidown]: Downloading https://files.pythonhosted.org/packages/18/7d/5550182227b51e31b362dd5ed9999cd2214ca096eaf7960b3eb7e2a7819b/obsidown-0.1.4.tar.gz
+[2024-04-07 23:48:50] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/23/46/98b64058d9f34737c74c69323c702b5f9529af3ac8b71c3e2e2cc3dd5369/auth_middleware-0.1.7.tar.gz
+[2024-04-07 23:48:51] INFO root fetch - processPackages [quickfin]: Downloading https://files.pythonhosted.org/packages/58/18/9ec071d9e79468ec8cba17cae9e96600c2e70e6f0749c7829a9a1eaf5f65/quickfin-1.8.0.tar.gz
+[2024-04-07 23:48:51] WARNING root fetch - processPackages [auth-middleware]: Timeout reached during download
+[2024-04-07 23:48:51] WARNING root fetch - processPackages [quickfin]: Timeout reached during download
+[2024-04-07 23:48:51] WARNING root fetch - processPackages [obsidown]: Timeout reached during download
+[2024-04-07 23:48:51] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/32/b4/6c4021d6f31e5fa3a39e800cdd613ab846250768017a00bbbd1b90e9597d/auth_middleware-0.1.8.tar.gz
+[2024-04-07 23:48:51] INFO root fetch - processPackages [obsidown]: Downloading https://files.pythonhosted.org/packages/14/8b/2bc3410736881a253673c83da46cfb8721c08fcd0283960ef5bbffa86a27/obsidown-0.2.0.tar.gz
+[2024-04-07 23:48:51] INFO root fetch - processPackages [quickfin]: Downloading https://files.pythonhosted.org/packages/f7/81/5611cebce8db0b6121d92bd2ee76f47e49b160d9e5d1bde8f6a81ffd0961/quickfin-1.9.0.tar.gz
+[2024-04-07 23:48:51] WARNING root fetch - processPackages [obsidown]: Timeout reached during download
+[2024-04-07 23:48:51] INFO root fetch - processPackages [obsidown]: executing diffoscope
+[2024-04-07 23:48:51] INFO root fetch - processPackages [obsidown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obsidown-0.1.4.tar.gz tmp/obsidown-0.2.0.tar.gz --markdown 20240407/o/obsidown/0.1.4-0.2.0/diff.md --exclude *.pyd
+[2024-04-07 23:48:51] WARNING root fetch - processPackages [quickfin]: Timeout reached during download
+[2024-04-07 23:48:51] INFO root fetch - processPackages [quickfin]: executing diffoscope
+[2024-04-07 23:48:51] INFO root fetch - processPackages [quickfin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickfin-1.8.0.tar.gz tmp/quickfin-1.9.0.tar.gz --markdown 20240407/q/quickfin/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2024-04-07 23:48:51] WARNING root fetch - processPackages [auth-middleware]: Timeout reached during download
+[2024-04-07 23:48:51] INFO root fetch - processPackages [auth-middleware]: executing diffoscope
+[2024-04-07 23:48:51] INFO root fetch - processPackages [auth-middleware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auth_middleware-0.1.7.tar.gz tmp/auth_middleware-0.1.8.tar.gz --markdown 20240407/a/auth-middleware/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2024-04-07 23:48:52] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.7.tar.gz]
+[2024-04-07 23:48:52] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.8.tar.gz]
+[2024-04-07 23:48:52] INFO root fetch - main [MainThread]: End processing [auth-middleware]: success
+[2024-04-07 23:48:52] INFO root fetch - processPackages [obsidown]: Remove: archive file [/home/abi/fetcher/tmp/obsidown-0.1.4.tar.gz]
+[2024-04-07 23:48:52] INFO root fetch - processPackages [obsidown]: Remove: archive file [/home/abi/fetcher/tmp/obsidown-0.2.0.tar.gz]
+[2024-04-07 23:48:52] INFO root fetch - main [MainThread]: End processing [obsidown]: success
+[2024-04-07 23:48:52] INFO root fetch - processPackages [quickfin]: Remove: archive file [/home/abi/fetcher/tmp/quickfin-1.8.0.tar.gz]
+[2024-04-07 23:48:52] INFO root fetch - processPackages [quickfin]: Remove: archive file [/home/abi/fetcher/tmp/quickfin-1.9.0.tar.gz]
+[2024-04-07 23:48:52] INFO root fetch - main [MainThread]: End processing [quickfin]: success
+[2024-04-07 23:48:52] INFO root fetch - main [MainThread]: Store serial: [22659588]
