@@ -3120,3 +3120,72 @@
 [2024-04-07 04:44:55] INFO root fetch - processPackages [open-parser]: Remove: archive file [/home/abi/fetcher/tmp/open_parser-0.0.3.tar.gz]
 [2024-04-07 04:44:55] INFO root fetch - main [MainThread]: End processing [open-parser]: success
 [2024-04-07 04:44:55] INFO root fetch - main [MainThread]: Store serial: [22652968]
+[2024-04-07 04:46:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652968]
+[2024-04-07 04:47:03] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 04:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: specnn4pde
+[2024-04-07 04:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: large-image
+[2024-04-07 04:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: girder-large-image
+[2024-04-07 04:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: girder-large-image-annotation
+[2024-04-07 04:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: large-image-converter
+[2024-04-07 04:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: large-image-tasks
+[2024-04-07 04:47:03] INFO root fetch - processPackages [specnn4pde]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-07 04:47:03] INFO root fetch - processPackages [large-image-converter]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-04-07 04:47:03] INFO root fetch - processPackages [girder-large-image]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-04-07 04:47:03] INFO root fetch - processPackages [large-image-tasks]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-04-07 04:47:03] INFO root fetch - processPackages [large-image]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-04-07 04:47:03] INFO root fetch - processPackages [girder-large-image-annotation]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-04-07 04:47:04] INFO root fetch - processPackages [specnn4pde]: Downloading https://files.pythonhosted.org/packages/c6/eb/334619168c4cafceb4a57950f76bd3d9267a906411f92ef5555239473214/specnn4pde-0.0.3.tar.gz
+[2024-04-07 04:47:04] INFO root fetch - processPackages [large-image-converter]: Downloading https://files.pythonhosted.org/packages/4e/e5/c672f0ad384f9f05d26e1baecedc8293d6d88840e5b9d9b43d657e8bfe20/large-image-converter-1.9.1.dev6.tar.gz
+[2024-04-07 04:47:04] WARNING root fetch - processPackages [specnn4pde]: Timeout reached during download
+[2024-04-07 04:47:04] INFO root fetch - processPackages [large-image-tasks]: Downloading https://files.pythonhosted.org/packages/d2/92/d072fa606a4761eb667b0efc0ba4137c9f9b34386f41757c597cdeff49d5/large-image-tasks-1.9.1.dev6.tar.gz
+[2024-04-07 04:47:04] WARNING root fetch - processPackages [large-image-converter]: Timeout reached during download
+[2024-04-07 04:47:04] INFO root fetch - processPackages [girder-large-image]: Downloading https://files.pythonhosted.org/packages/a1/de/9259311e8ad31f3131b016ae68dbee28c3a85340a5611063ba07e130f4dd/girder-large-image-1.9.1.dev6.tar.gz
+[2024-04-07 04:47:04] INFO root fetch - processPackages [girder-large-image-annotation]: Downloading https://files.pythonhosted.org/packages/c3/18/d99bf917c38c2bfe8e73289ba285a6777b5180e575625de79a961576422c/girder-large-image-annotation-1.9.1.dev6.tar.gz
+[2024-04-07 04:47:04] INFO root fetch - processPackages [large-image]: Downloading https://files.pythonhosted.org/packages/0e/97/f50d98f73951f053a140a085b971b043dc16e80844122ca59d5c2feeab13/large-image-1.9.1.dev6.tar.gz
+[2024-04-07 04:47:04] INFO root fetch - processPackages [specnn4pde]: Downloading https://files.pythonhosted.org/packages/88/be/910eb11a33855c49d647d4e9e8f7e02b1d9af2923571dff463f91b730a8c/specnn4pde-0.0.4.tar.gz
+[2024-04-07 04:47:04] WARNING root fetch - processPackages [large-image]: Timeout reached during download
+[2024-04-07 04:47:04] WARNING root fetch - processPackages [girder-large-image]: Timeout reached during download
+[2024-04-07 04:47:04] WARNING root fetch - processPackages [girder-large-image-annotation]: Timeout reached during download
+[2024-04-07 04:47:04] WARNING root fetch - processPackages [large-image-tasks]: Timeout reached during download
+[2024-04-07 04:47:04] INFO root fetch - processPackages [large-image-converter]: Downloading https://files.pythonhosted.org/packages/2d/90/b675b694e3b2886568e691207cf7a9f742a43b89fe6b6c1877548391d231/large-image-converter-1.9.1.dev8.tar.gz
+[2024-04-07 04:47:04] WARNING root fetch - processPackages [specnn4pde]: Timeout reached during download
+[2024-04-07 04:47:04] INFO root fetch - processPackages [specnn4pde]: executing diffoscope
+[2024-04-07 04:47:04] INFO root fetch - processPackages [specnn4pde]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/specnn4pde-0.0.3.tar.gz tmp/specnn4pde-0.0.4.tar.gz --markdown 20240407/s/specnn4pde/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 04:47:04] WARNING root fetch - processPackages [large-image-converter]: Timeout reached during download
+[2024-04-07 04:47:04] INFO root fetch - processPackages [large-image-converter]: executing diffoscope
+[2024-04-07 04:47:04] INFO root fetch - processPackages [large-image-converter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-converter-1.9.1.dev6.tar.gz tmp/large-image-converter-1.9.1.dev8.tar.gz --markdown 20240407/l/large-image-converter/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2024-04-07 04:47:04] INFO root fetch - processPackages [large-image-tasks]: Downloading https://files.pythonhosted.org/packages/59/66/7de5976597497ff75f76e9d1e817dc755ed82ff85669b1f9613d1b27c9e8/large-image-tasks-1.9.1.dev8.tar.gz
+[2024-04-07 04:47:04] INFO root fetch - processPackages [girder-large-image]: Downloading https://files.pythonhosted.org/packages/f9/12/4dfe66c1b3eae390e20ba6a8e5537d1e114e878fe6346c8b5dbb5b9efdcc/girder-large-image-1.9.1.dev8.tar.gz
+[2024-04-07 04:47:04] INFO root fetch - processPackages [large-image]: Downloading https://files.pythonhosted.org/packages/22/c4/18264ad18d3664df703883e2fb520f69d307805c93779d26bdaab792bb0b/large-image-1.9.1.dev8.tar.gz
+[2024-04-07 04:47:04] INFO root fetch - processPackages [girder-large-image-annotation]: Downloading https://files.pythonhosted.org/packages/ca/57/fbf65f3374926f7df27919c0c3d3a4d433f93e014e2405e5aaec1aa92a23/girder-large-image-annotation-1.9.1.dev8.tar.gz
+[2024-04-07 04:47:04] WARNING root fetch - processPackages [large-image-tasks]: Timeout reached during download
+[2024-04-07 04:47:04] INFO root fetch - processPackages [large-image-tasks]: executing diffoscope
+[2024-04-07 04:47:04] INFO root fetch - processPackages [large-image-tasks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-tasks-1.9.1.dev6.tar.gz tmp/large-image-tasks-1.9.1.dev8.tar.gz --markdown 20240407/l/large-image-tasks/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2024-04-07 04:47:04] WARNING root fetch - processPackages [large-image]: Timeout reached during download
+[2024-04-07 04:47:04] INFO root fetch - processPackages [large-image]: executing diffoscope
+[2024-04-07 04:47:04] INFO root fetch - processPackages [large-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-1.9.1.dev6.tar.gz tmp/large-image-1.9.1.dev8.tar.gz --markdown 20240407/l/large-image/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2024-04-07 04:47:04] WARNING root fetch - processPackages [girder-large-image]: Timeout reached during download
+[2024-04-07 04:47:04] WARNING root fetch - processPackages [girder-large-image-annotation]: Timeout reached during download
+[2024-04-07 04:47:04] INFO root fetch - processPackages [girder-large-image]: executing diffoscope
+[2024-04-07 04:47:04] INFO root fetch - processPackages [girder-large-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/girder-large-image-1.9.1.dev6.tar.gz tmp/girder-large-image-1.9.1.dev8.tar.gz --markdown 20240407/g/girder-large-image/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2024-04-07 04:47:04] INFO root fetch - processPackages [girder-large-image-annotation]: executing diffoscope
+[2024-04-07 04:47:04] INFO root fetch - processPackages [girder-large-image-annotation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/girder-large-image-annotation-1.9.1.dev6.tar.gz tmp/girder-large-image-annotation-1.9.1.dev8.tar.gz --markdown 20240407/g/girder-large-image-annotation/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2024-04-07 04:47:05] INFO root fetch - processPackages [large-image-converter]: Remove: archive file [/home/abi/fetcher/tmp/large-image-converter-1.9.1.dev6.tar.gz]
+[2024-04-07 04:47:05] INFO root fetch - processPackages [large-image-converter]: Remove: archive file [/home/abi/fetcher/tmp/large-image-converter-1.9.1.dev8.tar.gz]
+[2024-04-07 04:47:05] INFO root fetch - main [MainThread]: End processing [large-image-converter]: success
+[2024-04-07 04:47:05] INFO root fetch - processPackages [specnn4pde]: Remove: archive file [/home/abi/fetcher/tmp/specnn4pde-0.0.3.tar.gz]
+[2024-04-07 04:47:05] INFO root fetch - processPackages [specnn4pde]: Remove: archive file [/home/abi/fetcher/tmp/specnn4pde-0.0.4.tar.gz]
+[2024-04-07 04:47:05] INFO root fetch - main [MainThread]: End processing [specnn4pde]: success
+[2024-04-07 04:47:05] INFO root fetch - processPackages [large-image-tasks]: Remove: archive file [/home/abi/fetcher/tmp/large-image-tasks-1.9.1.dev6.tar.gz]
+[2024-04-07 04:47:05] INFO root fetch - processPackages [large-image-tasks]: Remove: archive file [/home/abi/fetcher/tmp/large-image-tasks-1.9.1.dev8.tar.gz]
+[2024-04-07 04:47:05] INFO root fetch - main [MainThread]: End processing [large-image-tasks]: success
+[2024-04-07 04:47:05] INFO root fetch - processPackages [large-image]: Remove: archive file [/home/abi/fetcher/tmp/large-image-1.9.1.dev6.tar.gz]
+[2024-04-07 04:47:05] INFO root fetch - processPackages [large-image]: Remove: archive file [/home/abi/fetcher/tmp/large-image-1.9.1.dev8.tar.gz]
+[2024-04-07 04:47:05] INFO root fetch - main [MainThread]: End processing [large-image]: success
+[2024-04-07 04:47:05] INFO root fetch - processPackages [girder-large-image-annotation]: Remove: archive file [/home/abi/fetcher/tmp/girder-large-image-annotation-1.9.1.dev6.tar.gz]
+[2024-04-07 04:47:05] INFO root fetch - processPackages [girder-large-image-annotation]: Remove: archive file [/home/abi/fetcher/tmp/girder-large-image-annotation-1.9.1.dev8.tar.gz]
+[2024-04-07 04:47:05] INFO root fetch - main [MainThread]: End processing [girder-large-image-annotation]: success
+[2024-04-07 04:47:05] INFO root fetch - processPackages [girder-large-image]: Remove: archive file [/home/abi/fetcher/tmp/girder-large-image-1.9.1.dev6.tar.gz]
+[2024-04-07 04:47:05] INFO root fetch - processPackages [girder-large-image]: Remove: archive file [/home/abi/fetcher/tmp/girder-large-image-1.9.1.dev8.tar.gz]
+[2024-04-07 04:47:05] INFO root fetch - main [MainThread]: End processing [girder-large-image]: success
+[2024-04-07 04:47:05] INFO root fetch - main [MainThread]: Store serial: [22652986]
