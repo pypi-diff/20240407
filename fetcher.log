@@ -1802,3 +1802,39 @@
 [2024-04-07 02:48:11] WARNING root fetch - processPackages [Hack4u-Allen]: Skipping, unable to determine old version
 [2024-04-07 02:48:11] INFO root fetch - main [MainThread]: End processing [Hack4u-Allen] error
 [2024-04-07 02:48:11] INFO root fetch - main [MainThread]: Store serial: [22652374]
+[2024-04-07 02:50:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652374]
+[2024-04-07 02:50:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 02:50:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tjax
+[2024-04-07 02:50:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hiddifypanel
+[2024-04-07 02:50:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rcquant-sdk
+[2024-04-07 02:50:19] INFO root fetch - processPackages [tjax]: New version: [0.9.0] Old Version: [0.8.4]
+[2024-04-07 02:50:19] INFO root fetch - processPackages [hiddifypanel]: New version: [8.8.99] Old Version: [8.8.97]
+[2024-04-07 02:50:19] INFO root fetch - processPackages [rcquant-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 02:50:19] INFO root fetch - processPackages [tjax]: Downloading https://files.pythonhosted.org/packages/0a/6a/2363c88006dd7f98956bcd37716a18eff3b3138599af4e6dbde76d22d085/tjax-0.8.4.tar.gz
+[2024-04-07 02:50:19] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/3b/4c/15ca81d9764c196bd632b929c178a21ce2569604e1b7958aaf21f3591f24/hiddifypanel-8.8.97.tar.gz
+[2024-04-07 02:50:19] WARNING root fetch - processPackages [tjax]: Timeout reached during download
+[2024-04-07 02:50:19] INFO root fetch - processPackages [rcquant-sdk]: Downloading https://files.pythonhosted.org/packages/3e/60/e0a243e196412d03158a2aff972fd0ac9db20838d3337b73106554a273df/rcquant_sdk-0.0.8.tar.gz
+[2024-04-07 02:50:19] INFO root fetch - processPackages [tjax]: Downloading https://files.pythonhosted.org/packages/be/f1/ce1970f050f673ae52c304257120a380736f531fee4d81b57ab0f24b506f/tjax-0.9.0.tar.gz
+[2024-04-07 02:50:19] WARNING root fetch - processPackages [rcquant-sdk]: Timeout reached during download
+[2024-04-07 02:50:19] WARNING root fetch - processPackages [tjax]: Timeout reached during download
+[2024-04-07 02:50:19] INFO root fetch - processPackages [tjax]: executing diffoscope
+[2024-04-07 02:50:19] INFO root fetch - processPackages [tjax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tjax-0.8.4.tar.gz tmp/tjax-0.9.0.tar.gz --markdown 20240407/t/tjax/0.8.4-0.9.0/diff.md --exclude *.pyd
+[2024-04-07 02:50:20] INFO root fetch - processPackages [rcquant-sdk]: Downloading https://files.pythonhosted.org/packages/ac/5d/0b8b494a5b28ddc4213217404a0c3be423df271aaf93c217f1058af73bf8/rcquant_sdk-0.0.9.tar.gz
+[2024-04-07 02:50:20] WARNING root fetch - processPackages [hiddifypanel]: Timeout reached during download
+[2024-04-07 02:50:20] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/ef/74/ab9bc5ebe1c31d96fcff0642f25280d3eebba3d867bbf874c9e8c9fe2a23/hiddifypanel-8.8.99.tar.gz
+[2024-04-07 02:50:20] WARNING root fetch - processPackages [rcquant-sdk]: Timeout reached during download
+[2024-04-07 02:50:20] INFO root fetch - processPackages [rcquant-sdk]: executing diffoscope
+[2024-04-07 02:50:20] INFO root fetch - processPackages [rcquant-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rcquant_sdk-0.0.8.tar.gz tmp/rcquant_sdk-0.0.9.tar.gz --markdown 20240407/r/rcquant-sdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 02:50:20] INFO root fetch - processPackages [tjax]: Remove: archive file [/home/abi/fetcher/tmp/tjax-0.8.4.tar.gz]
+[2024-04-07 02:50:20] INFO root fetch - processPackages [tjax]: Remove: archive file [/home/abi/fetcher/tmp/tjax-0.9.0.tar.gz]
+[2024-04-07 02:50:20] INFO root fetch - main [MainThread]: End processing [tjax]: success
+[2024-04-07 02:50:20] WARNING root fetch - processPackages [hiddifypanel]: Timeout reached during download
+[2024-04-07 02:50:20] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2024-04-07 02:50:20] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-8.8.97.tar.gz tmp/hiddifypanel-8.8.99.tar.gz --markdown 20240407/h/hiddifypanel/8.8.97-8.8.99/diff.md --exclude *.pyd
+[2024-04-07 02:50:21] INFO root fetch - processPackages [rcquant-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rcquant_sdk-0.0.8.tar.gz]
+[2024-04-07 02:50:21] INFO root fetch - processPackages [rcquant-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rcquant_sdk-0.0.9.tar.gz]
+[2024-04-07 02:50:21] INFO root fetch - main [MainThread]: End processing [rcquant-sdk]: success
+[2024-04-07 02:50:24] INFO root fetch - processPackages [hiddifypanel]: Remove: archive file [/home/abi/fetcher/tmp/hiddifypanel-8.8.97.tar.gz]
+[2024-04-07 02:50:24] INFO root fetch - processPackages [hiddifypanel]: Remove: archive file [/home/abi/fetcher/tmp/hiddifypanel-8.8.99.tar.gz]
+[2024-04-07 02:50:24] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2024-04-07 02:50:24] INFO root fetch - main [MainThread]: Store serial: [22652383]
