@@ -14471,3 +14471,50 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:13:24] INFO root fetch - processPackages [dxsp]: Remove: archive file [/home/abi/fetcher/tmp/dxsp-9.0.7.tar.gz]
 [2024-04-07 17:13:24] INFO root fetch - main [MainThread]: End processing [dxsp]: success
 [2024-04-07 17:13:24] INFO root fetch - main [MainThread]: Store serial: [22657101]
+[2024-04-07 17:15:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657101]
+[2024-04-07 17:15:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 17:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deaotpy
+[2024-04-07 17:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nodeorc
+[2024-04-07 17:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ggun
+[2024-04-07 17:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: docker-remote-sync
+[2024-04-07 17:15:33] INFO root fetch - processPackages [docker-remote-sync]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-07 17:15:33] INFO root fetch - processPackages [nodeorc]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-07 17:15:33] INFO root fetch - processPackages [ggun]: New version: [0.1.3] Old Version: [0.0.3]
+[2024-04-07 17:15:33] INFO root fetch - processPackages [deaotpy]: New version: [1.8.0] Old Version: [1.7.0]
+[2024-04-07 17:15:33] INFO root fetch - processPackages [docker-remote-sync]: Downloading https://files.pythonhosted.org/packages/b2/9c/29e154b5e72526d1ebe5a1f432334871355d7bdb3f6ae5ef7ffda69a9972/docker_remote_sync-0.5.0.tar.gz
+[2024-04-07 17:15:33] INFO root fetch - processPackages [nodeorc]: Downloading https://files.pythonhosted.org/packages/04/4c/9251af185d0754737e6fbe36e726b07dedcef549e69c91b198ca2c567425/nodeorc-0.1.0.tar.gz
+[2024-04-07 17:15:33] WARNING root fetch - processPackages [docker-remote-sync]: Timeout reached during download
+[2024-04-07 17:15:33] INFO root fetch - processPackages [ggun]: Downloading https://files.pythonhosted.org/packages/12/d8/b05dff6562b9916d23c98eb1f4a9f42a1e4e2f74b47a7f0228f27ffad296/ggun-0.0.3-py3-none-any.whl
+[2024-04-07 17:15:33] INFO root fetch - processPackages [deaotpy]: Downloading https://files.pythonhosted.org/packages/fd/2a/691c7847bde1c73dcc82bc8b1b2a545080ab9e64b474661bddc03482a5d1/deaotpy-1.7.0.tar.gz
+[2024-04-07 17:15:33] WARNING root fetch - processPackages [nodeorc]: Timeout reached during download
+[2024-04-07 17:15:33] INFO root fetch - processPackages [docker-remote-sync]: Downloading https://files.pythonhosted.org/packages/72/7b/32c0ede3a7611ee5e5c0437bac6f3d206c5258ce37e7dc9b621fea0bebea/docker_remote_sync-0.5.1.tar.gz
+[2024-04-07 17:15:33] WARNING root fetch - processPackages [deaotpy]: Timeout reached during download
+[2024-04-07 17:15:33] WARNING root fetch - processPackages [ggun]: Timeout reached during download
+[2024-04-07 17:15:33] INFO root fetch - processPackages [nodeorc]: Downloading https://files.pythonhosted.org/packages/f2/99/00afdc3a5b28d4a2c68dabbc3c55b212f39254fbebaf91f3e770b1b6f01d/nodeorc-0.1.1.tar.gz
+[2024-04-07 17:15:33] WARNING root fetch - processPackages [docker-remote-sync]: Timeout reached during download
+[2024-04-07 17:15:33] INFO root fetch - processPackages [docker-remote-sync]: executing diffoscope
+[2024-04-07 17:15:33] INFO root fetch - processPackages [docker-remote-sync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docker_remote_sync-0.5.0.tar.gz tmp/docker_remote_sync-0.5.1.tar.gz --markdown 20240407/d/docker-remote-sync/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2024-04-07 17:15:34] INFO root fetch - processPackages [deaotpy]: Downloading https://files.pythonhosted.org/packages/b9/a5/02e25a971c0787b2c6421197a115461f68f3cd01a2f6c8a6b26774f38c2b/deaotpy-1.8.0.tar.gz
+[2024-04-07 17:15:34] INFO root fetch - processPackages [ggun]: Downloading https://files.pythonhosted.org/packages/47/27/7e3ec47e8a62c453558b4bebcb72c52dd3105ad48927389724aab2df9b9b/ggun-0.1.3-py3-none-any.whl
+[2024-04-07 17:15:34] WARNING root fetch - processPackages [deaotpy]: Timeout reached during download
+[2024-04-07 17:15:34] INFO root fetch - processPackages [deaotpy]: executing diffoscope
+[2024-04-07 17:15:34] INFO root fetch - processPackages [deaotpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deaotpy-1.7.0.tar.gz tmp/deaotpy-1.8.0.tar.gz --markdown 20240407/d/deaotpy/1.7.0-1.8.0/diff.md --exclude *.pyd
+[2024-04-07 17:15:34] WARNING root fetch - processPackages [ggun]: Timeout reached during download
+[2024-04-07 17:15:34] INFO root fetch - processPackages [ggun]: executing diffoscope
+[2024-04-07 17:15:34] INFO root fetch - processPackages [ggun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ggun-0.0.3-py3-none-any.whl.zip tmp/ggun-0.1.3-py3-none-any.whl.zip --markdown 20240407/g/ggun/0.0.3-0.1.3/diff.md --exclude *.pyd
+[2024-04-07 17:15:34] WARNING root fetch - processPackages [nodeorc]: Timeout reached during download
+[2024-04-07 17:15:34] INFO root fetch - processPackages [nodeorc]: executing diffoscope
+[2024-04-07 17:15:34] INFO root fetch - processPackages [nodeorc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nodeorc-0.1.0.tar.gz tmp/nodeorc-0.1.1.tar.gz --markdown 20240407/n/nodeorc/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 17:15:34] INFO root fetch - processPackages [docker-remote-sync]: Remove: archive file [/home/abi/fetcher/tmp/docker_remote_sync-0.5.0.tar.gz]
+[2024-04-07 17:15:34] INFO root fetch - processPackages [docker-remote-sync]: Remove: archive file [/home/abi/fetcher/tmp/docker_remote_sync-0.5.1.tar.gz]
+[2024-04-07 17:15:34] INFO root fetch - main [MainThread]: End processing [docker-remote-sync]: success
+[2024-04-07 17:15:34] INFO root fetch - processPackages [ggun]: Remove: archive file [/home/abi/fetcher/tmp/ggun-0.0.3-py3-none-any.whl.zip]
+[2024-04-07 17:15:34] INFO root fetch - processPackages [ggun]: Remove: archive file [/home/abi/fetcher/tmp/ggun-0.1.3-py3-none-any.whl.zip]
+[2024-04-07 17:15:34] INFO root fetch - main [MainThread]: End processing [ggun]: success
+[2024-04-07 17:15:34] INFO root fetch - processPackages [deaotpy]: Remove: archive file [/home/abi/fetcher/tmp/deaotpy-1.7.0.tar.gz]
+[2024-04-07 17:15:34] INFO root fetch - processPackages [deaotpy]: Remove: archive file [/home/abi/fetcher/tmp/deaotpy-1.8.0.tar.gz]
+[2024-04-07 17:15:34] INFO root fetch - main [MainThread]: End processing [deaotpy]: success
+[2024-04-07 17:15:35] INFO root fetch - processPackages [nodeorc]: Remove: archive file [/home/abi/fetcher/tmp/nodeorc-0.1.0.tar.gz]
+[2024-04-07 17:15:35] INFO root fetch - processPackages [nodeorc]: Remove: archive file [/home/abi/fetcher/tmp/nodeorc-0.1.1.tar.gz]
+[2024-04-07 17:15:35] INFO root fetch - main [MainThread]: End processing [nodeorc]: success
+[2024-04-07 17:15:35] INFO root fetch - main [MainThread]: Store serial: [22657112]
