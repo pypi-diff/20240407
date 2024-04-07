@@ -9417,3 +9417,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 11:49:46] INFO root fetch - processPackages [Mopidy-Muse]: Remove: archive file [/home/abi/fetcher/tmp/Mopidy-Muse-0.0.9.tar.gz]
 [2024-04-07 11:49:46] INFO root fetch - main [MainThread]: End processing [Mopidy-Muse]: success
 [2024-04-07 11:49:46] INFO root fetch - main [MainThread]: Store serial: [22655201]
+[2024-04-07 11:51:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655201]
+[2024-04-07 11:51:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 11:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyFunceble-dev
+[2024-04-07 11:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unicodedata-reader
+[2024-04-07 11:51:55] INFO root fetch - processPackages [unicodedata-reader]: New version: [1.3.2] Old Version: [1.3.1]
+[2024-04-07 11:51:55] INFO root fetch - processPackages [unicodedata-reader]: Downloading https://files.pythonhosted.org/packages/40/ac/169ed93e5420a70fc013dff13981e871bfc5983d523c33c277cfe46501ce/unicodedata_reader-1.3.1.tar.gz
+[2024-04-07 11:51:55] WARNING root fetch - processPackages [unicodedata-reader]: Timeout reached during download
+[2024-04-07 11:51:55] INFO root fetch - processPackages [PyFunceble-dev]: New version: [4.2.9] Old Version: [4.2.7]
+[2024-04-07 11:51:55] INFO root fetch - processPackages [unicodedata-reader]: Downloading https://files.pythonhosted.org/packages/d9/21/34e0a8c911a52f1129007702d88e5beca5716e1196bf7b70360f8a38af1f/unicodedata_reader-1.3.2.tar.gz
+[2024-04-07 11:51:55] INFO root fetch - processPackages [PyFunceble-dev]: Downloading https://files.pythonhosted.org/packages/a9/09/2ffbe87530f0aece577d1ebfa1ea3ff3585590610c864c8b8d3e5b18411c/PyFunceble-dev-4.2.7.tar.gz
+[2024-04-07 11:51:55] WARNING root fetch - processPackages [unicodedata-reader]: Timeout reached during download
+[2024-04-07 11:51:55] INFO root fetch - processPackages [unicodedata-reader]: executing diffoscope
+[2024-04-07 11:51:55] INFO root fetch - processPackages [unicodedata-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unicodedata_reader-1.3.1.tar.gz tmp/unicodedata_reader-1.3.2.tar.gz --markdown 20240407/u/unicodedata-reader/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2024-04-07 11:51:55] WARNING root fetch - processPackages [PyFunceble-dev]: Timeout reached during download
+[2024-04-07 11:51:56] INFO root fetch - processPackages [PyFunceble-dev]: Downloading https://files.pythonhosted.org/packages/8d/a6/ce1b409ecb908fd4d991b77970805c1b0d784005b2b00817f8b4233ac9d4/PyFunceble-dev-4.2.9.tar.gz
+[2024-04-07 11:51:56] WARNING root fetch - processPackages [PyFunceble-dev]: Timeout reached during download
+[2024-04-07 11:51:56] INFO root fetch - processPackages [PyFunceble-dev]: executing diffoscope
+[2024-04-07 11:51:56] INFO root fetch - processPackages [PyFunceble-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyFunceble-dev-4.2.7.tar.gz tmp/PyFunceble-dev-4.2.9.tar.gz --markdown 20240407/P/PyFunceble-dev/4.2.7-4.2.9/diff.md --exclude *.pyd
+[2024-04-07 11:51:56] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-1.3.1.tar.gz]
+[2024-04-07 11:51:56] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-1.3.2.tar.gz]
+[2024-04-07 11:51:56] INFO root fetch - main [MainThread]: End processing [unicodedata-reader]: success
+[2024-04-07 11:51:57] INFO root fetch - processPackages [PyFunceble-dev]: Remove: archive file [/home/abi/fetcher/tmp/PyFunceble-dev-4.2.7.tar.gz]
+[2024-04-07 11:51:57] INFO root fetch - processPackages [PyFunceble-dev]: Remove: archive file [/home/abi/fetcher/tmp/PyFunceble-dev-4.2.9.tar.gz]
+[2024-04-07 11:51:57] INFO root fetch - main [MainThread]: End processing [PyFunceble-dev]: success
+[2024-04-07 11:51:57] INFO root fetch - main [MainThread]: Store serial: [22655208]
