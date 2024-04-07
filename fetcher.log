@@ -19062,3 +19062,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 21:46:45] INFO root fetch - processPackages [dbrownell-DevTools]: Remove: archive file [/home/abi/fetcher/tmp/dbrownell_DevTools-0.9.0-py3-none-any.whl.zip]
 [2024-04-07 21:46:45] INFO root fetch - main [MainThread]: End processing [dbrownell-DevTools]: success
 [2024-04-07 21:46:45] INFO root fetch - main [MainThread]: Store serial: [22658757]
+[2024-04-07 21:48:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658757]
+[2024-04-07 21:48:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 21:48:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: imcsdk-ecoen66
+[2024-04-07 21:48:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wellets-cli
+[2024-04-07 21:48:53] INFO root fetch - processPackages [imcsdk-ecoen66]: New version: [0.9.30] Old Version: [0.9.29]
+[2024-04-07 21:48:54] INFO root fetch - processPackages [imcsdk-ecoen66]: Downloading https://files.pythonhosted.org/packages/ba/75/33f04216b3ff0da108e99410b87faba6d05b4da2d24ab9519bfb83974d1d/imcsdk_ecoen66-0.9.29.tar.gz
+[2024-04-07 21:48:54] INFO root fetch - processPackages [wellets-cli]: New version: [1.9.5] Old Version: [1.9.4]
+[2024-04-07 21:48:54] WARNING root fetch - processPackages [imcsdk-ecoen66]: Timeout reached during download
+[2024-04-07 21:48:54] INFO root fetch - processPackages [wellets-cli]: Downloading https://files.pythonhosted.org/packages/e3/59/1ad1b9ec28ef24fee5735a899c686c9f1fc77497fc9199e9fba17e032c73/wellets_cli-1.9.4.tar.gz
+[2024-04-07 21:48:54] INFO root fetch - processPackages [imcsdk-ecoen66]: Downloading https://files.pythonhosted.org/packages/78/15/85fbc4d9c93e888a944c4a76b9217db82f647a65a7a13b193be35a9d7cca/imcsdk_ecoen66-0.9.30.tar.gz
+[2024-04-07 21:48:54] WARNING root fetch - processPackages [wellets-cli]: Timeout reached during download
+[2024-04-07 21:48:54] WARNING root fetch - processPackages [imcsdk-ecoen66]: Timeout reached during download
+[2024-04-07 21:48:54] INFO root fetch - processPackages [imcsdk-ecoen66]: executing diffoscope
+[2024-04-07 21:48:54] INFO root fetch - processPackages [imcsdk-ecoen66]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imcsdk_ecoen66-0.9.29.tar.gz tmp/imcsdk_ecoen66-0.9.30.tar.gz --markdown 20240407/i/imcsdk-ecoen66/0.9.29-0.9.30/diff.md --exclude *.pyd
+[2024-04-07 21:48:54] INFO root fetch - processPackages [wellets-cli]: Downloading https://files.pythonhosted.org/packages/b9/61/049b6416e9cbc976044c9c5187383486832b4755b717d2f8bc9ca86eeb98/wellets_cli-1.9.5.tar.gz
+[2024-04-07 21:48:54] WARNING root fetch - processPackages [wellets-cli]: Timeout reached during download
+[2024-04-07 21:48:54] INFO root fetch - processPackages [wellets-cli]: executing diffoscope
+[2024-04-07 21:48:54] INFO root fetch - processPackages [wellets-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wellets_cli-1.9.4.tar.gz tmp/wellets_cli-1.9.5.tar.gz --markdown 20240407/w/wellets-cli/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2024-04-07 21:48:55] INFO root fetch - processPackages [wellets-cli]: Remove: archive file [/home/abi/fetcher/tmp/wellets_cli-1.9.4.tar.gz]
+[2024-04-07 21:48:55] INFO root fetch - processPackages [wellets-cli]: Remove: archive file [/home/abi/fetcher/tmp/wellets_cli-1.9.5.tar.gz]
+[2024-04-07 21:48:55] INFO root fetch - main [MainThread]: End processing [wellets-cli]: success
+[2024-04-07 21:48:57] INFO root fetch - processPackages [imcsdk-ecoen66]: Remove: archive file [/home/abi/fetcher/tmp/imcsdk_ecoen66-0.9.29.tar.gz]
+[2024-04-07 21:48:57] INFO root fetch - processPackages [imcsdk-ecoen66]: Remove: archive file [/home/abi/fetcher/tmp/imcsdk_ecoen66-0.9.30.tar.gz]
+[2024-04-07 21:48:57] INFO root fetch - main [MainThread]: End processing [imcsdk-ecoen66]: success
+[2024-04-07 21:48:57] INFO root fetch - main [MainThread]: Store serial: [22658763]
