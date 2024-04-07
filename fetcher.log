@@ -20130,3 +20130,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:52:13] WARNING root fetch - processPackages [pdfconversorcall]: Skipping, unable to determine old version
 [2024-04-07 22:52:13] INFO root fetch - main [MainThread]: End processing [pdfconversorcall] error
 [2024-04-07 22:52:13] INFO root fetch - main [MainThread]: Store serial: [22659210]
+[2024-04-07 22:54:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659210]
+[2024-04-07 22:54:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 22:54:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gdpx
+[2024-04-07 22:54:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kkpyai
+[2024-04-07 22:54:22] INFO root fetch - processPackages [kkpyai]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-07 22:54:23] INFO root fetch - processPackages [kkpyai]: Downloading https://files.pythonhosted.org/packages/e2/f8/0b84ee8c4373fbb9d8e8bbfff78167758c2e2c1561a247c06b1cd02c1a0a/kkpyai-0.2.1.tar.gz
+[2024-04-07 22:54:23] INFO root fetch - processPackages [gdpx]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-07 22:54:23] WARNING root fetch - processPackages [kkpyai]: Timeout reached during download
+[2024-04-07 22:54:23] INFO root fetch - processPackages [gdpx]: Downloading https://files.pythonhosted.org/packages/74/72/aa29e1efc5d8da21869f89b276f37b7cc16232150f20ed61d7520318f45f/gdpx-0.0.5.tar.gz
+[2024-04-07 22:54:23] INFO root fetch - processPackages [kkpyai]: Downloading https://files.pythonhosted.org/packages/0f/bb/d09f2e95020033f0de2016216bc335bbafe9d40b0af48dbaa21736ccb209/kkpyai-0.2.2.tar.gz
+[2024-04-07 22:54:23] WARNING root fetch - processPackages [kkpyai]: Timeout reached during download
+[2024-04-07 22:54:23] INFO root fetch - processPackages [kkpyai]: executing diffoscope
+[2024-04-07 22:54:23] INFO root fetch - processPackages [kkpyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyai-0.2.1.tar.gz tmp/kkpyai-0.2.2.tar.gz --markdown 20240407/k/kkpyai/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2024-04-07 22:54:23] WARNING root fetch - processPackages [gdpx]: Timeout reached during download
+[2024-04-07 22:54:23] INFO root fetch - processPackages [gdpx]: Downloading https://files.pythonhosted.org/packages/e1/05/2aa2754138ac670a4828eb16f8fbe508a902bee63c187f9f63eedda46a3b/gdpx-0.0.6.tar.gz
+[2024-04-07 22:54:23] WARNING root fetch - processPackages [gdpx]: Timeout reached during download
+[2024-04-07 22:54:23] INFO root fetch - processPackages [gdpx]: executing diffoscope
+[2024-04-07 22:54:23] INFO root fetch - processPackages [gdpx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdpx-0.0.5.tar.gz tmp/gdpx-0.0.6.tar.gz --markdown 20240407/g/gdpx/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-07 22:54:23] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.2.1.tar.gz]
+[2024-04-07 22:54:23] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.2.2.tar.gz]
+[2024-04-07 22:54:23] INFO root fetch - main [MainThread]: End processing [kkpyai]: success
+[2024-04-07 22:54:25] INFO root fetch - processPackages [gdpx]: Remove: archive file [/home/abi/fetcher/tmp/gdpx-0.0.5.tar.gz]
+[2024-04-07 22:54:25] INFO root fetch - processPackages [gdpx]: Remove: archive file [/home/abi/fetcher/tmp/gdpx-0.0.6.tar.gz]
+[2024-04-07 22:54:25] INFO root fetch - main [MainThread]: End processing [gdpx]: success
+[2024-04-07 22:54:25] INFO root fetch - main [MainThread]: Store serial: [22659216]
