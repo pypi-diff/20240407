@@ -11998,3 +11998,50 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:55:27] WARNING root fetch - processPackages [gif-steganography]: Skipping, unable to determine old version
 [2024-04-07 14:55:27] INFO root fetch - main [MainThread]: End processing [gif-steganography] error
 [2024-04-07 14:55:27] INFO root fetch - main [MainThread]: Store serial: [22656301]
+[2024-04-07 14:57:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656301]
+[2024-04-07 14:57:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 14:57:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ddb_single
+[2024-04-07 14:57:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dotenv-cli
+[2024-04-07 14:57:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sbcli-mig
+[2024-04-07 14:57:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tb1-parser
+[2024-04-07 14:57:36] INFO root fetch - processPackages [sbcli-mig]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-07 14:57:36] INFO root fetch - processPackages [tb1-parser]: New version: [0.6] Old Version: [0.5]
+[2024-04-07 14:57:36] INFO root fetch - processPackages [ddb_single]: New version: [0.4.9] Old Version: [0.4.7]
+[2024-04-07 14:57:36] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/06/2f/2b2f1cfa7b91365cf5cd645c5967a8e8a8bd7f1c8e89f91d7e43e2aefc87/sbcli-mig-1.0.8.zip
+[2024-04-07 14:57:36] INFO root fetch - processPackages [tb1-parser]: Downloading https://files.pythonhosted.org/packages/7c/a2/6af3b59fbb1d6f7910966893018d577c38a2b55ef52b556f636543c5dadb/tb1_parser-0.5.tar.gz
+[2024-04-07 14:57:36] INFO root fetch - processPackages [dotenv-cli]: New version: [3.3.0] Old Version: [3.2.2]
+[2024-04-07 14:57:36] WARNING root fetch - processPackages [tb1-parser]: Timeout reached during download
+[2024-04-07 14:57:36] WARNING root fetch - processPackages [sbcli-mig]: Timeout reached during download
+[2024-04-07 14:57:36] INFO root fetch - processPackages [ddb_single]: Downloading https://files.pythonhosted.org/packages/d1/de/8899823c20b665e6e029ae3b11cc487dca030a78e3ac942f8d7c6715861c/ddb_single-0.4.7.zip
+[2024-04-07 14:57:36] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/4b/15/9c1afe915f08547ce582aeae079f597b2a173df003109bcd1d0f0bbf037e/sbcli-mig-1.0.9.zip
+[2024-04-07 14:57:36] INFO root fetch - processPackages [tb1-parser]: Downloading https://files.pythonhosted.org/packages/8e/33/27645bd0b921973a331915fb975ddccb097818cf698b2187caf37626f5b5/tb1_parser-0.6.tar.gz
+[2024-04-07 14:57:36] WARNING root fetch - processPackages [ddb_single]: Timeout reached during download
+[2024-04-07 14:57:36] INFO root fetch - processPackages [dotenv-cli]: Downloading https://files.pythonhosted.org/packages/52/37/95c625e73e9ed76e0ef0d9761c8240fa23315fe5e336db8c6686ca90f079/dotenv-cli-3.2.2.tar.gz
+[2024-04-07 14:57:36] WARNING root fetch - processPackages [sbcli-mig]: Timeout reached during download
+[2024-04-07 14:57:36] INFO root fetch - processPackages [sbcli-mig]: executing diffoscope
+[2024-04-07 14:57:36] INFO root fetch - processPackages [sbcli-mig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbcli-mig-1.0.8.zip tmp/sbcli-mig-1.0.9.zip --markdown 20240407/s/sbcli-mig/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-07 14:57:36] WARNING root fetch - processPackages [tb1-parser]: Timeout reached during download
+[2024-04-07 14:57:36] INFO root fetch - processPackages [tb1-parser]: executing diffoscope
+[2024-04-07 14:57:36] INFO root fetch - processPackages [tb1-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb1_parser-0.5.tar.gz tmp/tb1_parser-0.6.tar.gz --markdown 20240407/t/tb1-parser/0.5-0.6/diff.md --exclude *.pyd
+[2024-04-07 14:57:36] INFO root fetch - processPackages [ddb_single]: Downloading https://files.pythonhosted.org/packages/91/1a/d9f18b8ebb12afc042122bfdf6e24c6316aa24f23dccee58d1b9a7d15cb3/ddb_single-0.4.9.tar.gz
+[2024-04-07 14:57:37] WARNING root fetch - processPackages [dotenv-cli]: Timeout reached during download
+[2024-04-07 14:57:37] WARNING root fetch - processPackages [ddb_single]: Timeout reached during download
+[2024-04-07 14:57:37] INFO root fetch - processPackages [ddb_single]: executing diffoscope
+[2024-04-07 14:57:37] INFO root fetch - processPackages [ddb_single]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddb_single-0.4.7.zip tmp/ddb_single-0.4.9.tar.gz --markdown 20240407/d/ddb_single/0.4.7-0.4.9/diff.md --exclude *.pyd
+[2024-04-07 14:57:37] INFO root fetch - processPackages [dotenv-cli]: Downloading https://files.pythonhosted.org/packages/07/1a/912b0a56efa531a4d16ed83dc865463681137fad56bcf3dbca46cda0d23c/dotenv-cli-3.3.0.tar.gz
+[2024-04-07 14:57:37] WARNING root fetch - processPackages [dotenv-cli]: Timeout reached during download
+[2024-04-07 14:57:37] INFO root fetch - processPackages [dotenv-cli]: executing diffoscope
+[2024-04-07 14:57:37] INFO root fetch - processPackages [dotenv-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dotenv-cli-3.2.2.tar.gz tmp/dotenv-cli-3.3.0.tar.gz --markdown 20240407/d/dotenv-cli/3.2.2-3.3.0/diff.md --exclude *.pyd
+[2024-04-07 14:57:37] INFO root fetch - processPackages [tb1-parser]: Remove: archive file [/home/abi/fetcher/tmp/tb1_parser-0.5.tar.gz]
+[2024-04-07 14:57:37] INFO root fetch - processPackages [tb1-parser]: Remove: archive file [/home/abi/fetcher/tmp/tb1_parser-0.6.tar.gz]
+[2024-04-07 14:57:37] INFO root fetch - main [MainThread]: End processing [tb1-parser]: success
+[2024-04-07 14:57:37] INFO root fetch - processPackages [ddb_single]: Remove: archive file [/home/abi/fetcher/tmp/ddb_single-0.4.7.zip]
+[2024-04-07 14:57:37] INFO root fetch - processPackages [ddb_single]: Remove: archive file [/home/abi/fetcher/tmp/ddb_single-0.4.9.tar.gz]
+[2024-04-07 14:57:37] INFO root fetch - main [MainThread]: End processing [ddb_single]: success
+[2024-04-07 14:57:37] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.8.zip]
+[2024-04-07 14:57:37] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.9.zip]
+[2024-04-07 14:57:37] INFO root fetch - main [MainThread]: End processing [sbcli-mig]: success
+[2024-04-07 14:57:37] INFO root fetch - processPackages [dotenv-cli]: Remove: archive file [/home/abi/fetcher/tmp/dotenv-cli-3.2.2.tar.gz]
+[2024-04-07 14:57:37] INFO root fetch - processPackages [dotenv-cli]: Remove: archive file [/home/abi/fetcher/tmp/dotenv-cli-3.3.0.tar.gz]
+[2024-04-07 14:57:37] INFO root fetch - main [MainThread]: End processing [dotenv-cli]: success
+[2024-04-07 14:57:37] INFO root fetch - main [MainThread]: Store serial: [22656311]
