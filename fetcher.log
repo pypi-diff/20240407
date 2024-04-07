@@ -14073,3 +14073,44 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:53:14] INFO root fetch - processPackages [TB2J]: Remove: archive file [/home/abi/fetcher/tmp/TB2J-0.8.2.7.tar.gz]
 [2024-04-07 16:53:14] INFO root fetch - main [MainThread]: End processing [TB2J]: success
 [2024-04-07 16:53:14] INFO root fetch - main [MainThread]: Store serial: [22656962]
+[2024-04-07 16:55:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656962]
+[2024-04-07 16:55:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 16:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: user-context-remote
+[2024-04-07 16:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: feature-eval
+[2024-04-07 16:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ciscoconfparse2
+[2024-04-07 16:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: siunitpy
+[2024-04-07 16:55:24] INFO root fetch - processPackages [ciscoconfparse2]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-07 16:55:24] INFO root fetch - processPackages [siunitpy]: New version: [0.1.1] Old Version: [0.0.2]
+[2024-04-07 16:55:24] INFO root fetch - processPackages [ciscoconfparse2]: Downloading https://files.pythonhosted.org/packages/26/c5/d7a1bbb15197a52ec641fb3455b2bad160571ef08bbb87f61c8e83e45163/ciscoconfparse2-0.7.8.tar.gz
+[2024-04-07 16:55:24] INFO root fetch - processPackages [feature-eval]: New version: [0.0.7] Old Version: [0.0.13]
+[2024-04-07 16:55:24] INFO root fetch - processPackages [user-context-remote]: New version: [0.0.74] Old Version: [0.0.73]
+[2024-04-07 16:55:24] WARNING root fetch - processPackages [ciscoconfparse2]: Skipping package: exceeds size limit 12946892>=10485760
+[2024-04-07 16:55:24] INFO root fetch - main [MainThread]: End processing [ciscoconfparse2] error
+[2024-04-07 16:55:24] INFO root fetch - processPackages [siunitpy]: Downloading https://files.pythonhosted.org/packages/4e/d6/5d24ca64aa3a5662599bff9134e1aab5c1e80696257af88e622388ac4d2b/siunitpy-0.0.2.tar.gz
+[2024-04-07 16:55:24] INFO root fetch - processPackages [feature-eval]: Downloading https://files.pythonhosted.org/packages/2e/30/34bf627a7a9801c24f936985773e0ceddc20ab4e54f60e1b1b617dd05995/feature-eval-0.0.13.tar.gz
+[2024-04-07 16:55:24] INFO root fetch - processPackages [user-context-remote]: Downloading https://files.pythonhosted.org/packages/ef/f3/a21349629835d6b8359c8d8d61763b10971c20d159127059f7c57420e4c2/user-context-remote-0.0.73.tar.gz
+[2024-04-07 16:55:24] WARNING root fetch - processPackages [feature-eval]: Timeout reached during download
+[2024-04-07 16:55:24] WARNING root fetch - processPackages [user-context-remote]: Timeout reached during download
+[2024-04-07 16:55:24] WARNING root fetch - processPackages [siunitpy]: Timeout reached during download
+[2024-04-07 16:55:24] INFO root fetch - processPackages [feature-eval]: Downloading https://files.pythonhosted.org/packages/68/d4/88a0ea9a412384835f9c70f840d6d10478ddb0298e856d124741efc7f321/feature-eval-0.0.7.tar.gz
+[2024-04-07 16:55:24] INFO root fetch - processPackages [user-context-remote]: Downloading https://files.pythonhosted.org/packages/ed/35/089558e94a624f77f94d888f262aeb86937e7274b1acbaedccc2b11ae401/user-context-remote-0.0.74.tar.gz
+[2024-04-07 16:55:24] INFO root fetch - processPackages [siunitpy]: Downloading https://files.pythonhosted.org/packages/af/50/36b8cf0e49f00c2a57a8dc37b301c1701084df15281f80652885eb3b8af0/siunitpy-0.1.1.tar.gz
+[2024-04-07 16:55:24] WARNING root fetch - processPackages [user-context-remote]: Timeout reached during download
+[2024-04-07 16:55:24] INFO root fetch - processPackages [user-context-remote]: executing diffoscope
+[2024-04-07 16:55:24] INFO root fetch - processPackages [user-context-remote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/user-context-remote-0.0.73.tar.gz tmp/user-context-remote-0.0.74.tar.gz --markdown 20240407/u/user-context-remote/0.0.73-0.0.74/diff.md --exclude *.pyd
+[2024-04-07 16:55:24] WARNING root fetch - processPackages [feature-eval]: Timeout reached during download
+[2024-04-07 16:55:24] INFO root fetch - processPackages [feature-eval]: executing diffoscope
+[2024-04-07 16:55:24] INFO root fetch - processPackages [feature-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feature-eval-0.0.13.tar.gz tmp/feature-eval-0.0.7.tar.gz --markdown 20240407/f/feature-eval/0.0.13-0.0.7/diff.md --exclude *.pyd
+[2024-04-07 16:55:24] WARNING root fetch - processPackages [siunitpy]: Timeout reached during download
+[2024-04-07 16:55:24] INFO root fetch - processPackages [siunitpy]: executing diffoscope
+[2024-04-07 16:55:24] INFO root fetch - processPackages [siunitpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/siunitpy-0.0.2.tar.gz tmp/siunitpy-0.1.1.tar.gz --markdown 20240407/s/siunitpy/0.0.2-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 16:55:25] INFO root fetch - processPackages [user-context-remote]: Remove: archive file [/home/abi/fetcher/tmp/user-context-remote-0.0.73.tar.gz]
+[2024-04-07 16:55:25] INFO root fetch - processPackages [user-context-remote]: Remove: archive file [/home/abi/fetcher/tmp/user-context-remote-0.0.74.tar.gz]
+[2024-04-07 16:55:25] INFO root fetch - main [MainThread]: End processing [user-context-remote]: success
+[2024-04-07 16:55:25] INFO root fetch - processPackages [feature-eval]: Remove: archive file [/home/abi/fetcher/tmp/feature-eval-0.0.13.tar.gz]
+[2024-04-07 16:55:25] INFO root fetch - processPackages [feature-eval]: Remove: archive file [/home/abi/fetcher/tmp/feature-eval-0.0.7.tar.gz]
+[2024-04-07 16:55:25] INFO root fetch - main [MainThread]: End processing [feature-eval]: success
+[2024-04-07 16:55:25] INFO root fetch - processPackages [siunitpy]: Remove: archive file [/home/abi/fetcher/tmp/siunitpy-0.0.2.tar.gz]
+[2024-04-07 16:55:25] INFO root fetch - processPackages [siunitpy]: Remove: archive file [/home/abi/fetcher/tmp/siunitpy-0.1.1.tar.gz]
+[2024-04-07 16:55:25] INFO root fetch - main [MainThread]: End processing [siunitpy]: success
+[2024-04-07 16:55:25] INFO root fetch - main [MainThread]: Store serial: [22656973]
