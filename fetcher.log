@@ -19308,3 +19308,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 21:57:42] INFO root fetch - processPackages [dotcon]: Remove: archive file [/home/abi/fetcher/tmp/dotcon-0.4.0.tar.gz]
 [2024-04-07 21:57:42] INFO root fetch - main [MainThread]: End processing [dotcon]: success
 [2024-04-07 21:57:42] INFO root fetch - main [MainThread]: Store serial: [22658826]
+[2024-04-07 21:59:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658826]
+[2024-04-07 21:59:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 21:59:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-Levenshtein
+[2024-04-07 21:59:51] INFO root fetch - processPackages [python-Levenshtein]: New version: [0.25.0] Old Version: [0.24.0]
+[2024-04-07 21:59:51] INFO root fetch - processPackages [python-Levenshtein]: Downloading https://files.pythonhosted.org/packages/96/29/9c5627d2628d72d23bcaa451205242eab829c995acfcaad9d063590965f6/python-Levenshtein-0.24.0.tar.gz
+[2024-04-07 21:59:51] WARNING root fetch - processPackages [python-Levenshtein]: Timeout reached during download
+[2024-04-07 21:59:51] INFO root fetch - processPackages [python-Levenshtein]: Downloading https://files.pythonhosted.org/packages/ff/61/62a9635ea2b2ad709bec287469fb87a6641e278319a83d3a4d38f5460657/python-Levenshtein-0.25.0.tar.gz
+[2024-04-07 21:59:51] WARNING root fetch - processPackages [python-Levenshtein]: Timeout reached during download
+[2024-04-07 21:59:51] INFO root fetch - processPackages [python-Levenshtein]: executing diffoscope
+[2024-04-07 21:59:51] INFO root fetch - processPackages [python-Levenshtein]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-Levenshtein-0.24.0.tar.gz tmp/python-Levenshtein-0.25.0.tar.gz --markdown 20240407/p/python-Levenshtein/0.24.0-0.25.0/diff.md --exclude *.pyd
+[2024-04-07 21:59:52] INFO root fetch - processPackages [python-Levenshtein]: Remove: archive file [/home/abi/fetcher/tmp/python-Levenshtein-0.24.0.tar.gz]
+[2024-04-07 21:59:52] INFO root fetch - processPackages [python-Levenshtein]: Remove: archive file [/home/abi/fetcher/tmp/python-Levenshtein-0.25.0.tar.gz]
+[2024-04-07 21:59:52] INFO root fetch - main [MainThread]: End processing [python-Levenshtein]: success
+[2024-04-07 21:59:52] INFO root fetch - main [MainThread]: Store serial: [22658829]
