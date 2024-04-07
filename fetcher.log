@@ -2557,3 +2557,39 @@
 [2024-04-07 03:59:11] INFO root fetch - processPackages [reprompt]: Remove: archive file [/home/abi/fetcher/tmp/reprompt-0.0.4rc27.post1.tar.gz]
 [2024-04-07 03:59:11] INFO root fetch - main [MainThread]: End processing [reprompt]: success
 [2024-04-07 03:59:11] INFO root fetch - main [MainThread]: Store serial: [22652761]
+[2024-04-07 04:01:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652761]
+[2024-04-07 04:01:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 04:01:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flarespy
+[2024-04-07 04:01:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: create-mountaineer-app
+[2024-04-07 04:01:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-animalvoice
+[2024-04-07 04:01:19] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: New version: [0.2.0rc1] Old Version: [0.2.0]
+[2024-04-07 04:01:19] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: Downloading https://files.pythonhosted.org/packages/e5/3b/489f09c84622efd8994c2cb34991ba2b413a7dc97f18ae125370dfff3567/nonebot_plugin_animalvoice-0.2.0.tar.gz
+[2024-04-07 04:01:19] INFO root fetch - processPackages [create-mountaineer-app]: New version: [0.4.0] Old Version: [0.3.2.dev4]
+[2024-04-07 04:01:19] INFO root fetch - processPackages [flarespy]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-04-07 04:01:19] WARNING root fetch - processPackages [nonebot-plugin-animalvoice]: Timeout reached during download
+[2024-04-07 04:01:19] INFO root fetch - processPackages [create-mountaineer-app]: Downloading https://files.pythonhosted.org/packages/3b/93/26b418acf6fd029b1a581a769b16c3cffc5c9f1ab82bec1eed950faccc94/create_mountaineer_app-0.3.2.dev4.tar.gz
+[2024-04-07 04:01:19] INFO root fetch - processPackages [flarespy]: Downloading https://files.pythonhosted.org/packages/04/25/388588a964ee3e165799f36a52ac68432b412f43d936c345577d8f7314ff/flarespy-0.9.7.tar.gz
+[2024-04-07 04:01:19] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: Downloading https://files.pythonhosted.org/packages/01/12/1fc84f2cd7cb7fd8287307bcf18a9d8932dd0ce5a6ad036389c8b6aa1b0b/nonebot_plugin_animalvoice-0.2.0rc1.tar.gz
+[2024-04-07 04:01:19] WARNING root fetch - processPackages [create-mountaineer-app]: Timeout reached during download
+[2024-04-07 04:01:20] WARNING root fetch - processPackages [flarespy]: Timeout reached during download
+[2024-04-07 04:01:20] WARNING root fetch - processPackages [nonebot-plugin-animalvoice]: Timeout reached during download
+[2024-04-07 04:01:20] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: executing diffoscope
+[2024-04-07 04:01:20] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_animalvoice-0.2.0.tar.gz tmp/nonebot_plugin_animalvoice-0.2.0rc1.tar.gz --markdown 20240407/n/nonebot-plugin-animalvoice/0.2.0-0.2.0rc1/diff.md --exclude *.pyd
+[2024-04-07 04:01:20] INFO root fetch - processPackages [create-mountaineer-app]: Downloading https://files.pythonhosted.org/packages/c8/99/3c9426e538bcd3441a04bff5e35efc89d2fa3a9d9a0766e2800abfd378d9/create_mountaineer_app-0.4.0.tar.gz
+[2024-04-07 04:01:20] WARNING root fetch - processPackages [create-mountaineer-app]: Timeout reached during download
+[2024-04-07 04:01:20] INFO root fetch - processPackages [create-mountaineer-app]: executing diffoscope
+[2024-04-07 04:01:20] INFO root fetch - processPackages [create-mountaineer-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/create_mountaineer_app-0.3.2.dev4.tar.gz tmp/create_mountaineer_app-0.4.0.tar.gz --markdown 20240407/c/create-mountaineer-app/0.3.2.dev4-0.4.0/diff.md --exclude *.pyd
+[2024-04-07 04:01:20] INFO root fetch - processPackages [flarespy]: Downloading https://files.pythonhosted.org/packages/c8/7e/3f154203fb0f1369802551bb5c886d19787ba3740cac776f1ab46ff30696/flarespy-0.9.8.tar.gz
+[2024-04-07 04:01:20] WARNING root fetch - processPackages [flarespy]: Timeout reached during download
+[2024-04-07 04:01:20] INFO root fetch - processPackages [flarespy]: executing diffoscope
+[2024-04-07 04:01:20] INFO root fetch - processPackages [flarespy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flarespy-0.9.7.tar.gz tmp/flarespy-0.9.8.tar.gz --markdown 20240407/f/flarespy/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2024-04-07 04:01:20] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_animalvoice-0.2.0.tar.gz]
+[2024-04-07 04:01:20] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_animalvoice-0.2.0rc1.tar.gz]
+[2024-04-07 04:01:20] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-animalvoice]: success
+[2024-04-07 04:01:20] INFO root fetch - processPackages [create-mountaineer-app]: Remove: archive file [/home/abi/fetcher/tmp/create_mountaineer_app-0.3.2.dev4.tar.gz]
+[2024-04-07 04:01:20] INFO root fetch - processPackages [create-mountaineer-app]: Remove: archive file [/home/abi/fetcher/tmp/create_mountaineer_app-0.4.0.tar.gz]
+[2024-04-07 04:01:20] INFO root fetch - main [MainThread]: End processing [create-mountaineer-app]: success
+[2024-04-07 04:01:21] INFO root fetch - processPackages [flarespy]: Remove: archive file [/home/abi/fetcher/tmp/flarespy-0.9.7.tar.gz]
+[2024-04-07 04:01:21] INFO root fetch - processPackages [flarespy]: Remove: archive file [/home/abi/fetcher/tmp/flarespy-0.9.8.tar.gz]
+[2024-04-07 04:01:21] INFO root fetch - main [MainThread]: End processing [flarespy]: success
+[2024-04-07 04:01:21] INFO root fetch - main [MainThread]: Store serial: [22652770]
