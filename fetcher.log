@@ -11494,3 +11494,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:16:08] INFO root fetch - processPackages [matplotlib-visual]: Remove: archive file [/home/abi/fetcher/tmp/matplotlib_visual-0.8.1.tar.gz]
 [2024-04-07 14:16:08] INFO root fetch - main [MainThread]: End processing [matplotlib-visual]: success
 [2024-04-07 14:16:08] INFO root fetch - main [MainThread]: Store serial: [22656055]
+[2024-04-07 14:18:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656055]
+[2024-04-07 14:18:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 14:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nmbrs
+[2024-04-07 14:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psychrochart
+[2024-04-07 14:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: systembridgecli
+[2024-04-07 14:18:16] INFO root fetch - processPackages [nmbrs]: New version: [0.1.0] Old Version: [0.0.405]
+[2024-04-07 14:18:17] INFO root fetch - processPackages [nmbrs]: Downloading https://files.pythonhosted.org/packages/c1/97/eacd9604df809a9c360a3e5b52645cf8ea09f0eba24bf9126e13a4bfa3c4/nmbrs-0.0.405.tar.gz
+[2024-04-07 14:18:17] INFO root fetch - processPackages [psychrochart]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-07 14:18:17] INFO root fetch - processPackages [systembridgecli]: New version: [4.0.4] Old Version: [4.0.3]
+[2024-04-07 14:18:17] WARNING root fetch - processPackages [nmbrs]: Timeout reached during download
+[2024-04-07 14:18:17] INFO root fetch - processPackages [psychrochart]: Downloading https://files.pythonhosted.org/packages/28/65/619b8a4a59a20acd15f594aac14c9db7ea1de88eef8742200e9c75fab634/psychrochart-0.9.2.tar.gz
+[2024-04-07 14:18:17] INFO root fetch - processPackages [nmbrs]: Downloading https://files.pythonhosted.org/packages/4d/a6/7c9b64fbd3831c7a249fbabf693669d01948f0aa32a7ff3feaaeb715353b/nmbrs-0.1.0.tar.gz
+[2024-04-07 14:18:17] INFO root fetch - processPackages [systembridgecli]: Downloading https://files.pythonhosted.org/packages/96/92/4a31e4f1cecc6e658243484fb91cfe6aa148d6e7c4857fcd7e24d3800022/systembridgecli-4.0.3.tar.gz
+[2024-04-07 14:18:17] WARNING root fetch - processPackages [psychrochart]: Timeout reached during download
+[2024-04-07 14:18:17] WARNING root fetch - processPackages [nmbrs]: Timeout reached during download
+[2024-04-07 14:18:17] INFO root fetch - processPackages [nmbrs]: executing diffoscope
+[2024-04-07 14:18:17] INFO root fetch - processPackages [nmbrs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nmbrs-0.0.405.tar.gz tmp/nmbrs-0.1.0.tar.gz --markdown 20240407/n/nmbrs/0.0.405-0.1.0/diff.md --exclude *.pyd
+[2024-04-07 14:18:17] WARNING root fetch - processPackages [systembridgecli]: Timeout reached during download
+[2024-04-07 14:18:17] INFO root fetch - processPackages [psychrochart]: Downloading https://files.pythonhosted.org/packages/09/f9/320aa9b8286627cb1902a7862233fd878f245dfca8765a84f8c8a3eba1d1/psychrochart-0.9.3.tar.gz
+[2024-04-07 14:18:17] INFO root fetch - processPackages [systembridgecli]: Downloading https://files.pythonhosted.org/packages/8b/8f/376743d2bf9a8a7759c261c3edeffd9b50efb32c63b5a0a23dd262704a0e/systembridgecli-4.0.4.tar.gz
+[2024-04-07 14:18:17] WARNING root fetch - processPackages [psychrochart]: Timeout reached during download
+[2024-04-07 14:18:17] INFO root fetch - processPackages [psychrochart]: executing diffoscope
+[2024-04-07 14:18:17] INFO root fetch - processPackages [psychrochart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psychrochart-0.9.2.tar.gz tmp/psychrochart-0.9.3.tar.gz --markdown 20240407/p/psychrochart/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2024-04-07 14:18:17] WARNING root fetch - processPackages [systembridgecli]: Timeout reached during download
+[2024-04-07 14:18:17] INFO root fetch - processPackages [systembridgecli]: executing diffoscope
+[2024-04-07 14:18:17] INFO root fetch - processPackages [systembridgecli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systembridgecli-4.0.3.tar.gz tmp/systembridgecli-4.0.4.tar.gz --markdown 20240407/s/systembridgecli/4.0.3-4.0.4/diff.md --exclude *.pyd
+[2024-04-07 14:18:18] INFO root fetch - processPackages [nmbrs]: Remove: archive file [/home/abi/fetcher/tmp/nmbrs-0.0.405.tar.gz]
+[2024-04-07 14:18:18] INFO root fetch - processPackages [nmbrs]: Remove: archive file [/home/abi/fetcher/tmp/nmbrs-0.1.0.tar.gz]
+[2024-04-07 14:18:18] INFO root fetch - main [MainThread]: End processing [nmbrs]: success
+[2024-04-07 14:18:18] INFO root fetch - processPackages [psychrochart]: Remove: archive file [/home/abi/fetcher/tmp/psychrochart-0.9.2.tar.gz]
+[2024-04-07 14:18:18] INFO root fetch - processPackages [psychrochart]: Remove: archive file [/home/abi/fetcher/tmp/psychrochart-0.9.3.tar.gz]
+[2024-04-07 14:18:18] INFO root fetch - main [MainThread]: End processing [psychrochart]: success
+[2024-04-07 14:18:18] INFO root fetch - processPackages [systembridgecli]: Remove: archive file [/home/abi/fetcher/tmp/systembridgecli-4.0.3.tar.gz]
+[2024-04-07 14:18:18] INFO root fetch - processPackages [systembridgecli]: Remove: archive file [/home/abi/fetcher/tmp/systembridgecli-4.0.4.tar.gz]
+[2024-04-07 14:18:18] INFO root fetch - main [MainThread]: End processing [systembridgecli]: success
+[2024-04-07 14:18:18] INFO root fetch - main [MainThread]: Store serial: [22656065]
