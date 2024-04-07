@@ -12323,3 +12323,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:12:57] INFO root fetch - processPackages [layeutils]: Remove: archive file [/home/abi/fetcher/tmp/layeutils-0.2.9.tar.gz]
 [2024-04-07 15:12:57] INFO root fetch - main [MainThread]: End processing [layeutils]: success
 [2024-04-07 15:12:57] INFO root fetch - main [MainThread]: Store serial: [22656398]
+[2024-04-07 15:15:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656398]
+[2024-04-07 15:15:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 15:15:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cloudify-common
+[2024-04-07 15:15:06] INFO root fetch - processPackages [cloudify-common]: New version: [7.0.4] Old Version: [7.0.3]
+[2024-04-07 15:15:06] INFO root fetch - processPackages [cloudify-common]: Downloading https://files.pythonhosted.org/packages/da/33/9ad35542b0380b271dc10ba686d70781844b2cc0baf4c93b87578ebd78cb/cloudify-common-7.0.3.tar.gz
+[2024-04-07 15:15:06] WARNING root fetch - processPackages [cloudify-common]: Timeout reached during download
+[2024-04-07 15:15:07] INFO root fetch - processPackages [cloudify-common]: Downloading https://files.pythonhosted.org/packages/93/37/783cba2f2112ff116f5e454be0847fb6462cd12e9ca91a9032169272a109/cloudify-common-7.0.4.tar.gz
+[2024-04-07 15:15:07] WARNING root fetch - processPackages [cloudify-common]: Timeout reached during download
+[2024-04-07 15:15:07] INFO root fetch - processPackages [cloudify-common]: executing diffoscope
+[2024-04-07 15:15:07] INFO root fetch - processPackages [cloudify-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudify-common-7.0.3.tar.gz tmp/cloudify-common-7.0.4.tar.gz --markdown 20240407/c/cloudify-common/7.0.3-7.0.4/diff.md --exclude *.pyd
+[2024-04-07 15:15:08] INFO root fetch - processPackages [cloudify-common]: Remove: archive file [/home/abi/fetcher/tmp/cloudify-common-7.0.3.tar.gz]
+[2024-04-07 15:15:08] INFO root fetch - processPackages [cloudify-common]: Remove: archive file [/home/abi/fetcher/tmp/cloudify-common-7.0.4.tar.gz]
+[2024-04-07 15:15:08] INFO root fetch - main [MainThread]: End processing [cloudify-common]: success
+[2024-04-07 15:15:08] INFO root fetch - main [MainThread]: Store serial: [22656401]
