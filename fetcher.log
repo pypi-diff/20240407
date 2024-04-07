@@ -6950,3 +6950,20 @@
 [2024-04-07 09:04:15] INFO root fetch - processPackages [pypaperless]: Remove: archive file [/home/abi/fetcher/tmp/pypaperless-3.1.2.tar.gz]
 [2024-04-07 09:04:15] INFO root fetch - main [MainThread]: End processing [pypaperless]: success
 [2024-04-07 09:04:15] INFO root fetch - main [MainThread]: Store serial: [22654239]
+[2024-04-07 09:06:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654239]
+[2024-04-07 09:06:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 09:06:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: n97fit
+[2024-04-07 09:06:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dmjone
+[2024-04-07 09:06:23] WARNING root fetch - processPackages [dmjone]: Skipping, unable to determine old version
+[2024-04-07 09:06:23] INFO root fetch - main [MainThread]: End processing [dmjone] error
+[2024-04-07 09:06:23] INFO root fetch - processPackages [n97fit]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-07 09:06:24] INFO root fetch - processPackages [n97fit]: Downloading https://files.pythonhosted.org/packages/5e/af/212029d6abd96d2f9ffec6c9f2e827b7c8637eba42cd47bf5bfc2b6b8ece/n97fit-1.0.1.tar.gz
+[2024-04-07 09:06:24] WARNING root fetch - processPackages [n97fit]: Timeout reached during download
+[2024-04-07 09:06:24] INFO root fetch - processPackages [n97fit]: Downloading https://files.pythonhosted.org/packages/29/00/edb569e33ec9edb0a9488ac8812e77c70b8a79523d8593067b6f1602498f/n97fit-1.0.2.tar.gz
+[2024-04-07 09:06:24] WARNING root fetch - processPackages [n97fit]: Timeout reached during download
+[2024-04-07 09:06:24] INFO root fetch - processPackages [n97fit]: executing diffoscope
+[2024-04-07 09:06:24] INFO root fetch - processPackages [n97fit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/n97fit-1.0.1.tar.gz tmp/n97fit-1.0.2.tar.gz --markdown 20240407/n/n97fit/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2024-04-07 09:06:25] INFO root fetch - processPackages [n97fit]: Remove: archive file [/home/abi/fetcher/tmp/n97fit-1.0.1.tar.gz]
+[2024-04-07 09:06:25] INFO root fetch - processPackages [n97fit]: Remove: archive file [/home/abi/fetcher/tmp/n97fit-1.0.2.tar.gz]
+[2024-04-07 09:06:25] INFO root fetch - main [MainThread]: End processing [n97fit]: success
+[2024-04-07 09:06:25] INFO root fetch - main [MainThread]: Store serial: [22654245]
