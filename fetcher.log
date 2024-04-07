@@ -10012,3 +10012,19 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 12:29:36] INFO root fetch - processPackages [lightning-template]: Remove: archive file [/home/abi/fetcher/tmp/lightning-template-1.9.0.tar.gz]
 [2024-04-07 12:29:36] INFO root fetch - main [MainThread]: End processing [lightning-template]: success
 [2024-04-07 12:29:36] INFO root fetch - main [MainThread]: Store serial: [22655418]
+[2024-04-07 12:31:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655418]
+[2024-04-07 12:31:46] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 12:33:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655418]
+[2024-04-07 12:33:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 12:33:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: encommon
+[2024-04-07 12:33:51] INFO root fetch - processPackages [encommon]: New version: [0.8.0] Old Version: [0.7.6]
+[2024-04-07 12:33:51] INFO root fetch - processPackages [encommon]: Downloading https://files.pythonhosted.org/packages/8f/09/888963a6541a48c99374f5e1e16a887816335c85faba297813a0b4c3c0fb/encommon-0.7.6.tar.gz
+[2024-04-07 12:33:51] WARNING root fetch - processPackages [encommon]: Timeout reached during download
+[2024-04-07 12:33:52] INFO root fetch - processPackages [encommon]: Downloading https://files.pythonhosted.org/packages/8d/50/1ea45892ccafcaf83033c6434992a787712dc1edd588aa510926fd5332f3/encommon-0.8.0.tar.gz
+[2024-04-07 12:33:52] WARNING root fetch - processPackages [encommon]: Timeout reached during download
+[2024-04-07 12:33:52] INFO root fetch - processPackages [encommon]: executing diffoscope
+[2024-04-07 12:33:52] INFO root fetch - processPackages [encommon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/encommon-0.7.6.tar.gz tmp/encommon-0.8.0.tar.gz --markdown 20240407/e/encommon/0.7.6-0.8.0/diff.md --exclude *.pyd
+[2024-04-07 12:33:53] INFO root fetch - processPackages [encommon]: Remove: archive file [/home/abi/fetcher/tmp/encommon-0.7.6.tar.gz]
+[2024-04-07 12:33:53] INFO root fetch - processPackages [encommon]: Remove: archive file [/home/abi/fetcher/tmp/encommon-0.8.0.tar.gz]
+[2024-04-07 12:33:53] INFO root fetch - main [MainThread]: End processing [encommon]: success
+[2024-04-07 12:33:53] INFO root fetch - main [MainThread]: Store serial: [22655421]
