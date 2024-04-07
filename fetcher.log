@@ -20407,3 +20407,53 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:18:15] INFO root fetch - processPackages [enkanetworkv2.py]: Remove: archive file [/home/abi/fetcher/tmp/enkanetworkv2.py-2.0.2.tar.gz]
 [2024-04-07 23:18:15] INFO root fetch - main [MainThread]: End processing [enkanetworkv2.py]: success
 [2024-04-07 23:18:15] INFO root fetch - main [MainThread]: Store serial: [22659303]
+[2024-04-07 23:20:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659303]
+[2024-04-07 23:20:24] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 23:20:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: celi-framework
+[2024-04-07 23:20:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: app-lib-py
+[2024-04-07 23:20:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dektools
+[2024-04-07 23:20:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: LanusStats
+[2024-04-07 23:20:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: boldi
+[2024-04-07 23:20:24] INFO root fetch - processPackages [dektools]: New version: [0.1.9] Old Version: [0.1.77]
+[2024-04-07 23:20:24] INFO root fetch - processPackages [app-lib-py]: New version: [0.0.8] Old Version: [0.0.13]
+[2024-04-07 23:20:24] INFO root fetch - processPackages [LanusStats]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-07 23:20:24] WARNING root fetch - processPackages [celi-framework]: Skipping, unable to determine old version
+[2024-04-07 23:20:24] INFO root fetch - main [MainThread]: End processing [celi-framework] error
+[2024-04-07 23:20:24] INFO root fetch - processPackages [boldi]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-07 23:20:24] INFO root fetch - processPackages [app-lib-py]: Downloading https://files.pythonhosted.org/packages/f3/9a/eb6df2e00b4c2393040cb8bd3570d4c4c4e255a6c4a531f30e85dfbe8642/app_lib_py-0.0.13.tar.gz
+[2024-04-07 23:20:24] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/3f/72/fa5eaad7842f1adc6f66b43a4e7f1e39fb61e577935b71e1b2c5201e6af9/dektools-0.1.77.tar.gz
+[2024-04-07 23:20:24] WARNING root fetch - processPackages [app-lib-py]: Timeout reached during download
+[2024-04-07 23:20:24] INFO root fetch - processPackages [LanusStats]: Downloading https://files.pythonhosted.org/packages/14/6d/cfee66fe63274bd4cc78a43984987234ffcf75d6eaf47419e46612e58b1d/LanusStats-1.0.1.tar.gz
+[2024-04-07 23:20:24] WARNING root fetch - processPackages [dektools]: Timeout reached during download
+[2024-04-07 23:20:24] INFO root fetch - processPackages [boldi]: Downloading https://files.pythonhosted.org/packages/2c/af/58c32446637af67044e00d5dcc357d5c2710e9a40cc7ad949dddfb67c215/boldi-0.4.0.tar.gz
+[2024-04-07 23:20:24] INFO root fetch - processPackages [app-lib-py]: Downloading https://files.pythonhosted.org/packages/a2/54/469ab9dcb5d1bd588ce0a138c9931c250c051c176560115d7d2b2aa8080a/app_lib_py-0.0.8.tar.gz
+[2024-04-07 23:20:25] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/68/56/90836602efe1f93ffb0ab3da68807fa41e85e124836bcc0c3cc2d1b2c539/dektools-0.1.9-py3-none-any.whl
+[2024-04-07 23:20:25] WARNING root fetch - processPackages [LanusStats]: Timeout reached during download
+[2024-04-07 23:20:25] WARNING root fetch - processPackages [boldi]: Timeout reached during download
+[2024-04-07 23:20:25] WARNING root fetch - processPackages [app-lib-py]: Timeout reached during download
+[2024-04-07 23:20:25] INFO root fetch - processPackages [app-lib-py]: executing diffoscope
+[2024-04-07 23:20:25] INFO root fetch - processPackages [app-lib-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/app_lib_py-0.0.13.tar.gz tmp/app_lib_py-0.0.8.tar.gz --markdown 20240407/a/app-lib-py/0.0.13-0.0.8/diff.md --exclude *.pyd
+[2024-04-07 23:20:25] WARNING root fetch - processPackages [dektools]: Timeout reached during download
+[2024-04-07 23:20:25] INFO root fetch - processPackages [dektools]: executing diffoscope
+[2024-04-07 23:20:25] INFO root fetch - processPackages [dektools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dektools-0.1.77.tar.gz tmp/dektools-0.1.9-py3-none-any.whl.zip --markdown 20240407/d/dektools/0.1.77-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 23:20:25] INFO root fetch - processPackages [LanusStats]: Downloading https://files.pythonhosted.org/packages/8b/1b/7e1ab68c59c4c6d550e6dff15c7abd0c190f654fb1a43e18fdd9f0edbc4d/LanusStats-1.0.2.tar.gz
+[2024-04-07 23:20:25] INFO root fetch - processPackages [boldi]: Downloading https://files.pythonhosted.org/packages/3d/d5/e5b469857d2d7f7ad8b401b040cb028498ee0853279809addf83bd18ffee/boldi-0.5.0-py3-none-any.whl
+[2024-04-07 23:20:25] WARNING root fetch - processPackages [LanusStats]: Timeout reached during download
+[2024-04-07 23:20:25] INFO root fetch - processPackages [LanusStats]: executing diffoscope
+[2024-04-07 23:20:25] INFO root fetch - processPackages [LanusStats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LanusStats-1.0.1.tar.gz tmp/LanusStats-1.0.2.tar.gz --markdown 20240407/L/LanusStats/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2024-04-07 23:20:25] WARNING root fetch - processPackages [boldi]: Timeout reached during download
+[2024-04-07 23:20:25] INFO root fetch - processPackages [boldi]: executing diffoscope
+[2024-04-07 23:20:25] INFO root fetch - processPackages [boldi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boldi-0.4.0.tar.gz tmp/boldi-0.5.0-py3-none-any.whl.zip --markdown 20240407/b/boldi/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2024-04-07 23:20:25] INFO root fetch - processPackages [app-lib-py]: Remove: archive file [/home/abi/fetcher/tmp/app_lib_py-0.0.13.tar.gz]
+[2024-04-07 23:20:25] INFO root fetch - processPackages [app-lib-py]: Remove: archive file [/home/abi/fetcher/tmp/app_lib_py-0.0.8.tar.gz]
+[2024-04-07 23:20:25] INFO root fetch - main [MainThread]: End processing [app-lib-py]: success
+[2024-04-07 23:20:25] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.77.tar.gz]
+[2024-04-07 23:20:25] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.9-py3-none-any.whl.zip]
+[2024-04-07 23:20:25] INFO root fetch - main [MainThread]: End processing [dektools]: success
+[2024-04-07 23:20:25] INFO root fetch - processPackages [boldi]: Remove: archive file [/home/abi/fetcher/tmp/boldi-0.4.0.tar.gz]
+[2024-04-07 23:20:25] INFO root fetch - processPackages [boldi]: Remove: archive file [/home/abi/fetcher/tmp/boldi-0.5.0-py3-none-any.whl.zip]
+[2024-04-07 23:20:25] INFO root fetch - main [MainThread]: End processing [boldi]: success
+[2024-04-07 23:20:26] INFO root fetch - processPackages [LanusStats]: Remove: archive file [/home/abi/fetcher/tmp/LanusStats-1.0.1.tar.gz]
+[2024-04-07 23:20:26] INFO root fetch - processPackages [LanusStats]: Remove: archive file [/home/abi/fetcher/tmp/LanusStats-1.0.2.tar.gz]
+[2024-04-07 23:20:26] INFO root fetch - main [MainThread]: End processing [LanusStats]: success
+[2024-04-07 23:20:26] INFO root fetch - main [MainThread]: Store serial: [22659319]
