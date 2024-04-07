@@ -17302,3 +17302,45 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:59:32] INFO root fetch - processPackages [requesto-py]: Remove: archive file [/home/abi/fetcher/tmp/requesto-py-1.2.0.tar.gz]
 [2024-04-07 19:59:32] INFO root fetch - main [MainThread]: End processing [requesto-py]: success
 [2024-04-07 19:59:32] INFO root fetch - main [MainThread]: Store serial: [22658112]
+[2024-04-07 20:01:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658112]
+[2024-04-07 20:01:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 20:01:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ring-attention-pytorch
+[2024-04-07 20:01:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rg3py
+[2024-04-07 20:01:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypomes-core
+[2024-04-07 20:01:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: FNews
+[2024-04-07 20:01:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hellopkgsathish1234
+[2024-04-07 20:01:41] INFO root fetch - processPackages [rg3py]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-07 20:01:41] INFO root fetch - processPackages [rg3py]: Downloading https://files.pythonhosted.org/packages/16/e4/1493fb11a74ec1107d87df99eb748c1cf1b9a79948e8e4f3ca5d4328ac56/rg3py-0.0.4-py3-none-win_amd64.whl
+[2024-04-07 20:01:41] WARNING root fetch - processPackages [hellopkgsathish1234]: Skipping, unable to determine old version
+[2024-04-07 20:01:41] INFO root fetch - main [MainThread]: End processing [hellopkgsathish1234] error
+[2024-04-07 20:01:41] WARNING root fetch - processPackages [FNews]: Skipping, unable to determine old version
+[2024-04-07 20:01:41] INFO root fetch - main [MainThread]: End processing [FNews] error
+[2024-04-07 20:01:41] INFO root fetch - processPackages [pypomes-core]: New version: [0.7.6] Old Version: [0.7.4]
+[2024-04-07 20:01:41] INFO root fetch - processPackages [ring-attention-pytorch]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-07 20:01:41] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/75/b7/6a9e30d3f6dbdc9f0e2c3538c6d6bc993a296afbfec6394365628e3bd32f/pypomes_core-0.7.4.tar.gz
+[2024-04-07 20:01:41] INFO root fetch - processPackages [ring-attention-pytorch]: Downloading https://files.pythonhosted.org/packages/63/e9/a8c519d274f7464d6035139ade2610b1ec38972d3e65ff1a2ab72ec96d13/ring-attention-pytorch-0.3.4.tar.gz
+[2024-04-07 20:01:41] WARNING root fetch - processPackages [ring-attention-pytorch]: Timeout reached during download
+[2024-04-07 20:01:42] WARNING root fetch - processPackages [rg3py]: Timeout reached during download
+[2024-04-07 20:01:42] INFO root fetch - processPackages [rg3py]: Downloading https://files.pythonhosted.org/packages/fe/ac/68eb972f686f59124ea890e602b00b0ac825ca9b4006d1c86bfaee9dd5f1/rg3py-0.0.5-py3-none-win_amd64.whl
+[2024-04-07 20:01:42] INFO root fetch - processPackages [ring-attention-pytorch]: Downloading https://files.pythonhosted.org/packages/62/2b/037a61f373da6faa8110f505cc83a7b5a9597d79f1e7433074073ec5c16d/ring-attention-pytorch-0.3.5.tar.gz
+[2024-04-07 20:01:42] WARNING root fetch - processPackages [pypomes-core]: Timeout reached during download
+[2024-04-07 20:01:42] WARNING root fetch - processPackages [ring-attention-pytorch]: Timeout reached during download
+[2024-04-07 20:01:42] INFO root fetch - processPackages [ring-attention-pytorch]: executing diffoscope
+[2024-04-07 20:01:42] INFO root fetch - processPackages [ring-attention-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ring-attention-pytorch-0.3.4.tar.gz tmp/ring-attention-pytorch-0.3.5.tar.gz --markdown 20240407/r/ring-attention-pytorch/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2024-04-07 20:01:42] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/8f/46/a051c6ba3f274285c3a4be81378121994013b9a71126e4a71adc8b303bf2/pypomes_core-0.7.6.tar.gz
+[2024-04-07 20:01:42] WARNING root fetch - processPackages [rg3py]: Timeout reached during download
+[2024-04-07 20:01:42] INFO root fetch - processPackages [rg3py]: executing diffoscope
+[2024-04-07 20:01:42] INFO root fetch - processPackages [rg3py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rg3py-0.0.4-py3-none-win_amd64.whl.zip tmp/rg3py-0.0.5-py3-none-win_amd64.whl.zip --markdown 20240407/r/rg3py/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-07 20:01:42] WARNING root fetch - processPackages [pypomes-core]: Timeout reached during download
+[2024-04-07 20:01:42] INFO root fetch - processPackages [pypomes-core]: executing diffoscope
+[2024-04-07 20:01:42] INFO root fetch - processPackages [pypomes-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_core-0.7.4.tar.gz tmp/pypomes_core-0.7.6.tar.gz --markdown 20240407/p/pypomes-core/0.7.4-0.7.6/diff.md --exclude *.pyd
+[2024-04-07 20:01:43] INFO root fetch - processPackages [ring-attention-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/ring-attention-pytorch-0.3.4.tar.gz]
+[2024-04-07 20:01:43] INFO root fetch - processPackages [ring-attention-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/ring-attention-pytorch-0.3.5.tar.gz]
+[2024-04-07 20:01:43] INFO root fetch - main [MainThread]: End processing [ring-attention-pytorch]: success
+[2024-04-07 20:01:43] INFO root fetch - processPackages [rg3py]: Remove: archive file [/home/abi/fetcher/tmp/rg3py-0.0.4-py3-none-win_amd64.whl.zip]
+[2024-04-07 20:01:43] INFO root fetch - processPackages [rg3py]: Remove: archive file [/home/abi/fetcher/tmp/rg3py-0.0.5-py3-none-win_amd64.whl.zip]
+[2024-04-07 20:01:43] INFO root fetch - main [MainThread]: End processing [rg3py]: success
+[2024-04-07 20:01:43] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.7.4.tar.gz]
+[2024-04-07 20:01:43] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.7.6.tar.gz]
+[2024-04-07 20:01:43] INFO root fetch - main [MainThread]: End processing [pypomes-core]: success
+[2024-04-07 20:01:43] INFO root fetch - main [MainThread]: Store serial: [22658134]
