@@ -13229,3 +13229,50 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:11:49] INFO root fetch - processPackages [smawe-tools]: Remove: archive file [/home/abi/fetcher/tmp/smawe_tools-0.3.7.tar.gz]
 [2024-04-07 16:11:49] INFO root fetch - main [MainThread]: End processing [smawe-tools]: success
 [2024-04-07 16:11:49] INFO root fetch - main [MainThread]: Store serial: [22656703]
+[2024-04-07 16:13:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656703]
+[2024-04-07 16:13:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 16:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: droid-metapatch
+[2024-04-07 16:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: special-octo-robot
+[2024-04-07 16:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2024-04-07 16:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: duckdb_engine
+[2024-04-07 16:13:58] INFO root fetch - processPackages [special-octo-robot]: New version: [0.0.4] Old Version: [0.0.1]
+[2024-04-07 16:13:58] INFO root fetch - processPackages [special-octo-robot]: Downloading https://files.pythonhosted.org/packages/6c/f3/1b238e64ee51aa555fed88d966e34ea864f3bca918f42d5b6e7154c2c209/special-octo-robot-0.0.1.tar.gz
+[2024-04-07 16:13:58] INFO root fetch - processPackages [droid-metapatch]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-07 16:13:58] INFO root fetch - processPackages [duckdb_engine]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-07 16:13:58] WARNING root fetch - processPackages [special-octo-robot]: Timeout reached during download
+[2024-04-07 16:13:59] INFO root fetch - processPackages [droid-metapatch]: Downloading https://files.pythonhosted.org/packages/31/bf/606bee774542342d2e5c312e11f7f0c8b905593f6795a87c157f460d545a/droid_metapatch-1.0.0.tar.gz
+[2024-04-07 16:13:59] INFO root fetch - processPackages [special-octo-robot]: Downloading https://files.pythonhosted.org/packages/fe/bc/49f900f32b13e51043380c61ae16647faec366f75b0bbc196b336796a6dd/special-octo-robot-0.0.4.tar.gz
+[2024-04-07 16:13:59] INFO root fetch - processPackages [duckdb_engine]: Downloading https://files.pythonhosted.org/packages/c0/58/45ec039d7ee30f4acfa14fd7496e9ed81494e336d456c05f5dc412c5df6f/duckdb_engine-0.9.4.tar.gz
+[2024-04-07 16:13:59] WARNING root fetch - processPackages [special-octo-robot]: Timeout reached during download
+[2024-04-07 16:13:59] INFO root fetch - processPackages [special-octo-robot]: executing diffoscope
+[2024-04-07 16:13:59] INFO root fetch - processPackages [special-octo-robot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/special-octo-robot-0.0.1.tar.gz tmp/special-octo-robot-0.0.4.tar.gz --markdown 20240407/s/special-octo-robot/0.0.1-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 16:13:59] WARNING root fetch - processPackages [duckdb_engine]: Timeout reached during download
+[2024-04-07 16:13:59] WARNING root fetch - processPackages [droid-metapatch]: Timeout reached during download
+[2024-04-07 16:13:59] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-07 16:13:59] INFO root fetch - processPackages [droid-metapatch]: Downloading https://files.pythonhosted.org/packages/bb/d1/a00142b69cca4e04e9e75c4491b35fa437505889eaa460b5a5d973e9f75d/droid_metapatch-1.1.0.tar.gz
+[2024-04-07 16:13:59] INFO root fetch - processPackages [duckdb_engine]: Downloading https://files.pythonhosted.org/packages/88/e6/96f825b215f7893dcb5cced97d436355f2baab2cddb553187e1be19c8d9a/duckdb_engine-0.9.5.tar.gz
+[2024-04-07 16:13:59] WARNING root fetch - processPackages [droid-metapatch]: Timeout reached during download
+[2024-04-07 16:13:59] INFO root fetch - processPackages [droid-metapatch]: executing diffoscope
+[2024-04-07 16:13:59] INFO root fetch - processPackages [droid-metapatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/droid_metapatch-1.0.0.tar.gz tmp/droid_metapatch-1.1.0.tar.gz --markdown 20240407/d/droid-metapatch/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2024-04-07 16:13:59] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-07 16:13:59] WARNING root fetch - processPackages [duckdb_engine]: Timeout reached during download
+[2024-04-07 16:13:59] INFO root fetch - processPackages [duckdb_engine]: executing diffoscope
+[2024-04-07 16:13:59] INFO root fetch - processPackages [duckdb_engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckdb_engine-0.9.4.tar.gz tmp/duckdb_engine-0.9.5.tar.gz --markdown 20240407/d/duckdb_engine/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2024-04-07 16:13:59] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-07 16:13:59] INFO root fetch - processPackages [special-octo-robot]: Remove: archive file [/home/abi/fetcher/tmp/special-octo-robot-0.0.1.tar.gz]
+[2024-04-07 16:13:59] INFO root fetch - processPackages [special-octo-robot]: Remove: archive file [/home/abi/fetcher/tmp/special-octo-robot-0.0.4.tar.gz]
+[2024-04-07 16:13:59] INFO root fetch - main [MainThread]: End processing [special-octo-robot]: success
+[2024-04-07 16:13:59] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-07 16:14:00] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-07 16:14:00] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-07 16:14:00] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240407/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2024-04-07 16:14:00] INFO root fetch - processPackages [droid-metapatch]: Remove: archive file [/home/abi/fetcher/tmp/droid_metapatch-1.0.0.tar.gz]
+[2024-04-07 16:14:00] INFO root fetch - processPackages [droid-metapatch]: Remove: archive file [/home/abi/fetcher/tmp/droid_metapatch-1.1.0.tar.gz]
+[2024-04-07 16:14:00] INFO root fetch - main [MainThread]: End processing [droid-metapatch]: success
+[2024-04-07 16:14:00] INFO root fetch - processPackages [duckdb_engine]: Remove: archive file [/home/abi/fetcher/tmp/duckdb_engine-0.9.4.tar.gz]
+[2024-04-07 16:14:00] INFO root fetch - processPackages [duckdb_engine]: Remove: archive file [/home/abi/fetcher/tmp/duckdb_engine-0.9.5.tar.gz]
+[2024-04-07 16:14:00] INFO root fetch - main [MainThread]: End processing [duckdb_engine]: success
+[2024-04-07 16:14:00] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-04-07 16:14:00] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-04-07 16:14:00] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-07 16:14:00] INFO root fetch - main [MainThread]: Store serial: [22656714]
