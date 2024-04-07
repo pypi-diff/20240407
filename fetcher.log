@@ -11757,3 +11757,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:35:44] INFO root fetch - processPackages [django-mongo-backend]: Remove: archive file [/home/abi/fetcher/tmp/django_mongo_backend-0.26.tar.gz]
 [2024-04-07 14:35:44] INFO root fetch - main [MainThread]: End processing [django-mongo-backend]: success
 [2024-04-07 14:35:44] INFO root fetch - main [MainThread]: Store serial: [22656226]
+[2024-04-07 14:37:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656226]
+[2024-04-07 14:37:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 14:37:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dflow-galaxy
+[2024-04-07 14:37:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tableshare
+[2024-04-07 14:37:52] INFO root fetch - processPackages [tableshare]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-07 14:37:52] INFO root fetch - processPackages [dflow-galaxy]: New version: [0.1.4] Old Version: [0.1.2]
+[2024-04-07 14:37:53] INFO root fetch - processPackages [dflow-galaxy]: Downloading https://files.pythonhosted.org/packages/dc/91/0709e2a68037a92433befec60582501a056daf870146fdc347fe5bd62536/dflow_galaxy-0.1.2.tar.gz
+[2024-04-07 14:37:53] INFO root fetch - processPackages [tableshare]: Downloading https://files.pythonhosted.org/packages/c4/50/0f518d47ab85d64178fc5b8350809a28baa63b588798050abdd5823d396a/tableshare-1.1.0.tar.gz
+[2024-04-07 14:37:53] WARNING root fetch - processPackages [dflow-galaxy]: Timeout reached during download
+[2024-04-07 14:37:53] WARNING root fetch - processPackages [tableshare]: Timeout reached during download
+[2024-04-07 14:37:53] INFO root fetch - processPackages [dflow-galaxy]: Downloading https://files.pythonhosted.org/packages/6a/36/8a7184e5306eeb42608d03c007a3302bbdb672317f5242d9b06da17dfd83/dflow_galaxy-0.1.4.tar.gz
+[2024-04-07 14:37:53] INFO root fetch - processPackages [tableshare]: Downloading https://files.pythonhosted.org/packages/14/44/24da821a82c58962e30b34baef9a6785f1f8259c905ef42d7e9486aaac13/tableshare-1.1.1.tar.gz
+[2024-04-07 14:37:53] WARNING root fetch - processPackages [tableshare]: Timeout reached during download
+[2024-04-07 14:37:53] INFO root fetch - processPackages [tableshare]: executing diffoscope
+[2024-04-07 14:37:53] INFO root fetch - processPackages [tableshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tableshare-1.1.0.tar.gz tmp/tableshare-1.1.1.tar.gz --markdown 20240407/t/tableshare/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2024-04-07 14:37:53] WARNING root fetch - processPackages [dflow-galaxy]: Timeout reached during download
+[2024-04-07 14:37:53] INFO root fetch - processPackages [dflow-galaxy]: executing diffoscope
+[2024-04-07 14:37:53] INFO root fetch - processPackages [dflow-galaxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dflow_galaxy-0.1.2.tar.gz tmp/dflow_galaxy-0.1.4.tar.gz --markdown 20240407/d/dflow-galaxy/0.1.2-0.1.4/diff.md --exclude *.pyd
+[2024-04-07 14:37:54] INFO root fetch - processPackages [tableshare]: Remove: archive file [/home/abi/fetcher/tmp/tableshare-1.1.0.tar.gz]
+[2024-04-07 14:37:54] INFO root fetch - processPackages [tableshare]: Remove: archive file [/home/abi/fetcher/tmp/tableshare-1.1.1.tar.gz]
+[2024-04-07 14:37:54] INFO root fetch - main [MainThread]: End processing [tableshare]: success
+[2024-04-07 14:37:54] INFO root fetch - processPackages [dflow-galaxy]: Remove: archive file [/home/abi/fetcher/tmp/dflow_galaxy-0.1.2.tar.gz]
+[2024-04-07 14:37:54] INFO root fetch - processPackages [dflow-galaxy]: Remove: archive file [/home/abi/fetcher/tmp/dflow_galaxy-0.1.4.tar.gz]
+[2024-04-07 14:37:54] INFO root fetch - main [MainThread]: End processing [dflow-galaxy]: success
+[2024-04-07 14:37:54] INFO root fetch - main [MainThread]: Store serial: [22656233]
