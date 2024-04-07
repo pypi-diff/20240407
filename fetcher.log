@@ -5588,3 +5588,94 @@
 [2024-04-07 07:42:58] INFO root fetch - processPackages [langkit]: Remove: archive file [/home/abi/fetcher/tmp/langkit-0.0.9.tar.gz]
 [2024-04-07 07:42:58] INFO root fetch - main [MainThread]: End processing [langkit]: success
 [2024-04-07 07:42:58] INFO root fetch - main [MainThread]: Store serial: [22653709]
+[2024-04-07 07:45:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653709]
+[2024-04-07 07:45:06] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-07 07:45:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-dnsimple
+[2024-04-07 07:45:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tuneapi
+[2024-04-07 07:45:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-databricks
+[2024-04-07 07:45:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-consul
+[2024-04-07 07:45:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: htscf
+[2024-04-07 07:45:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: azure-mgmt-hdinsightcontainers
+[2024-04-07 07:45:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: buku
+[2024-04-07 07:45:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: azure-mgmt-sql
+[2024-04-07 07:45:06] INFO root fetch - processPackages [htscf]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 07:45:06] INFO root fetch - processPackages [pulumi-databricks]: New version: [1.9.0a1678745257] Old Version: [1.8.0a1678127428]
+[2024-04-07 07:45:06] INFO root fetch - processPackages [tuneapi]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-07 07:45:06] INFO root fetch - processPackages [azure-mgmt-hdinsightcontainers]: New version: [1.0.0b2] Old Version: [1.0.0b1]
+[2024-04-07 07:45:06] INFO root fetch - processPackages [buku]: New version: [4.9] Old Version: [4.7.1]
+[2024-04-07 07:45:06] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/48/31/ef6469f74ffa5f39aaf9ac67ecf2f5b17aec1b223d3f63572efd39a3958f/htscf-0.0.98.tar.gz
+[2024-04-07 07:45:06] INFO root fetch - processPackages [azure-mgmt-sql]: New version: [4.0.0b9] Old Version: [4.0.0b8]
+[2024-04-07 07:45:06] INFO root fetch - processPackages [pulumi-dnsimple]: New version: [3.5.0a1712467585] Old Version: [3.5.0a1712399413]
+[2024-04-07 07:45:06] INFO root fetch - processPackages [pulumi-consul]: New version: [3.9.0a1687670569] Old Version: [3.9.0a1687054376]
+[2024-04-07 07:45:07] INFO root fetch - processPackages [pulumi-databricks]: Downloading https://files.pythonhosted.org/packages/1f/91/a029f2344eeb56c6dee818184e323ba7e2014013c42c08396688882d5dae/pulumi_databricks-1.8.0a1678127428.tar.gz
+[2024-04-07 07:45:07] INFO root fetch - processPackages [pulumi-dnsimple]: Downloading https://files.pythonhosted.org/packages/08/f3/89d10a474c2183e7fa6c5cc0a1412092489d41026dc5f89c4e94e0c9ccec/pulumi_dnsimple-3.5.0a1712399413.tar.gz
+[2024-04-07 07:45:07] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 07:45:07] INFO root fetch - processPackages [tuneapi]: Downloading https://files.pythonhosted.org/packages/08/47/72e05e351bf2a9c52ed8b9b5c3fa5c2c376c483a26163754016ece9e24d3/tuneapi-0.2.2.tar.gz
+[2024-04-07 07:45:07] INFO root fetch - processPackages [azure-mgmt-hdinsightcontainers]: Downloading https://files.pythonhosted.org/packages/04/f0/af7ff9324dd2460fab55062396f0539889eaf648c4f2b81a729b3924ac03/azure-mgmt-hdinsightcontainers-1.0.0b1.tar.gz
+[2024-04-07 07:45:07] WARNING root fetch - processPackages [pulumi-databricks]: Timeout reached during download
+[2024-04-07 07:45:07] INFO root fetch - processPackages [azure-mgmt-sql]: Downloading https://files.pythonhosted.org/packages/b5/4f/a5dfd452b1c4969300a38d0ee5fce4f2f24d7e935afb1cc33c3ee78c0302/azure-mgmt-sql-4.0.0b8.zip
+[2024-04-07 07:45:07] INFO root fetch - processPackages [buku]: Downloading https://files.pythonhosted.org/packages/7a/b7/5268eacdbb0829039b1039f58bedab03e2139ec2d242094f8c062d792277/buku-4.7.1.tar.gz
+[2024-04-07 07:45:07] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/79/48/b9c5a63d0fc652968c826af8815fadd5e1f69403909e12853b5a52d9c6b3/htscf-0.0.99.tar.gz
+[2024-04-07 07:45:07] INFO root fetch - processPackages [pulumi-consul]: Downloading https://files.pythonhosted.org/packages/b2/0b/a9aea9bd557425d918ea238feabf49fb698d827f1dfeaf4613d70eae31a2/pulumi_consul-3.9.0a1687054376.tar.gz
+[2024-04-07 07:45:07] WARNING root fetch - processPackages [tuneapi]: Timeout reached during download
+[2024-04-07 07:45:07] WARNING root fetch - processPackages [pulumi-dnsimple]: Timeout reached during download
+[2024-04-07 07:45:07] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 07:45:07] INFO root fetch - processPackages [htscf]: executing diffoscope
+[2024-04-07 07:45:07] INFO root fetch - processPackages [htscf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htscf-0.0.98.tar.gz tmp/htscf-0.0.99.tar.gz --markdown 20240407/h/htscf/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 07:45:07] WARNING root fetch - processPackages [azure-mgmt-hdinsightcontainers]: Timeout reached during download
+[2024-04-07 07:45:07] INFO root fetch - processPackages [pulumi-databricks]: Downloading https://files.pythonhosted.org/packages/b1/ff/c67ee9a9d6e1f19f6530fdfef065568afe6ec72af786e3dba340b58ca4c4/pulumi_databricks-1.9.0a1678745257.tar.gz
+[2024-04-07 07:45:07] WARNING root fetch - processPackages [buku]: Timeout reached during download
+[2024-04-07 07:45:07] INFO root fetch - processPackages [tuneapi]: Downloading https://files.pythonhosted.org/packages/b0/db/05adcf600a632385bb193a0a99040b912766c1e280491fc840e1d202c022/tuneapi-0.2.3.tar.gz
+[2024-04-07 07:45:07] WARNING root fetch - processPackages [pulumi-consul]: Timeout reached during download
+[2024-04-07 07:45:07] INFO root fetch - processPackages [pulumi-dnsimple]: Downloading https://files.pythonhosted.org/packages/96/ae/828551fe4ff68444b3566371ae2a885269475213eae600dd8f23fd78c7f8/pulumi_dnsimple-3.5.0a1712467585.tar.gz
+[2024-04-07 07:45:07] INFO root fetch - processPackages [azure-mgmt-hdinsightcontainers]: Downloading https://files.pythonhosted.org/packages/fa/f1/9ce50a42e00c6f13616c4b7ba8e4eb4928027c2c61b40abc68789d38780c/azure-mgmt-hdinsightcontainers-1.0.0b2.tar.gz
+[2024-04-07 07:45:07] WARNING root fetch - processPackages [tuneapi]: Timeout reached during download
+[2024-04-07 07:45:07] INFO root fetch - processPackages [tuneapi]: executing diffoscope
+[2024-04-07 07:45:07] INFO root fetch - processPackages [tuneapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tuneapi-0.2.2.tar.gz tmp/tuneapi-0.2.3.tar.gz --markdown 20240407/t/tuneapi/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2024-04-07 07:45:07] INFO root fetch - processPackages [buku]: Downloading https://files.pythonhosted.org/packages/bb/7b/dab98ab3cfdce33760164ca1d9146dfc4db5981809594fe01a7fd9c13fb1/buku-4.9.tar.gz
+[2024-04-07 07:45:07] WARNING root fetch - processPackages [pulumi-dnsimple]: Timeout reached during download
+[2024-04-07 07:45:07] INFO root fetch - processPackages [pulumi-dnsimple]: executing diffoscope
+[2024-04-07 07:45:07] INFO root fetch - processPackages [pulumi-dnsimple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_dnsimple-3.5.0a1712399413.tar.gz tmp/pulumi_dnsimple-3.5.0a1712467585.tar.gz --markdown 20240407/p/pulumi-dnsimple/3.5.0a1712399413-3.5.0a1712467585/diff.md --exclude *.pyd
+[2024-04-07 07:45:07] INFO root fetch - processPackages [pulumi-consul]: Downloading https://files.pythonhosted.org/packages/aa/10/eaf50f0d8ecb4103cac140429d33cf0fbed0a84ade857f6a5d9e9dda5e71/pulumi_consul-3.9.0a1687670569.tar.gz
+[2024-04-07 07:45:07] WARNING root fetch - processPackages [pulumi-databricks]: Timeout reached during download
+[2024-04-07 07:45:07] INFO root fetch - processPackages [pulumi-databricks]: executing diffoscope
+[2024-04-07 07:45:07] INFO root fetch - processPackages [pulumi-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_databricks-1.8.0a1678127428.tar.gz tmp/pulumi_databricks-1.9.0a1678745257.tar.gz --markdown 20240407/p/pulumi-databricks/1.8.0a1678127428-1.9.0a1678745257/diff.md --exclude *.pyd
+[2024-04-07 07:45:07] WARNING root fetch - processPackages [azure-mgmt-sql]: Timeout reached during download
+[2024-04-07 07:45:07] WARNING root fetch - processPackages [pulumi-consul]: Timeout reached during download
+[2024-04-07 07:45:07] INFO root fetch - processPackages [pulumi-consul]: executing diffoscope
+[2024-04-07 07:45:07] INFO root fetch - processPackages [pulumi-consul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_consul-3.9.0a1687054376.tar.gz tmp/pulumi_consul-3.9.0a1687670569.tar.gz --markdown 20240407/p/pulumi-consul/3.9.0a1687054376-3.9.0a1687670569/diff.md --exclude *.pyd
+[2024-04-07 07:45:07] WARNING root fetch - processPackages [azure-mgmt-hdinsightcontainers]: Timeout reached during download
+[2024-04-07 07:45:07] INFO root fetch - processPackages [azure-mgmt-hdinsightcontainers]: executing diffoscope
+[2024-04-07 07:45:07] INFO root fetch - processPackages [azure-mgmt-hdinsightcontainers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-mgmt-hdinsightcontainers-1.0.0b1.tar.gz tmp/azure-mgmt-hdinsightcontainers-1.0.0b2.tar.gz --markdown 20240407/a/azure-mgmt-hdinsightcontainers/1.0.0b1-1.0.0b2/diff.md --exclude *.pyd
+[2024-04-07 07:45:07] WARNING root fetch - processPackages [buku]: Timeout reached during download
+[2024-04-07 07:45:07] INFO root fetch - processPackages [buku]: executing diffoscope
+[2024-04-07 07:45:07] INFO root fetch - processPackages [buku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buku-4.7.1.tar.gz tmp/buku-4.9.tar.gz --markdown 20240407/b/buku/4.7.1-4.9/diff.md --exclude *.pyd
+[2024-04-07 07:45:07] INFO root fetch - processPackages [azure-mgmt-sql]: Downloading https://files.pythonhosted.org/packages/87/bf/8641af0272d36dd2e3c709f6331087efbccb34475cce793b767db5791f90/azure-mgmt-sql-4.0.0b9.zip
+[2024-04-07 07:45:08] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.98.tar.gz]
+[2024-04-07 07:45:08] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.99.tar.gz]
+[2024-04-07 07:45:08] INFO root fetch - main [MainThread]: End processing [htscf]: success
+[2024-04-07 07:45:08] WARNING root fetch - processPackages [azure-mgmt-sql]: Timeout reached during download
+[2024-04-07 07:45:08] INFO root fetch - processPackages [azure-mgmt-sql]: executing diffoscope
+[2024-04-07 07:45:08] INFO root fetch - processPackages [azure-mgmt-sql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-mgmt-sql-4.0.0b8.zip tmp/azure-mgmt-sql-4.0.0b9.zip --markdown 20240407/a/azure-mgmt-sql/4.0.0b8-4.0.0b9/diff.md --exclude *.pyd
+[2024-04-07 07:45:08] INFO root fetch - processPackages [pulumi-dnsimple]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_dnsimple-3.5.0a1712399413.tar.gz]
+[2024-04-07 07:45:08] INFO root fetch - processPackages [pulumi-dnsimple]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_dnsimple-3.5.0a1712467585.tar.gz]
+[2024-04-07 07:45:08] INFO root fetch - main [MainThread]: End processing [pulumi-dnsimple]: success
+[2024-04-07 07:45:08] INFO root fetch - processPackages [tuneapi]: Remove: archive file [/home/abi/fetcher/tmp/tuneapi-0.2.2.tar.gz]
+[2024-04-07 07:45:08] INFO root fetch - processPackages [tuneapi]: Remove: archive file [/home/abi/fetcher/tmp/tuneapi-0.2.3.tar.gz]
+[2024-04-07 07:45:08] INFO root fetch - main [MainThread]: End processing [tuneapi]: success
+[2024-04-07 07:45:08] INFO root fetch - processPackages [pulumi-consul]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_consul-3.9.0a1687054376.tar.gz]
+[2024-04-07 07:45:08] INFO root fetch - processPackages [pulumi-consul]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_consul-3.9.0a1687670569.tar.gz]
+[2024-04-07 07:45:08] INFO root fetch - main [MainThread]: End processing [pulumi-consul]: success
+[2024-04-07 07:45:08] INFO root fetch - processPackages [azure-mgmt-hdinsightcontainers]: Remove: archive file [/home/abi/fetcher/tmp/azure-mgmt-hdinsightcontainers-1.0.0b1.tar.gz]
+[2024-04-07 07:45:08] INFO root fetch - processPackages [azure-mgmt-hdinsightcontainers]: Remove: archive file [/home/abi/fetcher/tmp/azure-mgmt-hdinsightcontainers-1.0.0b2.tar.gz]
+[2024-04-07 07:45:08] INFO root fetch - main [MainThread]: End processing [azure-mgmt-hdinsightcontainers]: success
+[2024-04-07 07:45:09] INFO root fetch - processPackages [buku]: Remove: archive file [/home/abi/fetcher/tmp/buku-4.7.1.tar.gz]
+[2024-04-07 07:45:09] INFO root fetch - processPackages [buku]: Remove: archive file [/home/abi/fetcher/tmp/buku-4.9.tar.gz]
+[2024-04-07 07:45:09] INFO root fetch - main [MainThread]: End processing [buku]: success
+[2024-04-07 07:45:09] INFO root fetch - processPackages [pulumi-databricks]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_databricks-1.8.0a1678127428.tar.gz]
+[2024-04-07 07:45:09] INFO root fetch - processPackages [pulumi-databricks]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_databricks-1.9.0a1678745257.tar.gz]
+[2024-04-07 07:45:09] INFO root fetch - main [MainThread]: End processing [pulumi-databricks]: success
+[2024-04-07 07:45:14] INFO root fetch - processPackages [azure-mgmt-sql]: Remove: archive file [/home/abi/fetcher/tmp/azure-mgmt-sql-4.0.0b8.zip]
+[2024-04-07 07:45:14] INFO root fetch - processPackages [azure-mgmt-sql]: Remove: archive file [/home/abi/fetcher/tmp/azure-mgmt-sql-4.0.0b9.zip]
+[2024-04-07 07:45:14] INFO root fetch - main [MainThread]: End processing [azure-mgmt-sql]: success
+[2024-04-07 07:45:14] INFO root fetch - main [MainThread]: Store serial: [22653732]
