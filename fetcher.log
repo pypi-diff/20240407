@@ -6731,3 +6731,39 @@
 [2024-04-07 08:53:02] INFO root fetch - processPackages [python-sat]: Remove: archive file [/home/abi/fetcher/tmp/python-sat-1.8.dev9.tar.gz]
 [2024-04-07 08:53:02] INFO root fetch - main [MainThread]: End processing [python-sat]: success
 [2024-04-07 08:53:02] INFO root fetch - main [MainThread]: Store serial: [22654174]
+[2024-04-07 08:55:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654174]
+[2024-04-07 08:55:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 08:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jax-tools
+[2024-04-07 08:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: user-agents-parser
+[2024-04-07 08:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ehdtd-daemon
+[2024-04-07 08:55:11] INFO root fetch - processPackages [user-agents-parser]: New version: [2.2.2] Old Version: [2.2.1]
+[2024-04-07 08:55:11] INFO root fetch - processPackages [user-agents-parser]: Downloading https://files.pythonhosted.org/packages/36/28/0a4704aa1856d4ba6446d4634fe8c508fae371f43867875ab70e41dd742c/user-agents-parser-2.2.1.tar.gz
+[2024-04-07 08:55:11] INFO root fetch - processPackages [jax-tools]: New version: [1.0.97] Old Version: [1.0.89]
+[2024-04-07 08:55:11] INFO root fetch - processPackages [ehdtd-daemon]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-07 08:55:11] WARNING root fetch - processPackages [user-agents-parser]: Timeout reached during download
+[2024-04-07 08:55:11] INFO root fetch - processPackages [ehdtd-daemon]: Downloading https://files.pythonhosted.org/packages/13/4c/60bf1d2b4e44b41c76f644c0a819cfc40247e76aed95550078acce401d91/ehdtd_daemon-0.1.4.tar.gz
+[2024-04-07 08:55:11] INFO root fetch - processPackages [jax-tools]: Downloading https://files.pythonhosted.org/packages/42/bb/880ff542a8104330fd135b29e3dfd25932c6e5e84de059ad2fe4e9ad70fe/jax-tools-1.0.89.tar.gz
+[2024-04-07 08:55:11] INFO root fetch - processPackages [user-agents-parser]: Downloading https://files.pythonhosted.org/packages/a1/fd/1492aeffd189c4fa9503e0000f11482e874eb28814c33ee2dde64cfe593c/user-agents-parser-2.2.2.tar.gz
+[2024-04-07 08:55:11] WARNING root fetch - processPackages [ehdtd-daemon]: Timeout reached during download
+[2024-04-07 08:55:11] WARNING root fetch - processPackages [user-agents-parser]: Timeout reached during download
+[2024-04-07 08:55:11] INFO root fetch - processPackages [user-agents-parser]: executing diffoscope
+[2024-04-07 08:55:11] INFO root fetch - processPackages [user-agents-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/user-agents-parser-2.2.1.tar.gz tmp/user-agents-parser-2.2.2.tar.gz --markdown 20240407/u/user-agents-parser/2.2.1-2.2.2/diff.md --exclude *.pyd
+[2024-04-07 08:55:11] WARNING root fetch - processPackages [jax-tools]: Timeout reached during download
+[2024-04-07 08:55:11] INFO root fetch - processPackages [ehdtd-daemon]: Downloading https://files.pythonhosted.org/packages/97/d8/094aa64d8e7be1684890a7580e8ce73137b691e9f1dff7ce85c32dc8fd6e/ehdtd_daemon-0.1.5.tar.gz
+[2024-04-07 08:55:11] INFO root fetch - processPackages [jax-tools]: Downloading https://files.pythonhosted.org/packages/dd/07/1feb6cf6dba3d530f24b221e4f6e9f8139eca4bf8db844608dd9facfd42d/jax-tools-1.0.97.tar.gz
+[2024-04-07 08:55:12] WARNING root fetch - processPackages [ehdtd-daemon]: Timeout reached during download
+[2024-04-07 08:55:12] INFO root fetch - processPackages [ehdtd-daemon]: executing diffoscope
+[2024-04-07 08:55:12] INFO root fetch - processPackages [ehdtd-daemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ehdtd_daemon-0.1.4.tar.gz tmp/ehdtd_daemon-0.1.5.tar.gz --markdown 20240407/e/ehdtd-daemon/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2024-04-07 08:55:12] WARNING root fetch - processPackages [jax-tools]: Timeout reached during download
+[2024-04-07 08:55:12] INFO root fetch - processPackages [jax-tools]: executing diffoscope
+[2024-04-07 08:55:12] INFO root fetch - processPackages [jax-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jax-tools-1.0.89.tar.gz tmp/jax-tools-1.0.97.tar.gz --markdown 20240407/j/jax-tools/1.0.89-1.0.97/diff.md --exclude *.pyd
+[2024-04-07 08:55:12] INFO root fetch - processPackages [user-agents-parser]: Remove: archive file [/home/abi/fetcher/tmp/user-agents-parser-2.2.1.tar.gz]
+[2024-04-07 08:55:12] INFO root fetch - processPackages [user-agents-parser]: Remove: archive file [/home/abi/fetcher/tmp/user-agents-parser-2.2.2.tar.gz]
+[2024-04-07 08:55:12] INFO root fetch - main [MainThread]: End processing [user-agents-parser]: success
+[2024-04-07 08:55:12] INFO root fetch - processPackages [ehdtd-daemon]: Remove: archive file [/home/abi/fetcher/tmp/ehdtd_daemon-0.1.4.tar.gz]
+[2024-04-07 08:55:12] INFO root fetch - processPackages [ehdtd-daemon]: Remove: archive file [/home/abi/fetcher/tmp/ehdtd_daemon-0.1.5.tar.gz]
+[2024-04-07 08:55:12] INFO root fetch - main [MainThread]: End processing [ehdtd-daemon]: success
+[2024-04-07 08:55:12] INFO root fetch - processPackages [jax-tools]: Remove: archive file [/home/abi/fetcher/tmp/jax-tools-1.0.89.tar.gz]
+[2024-04-07 08:55:12] INFO root fetch - processPackages [jax-tools]: Remove: archive file [/home/abi/fetcher/tmp/jax-tools-1.0.97.tar.gz]
+[2024-04-07 08:55:12] INFO root fetch - main [MainThread]: End processing [jax-tools]: success
+[2024-04-07 08:55:12] INFO root fetch - main [MainThread]: Store serial: [22654181]
