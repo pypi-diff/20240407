@@ -5746,3 +5746,47 @@
 [2024-04-07 07:51:45] INFO root fetch - processPackages [openpipe]: Remove: archive file [/home/abi/fetcher/tmp/openpipe-4.7.0.tar.gz]
 [2024-04-07 07:51:45] INFO root fetch - main [MainThread]: End processing [openpipe]: success
 [2024-04-07 07:51:45] INFO root fetch - main [MainThread]: Store serial: [22653752]
+[2024-04-07 07:53:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653752]
+[2024-04-07 07:53:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 07:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-fastly
+[2024-04-07 07:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-github
+[2024-04-07 07:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycounts_rbattu
+[2024-04-07 07:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: whylogs-container-types
+[2024-04-07 07:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: apache-airflow
+[2024-04-07 07:53:55] INFO root fetch - processPackages [apache-airflow]: New version: [2.9.0rc2] Old Version: [2.9.0rc1]
+[2024-04-07 07:53:55] INFO root fetch - processPackages [pulumi-github]: New version: [6.3.0a1712399590] Old Version: [6.3.0a1711735204]
+[2024-04-07 07:53:55] INFO root fetch - processPackages [whylogs-container-types]: New version: [0.4.16] Old Version: [0.4.15]
+[2024-04-07 07:53:55] WARNING root fetch - processPackages [pycounts_rbattu]: Skipping, unable to determine old version
+[2024-04-07 07:53:55] INFO root fetch - main [MainThread]: End processing [pycounts_rbattu] error
+[2024-04-07 07:53:55] INFO root fetch - processPackages [pulumi-fastly]: New version: [8.6.0a1712467963] Old Version: [8.6.0a1712399555]
+[2024-04-07 07:53:55] INFO root fetch - processPackages [pulumi-github]: Downloading https://files.pythonhosted.org/packages/e4/9d/273b4116f0695fa9389acc41ba948e4a520050176b61c2ace0c3dbff70b8/pulumi_github-6.3.0a1711735204.tar.gz
+[2024-04-07 07:53:55] INFO root fetch - processPackages [pulumi-fastly]: Downloading https://files.pythonhosted.org/packages/a9/77/f0b3b438dac5fe0996f1690dc908fc6cb73ca67b28012bc241f711aafe42/pulumi_fastly-8.6.0a1712399555.tar.gz
+[2024-04-07 07:53:55] INFO root fetch - processPackages [whylogs-container-types]: Downloading https://files.pythonhosted.org/packages/37/ca/02f53c696257bf07e0dbebb4f37aa65b8db20c801ac39581016fb95acc46/whylogs_container_types-0.4.15.tar.gz
+[2024-04-07 07:53:55] WARNING root fetch - processPackages [pulumi-github]: Timeout reached during download
+[2024-04-07 07:53:55] WARNING root fetch - processPackages [whylogs-container-types]: Timeout reached during download
+[2024-04-07 07:53:55] WARNING root fetch - processPackages [pulumi-fastly]: Timeout reached during download
+[2024-04-07 07:53:55] INFO root fetch - processPackages [pulumi-github]: Downloading https://files.pythonhosted.org/packages/99/5e/8ab400b859ab0a7af39e58a4837fdf5344300d24a80268d6679b455f0796/pulumi_github-6.3.0a1712399590.tar.gz
+[2024-04-07 07:53:55] INFO root fetch - processPackages [whylogs-container-types]: Downloading https://files.pythonhosted.org/packages/3f/af/7c3e62e0fcc0594204d80155dde65e2b07b30f1f1fdf54f2750b4bb1f8f9/whylogs_container_types-0.4.16.tar.gz
+[2024-04-07 07:53:56] INFO root fetch - processPackages [pulumi-fastly]: Downloading https://files.pythonhosted.org/packages/10/cf/2352ecb31da040b27ff30d1a6daf08f2533061b109d41cd1dd2351204f6d/pulumi_fastly-8.6.0a1712467963.tar.gz
+[2024-04-07 07:53:56] WARNING root fetch - processPackages [pulumi-github]: Timeout reached during download
+[2024-04-07 07:53:56] INFO root fetch - processPackages [pulumi-github]: executing diffoscope
+[2024-04-07 07:53:56] INFO root fetch - processPackages [pulumi-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_github-6.3.0a1711735204.tar.gz tmp/pulumi_github-6.3.0a1712399590.tar.gz --markdown 20240407/p/pulumi-github/6.3.0a1711735204-6.3.0a1712399590/diff.md --exclude *.pyd
+[2024-04-07 07:53:56] WARNING root fetch - processPackages [whylogs-container-types]: Timeout reached during download
+[2024-04-07 07:53:56] INFO root fetch - processPackages [whylogs-container-types]: executing diffoscope
+[2024-04-07 07:53:56] INFO root fetch - processPackages [whylogs-container-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whylogs_container_types-0.4.15.tar.gz tmp/whylogs_container_types-0.4.16.tar.gz --markdown 20240407/w/whylogs-container-types/0.4.15-0.4.16/diff.md --exclude *.pyd
+[2024-04-07 07:53:56] INFO root fetch - processPackages [apache-airflow]: Downloading https://files.pythonhosted.org/packages/70/21/dec66d91bddbce07b092c562527c1312464942523133efbf82e642d66b37/apache_airflow-2.9.0rc1.tar.gz
+[2024-04-07 07:53:56] WARNING root fetch - processPackages [pulumi-fastly]: Timeout reached during download
+[2024-04-07 07:53:56] INFO root fetch - processPackages [pulumi-fastly]: executing diffoscope
+[2024-04-07 07:53:56] INFO root fetch - processPackages [pulumi-fastly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_fastly-8.6.0a1712399555.tar.gz tmp/pulumi_fastly-8.6.0a1712467963.tar.gz --markdown 20240407/p/pulumi-fastly/8.6.0a1712399555-8.6.0a1712467963/diff.md --exclude *.pyd
+[2024-04-07 07:53:56] WARNING root fetch - processPackages [apache-airflow]: Skipping package: exceeds size limit 12378335>=10485760
+[2024-04-07 07:53:56] INFO root fetch - main [MainThread]: End processing [apache-airflow] error
+[2024-04-07 07:53:56] INFO root fetch - processPackages [whylogs-container-types]: Remove: archive file [/home/abi/fetcher/tmp/whylogs_container_types-0.4.15.tar.gz]
+[2024-04-07 07:53:56] INFO root fetch - processPackages [whylogs-container-types]: Remove: archive file [/home/abi/fetcher/tmp/whylogs_container_types-0.4.16.tar.gz]
+[2024-04-07 07:53:56] INFO root fetch - main [MainThread]: End processing [whylogs-container-types]: success
+[2024-04-07 07:53:56] INFO root fetch - processPackages [pulumi-fastly]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_fastly-8.6.0a1712399555.tar.gz]
+[2024-04-07 07:53:56] INFO root fetch - processPackages [pulumi-fastly]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_fastly-8.6.0a1712467963.tar.gz]
+[2024-04-07 07:53:57] INFO root fetch - main [MainThread]: End processing [pulumi-fastly]: success
+[2024-04-07 07:53:57] INFO root fetch - processPackages [pulumi-github]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_github-6.3.0a1711735204.tar.gz]
+[2024-04-07 07:53:57] INFO root fetch - processPackages [pulumi-github]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_github-6.3.0a1712399590.tar.gz]
+[2024-04-07 07:53:57] INFO root fetch - main [MainThread]: End processing [pulumi-github]: success
+[2024-04-07 07:53:57] INFO root fetch - main [MainThread]: Store serial: [22653769]
