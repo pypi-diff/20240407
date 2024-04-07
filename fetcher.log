@@ -3712,3 +3712,63 @@
 [2024-04-07 05:08:47] INFO root fetch - processPackages [deadline]: Remove: archive file [/home/abi/fetcher/tmp/deadline-0.47.2.tar.gz]
 [2024-04-07 05:08:47] INFO root fetch - main [MainThread]: End processing [deadline]: success
 [2024-04-07 05:08:47] INFO root fetch - main [MainThread]: Store serial: [22653130]
+[2024-04-07 05:10:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653130]
+[2024-04-07 05:10:56] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 05:12:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653130]
+[2024-04-07 05:13:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 05:13:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: antchain-riskplus
+[2024-04-07 05:13:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zsx-pack
+[2024-04-07 05:13:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dash-spread-grid
+[2024-04-07 05:13:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lineagex
+[2024-04-07 05:13:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: munet
+[2024-04-07 05:13:01] INFO root fetch - processPackages [lineagex]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 05:13:01] INFO root fetch - processPackages [zsx-pack]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-07 05:13:01] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-07 05:13:01] INFO root fetch - processPackages [lineagex]: Downloading https://files.pythonhosted.org/packages/88/85/7e0ff755a7c52459c314b3cb9341c1f37a0416c369381dcfe8ff6124fab5/lineagex-0.0.8.tar.gz
+[2024-04-07 05:13:01] INFO root fetch - processPackages [munet]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-07 05:13:01] INFO root fetch - processPackages [zsx-pack]: Downloading https://files.pythonhosted.org/packages/03/8f/f48dc2c16ab49dc41eb3ddec6f77ca76bdfd1725a9b381ec384733464041/zsx_pack-0.0.4.tar.gz
+[2024-04-07 05:13:01] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/6f/a4/d0f84b0109b1c3fc67a2e6c29b1578e36cc8a38d94b8da0e51f8bbeb45fc/dash_spread_grid-0.0.1.tar.gz
+[2024-04-07 05:13:01] INFO root fetch - processPackages [antchain-riskplus]: New version: [1.9.5] Old Version: [1.9.3]
+[2024-04-07 05:13:02] WARNING root fetch - processPackages [zsx-pack]: Timeout reached during download
+[2024-04-07 05:13:02] WARNING root fetch - processPackages [dash-spread-grid]: Timeout reached during download
+[2024-04-07 05:13:02] WARNING root fetch - processPackages [lineagex]: Timeout reached during download
+[2024-04-07 05:13:02] INFO root fetch - processPackages [munet]: Downloading https://files.pythonhosted.org/packages/ab/ab/50abc3289545adb952eebcb12b5d75cd68c3deddb2ead102309f6b23b3fd/munet-0.9.8.tar.gz
+[2024-04-07 05:13:02] INFO root fetch - processPackages [antchain-riskplus]: Downloading https://files.pythonhosted.org/packages/bf/c1/dbe03c2d25af3fa0175660a07bf2ec833509da27dea50cc2c6116d0311e4/antchain_riskplus-1.9.3.tar.gz
+[2024-04-07 05:13:02] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/3e/b3/8b140080110d2949af9088d903cfab83af1ed4a73952d08a9b55aa8d94d0/dash_spread_grid-0.0.2.tar.gz
+[2024-04-07 05:13:02] INFO root fetch - processPackages [lineagex]: Downloading https://files.pythonhosted.org/packages/c4/8d/4935610bc014abaef16e58ad6370420a9600a1c2d06ec51384b444af14b1/lineagex-0.0.9.tar.gz
+[2024-04-07 05:13:02] INFO root fetch - processPackages [zsx-pack]: Downloading https://files.pythonhosted.org/packages/e2/84/762da70f1c2eb3ee1106adaf84c31e58e44bbc1015a7a7e91e367e539725/zsx_pack-0.0.5.tar.gz
+[2024-04-07 05:13:02] WARNING root fetch - processPackages [munet]: Timeout reached during download
+[2024-04-07 05:13:02] WARNING root fetch - processPackages [dash-spread-grid]: Timeout reached during download
+[2024-04-07 05:13:02] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-04-07 05:13:02] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.1.tar.gz tmp/dash_spread_grid-0.0.2.tar.gz --markdown 20240407/d/dash-spread-grid/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-07 05:13:02] WARNING root fetch - processPackages [zsx-pack]: Timeout reached during download
+[2024-04-07 05:13:02] INFO root fetch - processPackages [zsx-pack]: executing diffoscope
+[2024-04-07 05:13:02] INFO root fetch - processPackages [zsx-pack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zsx_pack-0.0.4.tar.gz tmp/zsx_pack-0.0.5.tar.gz --markdown 20240407/z/zsx-pack/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-07 05:13:02] WARNING root fetch - processPackages [antchain-riskplus]: Timeout reached during download
+[2024-04-07 05:13:02] WARNING root fetch - processPackages [lineagex]: Timeout reached during download
+[2024-04-07 05:13:02] INFO root fetch - processPackages [lineagex]: executing diffoscope
+[2024-04-07 05:13:02] INFO root fetch - processPackages [lineagex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lineagex-0.0.8.tar.gz tmp/lineagex-0.0.9.tar.gz --markdown 20240407/l/lineagex/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 05:13:02] INFO root fetch - processPackages [munet]: Downloading https://files.pythonhosted.org/packages/e9/a7/16aef984464ad235996a4918e7377bd5e40cd015eb9b5cae381b237aeba4/munet-0.9.9.tar.gz
+[2024-04-07 05:13:02] INFO root fetch - processPackages [antchain-riskplus]: Downloading https://files.pythonhosted.org/packages/12/c2/d3710d50579d01a29713d277bd95ab4c8f88ed9d297a3ffb73afbd01cb30/antchain_riskplus-1.9.5.tar.gz
+[2024-04-07 05:13:02] WARNING root fetch - processPackages [munet]: Timeout reached during download
+[2024-04-07 05:13:02] INFO root fetch - processPackages [munet]: executing diffoscope
+[2024-04-07 05:13:02] INFO root fetch - processPackages [munet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/munet-0.9.8.tar.gz tmp/munet-0.9.9.tar.gz --markdown 20240407/m/munet/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2024-04-07 05:13:02] WARNING root fetch - processPackages [antchain-riskplus]: Timeout reached during download
+[2024-04-07 05:13:02] INFO root fetch - processPackages [antchain-riskplus]: executing diffoscope
+[2024-04-07 05:13:02] INFO root fetch - processPackages [antchain-riskplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antchain_riskplus-1.9.3.tar.gz tmp/antchain_riskplus-1.9.5.tar.gz --markdown 20240407/a/antchain-riskplus/1.9.3-1.9.5/diff.md --exclude *.pyd
+[2024-04-07 05:13:03] INFO root fetch - processPackages [zsx-pack]: Remove: archive file [/home/abi/fetcher/tmp/zsx_pack-0.0.4.tar.gz]
+[2024-04-07 05:13:03] INFO root fetch - processPackages [zsx-pack]: Remove: archive file [/home/abi/fetcher/tmp/zsx_pack-0.0.5.tar.gz]
+[2024-04-07 05:13:03] INFO root fetch - main [MainThread]: End processing [zsx-pack]: success
+[2024-04-07 05:13:03] INFO root fetch - processPackages [munet]: Remove: archive file [/home/abi/fetcher/tmp/munet-0.9.8.tar.gz]
+[2024-04-07 05:13:03] INFO root fetch - processPackages [munet]: Remove: archive file [/home/abi/fetcher/tmp/munet-0.9.9.tar.gz]
+[2024-04-07 05:13:03] INFO root fetch - main [MainThread]: End processing [munet]: success
+[2024-04-07 05:13:03] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.1.tar.gz]
+[2024-04-07 05:13:03] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.2.tar.gz]
+[2024-04-07 05:13:03] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-04-07 05:13:03] INFO root fetch - processPackages [antchain-riskplus]: Remove: archive file [/home/abi/fetcher/tmp/antchain_riskplus-1.9.3.tar.gz]
+[2024-04-07 05:13:03] INFO root fetch - processPackages [antchain-riskplus]: Remove: archive file [/home/abi/fetcher/tmp/antchain_riskplus-1.9.5.tar.gz]
+[2024-04-07 05:13:03] INFO root fetch - main [MainThread]: End processing [antchain-riskplus]: success
+[2024-04-07 05:13:03] INFO root fetch - processPackages [lineagex]: Remove: archive file [/home/abi/fetcher/tmp/lineagex-0.0.8.tar.gz]
+[2024-04-07 05:13:03] INFO root fetch - processPackages [lineagex]: Remove: archive file [/home/abi/fetcher/tmp/lineagex-0.0.9.tar.gz]
+[2024-04-07 05:13:03] INFO root fetch - main [MainThread]: End processing [lineagex]: success
+[2024-04-07 05:13:03] INFO root fetch - main [MainThread]: Store serial: [22653145]
