@@ -4057,3 +4057,53 @@
 [2024-04-07 05:39:07] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b95.tar.gz]
 [2024-04-07 05:39:07] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
 [2024-04-07 05:39:07] INFO root fetch - main [MainThread]: Store serial: [22653283]
+[2024-04-07 05:41:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653283]
+[2024-04-07 05:41:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 05:41:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smaht-submitr
+[2024-04-07 05:41:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jigsawwm
+[2024-04-07 05:41:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zsx-pack
+[2024-04-07 05:41:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lineagex
+[2024-04-07 05:41:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tko
+[2024-04-07 05:41:17] WARNING root fetch - processPackages [zsx-pack]: Skipping, unable to determine old version
+[2024-04-07 05:41:17] INFO root fetch - main [MainThread]: End processing [zsx-pack] error
+[2024-04-07 05:41:17] INFO root fetch - processPackages [lineagex]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 05:41:17] INFO root fetch - processPackages [smaht-submitr]: New version: [0.7.0.1b96] Old Version: [0.7.0.1b95]
+[2024-04-07 05:41:17] INFO root fetch - processPackages [lineagex]: Downloading https://files.pythonhosted.org/packages/88/85/7e0ff755a7c52459c314b3cb9341c1f37a0416c369381dcfe8ff6124fab5/lineagex-0.0.8.tar.gz
+[2024-04-07 05:41:17] INFO root fetch - processPackages [jigsawwm]: New version: [2.2.0] Old Version: [2.1.1]
+[2024-04-07 05:41:17] INFO root fetch - processPackages [tko]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-07 05:41:17] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/75/8c/f9beb6bc26510a3ad2313c7a18cb3cc75780f92db46d4c01c010594409b6/smaht_submitr-0.7.0.1b95.tar.gz
+[2024-04-07 05:41:17] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 05:41:17] INFO root fetch - processPackages [jigsawwm]: Downloading https://files.pythonhosted.org/packages/db/8d/4f5edd4a4b66643adc1748293923d57ec1f5833f900d7edd531624a44ecf/jigsawwm-2.1.1.tar.gz
+[2024-04-07 05:41:17] WARNING root fetch - processPackages [lineagex]: Timeout reached during download
+[2024-04-07 05:41:17] INFO root fetch - processPackages [tko]: Downloading https://files.pythonhosted.org/packages/5d/f9/58ed42bf3a9b208a2ca309acd9381ed80521e5c5b0fb03912758693f6dff/tko-0.3.8.tar.gz
+[2024-04-07 05:41:17] INFO root fetch - processPackages [lineagex]: Downloading https://files.pythonhosted.org/packages/c4/8d/4935610bc014abaef16e58ad6370420a9600a1c2d06ec51384b444af14b1/lineagex-0.0.9.tar.gz
+[2024-04-07 05:41:17] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/f8/8a/e6c80dab6edf988af330133213ce7181270ecb7d2c58a89353a4285f79d3/smaht_submitr-0.7.0.1b96.tar.gz
+[2024-04-07 05:41:17] WARNING root fetch - processPackages [tko]: Timeout reached during download
+[2024-04-07 05:41:17] WARNING root fetch - processPackages [jigsawwm]: Timeout reached during download
+[2024-04-07 05:41:17] WARNING root fetch - processPackages [lineagex]: Timeout reached during download
+[2024-04-07 05:41:17] INFO root fetch - processPackages [lineagex]: executing diffoscope
+[2024-04-07 05:41:17] INFO root fetch - processPackages [lineagex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lineagex-0.0.8.tar.gz tmp/lineagex-0.0.9.tar.gz --markdown 20240407/l/lineagex/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 05:41:17] INFO root fetch - processPackages [jigsawwm]: Downloading https://files.pythonhosted.org/packages/88/84/1f955671eb08a998148aeb710eddf5ae3d00132857f5532f7ae80e01617e/jigsawwm-2.2.0.tar.gz
+[2024-04-07 05:41:17] INFO root fetch - processPackages [tko]: Downloading https://files.pythonhosted.org/packages/c0/d1/ba21f6ff2b1c36e732034bc8588c08c4defb1fcecaf20aaf6b205de21541/tko-0.3.9.tar.gz
+[2024-04-07 05:41:17] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 05:41:17] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-07 05:41:17] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.7.0.1b95.tar.gz tmp/smaht_submitr-0.7.0.1b96.tar.gz --markdown 20240407/s/smaht-submitr/0.7.0.1b95-0.7.0.1b96/diff.md --exclude *.pyd
+[2024-04-07 05:41:17] WARNING root fetch - processPackages [jigsawwm]: Timeout reached during download
+[2024-04-07 05:41:17] INFO root fetch - processPackages [jigsawwm]: executing diffoscope
+[2024-04-07 05:41:17] INFO root fetch - processPackages [jigsawwm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jigsawwm-2.1.1.tar.gz tmp/jigsawwm-2.2.0.tar.gz --markdown 20240407/j/jigsawwm/2.1.1-2.2.0/diff.md --exclude *.pyd
+[2024-04-07 05:41:17] WARNING root fetch - processPackages [tko]: Timeout reached during download
+[2024-04-07 05:41:17] INFO root fetch - processPackages [tko]: executing diffoscope
+[2024-04-07 05:41:17] INFO root fetch - processPackages [tko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tko-0.3.8.tar.gz tmp/tko-0.3.9.tar.gz --markdown 20240407/t/tko/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-07 05:41:18] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b95.tar.gz]
+[2024-04-07 05:41:18] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b96.tar.gz]
+[2024-04-07 05:41:18] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-07 05:41:18] INFO root fetch - processPackages [jigsawwm]: Remove: archive file [/home/abi/fetcher/tmp/jigsawwm-2.1.1.tar.gz]
+[2024-04-07 05:41:18] INFO root fetch - processPackages [jigsawwm]: Remove: archive file [/home/abi/fetcher/tmp/jigsawwm-2.2.0.tar.gz]
+[2024-04-07 05:41:18] INFO root fetch - main [MainThread]: End processing [jigsawwm]: success
+[2024-04-07 05:41:18] INFO root fetch - processPackages [tko]: Remove: archive file [/home/abi/fetcher/tmp/tko-0.3.8.tar.gz]
+[2024-04-07 05:41:18] INFO root fetch - processPackages [tko]: Remove: archive file [/home/abi/fetcher/tmp/tko-0.3.9.tar.gz]
+[2024-04-07 05:41:18] INFO root fetch - main [MainThread]: End processing [tko]: success
+[2024-04-07 05:41:19] INFO root fetch - processPackages [lineagex]: Remove: archive file [/home/abi/fetcher/tmp/lineagex-0.0.8.tar.gz]
+[2024-04-07 05:41:19] INFO root fetch - processPackages [lineagex]: Remove: archive file [/home/abi/fetcher/tmp/lineagex-0.0.9.tar.gz]
+[2024-04-07 05:41:19] INFO root fetch - main [MainThread]: End processing [lineagex]: success
+[2024-04-07 05:41:19] INFO root fetch - main [MainThread]: Store serial: [22653299]
