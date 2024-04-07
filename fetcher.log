@@ -19322,3 +19322,105 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 21:59:52] INFO root fetch - processPackages [python-Levenshtein]: Remove: archive file [/home/abi/fetcher/tmp/python-Levenshtein-0.25.0.tar.gz]
 [2024-04-07 21:59:52] INFO root fetch - main [MainThread]: End processing [python-Levenshtein]: success
 [2024-04-07 21:59:52] INFO root fetch - main [MainThread]: Store serial: [22658829]
+[2024-04-07 22:01:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658829]
+[2024-04-07 22:02:02] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-04-07 22:02:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mmpm
+[2024-04-07 22:02:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Altaron
+[2024-04-07 22:02:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: boldi
+[2024-04-07 22:02:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: boldi-build
+[2024-04-07 22:02:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: boldi-cli
+[2024-04-07 22:02:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: csv_test_package
+[2024-04-07 22:02:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: boldi-ctx
+[2024-04-07 22:02:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: boldi-dev
+[2024-04-07 22:02:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: boldi-plugins
+[2024-04-07 22:02:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: boldi-proc
+[2024-04-07 22:02:02] INFO root fetch - processPackages [csv_test_package]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-07 22:02:02] INFO root fetch - processPackages [boldi-proc]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-07 22:02:02] WARNING root fetch - processPackages [Altaron]: Skipping, unable to determine old version
+[2024-04-07 22:02:02] INFO root fetch - processPackages [Altaron]: Start processing: tuneapi
+[2024-04-07 22:02:02] INFO root fetch - main [MainThread]: End processing [Altaron] error
+[2024-04-07 22:02:02] INFO root fetch - processPackages [boldi-ctx]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-07 22:02:02] INFO root fetch - processPackages [boldi-plugins]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-07 22:02:02] INFO root fetch - processPackages [mmpm]: New version: [4.1.2] Old Version: [4.1.1]
+[2024-04-07 22:02:02] INFO root fetch - processPackages [boldi]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-07 22:02:02] INFO root fetch - processPackages [csv_test_package]: Downloading https://files.pythonhosted.org/packages/c7/4f/41f9d2e891a6b3092216e44a862ed8b63a9d71c9e99497b42237cce22f06/csv_test_package-0.1.3.tar.gz
+[2024-04-07 22:02:02] INFO root fetch - processPackages [boldi-dev]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-07 22:02:02] ERROR root fetch - processPackages [boldi-build]: Unable to get metadata: No such project 'boldi-build'
+[2024-04-07 22:02:02] INFO root fetch - main [MainThread]: End processing [boldi-build] error
+[2024-04-07 22:02:02] INFO root fetch - processPackages [tuneapi]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-07 22:02:02] INFO root fetch - processPackages [boldi-cli]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-07 22:02:02] INFO root fetch - processPackages [tuneapi]: Downloading https://files.pythonhosted.org/packages/03/59/807ac3852f5b4da85e072021da26310c3a7e46a28f2dc92fd52197e03f88/tuneapi-0.2.4.tar.gz
+[2024-04-07 22:02:02] WARNING root fetch - processPackages [csv_test_package]: Timeout reached during download
+[2024-04-07 22:02:02] INFO root fetch - processPackages [boldi-proc]: Downloading https://files.pythonhosted.org/packages/70/60/64682c877921fab74e40cdd40a627a1f5e79b0e42df248d53916caf7177a/boldi_proc-0.3.1.tar.gz
+[2024-04-07 22:02:02] INFO root fetch - processPackages [mmpm]: Downloading https://files.pythonhosted.org/packages/a0/d0/ec3da7492d2b92a5dd528468ff9c670b08c1e2a111661b5e065214497d1d/mmpm-4.1.1.tar.gz
+[2024-04-07 22:02:02] INFO root fetch - processPackages [boldi]: Downloading https://files.pythonhosted.org/packages/5f/71/e8c0c4de0f015bb5fd6531dfbab3bcf292397ca3cb031ba4bf53bc9b3b81/boldi-0.3.1.tar.gz
+[2024-04-07 22:02:02] WARNING root fetch - processPackages [tuneapi]: Timeout reached during download
+[2024-04-07 22:02:02] INFO root fetch - processPackages [boldi-plugins]: Downloading https://files.pythonhosted.org/packages/66/bf/2401f5191de7b3bcd3607de25498c311af299bf74ad121d5f26dc1190e05/boldi_plugins-0.3.1.tar.gz
+[2024-04-07 22:02:02] INFO root fetch - processPackages [boldi-ctx]: Downloading https://files.pythonhosted.org/packages/45/9b/71bf66918008d72dbcffa3a3aecf8257d9e70826ec9f84751576bcd0e94e/boldi_ctx-0.3.1.tar.gz
+[2024-04-07 22:02:02] INFO root fetch - processPackages [boldi-dev]: Downloading https://files.pythonhosted.org/packages/3a/c3/ba326dbe2a45286b432e1027e47b1822fc6212755b0c7526a3c4cb800a1b/boldi_dev-0.3.1.tar.gz
+[2024-04-07 22:02:02] INFO root fetch - processPackages [boldi-cli]: Downloading https://files.pythonhosted.org/packages/fc/c5/d908101742790267b869b5a5310b0f616aaec1fcee7471e6479843351bff/boldi_cli-0.3.1.tar.gz
+[2024-04-07 22:02:02] WARNING root fetch - processPackages [mmpm]: Skipping package: exceeds size limit 20185297>=10485760
+[2024-04-07 22:02:02] INFO root fetch - main [MainThread]: End processing [mmpm] error
+[2024-04-07 22:02:02] INFO root fetch - processPackages [csv_test_package]: Downloading https://files.pythonhosted.org/packages/56/f4/0877d96e25131904019d255bb5eb668cddd0f55d7af0239b990427132a19/csv_test_package-0.1.4.tar.gz
+[2024-04-07 22:02:02] WARNING root fetch - processPackages [boldi-proc]: Timeout reached during download
+[2024-04-07 22:02:02] WARNING root fetch - processPackages [boldi-plugins]: Timeout reached during download
+[2024-04-07 22:02:02] WARNING root fetch - processPackages [boldi-dev]: Timeout reached during download
+[2024-04-07 22:02:03] WARNING root fetch - processPackages [csv_test_package]: Timeout reached during download
+[2024-04-07 22:02:03] INFO root fetch - processPackages [csv_test_package]: executing diffoscope
+[2024-04-07 22:02:03] INFO root fetch - processPackages [csv_test_package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csv_test_package-0.1.3.tar.gz tmp/csv_test_package-0.1.4.tar.gz --markdown 20240407/c/csv_test_package/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2024-04-07 22:02:03] WARNING root fetch - processPackages [boldi-ctx]: Timeout reached during download
+[2024-04-07 22:02:03] INFO root fetch - processPackages [tuneapi]: Downloading https://files.pythonhosted.org/packages/c9/4a/853455623ff4cec43d27b6f8a83bea086174b272357c0e2fa50c5b44a0d9/tuneapi-0.2.5.tar.gz
+[2024-04-07 22:02:03] WARNING root fetch - processPackages [boldi]: Timeout reached during download
+[2024-04-07 22:02:03] INFO root fetch - processPackages [boldi-plugins]: Downloading https://files.pythonhosted.org/packages/10/85/ecbf706cd685e44a23cf20d9058811054a887e43af179ba5767575eef4e2/boldi_plugins-0.4.0-py3-none-any.whl
+[2024-04-07 22:02:03] INFO root fetch - processPackages [boldi-dev]: Downloading https://files.pythonhosted.org/packages/13/54/8da7a86aa49a1b18d3c08ad1d285852cbf9e0fc3d598af305b0e52d4a46b/boldi_dev-0.4.0-py3-none-any.whl
+[2024-04-07 22:02:03] INFO root fetch - processPackages [boldi-ctx]: Downloading https://files.pythonhosted.org/packages/41/bb/916c2fd6e73e4ba67138d20b2a7a25414909b232a8577ce9850d58ac1b8d/boldi_ctx-0.4.0-py3-none-any.whl
+[2024-04-07 22:02:03] INFO root fetch - processPackages [boldi]: Downloading https://files.pythonhosted.org/packages/4b/18/c89efced4609a76cc44f356aaa9d59923e25bba04c4cadea810549ce208e/boldi-0.4.0-py3-none-any.whl
+[2024-04-07 22:02:03] WARNING root fetch - processPackages [boldi-plugins]: Timeout reached during download
+[2024-04-07 22:02:03] INFO root fetch - processPackages [boldi-plugins]: executing diffoscope
+[2024-04-07 22:02:03] INFO root fetch - processPackages [boldi-plugins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boldi_plugins-0.3.1.tar.gz tmp/boldi_plugins-0.4.0-py3-none-any.whl.zip --markdown 20240407/b/boldi-plugins/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2024-04-07 22:02:03] WARNING root fetch - processPackages [tuneapi]: Timeout reached during download
+[2024-04-07 22:02:03] INFO root fetch - processPackages [tuneapi]: executing diffoscope
+[2024-04-07 22:02:03] INFO root fetch - processPackages [tuneapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tuneapi-0.2.4.tar.gz tmp/tuneapi-0.2.5.tar.gz --markdown 20240407/t/tuneapi/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2024-04-07 22:02:03] WARNING root fetch - processPackages [boldi-dev]: Timeout reached during download
+[2024-04-07 22:02:03] INFO root fetch - processPackages [boldi-dev]: executing diffoscope
+[2024-04-07 22:02:03] INFO root fetch - processPackages [boldi-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boldi_dev-0.3.1.tar.gz tmp/boldi_dev-0.4.0-py3-none-any.whl.zip --markdown 20240407/b/boldi-dev/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2024-04-07 22:02:03] WARNING root fetch - processPackages [boldi-ctx]: Timeout reached during download
+[2024-04-07 22:02:03] INFO root fetch - processPackages [boldi-ctx]: executing diffoscope
+[2024-04-07 22:02:03] INFO root fetch - processPackages [boldi-ctx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boldi_ctx-0.3.1.tar.gz tmp/boldi_ctx-0.4.0-py3-none-any.whl.zip --markdown 20240407/b/boldi-ctx/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2024-04-07 22:02:03] INFO root fetch - processPackages [boldi-proc]: Downloading https://files.pythonhosted.org/packages/f7/27/02800a5f7945a067d813beb46961b857680c99133d69cd74682e1c1f588c/boldi_proc-0.4.0-py3-none-any.whl
+[2024-04-07 22:02:03] WARNING root fetch - processPackages [boldi]: Timeout reached during download
+[2024-04-07 22:02:03] INFO root fetch - processPackages [boldi]: executing diffoscope
+[2024-04-07 22:02:03] INFO root fetch - processPackages [boldi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boldi-0.3.1.tar.gz tmp/boldi-0.4.0-py3-none-any.whl.zip --markdown 20240407/b/boldi/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2024-04-07 22:02:03] WARNING root fetch - processPackages [boldi-cli]: Timeout reached during download
+[2024-04-07 22:02:03] INFO root fetch - processPackages [csv_test_package]: Remove: archive file [/home/abi/fetcher/tmp/csv_test_package-0.1.3.tar.gz]
+[2024-04-07 22:02:03] INFO root fetch - processPackages [csv_test_package]: Remove: archive file [/home/abi/fetcher/tmp/csv_test_package-0.1.4.tar.gz]
+[2024-04-07 22:02:03] INFO root fetch - main [MainThread]: End processing [csv_test_package]: success
+[2024-04-07 22:02:03] WARNING root fetch - processPackages [boldi-proc]: Timeout reached during download
+[2024-04-07 22:02:03] INFO root fetch - processPackages [boldi-proc]: executing diffoscope
+[2024-04-07 22:02:03] INFO root fetch - processPackages [boldi-proc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boldi_proc-0.3.1.tar.gz tmp/boldi_proc-0.4.0-py3-none-any.whl.zip --markdown 20240407/b/boldi-proc/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2024-04-07 22:02:03] INFO root fetch - processPackages [boldi-cli]: Downloading https://files.pythonhosted.org/packages/ba/91/7f17ba1ae81f772d4dd9b2cdfaaa5245bcebbfc8f6a07a19449d70bb4b76/boldi_cli-0.4.0-py3-none-any.whl
+[2024-04-07 22:02:04] WARNING root fetch - processPackages [boldi-cli]: Timeout reached during download
+[2024-04-07 22:02:04] INFO root fetch - processPackages [boldi-cli]: executing diffoscope
+[2024-04-07 22:02:04] INFO root fetch - processPackages [boldi-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boldi_cli-0.3.1.tar.gz tmp/boldi_cli-0.4.0-py3-none-any.whl.zip --markdown 20240407/b/boldi-cli/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2024-04-07 22:02:04] INFO root fetch - processPackages [boldi-plugins]: Remove: archive file [/home/abi/fetcher/tmp/boldi_plugins-0.3.1.tar.gz]
+[2024-04-07 22:02:04] INFO root fetch - processPackages [boldi-plugins]: Remove: archive file [/home/abi/fetcher/tmp/boldi_plugins-0.4.0-py3-none-any.whl.zip]
+[2024-04-07 22:02:04] INFO root fetch - main [MainThread]: End processing [boldi-plugins]: success
+[2024-04-07 22:02:04] INFO root fetch - processPackages [tuneapi]: Remove: archive file [/home/abi/fetcher/tmp/tuneapi-0.2.4.tar.gz]
+[2024-04-07 22:02:04] INFO root fetch - processPackages [tuneapi]: Remove: archive file [/home/abi/fetcher/tmp/tuneapi-0.2.5.tar.gz]
+[2024-04-07 22:02:04] INFO root fetch - main [MainThread]: End processing [tuneapi]: success
+[2024-04-07 22:02:04] INFO root fetch - processPackages [boldi-ctx]: Remove: archive file [/home/abi/fetcher/tmp/boldi_ctx-0.3.1.tar.gz]
+[2024-04-07 22:02:04] INFO root fetch - processPackages [boldi-ctx]: Remove: archive file [/home/abi/fetcher/tmp/boldi_ctx-0.4.0-py3-none-any.whl.zip]
+[2024-04-07 22:02:04] INFO root fetch - main [MainThread]: End processing [boldi-ctx]: success
+[2024-04-07 22:02:04] INFO root fetch - processPackages [boldi-dev]: Remove: archive file [/home/abi/fetcher/tmp/boldi_dev-0.3.1.tar.gz]
+[2024-04-07 22:02:04] INFO root fetch - processPackages [boldi-dev]: Remove: archive file [/home/abi/fetcher/tmp/boldi_dev-0.4.0-py3-none-any.whl.zip]
+[2024-04-07 22:02:04] INFO root fetch - main [MainThread]: End processing [boldi-dev]: success
+[2024-04-07 22:02:04] INFO root fetch - processPackages [boldi]: Remove: archive file [/home/abi/fetcher/tmp/boldi-0.3.1.tar.gz]
+[2024-04-07 22:02:04] INFO root fetch - processPackages [boldi]: Remove: archive file [/home/abi/fetcher/tmp/boldi-0.4.0-py3-none-any.whl.zip]
+[2024-04-07 22:02:04] INFO root fetch - main [MainThread]: End processing [boldi]: success
+[2024-04-07 22:02:04] INFO root fetch - processPackages [boldi-proc]: Remove: archive file [/home/abi/fetcher/tmp/boldi_proc-0.3.1.tar.gz]
+[2024-04-07 22:02:04] INFO root fetch - processPackages [boldi-proc]: Remove: archive file [/home/abi/fetcher/tmp/boldi_proc-0.4.0-py3-none-any.whl.zip]
+[2024-04-07 22:02:04] INFO root fetch - main [MainThread]: End processing [boldi-proc]: success
+[2024-04-07 22:02:04] INFO root fetch - processPackages [boldi-cli]: Remove: archive file [/home/abi/fetcher/tmp/boldi_cli-0.3.1.tar.gz]
+[2024-04-07 22:02:04] INFO root fetch - processPackages [boldi-cli]: Remove: archive file [/home/abi/fetcher/tmp/boldi_cli-0.4.0-py3-none-any.whl.zip]
+[2024-04-07 22:02:04] INFO root fetch - main [MainThread]: End processing [boldi-cli]: success
+[2024-04-07 22:02:04] INFO root fetch - main [MainThread]: Store serial: [22658860]
