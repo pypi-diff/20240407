@@ -15634,3 +15634,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 18:18:34] INFO root fetch - processPackages [ark-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/ark_sdk_python-1.1.0-py3-none-any.whl.zip]
 [2024-04-07 18:18:34] INFO root fetch - main [MainThread]: End processing [ark-sdk-python]: success
 [2024-04-07 18:18:34] INFO root fetch - main [MainThread]: Store serial: [22657508]
+[2024-04-07 18:20:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657508]
+[2024-04-07 18:20:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 18:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrofork
+[2024-04-07 18:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: astromcad
+[2024-04-07 18:20:44] INFO root fetch - processPackages [pyrofork]: New version: [2.4.0rc1] Old Version: [2.3.9.post2]
+[2024-04-07 18:20:44] INFO root fetch - processPackages [astromcad]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-07 18:20:44] INFO root fetch - processPackages [pyrofork]: Downloading https://files.pythonhosted.org/packages/76/4c/a811f786af1f4693948bf3c1ed0f138b9a0cddfccfa812e2a009d2ce8dbc/PyroFork-2.3.9.post2.tar.gz
+[2024-04-07 18:20:44] INFO root fetch - processPackages [astromcad]: Downloading https://files.pythonhosted.org/packages/3e/d6/6f03de9e343d131aac40a8840ef7d189eb6f613f6923c6cf01c0840dca2f/astromcad-0.1.0.tar.gz
+[2024-04-07 18:20:44] WARNING root fetch - processPackages [astromcad]: Timeout reached during download
+[2024-04-07 18:20:45] WARNING root fetch - processPackages [pyrofork]: Timeout reached during download
+[2024-04-07 18:20:45] INFO root fetch - processPackages [astromcad]: Downloading https://files.pythonhosted.org/packages/8b/54/96d933048bea86efeae0c6a4c49da4d11a01350596a91bdba3e7cd3c0e0e/astromcad-0.1.1.tar.gz
+[2024-04-07 18:20:45] WARNING root fetch - processPackages [astromcad]: Timeout reached during download
+[2024-04-07 18:20:45] INFO root fetch - processPackages [pyrofork]: Downloading https://files.pythonhosted.org/packages/e1/ab/1633ebf424a12d38d11ab1dce941cacbc4f3e4873df00c9d742c79852917/pyrofork-2.4.0rc1.tar.gz
+[2024-04-07 18:20:45] INFO root fetch - processPackages [astromcad]: executing diffoscope
+[2024-04-07 18:20:45] INFO root fetch - processPackages [astromcad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astromcad-0.1.0.tar.gz tmp/astromcad-0.1.1.tar.gz --markdown 20240407/a/astromcad/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 18:20:45] WARNING root fetch - processPackages [pyrofork]: Timeout reached during download
+[2024-04-07 18:20:45] INFO root fetch - processPackages [pyrofork]: executing diffoscope
+[2024-04-07 18:20:45] INFO root fetch - processPackages [pyrofork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyroFork-2.3.9.post2.tar.gz tmp/pyrofork-2.4.0rc1.tar.gz --markdown 20240407/p/pyrofork/2.3.9.post2-2.4.0rc1/diff.md --exclude *.pyd
+[2024-04-07 18:20:46] INFO root fetch - processPackages [astromcad]: Remove: archive file [/home/abi/fetcher/tmp/astromcad-0.1.0.tar.gz]
+[2024-04-07 18:20:46] INFO root fetch - processPackages [astromcad]: Remove: archive file [/home/abi/fetcher/tmp/astromcad-0.1.1.tar.gz]
+[2024-04-07 18:20:46] INFO root fetch - main [MainThread]: End processing [astromcad]: success
+[2024-04-07 18:20:49] INFO root fetch - processPackages [pyrofork]: Remove: archive file [/home/abi/fetcher/tmp/PyroFork-2.3.9.post2.tar.gz]
+[2024-04-07 18:20:49] INFO root fetch - processPackages [pyrofork]: Remove: archive file [/home/abi/fetcher/tmp/pyrofork-2.4.0rc1.tar.gz]
+[2024-04-07 18:20:49] INFO root fetch - main [MainThread]: End processing [pyrofork]: success
+[2024-04-07 18:20:49] INFO root fetch - main [MainThread]: Store serial: [22657514]
