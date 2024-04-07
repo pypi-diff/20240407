@@ -2434,3 +2434,44 @@
 [2024-04-07 03:48:23] INFO root fetch - processPackages [efold]: Remove: archive file [/home/abi/fetcher/tmp/efold-0.1.1.tar.gz]
 [2024-04-07 03:48:23] INFO root fetch - main [MainThread]: End processing [efold]: success
 [2024-04-07 03:48:23] INFO root fetch - main [MainThread]: Store serial: [22652714]
+[2024-04-07 03:50:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652714]
+[2024-04-07 03:50:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 03:50:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pgserver
+[2024-04-07 03:50:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quickstart-vdk
+[2024-04-07 03:50:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: croco-selenium
+[2024-04-07 03:50:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: piwebx
+[2024-04-07 03:50:31] INFO root fetch - processPackages [pgserver]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-07 03:50:31] INFO root fetch - processPackages [croco-selenium]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-07 03:50:31] INFO root fetch - processPackages [piwebx]: New version: [0.1.0] Old Version: [0.0.4]
+[2024-04-07 03:50:31] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-04-07 03:50:31] INFO root fetch - processPackages [pgserver]: Downloading https://files.pythonhosted.org/packages/87/04/00895bc3a8bc8df10b27d7c452c7e4e866900cca81a5a84f158572e0fde1/pgserver-0.0.7-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-07 03:50:31] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-04-07 03:50:31] INFO root fetch - processPackages [croco-selenium]: Downloading https://files.pythonhosted.org/packages/80/ef/44085ad897a2a0455752616f918c12b7a244f94718c08eaff238abe16adb/croco_selenium-0.1.5.tar.gz
+[2024-04-07 03:50:31] INFO root fetch - processPackages [piwebx]: Downloading https://files.pythonhosted.org/packages/e6/19/32f8cf4e24ddaa23fc8186b0292c76306d61adba30ae2ce8406b81e7a23e/piwebx-0.0.4.tar.gz
+[2024-04-07 03:50:31] WARNING root fetch - processPackages [pgserver]: Skipping package: exceeds size limit 14951378>=10485760
+[2024-04-07 03:50:31] INFO root fetch - main [MainThread]: End processing [pgserver] error
+[2024-04-07 03:50:31] WARNING root fetch - processPackages [quickstart-vdk]: Timeout reached during download
+[2024-04-07 03:50:31] WARNING root fetch - processPackages [croco-selenium]: Timeout reached during download
+[2024-04-07 03:50:32] WARNING root fetch - processPackages [piwebx]: Timeout reached during download
+[2024-04-07 03:50:32] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-04-07 03:50:32] INFO root fetch - processPackages [croco-selenium]: Downloading https://files.pythonhosted.org/packages/46/e0/a534349b3b6ef7b3b8c4e3ab4e22f5843b734eaec6f07a9dc3b8a9b2999b/croco_selenium-0.1.6.tar.gz
+[2024-04-07 03:50:32] WARNING root fetch - processPackages [quickstart-vdk]: Timeout reached during download
+[2024-04-07 03:50:32] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-04-07 03:50:32] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240407/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/diff.md --exclude *.pyd
+[2024-04-07 03:50:32] WARNING root fetch - processPackages [croco-selenium]: Timeout reached during download
+[2024-04-07 03:50:32] INFO root fetch - processPackages [croco-selenium]: executing diffoscope
+[2024-04-07 03:50:32] INFO root fetch - processPackages [croco-selenium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/croco_selenium-0.1.5.tar.gz tmp/croco_selenium-0.1.6.tar.gz --markdown 20240407/c/croco-selenium/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2024-04-07 03:50:32] INFO root fetch - processPackages [piwebx]: Downloading https://files.pythonhosted.org/packages/77/eb/961105dcf5408bc536ef085f8e6cc2d1a453d47744790e139628b570570b/piwebx-0.1.0.tar.gz
+[2024-04-07 03:50:32] WARNING root fetch - processPackages [piwebx]: Timeout reached during download
+[2024-04-07 03:50:32] INFO root fetch - processPackages [piwebx]: executing diffoscope
+[2024-04-07 03:50:32] INFO root fetch - processPackages [piwebx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piwebx-0.0.4.tar.gz tmp/piwebx-0.1.0.tar.gz --markdown 20240407/p/piwebx/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2024-04-07 03:50:32] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-04-07 03:50:32] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-04-07 03:50:32] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-04-07 03:50:32] INFO root fetch - processPackages [croco-selenium]: Remove: archive file [/home/abi/fetcher/tmp/croco_selenium-0.1.5.tar.gz]
+[2024-04-07 03:50:32] INFO root fetch - processPackages [croco-selenium]: Remove: archive file [/home/abi/fetcher/tmp/croco_selenium-0.1.6.tar.gz]
+[2024-04-07 03:50:32] INFO root fetch - main [MainThread]: End processing [croco-selenium]: success
+[2024-04-07 03:50:32] INFO root fetch - processPackages [piwebx]: Remove: archive file [/home/abi/fetcher/tmp/piwebx-0.0.4.tar.gz]
+[2024-04-07 03:50:32] INFO root fetch - processPackages [piwebx]: Remove: archive file [/home/abi/fetcher/tmp/piwebx-0.1.0.tar.gz]
+[2024-04-07 03:50:32] INFO root fetch - main [MainThread]: End processing [piwebx]: success
+[2024-04-07 03:50:32] INFO root fetch - main [MainThread]: Store serial: [22652735]
