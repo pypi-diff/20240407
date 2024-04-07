@@ -3817,3 +3817,17 @@
 [2024-04-07 05:15:14] INFO root fetch - processPackages [alibabacloud-mse20190531-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_mse20190531_py2-6.3.1.tar.gz]
 [2024-04-07 05:15:14] INFO root fetch - main [MainThread]: End processing [alibabacloud-mse20190531-py2]: success
 [2024-04-07 05:15:14] INFO root fetch - main [MainThread]: Store serial: [22653162]
+[2024-04-07 05:17:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653162]
+[2024-04-07 05:17:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 05:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alibabacloud-mse20190531
+[2024-04-07 05:17:22] INFO root fetch - processPackages [alibabacloud-mse20190531]: New version: [6.3.1] Old Version: [6.3.0]
+[2024-04-07 05:17:22] INFO root fetch - processPackages [alibabacloud-mse20190531]: Downloading https://files.pythonhosted.org/packages/8c/6f/d13e34fd6b1e8f6da17dbbf9df30e671501b174c81093e7af24ad2ee5abe/alibabacloud_mse20190531-6.3.0.tar.gz
+[2024-04-07 05:17:23] WARNING root fetch - processPackages [alibabacloud-mse20190531]: Timeout reached during download
+[2024-04-07 05:17:23] INFO root fetch - processPackages [alibabacloud-mse20190531]: Downloading https://files.pythonhosted.org/packages/aa/f9/ad076d5ce14c5ffc1bdbde73f2d840475d670884ff3f172b99506f9b39d3/alibabacloud_mse20190531-6.3.1.tar.gz
+[2024-04-07 05:17:23] WARNING root fetch - processPackages [alibabacloud-mse20190531]: Timeout reached during download
+[2024-04-07 05:17:23] INFO root fetch - processPackages [alibabacloud-mse20190531]: executing diffoscope
+[2024-04-07 05:17:23] INFO root fetch - processPackages [alibabacloud-mse20190531]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_mse20190531-6.3.0.tar.gz tmp/alibabacloud_mse20190531-6.3.1.tar.gz --markdown 20240407/a/alibabacloud-mse20190531/6.3.0-6.3.1/diff.md --exclude *.pyd
+[2024-04-07 05:17:24] INFO root fetch - processPackages [alibabacloud-mse20190531]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_mse20190531-6.3.0.tar.gz]
+[2024-04-07 05:17:24] INFO root fetch - processPackages [alibabacloud-mse20190531]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_mse20190531-6.3.1.tar.gz]
+[2024-04-07 05:17:24] INFO root fetch - main [MainThread]: End processing [alibabacloud-mse20190531]: success
+[2024-04-07 05:17:24] INFO root fetch - main [MainThread]: Store serial: [22653169]
