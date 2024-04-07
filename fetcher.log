@@ -11558,3 +11558,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:22:39] INFO root fetch - processPackages [xia-framework]: Remove: archive file [/home/abi/fetcher/tmp/xia-framework-0.0.9.tar.gz]
 [2024-04-07 14:22:39] INFO root fetch - main [MainThread]: End processing [xia-framework]: success
 [2024-04-07 14:22:39] INFO root fetch - main [MainThread]: Store serial: [22656071]
+[2024-04-07 14:24:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656071]
+[2024-04-07 14:24:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 14:24:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pybuc
+[2024-04-07 14:24:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Levenshtein
+[2024-04-07 14:24:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dcs-code-injector
+[2024-04-07 14:24:48] INFO root fetch - processPackages [dcs-code-injector]: New version: [1.4.7] Old Version: [1.4.6]
+[2024-04-07 14:24:48] INFO root fetch - processPackages [pybuc]: New version: [0.9.10] Old Version: [0.8.10]
+[2024-04-07 14:24:49] INFO root fetch - processPackages [dcs-code-injector]: Downloading https://files.pythonhosted.org/packages/e2/eb/88f787ef792c90bee38985f6c0f255c37f9fb834cdc2f5f90fc97afc95b9/dcs-code-injector-1.4.6.tar.gz
+[2024-04-07 14:24:49] INFO root fetch - processPackages [pybuc]: Downloading https://files.pythonhosted.org/packages/ff/a6/647d6e38a6519bf2966722e1789589d0e50eea7a6376967ab7afbc093f70/pybuc-0.8.10.tar.gz
+[2024-04-07 14:24:49] INFO root fetch - processPackages [Levenshtein]: New version: [0.25.1] Old Version: [0.25.0]
+[2024-04-07 14:24:49] INFO root fetch - processPackages [Levenshtein]: Downloading https://files.pythonhosted.org/packages/0d/89/1f97cd2068360c015eaaac7a47b6e813584c732b28a76ab510b70943c276/Levenshtein-0.25.0.tar.gz
+[2024-04-07 14:24:49] WARNING root fetch - processPackages [pybuc]: Timeout reached during download
+[2024-04-07 14:24:49] WARNING root fetch - processPackages [Levenshtein]: Timeout reached during download
+[2024-04-07 14:24:49] INFO root fetch - processPackages [pybuc]: Downloading https://files.pythonhosted.org/packages/36/ff/435775953f489894dbc63700890c9984ecc56774ee84cef35a35acadf8b2/pybuc-0.9.10.tar.gz
+[2024-04-07 14:24:49] INFO root fetch - processPackages [Levenshtein]: Downloading https://files.pythonhosted.org/packages/4d/d0/d505e0273fde514cf60423dac455e9506fc965926670737897a9b40090ee/Levenshtein-0.25.1-cp312-cp312-musllinux_1_1_ppc64le.whl
+[2024-04-07 14:24:50] WARNING root fetch - processPackages [pybuc]: Timeout reached during download
+[2024-04-07 14:24:50] INFO root fetch - processPackages [pybuc]: executing diffoscope
+[2024-04-07 14:24:50] INFO root fetch - processPackages [pybuc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybuc-0.8.10.tar.gz tmp/pybuc-0.9.10.tar.gz --markdown 20240407/p/pybuc/0.8.10-0.9.10/diff.md --exclude *.pyd
+[2024-04-07 14:24:50] WARNING root fetch - processPackages [dcs-code-injector]: Timeout reached during download
+[2024-04-07 14:24:50] INFO root fetch - processPackages [dcs-code-injector]: Downloading https://files.pythonhosted.org/packages/41/af/d65a5b8dfb64d3a733fe3adc0a4365bd77b2fc8cca0331c0b2696fce8308/dcs-code-injector-1.4.7.tar.gz
+[2024-04-07 14:24:50] WARNING root fetch - processPackages [Levenshtein]: Timeout reached during download
+[2024-04-07 14:24:50] INFO root fetch - processPackages [Levenshtein]: executing diffoscope
+[2024-04-07 14:24:50] INFO root fetch - processPackages [Levenshtein]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Levenshtein-0.25.0.tar.gz tmp/Levenshtein-0.25.1-cp312-cp312-musllinux_1_1_ppc64le.whl.zip --markdown 20240407/L/Levenshtein/0.25.0-0.25.1/diff.md --exclude *.pyd
+[2024-04-07 14:24:50] WARNING root fetch - processPackages [dcs-code-injector]: Timeout reached during download
+[2024-04-07 14:24:50] INFO root fetch - processPackages [dcs-code-injector]: executing diffoscope
+[2024-04-07 14:24:50] INFO root fetch - processPackages [dcs-code-injector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcs-code-injector-1.4.6.tar.gz tmp/dcs-code-injector-1.4.7.tar.gz --markdown 20240407/d/dcs-code-injector/1.4.6-1.4.7/diff.md --exclude *.pyd
+[2024-04-07 14:24:51] INFO root fetch - processPackages [Levenshtein]: Remove: archive file [/home/abi/fetcher/tmp/Levenshtein-0.25.0.tar.gz]
+[2024-04-07 14:24:51] INFO root fetch - processPackages [Levenshtein]: Remove: archive file [/home/abi/fetcher/tmp/Levenshtein-0.25.1-cp312-cp312-musllinux_1_1_ppc64le.whl.zip]
+[2024-04-07 14:24:51] INFO root fetch - main [MainThread]: End processing [Levenshtein]: success
+[2024-04-07 14:24:51] INFO root fetch - processPackages [pybuc]: Remove: archive file [/home/abi/fetcher/tmp/pybuc-0.8.10.tar.gz]
+[2024-04-07 14:24:51] INFO root fetch - processPackages [pybuc]: Remove: archive file [/home/abi/fetcher/tmp/pybuc-0.9.10.tar.gz]
+[2024-04-07 14:24:51] INFO root fetch - main [MainThread]: End processing [pybuc]: success
+[2024-04-07 14:24:51] INFO root fetch - processPackages [dcs-code-injector]: Remove: archive file [/home/abi/fetcher/tmp/dcs-code-injector-1.4.6.tar.gz]
+[2024-04-07 14:24:51] INFO root fetch - processPackages [dcs-code-injector]: Remove: archive file [/home/abi/fetcher/tmp/dcs-code-injector-1.4.7.tar.gz]
+[2024-04-07 14:24:51] INFO root fetch - main [MainThread]: End processing [dcs-code-injector]: success
+[2024-04-07 14:24:51] INFO root fetch - main [MainThread]: Store serial: [22656122]
