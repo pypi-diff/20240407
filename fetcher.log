@@ -11333,3 +11333,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:07:22] INFO root fetch - processPackages [antchain-realperson]: Remove: archive file [/home/abi/fetcher/tmp/antchain_realperson-1.9.0.tar.gz]
 [2024-04-07 14:07:22] INFO root fetch - main [MainThread]: End processing [antchain-realperson]: success
 [2024-04-07 14:07:22] INFO root fetch - main [MainThread]: Store serial: [22655962]
+[2024-04-07 14:09:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655962]
+[2024-04-07 14:09:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 14:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dlib-bin
+[2024-04-07 14:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: open-aoi
+[2024-04-07 14:09:31] INFO root fetch - processPackages [open-aoi]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 14:09:31] INFO root fetch - processPackages [open-aoi]: Downloading https://files.pythonhosted.org/packages/d2/cb/dd19e4630fb354010db3e6215502966625550ff7a5acbdbcedf536a6cd4d/open_aoi-0.0.8.tar.gz
+[2024-04-07 14:09:31] INFO root fetch - processPackages [dlib-bin]: New version: [19.24.2.post1] Old Version: [19.24.2]
+[2024-04-07 14:09:31] WARNING root fetch - processPackages [open-aoi]: Timeout reached during download
+[2024-04-07 14:09:32] INFO root fetch - processPackages [open-aoi]: Downloading https://files.pythonhosted.org/packages/2e/0c/2869daa3fcce6ef21522f04169cfdef7edf737a59d03f86a95b6594d19b3/open_aoi-0.0.9.tar.gz
+[2024-04-07 14:09:32] INFO root fetch - processPackages [dlib-bin]: Downloading https://files.pythonhosted.org/packages/69/1c/96a0596d23ba74028a97f851b10a0e1f95b48ef32179b9953cf6ad49fb93/dlib_bin-19.24.2-cp39-cp39-win_amd64.whl
+[2024-04-07 14:09:32] WARNING root fetch - processPackages [open-aoi]: Timeout reached during download
+[2024-04-07 14:09:32] INFO root fetch - processPackages [open-aoi]: executing diffoscope
+[2024-04-07 14:09:32] INFO root fetch - processPackages [open-aoi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_aoi-0.0.8.tar.gz tmp/open_aoi-0.0.9.tar.gz --markdown 20240407/o/open-aoi/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 14:09:32] WARNING root fetch - processPackages [dlib-bin]: Timeout reached during download
+[2024-04-07 14:09:32] INFO root fetch - processPackages [open-aoi]: Remove: archive file [/home/abi/fetcher/tmp/open_aoi-0.0.8.tar.gz]
+[2024-04-07 14:09:32] INFO root fetch - processPackages [open-aoi]: Remove: archive file [/home/abi/fetcher/tmp/open_aoi-0.0.9.tar.gz]
+[2024-04-07 14:09:32] INFO root fetch - main [MainThread]: End processing [open-aoi]: success
+[2024-04-07 14:09:32] INFO root fetch - processPackages [dlib-bin]: Downloading https://files.pythonhosted.org/packages/cf/de/da97c96eeb2fc302ede0fd22dced5830fae045fd6aaac288537cb88bc505/dlib_bin-19.24.2.post1-cp311-cp311-musllinux_1_1_aarch64.whl
+[2024-04-07 14:09:35] WARNING root fetch - processPackages [dlib-bin]: Timeout reached during download
+[2024-04-07 14:09:35] INFO root fetch - processPackages [dlib-bin]: executing diffoscope
+[2024-04-07 14:09:35] INFO root fetch - processPackages [dlib-bin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dlib_bin-19.24.2-cp39-cp39-win_amd64.whl.zip tmp/dlib_bin-19.24.2.post1-cp311-cp311-musllinux_1_1_aarch64.whl.zip --markdown 20240407/d/dlib-bin/19.24.2-19.24.2.post1/diff.md --exclude *.pyd
+[2024-04-07 14:09:35] INFO root fetch - processPackages [dlib-bin]: Remove: archive file [/home/abi/fetcher/tmp/dlib_bin-19.24.2-cp39-cp39-win_amd64.whl.zip]
+[2024-04-07 14:09:35] INFO root fetch - processPackages [dlib-bin]: Remove: archive file [/home/abi/fetcher/tmp/dlib_bin-19.24.2.post1-cp311-cp311-musllinux_1_1_aarch64.whl.zip]
+[2024-04-07 14:09:35] INFO root fetch - main [MainThread]: End processing [dlib-bin]: success
+[2024-04-07 14:09:35] INFO root fetch - main [MainThread]: Store serial: [22655983]
