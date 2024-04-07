@@ -17384,3 +17384,31 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 20:03:53] INFO root fetch - processPackages [buildz]: Remove: archive file [/home/abi/fetcher/tmp/buildz-0.4.7.tar.gz]
 [2024-04-07 20:03:53] INFO root fetch - main [MainThread]: End processing [buildz]: success
 [2024-04-07 20:03:53] INFO root fetch - main [MainThread]: Store serial: [22658146]
+[2024-04-07 20:05:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658146]
+[2024-04-07 20:06:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 20:06:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vokab
+[2024-04-07 20:06:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: screen-brightness-control
+[2024-04-07 20:06:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: piperider-nightly
+[2024-04-07 20:06:04] WARNING root fetch - processPackages [vokab]: Skipping, unable to determine old version
+[2024-04-07 20:06:04] INFO root fetch - main [MainThread]: End processing [vokab] error
+[2024-04-07 20:06:04] INFO root fetch - processPackages [screen-brightness-control]: New version: [0.9.0] Old Version: [0.8.6]
+[2024-04-07 20:06:04] INFO root fetch - processPackages [piperider-nightly]: New version: [0.9.0.20220921] Old Version: [0.9.0.20220920]
+[2024-04-07 20:06:04] INFO root fetch - processPackages [screen-brightness-control]: Downloading https://files.pythonhosted.org/packages/0c/23/8913463f5c4482c79c2192e25f9d4fdae1254eee2f136f0238d24cec8983/screen_brightness_control-0.8.6.tar.gz
+[2024-04-07 20:06:04] INFO root fetch - processPackages [piperider-nightly]: Downloading https://files.pythonhosted.org/packages/ed/93/38dc4b24d947f1ec271781bdb47a50b77ff762d7a701730c6786ca4ec303/piperider-nightly-0.9.0.20220920.tar.gz
+[2024-04-07 20:06:04] WARNING root fetch - processPackages [screen-brightness-control]: Timeout reached during download
+[2024-04-07 20:06:05] INFO root fetch - processPackages [screen-brightness-control]: Downloading https://files.pythonhosted.org/packages/8f/c2/6b9ae33b4502d6eeb1a7dfe70ce35aad44380ec4122d1db1108a264c0037/screen_brightness_control-0.9.0.tar.gz
+[2024-04-07 20:06:05] WARNING root fetch - processPackages [screen-brightness-control]: Timeout reached during download
+[2024-04-07 20:06:05] INFO root fetch - processPackages [screen-brightness-control]: executing diffoscope
+[2024-04-07 20:06:05] INFO root fetch - processPackages [screen-brightness-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/screen_brightness_control-0.8.6.tar.gz tmp/screen_brightness_control-0.9.0.tar.gz --markdown 20240407/s/screen-brightness-control/0.8.6-0.9.0/diff.md --exclude *.pyd
+[2024-04-07 20:06:05] WARNING root fetch - processPackages [piperider-nightly]: Timeout reached during download
+[2024-04-07 20:06:05] INFO root fetch - processPackages [piperider-nightly]: Downloading https://files.pythonhosted.org/packages/a4/47/99354233feb8a6a201731f0992c5656ca2eb5728a26eae7fd09fc5e04b4c/piperider-nightly-0.9.0.20220921.tar.gz
+[2024-04-07 20:06:05] INFO root fetch - processPackages [screen-brightness-control]: Remove: archive file [/home/abi/fetcher/tmp/screen_brightness_control-0.8.6.tar.gz]
+[2024-04-07 20:06:05] INFO root fetch - processPackages [screen-brightness-control]: Remove: archive file [/home/abi/fetcher/tmp/screen_brightness_control-0.9.0.tar.gz]
+[2024-04-07 20:06:05] INFO root fetch - main [MainThread]: End processing [screen-brightness-control]: success
+[2024-04-07 20:06:07] WARNING root fetch - processPackages [piperider-nightly]: Timeout reached during download
+[2024-04-07 20:06:07] INFO root fetch - processPackages [piperider-nightly]: executing diffoscope
+[2024-04-07 20:06:07] INFO root fetch - processPackages [piperider-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-nightly-0.9.0.20220920.tar.gz tmp/piperider-nightly-0.9.0.20220921.tar.gz --markdown 20240407/p/piperider-nightly/0.9.0.20220920-0.9.0.20220921/diff.md --exclude *.pyd
+[2024-04-07 20:06:08] INFO root fetch - processPackages [piperider-nightly]: Remove: archive file [/home/abi/fetcher/tmp/piperider-nightly-0.9.0.20220920.tar.gz]
+[2024-04-07 20:06:08] INFO root fetch - processPackages [piperider-nightly]: Remove: archive file [/home/abi/fetcher/tmp/piperider-nightly-0.9.0.20220921.tar.gz]
+[2024-04-07 20:06:08] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
+[2024-04-07 20:06:08] INFO root fetch - main [MainThread]: Store serial: [22658159]
