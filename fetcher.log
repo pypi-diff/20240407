@@ -18380,3 +18380,31 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 21:03:09] INFO root fetch - processPackages [openlane]: Remove: archive file [/home/abi/fetcher/tmp/openlane-2.0.0rc2.tar.gz]
 [2024-04-07 21:03:09] INFO root fetch - main [MainThread]: End processing [openlane]: success
 [2024-04-07 21:03:09] INFO root fetch - main [MainThread]: Store serial: [22658526]
+[2024-04-07 21:05:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658526]
+[2024-04-07 21:05:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 21:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: decoder-plus-plus
+[2024-04-07 21:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: open-aoi
+[2024-04-07 21:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastsmb
+[2024-04-07 21:05:18] INFO root fetch - processPackages [decoder-plus-plus]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-04-07 21:05:18] INFO root fetch - processPackages [open-aoi]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 21:05:18] WARNING root fetch - processPackages [fastsmb]: Skipping, unable to determine old version
+[2024-04-07 21:05:18] INFO root fetch - main [MainThread]: End processing [fastsmb] error
+[2024-04-07 21:05:18] INFO root fetch - processPackages [decoder-plus-plus]: Downloading https://files.pythonhosted.org/packages/50/6b/dcb01f29573fd088079afbf857427b5f6e9d3e27de127bcfa6f32f07b535/decoder-plus-plus-1.7.0.tar.gz
+[2024-04-07 21:05:18] INFO root fetch - processPackages [open-aoi]: Downloading https://files.pythonhosted.org/packages/d2/cb/dd19e4630fb354010db3e6215502966625550ff7a5acbdbcedf536a6cd4d/open_aoi-0.0.8.tar.gz
+[2024-04-07 21:05:18] WARNING root fetch - processPackages [open-aoi]: Timeout reached during download
+[2024-04-07 21:05:18] INFO root fetch - processPackages [open-aoi]: Downloading https://files.pythonhosted.org/packages/2e/0c/2869daa3fcce6ef21522f04169cfdef7edf737a59d03f86a95b6594d19b3/open_aoi-0.0.9.tar.gz
+[2024-04-07 21:05:18] WARNING root fetch - processPackages [decoder-plus-plus]: Timeout reached during download
+[2024-04-07 21:05:18] WARNING root fetch - processPackages [open-aoi]: Timeout reached during download
+[2024-04-07 21:05:18] INFO root fetch - processPackages [open-aoi]: executing diffoscope
+[2024-04-07 21:05:18] INFO root fetch - processPackages [open-aoi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_aoi-0.0.8.tar.gz tmp/open_aoi-0.0.9.tar.gz --markdown 20240407/o/open-aoi/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 21:05:19] INFO root fetch - processPackages [decoder-plus-plus]: Downloading https://files.pythonhosted.org/packages/bb/82/0d84613c5c04acffa81380d67c10e2336653ad8a48212cf035ccb7b59955/decoder-plus-plus-1.7.1.tar.gz
+[2024-04-07 21:05:19] INFO root fetch - processPackages [open-aoi]: Remove: archive file [/home/abi/fetcher/tmp/open_aoi-0.0.8.tar.gz]
+[2024-04-07 21:05:19] INFO root fetch - processPackages [open-aoi]: Remove: archive file [/home/abi/fetcher/tmp/open_aoi-0.0.9.tar.gz]
+[2024-04-07 21:05:19] INFO root fetch - main [MainThread]: End processing [open-aoi]: success
+[2024-04-07 21:05:19] WARNING root fetch - processPackages [decoder-plus-plus]: Timeout reached during download
+[2024-04-07 21:05:19] INFO root fetch - processPackages [decoder-plus-plus]: executing diffoscope
+[2024-04-07 21:05:19] INFO root fetch - processPackages [decoder-plus-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decoder-plus-plus-1.7.0.tar.gz tmp/decoder-plus-plus-1.7.1.tar.gz --markdown 20240407/d/decoder-plus-plus/1.7.0-1.7.1/diff.md --exclude *.pyd
+[2024-04-07 21:05:21] INFO root fetch - processPackages [decoder-plus-plus]: Remove: archive file [/home/abi/fetcher/tmp/decoder-plus-plus-1.7.0.tar.gz]
+[2024-04-07 21:05:21] INFO root fetch - processPackages [decoder-plus-plus]: Remove: archive file [/home/abi/fetcher/tmp/decoder-plus-plus-1.7.1.tar.gz]
+[2024-04-07 21:05:21] INFO root fetch - main [MainThread]: End processing [decoder-plus-plus]: success
+[2024-04-07 21:05:21] INFO root fetch - main [MainThread]: Store serial: [22658537]
