@@ -16430,3 +16430,143 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:09:08] INFO root fetch - processPackages [imy]: Remove: archive file [/home/abi/fetcher/tmp/imy-0.2.0.tar.gz]
 [2024-04-07 19:09:08] INFO root fetch - main [MainThread]: End processing [imy]: success
 [2024-04-07 19:09:08] INFO root fetch - main [MainThread]: Store serial: [22657784]
+[2024-04-07 19:11:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657784]
+[2024-04-07 19:11:18] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2024-04-07 19:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alibabacloud-eflo-controller20221215
+[2024-04-07 19:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alibabacloud-bpstudio20210931-py2
+[2024-04-07 19:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alibabacloud-bpstudio20210931
+[2024-04-07 19:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alibabacloud-dds20151201-py2
+[2024-04-07 19:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-nightly-tpu
+[2024-04-07 19:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: alibabacloud-easygene20210315-py2
+[2024-04-07 19:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alibabacloud-foasconsole20190601-py2
+[2024-04-07 19:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: afreeca
+[2024-04-07 19:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: alibabacloud-eflo-controller20221215-py2
+[2024-04-07 19:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: alibabacloud-dds20151201
+[2024-04-07 19:11:18] INFO root fetch - processPackages [tf-nightly-tpu]: New version: [2.17.0.dev20240406] Old Version: [2.17.0.dev20240405]
+[2024-04-07 19:11:18] INFO root fetch - processPackages [alibabacloud-eflo-controller20221215]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-04-07 19:11:18] INFO root fetch - processPackages [alibabacloud-easygene20210315-py2]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-07 19:11:18] INFO root fetch - processPackages [alibabacloud-bpstudio20210931-py2]: New version: [4.2.0] Old Version: [4.1.0]
+[2024-04-07 19:11:18] INFO root fetch - processPackages [alibabacloud-foasconsole20190601-py2]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-07 19:11:18] INFO root fetch - processPackages [alibabacloud-eflo-controller20221215-py2]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-04-07 19:11:18] INFO root fetch - processPackages [alibabacloud-bpstudio20210931]: New version: [4.2.0] Old Version: [4.1.0]
+[2024-04-07 19:11:18] INFO root fetch - processPackages [alibabacloud-dds20151201]: New version: [6.4.1] Old Version: [6.4.0]
+[2024-04-07 19:11:18] INFO root fetch - processPackages [afreeca]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-07 19:11:18] INFO root fetch - processPackages [alibabacloud-dds20151201-py2]: New version: [4.4.1] Old Version: [4.4.0]
+[2024-04-07 19:11:18] INFO root fetch - processPackages [alibabacloud-eflo-controller20221215]: Downloading https://files.pythonhosted.org/packages/50/9a/f6d0ea40327050bca813ba8ab16742561dd541aab1b47449219bb196666c/alibabacloud_eflo-controller20221215-1.2.1.tar.gz
+[2024-04-07 19:11:18] INFO root fetch - processPackages [tf-nightly-tpu]: Downloading https://files.pythonhosted.org/packages/e7/71/5fa09d0ae2cec4196e6a35402292a2ad89a5b401fa9390e74c26bcb4e0f9/tf_nightly_tpu-2.17.0.dev20240405-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [tf-nightly-tpu]: Skipping package: exceeds size limit 219399896>=10485760
+[2024-04-07 19:11:19] INFO root fetch - processPackages [tf-nightly-tpu]: Start processing: xia-module
+[2024-04-07 19:11:19] INFO root fetch - main [MainThread]: End processing [tf-nightly-tpu] error
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-bpstudio20210931-py2]: Downloading https://files.pythonhosted.org/packages/45/79/b55b31be28501b533b1710f78c45f3a2ce85fccff2c1a836f1aa292b7f6c/alibabacloud_bpstudio20210931_py2-4.1.0.tar.gz
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-foasconsole20190601-py2]: Downloading https://files.pythonhosted.org/packages/9c/9f/df5f032427ca4d1892d63d104f10bf86d6003c6d12f7f8288b5bb356c5b4/alibabacloud_foasconsole20190601_py2-1.0.2.tar.gz
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-easygene20210315-py2]: Downloading https://files.pythonhosted.org/packages/f8/f6/2e36e7fe85ee36bb59c89332978ae8e313fe4ce488ed5c26683be596908b/alibabacloud_easygene20210315_py2-1.1.0.tar.gz
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-bpstudio20210931]: Downloading https://files.pythonhosted.org/packages/18/33/687d7579d2a14aba3dbcade13633f0a134f1a3c2d5740fc5afed844af824/alibabacloud_bpstudio20210931-4.1.0.tar.gz
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-dds20151201-py2]: Downloading https://files.pythonhosted.org/packages/7a/2e/1d203e8041e386cb89e54994f6155496cf1fa622a6214abd363d40f9c245/alibabacloud_dds20151201_py2-4.4.0.tar.gz
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-eflo-controller20221215-py2]: Downloading https://files.pythonhosted.org/packages/64/ca/c13fc9206cf9af451013f011082678290a80060306e5bda5ff849886a889/alibabacloud_eflo-controller20221215_py2-1.2.1.tar.gz
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-dds20151201]: Downloading https://files.pythonhosted.org/packages/50/c5/4f2580c6380b10729142e8b9e5291e7db96d9dc317f03d53df4aac5c4909/alibabacloud_dds20151201-6.4.0.tar.gz
+[2024-04-07 19:11:19] INFO root fetch - processPackages [afreeca]: Downloading https://files.pythonhosted.org/packages/d2/3a/9fb93e61a9482876bc4d619ba54fb6731c6b8b547dc059ebede18c154110/afreeca-0.3.1.tar.gz
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [alibabacloud-eflo-controller20221215]: Timeout reached during download
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [alibabacloud-foasconsole20190601-py2]: Timeout reached during download
+[2024-04-07 19:11:19] INFO root fetch - processPackages [xia-module]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [alibabacloud-dds20151201-py2]: Timeout reached during download
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [afreeca]: Timeout reached during download
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [alibabacloud-easygene20210315-py2]: Timeout reached during download
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [alibabacloud-bpstudio20210931]: Timeout reached during download
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-eflo-controller20221215]: Downloading https://files.pythonhosted.org/packages/b3/2a/8e4d9c380c5341e3b2235e509ce295ebcdfcf505dfc1b4621134a0dba461/alibabacloud_eflo-controller20221215-1.2.2.tar.gz
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [alibabacloud-dds20151201]: Timeout reached during download
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [alibabacloud-eflo-controller20221215-py2]: Timeout reached during download
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-foasconsole20190601-py2]: Downloading https://files.pythonhosted.org/packages/44/fc/946b9f150ba85928ffc2e648e194adeccab198f33d4dc6569b4adfd28ef0/alibabacloud_foasconsole20190601_py2-1.0.3.tar.gz
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-dds20151201-py2]: Downloading https://files.pythonhosted.org/packages/0e/83/dd07058a16825b1ba86cda1d517ed524720858e262e7eaa1b7c01e147ab1/alibabacloud_dds20151201_py2-4.4.1.tar.gz
+[2024-04-07 19:11:19] INFO root fetch - processPackages [xia-module]: Downloading https://files.pythonhosted.org/packages/55/8c/b5f4d9073926cf6d461ebe83b5a802ed97126d43bfbbca28029b97104fa5/xia-module-0.0.8.tar.gz
+[2024-04-07 19:11:19] INFO root fetch - processPackages [afreeca]: Downloading https://files.pythonhosted.org/packages/c4/5d/f5661cb934a54d63d4d5fe9428baa46e7349883de13e4f2acb7aaedab1dd/afreeca-0.4.0.tar.gz
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-easygene20210315-py2]: Downloading https://files.pythonhosted.org/packages/88/66/27a8776cbe29ca275dc12fa8f7b4362e3cacea900690e387f7ad82033cc9/alibabacloud_easygene20210315_py2-1.1.1.tar.gz
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-bpstudio20210931]: Downloading https://files.pythonhosted.org/packages/44/90/27428df29fd338f5b3fe8a1b8e2634eb1177e0e480a6989b0d0465f021db/alibabacloud_bpstudio20210931-4.2.0.tar.gz
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [alibabacloud-eflo-controller20221215]: Timeout reached during download
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-eflo-controller20221215]: executing diffoscope
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-eflo-controller20221215]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_eflo-controller20221215-1.2.1.tar.gz tmp/alibabacloud_eflo-controller20221215-1.2.2.tar.gz --markdown 20240407/a/alibabacloud-eflo-controller20221215/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [alibabacloud-foasconsole20190601-py2]: Timeout reached during download
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-foasconsole20190601-py2]: executing diffoscope
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-foasconsole20190601-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_foasconsole20190601_py2-1.0.2.tar.gz tmp/alibabacloud_foasconsole20190601_py2-1.0.3.tar.gz --markdown 20240407/a/alibabacloud-foasconsole20190601-py2/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-dds20151201]: Downloading https://files.pythonhosted.org/packages/ce/70/b18cff1d6fab6506f038861b4a2f0c51435732a85713ebca53ee281a8c26/alibabacloud_dds20151201-6.4.1.tar.gz
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-eflo-controller20221215-py2]: Downloading https://files.pythonhosted.org/packages/02/59/0c783cced865ed735e0dd5c65a001c05601b6fc86fd8b217b6a0a2bc9ea5/alibabacloud_eflo-controller20221215_py2-1.2.2.tar.gz
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [xia-module]: Timeout reached during download
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [alibabacloud-bpstudio20210931]: Timeout reached during download
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-bpstudio20210931]: executing diffoscope
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-bpstudio20210931]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_bpstudio20210931-4.1.0.tar.gz tmp/alibabacloud_bpstudio20210931-4.2.0.tar.gz --markdown 20240407/a/alibabacloud-bpstudio20210931/4.1.0-4.2.0/diff.md --exclude *.pyd
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [alibabacloud-eflo-controller20221215-py2]: Timeout reached during download
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-eflo-controller20221215-py2]: executing diffoscope
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-eflo-controller20221215-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_eflo-controller20221215_py2-1.2.1.tar.gz tmp/alibabacloud_eflo-controller20221215_py2-1.2.2.tar.gz --markdown 20240407/a/alibabacloud-eflo-controller20221215-py2/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [alibabacloud-dds20151201-py2]: Timeout reached during download
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-dds20151201-py2]: executing diffoscope
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-dds20151201-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_dds20151201_py2-4.4.0.tar.gz tmp/alibabacloud_dds20151201_py2-4.4.1.tar.gz --markdown 20240407/a/alibabacloud-dds20151201-py2/4.4.0-4.4.1/diff.md --exclude *.pyd
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [alibabacloud-dds20151201]: Timeout reached during download
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-dds20151201]: executing diffoscope
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-dds20151201]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_dds20151201-6.4.0.tar.gz tmp/alibabacloud_dds20151201-6.4.1.tar.gz --markdown 20240407/a/alibabacloud-dds20151201/6.4.0-6.4.1/diff.md --exclude *.pyd
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [alibabacloud-bpstudio20210931-py2]: Timeout reached during download
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [alibabacloud-easygene20210315-py2]: Timeout reached during download
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-easygene20210315-py2]: executing diffoscope
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-easygene20210315-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_easygene20210315_py2-1.1.0.tar.gz tmp/alibabacloud_easygene20210315_py2-1.1.1.tar.gz --markdown 20240407/a/alibabacloud-easygene20210315-py2/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2024-04-07 19:11:19] INFO root fetch - processPackages [xia-module]: Downloading https://files.pythonhosted.org/packages/62/2e/9848dd19a26406a4e1509ed0dbde4c7c9f4fdd697d2f2a66097c57597ee5/xia-module-0.0.9.tar.gz
+[2024-04-07 19:11:19] WARNING root fetch - processPackages [afreeca]: Timeout reached during download
+[2024-04-07 19:11:19] INFO root fetch - processPackages [afreeca]: executing diffoscope
+[2024-04-07 19:11:19] INFO root fetch - processPackages [afreeca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afreeca-0.3.1.tar.gz tmp/afreeca-0.4.0.tar.gz --markdown 20240407/a/afreeca/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2024-04-07 19:11:19] INFO root fetch - processPackages [alibabacloud-bpstudio20210931-py2]: Downloading https://files.pythonhosted.org/packages/98/e0/22c8615aa649bb165a75ba6e45c6055e2de8ca725a27a99de995020accb2/alibabacloud_bpstudio20210931_py2-4.2.0.tar.gz
+[2024-04-07 19:11:20] WARNING root fetch - processPackages [xia-module]: Timeout reached during download
+[2024-04-07 19:11:20] INFO root fetch - processPackages [xia-module]: executing diffoscope
+[2024-04-07 19:11:20] INFO root fetch - processPackages [xia-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia-module-0.0.8.tar.gz tmp/xia-module-0.0.9.tar.gz --markdown 20240407/x/xia-module/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 19:11:20] WARNING root fetch - processPackages [alibabacloud-bpstudio20210931-py2]: Timeout reached during download
+[2024-04-07 19:11:20] INFO root fetch - processPackages [alibabacloud-bpstudio20210931-py2]: executing diffoscope
+[2024-04-07 19:11:20] INFO root fetch - processPackages [alibabacloud-bpstudio20210931-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_bpstudio20210931_py2-4.1.0.tar.gz tmp/alibabacloud_bpstudio20210931_py2-4.2.0.tar.gz --markdown 20240407/a/alibabacloud-bpstudio20210931-py2/4.1.0-4.2.0/diff.md --exclude *.pyd
+[2024-04-07 19:11:20] INFO root fetch - processPackages [alibabacloud-eflo-controller20221215]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_eflo-controller20221215-1.2.1.tar.gz]
+[2024-04-07 19:11:20] INFO root fetch - processPackages [alibabacloud-eflo-controller20221215]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_eflo-controller20221215-1.2.2.tar.gz]
+[2024-04-07 19:11:20] INFO root fetch - processPackages [alibabacloud-eflo-controller20221215]: Start processing: alibabacloud-easygene20210315
+[2024-04-07 19:11:20] INFO root fetch - main [MainThread]: End processing [alibabacloud-eflo-controller20221215]: success
+[2024-04-07 19:11:20] INFO root fetch - processPackages [alibabacloud-foasconsole20190601-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_foasconsole20190601_py2-1.0.2.tar.gz]
+[2024-04-07 19:11:20] INFO root fetch - processPackages [alibabacloud-foasconsole20190601-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_foasconsole20190601_py2-1.0.3.tar.gz]
+[2024-04-07 19:11:20] INFO root fetch - processPackages [alibabacloud-foasconsole20190601-py2]: Start processing: alibabacloud-foasconsole20190601
+[2024-04-07 19:11:20] INFO root fetch - main [MainThread]: End processing [alibabacloud-foasconsole20190601-py2]: success
+[2024-04-07 19:11:20] INFO root fetch - processPackages [alibabacloud-easygene20210315]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-07 19:11:20] INFO root fetch - processPackages [alibabacloud-foasconsole20190601]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-07 19:11:20] INFO root fetch - processPackages [alibabacloud-eflo-controller20221215-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_eflo-controller20221215_py2-1.2.1.tar.gz]
+[2024-04-07 19:11:20] INFO root fetch - processPackages [alibabacloud-eflo-controller20221215-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_eflo-controller20221215_py2-1.2.2.tar.gz]
+[2024-04-07 19:11:20] INFO root fetch - main [MainThread]: End processing [alibabacloud-eflo-controller20221215-py2]: success
+[2024-04-07 19:11:20] INFO root fetch - processPackages [alibabacloud-bpstudio20210931]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_bpstudio20210931-4.1.0.tar.gz]
+[2024-04-07 19:11:20] INFO root fetch - processPackages [alibabacloud-bpstudio20210931]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_bpstudio20210931-4.2.0.tar.gz]
+[2024-04-07 19:11:20] INFO root fetch - main [MainThread]: End processing [alibabacloud-bpstudio20210931]: success
+[2024-04-07 19:11:20] INFO root fetch - processPackages [xia-module]: Remove: archive file [/home/abi/fetcher/tmp/xia-module-0.0.8.tar.gz]
+[2024-04-07 19:11:20] INFO root fetch - processPackages [xia-module]: Remove: archive file [/home/abi/fetcher/tmp/xia-module-0.0.9.tar.gz]
+[2024-04-07 19:11:20] INFO root fetch - main [MainThread]: End processing [xia-module]: success
+[2024-04-07 19:11:20] INFO root fetch - processPackages [afreeca]: Remove: archive file [/home/abi/fetcher/tmp/afreeca-0.3.1.tar.gz]
+[2024-04-07 19:11:20] INFO root fetch - processPackages [afreeca]: Remove: archive file [/home/abi/fetcher/tmp/afreeca-0.4.0.tar.gz]
+[2024-04-07 19:11:20] INFO root fetch - main [MainThread]: End processing [afreeca]: success
+[2024-04-07 19:11:20] INFO root fetch - processPackages [alibabacloud-easygene20210315]: Downloading https://files.pythonhosted.org/packages/ab/16/bf18b4c61db253ca6420e68cea7e74ed2c9a120b4c2ab342e47aa6de677f/alibabacloud_easygene20210315-1.3.0.tar.gz
+[2024-04-07 19:11:20] INFO root fetch - processPackages [alibabacloud-foasconsole20190601]: Downloading https://files.pythonhosted.org/packages/38/a0/d017b2e1e008bc5b37a1de2fd01a99590d68aa1550524320aa6e8b2e6f56/alibabacloud_foasconsole20190601-1.0.2.tar.gz
+[2024-04-07 19:11:20] INFO root fetch - processPackages [alibabacloud-easygene20210315-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_easygene20210315_py2-1.1.0.tar.gz]
+[2024-04-07 19:11:20] INFO root fetch - processPackages [alibabacloud-easygene20210315-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_easygene20210315_py2-1.1.1.tar.gz]
+[2024-04-07 19:11:20] INFO root fetch - main [MainThread]: End processing [alibabacloud-easygene20210315-py2]: success
+[2024-04-07 19:11:21] WARNING root fetch - processPackages [alibabacloud-foasconsole20190601]: Timeout reached during download
+[2024-04-07 19:11:21] WARNING root fetch - processPackages [alibabacloud-easygene20210315]: Timeout reached during download
+[2024-04-07 19:11:21] INFO root fetch - processPackages [alibabacloud-bpstudio20210931-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_bpstudio20210931_py2-4.1.0.tar.gz]
+[2024-04-07 19:11:21] INFO root fetch - processPackages [alibabacloud-bpstudio20210931-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_bpstudio20210931_py2-4.2.0.tar.gz]
+[2024-04-07 19:11:21] INFO root fetch - main [MainThread]: End processing [alibabacloud-bpstudio20210931-py2]: success
+[2024-04-07 19:11:21] INFO root fetch - processPackages [alibabacloud-foasconsole20190601]: Downloading https://files.pythonhosted.org/packages/f7/30/5fb3be8a1cef182475adb0d26870decde0a54ae497417e4e97aa13a8ae05/alibabacloud_foasconsole20190601-1.0.3.tar.gz
+[2024-04-07 19:11:21] INFO root fetch - processPackages [alibabacloud-easygene20210315]: Downloading https://files.pythonhosted.org/packages/a8/15/814f8c2048a3250b52e7099d2dc409234e54c320f97e4ef92b61bbd6fc31/alibabacloud_easygene20210315-1.3.1.tar.gz
+[2024-04-07 19:11:21] INFO root fetch - processPackages [alibabacloud-dds20151201-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_dds20151201_py2-4.4.0.tar.gz]
+[2024-04-07 19:11:21] INFO root fetch - processPackages [alibabacloud-dds20151201-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_dds20151201_py2-4.4.1.tar.gz]
+[2024-04-07 19:11:21] INFO root fetch - main [MainThread]: End processing [alibabacloud-dds20151201-py2]: success
+[2024-04-07 19:11:21] WARNING root fetch - processPackages [alibabacloud-foasconsole20190601]: Timeout reached during download
+[2024-04-07 19:11:21] INFO root fetch - processPackages [alibabacloud-foasconsole20190601]: executing diffoscope
+[2024-04-07 19:11:21] INFO root fetch - processPackages [alibabacloud-foasconsole20190601]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_foasconsole20190601-1.0.2.tar.gz tmp/alibabacloud_foasconsole20190601-1.0.3.tar.gz --markdown 20240407/a/alibabacloud-foasconsole20190601/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2024-04-07 19:11:21] INFO root fetch - processPackages [alibabacloud-dds20151201]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_dds20151201-6.4.0.tar.gz]
+[2024-04-07 19:11:21] INFO root fetch - processPackages [alibabacloud-dds20151201]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_dds20151201-6.4.1.tar.gz]
+[2024-04-07 19:11:21] INFO root fetch - main [MainThread]: End processing [alibabacloud-dds20151201]: success
+[2024-04-07 19:11:21] WARNING root fetch - processPackages [alibabacloud-easygene20210315]: Timeout reached during download
+[2024-04-07 19:11:21] INFO root fetch - processPackages [alibabacloud-easygene20210315]: executing diffoscope
+[2024-04-07 19:11:21] INFO root fetch - processPackages [alibabacloud-easygene20210315]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_easygene20210315-1.3.0.tar.gz tmp/alibabacloud_easygene20210315-1.3.1.tar.gz --markdown 20240407/a/alibabacloud-easygene20210315/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2024-04-07 19:11:22] INFO root fetch - processPackages [alibabacloud-foasconsole20190601]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_foasconsole20190601-1.0.2.tar.gz]
+[2024-04-07 19:11:22] INFO root fetch - processPackages [alibabacloud-foasconsole20190601]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_foasconsole20190601-1.0.3.tar.gz]
+[2024-04-07 19:11:22] INFO root fetch - main [MainThread]: End processing [alibabacloud-foasconsole20190601]: success
+[2024-04-07 19:11:22] INFO root fetch - processPackages [alibabacloud-easygene20210315]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_easygene20210315-1.3.0.tar.gz]
+[2024-04-07 19:11:22] INFO root fetch - processPackages [alibabacloud-easygene20210315]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_easygene20210315-1.3.1.tar.gz]
+[2024-04-07 19:11:22] INFO root fetch - main [MainThread]: End processing [alibabacloud-easygene20210315]: success
+[2024-04-07 19:11:22] INFO root fetch - main [MainThread]: Store serial: [22657833]
