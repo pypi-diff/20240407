@@ -11408,3 +11408,61 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:11:46] INFO root fetch - processPackages [gmalglib]: Remove: archive file [/home/abi/fetcher/tmp/gmalglib-0.3.1.tar.gz]
 [2024-04-07 14:11:46] INFO root fetch - main [MainThread]: End processing [gmalglib]: success
 [2024-04-07 14:11:46] INFO root fetch - main [MainThread]: Store serial: [22656027]
+[2024-04-07 14:13:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656027]
+[2024-04-07 14:13:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 14:13:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gmalglib
+[2024-04-07 14:13:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdo-sdk-python
+[2024-04-07 14:13:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: akshare
+[2024-04-07 14:13:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: smaht-submitr
+[2024-04-07 14:13:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: systembridgeconnector
+[2024-04-07 14:13:55] INFO root fetch - processPackages [gmalglib]: New version: [0.3.1] Old Version: [0.2.0]
+[2024-04-07 14:13:55] INFO root fetch - processPackages [smaht-submitr]: New version: [0.7.0.1b96] Old Version: [0.7.0.1b95]
+[2024-04-07 14:13:55] INFO root fetch - processPackages [akshare]: New version: [1.9.99] Old Version: [1.9.98]
+[2024-04-07 14:13:55] INFO root fetch - processPackages [gmalglib]: Downloading https://files.pythonhosted.org/packages/6f/2b/238053d576f7137def4607e54ed663f60c9163ebd1d754280777e768992b/gmalglib-0.2.0.tar.gz
+[2024-04-07 14:13:55] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/75/8c/f9beb6bc26510a3ad2313c7a18cb3cc75780f92db46d4c01c010594409b6/smaht_submitr-0.7.0.1b95.tar.gz
+[2024-04-07 14:13:55] INFO root fetch - processPackages [cdo-sdk-python]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-07 14:13:55] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/ec/a4/f1c21d8fbb349e15f0bf76d32a496003bcff9b66215f81b940337a510e36/akshare-1.9.98.tar.gz
+[2024-04-07 14:13:55] WARNING root fetch - processPackages [gmalglib]: Timeout reached during download
+[2024-04-07 14:13:55] INFO root fetch - processPackages [systembridgeconnector]: New version: [5.0.0.dev2] Old Version: [5.0.0.dev1]
+[2024-04-07 14:13:55] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 14:13:55] INFO root fetch - processPackages [cdo-sdk-python]: Downloading https://files.pythonhosted.org/packages/e8/fb/ff7631f328a89b3d0561d9360ac0e2361c6776d84038fff314aa71686ab4/cdo-sdk-python-1.0.8.tar.gz
+[2024-04-07 14:13:55] INFO root fetch - processPackages [gmalglib]: Downloading https://files.pythonhosted.org/packages/4d/11/09eb8d14ae394c0e6298b13c37ac8c594d1844705df9da972586bd833dce/gmalglib-0.3.1.tar.gz
+[2024-04-07 14:13:55] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/f8/8a/e6c80dab6edf988af330133213ce7181270ecb7d2c58a89353a4285f79d3/smaht_submitr-0.7.0.1b96.tar.gz
+[2024-04-07 14:13:55] WARNING root fetch - processPackages [akshare]: Timeout reached during download
+[2024-04-07 14:13:55] WARNING root fetch - processPackages [gmalglib]: Timeout reached during download
+[2024-04-07 14:13:55] INFO root fetch - processPackages [gmalglib]: executing diffoscope
+[2024-04-07 14:13:55] INFO root fetch - processPackages [gmalglib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmalglib-0.2.0.tar.gz tmp/gmalglib-0.3.1.tar.gz --markdown 20240407/g/gmalglib/0.2.0-0.3.1/diff.md --exclude *.pyd
+[2024-04-07 14:13:55] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/53/e8/f58e96016752567ca09f3f67abdc7e935d0afa919aded528d50590ed9170/akshare-1.9.99.tar.gz
+[2024-04-07 14:13:55] INFO root fetch - processPackages [systembridgeconnector]: Downloading https://files.pythonhosted.org/packages/d7/7d/883418504a70235a27ef8526ca75ae6edafe0d04d7b1c3434656e245befa/systembridgeconnector-5.0.0.dev1.tar.gz
+[2024-04-07 14:13:55] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 14:13:55] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-07 14:13:55] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.7.0.1b95.tar.gz tmp/smaht_submitr-0.7.0.1b96.tar.gz --markdown 20240407/s/smaht-submitr/0.7.0.1b95-0.7.0.1b96/diff.md --exclude *.pyd
+[2024-04-07 14:13:55] WARNING root fetch - processPackages [cdo-sdk-python]: Timeout reached during download
+[2024-04-07 14:13:56] WARNING root fetch - processPackages [akshare]: Timeout reached during download
+[2024-04-07 14:13:56] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2024-04-07 14:13:56] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.98.tar.gz tmp/akshare-1.9.99.tar.gz --markdown 20240407/a/akshare/1.9.98-1.9.99/diff.md --exclude *.pyd
+[2024-04-07 14:13:56] WARNING root fetch - processPackages [systembridgeconnector]: Timeout reached during download
+[2024-04-07 14:13:56] INFO root fetch - processPackages [cdo-sdk-python]: Downloading https://files.pythonhosted.org/packages/d1/4b/41dfe0ac58b980065766117bd4e1f6e5ff276f5ca45cfbcdaba7cc25a375/cdo-sdk-python-1.0.9.tar.gz
+[2024-04-07 14:13:56] INFO root fetch - processPackages [systembridgeconnector]: Downloading https://files.pythonhosted.org/packages/68/a4/a86b7b6ff24a3b54bf13ac8cb02c0a4ad55c91339840060ea7e67267eb9c/systembridgeconnector-5.0.0.dev2.tar.gz
+[2024-04-07 14:13:56] WARNING root fetch - processPackages [cdo-sdk-python]: Timeout reached during download
+[2024-04-07 14:13:56] INFO root fetch - processPackages [cdo-sdk-python]: executing diffoscope
+[2024-04-07 14:13:56] INFO root fetch - processPackages [cdo-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdo-sdk-python-1.0.8.tar.gz tmp/cdo-sdk-python-1.0.9.tar.gz --markdown 20240407/c/cdo-sdk-python/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-07 14:13:56] INFO root fetch - processPackages [gmalglib]: Remove: archive file [/home/abi/fetcher/tmp/gmalglib-0.2.0.tar.gz]
+[2024-04-07 14:13:56] INFO root fetch - processPackages [gmalglib]: Remove: archive file [/home/abi/fetcher/tmp/gmalglib-0.3.1.tar.gz]
+[2024-04-07 14:13:56] INFO root fetch - main [MainThread]: End processing [gmalglib]: success
+[2024-04-07 14:13:56] WARNING root fetch - processPackages [systembridgeconnector]: Timeout reached during download
+[2024-04-07 14:13:56] INFO root fetch - processPackages [systembridgeconnector]: executing diffoscope
+[2024-04-07 14:13:56] INFO root fetch - processPackages [systembridgeconnector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systembridgeconnector-5.0.0.dev1.tar.gz tmp/systembridgeconnector-5.0.0.dev2.tar.gz --markdown 20240407/s/systembridgeconnector/5.0.0.dev1-5.0.0.dev2/diff.md --exclude *.pyd
+[2024-04-07 14:13:56] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b95.tar.gz]
+[2024-04-07 14:13:56] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b96.tar.gz]
+[2024-04-07 14:13:56] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-07 14:13:57] INFO root fetch - processPackages [systembridgeconnector]: Remove: archive file [/home/abi/fetcher/tmp/systembridgeconnector-5.0.0.dev1.tar.gz]
+[2024-04-07 14:13:57] INFO root fetch - processPackages [systembridgeconnector]: Remove: archive file [/home/abi/fetcher/tmp/systembridgeconnector-5.0.0.dev2.tar.gz]
+[2024-04-07 14:13:57] INFO root fetch - main [MainThread]: End processing [systembridgeconnector]: success
+[2024-04-07 14:13:57] INFO root fetch - processPackages [cdo-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/cdo-sdk-python-1.0.8.tar.gz]
+[2024-04-07 14:13:57] INFO root fetch - processPackages [cdo-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/cdo-sdk-python-1.0.9.tar.gz]
+[2024-04-07 14:13:57] INFO root fetch - main [MainThread]: End processing [cdo-sdk-python]: success
+[2024-04-07 14:13:58] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.98.tar.gz]
+[2024-04-07 14:13:58] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
+[2024-04-07 14:13:58] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2024-04-07 14:13:58] INFO root fetch - main [MainThread]: Store serial: [22656046]
