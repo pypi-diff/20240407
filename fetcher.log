@@ -12619,3 +12619,26 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:30:25] INFO root fetch - processPackages [phc-ingestion]: Remove: archive file [/home/abi/fetcher/tmp/phc-ingestion-0.8.0.tar.gz]
 [2024-04-07 15:30:25] INFO root fetch - main [MainThread]: End processing [phc-ingestion]: success
 [2024-04-07 15:30:25] INFO root fetch - main [MainThread]: Store serial: [22656490]
+[2024-04-07 15:32:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656490]
+[2024-04-07 15:32:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MeMeST
+[2024-04-07 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MeMeST
+[2024-04-07 15:32:34] INFO root fetch - processPackages [MeMeST]: New version: [1.0.1] Old Version: [1.0]
+[2024-04-07 15:32:34] INFO root fetch - processPackages [MeMeST]: New version: [1.0.1] Old Version: [1.0]
+[2024-04-07 15:32:34] INFO root fetch - processPackages [MeMeST]: Downloading https://files.pythonhosted.org/packages/0a/05/4fe658103ed73881615e4175ddb5418e7e4410fc67235400f9dd9410e5a5/MeMeST-1.0-py3-none-any.whl
+[2024-04-07 15:32:34] INFO root fetch - processPackages [MeMeST]: Downloading https://files.pythonhosted.org/packages/0a/05/4fe658103ed73881615e4175ddb5418e7e4410fc67235400f9dd9410e5a5/MeMeST-1.0-py3-none-any.whl
+[2024-04-07 15:32:34] WARNING root fetch - processPackages [MeMeST]: Timeout reached during download
+[2024-04-07 15:32:34] WARNING root fetch - processPackages [MeMeST]: Timeout reached during download
+[2024-04-07 15:32:34] INFO root fetch - processPackages [MeMeST]: Downloading https://files.pythonhosted.org/packages/c1/3b/c7955d1c3c703db2c158071944977fa9fb44e5fda0a9129283cd841f7004/MeMeST-1.0.1.tar.gz
+[2024-04-07 15:32:34] INFO root fetch - processPackages [MeMeST]: Downloading https://files.pythonhosted.org/packages/c1/3b/c7955d1c3c703db2c158071944977fa9fb44e5fda0a9129283cd841f7004/MeMeST-1.0.1.tar.gz
+[2024-04-07 15:32:35] WARNING root fetch - processPackages [MeMeST]: Timeout reached during download
+[2024-04-07 15:32:35] INFO root fetch - processPackages [MeMeST]: executing diffoscope
+[2024-04-07 15:32:35] INFO root fetch - processPackages [MeMeST]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MeMeST-1.0-py3-none-any.whl.zip tmp/MeMeST-1.0.1.tar.gz --markdown 20240407/M/MeMeST/1.0-1.0.1/diff.md --exclude *.pyd
+[2024-04-07 15:32:35] WARNING root fetch - processPackages [MeMeST]: Timeout reached during download
+[2024-04-07 15:32:35] INFO root fetch - processPackages [MeMeST]: executing diffoscope
+[2024-04-07 15:32:35] INFO root fetch - processPackages [MeMeST]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MeMeST-1.0-py3-none-any.whl.zip tmp/MeMeST-1.0.1.tar.gz --markdown 20240407/M/MeMeST/1.0-1.0.1/diff.md --exclude *.pyd
+[2024-04-07 15:32:35] INFO root fetch - processPackages [MeMeST]: Remove: archive file [/home/abi/fetcher/tmp/MeMeST-1.0-py3-none-any.whl.zip]
+[2024-04-07 15:32:35] INFO root fetch - processPackages [MeMeST]: Remove: archive file [/home/abi/fetcher/tmp/MeMeST-1.0.1.tar.gz]
+[2024-04-07 15:32:35] INFO root fetch - main [MainThread]: End processing [MeMeST]: success
+[2024-04-07 15:32:35] INFO root fetch - main [MainThread]: End processing [MeMeST]: success
+[2024-04-07 15:32:35] INFO root fetch - main [MainThread]: Store serial: [22656497]
