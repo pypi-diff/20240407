@@ -9548,3 +9548,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 12:01:11] INFO root fetch - processPackages [py-jaxtyping]: Remove: archive file [/home/abi/fetcher/tmp/py-jaxtyping-0.1.1.tar.gz]
 [2024-04-07 12:01:11] INFO root fetch - main [MainThread]: End processing [py-jaxtyping]: success
 [2024-04-07 12:01:11] INFO root fetch - main [MainThread]: Store serial: [22655254]
+[2024-04-07 12:03:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655254]
+[2024-04-07 12:03:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 12:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stock-open-api
+[2024-04-07 12:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyhocon-dantic
+[2024-04-07 12:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: OpsApi
+[2024-04-07 12:03:20] INFO root fetch - processPackages [OpsApi]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-04-07 12:03:20] INFO root fetch - processPackages [stock-open-api]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-07 12:03:20] INFO root fetch - processPackages [pyhocon-dantic]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-07 12:03:20] INFO root fetch - processPackages [OpsApi]: Downloading https://files.pythonhosted.org/packages/cb/96/6ab51ec0bce6c789ca0549b0aa88f666a143b3f4f07e81e0df8c2b63e1b0/OpsApi-1.1.2.tar.gz
+[2024-04-07 12:03:20] INFO root fetch - processPackages [stock-open-api]: Downloading https://files.pythonhosted.org/packages/d5/c2/835e1709093db7af6582560503b4a26528a0387a2a533bd00107861df508/stock-open-api-1.0.3.tar.gz
+[2024-04-07 12:03:20] WARNING root fetch - processPackages [OpsApi]: Timeout reached during download
+[2024-04-07 12:03:20] WARNING root fetch - processPackages [stock-open-api]: Timeout reached during download
+[2024-04-07 12:03:20] INFO root fetch - processPackages [pyhocon-dantic]: Downloading https://files.pythonhosted.org/packages/a9/96/796032bc4ee8429d2f3062d6570880780411116a89d12c6b7db38918965b/pyhocon-dantic-0.0.3.tar.gz
+[2024-04-07 12:03:20] INFO root fetch - processPackages [OpsApi]: Downloading https://files.pythonhosted.org/packages/29/68/55f2d21aad474b44833ae739f9df27f8c238e79ceab4a256681717eb469c/OpsApi-1.1.3.tar.gz
+[2024-04-07 12:03:20] INFO root fetch - processPackages [stock-open-api]: Downloading https://files.pythonhosted.org/packages/80/9f/1a60c31bfb83d40d1d857cabe103351f7cb8215f9756b617b977087b1bb6/stock-open-api-1.0.4.tar.gz
+[2024-04-07 12:03:20] WARNING root fetch - processPackages [OpsApi]: Timeout reached during download
+[2024-04-07 12:03:20] INFO root fetch - processPackages [OpsApi]: executing diffoscope
+[2024-04-07 12:03:20] INFO root fetch - processPackages [OpsApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpsApi-1.1.2.tar.gz tmp/OpsApi-1.1.3.tar.gz --markdown 20240407/O/OpsApi/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2024-04-07 12:03:20] WARNING root fetch - processPackages [pyhocon-dantic]: Timeout reached during download
+[2024-04-07 12:03:20] WARNING root fetch - processPackages [stock-open-api]: Timeout reached during download
+[2024-04-07 12:03:20] INFO root fetch - processPackages [stock-open-api]: executing diffoscope
+[2024-04-07 12:03:20] INFO root fetch - processPackages [stock-open-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stock-open-api-1.0.3.tar.gz tmp/stock-open-api-1.0.4.tar.gz --markdown 20240407/s/stock-open-api/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2024-04-07 12:03:20] INFO root fetch - processPackages [pyhocon-dantic]: Downloading https://files.pythonhosted.org/packages/95/5c/4aa7ae3313e9748e335bf64c905cfd9615f92940f750a81a5234d008b4bb/pyhocon-dantic-0.0.4.tar.gz
+[2024-04-07 12:03:20] WARNING root fetch - processPackages [pyhocon-dantic]: Timeout reached during download
+[2024-04-07 12:03:20] INFO root fetch - processPackages [pyhocon-dantic]: executing diffoscope
+[2024-04-07 12:03:20] INFO root fetch - processPackages [pyhocon-dantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhocon-dantic-0.0.3.tar.gz tmp/pyhocon-dantic-0.0.4.tar.gz --markdown 20240407/p/pyhocon-dantic/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 12:03:21] INFO root fetch - processPackages [OpsApi]: Remove: archive file [/home/abi/fetcher/tmp/OpsApi-1.1.2.tar.gz]
+[2024-04-07 12:03:21] INFO root fetch - processPackages [OpsApi]: Remove: archive file [/home/abi/fetcher/tmp/OpsApi-1.1.3.tar.gz]
+[2024-04-07 12:03:21] INFO root fetch - main [MainThread]: End processing [OpsApi]: success
+[2024-04-07 12:03:21] INFO root fetch - processPackages [stock-open-api]: Remove: archive file [/home/abi/fetcher/tmp/stock-open-api-1.0.3.tar.gz]
+[2024-04-07 12:03:21] INFO root fetch - processPackages [stock-open-api]: Remove: archive file [/home/abi/fetcher/tmp/stock-open-api-1.0.4.tar.gz]
+[2024-04-07 12:03:21] INFO root fetch - main [MainThread]: End processing [stock-open-api]: success
+[2024-04-07 12:03:21] INFO root fetch - processPackages [pyhocon-dantic]: Remove: archive file [/home/abi/fetcher/tmp/pyhocon-dantic-0.0.3.tar.gz]
+[2024-04-07 12:03:21] INFO root fetch - processPackages [pyhocon-dantic]: Remove: archive file [/home/abi/fetcher/tmp/pyhocon-dantic-0.0.4.tar.gz]
+[2024-04-07 12:03:21] INFO root fetch - main [MainThread]: End processing [pyhocon-dantic]: success
+[2024-04-07 12:03:21] INFO root fetch - main [MainThread]: Store serial: [22655263]
