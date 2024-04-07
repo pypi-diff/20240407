@@ -6078,3 +6078,56 @@
 [2024-04-07 08:09:20] INFO root fetch - processPackages [ciocore]: Remove: archive file [/home/abi/fetcher/tmp/ciocore-8.0.0rc1-py2.py3-none-any.whl.zip]
 [2024-04-07 08:09:20] INFO root fetch - main [MainThread]: End processing [ciocore]: success
 [2024-04-07 08:09:20] INFO root fetch - main [MainThread]: Store serial: [22653906]
+[2024-04-07 08:11:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653906]
+[2024-04-07 08:11:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 08:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tsum
+[2024-04-07 08:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FSRS-Optimizer
+[2024-04-07 08:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-newrelic
+[2024-04-07 08:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-onelogin
+[2024-04-07 08:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: goddaniel
+[2024-04-07 08:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: htscf
+[2024-04-07 08:11:30] INFO root fetch - processPackages [pulumi-onelogin]: New version: [0.6.3a1712400576] Old Version: [0.6.3a1711738893]
+[2024-04-07 08:11:30] INFO root fetch - processPackages [htscf]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 08:11:30] WARNING root fetch - processPackages [goddaniel]: Skipping, unable to determine old version
+[2024-04-07 08:11:30] INFO root fetch - main [MainThread]: End processing [goddaniel] error
+[2024-04-07 08:11:30] WARNING root fetch - processPackages [tsum]: Skipping, unable to determine old version
+[2024-04-07 08:11:30] INFO root fetch - main [MainThread]: End processing [tsum] error
+[2024-04-07 08:11:31] INFO root fetch - processPackages [FSRS-Optimizer]: New version: [4.9.1] Old Version: [4.9.0]
+[2024-04-07 08:11:31] INFO root fetch - processPackages [pulumi-newrelic]: New version: [5.9.1] Old Version: [5.9.0a1680282898]
+[2024-04-07 08:11:31] INFO root fetch - processPackages [pulumi-onelogin]: Downloading https://files.pythonhosted.org/packages/d2/a9/e0d5b0ec1b0754e62ce200c1bfeb1a76e2c67ca0ee995b0cfe492b1d700d/pulumi_onelogin-0.6.3a1711738893.tar.gz
+[2024-04-07 08:11:31] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/48/31/ef6469f74ffa5f39aaf9ac67ecf2f5b17aec1b223d3f63572efd39a3958f/htscf-0.0.98.tar.gz
+[2024-04-07 08:11:31] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 08:11:31] INFO root fetch - processPackages [FSRS-Optimizer]: Downloading https://files.pythonhosted.org/packages/3b/99/ed9611766c54d3246138921362bf9c9277a2294c7e349cc2c73adad35fcf/FSRS-Optimizer-4.9.0.tar.gz
+[2024-04-07 08:11:31] WARNING root fetch - processPackages [pulumi-onelogin]: Timeout reached during download
+[2024-04-07 08:11:31] INFO root fetch - processPackages [pulumi-newrelic]: Downloading https://files.pythonhosted.org/packages/1e/4c/b1f7f311d7b241db6b87ee89c05acfcff95b654eae42e5bda9788a66707c/pulumi_newrelic-5.9.0a1680282898.tar.gz
+[2024-04-07 08:11:31] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/79/48/b9c5a63d0fc652968c826af8815fadd5e1f69403909e12853b5a52d9c6b3/htscf-0.0.99.tar.gz
+[2024-04-07 08:11:31] INFO root fetch - processPackages [pulumi-onelogin]: Downloading https://files.pythonhosted.org/packages/f6/d5/0b5397996b20f28e0b748250a3f54eea51f93d6821849dd8b1add7e3eb2e/pulumi_onelogin-0.6.3a1712400576.tar.gz
+[2024-04-07 08:11:31] WARNING root fetch - processPackages [pulumi-newrelic]: Timeout reached during download
+[2024-04-07 08:11:31] WARNING root fetch - processPackages [FSRS-Optimizer]: Timeout reached during download
+[2024-04-07 08:11:31] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 08:11:31] INFO root fetch - processPackages [htscf]: executing diffoscope
+[2024-04-07 08:11:31] INFO root fetch - processPackages [htscf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htscf-0.0.98.tar.gz tmp/htscf-0.0.99.tar.gz --markdown 20240407/h/htscf/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 08:11:31] WARNING root fetch - processPackages [pulumi-onelogin]: Timeout reached during download
+[2024-04-07 08:11:31] INFO root fetch - processPackages [pulumi-onelogin]: executing diffoscope
+[2024-04-07 08:11:31] INFO root fetch - processPackages [pulumi-onelogin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_onelogin-0.6.3a1711738893.tar.gz tmp/pulumi_onelogin-0.6.3a1712400576.tar.gz --markdown 20240407/p/pulumi-onelogin/0.6.3a1711738893-0.6.3a1712400576/diff.md --exclude *.pyd
+[2024-04-07 08:11:31] INFO root fetch - processPackages [pulumi-newrelic]: Downloading https://files.pythonhosted.org/packages/43/ba/b3c2500610b8b3fabfc1479cb763f9657e73613a00e1e2f96ee26cec9a63/pulumi_newrelic-5.9.1.tar.gz
+[2024-04-07 08:11:31] INFO root fetch - processPackages [FSRS-Optimizer]: Downloading https://files.pythonhosted.org/packages/27/db/53f188d4c7d7816753b79f8815d890ddec6e330cf3864087d6e403ae05ed/FSRS-Optimizer-4.9.1.tar.gz
+[2024-04-07 08:11:31] WARNING root fetch - processPackages [FSRS-Optimizer]: Timeout reached during download
+[2024-04-07 08:11:31] INFO root fetch - processPackages [FSRS-Optimizer]: executing diffoscope
+[2024-04-07 08:11:31] INFO root fetch - processPackages [FSRS-Optimizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FSRS-Optimizer-4.9.0.tar.gz tmp/FSRS-Optimizer-4.9.1.tar.gz --markdown 20240407/F/FSRS-Optimizer/4.9.0-4.9.1/diff.md --exclude *.pyd
+[2024-04-07 08:11:31] WARNING root fetch - processPackages [pulumi-newrelic]: Timeout reached during download
+[2024-04-07 08:11:31] INFO root fetch - processPackages [pulumi-newrelic]: executing diffoscope
+[2024-04-07 08:11:31] INFO root fetch - processPackages [pulumi-newrelic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_newrelic-5.9.0a1680282898.tar.gz tmp/pulumi_newrelic-5.9.1.tar.gz --markdown 20240407/p/pulumi-newrelic/5.9.0a1680282898-5.9.1/diff.md --exclude *.pyd
+[2024-04-07 08:11:32] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.98.tar.gz]
+[2024-04-07 08:11:32] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.99.tar.gz]
+[2024-04-07 08:11:32] INFO root fetch - main [MainThread]: End processing [htscf]: success
+[2024-04-07 08:11:32] INFO root fetch - processPackages [FSRS-Optimizer]: Remove: archive file [/home/abi/fetcher/tmp/FSRS-Optimizer-4.9.0.tar.gz]
+[2024-04-07 08:11:32] INFO root fetch - processPackages [FSRS-Optimizer]: Remove: archive file [/home/abi/fetcher/tmp/FSRS-Optimizer-4.9.1.tar.gz]
+[2024-04-07 08:11:32] INFO root fetch - main [MainThread]: End processing [FSRS-Optimizer]: success
+[2024-04-07 08:11:32] INFO root fetch - processPackages [pulumi-onelogin]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_onelogin-0.6.3a1711738893.tar.gz]
+[2024-04-07 08:11:32] INFO root fetch - processPackages [pulumi-onelogin]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_onelogin-0.6.3a1712400576.tar.gz]
+[2024-04-07 08:11:32] INFO root fetch - main [MainThread]: End processing [pulumi-onelogin]: success
+[2024-04-07 08:11:32] INFO root fetch - processPackages [pulumi-newrelic]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_newrelic-5.9.0a1680282898.tar.gz]
+[2024-04-07 08:11:32] INFO root fetch - processPackages [pulumi-newrelic]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_newrelic-5.9.1.tar.gz]
+[2024-04-07 08:11:32] INFO root fetch - main [MainThread]: End processing [pulumi-newrelic]: success
+[2024-04-07 08:11:32] INFO root fetch - main [MainThread]: Store serial: [22653929]
