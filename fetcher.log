@@ -16180,3 +16180,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 18:49:16] INFO root fetch - processPackages [xmlschema]: Remove: archive file [/home/abi/fetcher/tmp/xmlschema-3.2.0.tar.gz]
 [2024-04-07 18:49:16] INFO root fetch - main [MainThread]: End processing [xmlschema]: success
 [2024-04-07 18:49:16] INFO root fetch - main [MainThread]: Store serial: [22657695]
+[2024-04-07 18:51:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657695]
+[2024-04-07 18:51:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 18:51:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-aws
+[2024-04-07 18:51:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: potnanny
+[2024-04-07 18:51:25] INFO root fetch - processPackages [pulumi-aws]: New version: [6.9.0a1700084435] Old Version: [6.9.0a1699991594]
+[2024-04-07 18:51:25] INFO root fetch - processPackages [potnanny]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-07 18:51:25] INFO root fetch - processPackages [pulumi-aws]: Downloading https://files.pythonhosted.org/packages/e1/df/14b748e40340692e18bd19ad3631916881c3bfc6ab8cc9db1f79ca1fb86a/pulumi_aws-6.9.0a1699991594.tar.gz
+[2024-04-07 18:51:25] INFO root fetch - processPackages [potnanny]: Downloading https://files.pythonhosted.org/packages/61/34/179aadad3962eb42b140b3eceda5268dbe609b464322a7d5b7b66f735483/potnanny-0.4.8.tar.gz
+[2024-04-07 18:51:25] WARNING root fetch - processPackages [potnanny]: Timeout reached during download
+[2024-04-07 18:51:25] INFO root fetch - processPackages [potnanny]: Downloading https://files.pythonhosted.org/packages/7f/44/64751d1726858c221d9407fb5e3b3129f1ba1b8040c9afe52efb09514e6f/potnanny-0.4.9.tar.gz
+[2024-04-07 18:51:26] WARNING root fetch - processPackages [potnanny]: Timeout reached during download
+[2024-04-07 18:51:26] INFO root fetch - processPackages [potnanny]: executing diffoscope
+[2024-04-07 18:51:26] INFO root fetch - processPackages [potnanny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/potnanny-0.4.8.tar.gz tmp/potnanny-0.4.9.tar.gz --markdown 20240407/p/potnanny/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2024-04-07 18:51:27] INFO root fetch - processPackages [potnanny]: Remove: archive file [/home/abi/fetcher/tmp/potnanny-0.4.8.tar.gz]
+[2024-04-07 18:51:27] INFO root fetch - processPackages [potnanny]: Remove: archive file [/home/abi/fetcher/tmp/potnanny-0.4.9.tar.gz]
+[2024-04-07 18:51:27] INFO root fetch - main [MainThread]: End processing [potnanny]: success
+[2024-04-07 18:51:28] WARNING root fetch - processPackages [pulumi-aws]: Timeout reached during download
+[2024-04-07 18:51:28] INFO root fetch - processPackages [pulumi-aws]: Downloading https://files.pythonhosted.org/packages/f3/70/32e3669ea3bb0042d4f4aac12c2584c3217ddc25b9e1646f05b9a9e1a24f/pulumi_aws-6.9.0a1700084435.tar.gz
+[2024-04-07 18:51:30] WARNING root fetch - processPackages [pulumi-aws]: Timeout reached during download
+[2024-04-07 18:51:30] INFO root fetch - processPackages [pulumi-aws]: executing diffoscope
+[2024-04-07 18:51:30] INFO root fetch - processPackages [pulumi-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aws-6.9.0a1699991594.tar.gz tmp/pulumi_aws-6.9.0a1700084435.tar.gz --markdown 20240407/p/pulumi-aws/6.9.0a1699991594-6.9.0a1700084435/diff.md --exclude *.pyd
+[2024-04-07 18:51:46] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1699991594.tar.gz]
+[2024-04-07 18:51:46] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1700084435.tar.gz]
+[2024-04-07 18:51:46] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
+[2024-04-07 18:51:46] INFO root fetch - main [MainThread]: Store serial: [22657701]
