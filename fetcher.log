@@ -3982,3 +3982,28 @@
 [2024-04-07 05:32:38] INFO root fetch - processPackages [picle]: Remove: archive file [/home/abi/fetcher/tmp/picle-0.5.0.tar.gz]
 [2024-04-07 05:32:38] INFO root fetch - main [MainThread]: End processing [picle]: success
 [2024-04-07 05:32:38] INFO root fetch - main [MainThread]: Store serial: [22653268]
+[2024-04-07 05:34:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653268]
+[2024-04-07 05:34:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 05:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BiLLM
+[2024-04-07 05:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gink
+[2024-04-07 05:34:47] INFO root fetch - processPackages [BiLLM]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-07 05:34:47] INFO root fetch - processPackages [gink]: New version: [0.20240407.1712458039] Old Version: [0.20240407.1712458030]
+[2024-04-07 05:34:47] INFO root fetch - processPackages [BiLLM]: Downloading https://files.pythonhosted.org/packages/cd/f1/f7d4971bfcf3db66c42dd7ec441be796f867387a833c6bf62f0e3ac5ef97/billm-0.1.1.tar.gz
+[2024-04-07 05:34:47] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/bb/5f/6232b37251c9525164339f879559d7698f48686d43627c6ea00c7f9adf8b/gink-0.20240407.1712458030.tar.gz
+[2024-04-07 05:34:47] WARNING root fetch - processPackages [BiLLM]: Timeout reached during download
+[2024-04-07 05:34:47] WARNING root fetch - processPackages [gink]: Timeout reached during download
+[2024-04-07 05:34:47] INFO root fetch - processPackages [BiLLM]: Downloading https://files.pythonhosted.org/packages/f7/be/ce25a08467a0f2925f122d34a2dca5adc644d6682450636c798bb1bec27e/billm-0.1.2.tar.gz
+[2024-04-07 05:34:47] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/c9/28/b1eb96de756cccde84ca633b4b353de88dc402a02dd3b40e75d3599304fb/gink-0.20240407.1712458039.tar.gz
+[2024-04-07 05:34:47] WARNING root fetch - processPackages [BiLLM]: Timeout reached during download
+[2024-04-07 05:34:47] INFO root fetch - processPackages [BiLLM]: executing diffoscope
+[2024-04-07 05:34:47] INFO root fetch - processPackages [BiLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/billm-0.1.1.tar.gz tmp/billm-0.1.2.tar.gz --markdown 20240407/B/BiLLM/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-07 05:34:47] WARNING root fetch - processPackages [gink]: Timeout reached during download
+[2024-04-07 05:34:47] INFO root fetch - processPackages [gink]: executing diffoscope
+[2024-04-07 05:34:47] INFO root fetch - processPackages [gink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gink-0.20240407.1712458030.tar.gz tmp/gink-0.20240407.1712458039.tar.gz --markdown 20240407/g/gink/0.20240407.1712458030-0.20240407.1712458039/diff.md --exclude *.pyd
+[2024-04-07 05:34:48] INFO root fetch - processPackages [BiLLM]: Remove: archive file [/home/abi/fetcher/tmp/billm-0.1.1.tar.gz]
+[2024-04-07 05:34:48] INFO root fetch - processPackages [BiLLM]: Remove: archive file [/home/abi/fetcher/tmp/billm-0.1.2.tar.gz]
+[2024-04-07 05:34:48] INFO root fetch - main [MainThread]: End processing [BiLLM]: success
+[2024-04-07 05:34:48] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240407.1712458030.tar.gz]
+[2024-04-07 05:34:48] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240407.1712458039.tar.gz]
+[2024-04-07 05:34:48] INFO root fetch - main [MainThread]: End processing [gink]: success
+[2024-04-07 05:34:48] INFO root fetch - main [MainThread]: Store serial: [22653274]
