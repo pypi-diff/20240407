@@ -6922,3 +6922,31 @@
 [2024-04-07 09:02:05] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip]
 [2024-04-07 09:02:05] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2024-04-07 09:02:05] INFO root fetch - main [MainThread]: Store serial: [22654228]
+[2024-04-07 09:04:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654228]
+[2024-04-07 09:04:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 09:04:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seqio-nightly
+[2024-04-07 09:04:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ragdaemon
+[2024-04-07 09:04:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypaperless
+[2024-04-07 09:04:13] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2024-04-07 09:04:14] WARNING root fetch - processPackages [ragdaemon]: Skipping, unable to determine old version
+[2024-04-07 09:04:14] INFO root fetch - main [MainThread]: End processing [ragdaemon] error
+[2024-04-07 09:04:14] INFO root fetch - processPackages [pypaperless]: New version: [3.1.2] Old Version: [3.1.1]
+[2024-04-07 09:04:14] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/43/a0/f60ad514b6f8534fa5ba8cc5fcc2a8f2e32e7d06d2dbfd43b12c2cb29931/seqio-nightly-0.0.8.dev20220906.tar.gz
+[2024-04-07 09:04:14] INFO root fetch - processPackages [pypaperless]: Downloading https://files.pythonhosted.org/packages/fe/1d/801833af22be24c66a541b06e1ca232ced957e7742043ade04908bb4ee99/pypaperless-3.1.1.tar.gz
+[2024-04-07 09:04:14] WARNING root fetch - processPackages [seqio-nightly]: Timeout reached during download
+[2024-04-07 09:04:14] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/2a/76/25f4c7602cdd724deac948a914e454756abfad2119a525c06d9ce341b918/seqio-nightly-0.0.8.dev20220907.tar.gz
+[2024-04-07 09:04:14] WARNING root fetch - processPackages [pypaperless]: Timeout reached during download
+[2024-04-07 09:04:14] WARNING root fetch - processPackages [seqio-nightly]: Timeout reached during download
+[2024-04-07 09:04:14] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2024-04-07 09:04:14] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20240407/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/diff.md --exclude *.pyd
+[2024-04-07 09:04:14] INFO root fetch - processPackages [pypaperless]: Downloading https://files.pythonhosted.org/packages/ab/93/6eccc504ffb32501f21e7ab56c1e945f1ef1ec0a5c0f72f4fa470a0e29a5/pypaperless-3.1.2.tar.gz
+[2024-04-07 09:04:14] WARNING root fetch - processPackages [pypaperless]: Timeout reached during download
+[2024-04-07 09:04:14] INFO root fetch - processPackages [pypaperless]: executing diffoscope
+[2024-04-07 09:04:14] INFO root fetch - processPackages [pypaperless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypaperless-3.1.1.tar.gz tmp/pypaperless-3.1.2.tar.gz --markdown 20240407/p/pypaperless/3.1.1-3.1.2/diff.md --exclude *.pyd
+[2024-04-07 09:04:15] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220906.tar.gz]
+[2024-04-07 09:04:15] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220907.tar.gz]
+[2024-04-07 09:04:15] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2024-04-07 09:04:15] INFO root fetch - processPackages [pypaperless]: Remove: archive file [/home/abi/fetcher/tmp/pypaperless-3.1.1.tar.gz]
+[2024-04-07 09:04:15] INFO root fetch - processPackages [pypaperless]: Remove: archive file [/home/abi/fetcher/tmp/pypaperless-3.1.2.tar.gz]
+[2024-04-07 09:04:15] INFO root fetch - main [MainThread]: End processing [pypaperless]: success
+[2024-04-07 09:04:15] INFO root fetch - main [MainThread]: Store serial: [22654239]
