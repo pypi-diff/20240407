@@ -20841,3 +20841,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:40:06] INFO root fetch - processPackages [craftax]: Remove: archive file [/home/abi/fetcher/tmp/craftax-1.3.0.tar.gz]
 [2024-04-07 23:40:06] INFO root fetch - main [MainThread]: End processing [craftax]: success
 [2024-04-07 23:40:06] INFO root fetch - main [MainThread]: Store serial: [22659550]
+[2024-04-07 23:42:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659550]
+[2024-04-07 23:42:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 23:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jafgen
+[2024-04-07 23:42:16] INFO root fetch - processPackages [jafgen]: New version: [0.4.9] Old Version: [0.4.6]
+[2024-04-07 23:42:16] INFO root fetch - processPackages [jafgen]: Downloading https://files.pythonhosted.org/packages/46/22/98dec1c130155ed3d16912e7e12421eff1489506bc72f8a0b443f5fa370c/jafgen-0.4.6.tar.gz
+[2024-04-07 23:42:16] WARNING root fetch - processPackages [jafgen]: Timeout reached during download
+[2024-04-07 23:42:16] INFO root fetch - processPackages [jafgen]: Downloading https://files.pythonhosted.org/packages/46/c4/300a1dab2933592bc4482ab40a7989479e27a5001a28995099392335c1cc/jafgen-0.4.9.tar.gz
+[2024-04-07 23:42:17] WARNING root fetch - processPackages [jafgen]: Timeout reached during download
+[2024-04-07 23:42:17] INFO root fetch - processPackages [jafgen]: executing diffoscope
+[2024-04-07 23:42:17] INFO root fetch - processPackages [jafgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jafgen-0.4.6.tar.gz tmp/jafgen-0.4.9.tar.gz --markdown 20240407/j/jafgen/0.4.6-0.4.9/diff.md --exclude *.pyd
+[2024-04-07 23:42:17] INFO root fetch - processPackages [jafgen]: Remove: archive file [/home/abi/fetcher/tmp/jafgen-0.4.6.tar.gz]
+[2024-04-07 23:42:17] INFO root fetch - processPackages [jafgen]: Remove: archive file [/home/abi/fetcher/tmp/jafgen-0.4.9.tar.gz]
+[2024-04-07 23:42:17] INFO root fetch - main [MainThread]: End processing [jafgen]: success
+[2024-04-07 23:42:17] INFO root fetch - main [MainThread]: Store serial: [22659553]
