@@ -4465,3 +4465,33 @@
 [2024-04-07 06:07:16] INFO root fetch - processPackages [paradance]: Remove: archive file [/home/abi/fetcher/tmp/paradance-0.4.9.tar.gz]
 [2024-04-07 06:07:16] INFO root fetch - main [MainThread]: End processing [paradance]: success
 [2024-04-07 06:07:16] INFO root fetch - main [MainThread]: Store serial: [22653397]
+[2024-04-07 06:09:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653397]
+[2024-04-07 06:09:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 06:09:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: invexpo
+[2024-04-07 06:09:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hashcat
+[2024-04-07 06:09:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fennel-ai
+[2024-04-07 06:09:25] INFO root fetch - processPackages [hashcat]: New version: [5.1.0.post3] Old Version: [5.1.0.post2]
+[2024-04-07 06:09:25] INFO root fetch - processPackages [invexpo]: New version: [0.1.1] Old Version: [0.1]
+[2024-04-07 06:09:25] INFO root fetch - processPackages [fennel-ai]: New version: [1.2.0] Old Version: [1.1.9]
+[2024-04-07 06:09:26] INFO root fetch - processPackages [hashcat]: Downloading https://files.pythonhosted.org/packages/82/c6/2efc41e75bd81518d4a104fe1deb40a648e5d5bbe60276dfc1f360da5050/hashcat-5.1.0.post2.tar.gz
+[2024-04-07 06:09:26] INFO root fetch - processPackages [invexpo]: Downloading https://files.pythonhosted.org/packages/e1/65/fa90175b9b8ba5c2fa3bd0ede949d4c3a25abd368f51a158d384ea2e2c90/invexpo-0.1.tar.gz
+[2024-04-07 06:09:26] INFO root fetch - processPackages [fennel-ai]: Downloading https://files.pythonhosted.org/packages/a7/b3/e507752caf2e7bfd3ce0a59c027966be3e0e1321607ee8d6a4b4ca7eefc9/fennel_ai-1.1.9.tar.gz
+[2024-04-07 06:09:26] WARNING root fetch - processPackages [invexpo]: Timeout reached during download
+[2024-04-07 06:09:26] WARNING root fetch - processPackages [fennel-ai]: Skipping package: exceeds size limit 40188623>=10485760
+[2024-04-07 06:09:26] INFO root fetch - main [MainThread]: End processing [fennel-ai] error
+[2024-04-07 06:09:26] INFO root fetch - processPackages [invexpo]: Downloading https://files.pythonhosted.org/packages/20/fe/13c2af39b91356e2314aa59fd9803cd16177b20b248cc377ff590d8d8125/invexpo-0.1.1.tar.gz
+[2024-04-07 06:09:26] WARNING root fetch - processPackages [invexpo]: Timeout reached during download
+[2024-04-07 06:09:26] INFO root fetch - processPackages [invexpo]: executing diffoscope
+[2024-04-07 06:09:26] INFO root fetch - processPackages [invexpo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invexpo-0.1.tar.gz tmp/invexpo-0.1.1.tar.gz --markdown 20240407/i/invexpo/0.1-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 06:09:27] INFO root fetch - processPackages [invexpo]: Remove: archive file [/home/abi/fetcher/tmp/invexpo-0.1.tar.gz]
+[2024-04-07 06:09:27] INFO root fetch - processPackages [invexpo]: Remove: archive file [/home/abi/fetcher/tmp/invexpo-0.1.1.tar.gz]
+[2024-04-07 06:09:27] INFO root fetch - main [MainThread]: End processing [invexpo]: success
+[2024-04-07 06:09:27] WARNING root fetch - processPackages [hashcat]: Timeout reached during download
+[2024-04-07 06:09:27] INFO root fetch - processPackages [hashcat]: Downloading https://files.pythonhosted.org/packages/90/2d/60c5bc06e31f9e88622ef933c70bc10df0c55d7bff96ae55c448dc5b79e2/hashcat-5.1.0.post3.tar.gz
+[2024-04-07 06:09:28] WARNING root fetch - processPackages [hashcat]: Timeout reached during download
+[2024-04-07 06:09:28] INFO root fetch - processPackages [hashcat]: executing diffoscope
+[2024-04-07 06:09:28] INFO root fetch - processPackages [hashcat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hashcat-5.1.0.post2.tar.gz tmp/hashcat-5.1.0.post3.tar.gz --markdown 20240407/h/hashcat/5.1.0.post2-5.1.0.post3/diff.md --exclude *.pyd
+[2024-04-07 06:09:32] INFO root fetch - processPackages [hashcat]: Remove: archive file [/home/abi/fetcher/tmp/hashcat-5.1.0.post2.tar.gz]
+[2024-04-07 06:09:32] INFO root fetch - processPackages [hashcat]: Remove: archive file [/home/abi/fetcher/tmp/hashcat-5.1.0.post3.tar.gz]
+[2024-04-07 06:09:32] INFO root fetch - main [MainThread]: End processing [hashcat]: success
+[2024-04-07 06:09:32] INFO root fetch - main [MainThread]: Store serial: [22653407]
