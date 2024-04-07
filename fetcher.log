@@ -3923,3 +3923,31 @@
 [2024-04-07 05:26:07] INFO root fetch - processPackages [tablemaster]: Remove: archive file [/home/abi/fetcher/tmp/tablemaster-1.1.5.tar.gz]
 [2024-04-07 05:26:07] INFO root fetch - main [MainThread]: End processing [tablemaster]: success
 [2024-04-07 05:26:07] INFO root fetch - main [MainThread]: Store serial: [22653240]
+[2024-04-07 05:28:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653240]
+[2024-04-07 05:28:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 05:28:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytubefix
+[2024-04-07 05:28:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dialog-workflow-local
+[2024-04-07 05:28:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neuroai
+[2024-04-07 05:28:17] WARNING root fetch - processPackages [neuroai]: Skipping, unable to determine old version
+[2024-04-07 05:28:17] INFO root fetch - processPackages [dialog-workflow-local]: New version: [0.0.88] Old Version: [0.0.87]
+[2024-04-07 05:28:17] INFO root fetch - main [MainThread]: End processing [neuroai] error
+[2024-04-07 05:28:17] INFO root fetch - processPackages [pytubefix]: New version: [5.1rc1] Old Version: [5.0rc2]
+[2024-04-07 05:28:17] INFO root fetch - processPackages [dialog-workflow-local]: Downloading https://files.pythonhosted.org/packages/44/1e/d9ea865497cc1388832cfdc2b3b051bb3bf42cfe2d52760207c44c645b03/dialog-workflow-local-0.0.87.tar.gz
+[2024-04-07 05:28:17] INFO root fetch - processPackages [pytubefix]: Downloading https://files.pythonhosted.org/packages/d9/b2/dc29e2f8c18091cab0afc685438b9c605f5c66ded3c5f867762b96678693/pytubefix-5.0rc2.tar.gz
+[2024-04-07 05:28:17] WARNING root fetch - processPackages [dialog-workflow-local]: Timeout reached during download
+[2024-04-07 05:28:17] WARNING root fetch - processPackages [pytubefix]: Timeout reached during download
+[2024-04-07 05:28:17] INFO root fetch - processPackages [dialog-workflow-local]: Downloading https://files.pythonhosted.org/packages/b7/1f/cb951830d31db8269b8767589f86bee3633ab386620efc20bf5af8458951/dialog-workflow-local-0.0.88.tar.gz
+[2024-04-07 05:28:17] INFO root fetch - processPackages [pytubefix]: Downloading https://files.pythonhosted.org/packages/22/97/4e75a25a55d84f4d309482433534ad8a912b59260cabbf4cb8091b85fcc1/pytubefix-5.1rc1.tar.gz
+[2024-04-07 05:28:17] WARNING root fetch - processPackages [dialog-workflow-local]: Timeout reached during download
+[2024-04-07 05:28:17] INFO root fetch - processPackages [dialog-workflow-local]: executing diffoscope
+[2024-04-07 05:28:17] INFO root fetch - processPackages [dialog-workflow-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dialog-workflow-local-0.0.87.tar.gz tmp/dialog-workflow-local-0.0.88.tar.gz --markdown 20240407/d/dialog-workflow-local/0.0.87-0.0.88/diff.md --exclude *.pyd
+[2024-04-07 05:28:17] WARNING root fetch - processPackages [pytubefix]: Timeout reached during download
+[2024-04-07 05:28:17] INFO root fetch - processPackages [pytubefix]: executing diffoscope
+[2024-04-07 05:28:17] INFO root fetch - processPackages [pytubefix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytubefix-5.0rc2.tar.gz tmp/pytubefix-5.1rc1.tar.gz --markdown 20240407/p/pytubefix/5.0rc2-5.1rc1/diff.md --exclude *.pyd
+[2024-04-07 05:28:18] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog-workflow-local-0.0.87.tar.gz]
+[2024-04-07 05:28:18] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog-workflow-local-0.0.88.tar.gz]
+[2024-04-07 05:28:18] INFO root fetch - main [MainThread]: End processing [dialog-workflow-local]: success
+[2024-04-07 05:28:18] INFO root fetch - processPackages [pytubefix]: Remove: archive file [/home/abi/fetcher/tmp/pytubefix-5.0rc2.tar.gz]
+[2024-04-07 05:28:18] INFO root fetch - processPackages [pytubefix]: Remove: archive file [/home/abi/fetcher/tmp/pytubefix-5.1rc1.tar.gz]
+[2024-04-07 05:28:18] INFO root fetch - main [MainThread]: End processing [pytubefix]: success
+[2024-04-07 05:28:18] INFO root fetch - main [MainThread]: Store serial: [22653254]
