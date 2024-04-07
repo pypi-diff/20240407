@@ -3560,3 +3560,41 @@
 [2024-04-07 04:55:52] INFO root fetch - processPackages [geminiai-chat-python]: Remove: archive file [/home/abi/fetcher/tmp/geminiai-chat-python-0.4.tar.gz]
 [2024-04-07 04:55:52] INFO root fetch - main [MainThread]: End processing [geminiai-chat-python]: success
 [2024-04-07 04:55:52] INFO root fetch - main [MainThread]: Store serial: [22653086]
+[2024-04-07 04:57:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653086]
+[2024-04-07 04:58:00] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 05:00:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653086]
+[2024-04-07 05:00:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 05:00:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nasdaq-stock
+[2024-04-07 05:00:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pdb-openai
+[2024-04-07 05:00:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: specnn4pde
+[2024-04-07 05:00:06] INFO root fetch - processPackages [specnn4pde]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-07 05:00:06] INFO root fetch - processPackages [specnn4pde]: Downloading https://files.pythonhosted.org/packages/c6/eb/334619168c4cafceb4a57950f76bd3d9267a906411f92ef5555239473214/specnn4pde-0.0.3.tar.gz
+[2024-04-07 05:00:06] INFO root fetch - processPackages [nasdaq-stock]: New version: [0.0.5] Old Version: [0.0.3]
+[2024-04-07 05:00:06] INFO root fetch - processPackages [pdb-openai]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-07 05:00:06] WARNING root fetch - processPackages [specnn4pde]: Timeout reached during download
+[2024-04-07 05:00:06] INFO root fetch - processPackages [specnn4pde]: Downloading https://files.pythonhosted.org/packages/88/be/910eb11a33855c49d647d4e9e8f7e02b1d9af2923571dff463f91b730a8c/specnn4pde-0.0.4.tar.gz
+[2024-04-07 05:00:06] WARNING root fetch - processPackages [specnn4pde]: Timeout reached during download
+[2024-04-07 05:00:06] INFO root fetch - processPackages [specnn4pde]: executing diffoscope
+[2024-04-07 05:00:06] INFO root fetch - processPackages [specnn4pde]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/specnn4pde-0.0.3.tar.gz tmp/specnn4pde-0.0.4.tar.gz --markdown 20240407/s/specnn4pde/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 05:00:06] INFO root fetch - processPackages [nasdaq-stock]: Downloading https://files.pythonhosted.org/packages/a2/b5/2ae7abca678c89ba4c501b7bdccbd8bcb491fbaaa5d3a13747616f4b1105/nasdaq_stock-0.0.3.tar.gz
+[2024-04-07 05:00:06] INFO root fetch - processPackages [pdb-openai]: Downloading https://files.pythonhosted.org/packages/b9/11/191cfcdfb4ff72b6c2cbb034d30bb5bc8bdfbd27b1e5ed86a5e18a89e48e/pdb_openai-0.0.5.tar.gz
+[2024-04-07 05:00:06] WARNING root fetch - processPackages [pdb-openai]: Timeout reached during download
+[2024-04-07 05:00:06] WARNING root fetch - processPackages [nasdaq-stock]: Timeout reached during download
+[2024-04-07 05:00:07] INFO root fetch - processPackages [pdb-openai]: Downloading https://files.pythonhosted.org/packages/d8/6b/732cc2820fe77cef1ed2a30448c7302aeb03163586b176a84e8870751ec8/pdb_openai-0.0.6.tar.gz
+[2024-04-07 05:00:07] WARNING root fetch - processPackages [pdb-openai]: Timeout reached during download
+[2024-04-07 05:00:07] INFO root fetch - processPackages [pdb-openai]: executing diffoscope
+[2024-04-07 05:00:07] INFO root fetch - processPackages [pdb-openai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdb_openai-0.0.5.tar.gz tmp/pdb_openai-0.0.6.tar.gz --markdown 20240407/p/pdb-openai/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-07 05:00:07] INFO root fetch - processPackages [nasdaq-stock]: Downloading https://files.pythonhosted.org/packages/cc/ea/74ae32c4ed8ff072d7cd9eb6e684122f3e82e18df3d5075a9e7511cc3653/nasdaq_stock-0.0.5.tar.gz
+[2024-04-07 05:00:07] INFO root fetch - processPackages [specnn4pde]: Remove: archive file [/home/abi/fetcher/tmp/specnn4pde-0.0.3.tar.gz]
+[2024-04-07 05:00:07] INFO root fetch - processPackages [specnn4pde]: Remove: archive file [/home/abi/fetcher/tmp/specnn4pde-0.0.4.tar.gz]
+[2024-04-07 05:00:07] INFO root fetch - main [MainThread]: End processing [specnn4pde]: success
+[2024-04-07 05:00:07] WARNING root fetch - processPackages [nasdaq-stock]: Timeout reached during download
+[2024-04-07 05:00:07] INFO root fetch - processPackages [nasdaq-stock]: executing diffoscope
+[2024-04-07 05:00:07] INFO root fetch - processPackages [nasdaq-stock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nasdaq_stock-0.0.3.tar.gz tmp/nasdaq_stock-0.0.5.tar.gz --markdown 20240407/n/nasdaq-stock/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2024-04-07 05:00:07] INFO root fetch - processPackages [pdb-openai]: Remove: archive file [/home/abi/fetcher/tmp/pdb_openai-0.0.5.tar.gz]
+[2024-04-07 05:00:07] INFO root fetch - processPackages [pdb-openai]: Remove: archive file [/home/abi/fetcher/tmp/pdb_openai-0.0.6.tar.gz]
+[2024-04-07 05:00:07] INFO root fetch - main [MainThread]: End processing [pdb-openai]: success
+[2024-04-07 05:00:07] INFO root fetch - processPackages [nasdaq-stock]: Remove: archive file [/home/abi/fetcher/tmp/nasdaq_stock-0.0.3.tar.gz]
+[2024-04-07 05:00:07] INFO root fetch - processPackages [nasdaq-stock]: Remove: archive file [/home/abi/fetcher/tmp/nasdaq_stock-0.0.5.tar.gz]
+[2024-04-07 05:00:07] INFO root fetch - main [MainThread]: End processing [nasdaq-stock]: success
+[2024-04-07 05:00:07] INFO root fetch - main [MainThread]: Store serial: [22653097]
