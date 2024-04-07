@@ -17076,3 +17076,66 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:44:06] WARNING root fetch - processPackages [qstd-config]: Skipping, unable to determine old version
 [2024-04-07 19:44:06] INFO root fetch - main [MainThread]: End processing [qstd-config] error
 [2024-04-07 19:44:06] INFO root fetch - main [MainThread]: Store serial: [22658031]
+[2024-04-07 19:46:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658031]
+[2024-04-07 19:46:15] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 19:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neuro-fuzzy-matrix
+[2024-04-07 19:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: featransform
+[2024-04-07 19:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: many
+[2024-04-07 19:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: postgresql-integration-test
+[2024-04-07 19:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fennel-ai
+[2024-04-07 19:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: easy-utils-dev
+[2024-04-07 19:46:15] INFO root fetch - processPackages [postgresql-integration-test]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-07 19:46:15] INFO root fetch - processPackages [many]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-04-07 19:46:15] INFO root fetch - processPackages [easy-utils-dev]: New version: [2.8.9] Old Version: [2.8.8]
+[2024-04-07 19:46:15] INFO root fetch - processPackages [fennel-ai]: New version: [1.2.0] Old Version: [1.1.9]
+[2024-04-07 19:46:15] INFO root fetch - processPackages [many]: Downloading https://files.pythonhosted.org/packages/a0/19/d0df08ecc12b5d05e5ca990d7da0fa768504392bcbcc5ef3ad44ecc26f6b/many-0.7.0.tar.gz
+[2024-04-07 19:46:15] INFO root fetch - processPackages [neuro-fuzzy-matrix]: New version: [0.1] Old Version: [0.0]
+[2024-04-07 19:46:15] INFO root fetch - processPackages [featransform]: New version: [0.9.11] Old Version: [0.1.55]
+[2024-04-07 19:46:15] INFO root fetch - processPackages [fennel-ai]: Downloading https://files.pythonhosted.org/packages/a7/b3/e507752caf2e7bfd3ce0a59c027966be3e0e1321607ee8d6a4b4ca7eefc9/fennel_ai-1.1.9.tar.gz
+[2024-04-07 19:46:15] INFO root fetch - processPackages [easy-utils-dev]: Downloading https://files.pythonhosted.org/packages/d0/93/7d3610b6f67084ad67ecbd895c5e70590d1edff9babbc72a2d7802d125ad/easy_utils_dev-2.8.8.tar.gz
+[2024-04-07 19:46:15] WARNING root fetch - processPackages [fennel-ai]: Skipping package: exceeds size limit 40188623>=10485760
+[2024-04-07 19:46:15] INFO root fetch - main [MainThread]: End processing [fennel-ai] error
+[2024-04-07 19:46:15] WARNING root fetch - processPackages [many]: Timeout reached during download
+[2024-04-07 19:46:15] INFO root fetch - processPackages [neuro-fuzzy-matrix]: Downloading https://files.pythonhosted.org/packages/1a/ba/e279d8cb043deca946ce2a05313ef7b2a98a730f6c9ec06822a6540d57be/neuro_fuzzy_matrix-0.0.tar.gz
+[2024-04-07 19:46:16] WARNING root fetch - processPackages [easy-utils-dev]: Timeout reached during download
+[2024-04-07 19:46:16] INFO root fetch - processPackages [featransform]: Downloading https://files.pythonhosted.org/packages/6f/d6/d77ccbc0067d997ed1e199b3804fb426a343144ea23d5edd7cba2b78fe1c/featransform-0.1.55-py3-none-any.whl
+[2024-04-07 19:46:16] INFO root fetch - processPackages [postgresql-integration-test]: Downloading https://files.pythonhosted.org/packages/65/51/586356cb8a69ce236794639822de679e2dc6e4546c1b7d0fd895a8c4a995/postgresql-integration-test-0.0.1.tar.gz
+[2024-04-07 19:46:16] INFO root fetch - processPackages [easy-utils-dev]: Downloading https://files.pythonhosted.org/packages/cb/9e/733069bda720d8bb6841ec493e820c3c09b9c4914d51ce9ac1c70aa88fe9/easy_utils_dev-2.8.9.tar.gz
+[2024-04-07 19:46:16] WARNING root fetch - processPackages [featransform]: Timeout reached during download
+[2024-04-07 19:46:16] INFO root fetch - processPackages [many]: Downloading https://files.pythonhosted.org/packages/9e/01/7a5293aa6e8c86246d8a5a050265d3138ef52fefd24a18c329397a757f4f/many-0.7.1.tar.gz
+[2024-04-07 19:46:16] WARNING root fetch - processPackages [postgresql-integration-test]: Timeout reached during download
+[2024-04-07 19:46:16] WARNING root fetch - processPackages [neuro-fuzzy-matrix]: Timeout reached during download
+[2024-04-07 19:46:16] WARNING root fetch - processPackages [easy-utils-dev]: Timeout reached during download
+[2024-04-07 19:46:16] INFO root fetch - processPackages [easy-utils-dev]: executing diffoscope
+[2024-04-07 19:46:16] INFO root fetch - processPackages [easy-utils-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_utils_dev-2.8.8.tar.gz tmp/easy_utils_dev-2.8.9.tar.gz --markdown 20240407/e/easy-utils-dev/2.8.8-2.8.9/diff.md --exclude *.pyd
+[2024-04-07 19:46:16] WARNING root fetch - processPackages [many]: Timeout reached during download
+[2024-04-07 19:46:16] INFO root fetch - processPackages [many]: executing diffoscope
+[2024-04-07 19:46:16] INFO root fetch - processPackages [many]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/many-0.7.0.tar.gz tmp/many-0.7.1.tar.gz --markdown 20240407/m/many/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2024-04-07 19:46:16] INFO root fetch - processPackages [featransform]: Downloading https://files.pythonhosted.org/packages/ff/2d/891ca4677e7ffa64a9e23673581e2818d143209a98a409161c9117b9a5ad/featransform-0.9.11-py3-none-any.whl
+[2024-04-07 19:46:16] INFO root fetch - processPackages [neuro-fuzzy-matrix]: Downloading https://files.pythonhosted.org/packages/dc/db/1ed6414fe2de3c7cab900ba418d26f7eefbd247ee9af8d57633ec5817988/neuro_fuzzy_matrix-0.1.tar.gz
+[2024-04-07 19:46:16] INFO root fetch - processPackages [postgresql-integration-test]: Downloading https://files.pythonhosted.org/packages/74/94/39b00266b65e85bbac7177bace5fa89d9dc166ba9472619c718bf7a0bf93/postgresql-integration-test-0.0.2.tar.gz
+[2024-04-07 19:46:16] WARNING root fetch - processPackages [featransform]: Timeout reached during download
+[2024-04-07 19:46:16] INFO root fetch - processPackages [featransform]: executing diffoscope
+[2024-04-07 19:46:16] INFO root fetch - processPackages [featransform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featransform-0.1.55-py3-none-any.whl.zip tmp/featransform-0.9.11-py3-none-any.whl.zip --markdown 20240407/f/featransform/0.1.55-0.9.11/diff.md --exclude *.pyd
+[2024-04-07 19:46:16] WARNING root fetch - processPackages [postgresql-integration-test]: Timeout reached during download
+[2024-04-07 19:46:16] INFO root fetch - processPackages [postgresql-integration-test]: executing diffoscope
+[2024-04-07 19:46:16] INFO root fetch - processPackages [postgresql-integration-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/postgresql-integration-test-0.0.1.tar.gz tmp/postgresql-integration-test-0.0.2.tar.gz --markdown 20240407/p/postgresql-integration-test/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-07 19:46:16] WARNING root fetch - processPackages [neuro-fuzzy-matrix]: Timeout reached during download
+[2024-04-07 19:46:16] INFO root fetch - processPackages [neuro-fuzzy-matrix]: executing diffoscope
+[2024-04-07 19:46:16] INFO root fetch - processPackages [neuro-fuzzy-matrix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuro_fuzzy_matrix-0.0.tar.gz tmp/neuro_fuzzy_matrix-0.1.tar.gz --markdown 20240407/n/neuro-fuzzy-matrix/0.0-0.1/diff.md --exclude *.pyd
+[2024-04-07 19:46:16] INFO root fetch - processPackages [easy-utils-dev]: Remove: archive file [/home/abi/fetcher/tmp/easy_utils_dev-2.8.8.tar.gz]
+[2024-04-07 19:46:16] INFO root fetch - processPackages [easy-utils-dev]: Remove: archive file [/home/abi/fetcher/tmp/easy_utils_dev-2.8.9.tar.gz]
+[2024-04-07 19:46:16] INFO root fetch - main [MainThread]: End processing [easy-utils-dev]: success
+[2024-04-07 19:46:16] INFO root fetch - processPackages [many]: Remove: archive file [/home/abi/fetcher/tmp/many-0.7.0.tar.gz]
+[2024-04-07 19:46:16] INFO root fetch - processPackages [many]: Remove: archive file [/home/abi/fetcher/tmp/many-0.7.1.tar.gz]
+[2024-04-07 19:46:16] INFO root fetch - main [MainThread]: End processing [many]: success
+[2024-04-07 19:46:17] INFO root fetch - processPackages [featransform]: Remove: archive file [/home/abi/fetcher/tmp/featransform-0.1.55-py3-none-any.whl.zip]
+[2024-04-07 19:46:17] INFO root fetch - processPackages [featransform]: Remove: archive file [/home/abi/fetcher/tmp/featransform-0.9.11-py3-none-any.whl.zip]
+[2024-04-07 19:46:17] INFO root fetch - main [MainThread]: End processing [featransform]: success
+[2024-04-07 19:46:17] INFO root fetch - processPackages [neuro-fuzzy-matrix]: Remove: archive file [/home/abi/fetcher/tmp/neuro_fuzzy_matrix-0.0.tar.gz]
+[2024-04-07 19:46:17] INFO root fetch - processPackages [neuro-fuzzy-matrix]: Remove: archive file [/home/abi/fetcher/tmp/neuro_fuzzy_matrix-0.1.tar.gz]
+[2024-04-07 19:46:17] INFO root fetch - main [MainThread]: End processing [neuro-fuzzy-matrix]: success
+[2024-04-07 19:46:17] INFO root fetch - processPackages [postgresql-integration-test]: Remove: archive file [/home/abi/fetcher/tmp/postgresql-integration-test-0.0.1.tar.gz]
+[2024-04-07 19:46:17] INFO root fetch - processPackages [postgresql-integration-test]: Remove: archive file [/home/abi/fetcher/tmp/postgresql-integration-test-0.0.2.tar.gz]
+[2024-04-07 19:46:17] INFO root fetch - main [MainThread]: End processing [postgresql-integration-test]: success
+[2024-04-07 19:46:17] INFO root fetch - main [MainThread]: Store serial: [22658047]
