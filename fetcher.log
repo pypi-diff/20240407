@@ -5029,3 +5029,32 @@
 [2024-04-07 07:09:58] INFO root fetch - processPackages [alibabacloud-devops20210625-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_devops20210625_py2-4.9.0.tar.gz]
 [2024-04-07 07:09:58] INFO root fetch - main [MainThread]: End processing [alibabacloud-devops20210625-py2]: success
 [2024-04-07 07:09:58] INFO root fetch - main [MainThread]: Store serial: [22653552]
+[2024-04-07 07:12:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653552]
+[2024-04-07 07:12:06] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 07:14:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653552]
+[2024-04-07 07:14:12] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 07:16:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653552]
+[2024-04-07 07:16:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 07:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dialog-workflow-local
+[2024-04-07 07:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wagtail-fedit
+[2024-04-07 07:16:17] INFO root fetch - processPackages [dialog-workflow-local]: New version: [0.0.92] Old Version: [0.0.91]
+[2024-04-07 07:16:17] INFO root fetch - processPackages [wagtail-fedit]: New version: [1.4.0] Old Version: [1.3.9]
+[2024-04-07 07:16:17] INFO root fetch - processPackages [dialog-workflow-local]: Downloading https://files.pythonhosted.org/packages/f3/a7/2306e7d686c2db47ae12c80d195d124d529e0037b02cd3267786bc9959f5/dialog-workflow-local-0.0.91.tar.gz
+[2024-04-07 07:16:17] WARNING root fetch - processPackages [dialog-workflow-local]: Timeout reached during download
+[2024-04-07 07:16:17] INFO root fetch - processPackages [wagtail-fedit]: Downloading https://files.pythonhosted.org/packages/04/f6/f48f1d93e3d01531659cb0262350a14cf65aaf6978707b287b309d44ac01/wagtail_fedit-1.3.9.tar.gz
+[2024-04-07 07:16:18] WARNING root fetch - processPackages [wagtail-fedit]: Timeout reached during download
+[2024-04-07 07:16:18] INFO root fetch - processPackages [dialog-workflow-local]: Downloading https://files.pythonhosted.org/packages/b9/26/6ca2546e19eb8be8286d71d8c6f2900739b528775450ba86d23d4ded7938/dialog-workflow-local-0.0.92.tar.gz
+[2024-04-07 07:16:18] WARNING root fetch - processPackages [dialog-workflow-local]: Timeout reached during download
+[2024-04-07 07:16:18] INFO root fetch - processPackages [dialog-workflow-local]: executing diffoscope
+[2024-04-07 07:16:18] INFO root fetch - processPackages [dialog-workflow-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dialog-workflow-local-0.0.91.tar.gz tmp/dialog-workflow-local-0.0.92.tar.gz --markdown 20240407/d/dialog-workflow-local/0.0.91-0.0.92/diff.md --exclude *.pyd
+[2024-04-07 07:16:18] INFO root fetch - processPackages [wagtail-fedit]: Downloading https://files.pythonhosted.org/packages/5f/c3/9d6d6de0e6b7dbfe1c41ca3bf13b92a46691e9a92db89fe227768ee889be/wagtail_fedit-1.4.0.tar.gz
+[2024-04-07 07:16:18] WARNING root fetch - processPackages [wagtail-fedit]: Timeout reached during download
+[2024-04-07 07:16:18] INFO root fetch - processPackages [wagtail-fedit]: executing diffoscope
+[2024-04-07 07:16:18] INFO root fetch - processPackages [wagtail-fedit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail_fedit-1.3.9.tar.gz tmp/wagtail_fedit-1.4.0.tar.gz --markdown 20240407/w/wagtail-fedit/1.3.9-1.4.0/diff.md --exclude *.pyd
+[2024-04-07 07:16:18] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog-workflow-local-0.0.91.tar.gz]
+[2024-04-07 07:16:18] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog-workflow-local-0.0.92.tar.gz]
+[2024-04-07 07:16:18] INFO root fetch - main [MainThread]: End processing [dialog-workflow-local]: success
+[2024-04-07 07:16:19] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.3.9.tar.gz]
+[2024-04-07 07:16:19] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.4.0.tar.gz]
+[2024-04-07 07:16:19] INFO root fetch - main [MainThread]: End processing [wagtail-fedit]: success
+[2024-04-07 07:16:19] INFO root fetch - main [MainThread]: Store serial: [22653557]
