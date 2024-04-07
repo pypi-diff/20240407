@@ -15930,3 +15930,50 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 18:33:59] INFO root fetch - processPackages [astromcad]: Remove: archive file [/home/abi/fetcher/tmp/astromcad-0.1.3.tar.gz]
 [2024-04-07 18:33:59] INFO root fetch - main [MainThread]: End processing [astromcad]: success
 [2024-04-07 18:33:59] INFO root fetch - main [MainThread]: Store serial: [22657596]
+[2024-04-07 18:36:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657596]
+[2024-04-07 18:36:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 18:36:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: adjustor
+[2024-04-07 18:36:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kodexa
+[2024-04-07 18:36:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: akello
+[2024-04-07 18:36:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wolfbet
+[2024-04-07 18:36:08] INFO root fetch - processPackages [wolfbet]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-07 18:36:08] INFO root fetch - processPackages [wolfbet]: Downloading https://files.pythonhosted.org/packages/90/6c/d53d34db766f8f42923f7349454bca7f2b47f94e59a9bf446bd29ccfd89d/wolfbet-1.0.0.tar.gz
+[2024-04-07 18:36:08] INFO root fetch - processPackages [adjustor]: New version: [2.1.4] Old Version: [2.1.3]
+[2024-04-07 18:36:08] INFO root fetch - processPackages [akello]: New version: [0.0.22] Old Version: [0.0.21]
+[2024-04-07 18:36:08] WARNING root fetch - processPackages [wolfbet]: Timeout reached during download
+[2024-04-07 18:36:08] INFO root fetch - processPackages [adjustor]: Downloading https://files.pythonhosted.org/packages/ff/a7/c7b8735b69568eaca0c28f0f9626f37f57543b5d354121c6ef0b1cd9f392/adjustor-2.1.3.tar.gz
+[2024-04-07 18:36:08] INFO root fetch - processPackages [wolfbet]: Downloading https://files.pythonhosted.org/packages/66/bb/7bdb39d47e70bdb38e12589a99d47401e26917d6d7249afdaf9162386186/wolfbet-1.0.1.tar.gz
+[2024-04-07 18:36:08] WARNING root fetch - processPackages [adjustor]: Timeout reached during download
+[2024-04-07 18:36:09] WARNING root fetch - processPackages [wolfbet]: Timeout reached during download
+[2024-04-07 18:36:09] INFO root fetch - processPackages [wolfbet]: executing diffoscope
+[2024-04-07 18:36:09] INFO root fetch - processPackages [wolfbet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wolfbet-1.0.0.tar.gz tmp/wolfbet-1.0.1.tar.gz --markdown 20240407/w/wolfbet/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2024-04-07 18:36:09] INFO root fetch - processPackages [kodexa]: New version: [7.0.8590158740] Old Version: [7.0.8551368104]
+[2024-04-07 18:36:09] INFO root fetch - processPackages [akello]: Downloading https://files.pythonhosted.org/packages/d6/69/b1ec793d350fd2bc38337bfe7ea709c726c1a055dbd53f2ce6de4886ceb9/akello-0.0.21.tar.gz
+[2024-04-07 18:36:09] INFO root fetch - processPackages [adjustor]: Downloading https://files.pythonhosted.org/packages/47/35/4b152933713762e768a5c7f0f1b138b8526147b46bb5f8c155b33f577700/adjustor-2.1.4.tar.gz
+[2024-04-07 18:36:09] WARNING root fetch - processPackages [adjustor]: Timeout reached during download
+[2024-04-07 18:36:09] INFO root fetch - processPackages [adjustor]: executing diffoscope
+[2024-04-07 18:36:09] INFO root fetch - processPackages [adjustor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adjustor-2.1.3.tar.gz tmp/adjustor-2.1.4.tar.gz --markdown 20240407/a/adjustor/2.1.3-2.1.4/diff.md --exclude *.pyd
+[2024-04-07 18:36:09] INFO root fetch - processPackages [kodexa]: Downloading https://files.pythonhosted.org/packages/77/ac/d2e19432427672cd305be1b5ef259d6ae70b6160510af8d25521fad12438/kodexa-7.0.8551368104.tar.gz
+[2024-04-07 18:36:09] WARNING root fetch - processPackages [akello]: Timeout reached during download
+[2024-04-07 18:36:09] WARNING root fetch - processPackages [kodexa]: Timeout reached during download
+[2024-04-07 18:36:09] INFO root fetch - processPackages [wolfbet]: Remove: archive file [/home/abi/fetcher/tmp/wolfbet-1.0.0.tar.gz]
+[2024-04-07 18:36:09] INFO root fetch - processPackages [wolfbet]: Remove: archive file [/home/abi/fetcher/tmp/wolfbet-1.0.1.tar.gz]
+[2024-04-07 18:36:09] INFO root fetch - main [MainThread]: End processing [wolfbet]: success
+[2024-04-07 18:36:09] INFO root fetch - processPackages [akello]: Downloading https://files.pythonhosted.org/packages/f2/fe/82715dd87d3b092ac3f932c15748f9d710ba44f509d4215c02a559d22d56/akello-0.0.22.tar.gz
+[2024-04-07 18:36:09] INFO root fetch - processPackages [kodexa]: Downloading https://files.pythonhosted.org/packages/82/b1/e56c2b15c20c51192983529e47a26d08bfa822b0cc3724ce27edc26230cb/kodexa-7.0.8590158740.tar.gz
+[2024-04-07 18:36:09] WARNING root fetch - processPackages [kodexa]: Timeout reached during download
+[2024-04-07 18:36:09] INFO root fetch - processPackages [kodexa]: executing diffoscope
+[2024-04-07 18:36:09] INFO root fetch - processPackages [kodexa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kodexa-7.0.8551368104.tar.gz tmp/kodexa-7.0.8590158740.tar.gz --markdown 20240407/k/kodexa/7.0.8551368104-7.0.8590158740/diff.md --exclude *.pyd
+[2024-04-07 18:36:09] WARNING root fetch - processPackages [akello]: Timeout reached during download
+[2024-04-07 18:36:09] INFO root fetch - processPackages [akello]: executing diffoscope
+[2024-04-07 18:36:09] INFO root fetch - processPackages [akello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akello-0.0.21.tar.gz tmp/akello-0.0.22.tar.gz --markdown 20240407/a/akello/0.0.21-0.0.22/diff.md --exclude *.pyd
+[2024-04-07 18:36:09] INFO root fetch - processPackages [adjustor]: Remove: archive file [/home/abi/fetcher/tmp/adjustor-2.1.3.tar.gz]
+[2024-04-07 18:36:09] INFO root fetch - processPackages [adjustor]: Remove: archive file [/home/abi/fetcher/tmp/adjustor-2.1.4.tar.gz]
+[2024-04-07 18:36:09] INFO root fetch - main [MainThread]: End processing [adjustor]: success
+[2024-04-07 18:36:10] INFO root fetch - processPackages [kodexa]: Remove: archive file [/home/abi/fetcher/tmp/kodexa-7.0.8551368104.tar.gz]
+[2024-04-07 18:36:10] INFO root fetch - processPackages [kodexa]: Remove: archive file [/home/abi/fetcher/tmp/kodexa-7.0.8590158740.tar.gz]
+[2024-04-07 18:36:10] INFO root fetch - main [MainThread]: End processing [kodexa]: success
+[2024-04-07 18:36:10] INFO root fetch - processPackages [akello]: Remove: archive file [/home/abi/fetcher/tmp/akello-0.0.21.tar.gz]
+[2024-04-07 18:36:10] INFO root fetch - processPackages [akello]: Remove: archive file [/home/abi/fetcher/tmp/akello-0.0.22.tar.gz]
+[2024-04-07 18:36:10] INFO root fetch - main [MainThread]: End processing [akello]: success
+[2024-04-07 18:36:10] INFO root fetch - main [MainThread]: Store serial: [22657610]
