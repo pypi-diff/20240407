@@ -1246,3 +1246,28 @@
 [2024-04-07 01:59:17] INFO root fetch - processPackages [gguf-connector]: Remove: archive file [/home/abi/fetcher/tmp/gguf_connector-0.7.9.tar.gz]
 [2024-04-07 01:59:17] INFO root fetch - main [MainThread]: End processing [gguf-connector]: success
 [2024-04-07 01:59:17] INFO root fetch - main [MainThread]: Store serial: [22651940]
+[2024-04-07 02:01:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651940]
+[2024-04-07 02:01:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 02:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tjax
+[2024-04-07 02:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Send2Trash
+[2024-04-07 02:01:26] INFO root fetch - processPackages [Send2Trash]: New version: [1.8.2] Old Version: [1.8.1b0]
+[2024-04-07 02:01:26] INFO root fetch - processPackages [tjax]: New version: [0.9.0] Old Version: [0.8.4]
+[2024-04-07 02:01:26] INFO root fetch - processPackages [Send2Trash]: Downloading https://files.pythonhosted.org/packages/33/5f/c1cfa7254c0d41bfd54fc5fd80cac3cbcf8c9b7b799bae52e3493dbfd149/Send2Trash-1.8.1b0.tar.gz
+[2024-04-07 02:01:26] INFO root fetch - processPackages [tjax]: Downloading https://files.pythonhosted.org/packages/0a/6a/2363c88006dd7f98956bcd37716a18eff3b3138599af4e6dbde76d22d085/tjax-0.8.4.tar.gz
+[2024-04-07 02:01:27] WARNING root fetch - processPackages [Send2Trash]: Timeout reached during download
+[2024-04-07 02:01:27] WARNING root fetch - processPackages [tjax]: Timeout reached during download
+[2024-04-07 02:01:27] INFO root fetch - processPackages [Send2Trash]: Downloading https://files.pythonhosted.org/packages/4a/d2/d4b4d8b1564752b4e593c6d007426172b6574df5a7c07322feba010f5551/Send2Trash-1.8.2.tar.gz
+[2024-04-07 02:01:27] INFO root fetch - processPackages [tjax]: Downloading https://files.pythonhosted.org/packages/be/f1/ce1970f050f673ae52c304257120a380736f531fee4d81b57ab0f24b506f/tjax-0.9.0.tar.gz
+[2024-04-07 02:01:27] WARNING root fetch - processPackages [Send2Trash]: Timeout reached during download
+[2024-04-07 02:01:27] INFO root fetch - processPackages [Send2Trash]: executing diffoscope
+[2024-04-07 02:01:27] INFO root fetch - processPackages [Send2Trash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Send2Trash-1.8.1b0.tar.gz tmp/Send2Trash-1.8.2.tar.gz --markdown 20240407/S/Send2Trash/1.8.1b0-1.8.2/diff.md --exclude *.pyd
+[2024-04-07 02:01:27] WARNING root fetch - processPackages [tjax]: Timeout reached during download
+[2024-04-07 02:01:27] INFO root fetch - processPackages [tjax]: executing diffoscope
+[2024-04-07 02:01:27] INFO root fetch - processPackages [tjax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tjax-0.8.4.tar.gz tmp/tjax-0.9.0.tar.gz --markdown 20240407/t/tjax/0.8.4-0.9.0/diff.md --exclude *.pyd
+[2024-04-07 02:01:27] INFO root fetch - processPackages [Send2Trash]: Remove: archive file [/home/abi/fetcher/tmp/Send2Trash-1.8.1b0.tar.gz]
+[2024-04-07 02:01:27] INFO root fetch - processPackages [Send2Trash]: Remove: archive file [/home/abi/fetcher/tmp/Send2Trash-1.8.2.tar.gz]
+[2024-04-07 02:01:27] INFO root fetch - main [MainThread]: End processing [Send2Trash]: success
+[2024-04-07 02:01:27] INFO root fetch - processPackages [tjax]: Remove: archive file [/home/abi/fetcher/tmp/tjax-0.8.4.tar.gz]
+[2024-04-07 02:01:27] INFO root fetch - processPackages [tjax]: Remove: archive file [/home/abi/fetcher/tmp/tjax-0.9.0.tar.gz]
+[2024-04-07 02:01:28] INFO root fetch - main [MainThread]: End processing [tjax]: success
+[2024-04-07 02:01:28] INFO root fetch - main [MainThread]: Store serial: [22651946]
