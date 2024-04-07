@@ -11057,3 +11057,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:45:35] INFO root fetch - processPackages [pulumi-linode]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_linode-4.9.1.tar.gz]
 [2024-04-07 13:45:35] INFO root fetch - main [MainThread]: End processing [pulumi-linode]: success
 [2024-04-07 13:45:35] INFO root fetch - main [MainThread]: Store serial: [22655838]
+[2024-04-07 13:47:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655838]
+[2024-04-07 13:47:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 13:47:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ehdtd-daemon
+[2024-04-07 13:47:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gantt-project-maker
+[2024-04-07 13:47:44] INFO root fetch - processPackages [ehdtd-daemon]: New version: [0.1.7] Old Version: [0.1.5]
+[2024-04-07 13:47:44] INFO root fetch - processPackages [ehdtd-daemon]: Downloading https://files.pythonhosted.org/packages/97/d8/094aa64d8e7be1684890a7580e8ce73137b691e9f1dff7ce85c32dc8fd6e/ehdtd_daemon-0.1.5.tar.gz
+[2024-04-07 13:47:44] INFO root fetch - processPackages [gantt-project-maker]: New version: [0.4.2] Old Version: [0.3.7]
+[2024-04-07 13:47:44] WARNING root fetch - processPackages [ehdtd-daemon]: Timeout reached during download
+[2024-04-07 13:47:44] INFO root fetch - processPackages [gantt-project-maker]: Downloading https://files.pythonhosted.org/packages/f3/fa/8d99479c98a7b1d90caf3ce5c8cc5cea56c4b1bd330156c71f196f18a512/gantt-project-maker-0.3.7.tar.gz
+[2024-04-07 13:47:44] INFO root fetch - processPackages [ehdtd-daemon]: Downloading https://files.pythonhosted.org/packages/01/7c/37c0a0b9b7e73b758f3be5060a2cd75c8d457d288285feb275fcd114e406/ehdtd_daemon-0.1.7.tar.gz
+[2024-04-07 13:47:44] WARNING root fetch - processPackages [ehdtd-daemon]: Timeout reached during download
+[2024-04-07 13:47:44] INFO root fetch - processPackages [ehdtd-daemon]: executing diffoscope
+[2024-04-07 13:47:44] INFO root fetch - processPackages [ehdtd-daemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ehdtd_daemon-0.1.5.tar.gz tmp/ehdtd_daemon-0.1.7.tar.gz --markdown 20240407/e/ehdtd-daemon/0.1.5-0.1.7/diff.md --exclude *.pyd
+[2024-04-07 13:47:44] WARNING root fetch - processPackages [gantt-project-maker]: Timeout reached during download
+[2024-04-07 13:47:44] INFO root fetch - processPackages [gantt-project-maker]: Downloading https://files.pythonhosted.org/packages/82/61/fb0f4c0c2138d6ecc5ecda68182fa0c8495cf22974d843ca7811c77d19b9/gantt-project-maker-0.4.2.tar.gz
+[2024-04-07 13:47:44] WARNING root fetch - processPackages [gantt-project-maker]: Timeout reached during download
+[2024-04-07 13:47:44] INFO root fetch - processPackages [gantt-project-maker]: executing diffoscope
+[2024-04-07 13:47:44] INFO root fetch - processPackages [gantt-project-maker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gantt-project-maker-0.3.7.tar.gz tmp/gantt-project-maker-0.4.2.tar.gz --markdown 20240407/g/gantt-project-maker/0.3.7-0.4.2/diff.md --exclude *.pyd
+[2024-04-07 13:47:45] INFO root fetch - processPackages [ehdtd-daemon]: Remove: archive file [/home/abi/fetcher/tmp/ehdtd_daemon-0.1.5.tar.gz]
+[2024-04-07 13:47:45] INFO root fetch - processPackages [ehdtd-daemon]: Remove: archive file [/home/abi/fetcher/tmp/ehdtd_daemon-0.1.7.tar.gz]
+[2024-04-07 13:47:45] INFO root fetch - main [MainThread]: End processing [ehdtd-daemon]: success
+[2024-04-07 13:47:45] INFO root fetch - processPackages [gantt-project-maker]: Remove: archive file [/home/abi/fetcher/tmp/gantt-project-maker-0.3.7.tar.gz]
+[2024-04-07 13:47:45] INFO root fetch - processPackages [gantt-project-maker]: Remove: archive file [/home/abi/fetcher/tmp/gantt-project-maker-0.4.2.tar.gz]
+[2024-04-07 13:47:45] INFO root fetch - main [MainThread]: End processing [gantt-project-maker]: success
+[2024-04-07 13:47:45] INFO root fetch - main [MainThread]: Store serial: [22655846]
