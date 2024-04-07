@@ -1724,3 +1724,17 @@
 [2024-04-07 02:37:13] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.9-cp311-cp311-manylinux_2_17_armv7l.manylinux2014_armv7l.whl.zip]
 [2024-04-07 02:37:13] INFO root fetch - main [MainThread]: End processing [aws-packages]: success
 [2024-04-07 02:37:13] INFO root fetch - main [MainThread]: Store serial: [22652269]
+[2024-04-07 02:39:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652269]
+[2024-04-07 02:39:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 02:39:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pkscreener
+[2024-04-07 02:39:22] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240406.250] Old Version: [0.44.20240405.248]
+[2024-04-07 02:39:22] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/5c/0d/ceb9da6e3e73601f4c9d68fcc3079bcd79bb9feb3f7cd21868df17e6120b/pkscreener-0.44.20240405.248.tar.gz
+[2024-04-07 02:39:22] WARNING root fetch - processPackages [pkscreener]: Timeout reached during download
+[2024-04-07 02:39:22] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/f2/e3/71f9da8ebbc5787536e21a820bf6058c4dea49b2840b246548d93ae1e321/pkscreener-0.44.20240406.250.tar.gz
+[2024-04-07 02:39:22] WARNING root fetch - processPackages [pkscreener]: Timeout reached during download
+[2024-04-07 02:39:22] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-04-07 02:39:22] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240405.248.tar.gz tmp/pkscreener-0.44.20240406.250.tar.gz --markdown 20240407/p/pkscreener/0.44.20240405.248-0.44.20240406.250/diff.md --exclude *.pyd
+[2024-04-07 02:39:23] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240405.248.tar.gz]
+[2024-04-07 02:39:23] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240406.250.tar.gz]
+[2024-04-07 02:39:23] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-04-07 02:39:23] INFO root fetch - main [MainThread]: Store serial: [22652344]
