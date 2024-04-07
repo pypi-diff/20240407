@@ -8198,3 +8198,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 10:37:38] INFO root fetch - processPackages [moby-distribution]: Remove: archive file [/home/abi/fetcher/tmp/moby_distribution-0.7.2.tar.gz]
 [2024-04-07 10:37:38] INFO root fetch - main [MainThread]: End processing [moby-distribution]: success
 [2024-04-07 10:37:38] INFO root fetch - main [MainThread]: Store serial: [22654767]
+[2024-04-07 10:39:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654767]
+[2024-04-07 10:39:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 10:39:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kuzu
+[2024-04-07 10:39:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deepeval
+[2024-04-07 10:39:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BaseML
+[2024-04-07 10:39:46] INFO root fetch - processPackages [BaseML]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-07 10:39:46] INFO root fetch - processPackages [deepeval]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-07 10:39:46] INFO root fetch - processPackages [kuzu]: New version: [0.3.3.dev9] Old Version: [0.3.3.dev8]
+[2024-04-07 10:39:46] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/fa/ff/4af98fccfdf1938d3969ca49d52576d2858e4425725e85e84a82dc858cb1/kuzu-0.3.3.dev8.tar.gz
+[2024-04-07 10:39:47] INFO root fetch - processPackages [BaseML]: Downloading https://files.pythonhosted.org/packages/a4/cc/b60804a8dde515cfc4db689e42ba3b3e3992251408eebf8085aad52386b9/BaseML-0.1.2.tar.gz
+[2024-04-07 10:39:47] INFO root fetch - processPackages [deepeval]: Downloading https://files.pythonhosted.org/packages/8b/4e/74892f0e4e740898d3d9bbcb8e3e22adc9d2ca430699cb8a78a8b5e2697b/deepeval-0.9.8.tar.gz
+[2024-04-07 10:39:47] WARNING root fetch - processPackages [BaseML]: Timeout reached during download
+[2024-04-07 10:39:47] WARNING root fetch - processPackages [deepeval]: Timeout reached during download
+[2024-04-07 10:39:47] WARNING root fetch - processPackages [kuzu]: Timeout reached during download
+[2024-04-07 10:39:47] INFO root fetch - processPackages [BaseML]: Downloading https://files.pythonhosted.org/packages/11/e8/91adcc601f867203b7ad1488ce41a763fd88d9447a72fd82a29a0af5d45a/BaseML-0.1.3.tar.gz
+[2024-04-07 10:39:47] INFO root fetch - processPackages [deepeval]: Downloading https://files.pythonhosted.org/packages/79/cd/f07ea4ba3fa8fae91bc1bdecc3a7fc8882146f65614215058425221ac2e8/deepeval-0.9.9.tar.gz
+[2024-04-07 10:39:47] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/a2/67/22a60ceaa7cc3d03784a4c12db350f0f9d0b05181256e6007a55f7308e73/kuzu-0.3.3.dev9.tar.gz
+[2024-04-07 10:39:47] WARNING root fetch - processPackages [BaseML]: Timeout reached during download
+[2024-04-07 10:39:47] INFO root fetch - processPackages [BaseML]: executing diffoscope
+[2024-04-07 10:39:47] INFO root fetch - processPackages [BaseML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BaseML-0.1.2.tar.gz tmp/BaseML-0.1.3.tar.gz --markdown 20240407/B/BaseML/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2024-04-07 10:39:47] WARNING root fetch - processPackages [deepeval]: Timeout reached during download
+[2024-04-07 10:39:47] INFO root fetch - processPackages [deepeval]: executing diffoscope
+[2024-04-07 10:39:47] INFO root fetch - processPackages [deepeval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepeval-0.9.8.tar.gz tmp/deepeval-0.9.9.tar.gz --markdown 20240407/d/deepeval/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2024-04-07 10:39:47] WARNING root fetch - processPackages [kuzu]: Timeout reached during download
+[2024-04-07 10:39:47] INFO root fetch - processPackages [kuzu]: executing diffoscope
+[2024-04-07 10:39:47] INFO root fetch - processPackages [kuzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuzu-0.3.3.dev8.tar.gz tmp/kuzu-0.3.3.dev9.tar.gz --markdown 20240407/k/kuzu/0.3.3.dev8-0.3.3.dev9/diff.md --exclude *.pyd
+[2024-04-07 10:39:48] INFO root fetch - processPackages [BaseML]: Remove: archive file [/home/abi/fetcher/tmp/BaseML-0.1.2.tar.gz]
+[2024-04-07 10:39:48] INFO root fetch - processPackages [BaseML]: Remove: archive file [/home/abi/fetcher/tmp/BaseML-0.1.3.tar.gz]
+[2024-04-07 10:39:48] INFO root fetch - main [MainThread]: End processing [BaseML]: success
+[2024-04-07 10:39:48] INFO root fetch - processPackages [deepeval]: Remove: archive file [/home/abi/fetcher/tmp/deepeval-0.9.8.tar.gz]
+[2024-04-07 10:39:48] INFO root fetch - processPackages [deepeval]: Remove: archive file [/home/abi/fetcher/tmp/deepeval-0.9.9.tar.gz]
+[2024-04-07 10:39:48] INFO root fetch - main [MainThread]: End processing [deepeval]: success
+[2024-04-07 10:39:53] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.3.3.dev8.tar.gz]
+[2024-04-07 10:39:53] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.3.3.dev9.tar.gz]
+[2024-04-07 10:39:53] INFO root fetch - main [MainThread]: End processing [kuzu]: success
+[2024-04-07 10:39:53] INFO root fetch - main [MainThread]: Store serial: [22654792]
