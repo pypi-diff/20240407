@@ -4278,3 +4278,30 @@
 [2024-04-07 05:54:19] INFO root fetch - processPackages [arts]: Remove: archive file [/home/abi/fetcher/tmp/arts-2024.4.3.2.tar.gz]
 [2024-04-07 05:54:19] INFO root fetch - main [MainThread]: End processing [arts]: success
 [2024-04-07 05:54:19] INFO root fetch - main [MainThread]: Store serial: [22653353]
+[2024-04-07 05:56:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653353]
+[2024-04-07 05:56:27] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 05:58:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653353]
+[2024-04-07 05:58:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 05:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fusion-stat
+[2024-04-07 05:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: khoj-assistant
+[2024-04-07 05:58:33] INFO root fetch - processPackages [fusion-stat]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 05:58:33] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev1] Old Version: [1.9.0]
+[2024-04-07 05:58:33] INFO root fetch - processPackages [fusion-stat]: Downloading https://files.pythonhosted.org/packages/47/51/542149835b27dcc8031caa83f53f7ae07fd546540efc9cdae0a6245855f0/fusion_stat-0.0.8.tar.gz
+[2024-04-07 05:58:33] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/7e/c4/ad7c0b355522b07a9c167cd46b6d54d8cd1a5f27a7e8b80703e3fe04ffb4/khoj_assistant-1.9.0.tar.gz
+[2024-04-07 05:58:33] WARNING root fetch - processPackages [fusion-stat]: Timeout reached during download
+[2024-04-07 05:58:33] WARNING root fetch - processPackages [khoj-assistant]: Timeout reached during download
+[2024-04-07 05:58:33] INFO root fetch - processPackages [fusion-stat]: Downloading https://files.pythonhosted.org/packages/c7/9d/915bf78391a4508dfe5f431d5705d566ebbdb8b9b2de8e007b22db7d5a05/fusion_stat-0.0.9.tar.gz
+[2024-04-07 05:58:34] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/1b/b3/c7ad0216d51181751ac35eee44280c14bbd807eb23200fb4e180629081ce/khoj_assistant-1.9.1.dev1.tar.gz
+[2024-04-07 05:58:34] WARNING root fetch - processPackages [fusion-stat]: Timeout reached during download
+[2024-04-07 05:58:34] INFO root fetch - processPackages [fusion-stat]: executing diffoscope
+[2024-04-07 05:58:34] INFO root fetch - processPackages [fusion-stat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fusion_stat-0.0.8.tar.gz tmp/fusion_stat-0.0.9.tar.gz --markdown 20240407/f/fusion-stat/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 05:58:34] WARNING root fetch - processPackages [khoj-assistant]: Timeout reached during download
+[2024-04-07 05:58:34] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-04-07 05:58:34] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.0.tar.gz tmp/khoj_assistant-1.9.1.dev1.tar.gz --markdown 20240407/k/khoj-assistant/1.9.0-1.9.1.dev1/diff.md --exclude *.pyd
+[2024-04-07 05:58:34] INFO root fetch - processPackages [fusion-stat]: Remove: archive file [/home/abi/fetcher/tmp/fusion_stat-0.0.8.tar.gz]
+[2024-04-07 05:58:34] INFO root fetch - processPackages [fusion-stat]: Remove: archive file [/home/abi/fetcher/tmp/fusion_stat-0.0.9.tar.gz]
+[2024-04-07 05:58:34] INFO root fetch - main [MainThread]: End processing [fusion-stat]: success
+[2024-04-07 05:58:35] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.0.tar.gz]
+[2024-04-07 05:58:35] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev1.tar.gz]
+[2024-04-07 05:58:35] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-04-07 05:58:35] INFO root fetch - main [MainThread]: Store serial: [22653359]
