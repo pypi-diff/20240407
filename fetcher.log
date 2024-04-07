@@ -7005,3 +7005,17 @@
 [2024-04-07 09:10:41] INFO root fetch - processPackages [lifx-photons-interactor]: Remove: archive file [/home/abi/fetcher/tmp/lifx-photons-interactor-0.9.1.tar.gz]
 [2024-04-07 09:10:41] INFO root fetch - main [MainThread]: End processing [lifx-photons-interactor]: success
 [2024-04-07 09:10:41] INFO root fetch - main [MainThread]: Store serial: [22654255]
+[2024-04-07 09:12:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654255]
+[2024-04-07 09:12:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 09:12:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfunvice
+[2024-04-07 09:12:51] INFO root fetch - processPackages [pyfunvice]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-07 09:12:51] INFO root fetch - processPackages [pyfunvice]: Downloading https://files.pythonhosted.org/packages/1d/21/810dfbb1a61be36a84d1bdbd454dc78d894def64598c0846f2c706747b81/pyfunvice-0.1.3.tar.gz
+[2024-04-07 09:12:51] WARNING root fetch - processPackages [pyfunvice]: Timeout reached during download
+[2024-04-07 09:12:51] INFO root fetch - processPackages [pyfunvice]: Downloading https://files.pythonhosted.org/packages/14/84/bf498dbf9a1c118c34d92e120dddd4e943573e947d01d22d54473fc657b2/pyfunvice-0.1.4.tar.gz
+[2024-04-07 09:12:52] WARNING root fetch - processPackages [pyfunvice]: Timeout reached during download
+[2024-04-07 09:12:52] INFO root fetch - processPackages [pyfunvice]: executing diffoscope
+[2024-04-07 09:12:52] INFO root fetch - processPackages [pyfunvice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfunvice-0.1.3.tar.gz tmp/pyfunvice-0.1.4.tar.gz --markdown 20240407/p/pyfunvice/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2024-04-07 09:12:52] INFO root fetch - processPackages [pyfunvice]: Remove: archive file [/home/abi/fetcher/tmp/pyfunvice-0.1.3.tar.gz]
+[2024-04-07 09:12:52] INFO root fetch - processPackages [pyfunvice]: Remove: archive file [/home/abi/fetcher/tmp/pyfunvice-0.1.4.tar.gz]
+[2024-04-07 09:12:52] INFO root fetch - main [MainThread]: End processing [pyfunvice]: success
+[2024-04-07 09:12:52] INFO root fetch - main [MainThread]: Store serial: [22654258]
