@@ -15977,3 +15977,50 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 18:36:10] INFO root fetch - processPackages [akello]: Remove: archive file [/home/abi/fetcher/tmp/akello-0.0.22.tar.gz]
 [2024-04-07 18:36:10] INFO root fetch - main [MainThread]: End processing [akello]: success
 [2024-04-07 18:36:10] INFO root fetch - main [MainThread]: Store serial: [22657610]
+[2024-04-07 18:38:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657610]
+[2024-04-07 18:38:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 18:38:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whisper-ctranslate2
+[2024-04-07 18:38:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lingoqa-dataset
+[2024-04-07 18:38:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bitbake-language-server
+[2024-04-07 18:38:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: DocumentAI-std
+[2024-04-07 18:38:19] INFO root fetch - processPackages [lingoqa-dataset]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-07 18:38:19] INFO root fetch - processPackages [DocumentAI-std]: New version: [0.2.2.dev1] Old Version: [0.2.0.dev1]
+[2024-04-07 18:38:19] INFO root fetch - processPackages [whisper-ctranslate2]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-07 18:38:19] INFO root fetch - processPackages [bitbake-language-server]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 18:38:19] INFO root fetch - processPackages [lingoqa-dataset]: Downloading https://files.pythonhosted.org/packages/4f/44/497f85fc82cdb78f8060e1ae8800bc899d79fb110667ffb905bbe620f464/lingoqa_dataset-0.1.0.tar.gz
+[2024-04-07 18:38:20] INFO root fetch - processPackages [DocumentAI-std]: Downloading https://files.pythonhosted.org/packages/5a/90/6eba0db41e0756083e34ed36a0e021fe858697f899ea78559fe63eaa55f4/DocumentAI_std-0.2.0.dev1.tar.gz
+[2024-04-07 18:38:20] INFO root fetch - processPackages [whisper-ctranslate2]: Downloading https://files.pythonhosted.org/packages/8d/11/cc60dec0b215a67ae69e8765ce0180fcd62b19b953d447da8bcb3bbb71c3/whisper-ctranslate2-0.4.1.tar.gz
+[2024-04-07 18:38:20] WARNING root fetch - processPackages [lingoqa-dataset]: Timeout reached during download
+[2024-04-07 18:38:20] INFO root fetch - processPackages [bitbake-language-server]: Downloading https://files.pythonhosted.org/packages/12/e2/46281f1b06f2b0e8a713da6e5b8e161bdff0937437aaf6a3bd61d85c4b4c/bitbake-language-server-0.0.8.tar.gz
+[2024-04-07 18:38:20] WARNING root fetch - processPackages [DocumentAI-std]: Timeout reached during download
+[2024-04-07 18:38:20] INFO root fetch - processPackages [lingoqa-dataset]: Downloading https://files.pythonhosted.org/packages/86/ee/191dbad0ef21f8adfba55896352dc2ad0558ab289ca7bd145fb953869e3e/lingoqa_dataset-0.1.1.tar.gz
+[2024-04-07 18:38:20] WARNING root fetch - processPackages [bitbake-language-server]: Timeout reached during download
+[2024-04-07 18:38:20] INFO root fetch - processPackages [DocumentAI-std]: Downloading https://files.pythonhosted.org/packages/40/9f/41bfb4232ee17586083862483e45a6a53514b3f184d5b5a4927c645ca26d/DocumentAI_std-0.2.2.dev1.tar.gz
+[2024-04-07 18:38:20] WARNING root fetch - processPackages [lingoqa-dataset]: Timeout reached during download
+[2024-04-07 18:38:20] INFO root fetch - processPackages [lingoqa-dataset]: executing diffoscope
+[2024-04-07 18:38:20] INFO root fetch - processPackages [lingoqa-dataset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lingoqa_dataset-0.1.0.tar.gz tmp/lingoqa_dataset-0.1.1.tar.gz --markdown 20240407/l/lingoqa-dataset/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 18:38:20] WARNING root fetch - processPackages [whisper-ctranslate2]: Timeout reached during download
+[2024-04-07 18:38:20] INFO root fetch - processPackages [bitbake-language-server]: Downloading https://files.pythonhosted.org/packages/ef/4a/dd06bbaeb81b4c35d77db4d2444178c9f7cbd3b99f6c943f08e44e661a75/bitbake-language-server-0.0.9.tar.gz
+[2024-04-07 18:38:20] INFO root fetch - processPackages [whisper-ctranslate2]: Downloading https://files.pythonhosted.org/packages/67/13/87e9678c0cb531fb05546517b98c53d8630f599133a912b761d8d27d7f58/whisper-ctranslate2-0.4.2.tar.gz
+[2024-04-07 18:38:20] WARNING root fetch - processPackages [whisper-ctranslate2]: Timeout reached during download
+[2024-04-07 18:38:20] INFO root fetch - processPackages [whisper-ctranslate2]: executing diffoscope
+[2024-04-07 18:38:20] INFO root fetch - processPackages [whisper-ctranslate2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper-ctranslate2-0.4.1.tar.gz tmp/whisper-ctranslate2-0.4.2.tar.gz --markdown 20240407/w/whisper-ctranslate2/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2024-04-07 18:38:20] WARNING root fetch - processPackages [bitbake-language-server]: Timeout reached during download
+[2024-04-07 18:38:20] INFO root fetch - processPackages [bitbake-language-server]: executing diffoscope
+[2024-04-07 18:38:20] INFO root fetch - processPackages [bitbake-language-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitbake-language-server-0.0.8.tar.gz tmp/bitbake-language-server-0.0.9.tar.gz --markdown 20240407/b/bitbake-language-server/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 18:38:21] INFO root fetch - processPackages [lingoqa-dataset]: Remove: archive file [/home/abi/fetcher/tmp/lingoqa_dataset-0.1.0.tar.gz]
+[2024-04-07 18:38:21] INFO root fetch - processPackages [lingoqa-dataset]: Remove: archive file [/home/abi/fetcher/tmp/lingoqa_dataset-0.1.1.tar.gz]
+[2024-04-07 18:38:21] INFO root fetch - main [MainThread]: End processing [lingoqa-dataset]: success
+[2024-04-07 18:38:21] WARNING root fetch - processPackages [DocumentAI-std]: Timeout reached during download
+[2024-04-07 18:38:21] INFO root fetch - processPackages [DocumentAI-std]: executing diffoscope
+[2024-04-07 18:38:21] INFO root fetch - processPackages [DocumentAI-std]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DocumentAI_std-0.2.0.dev1.tar.gz tmp/DocumentAI_std-0.2.2.dev1.tar.gz --markdown 20240407/D/DocumentAI-std/0.2.0.dev1-0.2.2.dev1/diff.md --exclude *.pyd
+[2024-04-07 18:38:21] INFO root fetch - processPackages [whisper-ctranslate2]: Remove: archive file [/home/abi/fetcher/tmp/whisper-ctranslate2-0.4.1.tar.gz]
+[2024-04-07 18:38:21] INFO root fetch - processPackages [whisper-ctranslate2]: Remove: archive file [/home/abi/fetcher/tmp/whisper-ctranslate2-0.4.2.tar.gz]
+[2024-04-07 18:38:21] INFO root fetch - main [MainThread]: End processing [whisper-ctranslate2]: success
+[2024-04-07 18:38:21] INFO root fetch - processPackages [bitbake-language-server]: Remove: archive file [/home/abi/fetcher/tmp/bitbake-language-server-0.0.8.tar.gz]
+[2024-04-07 18:38:21] INFO root fetch - processPackages [bitbake-language-server]: Remove: archive file [/home/abi/fetcher/tmp/bitbake-language-server-0.0.9.tar.gz]
+[2024-04-07 18:38:21] INFO root fetch - main [MainThread]: End processing [bitbake-language-server]: success
+[2024-04-07 18:38:21] INFO root fetch - processPackages [DocumentAI-std]: Remove: archive file [/home/abi/fetcher/tmp/DocumentAI_std-0.2.0.dev1.tar.gz]
+[2024-04-07 18:38:21] INFO root fetch - processPackages [DocumentAI-std]: Remove: archive file [/home/abi/fetcher/tmp/DocumentAI_std-0.2.2.dev1.tar.gz]
+[2024-04-07 18:38:21] INFO root fetch - main [MainThread]: End processing [DocumentAI-std]: success
+[2024-04-07 18:38:21] INFO root fetch - main [MainThread]: Store serial: [22657620]
