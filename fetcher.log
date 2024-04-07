@@ -15529,3 +15529,41 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 18:12:07] INFO root fetch - processPackages [automatic-meter-reader]: Remove: archive file [/home/abi/fetcher/tmp/automatic-meter-reader-1.2.1.tar.gz]
 [2024-04-07 18:12:07] INFO root fetch - main [MainThread]: End processing [automatic-meter-reader]: success
 [2024-04-07 18:12:07] INFO root fetch - main [MainThread]: Store serial: [22657470]
+[2024-04-07 18:14:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657470]
+[2024-04-07 18:14:16] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 18:16:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657470]
+[2024-04-07 18:16:21] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 18:16:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AsyncKandinsky
+[2024-04-07 18:16:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ggun
+[2024-04-07 18:16:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: retry-reloaded
+[2024-04-07 18:16:21] INFO root fetch - processPackages [AsyncKandinsky]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-07 18:16:21] INFO root fetch - processPackages [ggun]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-07 18:16:21] INFO root fetch - processPackages [AsyncKandinsky]: Downloading https://files.pythonhosted.org/packages/30/08/799004a382fdc46e01ee69eef18c3367137a3014a6f2cf3f042b33052cca/AsyncKandinsky-0.0.3.tar.gz
+[2024-04-07 18:16:21] INFO root fetch - processPackages [ggun]: Downloading https://files.pythonhosted.org/packages/47/27/7e3ec47e8a62c453558b4bebcb72c52dd3105ad48927389724aab2df9b9b/ggun-0.1.3-py3-none-any.whl
+[2024-04-07 18:16:21] INFO root fetch - processPackages [retry-reloaded]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 18:16:21] WARNING root fetch - processPackages [AsyncKandinsky]: Timeout reached during download
+[2024-04-07 18:16:21] WARNING root fetch - processPackages [ggun]: Timeout reached during download
+[2024-04-07 18:16:22] INFO root fetch - processPackages [retry-reloaded]: Downloading https://files.pythonhosted.org/packages/be/82/bf9c8aac08ebcab2d7f74a6950e8e3573e6f5f1256a927b56426b94b7fdc/retry-reloaded-0.0.2.tar.gz
+[2024-04-07 18:16:22] WARNING root fetch - processPackages [retry-reloaded]: Timeout reached during download
+[2024-04-07 18:16:22] INFO root fetch - processPackages [ggun]: Downloading https://files.pythonhosted.org/packages/df/a3/426aeb3eaffc74382859ebdc740180bc7630efbc7b2ad402a11244ab58d6/ggun-0.1.4-py3-none-any.whl
+[2024-04-07 18:16:22] INFO root fetch - processPackages [AsyncKandinsky]: Downloading https://files.pythonhosted.org/packages/c1/4a/ce9219d76cab398b2d367f6f0caae4c6b9e6c15536bb31c46f1508dd21b2/AsyncKandinsky-0.0.4.tar.gz
+[2024-04-07 18:16:22] WARNING root fetch - processPackages [AsyncKandinsky]: Timeout reached during download
+[2024-04-07 18:16:22] WARNING root fetch - processPackages [ggun]: Timeout reached during download
+[2024-04-07 18:16:22] INFO root fetch - processPackages [AsyncKandinsky]: executing diffoscope
+[2024-04-07 18:16:22] INFO root fetch - processPackages [AsyncKandinsky]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AsyncKandinsky-0.0.3.tar.gz tmp/AsyncKandinsky-0.0.4.tar.gz --markdown 20240407/A/AsyncKandinsky/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 18:16:22] INFO root fetch - processPackages [ggun]: executing diffoscope
+[2024-04-07 18:16:22] INFO root fetch - processPackages [ggun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ggun-0.1.3-py3-none-any.whl.zip tmp/ggun-0.1.4-py3-none-any.whl.zip --markdown 20240407/g/ggun/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2024-04-07 18:16:22] INFO root fetch - processPackages [retry-reloaded]: Downloading https://files.pythonhosted.org/packages/9d/d1/4561125006d02fd043f32cfb8a2dd47528c00f797a1bd599071d1948fccd/retry-reloaded-0.0.3.tar.gz
+[2024-04-07 18:16:22] WARNING root fetch - processPackages [retry-reloaded]: Timeout reached during download
+[2024-04-07 18:16:22] INFO root fetch - processPackages [retry-reloaded]: executing diffoscope
+[2024-04-07 18:16:22] INFO root fetch - processPackages [retry-reloaded]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retry-reloaded-0.0.2.tar.gz tmp/retry-reloaded-0.0.3.tar.gz --markdown 20240407/r/retry-reloaded/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 18:16:22] INFO root fetch - processPackages [AsyncKandinsky]: Remove: archive file [/home/abi/fetcher/tmp/AsyncKandinsky-0.0.3.tar.gz]
+[2024-04-07 18:16:22] INFO root fetch - processPackages [AsyncKandinsky]: Remove: archive file [/home/abi/fetcher/tmp/AsyncKandinsky-0.0.4.tar.gz]
+[2024-04-07 18:16:22] INFO root fetch - main [MainThread]: End processing [AsyncKandinsky]: success
+[2024-04-07 18:16:22] INFO root fetch - processPackages [ggun]: Remove: archive file [/home/abi/fetcher/tmp/ggun-0.1.3-py3-none-any.whl.zip]
+[2024-04-07 18:16:22] INFO root fetch - processPackages [ggun]: Remove: archive file [/home/abi/fetcher/tmp/ggun-0.1.4-py3-none-any.whl.zip]
+[2024-04-07 18:16:22] INFO root fetch - main [MainThread]: End processing [ggun]: success
+[2024-04-07 18:16:22] INFO root fetch - processPackages [retry-reloaded]: Remove: archive file [/home/abi/fetcher/tmp/retry-reloaded-0.0.2.tar.gz]
+[2024-04-07 18:16:22] INFO root fetch - processPackages [retry-reloaded]: Remove: archive file [/home/abi/fetcher/tmp/retry-reloaded-0.0.3.tar.gz]
+[2024-04-07 18:16:22] INFO root fetch - main [MainThread]: End processing [retry-reloaded]: success
+[2024-04-07 18:16:22] INFO root fetch - main [MainThread]: Store serial: [22657483]
