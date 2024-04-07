@@ -8630,3 +8630,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 11:05:58] INFO root fetch - processPackages [cdk8s-plus-28]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-plus-28-2.0.6.tar.gz]
 [2024-04-07 11:05:58] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-28]: success
 [2024-04-07 11:05:58] INFO root fetch - main [MainThread]: Store serial: [22654927]
+[2024-04-07 11:08:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654927]
+[2024-04-07 11:08:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 11:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autogluon
+[2024-04-07 11:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mebuex
+[2024-04-07 11:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: testpackage123321
+[2024-04-07 11:08:07] INFO root fetch - processPackages [testpackage123321]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-07 11:08:07] INFO root fetch - processPackages [autogluon]: New version: [1.0.1b20240406] Old Version: [1.0.1b20240405]
+[2024-04-07 11:08:07] INFO root fetch - processPackages [mebuex]: New version: [1.3.0] Old Version: [1.2.0]
+[2024-04-07 11:08:07] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/ef/72/39203f1590a38c277cd512ae7368c56f4c9365ae5ddf4659b7f70c993491/autogluon-1.0.1b20240405.tar.gz
+[2024-04-07 11:08:07] INFO root fetch - processPackages [testpackage123321]: Downloading https://files.pythonhosted.org/packages/b8/7b/e538054ffddadf71615d52335a711ba733a4af3bd11bbf33ef953a323950/testpackage123321-0.1.4.tar.gz
+[2024-04-07 11:08:07] INFO root fetch - processPackages [mebuex]: Downloading https://files.pythonhosted.org/packages/c7/24/6c4d907d4550b12e187fd5dc7f8ae3f1ad8072950dfb71ed977cd5e58901/mebuex-1.2.0.tar.gz
+[2024-04-07 11:08:07] WARNING root fetch - processPackages [testpackage123321]: Timeout reached during download
+[2024-04-07 11:08:07] WARNING root fetch - processPackages [autogluon]: Timeout reached during download
+[2024-04-07 11:08:08] WARNING root fetch - processPackages [mebuex]: Timeout reached during download
+[2024-04-07 11:08:08] INFO root fetch - processPackages [testpackage123321]: Downloading https://files.pythonhosted.org/packages/23/83/b4cb60d31aa7927ab082f6de5a6a6e53473b15ad4416c44680d3ef5c7bf5/testpackage123321-0.1.5.tar.gz
+[2024-04-07 11:08:08] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/2d/07/c2dabbf2c4ad2cdd82cf22e092b07b6504ae7fece6a7c30b62b751f73328/autogluon-1.0.1b20240406.tar.gz
+[2024-04-07 11:08:08] WARNING root fetch - processPackages [testpackage123321]: Timeout reached during download
+[2024-04-07 11:08:08] INFO root fetch - processPackages [testpackage123321]: executing diffoscope
+[2024-04-07 11:08:08] INFO root fetch - processPackages [testpackage123321]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testpackage123321-0.1.4.tar.gz tmp/testpackage123321-0.1.5.tar.gz --markdown 20240407/t/testpackage123321/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2024-04-07 11:08:08] WARNING root fetch - processPackages [autogluon]: Timeout reached during download
+[2024-04-07 11:08:08] INFO root fetch - processPackages [autogluon]: executing diffoscope
+[2024-04-07 11:08:08] INFO root fetch - processPackages [autogluon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon-1.0.1b20240405.tar.gz tmp/autogluon-1.0.1b20240406.tar.gz --markdown 20240407/a/autogluon/1.0.1b20240405-1.0.1b20240406/diff.md --exclude *.pyd
+[2024-04-07 11:08:08] INFO root fetch - processPackages [mebuex]: Downloading https://files.pythonhosted.org/packages/e7/fd/5e956fa38bdcfc163e080e49043984fa218b7844519178d7e526febd6b45/mebuex-1.3.0.tar.gz
+[2024-04-07 11:08:08] WARNING root fetch - processPackages [mebuex]: Timeout reached during download
+[2024-04-07 11:08:08] INFO root fetch - processPackages [mebuex]: executing diffoscope
+[2024-04-07 11:08:08] INFO root fetch - processPackages [mebuex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mebuex-1.2.0.tar.gz tmp/mebuex-1.3.0.tar.gz --markdown 20240407/m/mebuex/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2024-04-07 11:08:08] INFO root fetch - processPackages [testpackage123321]: Remove: archive file [/home/abi/fetcher/tmp/testpackage123321-0.1.4.tar.gz]
+[2024-04-07 11:08:08] INFO root fetch - processPackages [testpackage123321]: Remove: archive file [/home/abi/fetcher/tmp/testpackage123321-0.1.5.tar.gz]
+[2024-04-07 11:08:08] INFO root fetch - main [MainThread]: End processing [testpackage123321]: success
+[2024-04-07 11:08:08] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.0.1b20240405.tar.gz]
+[2024-04-07 11:08:08] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.0.1b20240406.tar.gz]
+[2024-04-07 11:08:08] INFO root fetch - main [MainThread]: End processing [autogluon]: success
+[2024-04-07 11:08:08] INFO root fetch - processPackages [mebuex]: Remove: archive file [/home/abi/fetcher/tmp/mebuex-1.2.0.tar.gz]
+[2024-04-07 11:08:08] INFO root fetch - processPackages [mebuex]: Remove: archive file [/home/abi/fetcher/tmp/mebuex-1.3.0.tar.gz]
+[2024-04-07 11:08:08] INFO root fetch - main [MainThread]: End processing [mebuex]: success
+[2024-04-07 11:08:08] INFO root fetch - main [MainThread]: Store serial: [22654935]
