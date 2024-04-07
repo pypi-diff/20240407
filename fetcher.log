@@ -1977,3 +1977,20 @@
 [2024-04-07 03:08:02] INFO root fetch - processPackages [youtube-selenium-py]: Remove: archive file [/home/abi/fetcher/tmp/youtube_selenium_py-1.0.7.tar.gz]
 [2024-04-07 03:08:02] INFO root fetch - main [MainThread]: End processing [youtube-selenium-py]: success
 [2024-04-07 03:08:02] INFO root fetch - main [MainThread]: Store serial: [22652520]
+[2024-04-07 03:10:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652520]
+[2024-04-07 03:10:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 03:10:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HelloWorldhahaha
+[2024-04-07 03:10:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NNSOM
+[2024-04-07 03:10:11] WARNING root fetch - processPackages [HelloWorldhahaha]: Skipping, unable to determine old version
+[2024-04-07 03:10:11] INFO root fetch - main [MainThread]: End processing [HelloWorldhahaha] error
+[2024-04-07 03:10:11] INFO root fetch - processPackages [NNSOM]: New version: [1.5.2] Old Version: [1.5.1]
+[2024-04-07 03:10:11] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/84/e3/e31bcb65daa754e43c13ba4a96df84ffb944252f95d0dfae5392f83ba4a4/nnsom-1.5.1.tar.gz
+[2024-04-07 03:10:11] WARNING root fetch - processPackages [NNSOM]: Timeout reached during download
+[2024-04-07 03:10:11] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/c4/83/d98480d5b813db4baf239b82dec10f2a73b169f3dff689adb6bf4848386a/nnsom-1.5.2.tar.gz
+[2024-04-07 03:10:11] WARNING root fetch - processPackages [NNSOM]: Timeout reached during download
+[2024-04-07 03:10:11] INFO root fetch - processPackages [NNSOM]: executing diffoscope
+[2024-04-07 03:10:11] INFO root fetch - processPackages [NNSOM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnsom-1.5.1.tar.gz tmp/nnsom-1.5.2.tar.gz --markdown 20240407/N/NNSOM/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2024-04-07 03:10:12] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.5.1.tar.gz]
+[2024-04-07 03:10:12] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.5.2.tar.gz]
+[2024-04-07 03:10:12] INFO root fetch - main [MainThread]: End processing [NNSOM]: success
+[2024-04-07 03:10:12] INFO root fetch - main [MainThread]: Store serial: [22652527]
