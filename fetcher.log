@@ -8666,3 +8666,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 11:08:08] INFO root fetch - processPackages [mebuex]: Remove: archive file [/home/abi/fetcher/tmp/mebuex-1.3.0.tar.gz]
 [2024-04-07 11:08:08] INFO root fetch - main [MainThread]: End processing [mebuex]: success
 [2024-04-07 11:08:08] INFO root fetch - main [MainThread]: Store serial: [22654935]
+[2024-04-07 11:10:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654935]
+[2024-04-07 11:10:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 11:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dmtgen
+[2024-04-07 11:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: desktop-env
+[2024-04-07 11:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: testpackage123321
+[2024-04-07 11:10:17] INFO root fetch - processPackages [testpackage123321]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-07 11:10:17] INFO root fetch - processPackages [dmtgen]: New version: [1.0.0.dev0] Old Version: [0.5.0.dev3]
+[2024-04-07 11:10:17] INFO root fetch - processPackages [testpackage123321]: Downloading https://files.pythonhosted.org/packages/23/83/b4cb60d31aa7927ab082f6de5a6a6e53473b15ad4416c44680d3ef5c7bf5/testpackage123321-0.1.5.tar.gz
+[2024-04-07 11:10:17] INFO root fetch - processPackages [desktop-env]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-07 11:10:17] WARNING root fetch - processPackages [testpackage123321]: Timeout reached during download
+[2024-04-07 11:10:17] INFO root fetch - processPackages [dmtgen]: Downloading https://files.pythonhosted.org/packages/b1/47/11d3a1063b2f2158cb2808d195ac4e458de1cd533abca94ab55e97008ea0/dmtgen-0.5.0.dev3.tar.gz
+[2024-04-07 11:10:17] INFO root fetch - processPackages [desktop-env]: Downloading https://files.pythonhosted.org/packages/82/57/459f0ff49946e796f41b6a50d06e77d0a451de208ba4b4e05fdeb391c41f/desktop_env-0.1.2.tar.gz
+[2024-04-07 11:10:18] INFO root fetch - processPackages [testpackage123321]: Downloading https://files.pythonhosted.org/packages/bc/19/adb7cfa176ef089ff671fdffd4e096b2812f32963eab1d019887f40db6ca/testpackage123321-0.1.6.tar.gz
+[2024-04-07 11:10:18] WARNING root fetch - processPackages [dmtgen]: Timeout reached during download
+[2024-04-07 11:10:18] INFO root fetch - processPackages [dmtgen]: Downloading https://files.pythonhosted.org/packages/aa/a9/40ccd995bc75486d968435cf8a7c44d1659837f7f3a763aa1b5c77e00f55/dmtgen-1.0.0.dev0.tar.gz
+[2024-04-07 11:10:18] WARNING root fetch - processPackages [testpackage123321]: Timeout reached during download
+[2024-04-07 11:10:18] INFO root fetch - processPackages [testpackage123321]: executing diffoscope
+[2024-04-07 11:10:18] INFO root fetch - processPackages [testpackage123321]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testpackage123321-0.1.5.tar.gz tmp/testpackage123321-0.1.6.tar.gz --markdown 20240407/t/testpackage123321/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2024-04-07 11:10:18] WARNING root fetch - processPackages [desktop-env]: Timeout reached during download
+[2024-04-07 11:10:18] WARNING root fetch - processPackages [dmtgen]: Timeout reached during download
+[2024-04-07 11:10:18] INFO root fetch - processPackages [dmtgen]: executing diffoscope
+[2024-04-07 11:10:18] INFO root fetch - processPackages [dmtgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dmtgen-0.5.0.dev3.tar.gz tmp/dmtgen-1.0.0.dev0.tar.gz --markdown 20240407/d/dmtgen/0.5.0.dev3-1.0.0.dev0/diff.md --exclude *.pyd
+[2024-04-07 11:10:18] INFO root fetch - processPackages [desktop-env]: Downloading https://files.pythonhosted.org/packages/27/f8/16f78f0ccbe5c6fe9aedd104da436eec3e5bd08a29b5f19cc74d66c83959/desktop_env-0.1.3.tar.gz
+[2024-04-07 11:10:18] WARNING root fetch - processPackages [desktop-env]: Timeout reached during download
+[2024-04-07 11:10:18] INFO root fetch - processPackages [desktop-env]: executing diffoscope
+[2024-04-07 11:10:18] INFO root fetch - processPackages [desktop-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/desktop_env-0.1.2.tar.gz tmp/desktop_env-0.1.3.tar.gz --markdown 20240407/d/desktop-env/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2024-04-07 11:10:18] INFO root fetch - processPackages [testpackage123321]: Remove: archive file [/home/abi/fetcher/tmp/testpackage123321-0.1.5.tar.gz]
+[2024-04-07 11:10:18] INFO root fetch - processPackages [testpackage123321]: Remove: archive file [/home/abi/fetcher/tmp/testpackage123321-0.1.6.tar.gz]
+[2024-04-07 11:10:18] INFO root fetch - main [MainThread]: End processing [testpackage123321]: success
+[2024-04-07 11:10:18] INFO root fetch - processPackages [dmtgen]: Remove: archive file [/home/abi/fetcher/tmp/dmtgen-0.5.0.dev3.tar.gz]
+[2024-04-07 11:10:18] INFO root fetch - processPackages [dmtgen]: Remove: archive file [/home/abi/fetcher/tmp/dmtgen-1.0.0.dev0.tar.gz]
+[2024-04-07 11:10:18] INFO root fetch - main [MainThread]: End processing [dmtgen]: success
+[2024-04-07 11:10:19] INFO root fetch - processPackages [desktop-env]: Remove: archive file [/home/abi/fetcher/tmp/desktop_env-0.1.2.tar.gz]
+[2024-04-07 11:10:19] INFO root fetch - processPackages [desktop-env]: Remove: archive file [/home/abi/fetcher/tmp/desktop_env-0.1.3.tar.gz]
+[2024-04-07 11:10:19] INFO root fetch - main [MainThread]: End processing [desktop-env]: success
+[2024-04-07 11:10:19] INFO root fetch - main [MainThread]: Store serial: [22654943]
