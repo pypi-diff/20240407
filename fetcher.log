@@ -5934,3 +5934,64 @@
 [2024-04-07 08:02:42] INFO root fetch - processPackages [pulumi-gitlab]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_gitlab-6.9.0a1708340471.tar.gz]
 [2024-04-07 08:02:42] INFO root fetch - main [MainThread]: End processing [pulumi-gitlab]: success
 [2024-04-07 08:02:42] INFO root fetch - main [MainThread]: Store serial: [22653866]
+[2024-04-07 08:04:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653866]
+[2024-04-07 08:04:50] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 08:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fplab
+[2024-04-07 08:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: khoj-assistant
+[2024-04-07 08:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-alicloud
+[2024-04-07 08:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spark-gaps-date-rorc-tools
+[2024-04-07 08:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-libvirt
+[2024-04-07 08:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: corentin-regent-test
+[2024-04-07 08:04:50] INFO root fetch - processPackages [fplab]: New version: [0.0.2] Old Version: [0.0.1.3]
+[2024-04-07 08:04:50] INFO root fetch - processPackages [pulumi-libvirt]: New version: [0.4.6a1712399647] Old Version: [0.4.6a1711735847]
+[2024-04-07 08:04:50] INFO root fetch - processPackages [pulumi-alicloud]: New version: [3.9.0a1637592974] Old Version: [3.9.0a1635778307]
+[2024-04-07 08:04:50] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev1] Old Version: [1.9.0]
+[2024-04-07 08:04:50] WARNING root fetch - processPackages [corentin-regent-test]: Skipping, unable to determine old version
+[2024-04-07 08:04:50] INFO root fetch - main [MainThread]: End processing [corentin-regent-test] error
+[2024-04-07 08:04:50] INFO root fetch - processPackages [fplab]: Downloading https://files.pythonhosted.org/packages/ea/81/a56d29e18347d91d6e07495e886759976613cfb3ad516187cb0d84616abc/fplab-0.0.1.3.tar.gz
+[2024-04-07 08:04:50] INFO root fetch - processPackages [spark-gaps-date-rorc-tools]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-07 08:04:50] INFO root fetch - processPackages [pulumi-alicloud]: Downloading https://files.pythonhosted.org/packages/be/79/da6d86e1953fc7bde0762279ac850d45fe8ad91ff27a3c837009ede717a4/pulumi_alicloud-3.9.0a1635778307.tar.gz
+[2024-04-07 08:04:50] INFO root fetch - processPackages [pulumi-libvirt]: Downloading https://files.pythonhosted.org/packages/ea/5f/680af6fc8fde3721f46bd24dcdb2e163f8ec738461e4bc35d8f1e4b81f71/pulumi_libvirt-0.4.6a1711735847.tar.gz
+[2024-04-07 08:04:51] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/7e/c4/ad7c0b355522b07a9c167cd46b6d54d8cd1a5f27a7e8b80703e3fe04ffb4/khoj_assistant-1.9.0.tar.gz
+[2024-04-07 08:04:51] WARNING root fetch - processPackages [fplab]: Timeout reached during download
+[2024-04-07 08:04:51] WARNING root fetch - processPackages [pulumi-libvirt]: Timeout reached during download
+[2024-04-07 08:04:51] INFO root fetch - processPackages [spark-gaps-date-rorc-tools]: Downloading https://files.pythonhosted.org/packages/e3/92/99bb5ba587e000dcc89a1366f2843e47eaed67a3edbb19abe16e985ea4ad/spark_gaps_date_rorc_tools-0.2.0.tar.gz
+[2024-04-07 08:04:51] INFO root fetch - processPackages [fplab]: Downloading https://files.pythonhosted.org/packages/5c/40/52c88c03d5a9a2a652224355f188df4af0f0c50127230ca237879add818e/fplab-0.0.2.tar.gz
+[2024-04-07 08:04:51] WARNING root fetch - processPackages [fplab]: Timeout reached during download
+[2024-04-07 08:04:51] INFO root fetch - processPackages [fplab]: executing diffoscope
+[2024-04-07 08:04:51] INFO root fetch - processPackages [fplab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fplab-0.0.1.3.tar.gz tmp/fplab-0.0.2.tar.gz --markdown 20240407/f/fplab/0.0.1.3-0.0.2/diff.md --exclude *.pyd
+[2024-04-07 08:04:51] INFO root fetch - processPackages [pulumi-libvirt]: Downloading https://files.pythonhosted.org/packages/08/f6/6ec5713ff3d1f6ef94f40d280b63fa474d72340fa5c77172b3d7581679ad/pulumi_libvirt-0.4.6a1712399647.tar.gz
+[2024-04-07 08:04:51] WARNING root fetch - processPackages [pulumi-alicloud]: Timeout reached during download
+[2024-04-07 08:04:51] WARNING root fetch - processPackages [khoj-assistant]: Timeout reached during download
+[2024-04-07 08:04:51] INFO root fetch - processPackages [pulumi-alicloud]: Downloading https://files.pythonhosted.org/packages/7a/b5/f47603b555625f7ec29ec6dcdc2cf74fe00dc52cba5fad75ddd65d3bd99e/pulumi_alicloud-3.9.0a1637592974.tar.gz
+[2024-04-07 08:04:51] WARNING root fetch - processPackages [pulumi-libvirt]: Timeout reached during download
+[2024-04-07 08:04:51] INFO root fetch - processPackages [pulumi-libvirt]: executing diffoscope
+[2024-04-07 08:04:51] INFO root fetch - processPackages [pulumi-libvirt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_libvirt-0.4.6a1711735847.tar.gz tmp/pulumi_libvirt-0.4.6a1712399647.tar.gz --markdown 20240407/p/pulumi-libvirt/0.4.6a1711735847-0.4.6a1712399647/diff.md --exclude *.pyd
+[2024-04-07 08:04:51] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/1b/b3/c7ad0216d51181751ac35eee44280c14bbd807eb23200fb4e180629081ce/khoj_assistant-1.9.1.dev1.tar.gz
+[2024-04-07 08:04:51] WARNING root fetch - processPackages [khoj-assistant]: Timeout reached during download
+[2024-04-07 08:04:51] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-04-07 08:04:51] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.0.tar.gz tmp/khoj_assistant-1.9.1.dev1.tar.gz --markdown 20240407/k/khoj-assistant/1.9.0-1.9.1.dev1/diff.md --exclude *.pyd
+[2024-04-07 08:04:51] WARNING root fetch - processPackages [pulumi-alicloud]: Timeout reached during download
+[2024-04-07 08:04:51] INFO root fetch - processPackages [pulumi-alicloud]: executing diffoscope
+[2024-04-07 08:04:51] INFO root fetch - processPackages [pulumi-alicloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_alicloud-3.9.0a1635778307.tar.gz tmp/pulumi_alicloud-3.9.0a1637592974.tar.gz --markdown 20240407/p/pulumi-alicloud/3.9.0a1635778307-3.9.0a1637592974/diff.md --exclude *.pyd
+[2024-04-07 08:04:51] WARNING root fetch - processPackages [spark-gaps-date-rorc-tools]: Timeout reached during download
+[2024-04-07 08:04:51] INFO root fetch - processPackages [spark-gaps-date-rorc-tools]: Downloading https://files.pythonhosted.org/packages/c8/ea/210bedceb348fbedfa8c1f21e1b76f2724d111141db0df07d408551fed3d/spark_gaps_date_rorc_tools-0.2.1.tar.gz
+[2024-04-07 08:04:51] INFO root fetch - processPackages [fplab]: Remove: archive file [/home/abi/fetcher/tmp/fplab-0.0.1.3.tar.gz]
+[2024-04-07 08:04:51] INFO root fetch - processPackages [fplab]: Remove: archive file [/home/abi/fetcher/tmp/fplab-0.0.2.tar.gz]
+[2024-04-07 08:04:51] INFO root fetch - main [MainThread]: End processing [fplab]: success
+[2024-04-07 08:04:51] WARNING root fetch - processPackages [spark-gaps-date-rorc-tools]: Timeout reached during download
+[2024-04-07 08:04:51] INFO root fetch - processPackages [spark-gaps-date-rorc-tools]: executing diffoscope
+[2024-04-07 08:04:51] INFO root fetch - processPackages [spark-gaps-date-rorc-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spark_gaps_date_rorc_tools-0.2.0.tar.gz tmp/spark_gaps_date_rorc_tools-0.2.1.tar.gz --markdown 20240407/s/spark-gaps-date-rorc-tools/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2024-04-07 08:04:52] INFO root fetch - processPackages [pulumi-libvirt]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_libvirt-0.4.6a1711735847.tar.gz]
+[2024-04-07 08:04:52] INFO root fetch - processPackages [pulumi-libvirt]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_libvirt-0.4.6a1712399647.tar.gz]
+[2024-04-07 08:04:52] INFO root fetch - main [MainThread]: End processing [pulumi-libvirt]: success
+[2024-04-07 08:04:52] INFO root fetch - processPackages [spark-gaps-date-rorc-tools]: Remove: archive file [/home/abi/fetcher/tmp/spark_gaps_date_rorc_tools-0.2.0.tar.gz]
+[2024-04-07 08:04:52] INFO root fetch - processPackages [spark-gaps-date-rorc-tools]: Remove: archive file [/home/abi/fetcher/tmp/spark_gaps_date_rorc_tools-0.2.1.tar.gz]
+[2024-04-07 08:04:52] INFO root fetch - main [MainThread]: End processing [spark-gaps-date-rorc-tools]: success
+[2024-04-07 08:04:52] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.0.tar.gz]
+[2024-04-07 08:04:52] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev1.tar.gz]
+[2024-04-07 08:04:52] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-04-07 08:04:59] INFO root fetch - processPackages [pulumi-alicloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_alicloud-3.9.0a1635778307.tar.gz]
+[2024-04-07 08:04:59] INFO root fetch - processPackages [pulumi-alicloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_alicloud-3.9.0a1637592974.tar.gz]
+[2024-04-07 08:04:59] INFO root fetch - main [MainThread]: End processing [pulumi-alicloud]: success
+[2024-04-07 08:04:59] INFO root fetch - main [MainThread]: Store serial: [22653885]
