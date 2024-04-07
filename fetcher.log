@@ -7497,3 +7497,12 @@
 [2024-04-07 09:45:30] INFO root fetch - processPackages [netbound]: Remove: archive file [/home/abi/fetcher/tmp/netbound-0.1.9.tar.gz]
 [2024-04-07 09:45:30] INFO root fetch - main [MainThread]: End processing [netbound]: success
 [2024-04-07 09:45:30] INFO root fetch - main [MainThread]: Store serial: [22654456]
+[2024-04-07 09:47:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654456]
+[2024-04-07 09:47:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 09:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HamhoushSDK
+[2024-04-07 09:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hideocardgames
+[2024-04-07 09:47:38] WARNING root fetch - processPackages [HamhoushSDK]: Skipping, unable to determine old version
+[2024-04-07 09:47:38] WARNING root fetch - processPackages [hideocardgames]: Skipping, unable to determine old version
+[2024-04-07 09:47:38] INFO root fetch - main [MainThread]: End processing [HamhoushSDK] error
+[2024-04-07 09:47:38] INFO root fetch - main [MainThread]: End processing [hideocardgames] error
+[2024-04-07 09:47:38] INFO root fetch - main [MainThread]: Store serial: [22654466]
