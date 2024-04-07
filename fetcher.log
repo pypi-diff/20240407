@@ -3772,3 +3772,48 @@
 [2024-04-07 05:13:03] INFO root fetch - processPackages [lineagex]: Remove: archive file [/home/abi/fetcher/tmp/lineagex-0.0.9.tar.gz]
 [2024-04-07 05:13:03] INFO root fetch - main [MainThread]: End processing [lineagex]: success
 [2024-04-07 05:13:03] INFO root fetch - main [MainThread]: Store serial: [22653145]
+[2024-04-07 05:15:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653145]
+[2024-04-07 05:15:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 05:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zstarfile
+[2024-04-07 05:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rockai-cli-app
+[2024-04-07 05:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zsx-pack
+[2024-04-07 05:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PygameToolsBox
+[2024-04-07 05:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alibabacloud-mse20190531-py2
+[2024-04-07 05:15:12] INFO root fetch - processPackages [rockai-cli-app]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 05:15:12] INFO root fetch - processPackages [zsx-pack]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-07 05:15:12] WARNING root fetch - processPackages [zstarfile]: Skipping, unable to determine old version
+[2024-04-07 05:15:12] INFO root fetch - main [MainThread]: End processing [zstarfile] error
+[2024-04-07 05:15:12] INFO root fetch - processPackages [PygameToolsBox]: New version: [1.1.1] Old Version: [1.1]
+[2024-04-07 05:15:12] INFO root fetch - processPackages [PygameToolsBox]: Downloading https://files.pythonhosted.org/packages/f1/03/5b6ea4305d305a4b3311278be618a5188351db3564823c6a0f2aab73ab62/PygameToolsBox-1.1.tar.gz
+[2024-04-07 05:15:12] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/f0/bc/2ef2551f965243f6f9f47cb640af5273a26e27909c921207686579e48c31/rockai_cli_app-0.1.8.tar.gz
+[2024-04-07 05:15:12] INFO root fetch - processPackages [zsx-pack]: Downloading https://files.pythonhosted.org/packages/e2/84/762da70f1c2eb3ee1106adaf84c31e58e44bbc1015a7a7e91e367e539725/zsx_pack-0.0.5.tar.gz
+[2024-04-07 05:15:12] INFO root fetch - processPackages [alibabacloud-mse20190531-py2]: New version: [6.3.1] Old Version: [6.3.0]
+[2024-04-07 05:15:12] WARNING root fetch - processPackages [PygameToolsBox]: Timeout reached during download
+[2024-04-07 05:15:12] WARNING root fetch - processPackages [rockai-cli-app]: Timeout reached during download
+[2024-04-07 05:15:12] WARNING root fetch - processPackages [zsx-pack]: Timeout reached during download
+[2024-04-07 05:15:12] INFO root fetch - processPackages [PygameToolsBox]: Downloading https://files.pythonhosted.org/packages/8f/b9/33c1e2a76cf0c3e6be00b377979d1968913952933b4734c6ac4e8b5e6895/PygameToolsBox-1.1.1.tar.gz
+[2024-04-07 05:15:12] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/03/43/8cb70726cf2b5f1ece1ef4d90da9286ad7720ee524cc75848ff0801a9fde/rockai_cli_app-0.1.9.tar.gz
+[2024-04-07 05:15:12] INFO root fetch - processPackages [alibabacloud-mse20190531-py2]: Downloading https://files.pythonhosted.org/packages/4f/36/438b8dd67f9efb1209f4ed31c8871951ddb6627634ca113ef293678f52d0/alibabacloud_mse20190531_py2-6.3.0.tar.gz
+[2024-04-07 05:15:12] WARNING root fetch - processPackages [PygameToolsBox]: Timeout reached during download
+[2024-04-07 05:15:12] INFO root fetch - processPackages [PygameToolsBox]: executing diffoscope
+[2024-04-07 05:15:12] INFO root fetch - processPackages [PygameToolsBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PygameToolsBox-1.1.tar.gz tmp/PygameToolsBox-1.1.1.tar.gz --markdown 20240407/P/PygameToolsBox/1.1-1.1.1/diff.md --exclude *.pyd
+[2024-04-07 05:15:13] ERROR root fetch - processPackages [zsx-pack]: Unable to fetch info: No such project/version 'zsx-pack' 0.0.6
+[2024-04-07 05:15:13] WARNING root fetch - processPackages [rockai-cli-app]: Timeout reached during download
+[2024-04-07 05:15:13] INFO root fetch - main [MainThread]: End processing [zsx-pack] error
+[2024-04-07 05:15:13] INFO root fetch - processPackages [rockai-cli-app]: executing diffoscope
+[2024-04-07 05:15:13] INFO root fetch - processPackages [rockai-cli-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rockai_cli_app-0.1.8.tar.gz tmp/rockai_cli_app-0.1.9.tar.gz --markdown 20240407/r/rockai-cli-app/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 05:15:13] WARNING root fetch - processPackages [alibabacloud-mse20190531-py2]: Timeout reached during download
+[2024-04-07 05:15:13] INFO root fetch - processPackages [alibabacloud-mse20190531-py2]: Downloading https://files.pythonhosted.org/packages/c1/d2/73f890654f606d4204ed095b4061dd4631fd57efdcf6d9309a37664a0eda/alibabacloud_mse20190531_py2-6.3.1.tar.gz
+[2024-04-07 05:15:13] INFO root fetch - processPackages [PygameToolsBox]: Remove: archive file [/home/abi/fetcher/tmp/PygameToolsBox-1.1.tar.gz]
+[2024-04-07 05:15:13] INFO root fetch - processPackages [PygameToolsBox]: Remove: archive file [/home/abi/fetcher/tmp/PygameToolsBox-1.1.1.tar.gz]
+[2024-04-07 05:15:13] INFO root fetch - main [MainThread]: End processing [PygameToolsBox]: success
+[2024-04-07 05:15:13] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.1.8.tar.gz]
+[2024-04-07 05:15:13] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.1.9.tar.gz]
+[2024-04-07 05:15:13] INFO root fetch - main [MainThread]: End processing [rockai-cli-app]: success
+[2024-04-07 05:15:13] WARNING root fetch - processPackages [alibabacloud-mse20190531-py2]: Timeout reached during download
+[2024-04-07 05:15:13] INFO root fetch - processPackages [alibabacloud-mse20190531-py2]: executing diffoscope
+[2024-04-07 05:15:13] INFO root fetch - processPackages [alibabacloud-mse20190531-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_mse20190531_py2-6.3.0.tar.gz tmp/alibabacloud_mse20190531_py2-6.3.1.tar.gz --markdown 20240407/a/alibabacloud-mse20190531-py2/6.3.0-6.3.1/diff.md --exclude *.pyd
+[2024-04-07 05:15:14] INFO root fetch - processPackages [alibabacloud-mse20190531-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_mse20190531_py2-6.3.0.tar.gz]
+[2024-04-07 05:15:14] INFO root fetch - processPackages [alibabacloud-mse20190531-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_mse20190531_py2-6.3.1.tar.gz]
+[2024-04-07 05:15:14] INFO root fetch - main [MainThread]: End processing [alibabacloud-mse20190531-py2]: success
+[2024-04-07 05:15:14] INFO root fetch - main [MainThread]: Store serial: [22653162]
