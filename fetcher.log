@@ -16807,3 +16807,60 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:24:32] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.1.7.tar.gz]
 [2024-04-07 19:24:32] INFO root fetch - main [MainThread]: End processing [diaspora-event-sdk]: success
 [2024-04-07 19:24:32] INFO root fetch - main [MainThread]: Store serial: [22657905]
+[2024-04-07 19:26:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657905]
+[2024-04-07 19:26:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 19:26:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hich-restrict
+[2024-04-07 19:26:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: savant-plugin-sample
+[2024-04-07 19:26:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: diaspora-event-sdk
+[2024-04-07 19:26:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kkpyai
+[2024-04-07 19:26:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: inmanta-module-podman
+[2024-04-07 19:26:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: savant-rs
+[2024-04-07 19:26:42] INFO root fetch - processPackages [kkpyai]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-07 19:26:42] INFO root fetch - processPackages [diaspora-event-sdk]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-07 19:26:42] INFO root fetch - processPackages [diaspora-event-sdk]: Downloading https://files.pythonhosted.org/packages/3b/87/2af33d0053d39cb9657a3795fe28bba7eeb623a70ba56518e6ef5578d171/diaspora-event-sdk-0.1.6.tar.gz
+[2024-04-07 19:26:42] INFO root fetch - processPackages [savant-plugin-sample]: New version: [0.2.19] Old Version: [0.2.18]
+[2024-04-07 19:26:42] INFO root fetch - processPackages [hich-restrict]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-07 19:26:42] INFO root fetch - processPackages [inmanta-module-podman]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-07 19:26:42] INFO root fetch - processPackages [kkpyai]: Downloading https://files.pythonhosted.org/packages/47/f2/c14dc361188d2825ff603a239fd6b72c4856b195d2e1a96377c482aaa410/kkpyai-0.1.0.tar.gz
+[2024-04-07 19:26:43] WARNING root fetch - processPackages [diaspora-event-sdk]: Timeout reached during download
+[2024-04-07 19:26:43] WARNING root fetch - processPackages [kkpyai]: Timeout reached during download
+[2024-04-07 19:26:43] INFO root fetch - processPackages [hich-restrict]: Downloading https://files.pythonhosted.org/packages/e6/25/0f58f6b061334c91ed4659559fd91e458ca689871fb29017dc3c5e8dab03/hich_restrict-0.1.0-py3-none-any.whl
+[2024-04-07 19:26:43] INFO root fetch - processPackages [inmanta-module-podman]: Downloading https://files.pythonhosted.org/packages/66/84/e83460bd0962b87fd1f956ad9d4349f26ace8a560a3ae66ec338e5dee5c5/inmanta_module_podman-0.2.0-py3-none-any.whl
+[2024-04-07 19:26:43] INFO root fetch - processPackages [savant-rs]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-07 19:26:43] INFO root fetch - processPackages [savant-plugin-sample]: Downloading https://files.pythonhosted.org/packages/35/2f/267264ce5aa8fc062ecea6f0345aa83aa7af17abc38c2560e9fb680e244e/savant_plugin_sample-0.2.18-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-07 19:26:43] INFO root fetch - processPackages [diaspora-event-sdk]: Downloading https://files.pythonhosted.org/packages/33/c7/d86b2bc018bc5999d5a7035ad81a6a70684c8cef66dc2caa29e4a1dc173e/diaspora-event-sdk-0.1.7.tar.gz
+[2024-04-07 19:26:43] WARNING root fetch - processPackages [hich-restrict]: Timeout reached during download
+[2024-04-07 19:26:43] INFO root fetch - processPackages [kkpyai]: Downloading https://files.pythonhosted.org/packages/7b/22/519549c9bbfe16339f21aaf67158b880325090188793990eb2426943a3a9/kkpyai-0.1.1.tar.gz
+[2024-04-07 19:26:43] WARNING root fetch - processPackages [diaspora-event-sdk]: Timeout reached during download
+[2024-04-07 19:26:43] INFO root fetch - processPackages [diaspora-event-sdk]: executing diffoscope
+[2024-04-07 19:26:43] INFO root fetch - processPackages [diaspora-event-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diaspora-event-sdk-0.1.6.tar.gz tmp/diaspora-event-sdk-0.1.7.tar.gz --markdown 20240407/d/diaspora-event-sdk/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2024-04-07 19:26:43] WARNING root fetch - processPackages [savant-plugin-sample]: Skipping package: exceeds size limit 13392819>=10485760
+[2024-04-07 19:26:43] INFO root fetch - main [MainThread]: End processing [savant-plugin-sample] error
+[2024-04-07 19:26:43] WARNING root fetch - processPackages [inmanta-module-podman]: Timeout reached during download
+[2024-04-07 19:26:43] WARNING root fetch - processPackages [kkpyai]: Timeout reached during download
+[2024-04-07 19:26:43] INFO root fetch - processPackages [kkpyai]: executing diffoscope
+[2024-04-07 19:26:43] INFO root fetch - processPackages [kkpyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyai-0.1.0.tar.gz tmp/kkpyai-0.1.1.tar.gz --markdown 20240407/k/kkpyai/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 19:26:43] INFO root fetch - processPackages [hich-restrict]: Downloading https://files.pythonhosted.org/packages/b4/dd/bb95f6f3ab915b53e2e5acdbdf3da69e22d423ae351557915dea2c5c32c2/hich_restrict-0.1.1-py3-none-any.whl
+[2024-04-07 19:26:43] INFO root fetch - processPackages [inmanta-module-podman]: Downloading https://files.pythonhosted.org/packages/d9/42/e4f26dcba64fcaa4ef0e0d2a459571e052cb4e8caa89a4abb70c717c7e3d/inmanta_module_podman-0.3.0-py3-none-any.whl
+[2024-04-07 19:26:43] WARNING root fetch - processPackages [hich-restrict]: Timeout reached during download
+[2024-04-07 19:26:43] INFO root fetch - processPackages [hich-restrict]: executing diffoscope
+[2024-04-07 19:26:43] INFO root fetch - processPackages [hich-restrict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hich_restrict-0.1.0-py3-none-any.whl.zip tmp/hich_restrict-0.1.1-py3-none-any.whl.zip --markdown 20240407/h/hich-restrict/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 19:26:43] INFO root fetch - processPackages [savant-rs]: Downloading https://files.pythonhosted.org/packages/27/7d/692e2bab3a8d72896f5e9f191b48afa977af60164afe8bc141e4dc44d403/savant_rs-0.2.9-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-07 19:26:43] WARNING root fetch - processPackages [inmanta-module-podman]: Timeout reached during download
+[2024-04-07 19:26:43] INFO root fetch - processPackages [inmanta-module-podman]: executing diffoscope
+[2024-04-07 19:26:43] INFO root fetch - processPackages [inmanta-module-podman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inmanta_module_podman-0.2.0-py3-none-any.whl.zip tmp/inmanta_module_podman-0.3.0-py3-none-any.whl.zip --markdown 20240407/i/inmanta-module-podman/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2024-04-07 19:26:43] WARNING root fetch - processPackages [savant-rs]: Skipping package: exceeds size limit 13159013>=10485760
+[2024-04-07 19:26:43] INFO root fetch - main [MainThread]: End processing [savant-rs] error
+[2024-04-07 19:26:43] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.1.6.tar.gz]
+[2024-04-07 19:26:43] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.1.7.tar.gz]
+[2024-04-07 19:26:43] INFO root fetch - main [MainThread]: End processing [diaspora-event-sdk]: success
+[2024-04-07 19:26:43] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.1.0.tar.gz]
+[2024-04-07 19:26:43] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.1.1.tar.gz]
+[2024-04-07 19:26:43] INFO root fetch - main [MainThread]: End processing [kkpyai]: success
+[2024-04-07 19:26:44] INFO root fetch - processPackages [hich-restrict]: Remove: archive file [/home/abi/fetcher/tmp/hich_restrict-0.1.0-py3-none-any.whl.zip]
+[2024-04-07 19:26:44] INFO root fetch - processPackages [hich-restrict]: Remove: archive file [/home/abi/fetcher/tmp/hich_restrict-0.1.1-py3-none-any.whl.zip]
+[2024-04-07 19:26:44] INFO root fetch - main [MainThread]: End processing [hich-restrict]: success
+[2024-04-07 19:26:44] INFO root fetch - processPackages [inmanta-module-podman]: Remove: archive file [/home/abi/fetcher/tmp/inmanta_module_podman-0.2.0-py3-none-any.whl.zip]
+[2024-04-07 19:26:44] INFO root fetch - processPackages [inmanta-module-podman]: Remove: archive file [/home/abi/fetcher/tmp/inmanta_module_podman-0.3.0-py3-none-any.whl.zip]
+[2024-04-07 19:26:44] INFO root fetch - main [MainThread]: End processing [inmanta-module-podman]: success
+[2024-04-07 19:26:44] INFO root fetch - main [MainThread]: Store serial: [22657932]
