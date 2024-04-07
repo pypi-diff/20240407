@@ -13441,3 +13441,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:24:55] INFO root fetch - processPackages [textual]: Remove: archive file [/home/abi/fetcher/tmp/textual-0.9.1.tar.gz]
 [2024-04-07 16:24:55] INFO root fetch - main [MainThread]: End processing [textual]: success
 [2024-04-07 16:24:55] INFO root fetch - main [MainThread]: Store serial: [22656770]
+[2024-04-07 16:26:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656770]
+[2024-04-07 16:27:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 16:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: esrt
+[2024-04-07 16:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: package-mp
+[2024-04-07 16:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Mopidy-Jellyfin
+[2024-04-07 16:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mfoci
+[2024-04-07 16:27:04] INFO root fetch - processPackages [mfoci]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-07 16:27:04] INFO root fetch - processPackages [mfoci]: Downloading https://files.pythonhosted.org/packages/a1/22/296e66b641c32bece95764d7c36df528d4c15fbc9dc655aab285882bca5c/mfoci-0.1.1.tar.gz
+[2024-04-07 16:27:04] INFO root fetch - processPackages [esrt]: New version: [1.28.0] Old Version: [1.27.0]
+[2024-04-07 16:27:04] WARNING root fetch - processPackages [package-mp]: Skipping, unable to determine old version
+[2024-04-07 16:27:04] INFO root fetch - main [MainThread]: End processing [package-mp] error
+[2024-04-07 16:27:04] INFO root fetch - processPackages [Mopidy-Jellyfin]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-07 16:27:04] WARNING root fetch - processPackages [mfoci]: Timeout reached during download
+[2024-04-07 16:27:04] INFO root fetch - processPackages [Mopidy-Jellyfin]: Downloading https://files.pythonhosted.org/packages/d8/91/4e64134d357262f378c90efe133ca26c0038d4fc55a22e15c121bbc320a8/Mopidy-Jellyfin-1.0.4.tar.gz
+[2024-04-07 16:27:04] INFO root fetch - processPackages [esrt]: Downloading https://files.pythonhosted.org/packages/a1/fe/dd98579e13af9b096d6d93d7a2714c5d768c23a6f3995c3f4645057ab3e9/esrt-1.27.0.tar.gz
+[2024-04-07 16:27:04] WARNING root fetch - processPackages [esrt]: Timeout reached during download
+[2024-04-07 16:27:04] WARNING root fetch - processPackages [Mopidy-Jellyfin]: Timeout reached during download
+[2024-04-07 16:27:04] INFO root fetch - processPackages [mfoci]: Downloading https://files.pythonhosted.org/packages/53/8a/8b33bc3bb50e2b3296930e9df81e1f30e124abc526dbe06a76ae73b25718/mfoci-0.1.2.tar.gz
+[2024-04-07 16:27:04] WARNING root fetch - processPackages [mfoci]: Timeout reached during download
+[2024-04-07 16:27:04] INFO root fetch - processPackages [mfoci]: executing diffoscope
+[2024-04-07 16:27:04] INFO root fetch - processPackages [mfoci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mfoci-0.1.1.tar.gz tmp/mfoci-0.1.2.tar.gz --markdown 20240407/m/mfoci/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-07 16:27:04] INFO root fetch - processPackages [Mopidy-Jellyfin]: Downloading https://files.pythonhosted.org/packages/f1/8b/28c261e2d10d2252c6a947bd3d540af27ff8debd07ffc77ad71eb440cc18/Mopidy-Jellyfin-1.0.5.tar.gz
+[2024-04-07 16:27:04] INFO root fetch - processPackages [esrt]: Downloading https://files.pythonhosted.org/packages/fc/f8/78ceb77d20a04a10c987f2e2a1824bbebcb7968785e031e7863260e968cb/esrt-1.28.0.tar.gz
+[2024-04-07 16:27:04] WARNING root fetch - processPackages [Mopidy-Jellyfin]: Timeout reached during download
+[2024-04-07 16:27:04] INFO root fetch - processPackages [Mopidy-Jellyfin]: executing diffoscope
+[2024-04-07 16:27:04] INFO root fetch - processPackages [Mopidy-Jellyfin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Mopidy-Jellyfin-1.0.4.tar.gz tmp/Mopidy-Jellyfin-1.0.5.tar.gz --markdown 20240407/M/Mopidy-Jellyfin/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2024-04-07 16:27:04] WARNING root fetch - processPackages [esrt]: Timeout reached during download
+[2024-04-07 16:27:04] INFO root fetch - processPackages [esrt]: executing diffoscope
+[2024-04-07 16:27:04] INFO root fetch - processPackages [esrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esrt-1.27.0.tar.gz tmp/esrt-1.28.0.tar.gz --markdown 20240407/e/esrt/1.27.0-1.28.0/diff.md --exclude *.pyd
+[2024-04-07 16:27:05] INFO root fetch - processPackages [mfoci]: Remove: archive file [/home/abi/fetcher/tmp/mfoci-0.1.1.tar.gz]
+[2024-04-07 16:27:05] INFO root fetch - processPackages [mfoci]: Remove: archive file [/home/abi/fetcher/tmp/mfoci-0.1.2.tar.gz]
+[2024-04-07 16:27:05] INFO root fetch - main [MainThread]: End processing [mfoci]: success
+[2024-04-07 16:27:05] INFO root fetch - processPackages [esrt]: Remove: archive file [/home/abi/fetcher/tmp/esrt-1.27.0.tar.gz]
+[2024-04-07 16:27:05] INFO root fetch - processPackages [esrt]: Remove: archive file [/home/abi/fetcher/tmp/esrt-1.28.0.tar.gz]
+[2024-04-07 16:27:05] INFO root fetch - main [MainThread]: End processing [esrt]: success
+[2024-04-07 16:27:05] INFO root fetch - processPackages [Mopidy-Jellyfin]: Remove: archive file [/home/abi/fetcher/tmp/Mopidy-Jellyfin-1.0.4.tar.gz]
+[2024-04-07 16:27:05] INFO root fetch - processPackages [Mopidy-Jellyfin]: Remove: archive file [/home/abi/fetcher/tmp/Mopidy-Jellyfin-1.0.5.tar.gz]
+[2024-04-07 16:27:05] INFO root fetch - main [MainThread]: End processing [Mopidy-Jellyfin]: success
+[2024-04-07 16:27:05] INFO root fetch - main [MainThread]: Store serial: [22656782]
