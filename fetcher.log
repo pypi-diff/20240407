@@ -19878,3 +19878,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:30:28] INFO root fetch - processPackages [imcsdk-ecoen66]: Remove: archive file [/home/abi/fetcher/tmp/imcsdk_ecoen66-0.9.32.tar.gz]
 [2024-04-07 22:30:28] INFO root fetch - main [MainThread]: End processing [imcsdk-ecoen66]: success
 [2024-04-07 22:30:28] INFO root fetch - main [MainThread]: Store serial: [22659121]
+[2024-04-07 22:32:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659121]
+[2024-04-07 22:32:37] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 22:32:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: p4adev_recipes
+[2024-04-07 22:32:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: slinn
+[2024-04-07 22:32:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: getcl
+[2024-04-07 22:32:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yglu
+[2024-04-07 22:32:38] INFO root fetch - processPackages [slinn]: New version: [2.2.3] Old Version: [2.2.2]
+[2024-04-07 22:32:38] INFO root fetch - processPackages [slinn]: Downloading https://files.pythonhosted.org/packages/74/33/873a1620973375bb1b1e02caac21c05b89a0e7ea61de16d76b8aefc277a0/slinn-2.2.2.tar.gz
+[2024-04-07 22:32:38] INFO root fetch - processPackages [p4adev_recipes]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 22:32:38] WARNING root fetch - processPackages [getcl]: Skipping, unable to determine old version
+[2024-04-07 22:32:38] INFO root fetch - main [MainThread]: End processing [getcl] error
+[2024-04-07 22:32:38] INFO root fetch - processPackages [yglu]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-07 22:32:38] WARNING root fetch - processPackages [slinn]: Timeout reached during download
+[2024-04-07 22:32:38] INFO root fetch - processPackages [p4adev_recipes]: Downloading https://files.pythonhosted.org/packages/92/a0/0d698b533e489226855b92128698bf6ff135b75ca22b6b2e1835980609e1/p4adev_recipes-0.0.2.tar.gz
+[2024-04-07 22:32:38] INFO root fetch - processPackages [yglu]: Downloading https://files.pythonhosted.org/packages/cb/53/acb670bcf5ce9d23046bd12a86dbef86698a8c04cf3f553bebff84127d4e/yglu-1.1.1.zip
+[2024-04-07 22:32:38] INFO root fetch - processPackages [slinn]: Downloading https://files.pythonhosted.org/packages/15/6f/984ef10fb322e0b6749775038f89aa4d61c1ee1a0ad8204c833763a04848/slinn-2.2.3.tar.gz
+[2024-04-07 22:32:38] WARNING root fetch - processPackages [p4adev_recipes]: Timeout reached during download
+[2024-04-07 22:32:38] WARNING root fetch - processPackages [slinn]: Timeout reached during download
+[2024-04-07 22:32:38] INFO root fetch - processPackages [slinn]: executing diffoscope
+[2024-04-07 22:32:38] INFO root fetch - processPackages [slinn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slinn-2.2.2.tar.gz tmp/slinn-2.2.3.tar.gz --markdown 20240407/s/slinn/2.2.2-2.2.3/diff.md --exclude *.pyd
+[2024-04-07 22:32:38] WARNING root fetch - processPackages [yglu]: Timeout reached during download
+[2024-04-07 22:32:38] INFO root fetch - processPackages [p4adev_recipes]: Downloading https://files.pythonhosted.org/packages/ae/2a/38ecdcd1d6141ec278434feed055746419a4d4db8af5b655977860b44d35/p4adev_recipes-0.0.3.tar.gz
+[2024-04-07 22:32:38] WARNING root fetch - processPackages [p4adev_recipes]: Timeout reached during download
+[2024-04-07 22:32:38] INFO root fetch - processPackages [p4adev_recipes]: executing diffoscope
+[2024-04-07 22:32:38] INFO root fetch - processPackages [p4adev_recipes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p4adev_recipes-0.0.2.tar.gz tmp/p4adev_recipes-0.0.3.tar.gz --markdown 20240407/p/p4adev_recipes/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 22:32:38] INFO root fetch - processPackages [yglu]: Downloading https://files.pythonhosted.org/packages/01/d2/0678ba02aa7ac186939e2dba21b0ab8cddea2c4870a75084e71fa5e9d689/yglu-1.1.2.tar.gz
+[2024-04-07 22:32:39] WARNING root fetch - processPackages [yglu]: Timeout reached during download
+[2024-04-07 22:32:39] INFO root fetch - processPackages [yglu]: executing diffoscope
+[2024-04-07 22:32:39] INFO root fetch - processPackages [yglu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yglu-1.1.1.zip tmp/yglu-1.1.2.tar.gz --markdown 20240407/y/yglu/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2024-04-07 22:32:39] INFO root fetch - processPackages [slinn]: Remove: archive file [/home/abi/fetcher/tmp/slinn-2.2.2.tar.gz]
+[2024-04-07 22:32:39] INFO root fetch - processPackages [slinn]: Remove: archive file [/home/abi/fetcher/tmp/slinn-2.2.3.tar.gz]
+[2024-04-07 22:32:39] INFO root fetch - main [MainThread]: End processing [slinn]: success
+[2024-04-07 22:32:39] INFO root fetch - processPackages [p4adev_recipes]: Remove: archive file [/home/abi/fetcher/tmp/p4adev_recipes-0.0.2.tar.gz]
+[2024-04-07 22:32:39] INFO root fetch - processPackages [p4adev_recipes]: Remove: archive file [/home/abi/fetcher/tmp/p4adev_recipes-0.0.3.tar.gz]
+[2024-04-07 22:32:39] INFO root fetch - main [MainThread]: End processing [p4adev_recipes]: success
+[2024-04-07 22:32:39] INFO root fetch - processPackages [yglu]: Remove: archive file [/home/abi/fetcher/tmp/yglu-1.1.1.zip]
+[2024-04-07 22:32:39] INFO root fetch - processPackages [yglu]: Remove: archive file [/home/abi/fetcher/tmp/yglu-1.1.2.tar.gz]
+[2024-04-07 22:32:39] INFO root fetch - main [MainThread]: End processing [yglu]: success
+[2024-04-07 22:32:39] INFO root fetch - main [MainThread]: Store serial: [22659133]
