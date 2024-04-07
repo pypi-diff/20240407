@@ -9681,3 +9681,56 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 12:07:42] INFO root fetch - processPackages [boris-behav-obs]: Remove: archive file [/home/abi/fetcher/tmp/boris-behav-obs-8.9.8.tar.gz]
 [2024-04-07 12:07:42] INFO root fetch - main [MainThread]: End processing [boris-behav-obs]: success
 [2024-04-07 12:07:42] INFO root fetch - main [MainThread]: Store serial: [22655289]
+[2024-04-07 12:09:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655289]
+[2024-04-07 12:09:51] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 12:09:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyserSSH
+[2024-04-07 12:09:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-keras-nightly
+[2024-04-07 12:09:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: glitter-sdk-lite
+[2024-04-07 12:09:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cloud-orbit-api
+[2024-04-07 12:09:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: screwdriver-cd-python-sdk
+[2024-04-07 12:09:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dltrain
+[2024-04-07 12:09:51] INFO root fetch - processPackages [tf-keras-nightly]: New version: [2.17.0.dev2024040609] Old Version: [2.17.0.dev2024040409]
+[2024-04-07 12:09:51] INFO root fetch - processPackages [cloud-orbit-api]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-07 12:09:51] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/cb/07/26b08643608b9b1168f824b8e75f3d7c8f22786f64e7ca742248a734909e/tf_keras-nightly-2.17.0.dev2024040409.tar.gz
+[2024-04-07 12:09:51] WARNING root fetch - processPackages [glitter-sdk-lite]: Skipping, unable to determine old version
+[2024-04-07 12:09:51] INFO root fetch - main [MainThread]: End processing [glitter-sdk-lite] error
+[2024-04-07 12:09:51] INFO root fetch - processPackages [cloud-orbit-api]: Downloading https://files.pythonhosted.org/packages/9a/1d/7d6076d35d1547373cd5d62c09909d48c213b063e1f6f371fd66ba6b8408/cloud_orbit_api-0.1.1.tar.gz
+[2024-04-07 12:09:51] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: New version: [1.0.0] Old Version: [0.1.1]
+[2024-04-07 12:09:51] INFO root fetch - processPackages [PyserSSH]: New version: [4.3] Old Version: [4.2.1]
+[2024-04-07 12:09:51] WARNING root fetch - processPackages [dltrain]: Skipping, unable to determine old version
+[2024-04-07 12:09:51] INFO root fetch - main [MainThread]: End processing [dltrain] error
+[2024-04-07 12:09:51] WARNING root fetch - processPackages [cloud-orbit-api]: Timeout reached during download
+[2024-04-07 12:09:51] INFO root fetch - processPackages [PyserSSH]: Downloading https://files.pythonhosted.org/packages/ea/2b/26bd7f87651e8b841f4cb5162a910bb65855d5de310518cb060622b53540/PyserSSH-4.2.1.tar.gz
+[2024-04-07 12:09:51] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: Downloading https://files.pythonhosted.org/packages/a7/27/fc90d4e3d7b6f1fc8099247d0b44e2267d4423542df046889dd3fbf4bed1/screwdriver-cd-python-sdk-0.1.1.tar.gz
+[2024-04-07 12:09:51] WARNING root fetch - processPackages [tf-keras-nightly]: Timeout reached during download
+[2024-04-07 12:09:51] WARNING root fetch - processPackages [PyserSSH]: Timeout reached during download
+[2024-04-07 12:09:52] INFO root fetch - processPackages [cloud-orbit-api]: Downloading https://files.pythonhosted.org/packages/22/19/21482cf0625b8be6f69140301cea71d9699bd200673e4fc488f5bfc24677/cloud_orbit_api-0.1.2.tar.gz
+[2024-04-07 12:09:52] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/52/5c/0da95ae2f020f18662a405364ecbf6063f94386002c7d19903e50473dfb2/tf_keras-nightly-2.17.0.dev2024040609.tar.gz
+[2024-04-07 12:09:52] WARNING root fetch - processPackages [screwdriver-cd-python-sdk]: Timeout reached during download
+[2024-04-07 12:09:52] WARNING root fetch - processPackages [cloud-orbit-api]: Timeout reached during download
+[2024-04-07 12:09:52] INFO root fetch - processPackages [cloud-orbit-api]: executing diffoscope
+[2024-04-07 12:09:52] INFO root fetch - processPackages [cloud-orbit-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloud_orbit_api-0.1.1.tar.gz tmp/cloud_orbit_api-0.1.2.tar.gz --markdown 20240407/c/cloud-orbit-api/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-07 12:09:52] INFO root fetch - processPackages [PyserSSH]: Downloading https://files.pythonhosted.org/packages/27/c5/8d9bd69de346d8f13f350980bf5f0ece6796d4bf30b38e485541444956e3/PyserSSH-4.3.tar.gz
+[2024-04-07 12:09:52] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: Downloading https://files.pythonhosted.org/packages/89/22/56327273ec36b9e57d1dd5f33258f5f3c80579ec801a292c69f3be591751/screwdriver-cd-python-sdk-1.0.0.tar.gz
+[2024-04-07 12:09:52] WARNING root fetch - processPackages [tf-keras-nightly]: Timeout reached during download
+[2024-04-07 12:09:52] INFO root fetch - processPackages [tf-keras-nightly]: executing diffoscope
+[2024-04-07 12:09:52] INFO root fetch - processPackages [tf-keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_keras-nightly-2.17.0.dev2024040409.tar.gz tmp/tf_keras-nightly-2.17.0.dev2024040609.tar.gz --markdown 20240407/t/tf-keras-nightly/2.17.0.dev2024040409-2.17.0.dev2024040609/diff.md --exclude *.pyd
+[2024-04-07 12:09:52] WARNING root fetch - processPackages [PyserSSH]: Timeout reached during download
+[2024-04-07 12:09:52] INFO root fetch - processPackages [PyserSSH]: executing diffoscope
+[2024-04-07 12:09:52] INFO root fetch - processPackages [PyserSSH]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyserSSH-4.2.1.tar.gz tmp/PyserSSH-4.3.tar.gz --markdown 20240407/P/PyserSSH/4.2.1-4.3/diff.md --exclude *.pyd
+[2024-04-07 12:09:52] WARNING root fetch - processPackages [screwdriver-cd-python-sdk]: Timeout reached during download
+[2024-04-07 12:09:52] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: executing diffoscope
+[2024-04-07 12:09:52] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/screwdriver-cd-python-sdk-0.1.1.tar.gz tmp/screwdriver-cd-python-sdk-1.0.0.tar.gz --markdown 20240407/s/screwdriver-cd-python-sdk/0.1.1-1.0.0/diff.md --exclude *.pyd
+[2024-04-07 12:09:52] INFO root fetch - processPackages [cloud-orbit-api]: Remove: archive file [/home/abi/fetcher/tmp/cloud_orbit_api-0.1.1.tar.gz]
+[2024-04-07 12:09:52] INFO root fetch - processPackages [cloud-orbit-api]: Remove: archive file [/home/abi/fetcher/tmp/cloud_orbit_api-0.1.2.tar.gz]
+[2024-04-07 12:09:52] INFO root fetch - main [MainThread]: End processing [cloud-orbit-api]: success
+[2024-04-07 12:09:52] INFO root fetch - processPackages [PyserSSH]: Remove: archive file [/home/abi/fetcher/tmp/PyserSSH-4.2.1.tar.gz]
+[2024-04-07 12:09:52] INFO root fetch - processPackages [PyserSSH]: Remove: archive file [/home/abi/fetcher/tmp/PyserSSH-4.3.tar.gz]
+[2024-04-07 12:09:52] INFO root fetch - main [MainThread]: End processing [PyserSSH]: success
+[2024-04-07 12:09:52] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/screwdriver-cd-python-sdk-0.1.1.tar.gz]
+[2024-04-07 12:09:52] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/screwdriver-cd-python-sdk-1.0.0.tar.gz]
+[2024-04-07 12:09:52] INFO root fetch - main [MainThread]: End processing [screwdriver-cd-python-sdk]: success
+[2024-04-07 12:09:54] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras-nightly-2.17.0.dev2024040409.tar.gz]
+[2024-04-07 12:09:54] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras-nightly-2.17.0.dev2024040609.tar.gz]
+[2024-04-07 12:09:54] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
+[2024-04-07 12:09:54] INFO root fetch - main [MainThread]: Store serial: [22655308]
