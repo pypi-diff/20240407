@@ -5354,3 +5354,42 @@
 [2024-04-07 07:29:39] INFO root fetch - processPackages [pulumi-akamai]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_akamai-6.5.0a1712399669.tar.gz]
 [2024-04-07 07:29:39] INFO root fetch - main [MainThread]: End processing [pulumi-akamai]: success
 [2024-04-07 07:29:39] INFO root fetch - main [MainThread]: Store serial: [22653632]
+[2024-04-07 07:31:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653632]
+[2024-04-07 07:32:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 07:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-yaml-sanmu
+[2024-04-07 07:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wagtail-fedit
+[2024-04-07 07:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: htscf
+[2024-04-07 07:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: capedu
+[2024-04-07 07:32:04] INFO root fetch - processPackages [htscf]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 07:32:04] INFO root fetch - processPackages [wagtail-fedit]: New version: [1.4.0] Old Version: [1.3.9]
+[2024-04-07 07:32:04] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/48/31/ef6469f74ffa5f39aaf9ac67ecf2f5b17aec1b223d3f63572efd39a3958f/htscf-0.0.98.tar.gz
+[2024-04-07 07:32:04] INFO root fetch - processPackages [pytest-yaml-sanmu]: New version: [0.2.6] Old Version: [0.2.5.dev0]
+[2024-04-07 07:32:04] INFO root fetch - processPackages [wagtail-fedit]: Downloading https://files.pythonhosted.org/packages/04/f6/f48f1d93e3d01531659cb0262350a14cf65aaf6978707b287b309d44ac01/wagtail_fedit-1.3.9.tar.gz
+[2024-04-07 07:32:04] WARNING root fetch - processPackages [capedu]: Skipping, unable to determine old version
+[2024-04-07 07:32:04] INFO root fetch - main [MainThread]: End processing [capedu] error
+[2024-04-07 07:32:04] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 07:32:04] WARNING root fetch - processPackages [wagtail-fedit]: Timeout reached during download
+[2024-04-07 07:32:04] INFO root fetch - processPackages [pytest-yaml-sanmu]: Downloading https://files.pythonhosted.org/packages/c8/b2/08776070aaefead9c8b9c029838e10ff95cb2a3eeb6899a7586e82acb85e/pytest_yaml_sanmu-0.2.5.dev0-py3-none-any.whl
+[2024-04-07 07:32:04] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/79/48/b9c5a63d0fc652968c826af8815fadd5e1f69403909e12853b5a52d9c6b3/htscf-0.0.99.tar.gz
+[2024-04-07 07:32:04] INFO root fetch - processPackages [wagtail-fedit]: Downloading https://files.pythonhosted.org/packages/5f/c3/9d6d6de0e6b7dbfe1c41ca3bf13b92a46691e9a92db89fe227768ee889be/wagtail_fedit-1.4.0.tar.gz
+[2024-04-07 07:32:04] WARNING root fetch - processPackages [pytest-yaml-sanmu]: Timeout reached during download
+[2024-04-07 07:32:04] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 07:32:04] INFO root fetch - processPackages [htscf]: executing diffoscope
+[2024-04-07 07:32:04] INFO root fetch - processPackages [htscf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htscf-0.0.98.tar.gz tmp/htscf-0.0.99.tar.gz --markdown 20240407/h/htscf/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 07:32:04] WARNING root fetch - processPackages [wagtail-fedit]: Timeout reached during download
+[2024-04-07 07:32:04] INFO root fetch - processPackages [wagtail-fedit]: executing diffoscope
+[2024-04-07 07:32:04] INFO root fetch - processPackages [wagtail-fedit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail_fedit-1.3.9.tar.gz tmp/wagtail_fedit-1.4.0.tar.gz --markdown 20240407/w/wagtail-fedit/1.3.9-1.4.0/diff.md --exclude *.pyd
+[2024-04-07 07:32:04] INFO root fetch - processPackages [pytest-yaml-sanmu]: Downloading https://files.pythonhosted.org/packages/9f/41/e51d0356c1c5226f29ab09325ac42e8efc763a7437e012d1842115e42094/pytest_yaml_sanmu-0.2.6-py3-none-any.whl
+[2024-04-07 07:32:04] WARNING root fetch - processPackages [pytest-yaml-sanmu]: Timeout reached during download
+[2024-04-07 07:32:04] INFO root fetch - processPackages [pytest-yaml-sanmu]: executing diffoscope
+[2024-04-07 07:32:04] INFO root fetch - processPackages [pytest-yaml-sanmu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_yaml_sanmu-0.2.5.dev0-py3-none-any.whl.zip tmp/pytest_yaml_sanmu-0.2.6-py3-none-any.whl.zip --markdown 20240407/p/pytest-yaml-sanmu/0.2.5.dev0-0.2.6/diff.md --exclude *.pyd
+[2024-04-07 07:32:05] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.98.tar.gz]
+[2024-04-07 07:32:05] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.99.tar.gz]
+[2024-04-07 07:32:05] INFO root fetch - main [MainThread]: End processing [htscf]: success
+[2024-04-07 07:32:05] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.3.9.tar.gz]
+[2024-04-07 07:32:05] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.4.0.tar.gz]
+[2024-04-07 07:32:05] INFO root fetch - main [MainThread]: End processing [wagtail-fedit]: success
+[2024-04-07 07:32:05] INFO root fetch - processPackages [pytest-yaml-sanmu]: Remove: archive file [/home/abi/fetcher/tmp/pytest_yaml_sanmu-0.2.5.dev0-py3-none-any.whl.zip]
+[2024-04-07 07:32:05] INFO root fetch - processPackages [pytest-yaml-sanmu]: Remove: archive file [/home/abi/fetcher/tmp/pytest_yaml_sanmu-0.2.6-py3-none-any.whl.zip]
+[2024-04-07 07:32:05] INFO root fetch - main [MainThread]: End processing [pytest-yaml-sanmu]: success
+[2024-04-07 07:32:05] INFO root fetch - main [MainThread]: Store serial: [22653639]
