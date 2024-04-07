@@ -1877,3 +1877,12 @@
 [2024-04-07 02:57:11] WARNING root fetch - processPackages [pycounts_rms]: Skipping, unable to determine old version
 [2024-04-07 02:57:11] INFO root fetch - main [MainThread]: End processing [pycounts_rms] error
 [2024-04-07 02:57:11] INFO root fetch - main [MainThread]: Store serial: [22652410]
+[2024-04-07 02:59:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652410]
+[2024-04-07 02:59:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 02:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ognn
+[2024-04-07 02:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prosperity2submit
+[2024-04-07 02:59:20] WARNING root fetch - processPackages [ognn]: Skipping, unable to determine old version
+[2024-04-07 02:59:20] INFO root fetch - main [MainThread]: End processing [ognn] error
+[2024-04-07 02:59:20] WARNING root fetch - processPackages [prosperity2submit]: Skipping, unable to determine old version
+[2024-04-07 02:59:20] INFO root fetch - main [MainThread]: End processing [prosperity2submit] error
+[2024-04-07 02:59:20] INFO root fetch - main [MainThread]: Store serial: [22652421]
