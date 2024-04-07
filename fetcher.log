@@ -10869,3 +10869,64 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:39:03] INFO root fetch - processPackages [commits2pdf]: Remove: archive file [/home/abi/fetcher/tmp/commits2pdf-1.1.5.tar.gz]
 [2024-04-07 13:39:03] INFO root fetch - main [MainThread]: End processing [commits2pdf]: success
 [2024-04-07 13:39:03] INFO root fetch - main [MainThread]: Store serial: [22655779]
+[2024-04-07 13:41:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655779]
+[2024-04-07 13:41:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 13:41:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qwak-sdk
+[2024-04-07 13:41:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kiwimouse
+[2024-04-07 13:41:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: seastate
+[2024-04-07 13:41:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: isat-sibyl
+[2024-04-07 13:41:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: NoobStuffs
+[2024-04-07 13:41:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: laia-gen-lib
+[2024-04-07 13:41:12] INFO root fetch - processPackages [NoobStuffs]: New version: [2.0.0] Old Version: [1.0.9]
+[2024-04-07 13:41:12] INFO root fetch - processPackages [seastate]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-04-07 13:41:12] WARNING root fetch - processPackages [kiwimouse]: Skipping, unable to determine old version
+[2024-04-07 13:41:12] INFO root fetch - main [MainThread]: End processing [kiwimouse] error
+[2024-04-07 13:41:12] INFO root fetch - processPackages [NoobStuffs]: Downloading https://files.pythonhosted.org/packages/2e/eb/ab62c66a1f9fb8a01475b11b5fa7aa4f8dc4682efd0990611fb01a2c8363/noobstuffs-1.0.9.tar.gz
+[2024-04-07 13:41:12] INFO root fetch - processPackages [isat-sibyl]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-07 13:41:12] INFO root fetch - processPackages [qwak-sdk]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-07 13:41:12] INFO root fetch - processPackages [laia-gen-lib]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 13:41:12] INFO root fetch - processPackages [laia-gen-lib]: Downloading https://files.pythonhosted.org/packages/cf/9d/df25741f3199a178d6bebb43c6f39eeaaa924cb41510466057c7e68ad259/laia-gen-lib-0.1.8.tar.gz
+[2024-04-07 13:41:12] WARNING root fetch - processPackages [NoobStuffs]: Timeout reached during download
+[2024-04-07 13:41:12] INFO root fetch - processPackages [seastate]: Downloading https://files.pythonhosted.org/packages/c4/cc/f1f77fa37e85293e03768d861b933adea7a6a3d6190475ee478caba6eb1f/seastate-0.1.2.tar.gz
+[2024-04-07 13:41:12] INFO root fetch - processPackages [isat-sibyl]: Downloading https://files.pythonhosted.org/packages/36/7b/0d684a3b090234a3c44d1302e352a27ef793f0e1fea7e2fd626cd9ef3761/isat-sibyl-1.0.7.tar.gz
+[2024-04-07 13:41:13] INFO root fetch - processPackages [qwak-sdk]: Downloading https://files.pythonhosted.org/packages/54/73/b232213196f61ccf5d744e25bd0300ead695e86f48708d735193d80f05ff/qwak_sdk-0.5.8.tar.gz
+[2024-04-07 13:41:13] INFO root fetch - processPackages [NoobStuffs]: Downloading https://files.pythonhosted.org/packages/2e/a4/e96ccd93cb51f758b97bc033d530a615c7445f40c07e87f142beb466a4b4/noobstuffs-2.0.0.tar.gz
+[2024-04-07 13:41:13] WARNING root fetch - processPackages [laia-gen-lib]: Timeout reached during download
+[2024-04-07 13:41:13] WARNING root fetch - processPackages [qwak-sdk]: Timeout reached during download
+[2024-04-07 13:41:13] WARNING root fetch - processPackages [seastate]: Timeout reached during download
+[2024-04-07 13:41:13] INFO root fetch - processPackages [laia-gen-lib]: Downloading https://files.pythonhosted.org/packages/be/61/f1135da258191b7a80992064d66519b24c5cf4c05de8b99ccfa7ad90d9bf/laia-gen-lib-0.1.9.tar.gz
+[2024-04-07 13:41:13] WARNING root fetch - processPackages [NoobStuffs]: Timeout reached during download
+[2024-04-07 13:41:13] INFO root fetch - processPackages [NoobStuffs]: executing diffoscope
+[2024-04-07 13:41:13] INFO root fetch - processPackages [NoobStuffs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noobstuffs-1.0.9.tar.gz tmp/noobstuffs-2.0.0.tar.gz --markdown 20240407/N/NoobStuffs/1.0.9-2.0.0/diff.md --exclude *.pyd
+[2024-04-07 13:41:13] WARNING root fetch - processPackages [isat-sibyl]: Timeout reached during download
+[2024-04-07 13:41:13] INFO root fetch - processPackages [seastate]: Downloading https://files.pythonhosted.org/packages/c6/55/df76b04924a2ace0dd473edf91051c85fe5ba7c42bea239bb56ff94ab6db/seastate-0.2.0.tar.gz
+[2024-04-07 13:41:13] INFO root fetch - processPackages [qwak-sdk]: Downloading https://files.pythonhosted.org/packages/d4/93/8fee5951ae6175bb756e71b252346e876a32a52652955f82fb606c69fb2c/qwak_sdk-0.5.9.tar.gz
+[2024-04-07 13:41:13] WARNING root fetch - processPackages [laia-gen-lib]: Timeout reached during download
+[2024-04-07 13:41:13] INFO root fetch - processPackages [laia-gen-lib]: executing diffoscope
+[2024-04-07 13:41:13] INFO root fetch - processPackages [laia-gen-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/laia-gen-lib-0.1.8.tar.gz tmp/laia-gen-lib-0.1.9.tar.gz --markdown 20240407/l/laia-gen-lib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 13:41:13] INFO root fetch - processPackages [isat-sibyl]: Downloading https://files.pythonhosted.org/packages/ee/3e/9de404d8660e88b1467530e73082f2bd997edf5d935faa7054e4b34ff790/isat-sibyl-1.0.8.tar.gz
+[2024-04-07 13:41:13] WARNING root fetch - processPackages [seastate]: Timeout reached during download
+[2024-04-07 13:41:13] INFO root fetch - processPackages [seastate]: executing diffoscope
+[2024-04-07 13:41:13] INFO root fetch - processPackages [seastate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seastate-0.1.2.tar.gz tmp/seastate-0.2.0.tar.gz --markdown 20240407/s/seastate/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2024-04-07 13:41:13] WARNING root fetch - processPackages [qwak-sdk]: Timeout reached during download
+[2024-04-07 13:41:13] INFO root fetch - processPackages [qwak-sdk]: executing diffoscope
+[2024-04-07 13:41:13] INFO root fetch - processPackages [qwak-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_sdk-0.5.8.tar.gz tmp/qwak_sdk-0.5.9.tar.gz --markdown 20240407/q/qwak-sdk/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2024-04-07 13:41:13] WARNING root fetch - processPackages [isat-sibyl]: Timeout reached during download
+[2024-04-07 13:41:13] INFO root fetch - processPackages [isat-sibyl]: executing diffoscope
+[2024-04-07 13:41:13] INFO root fetch - processPackages [isat-sibyl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isat-sibyl-1.0.7.tar.gz tmp/isat-sibyl-1.0.8.tar.gz --markdown 20240407/i/isat-sibyl/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2024-04-07 13:41:13] INFO root fetch - processPackages [NoobStuffs]: Remove: archive file [/home/abi/fetcher/tmp/noobstuffs-1.0.9.tar.gz]
+[2024-04-07 13:41:13] INFO root fetch - processPackages [NoobStuffs]: Remove: archive file [/home/abi/fetcher/tmp/noobstuffs-2.0.0.tar.gz]
+[2024-04-07 13:41:13] INFO root fetch - main [MainThread]: End processing [NoobStuffs]: success
+[2024-04-07 13:41:14] INFO root fetch - processPackages [laia-gen-lib]: Remove: archive file [/home/abi/fetcher/tmp/laia-gen-lib-0.1.8.tar.gz]
+[2024-04-07 13:41:14] INFO root fetch - processPackages [laia-gen-lib]: Remove: archive file [/home/abi/fetcher/tmp/laia-gen-lib-0.1.9.tar.gz]
+[2024-04-07 13:41:14] INFO root fetch - main [MainThread]: End processing [laia-gen-lib]: success
+[2024-04-07 13:41:14] INFO root fetch - processPackages [seastate]: Remove: archive file [/home/abi/fetcher/tmp/seastate-0.1.2.tar.gz]
+[2024-04-07 13:41:14] INFO root fetch - processPackages [seastate]: Remove: archive file [/home/abi/fetcher/tmp/seastate-0.2.0.tar.gz]
+[2024-04-07 13:41:14] INFO root fetch - main [MainThread]: End processing [seastate]: success
+[2024-04-07 13:41:14] INFO root fetch - processPackages [isat-sibyl]: Remove: archive file [/home/abi/fetcher/tmp/isat-sibyl-1.0.7.tar.gz]
+[2024-04-07 13:41:14] INFO root fetch - processPackages [isat-sibyl]: Remove: archive file [/home/abi/fetcher/tmp/isat-sibyl-1.0.8.tar.gz]
+[2024-04-07 13:41:14] INFO root fetch - main [MainThread]: End processing [isat-sibyl]: success
+[2024-04-07 13:41:14] INFO root fetch - processPackages [qwak-sdk]: Remove: archive file [/home/abi/fetcher/tmp/qwak_sdk-0.5.8.tar.gz]
+[2024-04-07 13:41:14] INFO root fetch - processPackages [qwak-sdk]: Remove: archive file [/home/abi/fetcher/tmp/qwak_sdk-0.5.9.tar.gz]
+[2024-04-07 13:41:14] INFO root fetch - main [MainThread]: End processing [qwak-sdk]: success
+[2024-04-07 13:41:14] INFO root fetch - main [MainThread]: Store serial: [22655797]
