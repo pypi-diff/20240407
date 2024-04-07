@@ -6449,3 +6449,50 @@
 [2024-04-07 08:33:26] INFO root fetch - processPackages [pulumi-spotinst]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz]
 [2024-04-07 08:33:26] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
 [2024-04-07 08:33:26] INFO root fetch - main [MainThread]: Store serial: [22654031]
+[2024-04-07 08:35:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654031]
+[2024-04-07 08:35:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 08:35:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dolphindb
+[2024-04-07 08:35:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-tls
+[2024-04-07 08:35:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-sumologic
+[2024-04-07 08:35:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CINOSUM
+[2024-04-07 08:35:36] INFO root fetch - processPackages [CINOSUM]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-07 08:35:36] INFO root fetch - processPackages [CINOSUM]: Downloading https://files.pythonhosted.org/packages/a7/c8/e7aa2b3c5cd2b7a7f2c9e57c70139ff8f270d495dcf002dde88b0590fe85/CINOSUM-1.0.4.tar.gz
+[2024-04-07 08:35:36] INFO root fetch - processPackages [pulumi-sumologic]: New version: [0.9.1a1663799436] Old Version: [0.9.0]
+[2024-04-07 08:35:36] INFO root fetch - processPackages [pulumi-tls]: New version: [5.1.0a1712470657] Old Version: [5.1.0a1712403158]
+[2024-04-07 08:35:36] INFO root fetch - processPackages [pulumi-tls]: Downloading https://files.pythonhosted.org/packages/96/26/b98b5127e4a0365270e5859702f7b1b7ddfb2d118c32cd84529eaee6c246/pulumi_tls-5.1.0a1712403158.tar.gz
+[2024-04-07 08:35:36] WARNING root fetch - processPackages [CINOSUM]: Timeout reached during download
+[2024-04-07 08:35:36] INFO root fetch - processPackages [dolphindb]: New version: [3.0.0.0] Old Version: [2.0.11.0]
+[2024-04-07 08:35:36] WARNING root fetch - processPackages [pulumi-tls]: Timeout reached during download
+[2024-04-07 08:35:36] INFO root fetch - processPackages [pulumi-sumologic]: Downloading https://files.pythonhosted.org/packages/6e/f2/ba414f5902bee40f219e9fb7e62d763f8263329614fc12ed2b5b02a34627/pulumi_sumologic-0.9.0.tar.gz
+[2024-04-07 08:35:36] INFO root fetch - processPackages [CINOSUM]: Downloading https://files.pythonhosted.org/packages/6b/56/4bad8f2772593fa726723e534e29f2b5585159ea7460aba581fa8503e44a/CINOSUM-1.0.5.tar.gz
+[2024-04-07 08:35:36] WARNING root fetch - processPackages [pulumi-sumologic]: Timeout reached during download
+[2024-04-07 08:35:36] INFO root fetch - processPackages [dolphindb]: Downloading https://files.pythonhosted.org/packages/bd/c5/c8c68bc3180b9f5ac59159935b167e1d7845696c32575fc9eabb7ff29ff7/dolphindb-2.0.11.0-cp39-cp39-win_amd64.whl
+[2024-04-07 08:35:36] INFO root fetch - processPackages [pulumi-tls]: Downloading https://files.pythonhosted.org/packages/7e/ec/aab8079646e1cca94400f7656755c06cf0a66a629737efe57335d65e89cb/pulumi_tls-5.1.0a1712470657.tar.gz
+[2024-04-07 08:35:36] WARNING root fetch - processPackages [CINOSUM]: Timeout reached during download
+[2024-04-07 08:35:36] INFO root fetch - processPackages [CINOSUM]: executing diffoscope
+[2024-04-07 08:35:36] INFO root fetch - processPackages [CINOSUM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CINOSUM-1.0.4.tar.gz tmp/CINOSUM-1.0.5.tar.gz --markdown 20240407/C/CINOSUM/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2024-04-07 08:35:36] WARNING root fetch - processPackages [pulumi-tls]: Timeout reached during download
+[2024-04-07 08:35:36] INFO root fetch - processPackages [pulumi-tls]: executing diffoscope
+[2024-04-07 08:35:36] INFO root fetch - processPackages [pulumi-tls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_tls-5.1.0a1712403158.tar.gz tmp/pulumi_tls-5.1.0a1712470657.tar.gz --markdown 20240407/p/pulumi-tls/5.1.0a1712403158-5.1.0a1712470657/diff.md --exclude *.pyd
+[2024-04-07 08:35:36] INFO root fetch - processPackages [pulumi-sumologic]: Downloading https://files.pythonhosted.org/packages/67/c4/8f95a0de8aac6e9d9348bd2698c48e05211e3a2fabda9b0e7bcaa7b80ca8/pulumi_sumologic-0.9.1a1663799436.tar.gz
+[2024-04-07 08:35:37] WARNING root fetch - processPackages [pulumi-sumologic]: Timeout reached during download
+[2024-04-07 08:35:37] INFO root fetch - processPackages [pulumi-sumologic]: executing diffoscope
+[2024-04-07 08:35:37] INFO root fetch - processPackages [pulumi-sumologic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_sumologic-0.9.0.tar.gz tmp/pulumi_sumologic-0.9.1a1663799436.tar.gz --markdown 20240407/p/pulumi-sumologic/0.9.0-0.9.1a1663799436/diff.md --exclude *.pyd
+[2024-04-07 08:35:37] INFO root fetch - processPackages [CINOSUM]: Remove: archive file [/home/abi/fetcher/tmp/CINOSUM-1.0.4.tar.gz]
+[2024-04-07 08:35:37] INFO root fetch - processPackages [CINOSUM]: Remove: archive file [/home/abi/fetcher/tmp/CINOSUM-1.0.5.tar.gz]
+[2024-04-07 08:35:37] INFO root fetch - main [MainThread]: End processing [CINOSUM]: success
+[2024-04-07 08:35:37] INFO root fetch - processPackages [pulumi-tls]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_tls-5.1.0a1712403158.tar.gz]
+[2024-04-07 08:35:37] INFO root fetch - processPackages [pulumi-tls]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_tls-5.1.0a1712470657.tar.gz]
+[2024-04-07 08:35:37] INFO root fetch - main [MainThread]: End processing [pulumi-tls]: success
+[2024-04-07 08:35:37] WARNING root fetch - processPackages [dolphindb]: Timeout reached during download
+[2024-04-07 08:35:38] INFO root fetch - processPackages [dolphindb]: Downloading https://files.pythonhosted.org/packages/c5/63/537e8bee6d02cd8b88029915131bc75b3cf5617a8a089880475b29e5f9d5/dolphindb-3.0.0.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2024-04-07 08:35:38] INFO root fetch - processPackages [pulumi-sumologic]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_sumologic-0.9.0.tar.gz]
+[2024-04-07 08:35:38] INFO root fetch - processPackages [pulumi-sumologic]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_sumologic-0.9.1a1663799436.tar.gz]
+[2024-04-07 08:35:38] INFO root fetch - main [MainThread]: End processing [pulumi-sumologic]: success
+[2024-04-07 08:35:40] WARNING root fetch - processPackages [dolphindb]: Timeout reached during download
+[2024-04-07 08:35:40] INFO root fetch - processPackages [dolphindb]: executing diffoscope
+[2024-04-07 08:35:40] INFO root fetch - processPackages [dolphindb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolphindb-2.0.11.0-cp39-cp39-win_amd64.whl.zip tmp/dolphindb-3.0.0.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip --markdown 20240407/d/dolphindb/2.0.11.0-3.0.0.0/diff.md --exclude *.pyd
+[2024-04-07 08:35:40] INFO root fetch - processPackages [dolphindb]: Remove: archive file [/home/abi/fetcher/tmp/dolphindb-2.0.11.0-cp39-cp39-win_amd64.whl.zip]
+[2024-04-07 08:35:40] INFO root fetch - processPackages [dolphindb]: Remove: archive file [/home/abi/fetcher/tmp/dolphindb-3.0.0.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip]
+[2024-04-07 08:35:40] INFO root fetch - main [MainThread]: End processing [dolphindb]: success
+[2024-04-07 08:35:40] INFO root fetch - main [MainThread]: Store serial: [22654049]
