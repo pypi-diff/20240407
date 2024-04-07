@@ -13343,3 +13343,50 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:18:23] INFO root fetch - processPackages [pydflow]: Remove: archive file [/home/abi/fetcher/tmp/pydflow-1.8.9.tar.gz]
 [2024-04-07 16:18:23] INFO root fetch - main [MainThread]: End processing [pydflow]: success
 [2024-04-07 16:18:23] INFO root fetch - main [MainThread]: Store serial: [22656740]
+[2024-04-07 16:20:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656740]
+[2024-04-07 16:20:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 16:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: glycogenius
+[2024-04-07 16:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dingo-gw
+[2024-04-07 16:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: biliup
+[2024-04-07 16:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prodvana
+[2024-04-07 16:20:32] INFO root fetch - processPackages [glycogenius]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-07 16:20:32] INFO root fetch - processPackages [dingo-gw]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-07 16:20:32] INFO root fetch - processPackages [prodvana]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-07 16:20:32] INFO root fetch - processPackages [biliup]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-07 16:20:32] INFO root fetch - processPackages [glycogenius]: Downloading https://files.pythonhosted.org/packages/e9/3d/971839c46186f8807508de0d064b9bc321de6e9254895fdb02159b67d5d6/glycogenius-1.1.8.tar.gz
+[2024-04-07 16:20:32] INFO root fetch - processPackages [dingo-gw]: Downloading https://files.pythonhosted.org/packages/0b/3e/08699b09722a587b031f6e27e678b43d21940d85e61ef6efe190ceb6a281/dingo-gw-0.5.8.tar.gz
+[2024-04-07 16:20:32] WARNING root fetch - processPackages [glycogenius]: Timeout reached during download
+[2024-04-07 16:20:32] INFO root fetch - processPackages [biliup]: Downloading https://files.pythonhosted.org/packages/33/26/87446b9e80024414938248abd6d5d23524d52b9a0e07980909695db33a0a/biliup-0.4.8.tar.gz
+[2024-04-07 16:20:32] INFO root fetch - processPackages [prodvana]: Downloading https://files.pythonhosted.org/packages/05/29/b305e83e3145ff688dc20fcaf7e9acc6387d8bcb0be66a1bad5781bb7543/prodvana-0.3.8.tar.gz
+[2024-04-07 16:20:32] WARNING root fetch - processPackages [dingo-gw]: Timeout reached during download
+[2024-04-07 16:20:32] WARNING root fetch - processPackages [biliup]: Timeout reached during download
+[2024-04-07 16:20:32] WARNING root fetch - processPackages [prodvana]: Timeout reached during download
+[2024-04-07 16:20:32] INFO root fetch - processPackages [glycogenius]: Downloading https://files.pythonhosted.org/packages/f9/aa/d8c0817c97d35e2e770ab56ee168ea5838169a51aefc3c031b03c027920f/glycogenius-1.1.9.tar.gz
+[2024-04-07 16:20:32] WARNING root fetch - processPackages [glycogenius]: Timeout reached during download
+[2024-04-07 16:20:32] INFO root fetch - processPackages [glycogenius]: executing diffoscope
+[2024-04-07 16:20:32] INFO root fetch - processPackages [glycogenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glycogenius-1.1.8.tar.gz tmp/glycogenius-1.1.9.tar.gz --markdown 20240407/g/glycogenius/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2024-04-07 16:20:32] INFO root fetch - processPackages [prodvana]: Downloading https://files.pythonhosted.org/packages/b2/62/1999f7e3eed16a266b39c7205e01fda3f018d873f514114d86cdf999983b/prodvana-0.3.9.tar.gz
+[2024-04-07 16:20:32] INFO root fetch - processPackages [biliup]: Downloading https://files.pythonhosted.org/packages/ca/50/28c81627954370eeba7075b44c9ef20597ed8f140a1390c814dd976e6c70/biliup-0.4.9.tar.gz
+[2024-04-07 16:20:32] INFO root fetch - processPackages [dingo-gw]: Downloading https://files.pythonhosted.org/packages/8b/66/03463e7101afc07f0dc769969a6228b50efa40c142c483d6134b8a6d1673/dingo-gw-0.5.9.tar.gz
+[2024-04-07 16:20:33] WARNING root fetch - processPackages [biliup]: Timeout reached during download
+[2024-04-07 16:20:33] INFO root fetch - processPackages [biliup]: executing diffoscope
+[2024-04-07 16:20:33] INFO root fetch - processPackages [biliup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biliup-0.4.8.tar.gz tmp/biliup-0.4.9.tar.gz --markdown 20240407/b/biliup/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2024-04-07 16:20:33] WARNING root fetch - processPackages [prodvana]: Timeout reached during download
+[2024-04-07 16:20:33] INFO root fetch - processPackages [prodvana]: executing diffoscope
+[2024-04-07 16:20:33] INFO root fetch - processPackages [prodvana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prodvana-0.3.8.tar.gz tmp/prodvana-0.3.9.tar.gz --markdown 20240407/p/prodvana/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-07 16:20:33] WARNING root fetch - processPackages [dingo-gw]: Timeout reached during download
+[2024-04-07 16:20:33] INFO root fetch - processPackages [dingo-gw]: executing diffoscope
+[2024-04-07 16:20:33] INFO root fetch - processPackages [dingo-gw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dingo-gw-0.5.8.tar.gz tmp/dingo-gw-0.5.9.tar.gz --markdown 20240407/d/dingo-gw/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2024-04-07 16:20:33] INFO root fetch - processPackages [glycogenius]: Remove: archive file [/home/abi/fetcher/tmp/glycogenius-1.1.8.tar.gz]
+[2024-04-07 16:20:33] INFO root fetch - processPackages [glycogenius]: Remove: archive file [/home/abi/fetcher/tmp/glycogenius-1.1.9.tar.gz]
+[2024-04-07 16:20:33] INFO root fetch - main [MainThread]: End processing [glycogenius]: success
+[2024-04-07 16:20:33] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.8.tar.gz]
+[2024-04-07 16:20:33] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.9.tar.gz]
+[2024-04-07 16:20:33] INFO root fetch - main [MainThread]: End processing [biliup]: success
+[2024-04-07 16:20:34] INFO root fetch - processPackages [dingo-gw]: Remove: archive file [/home/abi/fetcher/tmp/dingo-gw-0.5.8.tar.gz]
+[2024-04-07 16:20:34] INFO root fetch - processPackages [dingo-gw]: Remove: archive file [/home/abi/fetcher/tmp/dingo-gw-0.5.9.tar.gz]
+[2024-04-07 16:20:34] INFO root fetch - main [MainThread]: End processing [dingo-gw]: success
+[2024-04-07 16:20:34] INFO root fetch - processPackages [prodvana]: Remove: archive file [/home/abi/fetcher/tmp/prodvana-0.3.8.tar.gz]
+[2024-04-07 16:20:34] INFO root fetch - processPackages [prodvana]: Remove: archive file [/home/abi/fetcher/tmp/prodvana-0.3.9.tar.gz]
+[2024-04-07 16:20:34] INFO root fetch - main [MainThread]: End processing [prodvana]: success
+[2024-04-07 16:20:34] INFO root fetch - main [MainThread]: Store serial: [22656751]
