@@ -11032,3 +11032,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:43:24] INFO root fetch - processPackages [protokolo]: Remove: archive file [/home/abi/fetcher/tmp/protokolo-0.3.0.tar.gz]
 [2024-04-07 13:43:24] INFO root fetch - main [MainThread]: End processing [protokolo]: success
 [2024-04-07 13:43:24] INFO root fetch - main [MainThread]: Store serial: [22655831]
+[2024-04-07 13:45:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655831]
+[2024-04-07 13:45:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 13:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-linode
+[2024-04-07 13:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FrameStory
+[2024-04-07 13:45:34] INFO root fetch - processPackages [FrameStory]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-07 13:45:34] INFO root fetch - processPackages [pulumi-linode]: New version: [4.9.1] Old Version: [4.9.0a1700248892]
+[2024-04-07 13:45:34] INFO root fetch - processPackages [pulumi-linode]: Downloading https://files.pythonhosted.org/packages/df/eb/e8d27e31574126cebb3db17960087d6e1cf94c88143b981d26b7b94fef71/pulumi_linode-4.9.0a1700248892.tar.gz
+[2024-04-07 13:45:34] INFO root fetch - processPackages [FrameStory]: Downloading https://files.pythonhosted.org/packages/25/f1/edf4945785eb10028a68477601c2efb00407a7f10cb7e78b62d499365134/FrameStory-0.1.2.tar.gz
+[2024-04-07 13:45:34] WARNING root fetch - processPackages [pulumi-linode]: Timeout reached during download
+[2024-04-07 13:45:34] WARNING root fetch - processPackages [FrameStory]: Timeout reached during download
+[2024-04-07 13:45:34] INFO root fetch - processPackages [pulumi-linode]: Downloading https://files.pythonhosted.org/packages/1d/8f/908b3d1b357dcb4b00198e9afd3e1c31b7f20023adddd41e8a53a4577ee0/pulumi_linode-4.9.1.tar.gz
+[2024-04-07 13:45:34] INFO root fetch - processPackages [FrameStory]: Downloading https://files.pythonhosted.org/packages/40/41/46d8ad879ff08c7cbbcc1c25cdf02020554e7d9d44585f1567d6d122ca33/FrameStory-0.1.3.tar.gz
+[2024-04-07 13:45:34] WARNING root fetch - processPackages [pulumi-linode]: Timeout reached during download
+[2024-04-07 13:45:34] INFO root fetch - processPackages [pulumi-linode]: executing diffoscope
+[2024-04-07 13:45:34] INFO root fetch - processPackages [pulumi-linode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_linode-4.9.0a1700248892.tar.gz tmp/pulumi_linode-4.9.1.tar.gz --markdown 20240407/p/pulumi-linode/4.9.0a1700248892-4.9.1/diff.md --exclude *.pyd
+[2024-04-07 13:45:34] WARNING root fetch - processPackages [FrameStory]: Timeout reached during download
+[2024-04-07 13:45:34] INFO root fetch - processPackages [FrameStory]: executing diffoscope
+[2024-04-07 13:45:34] INFO root fetch - processPackages [FrameStory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FrameStory-0.1.2.tar.gz tmp/FrameStory-0.1.3.tar.gz --markdown 20240407/F/FrameStory/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2024-04-07 13:45:35] INFO root fetch - processPackages [FrameStory]: Remove: archive file [/home/abi/fetcher/tmp/FrameStory-0.1.2.tar.gz]
+[2024-04-07 13:45:35] INFO root fetch - processPackages [FrameStory]: Remove: archive file [/home/abi/fetcher/tmp/FrameStory-0.1.3.tar.gz]
+[2024-04-07 13:45:35] INFO root fetch - main [MainThread]: End processing [FrameStory]: success
+[2024-04-07 13:45:35] INFO root fetch - processPackages [pulumi-linode]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_linode-4.9.0a1700248892.tar.gz]
+[2024-04-07 13:45:35] INFO root fetch - processPackages [pulumi-linode]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_linode-4.9.1.tar.gz]
+[2024-04-07 13:45:35] INFO root fetch - main [MainThread]: End processing [pulumi-linode]: success
+[2024-04-07 13:45:35] INFO root fetch - main [MainThread]: Store serial: [22655838]
