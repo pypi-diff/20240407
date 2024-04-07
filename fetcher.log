@@ -1647,3 +1647,28 @@
 [2024-04-07 02:28:36] INFO root fetch - processPackages [sweetrpg-api-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-api-core-0.0.99.tar.gz]
 [2024-04-07 02:28:36] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
 [2024-04-07 02:28:36] INFO root fetch - main [MainThread]: Store serial: [22652228]
+[2024-04-07 02:30:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652228]
+[2024-04-07 02:30:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 02:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sweetrpg-web-core
+[2024-04-07 02:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-ecs-service-extensions
+[2024-04-07 02:30:44] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 02:30:44] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-04-07 02:30:44] INFO root fetch - processPackages [cdk-ecs-service-extensions]: New version: [2.0.1a99] Old Version: [2.0.1a98]
+[2024-04-07 02:30:45] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Downloading https://files.pythonhosted.org/packages/c9/ad/d7965da0f34d52de670def31464963b3971de03ac20cddf5eac577722b31/cdk-ecs-service-extensions-2.0.1a98.tar.gz
+[2024-04-07 02:30:45] WARNING root fetch - processPackages [sweetrpg-web-core]: Timeout reached during download
+[2024-04-07 02:30:45] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-04-07 02:30:45] WARNING root fetch - processPackages [cdk-ecs-service-extensions]: Timeout reached during download
+[2024-04-07 02:30:45] WARNING root fetch - processPackages [sweetrpg-web-core]: Timeout reached during download
+[2024-04-07 02:30:45] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-04-07 02:30:45] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240407/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 02:30:45] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Downloading https://files.pythonhosted.org/packages/9c/f7/1a593c4ae0d3c80332cec251caad8f13a27842299475718ad186eea220ba/cdk-ecs-service-extensions-2.0.1a99.tar.gz
+[2024-04-07 02:30:45] WARNING root fetch - processPackages [cdk-ecs-service-extensions]: Timeout reached during download
+[2024-04-07 02:30:45] INFO root fetch - processPackages [cdk-ecs-service-extensions]: executing diffoscope
+[2024-04-07 02:30:45] INFO root fetch - processPackages [cdk-ecs-service-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-ecs-service-extensions-2.0.1a98.tar.gz tmp/cdk-ecs-service-extensions-2.0.1a99.tar.gz --markdown 20240407/c/cdk-ecs-service-extensions/2.0.1a98-2.0.1a99/diff.md --exclude *.pyd
+[2024-04-07 02:30:45] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.98.tar.gz]
+[2024-04-07 02:30:45] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.99.tar.gz]
+[2024-04-07 02:30:45] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-04-07 02:30:46] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecs-service-extensions-2.0.1a98.tar.gz]
+[2024-04-07 02:30:46] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecs-service-extensions-2.0.1a99.tar.gz]
+[2024-04-07 02:30:46] INFO root fetch - main [MainThread]: End processing [cdk-ecs-service-extensions]: success
+[2024-04-07 02:30:46] INFO root fetch - main [MainThread]: Store serial: [22652236]
