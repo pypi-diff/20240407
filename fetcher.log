@@ -5213,3 +5213,75 @@
 [2024-04-07 07:25:02] INFO root fetch - processPackages [vnpy-ib]: Remove: archive file [/home/abi/fetcher/tmp/vnpy_ib-9.81.1.6.tar.gz]
 [2024-04-07 07:25:02] INFO root fetch - main [MainThread]: End processing [vnpy-ib]: success
 [2024-04-07 07:25:02] INFO root fetch - main [MainThread]: Store serial: [22653592]
+[2024-04-07 07:27:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653592]
+[2024-04-07 07:27:11] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-07 07:27:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: composio-core
+[2024-04-07 07:27:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: composio-langchain
+[2024-04-07 07:27:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: composio-crewai
+[2024-04-07 07:27:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: composio-autogen
+[2024-04-07 07:27:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: LangSegment
+[2024-04-07 07:27:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: htscf
+[2024-04-07 07:27:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ccpycounts
+[2024-04-07 07:27:11] INFO root fetch - processPackages [htscf]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 07:27:11] INFO root fetch - processPackages [composio-core]: New version: [0.1.74] Old Version: [0.1.73]
+[2024-04-07 07:27:11] INFO root fetch - processPackages [composio-crewai]: New version: [0.1.74] Old Version: [0.1.73]
+[2024-04-07 07:27:11] INFO root fetch - processPackages [composio-langchain]: New version: [0.1.74] Old Version: [0.1.73]
+[2024-04-07 07:27:11] INFO root fetch - processPackages [composio-autogen]: New version: [0.1.74] Old Version: [0.1.73]
+[2024-04-07 07:27:11] WARNING root fetch - processPackages [ccpycounts]: Skipping, unable to determine old version
+[2024-04-07 07:27:11] INFO root fetch - main [MainThread]: End processing [ccpycounts] error
+[2024-04-07 07:27:11] INFO root fetch - processPackages [LangSegment]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-07 07:27:11] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/48/31/ef6469f74ffa5f39aaf9ac67ecf2f5b17aec1b223d3f63572efd39a3958f/htscf-0.0.98.tar.gz
+[2024-04-07 07:27:11] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 07:27:11] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/cd/73/5c8dd884179cf7c552938aeff510a3378bdb7d26cc65f279400c9724a025/composio_langchain-0.1.73.tar.gz
+[2024-04-07 07:27:11] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/db/75/4a9a32365f458e9c98022831ec425dfa148fdf000412034a70b79cb4abab/composio_crewai-0.1.73.tar.gz
+[2024-04-07 07:27:12] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/4c/67/e117f0995deb1af0d94b3a774ef2e906bc307717a01dfc1ea7d7831c33e9/composio_core-0.1.73.tar.gz
+[2024-04-07 07:27:12] INFO root fetch - processPackages [LangSegment]: Downloading https://files.pythonhosted.org/packages/9e/d1/65072b02d720211232c761b66c0296562ae369c3d6d9b517ac6f38819533/LangSegment-0.3.0-py3-none-any.whl
+[2024-04-07 07:27:12] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/61/95/99f3a38373e57959091ec874cb8b6e67282199d25835f431cc7cc4358401/composio_autogen-0.1.73.tar.gz
+[2024-04-07 07:27:12] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/79/48/b9c5a63d0fc652968c826af8815fadd5e1f69403909e12853b5a52d9c6b3/htscf-0.0.99.tar.gz
+[2024-04-07 07:27:12] WARNING root fetch - processPackages [composio-langchain]: Timeout reached during download
+[2024-04-07 07:27:12] WARNING root fetch - processPackages [composio-core]: Timeout reached during download
+[2024-04-07 07:27:12] WARNING root fetch - processPackages [composio-autogen]: Timeout reached during download
+[2024-04-07 07:27:12] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 07:27:12] INFO root fetch - processPackages [htscf]: executing diffoscope
+[2024-04-07 07:27:12] INFO root fetch - processPackages [htscf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htscf-0.0.98.tar.gz tmp/htscf-0.0.99.tar.gz --markdown 20240407/h/htscf/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 07:27:12] WARNING root fetch - processPackages [composio-crewai]: Timeout reached during download
+[2024-04-07 07:27:12] WARNING root fetch - processPackages [LangSegment]: Timeout reached during download
+[2024-04-07 07:27:12] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/38/3d/0a6dd474c06ce79199849bbd9d70e46751ff3ecf7970cfd491efcfe5289b/composio_langchain-0.1.74.tar.gz
+[2024-04-07 07:27:12] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/d4/ac/a44f26ce7d8bc7149e74addd42f95e3bc0aa5dc63d3522523fbd226301d0/composio_core-0.1.74.tar.gz
+[2024-04-07 07:27:12] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/d0/a3/6d1ea1a005659dc8710615e19435b925c829a4c46b974d62e2346d7faf87/composio_autogen-0.1.74.tar.gz
+[2024-04-07 07:27:12] WARNING root fetch - processPackages [composio-langchain]: Timeout reached during download
+[2024-04-07 07:27:12] INFO root fetch - processPackages [composio-langchain]: executing diffoscope
+[2024-04-07 07:27:12] INFO root fetch - processPackages [composio-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_langchain-0.1.73.tar.gz tmp/composio_langchain-0.1.74.tar.gz --markdown 20240407/c/composio-langchain/0.1.73-0.1.74/diff.md --exclude *.pyd
+[2024-04-07 07:27:12] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/78/45/6d1c6c4a301a4bac0b095091ea165dd32acde7ef24703a519000bdafcd21/composio_crewai-0.1.74.tar.gz
+[2024-04-07 07:27:12] INFO root fetch - processPackages [LangSegment]: Downloading https://files.pythonhosted.org/packages/aa/d2/999d7aa92c9160c121be8dcbbebf1cbcf33c9b5f3e841277e4291ae28310/LangSegment-0.3.1-py3-none-any.whl
+[2024-04-07 07:27:12] WARNING root fetch - processPackages [composio-core]: Timeout reached during download
+[2024-04-07 07:27:12] INFO root fetch - processPackages [composio-core]: executing diffoscope
+[2024-04-07 07:27:12] INFO root fetch - processPackages [composio-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_core-0.1.73.tar.gz tmp/composio_core-0.1.74.tar.gz --markdown 20240407/c/composio-core/0.1.73-0.1.74/diff.md --exclude *.pyd
+[2024-04-07 07:27:12] WARNING root fetch - processPackages [composio-autogen]: Timeout reached during download
+[2024-04-07 07:27:12] INFO root fetch - processPackages [composio-autogen]: executing diffoscope
+[2024-04-07 07:27:12] INFO root fetch - processPackages [composio-autogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_autogen-0.1.73.tar.gz tmp/composio_autogen-0.1.74.tar.gz --markdown 20240407/c/composio-autogen/0.1.73-0.1.74/diff.md --exclude *.pyd
+[2024-04-07 07:27:12] WARNING root fetch - processPackages [composio-crewai]: Timeout reached during download
+[2024-04-07 07:27:12] INFO root fetch - processPackages [composio-crewai]: executing diffoscope
+[2024-04-07 07:27:12] INFO root fetch - processPackages [composio-crewai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_crewai-0.1.73.tar.gz tmp/composio_crewai-0.1.74.tar.gz --markdown 20240407/c/composio-crewai/0.1.73-0.1.74/diff.md --exclude *.pyd
+[2024-04-07 07:27:12] WARNING root fetch - processPackages [LangSegment]: Timeout reached during download
+[2024-04-07 07:27:12] INFO root fetch - processPackages [LangSegment]: executing diffoscope
+[2024-04-07 07:27:12] INFO root fetch - processPackages [LangSegment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LangSegment-0.3.0-py3-none-any.whl.zip tmp/LangSegment-0.3.1-py3-none-any.whl.zip --markdown 20240407/L/LangSegment/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2024-04-07 07:27:12] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.98.tar.gz]
+[2024-04-07 07:27:12] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.99.tar.gz]
+[2024-04-07 07:27:12] INFO root fetch - main [MainThread]: End processing [htscf]: success
+[2024-04-07 07:27:13] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.1.73.tar.gz]
+[2024-04-07 07:27:13] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.1.74.tar.gz]
+[2024-04-07 07:27:13] INFO root fetch - main [MainThread]: End processing [composio-langchain]: success
+[2024-04-07 07:27:13] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.1.73.tar.gz]
+[2024-04-07 07:27:13] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.1.74.tar.gz]
+[2024-04-07 07:27:13] INFO root fetch - main [MainThread]: End processing [composio-crewai]: success
+[2024-04-07 07:27:13] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.73.tar.gz]
+[2024-04-07 07:27:13] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.74.tar.gz]
+[2024-04-07 07:27:13] INFO root fetch - main [MainThread]: End processing [composio-autogen]: success
+[2024-04-07 07:27:13] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.73.tar.gz]
+[2024-04-07 07:27:13] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.74.tar.gz]
+[2024-04-07 07:27:13] INFO root fetch - main [MainThread]: End processing [composio-core]: success
+[2024-04-07 07:27:13] INFO root fetch - processPackages [LangSegment]: Remove: archive file [/home/abi/fetcher/tmp/LangSegment-0.3.0-py3-none-any.whl.zip]
+[2024-04-07 07:27:13] INFO root fetch - processPackages [LangSegment]: Remove: archive file [/home/abi/fetcher/tmp/LangSegment-0.3.1-py3-none-any.whl.zip]
+[2024-04-07 07:27:13] INFO root fetch - main [MainThread]: End processing [LangSegment]: success
+[2024-04-07 07:27:13] INFO root fetch - main [MainThread]: Store serial: [22653614]
