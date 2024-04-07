@@ -6496,3 +6496,28 @@
 [2024-04-07 08:35:40] INFO root fetch - processPackages [dolphindb]: Remove: archive file [/home/abi/fetcher/tmp/dolphindb-3.0.0.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip]
 [2024-04-07 08:35:40] INFO root fetch - main [MainThread]: End processing [dolphindb]: success
 [2024-04-07 08:35:40] INFO root fetch - main [MainThread]: Store serial: [22654049]
+[2024-04-07 08:37:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654049]
+[2024-04-07 08:37:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 08:37:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: f5-sphinx-theme
+[2024-04-07 08:37:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-wavefront
+[2024-04-07 08:37:49] INFO root fetch - processPackages [pulumi-wavefront]: New version: [3.2.0a1712403270] Old Version: [3.2.0a1711743598]
+[2024-04-07 08:37:49] INFO root fetch - processPackages [f5-sphinx-theme]: New version: [2.5.2] Old Version: [2.5.0]
+[2024-04-07 08:37:49] INFO root fetch - processPackages [pulumi-wavefront]: Downloading https://files.pythonhosted.org/packages/c0/4d/f6bb75f5f7e5154f0d9117ae7bba3a6389e3403b9a60eda7947e030c85a6/pulumi_wavefront-3.2.0a1711743598.tar.gz
+[2024-04-07 08:37:49] WARNING root fetch - processPackages [pulumi-wavefront]: Timeout reached during download
+[2024-04-07 08:37:49] INFO root fetch - processPackages [f5-sphinx-theme]: Downloading https://files.pythonhosted.org/packages/96/0f/6afb235ccac5b344b74ea70a62f61b919631baa6a0a5d3801a4080984268/f5_sphinx_theme-2.5.0.tar.gz
+[2024-04-07 08:37:49] INFO root fetch - processPackages [pulumi-wavefront]: Downloading https://files.pythonhosted.org/packages/33/ab/06266d5de572cc3e85e8457408078af9e8c8d953557319454714c7c96128/pulumi_wavefront-3.2.0a1712403270.tar.gz
+[2024-04-07 08:37:49] WARNING root fetch - processPackages [pulumi-wavefront]: Timeout reached during download
+[2024-04-07 08:37:49] INFO root fetch - processPackages [pulumi-wavefront]: executing diffoscope
+[2024-04-07 08:37:49] INFO root fetch - processPackages [pulumi-wavefront]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_wavefront-3.2.0a1711743598.tar.gz tmp/pulumi_wavefront-3.2.0a1712403270.tar.gz --markdown 20240407/p/pulumi-wavefront/3.2.0a1711743598-3.2.0a1712403270/diff.md --exclude *.pyd
+[2024-04-07 08:37:49] WARNING root fetch - processPackages [f5-sphinx-theme]: Timeout reached during download
+[2024-04-07 08:37:50] INFO root fetch - processPackages [f5-sphinx-theme]: Downloading https://files.pythonhosted.org/packages/62/d0/ee723d99499febb1b085a3e610ffb9d0c312995a0bcd794a08849041cdae/f5_sphinx_theme-2.5.2.tar.gz
+[2024-04-07 08:37:50] WARNING root fetch - processPackages [f5-sphinx-theme]: Timeout reached during download
+[2024-04-07 08:37:50] INFO root fetch - processPackages [f5-sphinx-theme]: executing diffoscope
+[2024-04-07 08:37:50] INFO root fetch - processPackages [f5-sphinx-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/f5_sphinx_theme-2.5.0.tar.gz tmp/f5_sphinx_theme-2.5.2.tar.gz --markdown 20240407/f/f5-sphinx-theme/2.5.0-2.5.2/diff.md --exclude *.pyd
+[2024-04-07 08:37:50] INFO root fetch - processPackages [pulumi-wavefront]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_wavefront-3.2.0a1711743598.tar.gz]
+[2024-04-07 08:37:50] INFO root fetch - processPackages [pulumi-wavefront]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_wavefront-3.2.0a1712403270.tar.gz]
+[2024-04-07 08:37:50] INFO root fetch - main [MainThread]: End processing [pulumi-wavefront]: success
+[2024-04-07 08:37:51] INFO root fetch - processPackages [f5-sphinx-theme]: Remove: archive file [/home/abi/fetcher/tmp/f5_sphinx_theme-2.5.0.tar.gz]
+[2024-04-07 08:37:51] INFO root fetch - processPackages [f5-sphinx-theme]: Remove: archive file [/home/abi/fetcher/tmp/f5_sphinx_theme-2.5.2.tar.gz]
+[2024-04-07 08:37:51] INFO root fetch - main [MainThread]: End processing [f5-sphinx-theme]: success
+[2024-04-07 08:37:51] INFO root fetch - main [MainThread]: Store serial: [22654075]
