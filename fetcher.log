@@ -2234,3 +2234,17 @@
 [2024-04-07 03:28:47] INFO root fetch - processPackages [Moe]: Remove: archive file [/home/abi/fetcher/tmp/moe-2.1.3.tar.gz]
 [2024-04-07 03:28:47] INFO root fetch - main [MainThread]: End processing [Moe]: success
 [2024-04-07 03:28:47] INFO root fetch - main [MainThread]: Store serial: [22652616]
+[2024-04-07 03:30:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652616]
+[2024-04-07 03:30:56] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 03:30:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onediffx
+[2024-04-07 03:30:57] INFO root fetch - processPackages [onediffx]: New version: [0.13.0.dev202404070128] Old Version: [0.13.0.dev202404060123]
+[2024-04-07 03:30:57] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/00/60/efc0bb3b70c26880a76cb56e92625f12a1e8fc56a78c623ebaaeaaea854d/onediffx-0.13.0.dev202404060123.tar.gz
+[2024-04-07 03:30:57] WARNING root fetch - processPackages [onediffx]: Timeout reached during download
+[2024-04-07 03:30:57] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/d8/97/de76f651ba5d4790b782860f53d7f1027f4b51969dc023787c411ce2d044/onediffx-0.13.0.dev202404070128.tar.gz
+[2024-04-07 03:30:57] WARNING root fetch - processPackages [onediffx]: Timeout reached during download
+[2024-04-07 03:30:57] INFO root fetch - processPackages [onediffx]: executing diffoscope
+[2024-04-07 03:30:57] INFO root fetch - processPackages [onediffx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediffx-0.13.0.dev202404060123.tar.gz tmp/onediffx-0.13.0.dev202404070128.tar.gz --markdown 20240407/o/onediffx/0.13.0.dev202404060123-0.13.0.dev202404070128/diff.md --exclude *.pyd
+[2024-04-07 03:30:58] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-0.13.0.dev202404060123.tar.gz]
+[2024-04-07 03:30:58] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-0.13.0.dev202404070128.tar.gz]
+[2024-04-07 03:30:58] INFO root fetch - main [MainThread]: End processing [onediffx]: success
+[2024-04-07 03:30:58] INFO root fetch - main [MainThread]: Store serial: [22652619]
