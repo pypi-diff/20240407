@@ -17588,3 +17588,86 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 20:19:19] INFO root fetch - processPackages [langkit]: Remove: archive file [/home/abi/fetcher/tmp/langkit-0.0.9.tar.gz]
 [2024-04-07 20:19:19] INFO root fetch - main [MainThread]: End processing [langkit]: success
 [2024-04-07 20:19:19] INFO root fetch - main [MainThread]: Store serial: [22658224]
+[2024-04-07 20:21:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658224]
+[2024-04-07 20:21:28] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-07 20:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: composio-core
+[2024-04-07 20:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Mopidy-SevenSegmentDisplay
+[2024-04-07 20:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: composio-langchain
+[2024-04-07 20:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: composio-crewai
+[2024-04-07 20:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: adspkg
+[2024-04-07 20:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: composio-autogen
+[2024-04-07 20:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gammarer.aws-secure-vpc-bucket
+[2024-04-07 20:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: chat-portal
+[2024-04-07 20:21:28] INFO root fetch - processPackages [composio-core]: New version: [0.1.81] Old Version: [0.1.80]
+[2024-04-07 20:21:28] INFO root fetch - processPackages [composio-crewai]: New version: [0.1.81] Old Version: [0.1.80]
+[2024-04-07 20:21:28] WARNING root fetch - processPackages [adspkg]: Skipping, unable to determine old version
+[2024-04-07 20:21:28] INFO root fetch - main [MainThread]: End processing [adspkg] error
+[2024-04-07 20:21:28] INFO root fetch - processPackages [composio-langchain]: New version: [0.1.81] Old Version: [0.1.80]
+[2024-04-07 20:21:28] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: New version: [0.7.5] Old Version: [0.7.4]
+[2024-04-07 20:21:28] INFO root fetch - processPackages [composio-autogen]: New version: [0.1.81] Old Version: [0.1.80]
+[2024-04-07 20:21:29] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/75/14/b9ace959e65ef66d10b166c30978f937f339cf7f2535a02e076caadc04d8/composio_core-0.1.80.tar.gz
+[2024-04-07 20:21:29] INFO root fetch - processPackages [chat-portal]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-04-07 20:21:29] INFO root fetch - processPackages [gammarer.aws-secure-vpc-bucket]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-04-07 20:21:29] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/b5/83/57b8859c724c799cb69b180ff55ad48eb4f28e7a3aaf35626d3004bd678e/composio_langchain-0.1.80.tar.gz
+[2024-04-07 20:21:29] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/6e/33/69b50b8dfa8cf33e905edc7529f62faebde89b7526087add677c24b6e5c6/composio_autogen-0.1.80.tar.gz
+[2024-04-07 20:21:29] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Downloading https://files.pythonhosted.org/packages/98/bd/41c3cf8eedef53162e2f7b5a07d5f588057fa7183fd8b9b340ef813171eb/Mopidy-SevenSegmentDisplay-0.7.4.tar.gz
+[2024-04-07 20:21:29] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/44/7e/b2ea10db4dc5979ef97fcbe3574e54d3badb14ecc3a7083939d5a566c068/composio_crewai-0.1.80.tar.gz
+[2024-04-07 20:21:29] WARNING root fetch - processPackages [composio-core]: Timeout reached during download
+[2024-04-07 20:21:29] WARNING root fetch - processPackages [composio-autogen]: Timeout reached during download
+[2024-04-07 20:21:29] WARNING root fetch - processPackages [composio-langchain]: Timeout reached during download
+[2024-04-07 20:21:29] WARNING root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Timeout reached during download
+[2024-04-07 20:21:29] INFO root fetch - processPackages [chat-portal]: Downloading https://files.pythonhosted.org/packages/12/88/d4b82724472c50b5c08bac046b3865b0da69312c244be9ce5bdef61df998/chat_portal-0.2.7.tar.gz
+[2024-04-07 20:21:29] INFO root fetch - processPackages [gammarer.aws-secure-vpc-bucket]: Downloading https://files.pythonhosted.org/packages/56/3b/bc50ff50c09adfc401c1029a84225626390c19857639f969bf94c3f9ba85/gammarer.aws-secure-vpc-bucket-1.2.3.tar.gz
+[2024-04-07 20:21:29] WARNING root fetch - processPackages [composio-crewai]: Timeout reached during download
+[2024-04-07 20:21:29] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/b7/a2/297d0d0424aa930a0e8e45e4df048bebaa21b22a0efbfcbbdca9d08a0278/composio_core-0.1.81.tar.gz
+[2024-04-07 20:21:29] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/68/3b/3c0eaca7c8b75f0584196a35d818f7e8222796dc54b32178d2c19b400eb7/composio_autogen-0.1.81.tar.gz
+[2024-04-07 20:21:29] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/9b/62/e3e92dab6db4ffc90f69b11aaf31344fb37c69fc07e30249112d813558c8/composio_langchain-0.1.81.tar.gz
+[2024-04-07 20:21:29] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Downloading https://files.pythonhosted.org/packages/ed/b9/5b3b999d95ab18fbeb77dcef688d4df5989d0831364325c438663010f501/Mopidy-SevenSegmentDisplay-0.7.5.tar.gz
+[2024-04-07 20:21:29] WARNING root fetch - processPackages [composio-core]: Timeout reached during download
+[2024-04-07 20:21:29] INFO root fetch - processPackages [composio-core]: executing diffoscope
+[2024-04-07 20:21:29] INFO root fetch - processPackages [composio-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_core-0.1.80.tar.gz tmp/composio_core-0.1.81.tar.gz --markdown 20240407/c/composio-core/0.1.80-0.1.81/diff.md --exclude *.pyd
+[2024-04-07 20:21:29] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/19/8d/d60f6e79c92658c97502b5633dd60df56ffb44402a74b351c455007995b8/composio_crewai-0.1.81.tar.gz
+[2024-04-07 20:21:29] WARNING root fetch - processPackages [gammarer.aws-secure-vpc-bucket]: Timeout reached during download
+[2024-04-07 20:21:29] WARNING root fetch - processPackages [chat-portal]: Timeout reached during download
+[2024-04-07 20:21:29] WARNING root fetch - processPackages [composio-autogen]: Timeout reached during download
+[2024-04-07 20:21:29] INFO root fetch - processPackages [composio-autogen]: executing diffoscope
+[2024-04-07 20:21:29] INFO root fetch - processPackages [composio-autogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_autogen-0.1.80.tar.gz tmp/composio_autogen-0.1.81.tar.gz --markdown 20240407/c/composio-autogen/0.1.80-0.1.81/diff.md --exclude *.pyd
+[2024-04-07 20:21:29] WARNING root fetch - processPackages [composio-langchain]: Timeout reached during download
+[2024-04-07 20:21:29] INFO root fetch - processPackages [composio-langchain]: executing diffoscope
+[2024-04-07 20:21:29] INFO root fetch - processPackages [composio-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_langchain-0.1.80.tar.gz tmp/composio_langchain-0.1.81.tar.gz --markdown 20240407/c/composio-langchain/0.1.80-0.1.81/diff.md --exclude *.pyd
+[2024-04-07 20:21:29] WARNING root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Timeout reached during download
+[2024-04-07 20:21:29] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: executing diffoscope
+[2024-04-07 20:21:29] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Mopidy-SevenSegmentDisplay-0.7.4.tar.gz tmp/Mopidy-SevenSegmentDisplay-0.7.5.tar.gz --markdown 20240407/M/Mopidy-SevenSegmentDisplay/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2024-04-07 20:21:29] WARNING root fetch - processPackages [composio-crewai]: Timeout reached during download
+[2024-04-07 20:21:29] INFO root fetch - processPackages [composio-crewai]: executing diffoscope
+[2024-04-07 20:21:29] INFO root fetch - processPackages [composio-crewai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_crewai-0.1.80.tar.gz tmp/composio_crewai-0.1.81.tar.gz --markdown 20240407/c/composio-crewai/0.1.80-0.1.81/diff.md --exclude *.pyd
+[2024-04-07 20:21:29] INFO root fetch - processPackages [gammarer.aws-secure-vpc-bucket]: Downloading https://files.pythonhosted.org/packages/da/74/f9ed5e575cba2432e8ddc13b6e401a8f18f1e0d7f73459a43b696d3017d0/gammarer.aws-secure-vpc-bucket-1.2.4.tar.gz
+[2024-04-07 20:21:29] INFO root fetch - processPackages [chat-portal]: Downloading https://files.pythonhosted.org/packages/ec/19/68eecc72bbf4c60cc1bd8f96f0bebdaafdc15ddd2ad81569165a76e925a8/chat_portal-0.2.8.tar.gz
+[2024-04-07 20:21:29] WARNING root fetch - processPackages [gammarer.aws-secure-vpc-bucket]: Timeout reached during download
+[2024-04-07 20:21:29] INFO root fetch - processPackages [gammarer.aws-secure-vpc-bucket]: executing diffoscope
+[2024-04-07 20:21:29] INFO root fetch - processPackages [gammarer.aws-secure-vpc-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarer.aws-secure-vpc-bucket-1.2.3.tar.gz tmp/gammarer.aws-secure-vpc-bucket-1.2.4.tar.gz --markdown 20240407/g/gammarer.aws-secure-vpc-bucket/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2024-04-07 20:21:29] WARNING root fetch - processPackages [chat-portal]: Timeout reached during download
+[2024-04-07 20:21:29] INFO root fetch - processPackages [chat-portal]: executing diffoscope
+[2024-04-07 20:21:29] INFO root fetch - processPackages [chat-portal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chat_portal-0.2.7.tar.gz tmp/chat_portal-0.2.8.tar.gz --markdown 20240407/c/chat-portal/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2024-04-07 20:21:30] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.80.tar.gz]
+[2024-04-07 20:21:30] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.81.tar.gz]
+[2024-04-07 20:21:30] INFO root fetch - main [MainThread]: End processing [composio-core]: success
+[2024-04-07 20:21:30] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.80.tar.gz]
+[2024-04-07 20:21:30] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.81.tar.gz]
+[2024-04-07 20:21:30] INFO root fetch - main [MainThread]: End processing [composio-autogen]: success
+[2024-04-07 20:21:30] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.1.80.tar.gz]
+[2024-04-07 20:21:30] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.1.81.tar.gz]
+[2024-04-07 20:21:30] INFO root fetch - main [MainThread]: End processing [composio-langchain]: success
+[2024-04-07 20:21:30] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.1.80.tar.gz]
+[2024-04-07 20:21:30] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.1.81.tar.gz]
+[2024-04-07 20:21:30] INFO root fetch - main [MainThread]: End processing [composio-crewai]: success
+[2024-04-07 20:21:30] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Remove: archive file [/home/abi/fetcher/tmp/Mopidy-SevenSegmentDisplay-0.7.4.tar.gz]
+[2024-04-07 20:21:30] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Remove: archive file [/home/abi/fetcher/tmp/Mopidy-SevenSegmentDisplay-0.7.5.tar.gz]
+[2024-04-07 20:21:30] INFO root fetch - main [MainThread]: End processing [Mopidy-SevenSegmentDisplay]: success
+[2024-04-07 20:21:30] INFO root fetch - processPackages [gammarer.aws-secure-vpc-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-vpc-bucket-1.2.3.tar.gz]
+[2024-04-07 20:21:30] INFO root fetch - processPackages [gammarer.aws-secure-vpc-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-vpc-bucket-1.2.4.tar.gz]
+[2024-04-07 20:21:30] INFO root fetch - main [MainThread]: End processing [gammarer.aws-secure-vpc-bucket]: success
+[2024-04-07 20:21:30] INFO root fetch - processPackages [chat-portal]: Remove: archive file [/home/abi/fetcher/tmp/chat_portal-0.2.7.tar.gz]
+[2024-04-07 20:21:30] INFO root fetch - processPackages [chat-portal]: Remove: archive file [/home/abi/fetcher/tmp/chat_portal-0.2.8.tar.gz]
+[2024-04-07 20:21:30] INFO root fetch - main [MainThread]: End processing [chat-portal]: success
+[2024-04-07 20:21:30] INFO root fetch - main [MainThread]: Store serial: [22658248]
