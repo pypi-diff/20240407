@@ -11269,3 +11269,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:03:01] INFO root fetch - processPackages [systembridgemodels]: Remove: archive file [/home/abi/fetcher/tmp/systembridgemodels-4.1.1.tar.gz]
 [2024-04-07 14:03:01] INFO root fetch - main [MainThread]: End processing [systembridgemodels]: success
 [2024-04-07 14:03:01] INFO root fetch - main [MainThread]: Store serial: [22655936]
+[2024-04-07 14:05:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655936]
+[2024-04-07 14:05:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 14:05:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: systembridgemodels
+[2024-04-07 14:05:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qa-test
+[2024-04-07 14:05:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lambkid
+[2024-04-07 14:05:10] INFO root fetch - processPackages [qa-test]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-07 14:05:10] INFO root fetch - processPackages [systembridgemodels]: New version: [4.1.1] Old Version: [4.1.0]
+[2024-04-07 14:05:10] INFO root fetch - processPackages [lambkid]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 14:05:10] INFO root fetch - processPackages [qa-test]: Downloading https://files.pythonhosted.org/packages/cf/b5/34f6ff457d017c001a1caa17212da9f84469f01534d61c377d5828d18ace/qa_test-0.0.4.tar.gz
+[2024-04-07 14:05:10] INFO root fetch - processPackages [systembridgemodels]: Downloading https://files.pythonhosted.org/packages/ae/4a/731090a7f675c4d484c05b903cc21924902ac79501305d46c83647b10fb8/systembridgemodels-4.1.0.tar.gz
+[2024-04-07 14:05:10] WARNING root fetch - processPackages [systembridgemodels]: Timeout reached during download
+[2024-04-07 14:05:10] INFO root fetch - processPackages [lambkid]: Downloading https://files.pythonhosted.org/packages/a4/1d/a402c5f85ef6696c76f47780a2a9b4a6d1e22f67e018fac29ed5ab142ba1/lambkid-0.0.8.tar.gz
+[2024-04-07 14:05:10] INFO root fetch - processPackages [systembridgemodels]: Downloading https://files.pythonhosted.org/packages/3d/c5/92d9d35620b0a4c2a5124b39d3c3ddd39fb0b06daab9ca45c7cd9ffca79b/systembridgemodels-4.1.1.tar.gz
+[2024-04-07 14:05:10] WARNING root fetch - processPackages [systembridgemodels]: Timeout reached during download
+[2024-04-07 14:05:10] INFO root fetch - processPackages [systembridgemodels]: executing diffoscope
+[2024-04-07 14:05:10] INFO root fetch - processPackages [systembridgemodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systembridgemodels-4.1.0.tar.gz tmp/systembridgemodels-4.1.1.tar.gz --markdown 20240407/s/systembridgemodels/4.1.0-4.1.1/diff.md --exclude *.pyd
+[2024-04-07 14:05:10] WARNING root fetch - processPackages [lambkid]: Timeout reached during download
+[2024-04-07 14:05:10] WARNING root fetch - processPackages [qa-test]: Timeout reached during download
+[2024-04-07 14:05:10] INFO root fetch - processPackages [qa-test]: Downloading https://files.pythonhosted.org/packages/03/1e/3610b486f36f855160ce2d848b5220e7860e57eb01ff379ca19924c3a33d/qa_test-0.0.5.tar.gz
+[2024-04-07 14:05:10] INFO root fetch - processPackages [lambkid]: Downloading https://files.pythonhosted.org/packages/4f/e8/fe3ffb0ac4fb24b3455167d57cb2cd8ab326fbb2f862aab16c13d38fde49/lambkid-0.0.9.tar.gz
+[2024-04-07 14:05:11] WARNING root fetch - processPackages [lambkid]: Timeout reached during download
+[2024-04-07 14:05:11] INFO root fetch - processPackages [lambkid]: executing diffoscope
+[2024-04-07 14:05:11] INFO root fetch - processPackages [lambkid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lambkid-0.0.8.tar.gz tmp/lambkid-0.0.9.tar.gz --markdown 20240407/l/lambkid/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 14:05:11] INFO root fetch - processPackages [systembridgemodels]: Remove: archive file [/home/abi/fetcher/tmp/systembridgemodels-4.1.0.tar.gz]
+[2024-04-07 14:05:11] INFO root fetch - processPackages [systembridgemodels]: Remove: archive file [/home/abi/fetcher/tmp/systembridgemodels-4.1.1.tar.gz]
+[2024-04-07 14:05:11] INFO root fetch - main [MainThread]: End processing [systembridgemodels]: success
+[2024-04-07 14:05:11] WARNING root fetch - processPackages [qa-test]: Timeout reached during download
+[2024-04-07 14:05:11] INFO root fetch - processPackages [qa-test]: executing diffoscope
+[2024-04-07 14:05:11] INFO root fetch - processPackages [qa-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qa_test-0.0.4.tar.gz tmp/qa_test-0.0.5.tar.gz --markdown 20240407/q/qa-test/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-07 14:05:11] INFO root fetch - processPackages [lambkid]: Remove: archive file [/home/abi/fetcher/tmp/lambkid-0.0.8.tar.gz]
+[2024-04-07 14:05:11] INFO root fetch - processPackages [lambkid]: Remove: archive file [/home/abi/fetcher/tmp/lambkid-0.0.9.tar.gz]
+[2024-04-07 14:05:11] INFO root fetch - main [MainThread]: End processing [lambkid]: success
+[2024-04-07 14:05:12] INFO root fetch - processPackages [qa-test]: Remove: archive file [/home/abi/fetcher/tmp/qa_test-0.0.4.tar.gz]
+[2024-04-07 14:05:12] INFO root fetch - processPackages [qa-test]: Remove: archive file [/home/abi/fetcher/tmp/qa_test-0.0.5.tar.gz]
+[2024-04-07 14:05:12] INFO root fetch - main [MainThread]: End processing [qa-test]: success
+[2024-04-07 14:05:12] INFO root fetch - main [MainThread]: Store serial: [22655949]
