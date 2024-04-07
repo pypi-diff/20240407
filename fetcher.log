@@ -14543,3 +14543,25 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:17:45] INFO root fetch - processPackages [eyepop]: Remove: archive file [/home/abi/fetcher/tmp/eyepop-0.9.2.tar.gz]
 [2024-04-07 17:17:45] INFO root fetch - main [MainThread]: End processing [eyepop]: success
 [2024-04-07 17:17:45] INFO root fetch - main [MainThread]: Store serial: [22657118]
+[2024-04-07 17:19:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657118]
+[2024-04-07 17:19:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 17:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docker-remote-sync
+[2024-04-07 17:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alexmundo
+[2024-04-07 17:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: 2b4cad69c8f0478caa92a512e57b735aba978d0e
+[2024-04-07 17:19:53] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 17:19:53] INFO root fetch - processPackages [docker-remote-sync]: New version: [0.6] Old Version: [0.5.1]
+[2024-04-07 17:19:53] WARNING root fetch - processPackages [alexmundo]: Skipping, unable to determine old version
+[2024-04-07 17:19:53] INFO root fetch - main [MainThread]: End processing [alexmundo] error
+[2024-04-07 17:19:53] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Downloading https://files.pythonhosted.org/packages/01/41/db784ddc21401cdfc90cf5135c9c817ed309e3b065cae306f76fcd8c0455/2b4cad69c8f0478caa92a512e57b735aba978d0e-0.1.8.tar.gz
+[2024-04-07 17:19:53] INFO root fetch - processPackages [docker-remote-sync]: Downloading https://files.pythonhosted.org/packages/72/7b/32c0ede3a7611ee5e5c0437bac6f3d206c5258ce37e7dc9b621fea0bebea/docker_remote_sync-0.5.1.tar.gz
+[2024-04-07 17:19:53] WARNING root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Skipping package: exceeds size limit 27722932>=10485760
+[2024-04-07 17:19:53] INFO root fetch - main [MainThread]: End processing [2b4cad69c8f0478caa92a512e57b735aba978d0e] error
+[2024-04-07 17:19:54] WARNING root fetch - processPackages [docker-remote-sync]: Timeout reached during download
+[2024-04-07 17:19:54] INFO root fetch - processPackages [docker-remote-sync]: Downloading https://files.pythonhosted.org/packages/4e/28/51a7d877a4d3e3bfcad0817c998327c25fd8d2cd372a6544fd8731c973dc/docker_remote_sync-0.6.tar.gz
+[2024-04-07 17:19:54] WARNING root fetch - processPackages [docker-remote-sync]: Timeout reached during download
+[2024-04-07 17:19:54] INFO root fetch - processPackages [docker-remote-sync]: executing diffoscope
+[2024-04-07 17:19:54] INFO root fetch - processPackages [docker-remote-sync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docker_remote_sync-0.5.1.tar.gz tmp/docker_remote_sync-0.6.tar.gz --markdown 20240407/d/docker-remote-sync/0.5.1-0.6/diff.md --exclude *.pyd
+[2024-04-07 17:19:54] INFO root fetch - processPackages [docker-remote-sync]: Remove: archive file [/home/abi/fetcher/tmp/docker_remote_sync-0.5.1.tar.gz]
+[2024-04-07 17:19:54] INFO root fetch - processPackages [docker-remote-sync]: Remove: archive file [/home/abi/fetcher/tmp/docker_remote_sync-0.6.tar.gz]
+[2024-04-07 17:19:54] INFO root fetch - main [MainThread]: End processing [docker-remote-sync]: success
+[2024-04-07 17:19:54] INFO root fetch - main [MainThread]: Store serial: [22657127]
