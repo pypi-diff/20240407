@@ -12667,3 +12667,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:34:46] INFO root fetch - processPackages [pytubefix]: Remove: archive file [/home/abi/fetcher/tmp/pytubefix-5.1rc1.tar.gz]
 [2024-04-07 15:34:46] INFO root fetch - main [MainThread]: End processing [pytubefix]: success
 [2024-04-07 15:34:46] INFO root fetch - main [MainThread]: Store serial: [22656503]
+[2024-04-07 15:36:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656503]
+[2024-04-07 15:36:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 15:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ratarmountcore
+[2024-04-07 15:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: memx
+[2024-04-07 15:36:55] INFO root fetch - processPackages [memx]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-07 15:36:55] INFO root fetch - processPackages [ratarmountcore]: New version: [0.7.0] Old Version: [0.6.5]
+[2024-04-07 15:36:55] INFO root fetch - processPackages [ratarmountcore]: Downloading https://files.pythonhosted.org/packages/8b/dd/8f84145cf2ee16954e6757b764be7e14dc562ef6139b51e64e8363be5019/ratarmountcore-0.6.5.tar.gz
+[2024-04-07 15:36:55] INFO root fetch - processPackages [memx]: Downloading https://files.pythonhosted.org/packages/6b/a5/f93d3c52f5ba85c7bfbfdd16f6e7a6a93e184728480ea0a7488ec426a96c/memx-1.0.6.tar.gz
+[2024-04-07 15:36:55] WARNING root fetch - processPackages [ratarmountcore]: Timeout reached during download
+[2024-04-07 15:36:56] WARNING root fetch - processPackages [memx]: Timeout reached during download
+[2024-04-07 15:36:56] INFO root fetch - processPackages [ratarmountcore]: Downloading https://files.pythonhosted.org/packages/8d/38/0e00cac83b7bc171510fd1bdc27d92d94aff1a7a4b6d4af6c8b41bddece0/ratarmountcore-0.7.0.tar.gz
+[2024-04-07 15:36:56] INFO root fetch - processPackages [memx]: Downloading https://files.pythonhosted.org/packages/c4/e3/baaa3aa68b23b51b1d477723ef4a4507ac6f1bcd00352fb379f44e4ef44a/memx-1.0.7.tar.gz
+[2024-04-07 15:36:56] WARNING root fetch - processPackages [ratarmountcore]: Timeout reached during download
+[2024-04-07 15:36:56] INFO root fetch - processPackages [ratarmountcore]: executing diffoscope
+[2024-04-07 15:36:56] INFO root fetch - processPackages [ratarmountcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ratarmountcore-0.6.5.tar.gz tmp/ratarmountcore-0.7.0.tar.gz --markdown 20240407/r/ratarmountcore/0.6.5-0.7.0/diff.md --exclude *.pyd
+[2024-04-07 15:36:56] WARNING root fetch - processPackages [memx]: Timeout reached during download
+[2024-04-07 15:36:56] INFO root fetch - processPackages [memx]: executing diffoscope
+[2024-04-07 15:36:56] INFO root fetch - processPackages [memx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memx-1.0.6.tar.gz tmp/memx-1.0.7.tar.gz --markdown 20240407/m/memx/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2024-04-07 15:36:56] INFO root fetch - processPackages [memx]: Remove: archive file [/home/abi/fetcher/tmp/memx-1.0.6.tar.gz]
+[2024-04-07 15:36:56] INFO root fetch - processPackages [memx]: Remove: archive file [/home/abi/fetcher/tmp/memx-1.0.7.tar.gz]
+[2024-04-07 15:36:56] INFO root fetch - main [MainThread]: End processing [memx]: success
+[2024-04-07 15:36:56] INFO root fetch - processPackages [ratarmountcore]: Remove: archive file [/home/abi/fetcher/tmp/ratarmountcore-0.6.5.tar.gz]
+[2024-04-07 15:36:56] INFO root fetch - processPackages [ratarmountcore]: Remove: archive file [/home/abi/fetcher/tmp/ratarmountcore-0.7.0.tar.gz]
+[2024-04-07 15:36:57] INFO root fetch - main [MainThread]: End processing [ratarmountcore]: success
+[2024-04-07 15:36:57] INFO root fetch - main [MainThread]: Store serial: [22656508]
