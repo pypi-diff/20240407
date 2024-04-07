@@ -4217,3 +4217,39 @@
 [2024-04-07 05:49:57] INFO root fetch - processPackages [negmas]: Remove: archive file [/home/abi/fetcher/tmp/negmas-0.9.8.tar.gz]
 [2024-04-07 05:49:57] INFO root fetch - main [MainThread]: End processing [negmas]: success
 [2024-04-07 05:49:57] INFO root fetch - main [MainThread]: Store serial: [22653326]
+[2024-04-07 05:52:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653326]
+[2024-04-07 05:52:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 05:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pdb-openai
+[2024-04-07 05:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dialog-workflow-local
+[2024-04-07 05:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cshogi
+[2024-04-07 05:52:06] INFO root fetch - processPackages [pdb-openai]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-07 05:52:06] INFO root fetch - processPackages [dialog-workflow-local]: New version: [0.0.88] Old Version: [0.0.87]
+[2024-04-07 05:52:06] INFO root fetch - processPackages [pdb-openai]: Downloading https://files.pythonhosted.org/packages/b9/11/191cfcdfb4ff72b6c2cbb034d30bb5bc8bdfbd27b1e5ed86a5e18a89e48e/pdb_openai-0.0.5.tar.gz
+[2024-04-07 05:52:06] INFO root fetch - processPackages [dialog-workflow-local]: Downloading https://files.pythonhosted.org/packages/44/1e/d9ea865497cc1388832cfdc2b3b051bb3bf42cfe2d52760207c44c645b03/dialog-workflow-local-0.0.87.tar.gz
+[2024-04-07 05:52:06] INFO root fetch - processPackages [cshogi]: New version: [0.8.5] Old Version: [0.8.4]
+[2024-04-07 05:52:06] WARNING root fetch - processPackages [pdb-openai]: Timeout reached during download
+[2024-04-07 05:52:06] WARNING root fetch - processPackages [dialog-workflow-local]: Timeout reached during download
+[2024-04-07 05:52:06] INFO root fetch - processPackages [dialog-workflow-local]: Downloading https://files.pythonhosted.org/packages/b7/1f/cb951830d31db8269b8767589f86bee3633ab386620efc20bf5af8458951/dialog-workflow-local-0.0.88.tar.gz
+[2024-04-07 05:52:06] INFO root fetch - processPackages [pdb-openai]: Downloading https://files.pythonhosted.org/packages/d8/6b/732cc2820fe77cef1ed2a30448c7302aeb03163586b176a84e8870751ec8/pdb_openai-0.0.6.tar.gz
+[2024-04-07 05:52:06] INFO root fetch - processPackages [cshogi]: Downloading https://files.pythonhosted.org/packages/4d/b6/5019145707d3d67af7dd48de9af1e941ca20535c3727def1014a4c4eec21/cshogi-0.8.4.tar.gz
+[2024-04-07 05:52:06] WARNING root fetch - processPackages [dialog-workflow-local]: Timeout reached during download
+[2024-04-07 05:52:06] INFO root fetch - processPackages [dialog-workflow-local]: executing diffoscope
+[2024-04-07 05:52:06] INFO root fetch - processPackages [dialog-workflow-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dialog-workflow-local-0.0.87.tar.gz tmp/dialog-workflow-local-0.0.88.tar.gz --markdown 20240407/d/dialog-workflow-local/0.0.87-0.0.88/diff.md --exclude *.pyd
+[2024-04-07 05:52:06] WARNING root fetch - processPackages [pdb-openai]: Timeout reached during download
+[2024-04-07 05:52:06] INFO root fetch - processPackages [pdb-openai]: executing diffoscope
+[2024-04-07 05:52:06] INFO root fetch - processPackages [pdb-openai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdb_openai-0.0.5.tar.gz tmp/pdb_openai-0.0.6.tar.gz --markdown 20240407/p/pdb-openai/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-07 05:52:06] WARNING root fetch - processPackages [cshogi]: Timeout reached during download
+[2024-04-07 05:52:07] INFO root fetch - processPackages [cshogi]: Downloading https://files.pythonhosted.org/packages/59/c4/13b2ed6ab7e69b5f31fa8c14d3b9653d6edc4a71b5cd37f0376f916d95ee/cshogi-0.8.5-cp39-cp39-win_amd64.whl
+[2024-04-07 05:52:07] INFO root fetch - processPackages [pdb-openai]: Remove: archive file [/home/abi/fetcher/tmp/pdb_openai-0.0.5.tar.gz]
+[2024-04-07 05:52:07] INFO root fetch - processPackages [pdb-openai]: Remove: archive file [/home/abi/fetcher/tmp/pdb_openai-0.0.6.tar.gz]
+[2024-04-07 05:52:07] INFO root fetch - main [MainThread]: End processing [pdb-openai]: success
+[2024-04-07 05:52:07] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog-workflow-local-0.0.87.tar.gz]
+[2024-04-07 05:52:07] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog-workflow-local-0.0.88.tar.gz]
+[2024-04-07 05:52:07] INFO root fetch - main [MainThread]: End processing [dialog-workflow-local]: success
+[2024-04-07 05:52:08] WARNING root fetch - processPackages [cshogi]: Timeout reached during download
+[2024-04-07 05:52:08] INFO root fetch - processPackages [cshogi]: executing diffoscope
+[2024-04-07 05:52:08] INFO root fetch - processPackages [cshogi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cshogi-0.8.4.tar.gz tmp/cshogi-0.8.5-cp39-cp39-win_amd64.whl.zip --markdown 20240407/c/cshogi/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2024-04-07 05:52:08] INFO root fetch - processPackages [cshogi]: Remove: archive file [/home/abi/fetcher/tmp/cshogi-0.8.4.tar.gz]
+[2024-04-07 05:52:08] INFO root fetch - processPackages [cshogi]: Remove: archive file [/home/abi/fetcher/tmp/cshogi-0.8.5-cp39-cp39-win_amd64.whl.zip]
+[2024-04-07 05:52:08] INFO root fetch - main [MainThread]: End processing [cshogi]: success
+[2024-04-07 05:52:08] INFO root fetch - main [MainThread]: Store serial: [22653334]
