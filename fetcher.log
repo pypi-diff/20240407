@@ -7608,3 +7608,33 @@
 [2024-04-07 09:58:30] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240407-cp39-cp39-win_amd64.whl.zip]
 [2024-04-07 09:58:30] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
 [2024-04-07 09:58:30] INFO root fetch - main [MainThread]: Store serial: [22654518]
+[2024-04-07 10:00:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654518]
+[2024-04-07 10:00:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 10:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tulona
+[2024-04-07 10:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qleegss
+[2024-04-07 10:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rcquant-sdk
+[2024-04-07 10:00:39] INFO root fetch - processPackages [tulona]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-07 10:00:39] INFO root fetch - processPackages [rcquant-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 10:00:39] INFO root fetch - processPackages [qleegss]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 10:00:39] INFO root fetch - processPackages [rcquant-sdk]: Downloading https://files.pythonhosted.org/packages/3e/60/e0a243e196412d03158a2aff972fd0ac9db20838d3337b73106554a273df/rcquant_sdk-0.0.8.tar.gz
+[2024-04-07 10:00:39] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/0a/b7/10e02b9dfc88156511cdd28754ae81dcdfb1876cff2f7b5ae8e8d9898b9b/tulona-0.2.3.tar.gz
+[2024-04-07 10:00:39] WARNING root fetch - processPackages [tulona]: Timeout reached during download
+[2024-04-07 10:00:39] WARNING root fetch - processPackages [rcquant-sdk]: Timeout reached during download
+[2024-04-07 10:00:39] INFO root fetch - processPackages [qleegss]: Downloading https://files.pythonhosted.org/packages/06/1e/3ca6e311e0a7d815c65771d58053745632e0a11ad74e83e01770fdf7c2f7/qleegss-0.0.8.tar.gz
+[2024-04-07 10:00:39] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/b5/14/1a5845e939b0a7c33eee4c9d3162db5785febd25d7f615838ed56f58a66d/tulona-0.2.4.tar.gz
+[2024-04-07 10:00:39] INFO root fetch - processPackages [rcquant-sdk]: Downloading https://files.pythonhosted.org/packages/ac/5d/0b8b494a5b28ddc4213217404a0c3be423df271aaf93c217f1058af73bf8/rcquant_sdk-0.0.9.tar.gz
+[2024-04-07 10:00:39] WARNING root fetch - processPackages [qleegss]: Skipping package: exceeds size limit 20058685>=10485760
+[2024-04-07 10:00:39] INFO root fetch - main [MainThread]: End processing [qleegss] error
+[2024-04-07 10:00:39] WARNING root fetch - processPackages [tulona]: Timeout reached during download
+[2024-04-07 10:00:39] INFO root fetch - processPackages [tulona]: executing diffoscope
+[2024-04-07 10:00:39] INFO root fetch - processPackages [tulona]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulona-0.2.3.tar.gz tmp/tulona-0.2.4.tar.gz --markdown 20240407/t/tulona/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2024-04-07 10:00:39] WARNING root fetch - processPackages [rcquant-sdk]: Timeout reached during download
+[2024-04-07 10:00:39] INFO root fetch - processPackages [rcquant-sdk]: executing diffoscope
+[2024-04-07 10:00:39] INFO root fetch - processPackages [rcquant-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rcquant_sdk-0.0.8.tar.gz tmp/rcquant_sdk-0.0.9.tar.gz --markdown 20240407/r/rcquant-sdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 10:00:40] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.2.3.tar.gz]
+[2024-04-07 10:00:40] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.2.4.tar.gz]
+[2024-04-07 10:00:40] INFO root fetch - main [MainThread]: End processing [tulona]: success
+[2024-04-07 10:00:40] INFO root fetch - processPackages [rcquant-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rcquant_sdk-0.0.8.tar.gz]
+[2024-04-07 10:00:40] INFO root fetch - processPackages [rcquant-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rcquant_sdk-0.0.9.tar.gz]
+[2024-04-07 10:00:40] INFO root fetch - main [MainThread]: End processing [rcquant-sdk]: success
+[2024-04-07 10:00:40] INFO root fetch - main [MainThread]: Store serial: [22654530]
