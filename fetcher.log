@@ -16994,3 +16994,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:35:25] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.79.tar.gz]
 [2024-04-07 19:35:25] INFO root fetch - main [MainThread]: End processing [composio-core]: success
 [2024-04-07 19:35:25] INFO root fetch - main [MainThread]: Store serial: [22657989]
+[2024-04-07 19:37:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657989]
+[2024-04-07 19:37:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 19:37:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: holboxai
+[2024-04-07 19:37:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: featransform
+[2024-04-07 19:37:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qstd-logger-json-formatter
+[2024-04-07 19:37:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: many
+[2024-04-07 19:37:35] INFO root fetch - processPackages [many]: New version: [0.7.0] Old Version: [0.6.9]
+[2024-04-07 19:37:35] INFO root fetch - processPackages [holboxai]: New version: [0.8] Old Version: [0.7]
+[2024-04-07 19:37:36] INFO root fetch - processPackages [many]: Downloading https://files.pythonhosted.org/packages/ea/7c/1b0c277bf72f01e404e5c1453766c5e96eda0fc85f2d3f691a9777349957/many-0.6.9.tar.gz
+[2024-04-07 19:37:36] WARNING root fetch - processPackages [qstd-logger-json-formatter]: Skipping, unable to determine old version
+[2024-04-07 19:37:36] INFO root fetch - main [MainThread]: End processing [qstd-logger-json-formatter] error
+[2024-04-07 19:37:36] INFO root fetch - processPackages [holboxai]: Downloading https://files.pythonhosted.org/packages/a0/55/acfa187a3c37831264a2016b12994c36234bbfffe8d3f6a21ae74d703815/holboxai-0.7.tar.gz
+[2024-04-07 19:37:36] INFO root fetch - processPackages [featransform]: New version: [0.9.1] Old Version: [0.1.55]
+[2024-04-07 19:37:36] WARNING root fetch - processPackages [holboxai]: Timeout reached during download
+[2024-04-07 19:37:36] WARNING root fetch - processPackages [many]: Timeout reached during download
+[2024-04-07 19:37:36] INFO root fetch - processPackages [featransform]: Downloading https://files.pythonhosted.org/packages/6f/d6/d77ccbc0067d997ed1e199b3804fb426a343144ea23d5edd7cba2b78fe1c/featransform-0.1.55-py3-none-any.whl
+[2024-04-07 19:37:36] INFO root fetch - processPackages [many]: Downloading https://files.pythonhosted.org/packages/a0/19/d0df08ecc12b5d05e5ca990d7da0fa768504392bcbcc5ef3ad44ecc26f6b/many-0.7.0.tar.gz
+[2024-04-07 19:37:36] INFO root fetch - processPackages [holboxai]: Downloading https://files.pythonhosted.org/packages/19/b9/f451a3d2db1b97819fa90850e684986e080497db8d6e454c2e51317a4d52/holboxai-0.8.tar.gz
+[2024-04-07 19:37:36] WARNING root fetch - processPackages [featransform]: Timeout reached during download
+[2024-04-07 19:37:36] WARNING root fetch - processPackages [holboxai]: Timeout reached during download
+[2024-04-07 19:37:36] INFO root fetch - processPackages [holboxai]: executing diffoscope
+[2024-04-07 19:37:36] INFO root fetch - processPackages [holboxai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/holboxai-0.7.tar.gz tmp/holboxai-0.8.tar.gz --markdown 20240407/h/holboxai/0.7-0.8/diff.md --exclude *.pyd
+[2024-04-07 19:37:36] WARNING root fetch - processPackages [many]: Timeout reached during download
+[2024-04-07 19:37:36] INFO root fetch - processPackages [many]: executing diffoscope
+[2024-04-07 19:37:36] INFO root fetch - processPackages [many]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/many-0.6.9.tar.gz tmp/many-0.7.0.tar.gz --markdown 20240407/m/many/0.6.9-0.7.0/diff.md --exclude *.pyd
+[2024-04-07 19:37:36] INFO root fetch - processPackages [featransform]: Downloading https://files.pythonhosted.org/packages/c8/21/dca6d36c16d2f2cdf229935660adfdfb0fae4ea264d9ce57a4306922bb81/featransform-0.9.1-py3-none-any.whl
+[2024-04-07 19:37:36] WARNING root fetch - processPackages [featransform]: Timeout reached during download
+[2024-04-07 19:37:36] INFO root fetch - processPackages [featransform]: executing diffoscope
+[2024-04-07 19:37:36] INFO root fetch - processPackages [featransform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featransform-0.1.55-py3-none-any.whl.zip tmp/featransform-0.9.1-py3-none-any.whl.zip --markdown 20240407/f/featransform/0.1.55-0.9.1/diff.md --exclude *.pyd
+[2024-04-07 19:37:36] INFO root fetch - processPackages [holboxai]: Remove: archive file [/home/abi/fetcher/tmp/holboxai-0.7.tar.gz]
+[2024-04-07 19:37:36] INFO root fetch - processPackages [holboxai]: Remove: archive file [/home/abi/fetcher/tmp/holboxai-0.8.tar.gz]
+[2024-04-07 19:37:36] INFO root fetch - main [MainThread]: End processing [holboxai]: success
+[2024-04-07 19:37:37] INFO root fetch - processPackages [many]: Remove: archive file [/home/abi/fetcher/tmp/many-0.6.9.tar.gz]
+[2024-04-07 19:37:37] INFO root fetch - processPackages [many]: Remove: archive file [/home/abi/fetcher/tmp/many-0.7.0.tar.gz]
+[2024-04-07 19:37:37] INFO root fetch - main [MainThread]: End processing [many]: success
+[2024-04-07 19:37:37] INFO root fetch - processPackages [featransform]: Remove: archive file [/home/abi/fetcher/tmp/featransform-0.1.55-py3-none-any.whl.zip]
+[2024-04-07 19:37:37] INFO root fetch - processPackages [featransform]: Remove: archive file [/home/abi/fetcher/tmp/featransform-0.9.1-py3-none-any.whl.zip]
+[2024-04-07 19:37:37] INFO root fetch - main [MainThread]: End processing [featransform]: success
+[2024-04-07 19:37:37] INFO root fetch - main [MainThread]: Store serial: [22658001]
