@@ -6767,3 +6767,64 @@
 [2024-04-07 08:55:12] INFO root fetch - processPackages [jax-tools]: Remove: archive file [/home/abi/fetcher/tmp/jax-tools-1.0.97.tar.gz]
 [2024-04-07 08:55:12] INFO root fetch - main [MainThread]: End processing [jax-tools]: success
 [2024-04-07 08:55:12] INFO root fetch - main [MainThread]: Store serial: [22654181]
+[2024-04-07 08:57:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654181]
+[2024-04-07 08:57:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 08:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bestnlp
+[2024-04-07 08:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: combogenius
+[2024-04-07 08:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-rke
+[2024-04-07 08:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ciomaya
+[2024-04-07 08:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: weasyform
+[2024-04-07 08:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: djangocms-form-builder
+[2024-04-07 08:57:22] INFO root fetch - processPackages [bestnlp]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-07 08:57:22] INFO root fetch - processPackages [bestnlp]: Downloading https://files.pythonhosted.org/packages/7c/03/5f654bcb00ac517d184ba51cacfac0d745320ea857aa4492b195f7dfdd6c/bestnlp-1.0.3-py3-none-any.whl
+[2024-04-07 08:57:22] INFO root fetch - processPackages [weasyform]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-07 08:57:22] WARNING root fetch - processPackages [combogenius]: Skipping, unable to determine old version
+[2024-04-07 08:57:22] INFO root fetch - main [MainThread]: End processing [combogenius] error
+[2024-04-07 08:57:22] INFO root fetch - processPackages [pulumi-rke]: New version: [3.4.0a1712470927] Old Version: [3.4.0a1712402957]
+[2024-04-07 08:57:22] INFO root fetch - processPackages [ciomaya]: New version: [0.9.2b3] Old Version: [0.9.2b2]
+[2024-04-07 08:57:22] INFO root fetch - processPackages [djangocms-form-builder]: New version: [0.1.1] Old Version: [0.1]
+[2024-04-07 08:57:22] WARNING root fetch - processPackages [bestnlp]: Timeout reached during download
+[2024-04-07 08:57:22] INFO root fetch - processPackages [pulumi-rke]: Downloading https://files.pythonhosted.org/packages/a7/5a/fff7e4c2508276ca3278f15a7e758b61fa24cb2b0a37bc142aaadd87319c/pulumi_rke-3.4.0a1712402957.tar.gz
+[2024-04-07 08:57:23] INFO root fetch - processPackages [weasyform]: Downloading https://files.pythonhosted.org/packages/4b/11/485235e67cea4c0fec2c025f38fcfcf419303ea49d0227f76927931e258f/weasyform-0.0.7.tar.gz
+[2024-04-07 08:57:23] WARNING root fetch - processPackages [pulumi-rke]: Timeout reached during download
+[2024-04-07 08:57:23] INFO root fetch - processPackages [ciomaya]: Downloading https://files.pythonhosted.org/packages/0e/dd/71561cf992f4407069f9b1ec850f746b34879c9d9d27e164ae20a302cf5c/ciomaya-0.9.2b2-py2.py3-none-any.whl
+[2024-04-07 08:57:23] INFO root fetch - processPackages [djangocms-form-builder]: Downloading https://files.pythonhosted.org/packages/6c/2d/3dc41d5ff5a44367f76f0477c9fa30600ff823bab0bfac070c327703d49d/djangocms-form-builder-0.1.tar.gz
+[2024-04-07 08:57:23] INFO root fetch - processPackages [bestnlp]: Downloading https://files.pythonhosted.org/packages/49/e2/7f99186a5862ba3a5825df049c07847cc2e1705a1270f67ca13f709f842d/bestnlp-1.0.4-py3-none-any.whl
+[2024-04-07 08:57:23] WARNING root fetch - processPackages [weasyform]: Timeout reached during download
+[2024-04-07 08:57:23] INFO root fetch - processPackages [pulumi-rke]: Downloading https://files.pythonhosted.org/packages/c7/fb/b31b8c033eace87c233c1f9a5a002d78d606cc1561c92c62b9272304f7a2/pulumi_rke-3.4.0a1712470927.tar.gz
+[2024-04-07 08:57:23] WARNING root fetch - processPackages [bestnlp]: Timeout reached during download
+[2024-04-07 08:57:23] INFO root fetch - processPackages [bestnlp]: executing diffoscope
+[2024-04-07 08:57:23] INFO root fetch - processPackages [bestnlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bestnlp-1.0.3-py3-none-any.whl.zip tmp/bestnlp-1.0.4-py3-none-any.whl.zip --markdown 20240407/b/bestnlp/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2024-04-07 08:57:23] WARNING root fetch - processPackages [ciomaya]: Timeout reached during download
+[2024-04-07 08:57:23] WARNING root fetch - processPackages [djangocms-form-builder]: Timeout reached during download
+[2024-04-07 08:57:23] INFO root fetch - processPackages [weasyform]: Downloading https://files.pythonhosted.org/packages/fa/6e/4b6dcf11a5f954c6fc7671086821b5fb4646c351dd73a075831b34aba50a/weasyform-0.0.8.tar.gz
+[2024-04-07 08:57:23] WARNING root fetch - processPackages [pulumi-rke]: Timeout reached during download
+[2024-04-07 08:57:23] INFO root fetch - processPackages [pulumi-rke]: executing diffoscope
+[2024-04-07 08:57:23] INFO root fetch - processPackages [pulumi-rke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rke-3.4.0a1712402957.tar.gz tmp/pulumi_rke-3.4.0a1712470927.tar.gz --markdown 20240407/p/pulumi-rke/3.4.0a1712402957-3.4.0a1712470927/diff.md --exclude *.pyd
+[2024-04-07 08:57:23] INFO root fetch - processPackages [djangocms-form-builder]: Downloading https://files.pythonhosted.org/packages/22/65/47ad52f56a4ac142dd6dbf072f4d7753c2dcd27edbbb5481a5a22835876d/djangocms_form_builder-0.1.1.tar.gz
+[2024-04-07 08:57:23] INFO root fetch - processPackages [ciomaya]: Downloading https://files.pythonhosted.org/packages/83/b7/0232d706a447520f5dcc55b4c849259f92438230a1113f3651e43288f41d/ciomaya-0.9.2b3-py2.py3-none-any.whl
+[2024-04-07 08:57:23] WARNING root fetch - processPackages [weasyform]: Timeout reached during download
+[2024-04-07 08:57:23] INFO root fetch - processPackages [weasyform]: executing diffoscope
+[2024-04-07 08:57:23] INFO root fetch - processPackages [weasyform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weasyform-0.0.7.tar.gz tmp/weasyform-0.0.8.tar.gz --markdown 20240407/w/weasyform/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-07 08:57:23] INFO root fetch - processPackages [bestnlp]: Remove: archive file [/home/abi/fetcher/tmp/bestnlp-1.0.3-py3-none-any.whl.zip]
+[2024-04-07 08:57:23] INFO root fetch - processPackages [bestnlp]: Remove: archive file [/home/abi/fetcher/tmp/bestnlp-1.0.4-py3-none-any.whl.zip]
+[2024-04-07 08:57:23] INFO root fetch - main [MainThread]: End processing [bestnlp]: success
+[2024-04-07 08:57:23] WARNING root fetch - processPackages [ciomaya]: Timeout reached during download
+[2024-04-07 08:57:23] INFO root fetch - processPackages [ciomaya]: executing diffoscope
+[2024-04-07 08:57:23] INFO root fetch - processPackages [ciomaya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ciomaya-0.9.2b2-py2.py3-none-any.whl.zip tmp/ciomaya-0.9.2b3-py2.py3-none-any.whl.zip --markdown 20240407/c/ciomaya/0.9.2b2-0.9.2b3/diff.md --exclude *.pyd
+[2024-04-07 08:57:23] WARNING root fetch - processPackages [djangocms-form-builder]: Timeout reached during download
+[2024-04-07 08:57:23] INFO root fetch - processPackages [djangocms-form-builder]: executing diffoscope
+[2024-04-07 08:57:23] INFO root fetch - processPackages [djangocms-form-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangocms-form-builder-0.1.tar.gz tmp/djangocms_form_builder-0.1.1.tar.gz --markdown 20240407/d/djangocms-form-builder/0.1-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 08:57:24] INFO root fetch - processPackages [pulumi-rke]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_rke-3.4.0a1712402957.tar.gz]
+[2024-04-07 08:57:24] INFO root fetch - processPackages [pulumi-rke]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_rke-3.4.0a1712470927.tar.gz]
+[2024-04-07 08:57:24] INFO root fetch - main [MainThread]: End processing [pulumi-rke]: success
+[2024-04-07 08:57:24] INFO root fetch - processPackages [weasyform]: Remove: archive file [/home/abi/fetcher/tmp/weasyform-0.0.7.tar.gz]
+[2024-04-07 08:57:24] INFO root fetch - processPackages [weasyform]: Remove: archive file [/home/abi/fetcher/tmp/weasyform-0.0.8.tar.gz]
+[2024-04-07 08:57:24] INFO root fetch - main [MainThread]: End processing [weasyform]: success
+[2024-04-07 08:57:24] INFO root fetch - processPackages [djangocms-form-builder]: Remove: archive file [/home/abi/fetcher/tmp/djangocms-form-builder-0.1.tar.gz]
+[2024-04-07 08:57:24] INFO root fetch - processPackages [djangocms-form-builder]: Remove: archive file [/home/abi/fetcher/tmp/djangocms_form_builder-0.1.1.tar.gz]
+[2024-04-07 08:57:24] INFO root fetch - main [MainThread]: End processing [djangocms-form-builder]: success
+[2024-04-07 08:57:24] INFO root fetch - processPackages [ciomaya]: Remove: archive file [/home/abi/fetcher/tmp/ciomaya-0.9.2b2-py2.py3-none-any.whl.zip]
+[2024-04-07 08:57:24] INFO root fetch - processPackages [ciomaya]: Remove: archive file [/home/abi/fetcher/tmp/ciomaya-0.9.2b3-py2.py3-none-any.whl.zip]
+[2024-04-07 08:57:24] INFO root fetch - main [MainThread]: End processing [ciomaya]: success
+[2024-04-07 08:57:24] INFO root fetch - main [MainThread]: Store serial: [22654199]
