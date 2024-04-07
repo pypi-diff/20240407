@@ -6413,3 +6413,39 @@
 [2024-04-07 08:31:16] INFO root fetch - processPackages [antchain-nftc]: Remove: archive file [/home/abi/fetcher/tmp/antchain_nftc-1.0.9.tar.gz]
 [2024-04-07 08:31:16] INFO root fetch - main [MainThread]: End processing [antchain-nftc]: success
 [2024-04-07 08:31:16] INFO root fetch - main [MainThread]: Store serial: [22654022]
+[2024-04-07 08:33:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654022]
+[2024-04-07 08:33:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 08:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-tidb
+[2024-04-07 08:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-tailscale
+[2024-04-07 08:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-spotinst
+[2024-04-07 08:33:24] INFO root fetch - processPackages [pulumi-spotinst]: New version: [3.9.0a1633346805] Old Version: [3.9.0]
+[2024-04-07 08:33:24] INFO root fetch - processPackages [django-tidb]: New version: [4.2.4] Old Version: [4.2.3]
+[2024-04-07 08:33:24] INFO root fetch - processPackages [pulumi-spotinst]: Downloading https://files.pythonhosted.org/packages/e0/9f/6d2c1a705d6b6019bea4cba0aa49eceea4eb2d84cfdcb18f45db81e06fb5/pulumi_spotinst-3.9.0.tar.gz
+[2024-04-07 08:33:24] INFO root fetch - processPackages [pulumi-tailscale]: New version: [0.9.1a1656330156] Old Version: [0.9.0]
+[2024-04-07 08:33:25] INFO root fetch - processPackages [pulumi-tailscale]: Downloading https://files.pythonhosted.org/packages/af/fc/1aa615a8e44d21b520ec05aa57ea2ee6f62de762047b4ad8ccec73544ac3/pulumi_tailscale-0.9.0.tar.gz
+[2024-04-07 08:33:25] WARNING root fetch - processPackages [pulumi-spotinst]: Timeout reached during download
+[2024-04-07 08:33:25] INFO root fetch - processPackages [django-tidb]: Downloading https://files.pythonhosted.org/packages/14/53/9f46bfca3ac9c809a88bb1daafa50d3f0abff292d63d19e1f3d5aa133151/django-tidb-4.2.3.tar.gz
+[2024-04-07 08:33:25] WARNING root fetch - processPackages [pulumi-tailscale]: Timeout reached during download
+[2024-04-07 08:33:25] INFO root fetch - processPackages [pulumi-spotinst]: Downloading https://files.pythonhosted.org/packages/b4/06/83d6eb3763a877d39e3d2a09063ba3fd6542fa6a214e6c3d5240414d041d/pulumi_spotinst-3.9.0a1633346805.tar.gz
+[2024-04-07 08:33:25] INFO root fetch - processPackages [pulumi-tailscale]: Downloading https://files.pythonhosted.org/packages/a3/d6/938674a37f5324fe6d787b4f3efbeeebc5d750fd8c8c25fb2198b11e6a4d/pulumi_tailscale-0.9.1a1656330156.tar.gz
+[2024-04-07 08:33:25] WARNING root fetch - processPackages [pulumi-tailscale]: Timeout reached during download
+[2024-04-07 08:33:25] INFO root fetch - processPackages [pulumi-tailscale]: executing diffoscope
+[2024-04-07 08:33:25] INFO root fetch - processPackages [pulumi-tailscale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_tailscale-0.9.0.tar.gz tmp/pulumi_tailscale-0.9.1a1656330156.tar.gz --markdown 20240407/p/pulumi-tailscale/0.9.0-0.9.1a1656330156/diff.md --exclude *.pyd
+[2024-04-07 08:33:25] WARNING root fetch - processPackages [django-tidb]: Timeout reached during download
+[2024-04-07 08:33:25] WARNING root fetch - processPackages [pulumi-spotinst]: Timeout reached during download
+[2024-04-07 08:33:25] INFO root fetch - processPackages [pulumi-spotinst]: executing diffoscope
+[2024-04-07 08:33:25] INFO root fetch - processPackages [pulumi-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_spotinst-3.9.0.tar.gz tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz --markdown 20240407/p/pulumi-spotinst/3.9.0-3.9.0a1633346805/diff.md --exclude *.pyd
+[2024-04-07 08:33:25] INFO root fetch - processPackages [django-tidb]: Downloading https://files.pythonhosted.org/packages/ee/e3/55b5eb748baa7165f59335782f4fa2a79192dae6766b2b86c7068f3c0511/django-tidb-4.2.4.tar.gz
+[2024-04-07 08:33:25] WARNING root fetch - processPackages [django-tidb]: Timeout reached during download
+[2024-04-07 08:33:25] INFO root fetch - processPackages [django-tidb]: executing diffoscope
+[2024-04-07 08:33:25] INFO root fetch - processPackages [django-tidb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-tidb-4.2.3.tar.gz tmp/django-tidb-4.2.4.tar.gz --markdown 20240407/d/django-tidb/4.2.3-4.2.4/diff.md --exclude *.pyd
+[2024-04-07 08:33:25] INFO root fetch - processPackages [pulumi-tailscale]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_tailscale-0.9.0.tar.gz]
+[2024-04-07 08:33:25] INFO root fetch - processPackages [pulumi-tailscale]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_tailscale-0.9.1a1656330156.tar.gz]
+[2024-04-07 08:33:25] INFO root fetch - main [MainThread]: End processing [pulumi-tailscale]: success
+[2024-04-07 08:33:26] INFO root fetch - processPackages [django-tidb]: Remove: archive file [/home/abi/fetcher/tmp/django-tidb-4.2.3.tar.gz]
+[2024-04-07 08:33:26] INFO root fetch - processPackages [django-tidb]: Remove: archive file [/home/abi/fetcher/tmp/django-tidb-4.2.4.tar.gz]
+[2024-04-07 08:33:26] INFO root fetch - main [MainThread]: End processing [django-tidb]: success
+[2024-04-07 08:33:26] INFO root fetch - processPackages [pulumi-spotinst]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_spotinst-3.9.0.tar.gz]
+[2024-04-07 08:33:26] INFO root fetch - processPackages [pulumi-spotinst]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz]
+[2024-04-07 08:33:26] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
+[2024-04-07 08:33:26] INFO root fetch - main [MainThread]: Store serial: [22654031]
