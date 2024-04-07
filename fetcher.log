@@ -5393,3 +5393,31 @@
 [2024-04-07 07:32:05] INFO root fetch - processPackages [pytest-yaml-sanmu]: Remove: archive file [/home/abi/fetcher/tmp/pytest_yaml_sanmu-0.2.6-py3-none-any.whl.zip]
 [2024-04-07 07:32:05] INFO root fetch - main [MainThread]: End processing [pytest-yaml-sanmu]: success
 [2024-04-07 07:32:05] INFO root fetch - main [MainThread]: Store serial: [22653639]
+[2024-04-07 07:34:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653639]
+[2024-04-07 07:34:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 07:34:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: capedu
+[2024-04-07 07:34:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: htscf
+[2024-04-07 07:34:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streamjoy
+[2024-04-07 07:34:13] WARNING root fetch - processPackages [capedu]: Skipping, unable to determine old version
+[2024-04-07 07:34:13] INFO root fetch - main [MainThread]: End processing [capedu] error
+[2024-04-07 07:34:13] INFO root fetch - processPackages [streamjoy]: New version: [0.0.6] Old Version: [0.0.4]
+[2024-04-07 07:34:13] INFO root fetch - processPackages [htscf]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 07:34:13] INFO root fetch - processPackages [streamjoy]: Downloading https://files.pythonhosted.org/packages/d0/1e/196e596cbddb90064e331e0b2ca9dcb3a490f825a20654014a2f7edfaed9/streamjoy-0.0.4.tar.gz
+[2024-04-07 07:34:13] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/48/31/ef6469f74ffa5f39aaf9ac67ecf2f5b17aec1b223d3f63572efd39a3958f/htscf-0.0.98.tar.gz
+[2024-04-07 07:34:14] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 07:34:14] WARNING root fetch - processPackages [streamjoy]: Timeout reached during download
+[2024-04-07 07:34:14] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/79/48/b9c5a63d0fc652968c826af8815fadd5e1f69403909e12853b5a52d9c6b3/htscf-0.0.99.tar.gz
+[2024-04-07 07:34:14] INFO root fetch - processPackages [streamjoy]: Downloading https://files.pythonhosted.org/packages/68/c8/72ca252bc125bd24bc256c544e0ba01db7274246413cda56ad9b10d8632c/streamjoy-0.0.6.tar.gz
+[2024-04-07 07:34:14] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 07:34:14] INFO root fetch - processPackages [htscf]: executing diffoscope
+[2024-04-07 07:34:14] INFO root fetch - processPackages [htscf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htscf-0.0.98.tar.gz tmp/htscf-0.0.99.tar.gz --markdown 20240407/h/htscf/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 07:34:14] WARNING root fetch - processPackages [streamjoy]: Timeout reached during download
+[2024-04-07 07:34:14] INFO root fetch - processPackages [streamjoy]: executing diffoscope
+[2024-04-07 07:34:14] INFO root fetch - processPackages [streamjoy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamjoy-0.0.4.tar.gz tmp/streamjoy-0.0.6.tar.gz --markdown 20240407/s/streamjoy/0.0.4-0.0.6/diff.md --exclude *.pyd
+[2024-04-07 07:34:14] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.98.tar.gz]
+[2024-04-07 07:34:14] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.99.tar.gz]
+[2024-04-07 07:34:14] INFO root fetch - main [MainThread]: End processing [htscf]: success
+[2024-04-07 07:34:15] INFO root fetch - processPackages [streamjoy]: Remove: archive file [/home/abi/fetcher/tmp/streamjoy-0.0.4.tar.gz]
+[2024-04-07 07:34:15] INFO root fetch - processPackages [streamjoy]: Remove: archive file [/home/abi/fetcher/tmp/streamjoy-0.0.6.tar.gz]
+[2024-04-07 07:34:15] INFO root fetch - main [MainThread]: End processing [streamjoy]: success
+[2024-04-07 07:34:15] INFO root fetch - main [MainThread]: Store serial: [22653650]
