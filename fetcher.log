@@ -4253,3 +4253,28 @@
 [2024-04-07 05:52:08] INFO root fetch - processPackages [cshogi]: Remove: archive file [/home/abi/fetcher/tmp/cshogi-0.8.5-cp39-cp39-win_amd64.whl.zip]
 [2024-04-07 05:52:08] INFO root fetch - main [MainThread]: End processing [cshogi]: success
 [2024-04-07 05:52:08] INFO root fetch - main [MainThread]: Store serial: [22653334]
+[2024-04-07 05:54:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653334]
+[2024-04-07 05:54:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 05:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arts
+[2024-04-07 05:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openai2
+[2024-04-07 05:54:17] INFO root fetch - processPackages [openai2]: New version: [1.7.1] Old Version: [1.7]
+[2024-04-07 05:54:17] INFO root fetch - processPackages [openai2]: Downloading https://files.pythonhosted.org/packages/70/c2/1ca2e00c67be964a46f9181a7cf68e1782b4106dbb7ddcbae4009ba20b9c/openai2-1.7.tar.gz
+[2024-04-07 05:54:17] INFO root fetch - processPackages [arts]: New version: [2024.4.3.2] Old Version: [2024.4.3.1]
+[2024-04-07 05:54:17] WARNING root fetch - processPackages [openai2]: Timeout reached during download
+[2024-04-07 05:54:17] INFO root fetch - processPackages [arts]: Downloading https://files.pythonhosted.org/packages/4c/37/49b01ed032837af13ad3f978aa37db2286feee8f64e17e07e1e475d722d2/arts-2024.4.3.1.tar.gz
+[2024-04-07 05:54:17] INFO root fetch - processPackages [openai2]: Downloading https://files.pythonhosted.org/packages/ca/1b/7db23afce14ba6af2f7a7aa1a5c8a59e8be8a7410e4ccc1c55c2de8b37cf/openai2-1.7.1.tar.gz
+[2024-04-07 05:54:17] WARNING root fetch - processPackages [arts]: Timeout reached during download
+[2024-04-07 05:54:18] WARNING root fetch - processPackages [openai2]: Timeout reached during download
+[2024-04-07 05:54:18] INFO root fetch - processPackages [openai2]: executing diffoscope
+[2024-04-07 05:54:18] INFO root fetch - processPackages [openai2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai2-1.7.tar.gz tmp/openai2-1.7.1.tar.gz --markdown 20240407/o/openai2/1.7-1.7.1/diff.md --exclude *.pyd
+[2024-04-07 05:54:18] INFO root fetch - processPackages [arts]: Downloading https://files.pythonhosted.org/packages/0a/41/c9d3f046affb9c78eedb72ca3481d72c8b7ab4fcc1026206354bf90b9f29/arts-2024.4.3.2.tar.gz
+[2024-04-07 05:54:18] WARNING root fetch - processPackages [arts]: Timeout reached during download
+[2024-04-07 05:54:18] INFO root fetch - processPackages [arts]: executing diffoscope
+[2024-04-07 05:54:18] INFO root fetch - processPackages [arts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arts-2024.4.3.1.tar.gz tmp/arts-2024.4.3.2.tar.gz --markdown 20240407/a/arts/2024.4.3.1-2024.4.3.2/diff.md --exclude *.pyd
+[2024-04-07 05:54:18] INFO root fetch - processPackages [openai2]: Remove: archive file [/home/abi/fetcher/tmp/openai2-1.7.tar.gz]
+[2024-04-07 05:54:18] INFO root fetch - processPackages [openai2]: Remove: archive file [/home/abi/fetcher/tmp/openai2-1.7.1.tar.gz]
+[2024-04-07 05:54:18] INFO root fetch - main [MainThread]: End processing [openai2]: success
+[2024-04-07 05:54:19] INFO root fetch - processPackages [arts]: Remove: archive file [/home/abi/fetcher/tmp/arts-2024.4.3.1.tar.gz]
+[2024-04-07 05:54:19] INFO root fetch - processPackages [arts]: Remove: archive file [/home/abi/fetcher/tmp/arts-2024.4.3.2.tar.gz]
+[2024-04-07 05:54:19] INFO root fetch - main [MainThread]: End processing [arts]: success
+[2024-04-07 05:54:19] INFO root fetch - main [MainThread]: Store serial: [22653353]
