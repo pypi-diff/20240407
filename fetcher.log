@@ -2629,3 +2629,62 @@
 [2024-04-07 04:03:31] INFO root fetch - processPackages [nonebot-plugin-alconna]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_alconna-0.9.3.tar.gz]
 [2024-04-07 04:03:31] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-alconna]: success
 [2024-04-07 04:03:31] INFO root fetch - main [MainThread]: Store serial: [22652779]
+[2024-04-07 04:05:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652779]
+[2024-04-07 04:05:39] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 04:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-alconna
+[2024-04-07 04:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: notional
+[2024-04-07 04:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reprompt
+[2024-04-07 04:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-animalvoice
+[2024-04-07 04:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: reprompt
+[2024-04-07 04:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: HelloWorldhahaha
+[2024-04-07 04:05:39] INFO root fetch - processPackages [reprompt]: New version: [0.0.5rc28.post1] Old Version: [0.0.4rc27.post1]
+[2024-04-07 04:05:39] INFO root fetch - processPackages [nonebot-plugin-alconna]: New version: [0.9.3] Old Version: [0.9.0]
+[2024-04-07 04:05:39] WARNING root fetch - processPackages [HelloWorldhahaha]: Skipping, unable to determine old version
+[2024-04-07 04:05:39] INFO root fetch - main [MainThread]: End processing [HelloWorldhahaha] error
+[2024-04-07 04:05:39] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: New version: [0.2.2rc1] Old Version: [0.2.2]
+[2024-04-07 04:05:39] INFO root fetch - processPackages [reprompt]: New version: [0.0.5rc28.post1] Old Version: [0.0.4rc27.post1]
+[2024-04-07 04:05:39] INFO root fetch - processPackages [notional]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-04-07 04:05:39] INFO root fetch - processPackages [reprompt]: Downloading https://files.pythonhosted.org/packages/6d/5d/264ba98d9181d2b6b667496142e1e696a42185f1f849232c838965ab8a9d/reprompt-0.0.4rc27.post1.tar.gz
+[2024-04-07 04:05:39] INFO root fetch - processPackages [nonebot-plugin-alconna]: Downloading https://files.pythonhosted.org/packages/c8/67/1065373af14f845f6112a3d2cb8d6187d838b4c0d90d89282ccef9f5133d/nonebot-plugin-alconna-0.9.0.tar.gz
+[2024-04-07 04:05:39] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: Downloading https://files.pythonhosted.org/packages/2b/6d/34bc5d802596673b04e78a2b743fe089b5ec678f8122d25c8245c475f3b9/nonebot_plugin_animalvoice-0.2.2.tar.gz
+[2024-04-07 04:05:39] INFO root fetch - processPackages [reprompt]: Downloading https://files.pythonhosted.org/packages/6d/5d/264ba98d9181d2b6b667496142e1e696a42185f1f849232c838965ab8a9d/reprompt-0.0.4rc27.post1.tar.gz
+[2024-04-07 04:05:39] WARNING root fetch - processPackages [reprompt]: Timeout reached during download
+[2024-04-07 04:05:39] WARNING root fetch - processPackages [nonebot-plugin-alconna]: Timeout reached during download
+[2024-04-07 04:05:40] WARNING root fetch - processPackages [nonebot-plugin-animalvoice]: Timeout reached during download
+[2024-04-07 04:05:40] WARNING root fetch - processPackages [reprompt]: Timeout reached during download
+[2024-04-07 04:05:40] INFO root fetch - processPackages [notional]: Downloading https://files.pythonhosted.org/packages/c2/d7/710df219c6a6aaf4f103bb63227a40656be3a59aabfa821f55e08ca07d16/notional-0.8.0.tar.gz
+[2024-04-07 04:05:40] INFO root fetch - processPackages [nonebot-plugin-alconna]: Downloading https://files.pythonhosted.org/packages/f4/fd/830dd6604cd5dc44a467d959ff595e8da0a087d9b75368acaecfc83c3417/nonebot_plugin_alconna-0.9.3.tar.gz
+[2024-04-07 04:05:40] WARNING root fetch - processPackages [notional]: Timeout reached during download
+[2024-04-07 04:05:40] INFO root fetch - processPackages [reprompt]: Downloading https://files.pythonhosted.org/packages/dd/33/6b40b50c24c8463f2ae815484e76c909086564f64cfb814a25f87d5d6dee/reprompt-0.0.5rc28.post1.tar.gz
+[2024-04-07 04:05:40] INFO root fetch - processPackages [reprompt]: Downloading https://files.pythonhosted.org/packages/dd/33/6b40b50c24c8463f2ae815484e76c909086564f64cfb814a25f87d5d6dee/reprompt-0.0.5rc28.post1.tar.gz
+[2024-04-07 04:05:40] WARNING root fetch - processPackages [nonebot-plugin-alconna]: Timeout reached during download
+[2024-04-07 04:05:40] INFO root fetch - processPackages [nonebot-plugin-alconna]: executing diffoscope
+[2024-04-07 04:05:40] INFO root fetch - processPackages [nonebot-plugin-alconna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-alconna-0.9.0.tar.gz tmp/nonebot_plugin_alconna-0.9.3.tar.gz --markdown 20240407/n/nonebot-plugin-alconna/0.9.0-0.9.3/diff.md --exclude *.pyd
+[2024-04-07 04:05:40] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: Downloading https://files.pythonhosted.org/packages/38/a8/0defc7be837b25a0f3761aa61e309bc46127fec0f01e2462e29053b70357/nonebot_plugin_animalvoice-0.2.2rc1.tar.gz
+[2024-04-07 04:05:40] WARNING root fetch - processPackages [reprompt]: Timeout reached during download
+[2024-04-07 04:05:40] INFO root fetch - processPackages [reprompt]: executing diffoscope
+[2024-04-07 04:05:40] INFO root fetch - processPackages [reprompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reprompt-0.0.4rc27.post1.tar.gz tmp/reprompt-0.0.5rc28.post1.tar.gz --markdown 20240407/r/reprompt/0.0.4rc27.post1-0.0.5rc28.post1/diff.md --exclude *.pyd
+[2024-04-07 04:05:40] WARNING root fetch - processPackages [reprompt]: Timeout reached during download
+[2024-04-07 04:05:40] INFO root fetch - processPackages [reprompt]: executing diffoscope
+[2024-04-07 04:05:40] INFO root fetch - processPackages [reprompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reprompt-0.0.4rc27.post1.tar.gz tmp/reprompt-0.0.5rc28.post1.tar.gz --markdown 20240407/r/reprompt/0.0.4rc27.post1-0.0.5rc28.post1/diff.md --exclude *.pyd
+[2024-04-07 04:05:40] WARNING root fetch - processPackages [nonebot-plugin-animalvoice]: Timeout reached during download
+[2024-04-07 04:05:40] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: executing diffoscope
+[2024-04-07 04:05:40] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_animalvoice-0.2.2.tar.gz tmp/nonebot_plugin_animalvoice-0.2.2rc1.tar.gz --markdown 20240407/n/nonebot-plugin-animalvoice/0.2.2-0.2.2rc1/diff.md --exclude *.pyd
+[2024-04-07 04:05:40] INFO root fetch - processPackages [notional]: Downloading https://files.pythonhosted.org/packages/85/f8/6c991a19fa2e6373b103af0d46a286dd0292bbbc334a874f8a5ed786d352/notional-0.8.1.tar.gz
+[2024-04-07 04:05:40] WARNING root fetch - processPackages [notional]: Timeout reached during download
+[2024-04-07 04:05:40] INFO root fetch - processPackages [notional]: executing diffoscope
+[2024-04-07 04:05:40] INFO root fetch - processPackages [notional]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notional-0.8.0.tar.gz tmp/notional-0.8.1.tar.gz --markdown 20240407/n/notional/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2024-04-07 04:05:41] INFO root fetch - processPackages [nonebot-plugin-alconna]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-alconna-0.9.0.tar.gz]
+[2024-04-07 04:05:41] INFO root fetch - processPackages [nonebot-plugin-alconna]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_alconna-0.9.3.tar.gz]
+[2024-04-07 04:05:41] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-alconna]: success
+[2024-04-07 04:05:41] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_animalvoice-0.2.2.tar.gz]
+[2024-04-07 04:05:41] INFO root fetch - processPackages [reprompt]: Remove: archive file [/home/abi/fetcher/tmp/reprompt-0.0.4rc27.post1.tar.gz]
+[2024-04-07 04:05:41] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_animalvoice-0.2.2rc1.tar.gz]
+[2024-04-07 04:05:41] INFO root fetch - processPackages [reprompt]: Remove: archive file [/home/abi/fetcher/tmp/reprompt-0.0.5rc28.post1.tar.gz]
+[2024-04-07 04:05:41] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-animalvoice]: success
+[2024-04-07 04:05:41] INFO root fetch - main [MainThread]: End processing [reprompt]: success
+[2024-04-07 04:05:41] INFO root fetch - processPackages [notional]: Remove: archive file [/home/abi/fetcher/tmp/notional-0.8.0.tar.gz]
+[2024-04-07 04:05:41] INFO root fetch - processPackages [notional]: Remove: archive file [/home/abi/fetcher/tmp/notional-0.8.1.tar.gz]
+[2024-04-07 04:05:41] INFO root fetch - main [MainThread]: End processing [notional]: success
+[2024-04-07 04:05:41] INFO root fetch - main [MainThread]: End processing [reprompt]: success
+[2024-04-07 04:05:41] INFO root fetch - main [MainThread]: Store serial: [22652798]
