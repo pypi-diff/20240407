@@ -17205,3 +17205,50 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:53:01] INFO root fetch - processPackages [prosperity2submit]: Remove: archive file [/home/abi/fetcher/tmp/prosperity2submit-0.2.0.tar.gz]
 [2024-04-07 19:53:01] INFO root fetch - main [MainThread]: End processing [prosperity2submit]: success
 [2024-04-07 19:53:01] INFO root fetch - main [MainThread]: Store serial: [22658067]
+[2024-04-07 19:55:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658067]
+[2024-04-07 19:55:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 19:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: general-tamsat-alert
+[2024-04-07 19:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sleipnirgroup-jormungandr
+[2024-04-07 19:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aws-cdk-construct-devops01ua
+[2024-04-07 19:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: featransform
+[2024-04-07 19:55:10] INFO root fetch - processPackages [general-tamsat-alert]: New version: [1.2.0] Old Version: [1.1.1]
+[2024-04-07 19:55:10] INFO root fetch - processPackages [featransform]: New version: [0.9.11] Old Version: [0.1.55]
+[2024-04-07 19:55:10] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: New version: [0.0.7.dev0] Old Version: [0.0.6]
+[2024-04-07 19:55:10] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: New version: [0.0.1.dev99] Old Version: [0.0.1.dev98]
+[2024-04-07 19:55:10] INFO root fetch - processPackages [featransform]: Downloading https://files.pythonhosted.org/packages/6f/d6/d77ccbc0067d997ed1e199b3804fb426a343144ea23d5edd7cba2b78fe1c/featransform-0.1.55-py3-none-any.whl
+[2024-04-07 19:55:10] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: Downloading https://files.pythonhosted.org/packages/e6/a0/a1a4586ecb0e6d8858d6c4c0f0404257c7b31da5b93c642772c0c5d5a2f9/aws_cdk_construct_devops01ua-0.0.6.tar.gz
+[2024-04-07 19:55:10] INFO root fetch - processPackages [general-tamsat-alert]: Downloading https://files.pythonhosted.org/packages/c9/46/a0ccdae9437c310ecfbaff1f8e1cc199d3dea8a6ddf78789b90bc9123659/general_tamsat_alert-1.1.1.tar.gz
+[2024-04-07 19:55:10] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Downloading https://files.pythonhosted.org/packages/cc/12/913e734462cf5d457ad69ec174744b76c771c8b63ebfb55efeb3cf02373e/sleipnirgroup_jormungandr-0.0.1.dev98.tar.gz
+[2024-04-07 19:55:10] WARNING root fetch - processPackages [aws-cdk-construct-devops01ua]: Timeout reached during download
+[2024-04-07 19:55:10] WARNING root fetch - processPackages [featransform]: Timeout reached during download
+[2024-04-07 19:55:10] WARNING root fetch - processPackages [general-tamsat-alert]: Timeout reached during download
+[2024-04-07 19:55:10] WARNING root fetch - processPackages [sleipnirgroup-jormungandr]: Timeout reached during download
+[2024-04-07 19:55:11] INFO root fetch - processPackages [featransform]: Downloading https://files.pythonhosted.org/packages/ff/2d/891ca4677e7ffa64a9e23673581e2818d143209a98a409161c9117b9a5ad/featransform-0.9.11-py3-none-any.whl
+[2024-04-07 19:55:11] INFO root fetch - processPackages [general-tamsat-alert]: Downloading https://files.pythonhosted.org/packages/3f/d3/4ca172e0338ecf4e54f196af030634b79848569aae2502dd37a2b8c36477/general_tamsat_alert-1.2.0.tar.gz
+[2024-04-07 19:55:11] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Downloading https://files.pythonhosted.org/packages/c4/65/9e9a4eafe0a550c5be12a69cf1665a71a4b5c434089722b18386b65569f5/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz
+[2024-04-07 19:55:11] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: Downloading https://files.pythonhosted.org/packages/6c/a9/addd331b3b754a22b4ec6d2c80db78eb9694a9d94bd01e7e2964809001a3/aws_cdk_construct_devops01ua-0.0.7.dev0.tar.gz
+[2024-04-07 19:55:11] WARNING root fetch - processPackages [featransform]: Timeout reached during download
+[2024-04-07 19:55:11] INFO root fetch - processPackages [featransform]: executing diffoscope
+[2024-04-07 19:55:11] INFO root fetch - processPackages [featransform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featransform-0.1.55-py3-none-any.whl.zip tmp/featransform-0.9.11-py3-none-any.whl.zip --markdown 20240407/f/featransform/0.1.55-0.9.11/diff.md --exclude *.pyd
+[2024-04-07 19:55:11] WARNING root fetch - processPackages [general-tamsat-alert]: Timeout reached during download
+[2024-04-07 19:55:11] INFO root fetch - processPackages [general-tamsat-alert]: executing diffoscope
+[2024-04-07 19:55:11] INFO root fetch - processPackages [general-tamsat-alert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/general_tamsat_alert-1.1.1.tar.gz tmp/general_tamsat_alert-1.2.0.tar.gz --markdown 20240407/g/general-tamsat-alert/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2024-04-07 19:55:11] WARNING root fetch - processPackages [sleipnirgroup-jormungandr]: Timeout reached during download
+[2024-04-07 19:55:11] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: executing diffoscope
+[2024-04-07 19:55:11] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleipnirgroup_jormungandr-0.0.1.dev98.tar.gz tmp/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz --markdown 20240407/s/sleipnirgroup-jormungandr/0.0.1.dev98-0.0.1.dev99/diff.md --exclude *.pyd
+[2024-04-07 19:55:11] WARNING root fetch - processPackages [aws-cdk-construct-devops01ua]: Timeout reached during download
+[2024-04-07 19:55:11] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: executing diffoscope
+[2024-04-07 19:55:11] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_cdk_construct_devops01ua-0.0.6.tar.gz tmp/aws_cdk_construct_devops01ua-0.0.7.dev0.tar.gz --markdown 20240407/a/aws-cdk-construct-devops01ua/0.0.6-0.0.7.dev0/diff.md --exclude *.pyd
+[2024-04-07 19:55:11] INFO root fetch - processPackages [featransform]: Remove: archive file [/home/abi/fetcher/tmp/featransform-0.1.55-py3-none-any.whl.zip]
+[2024-04-07 19:55:11] INFO root fetch - processPackages [featransform]: Remove: archive file [/home/abi/fetcher/tmp/featransform-0.9.11-py3-none-any.whl.zip]
+[2024-04-07 19:55:11] INFO root fetch - main [MainThread]: End processing [featransform]: success
+[2024-04-07 19:55:11] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: Remove: archive file [/home/abi/fetcher/tmp/aws_cdk_construct_devops01ua-0.0.6.tar.gz]
+[2024-04-07 19:55:11] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: Remove: archive file [/home/abi/fetcher/tmp/aws_cdk_construct_devops01ua-0.0.7.dev0.tar.gz]
+[2024-04-07 19:55:11] INFO root fetch - main [MainThread]: End processing [aws-cdk-construct-devops01ua]: success
+[2024-04-07 19:55:11] INFO root fetch - processPackages [general-tamsat-alert]: Remove: archive file [/home/abi/fetcher/tmp/general_tamsat_alert-1.1.1.tar.gz]
+[2024-04-07 19:55:11] INFO root fetch - processPackages [general-tamsat-alert]: Remove: archive file [/home/abi/fetcher/tmp/general_tamsat_alert-1.2.0.tar.gz]
+[2024-04-07 19:55:11] INFO root fetch - main [MainThread]: End processing [general-tamsat-alert]: success
+[2024-04-07 19:55:11] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Remove: archive file [/home/abi/fetcher/tmp/sleipnirgroup_jormungandr-0.0.1.dev98.tar.gz]
+[2024-04-07 19:55:11] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Remove: archive file [/home/abi/fetcher/tmp/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz]
+[2024-04-07 19:55:11] INFO root fetch - main [MainThread]: End processing [sleipnirgroup-jormungandr]: success
+[2024-04-07 19:55:11] INFO root fetch - main [MainThread]: Store serial: [22658091]
