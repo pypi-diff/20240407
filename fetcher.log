@@ -18960,3 +18960,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 21:38:05] INFO root fetch - processPackages [pu-utils]: Remove: archive file [/home/abi/fetcher/tmp/pu_utils-0.0.8.dev2-py3-none-any.whl.zip]
 [2024-04-07 21:38:05] INFO root fetch - main [MainThread]: End processing [pu-utils]: success
 [2024-04-07 21:38:05] INFO root fetch - main [MainThread]: Store serial: [22658722]
+[2024-04-07 21:40:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658722]
+[2024-04-07 21:40:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 21:40:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mahdi-env
+[2024-04-07 21:40:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlipy
+[2024-04-07 21:40:14] INFO root fetch - processPackages [mlipy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 21:40:14] INFO root fetch - processPackages [mlipy]: Downloading https://files.pythonhosted.org/packages/ed/fa/dddfc94dc060787f3f456677f01a46aa640bd2bb6dee0cf9533ed7df0a82/mlipy-0.1.8.tar.gz
+[2024-04-07 21:40:14] INFO root fetch - processPackages [mahdi-env]: New version: [2.0.0] Old Version: [1.0.1]
+[2024-04-07 21:40:14] WARNING root fetch - processPackages [mlipy]: Timeout reached during download
+[2024-04-07 21:40:14] INFO root fetch - processPackages [mahdi-env]: Downloading https://files.pythonhosted.org/packages/5a/98/5c49cce5aefd918493f5ad2b44e2e48a1fb8790a65dcbe8f23a21eddbb9a/mahdi_env-1.0.1.tar.gz
+[2024-04-07 21:40:14] INFO root fetch - processPackages [mlipy]: Downloading https://files.pythonhosted.org/packages/50/37/99813a7b2b4baa323b9788624a5fa2104d355ae37d9ff025232583581a83/mlipy-0.1.9.tar.gz
+[2024-04-07 21:40:14] WARNING root fetch - processPackages [mahdi-env]: Timeout reached during download
+[2024-04-07 21:40:14] WARNING root fetch - processPackages [mlipy]: Timeout reached during download
+[2024-04-07 21:40:14] INFO root fetch - processPackages [mlipy]: executing diffoscope
+[2024-04-07 21:40:14] INFO root fetch - processPackages [mlipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlipy-0.1.8.tar.gz tmp/mlipy-0.1.9.tar.gz --markdown 20240407/m/mlipy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 21:40:14] INFO root fetch - processPackages [mahdi-env]: Downloading https://files.pythonhosted.org/packages/78/00/fdc46823e47a6512eb1d7fdda8d259999a14121a00dc4b208f94180378d3/mahdi_env-2.0.0.tar.gz
+[2024-04-07 21:40:14] WARNING root fetch - processPackages [mahdi-env]: Timeout reached during download
+[2024-04-07 21:40:14] INFO root fetch - processPackages [mahdi-env]: executing diffoscope
+[2024-04-07 21:40:14] INFO root fetch - processPackages [mahdi-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mahdi_env-1.0.1.tar.gz tmp/mahdi_env-2.0.0.tar.gz --markdown 20240407/m/mahdi-env/1.0.1-2.0.0/diff.md --exclude *.pyd
+[2024-04-07 21:40:15] INFO root fetch - processPackages [mlipy]: Remove: archive file [/home/abi/fetcher/tmp/mlipy-0.1.8.tar.gz]
+[2024-04-07 21:40:15] INFO root fetch - processPackages [mlipy]: Remove: archive file [/home/abi/fetcher/tmp/mlipy-0.1.9.tar.gz]
+[2024-04-07 21:40:15] INFO root fetch - main [MainThread]: End processing [mlipy]: success
+[2024-04-07 21:40:15] INFO root fetch - processPackages [mahdi-env]: Remove: archive file [/home/abi/fetcher/tmp/mahdi_env-1.0.1.tar.gz]
+[2024-04-07 21:40:15] INFO root fetch - processPackages [mahdi-env]: Remove: archive file [/home/abi/fetcher/tmp/mahdi_env-2.0.0.tar.gz]
+[2024-04-07 21:40:15] INFO root fetch - main [MainThread]: End processing [mahdi-env]: success
+[2024-04-07 21:40:15] INFO root fetch - main [MainThread]: Store serial: [22658728]
