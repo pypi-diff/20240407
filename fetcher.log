@@ -19974,3 +19974,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:39:09] WARNING root fetch - processPackages [graph-validation-tests]: Skipping, unable to determine old version
 [2024-04-07 22:39:09] INFO root fetch - main [MainThread]: End processing [graph-validation-tests] error
 [2024-04-07 22:39:09] INFO root fetch - main [MainThread]: Store serial: [22659155]
+[2024-04-07 22:41:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659155]
+[2024-04-07 22:41:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 22:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: freegenius
+[2024-04-07 22:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kkpyai
+[2024-04-07 22:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: RelaDB
+[2024-04-07 22:41:19] INFO root fetch - processPackages [kkpyai]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-07 22:41:19] INFO root fetch - processPackages [freegenius]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 22:41:19] INFO root fetch - processPackages [kkpyai]: Downloading https://files.pythonhosted.org/packages/de/f1/fd774c67fe798e102f34f9f0a343bedc83377eaea637f493ea979107a60a/kkpyai-0.2.0.tar.gz
+[2024-04-07 22:41:19] INFO root fetch - processPackages [RelaDB]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-07 22:41:19] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/6f/a0/f28ee0e233993d710b958fb4eca9f4892fdc879db0894cb221c3c672db85/freegenius-0.0.8.tar.gz
+[2024-04-07 22:41:19] WARNING root fetch - processPackages [kkpyai]: Timeout reached during download
+[2024-04-07 22:41:19] WARNING root fetch - processPackages [freegenius]: Timeout reached during download
+[2024-04-07 22:41:19] INFO root fetch - processPackages [kkpyai]: Downloading https://files.pythonhosted.org/packages/e2/f8/0b84ee8c4373fbb9d8e8bbfff78167758c2e2c1561a247c06b1cd02c1a0a/kkpyai-0.2.1.tar.gz
+[2024-04-07 22:41:19] INFO root fetch - processPackages [RelaDB]: Downloading https://files.pythonhosted.org/packages/36/28/37ac10bf09dac4a84ba4fb8efba2b9dd7e53e5f7381c8567407c37d2e67b/RelaDB-2.0.0.tar.gz
+[2024-04-07 22:41:19] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/64/a9/f3ae6b148a4bd786790a124582c069ff16ee88fb307a8ebff8181577bb4d/freegenius-0.0.9.tar.gz
+[2024-04-07 22:41:19] WARNING root fetch - processPackages [kkpyai]: Timeout reached during download
+[2024-04-07 22:41:19] INFO root fetch - processPackages [kkpyai]: executing diffoscope
+[2024-04-07 22:41:19] INFO root fetch - processPackages [kkpyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyai-0.2.0.tar.gz tmp/kkpyai-0.2.1.tar.gz --markdown 20240407/k/kkpyai/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2024-04-07 22:41:19] WARNING root fetch - processPackages [RelaDB]: Timeout reached during download
+[2024-04-07 22:41:20] WARNING root fetch - processPackages [freegenius]: Timeout reached during download
+[2024-04-07 22:41:20] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-04-07 22:41:20] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.0.8.tar.gz tmp/freegenius-0.0.9.tar.gz --markdown 20240407/f/freegenius/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 22:41:20] INFO root fetch - processPackages [RelaDB]: Downloading https://files.pythonhosted.org/packages/b3/5a/7ca2b08e60e80cff0c4c8b19fe39b29137ab01e6b88fb3e59f72d0b02e06/RelaDB-2.0.1.tar.gz
+[2024-04-07 22:41:20] WARNING root fetch - processPackages [RelaDB]: Timeout reached during download
+[2024-04-07 22:41:20] INFO root fetch - processPackages [RelaDB]: executing diffoscope
+[2024-04-07 22:41:20] INFO root fetch - processPackages [RelaDB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RelaDB-2.0.0.tar.gz tmp/RelaDB-2.0.1.tar.gz --markdown 20240407/R/RelaDB/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2024-04-07 22:41:20] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.2.0.tar.gz]
+[2024-04-07 22:41:20] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.2.1.tar.gz]
+[2024-04-07 22:41:20] INFO root fetch - main [MainThread]: End processing [kkpyai]: success
+[2024-04-07 22:41:20] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.8.tar.gz]
+[2024-04-07 22:41:20] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.9.tar.gz]
+[2024-04-07 22:41:20] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-04-07 22:41:20] INFO root fetch - processPackages [RelaDB]: Remove: archive file [/home/abi/fetcher/tmp/RelaDB-2.0.0.tar.gz]
+[2024-04-07 22:41:20] INFO root fetch - processPackages [RelaDB]: Remove: archive file [/home/abi/fetcher/tmp/RelaDB-2.0.1.tar.gz]
+[2024-04-07 22:41:20] INFO root fetch - main [MainThread]: End processing [RelaDB]: success
+[2024-04-07 22:41:20] INFO root fetch - main [MainThread]: Store serial: [22659164]
