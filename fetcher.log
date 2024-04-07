@@ -14401,3 +14401,45 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:08:57] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240407-py3-none-win_amd64.whl.zip]
 [2024-04-07 17:08:57] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
 [2024-04-07 17:08:57] INFO root fetch - main [MainThread]: Store serial: [22657059]
+[2024-04-07 17:11:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657059]
+[2024-04-07 17:11:10] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 17:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cartesify-backend
+[2024-04-07 17:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: imsosorrybutinc
+[2024-04-07 17:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dash-spread-grid
+[2024-04-07 17:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rhetorikos
+[2024-04-07 17:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: multigit.lib
+[2024-04-07 17:11:10] WARNING root fetch - processPackages [multigit.lib]: Skipping, unable to determine old version
+[2024-04-07 17:11:10] INFO root fetch - processPackages [cartesify-backend]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 17:11:10] INFO root fetch - main [MainThread]: End processing [multigit.lib] error
+[2024-04-07 17:11:10] WARNING root fetch - processPackages [rhetorikos]: Skipping, unable to determine old version
+[2024-04-07 17:11:10] INFO root fetch - main [MainThread]: End processing [rhetorikos] error
+[2024-04-07 17:11:10] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-07 17:11:10] INFO root fetch - processPackages [imsosorrybutinc]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-04-07 17:11:10] INFO root fetch - processPackages [cartesify-backend]: Downloading https://files.pythonhosted.org/packages/8d/66/8ba7d886e1f2e507b220841f3d5f9a8a14aa25b06d8aad875257555719e3/cartesify_backend-0.0.8.tar.gz
+[2024-04-07 17:11:10] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/62/cd/77f27cf2fdbea440c5f9a7eea3c01d1f221115bdaa723951cff93b07a558/dash_spread_grid-0.0.5.tar.gz
+[2024-04-07 17:11:10] WARNING root fetch - processPackages [cartesify-backend]: Timeout reached during download
+[2024-04-07 17:11:10] WARNING root fetch - processPackages [dash-spread-grid]: Timeout reached during download
+[2024-04-07 17:11:10] INFO root fetch - processPackages [imsosorrybutinc]: Downloading https://files.pythonhosted.org/packages/60/0c/3a851088b419ca464424a765308b0bbd9b95b651aefd99b5a867990368cf/imsosorrybutinc-0.5.0.tar.gz
+[2024-04-07 17:11:11] INFO root fetch - processPackages [cartesify-backend]: Downloading https://files.pythonhosted.org/packages/d6/92/3a1ee788fa672cfa95a4e1ec9713ec76ef023911989a189d6709beb81dde/cartesify_backend-0.0.9.tar.gz
+[2024-04-07 17:11:11] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/a3/3e/bad9b494f58cb28ab68104dcc5042615d559a9b5acb19fbbdd0684944b5a/dash_spread_grid-0.0.6.tar.gz
+[2024-04-07 17:11:11] WARNING root fetch - processPackages [cartesify-backend]: Timeout reached during download
+[2024-04-07 17:11:11] INFO root fetch - processPackages [cartesify-backend]: executing diffoscope
+[2024-04-07 17:11:11] INFO root fetch - processPackages [cartesify-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cartesify_backend-0.0.8.tar.gz tmp/cartesify_backend-0.0.9.tar.gz --markdown 20240407/c/cartesify-backend/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 17:11:11] WARNING root fetch - processPackages [imsosorrybutinc]: Timeout reached during download
+[2024-04-07 17:11:11] WARNING root fetch - processPackages [dash-spread-grid]: Timeout reached during download
+[2024-04-07 17:11:11] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-04-07 17:11:11] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.5.tar.gz tmp/dash_spread_grid-0.0.6.tar.gz --markdown 20240407/d/dash-spread-grid/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-07 17:11:11] INFO root fetch - processPackages [imsosorrybutinc]: Downloading https://files.pythonhosted.org/packages/ee/2e/381e031ac1dc283a42c15992e9096f45dd5f2b0c8e33d0cf1db31aa9ca08/imsosorrybutinc-0.6.0.tar.gz
+[2024-04-07 17:11:11] WARNING root fetch - processPackages [imsosorrybutinc]: Timeout reached during download
+[2024-04-07 17:11:11] INFO root fetch - processPackages [imsosorrybutinc]: executing diffoscope
+[2024-04-07 17:11:11] INFO root fetch - processPackages [imsosorrybutinc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imsosorrybutinc-0.5.0.tar.gz tmp/imsosorrybutinc-0.6.0.tar.gz --markdown 20240407/i/imsosorrybutinc/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2024-04-07 17:11:11] INFO root fetch - processPackages [cartesify-backend]: Remove: archive file [/home/abi/fetcher/tmp/cartesify_backend-0.0.8.tar.gz]
+[2024-04-07 17:11:11] INFO root fetch - processPackages [cartesify-backend]: Remove: archive file [/home/abi/fetcher/tmp/cartesify_backend-0.0.9.tar.gz]
+[2024-04-07 17:11:11] INFO root fetch - main [MainThread]: End processing [cartesify-backend]: success
+[2024-04-07 17:11:11] INFO root fetch - processPackages [imsosorrybutinc]: Remove: archive file [/home/abi/fetcher/tmp/imsosorrybutinc-0.5.0.tar.gz]
+[2024-04-07 17:11:11] INFO root fetch - processPackages [imsosorrybutinc]: Remove: archive file [/home/abi/fetcher/tmp/imsosorrybutinc-0.6.0.tar.gz]
+[2024-04-07 17:11:11] INFO root fetch - main [MainThread]: End processing [imsosorrybutinc]: success
+[2024-04-07 17:11:12] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.5.tar.gz]
+[2024-04-07 17:11:12] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.6.tar.gz]
+[2024-04-07 17:11:12] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-04-07 17:11:12] INFO root fetch - main [MainThread]: Store serial: [22657092]
