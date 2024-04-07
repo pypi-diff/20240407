@@ -11818,3 +11818,44 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:40:06] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240407-py3-none-win_amd64.whl.zip]
 [2024-04-07 14:40:06] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
 [2024-04-07 14:40:06] INFO root fetch - main [MainThread]: Store serial: [22656241]
+[2024-04-07 14:42:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656241]
+[2024-04-07 14:42:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 14:42:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gns3-server
+[2024-04-07 14:42:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kimchima
+[2024-04-07 14:42:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: syft
+[2024-04-07 14:42:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gns3-gui
+[2024-04-07 14:42:14] INFO root fetch - processPackages [kimchima]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-04-07 14:42:14] INFO root fetch - processPackages [gns3-gui]: New version: [3.0.0b2] Old Version: [3.0.0b1]
+[2024-04-07 14:42:14] INFO root fetch - processPackages [gns3-server]: New version: [3.0.0b2] Old Version: [3.0.0b1]
+[2024-04-07 14:42:14] INFO root fetch - processPackages [syft]: New version: [0.8.7b1] Old Version: [0.8.6b1]
+[2024-04-07 14:42:15] INFO root fetch - processPackages [kimchima]: Downloading https://files.pythonhosted.org/packages/54/d9/d3a802ebd93bc131d836729590e0c8d0b3ac263c7019ad9e391ba7d5f74d/kimchima-0.2.2.tar.gz
+[2024-04-07 14:42:15] INFO root fetch - processPackages [gns3-server]: Downloading https://files.pythonhosted.org/packages/77/cd/ee5924d00f5fbe906fa8496ae556e7d29981eda6c3de930f3ca7b790d28b/gns3-server-3.0.0b1.tar.gz
+[2024-04-07 14:42:15] INFO root fetch - processPackages [syft]: Downloading https://files.pythonhosted.org/packages/db/2d/bb185366708f4b06052b96c7db5dfd48d9bfb2dd754819be6351dbdf72b4/syft-0.8.6b1.tar.gz
+[2024-04-07 14:42:15] INFO root fetch - processPackages [gns3-gui]: Downloading https://files.pythonhosted.org/packages/ee/bf/93ceea16ffa40733ec45f8af69cfc5d39a2cae96d5e252abbd9e367164f9/gns3-gui-3.0.0b1.tar.gz
+[2024-04-07 14:42:15] WARNING root fetch - processPackages [kimchima]: Timeout reached during download
+[2024-04-07 14:42:15] WARNING root fetch - processPackages [syft]: Timeout reached during download
+[2024-04-07 14:42:15] INFO root fetch - processPackages [kimchima]: Downloading https://files.pythonhosted.org/packages/2d/6b/5fdff112b270b8c4c0025954835201282f7b3176305165920a098d53d1a0/kimchima-0.3.0.tar.gz
+[2024-04-07 14:42:15] INFO root fetch - processPackages [syft]: Downloading https://files.pythonhosted.org/packages/82/55/de6005ce40cbbffe567ff1498c1dde77828b7d09b169ce3f66698461e08f/syft-0.8.7b1.tar.gz
+[2024-04-07 14:42:15] WARNING root fetch - processPackages [gns3-server]: Skipping package: exceeds size limit 12142179>=10485760
+[2024-04-07 14:42:15] INFO root fetch - main [MainThread]: End processing [gns3-server] error
+[2024-04-07 14:42:15] WARNING root fetch - processPackages [kimchima]: Timeout reached during download
+[2024-04-07 14:42:15] INFO root fetch - processPackages [kimchima]: executing diffoscope
+[2024-04-07 14:42:15] INFO root fetch - processPackages [kimchima]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kimchima-0.2.2.tar.gz tmp/kimchima-0.3.0.tar.gz --markdown 20240407/k/kimchima/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2024-04-07 14:42:15] WARNING root fetch - processPackages [syft]: Timeout reached during download
+[2024-04-07 14:42:15] INFO root fetch - processPackages [syft]: executing diffoscope
+[2024-04-07 14:42:15] INFO root fetch - processPackages [syft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syft-0.8.6b1.tar.gz tmp/syft-0.8.7b1.tar.gz --markdown 20240407/s/syft/0.8.6b1-0.8.7b1/diff.md --exclude *.pyd
+[2024-04-07 14:42:16] INFO root fetch - processPackages [kimchima]: Remove: archive file [/home/abi/fetcher/tmp/kimchima-0.2.2.tar.gz]
+[2024-04-07 14:42:16] INFO root fetch - processPackages [kimchima]: Remove: archive file [/home/abi/fetcher/tmp/kimchima-0.3.0.tar.gz]
+[2024-04-07 14:42:16] INFO root fetch - main [MainThread]: End processing [kimchima]: success
+[2024-04-07 14:42:17] WARNING root fetch - processPackages [gns3-gui]: Timeout reached during download
+[2024-04-07 14:42:17] INFO root fetch - processPackages [gns3-gui]: Downloading https://files.pythonhosted.org/packages/81/b6/2f4f3563a6dcaf9e29e7825461430c9f644f78ff40ec9d292df82b761a78/gns3-gui-3.0.0b2.tar.gz
+[2024-04-07 14:42:17] INFO root fetch - processPackages [syft]: Remove: archive file [/home/abi/fetcher/tmp/syft-0.8.6b1.tar.gz]
+[2024-04-07 14:42:17] INFO root fetch - processPackages [syft]: Remove: archive file [/home/abi/fetcher/tmp/syft-0.8.7b1.tar.gz]
+[2024-04-07 14:42:17] INFO root fetch - main [MainThread]: End processing [syft]: success
+[2024-04-07 14:42:18] WARNING root fetch - processPackages [gns3-gui]: Timeout reached during download
+[2024-04-07 14:42:18] INFO root fetch - processPackages [gns3-gui]: executing diffoscope
+[2024-04-07 14:42:18] INFO root fetch - processPackages [gns3-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gns3-gui-3.0.0b1.tar.gz tmp/gns3-gui-3.0.0b2.tar.gz --markdown 20240407/g/gns3-gui/3.0.0b1-3.0.0b2/diff.md --exclude *.pyd
+[2024-04-07 14:42:23] INFO root fetch - processPackages [gns3-gui]: Remove: archive file [/home/abi/fetcher/tmp/gns3-gui-3.0.0b1.tar.gz]
+[2024-04-07 14:42:23] INFO root fetch - processPackages [gns3-gui]: Remove: archive file [/home/abi/fetcher/tmp/gns3-gui-3.0.0b2.tar.gz]
+[2024-04-07 14:42:23] INFO root fetch - main [MainThread]: End processing [gns3-gui]: success
+[2024-04-07 14:42:23] INFO root fetch - main [MainThread]: Store serial: [22656258]
