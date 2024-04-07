@@ -1371,3 +1371,28 @@
 [2024-04-07 02:08:05] INFO root fetch - processPackages [django-intra]: Remove: archive file [/home/abi/fetcher/tmp/django-intra-0.2.0.tar.gz]
 [2024-04-07 02:08:05] INFO root fetch - main [MainThread]: End processing [django-intra]: success
 [2024-04-07 02:08:05] INFO root fetch - main [MainThread]: Store serial: [22652052]
+[2024-04-07 02:10:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652052]
+[2024-04-07 02:10:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 02:10:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: csv_test_package
+[2024-04-07 02:10:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: auth-lib-profcomff
+[2024-04-07 02:10:15] INFO root fetch - processPackages [csv_test_package]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-07 02:10:15] INFO root fetch - processPackages [auth-lib-profcomff]: New version: [2024.4.6] Old Version: [2023.8.6]
+[2024-04-07 02:10:15] INFO root fetch - processPackages [auth-lib-profcomff]: Downloading https://files.pythonhosted.org/packages/c9/6c/d69dfc6c6bfc3ca225d842e19ba518b66b3fbd3f31d7aaab947a5418c1c9/auth_lib_profcomff-2023.8.6.tar.gz
+[2024-04-07 02:10:15] INFO root fetch - processPackages [csv_test_package]: Downloading https://files.pythonhosted.org/packages/87/70/6104200fba88e3229a8565ab7ad88a4335d37ab358d4209accd5ec12850a/csv_test_package-0.1.0.tar.gz
+[2024-04-07 02:10:15] WARNING root fetch - processPackages [auth-lib-profcomff]: Timeout reached during download
+[2024-04-07 02:10:15] WARNING root fetch - processPackages [csv_test_package]: Timeout reached during download
+[2024-04-07 02:10:15] INFO root fetch - processPackages [auth-lib-profcomff]: Downloading https://files.pythonhosted.org/packages/62/3f/a89ba9691b9da0b22a3dd9999bf2f705078fe91a0346924f93e12c5dbc01/auth_lib_profcomff-2024.4.6.tar.gz
+[2024-04-07 02:10:15] INFO root fetch - processPackages [csv_test_package]: Downloading https://files.pythonhosted.org/packages/fc/32/6334d55d2d7071ed1f2768a2a9b8cad92556f4aae1c59ea902133326fbcf/csv_test_package-0.1.1.tar.gz
+[2024-04-07 02:10:15] WARNING root fetch - processPackages [auth-lib-profcomff]: Timeout reached during download
+[2024-04-07 02:10:15] INFO root fetch - processPackages [auth-lib-profcomff]: executing diffoscope
+[2024-04-07 02:10:15] INFO root fetch - processPackages [auth-lib-profcomff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auth_lib_profcomff-2023.8.6.tar.gz tmp/auth_lib_profcomff-2024.4.6.tar.gz --markdown 20240407/a/auth-lib-profcomff/2023.8.6-2024.4.6/diff.md --exclude *.pyd
+[2024-04-07 02:10:15] WARNING root fetch - processPackages [csv_test_package]: Timeout reached during download
+[2024-04-07 02:10:15] INFO root fetch - processPackages [csv_test_package]: executing diffoscope
+[2024-04-07 02:10:15] INFO root fetch - processPackages [csv_test_package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csv_test_package-0.1.0.tar.gz tmp/csv_test_package-0.1.1.tar.gz --markdown 20240407/c/csv_test_package/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 02:10:16] INFO root fetch - processPackages [auth-lib-profcomff]: Remove: archive file [/home/abi/fetcher/tmp/auth_lib_profcomff-2023.8.6.tar.gz]
+[2024-04-07 02:10:16] INFO root fetch - processPackages [auth-lib-profcomff]: Remove: archive file [/home/abi/fetcher/tmp/auth_lib_profcomff-2024.4.6.tar.gz]
+[2024-04-07 02:10:16] INFO root fetch - main [MainThread]: End processing [auth-lib-profcomff]: success
+[2024-04-07 02:10:16] INFO root fetch - processPackages [csv_test_package]: Remove: archive file [/home/abi/fetcher/tmp/csv_test_package-0.1.0.tar.gz]
+[2024-04-07 02:10:16] INFO root fetch - processPackages [csv_test_package]: Remove: archive file [/home/abi/fetcher/tmp/csv_test_package-0.1.1.tar.gz]
+[2024-04-07 02:10:16] INFO root fetch - main [MainThread]: End processing [csv_test_package]: success
+[2024-04-07 02:10:16] INFO root fetch - main [MainThread]: Store serial: [22652059]
