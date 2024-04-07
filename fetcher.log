@@ -11672,3 +11672,64 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:31:21] INFO root fetch - processPackages [adbutils]: Remove: archive file [/home/abi/fetcher/tmp/adbutils-2.3.0.tar.gz]
 [2024-04-07 14:31:21] INFO root fetch - main [MainThread]: End processing [adbutils]: success
 [2024-04-07 14:31:21] INFO root fetch - main [MainThread]: Store serial: [22656196]
+[2024-04-07 14:33:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656196]
+[2024-04-07 14:33:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 14:33:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moat-kv-wago
+[2024-04-07 14:33:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pybuc
+[2024-04-07 14:33:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: investorzilla
+[2024-04-07 14:33:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: VideoOpinionMining
+[2024-04-07 14:33:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: akshare
+[2024-04-07 14:33:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tb1-parser
+[2024-04-07 14:33:30] INFO root fetch - processPackages [tb1-parser]: New version: [0.2] Old Version: [0.1]
+[2024-04-07 14:33:30] INFO root fetch - processPackages [investorzilla]: New version: [3.2.3] Old Version: [3.2.2]
+[2024-04-07 14:33:30] INFO root fetch - processPackages [pybuc]: New version: [0.9.10] Old Version: [0.8.10]
+[2024-04-07 14:33:30] INFO root fetch - processPackages [akshare]: New version: [1.9.99] Old Version: [1.9.98]
+[2024-04-07 14:33:30] WARNING root fetch - processPackages [moat-kv-wago]: Skipping, unable to determine old version
+[2024-04-07 14:33:30] INFO root fetch - main [MainThread]: End processing [moat-kv-wago] error
+[2024-04-07 14:33:30] INFO root fetch - processPackages [pybuc]: Downloading https://files.pythonhosted.org/packages/ff/a6/647d6e38a6519bf2966722e1789589d0e50eea7a6376967ab7afbc093f70/pybuc-0.8.10.tar.gz
+[2024-04-07 14:33:30] INFO root fetch - processPackages [VideoOpinionMining]: New version: [1.1] Old Version: [1.0]
+[2024-04-07 14:33:30] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/ec/a4/f1c21d8fbb349e15f0bf76d32a496003bcff9b66215f81b940337a510e36/akshare-1.9.98.tar.gz
+[2024-04-07 14:33:30] INFO root fetch - processPackages [investorzilla]: Downloading https://files.pythonhosted.org/packages/48/4e/92c7f053c3e6c4caa763365f84ca101615f5620fbcef63a724f8d960e0c6/investorzilla-3.2.2.tar.gz
+[2024-04-07 14:33:31] INFO root fetch - processPackages [tb1-parser]: Downloading https://files.pythonhosted.org/packages/09/57/7d58a917be73a1713e12c2ffbd71246de9bb24fc34c92bf0f1ea6dffaff7/tb1_parser-0.1.tar.gz
+[2024-04-07 14:33:31] WARNING root fetch - processPackages [investorzilla]: Timeout reached during download
+[2024-04-07 14:33:31] INFO root fetch - processPackages [VideoOpinionMining]: Downloading https://files.pythonhosted.org/packages/ce/f4/c5da5463af019590d4434a52f76c732cf5f143930c8c2355956654ee66b5/VideoOpinionMining-1.0.tar.gz
+[2024-04-07 14:33:31] WARNING root fetch - processPackages [akshare]: Timeout reached during download
+[2024-04-07 14:33:31] WARNING root fetch - processPackages [tb1-parser]: Timeout reached during download
+[2024-04-07 14:33:31] INFO root fetch - processPackages [investorzilla]: Downloading https://files.pythonhosted.org/packages/aa/29/179c587d43f513f59a81095a1546105b051f197f2b1429c0595eca5b9d47/investorzilla-3.2.3.tar.gz
+[2024-04-07 14:33:31] WARNING root fetch - processPackages [pybuc]: Timeout reached during download
+[2024-04-07 14:33:31] WARNING root fetch - processPackages [VideoOpinionMining]: Timeout reached during download
+[2024-04-07 14:33:31] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/53/e8/f58e96016752567ca09f3f67abdc7e935d0afa919aded528d50590ed9170/akshare-1.9.99.tar.gz
+[2024-04-07 14:33:31] INFO root fetch - processPackages [pybuc]: Downloading https://files.pythonhosted.org/packages/36/ff/435775953f489894dbc63700890c9984ecc56774ee84cef35a35acadf8b2/pybuc-0.9.10.tar.gz
+[2024-04-07 14:33:31] WARNING root fetch - processPackages [investorzilla]: Timeout reached during download
+[2024-04-07 14:33:31] INFO root fetch - processPackages [investorzilla]: executing diffoscope
+[2024-04-07 14:33:31] INFO root fetch - processPackages [investorzilla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/investorzilla-3.2.2.tar.gz tmp/investorzilla-3.2.3.tar.gz --markdown 20240407/i/investorzilla/3.2.2-3.2.3/diff.md --exclude *.pyd
+[2024-04-07 14:33:31] INFO root fetch - processPackages [tb1-parser]: Downloading https://files.pythonhosted.org/packages/02/e2/6e0b7fbbe84ca410499fa857b13d1c1cf7df99b1424f1e2e2508942febd1/tb1_parser-0.2.tar.gz
+[2024-04-07 14:33:31] INFO root fetch - processPackages [VideoOpinionMining]: Downloading https://files.pythonhosted.org/packages/43/c0/eaa38fa99e653f0408e1acfc95ae94d7f0fca7ab34f6554c87c3dd86a731/VideoOpinionMining-1.1.tar.gz
+[2024-04-07 14:33:31] WARNING root fetch - processPackages [akshare]: Timeout reached during download
+[2024-04-07 14:33:31] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2024-04-07 14:33:31] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.98.tar.gz tmp/akshare-1.9.99.tar.gz --markdown 20240407/a/akshare/1.9.98-1.9.99/diff.md --exclude *.pyd
+[2024-04-07 14:33:31] WARNING root fetch - processPackages [tb1-parser]: Timeout reached during download
+[2024-04-07 14:33:31] INFO root fetch - processPackages [tb1-parser]: executing diffoscope
+[2024-04-07 14:33:31] INFO root fetch - processPackages [tb1-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb1_parser-0.1.tar.gz tmp/tb1_parser-0.2.tar.gz --markdown 20240407/t/tb1-parser/0.1-0.2/diff.md --exclude *.pyd
+[2024-04-07 14:33:31] WARNING root fetch - processPackages [VideoOpinionMining]: Timeout reached during download
+[2024-04-07 14:33:31] INFO root fetch - processPackages [VideoOpinionMining]: executing diffoscope
+[2024-04-07 14:33:31] INFO root fetch - processPackages [VideoOpinionMining]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VideoOpinionMining-1.0.tar.gz tmp/VideoOpinionMining-1.1.tar.gz --markdown 20240407/V/VideoOpinionMining/1.0-1.1/diff.md --exclude *.pyd
+[2024-04-07 14:33:31] WARNING root fetch - processPackages [pybuc]: Timeout reached during download
+[2024-04-07 14:33:31] INFO root fetch - processPackages [pybuc]: executing diffoscope
+[2024-04-07 14:33:31] INFO root fetch - processPackages [pybuc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybuc-0.8.10.tar.gz tmp/pybuc-0.9.10.tar.gz --markdown 20240407/p/pybuc/0.8.10-0.9.10/diff.md --exclude *.pyd
+[2024-04-07 14:33:32] INFO root fetch - processPackages [tb1-parser]: Remove: archive file [/home/abi/fetcher/tmp/tb1_parser-0.1.tar.gz]
+[2024-04-07 14:33:32] INFO root fetch - processPackages [tb1-parser]: Remove: archive file [/home/abi/fetcher/tmp/tb1_parser-0.2.tar.gz]
+[2024-04-07 14:33:32] INFO root fetch - main [MainThread]: End processing [tb1-parser]: success
+[2024-04-07 14:33:32] INFO root fetch - processPackages [investorzilla]: Remove: archive file [/home/abi/fetcher/tmp/investorzilla-3.2.2.tar.gz]
+[2024-04-07 14:33:32] INFO root fetch - processPackages [investorzilla]: Remove: archive file [/home/abi/fetcher/tmp/investorzilla-3.2.3.tar.gz]
+[2024-04-07 14:33:32] INFO root fetch - main [MainThread]: End processing [investorzilla]: success
+[2024-04-07 14:33:32] INFO root fetch - processPackages [VideoOpinionMining]: Remove: archive file [/home/abi/fetcher/tmp/VideoOpinionMining-1.0.tar.gz]
+[2024-04-07 14:33:32] INFO root fetch - processPackages [VideoOpinionMining]: Remove: archive file [/home/abi/fetcher/tmp/VideoOpinionMining-1.1.tar.gz]
+[2024-04-07 14:33:32] INFO root fetch - main [MainThread]: End processing [VideoOpinionMining]: success
+[2024-04-07 14:33:32] INFO root fetch - processPackages [pybuc]: Remove: archive file [/home/abi/fetcher/tmp/pybuc-0.8.10.tar.gz]
+[2024-04-07 14:33:32] INFO root fetch - processPackages [pybuc]: Remove: archive file [/home/abi/fetcher/tmp/pybuc-0.9.10.tar.gz]
+[2024-04-07 14:33:32] INFO root fetch - main [MainThread]: End processing [pybuc]: success
+[2024-04-07 14:33:33] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.98.tar.gz]
+[2024-04-07 14:33:33] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
+[2024-04-07 14:33:33] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2024-04-07 14:33:33] INFO root fetch - main [MainThread]: Store serial: [22656215]
