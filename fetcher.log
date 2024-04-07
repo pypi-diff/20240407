@@ -18018,3 +18018,56 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 20:43:22] INFO root fetch - processPackages [pytoon]: Remove: archive file [/home/abi/fetcher/tmp/pytoon-1.4.0.tar.gz]
 [2024-04-07 20:43:22] INFO root fetch - main [MainThread]: End processing [pytoon]: success
 [2024-04-07 20:43:22] INFO root fetch - main [MainThread]: Store serial: [22658404]
+[2024-04-07 20:45:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658404]
+[2024-04-07 20:45:32] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 20:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hatch-ci
+[2024-04-07 20:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: approvaltests
+[2024-04-07 20:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tree-sitter-java
+[2024-04-07 20:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pharindoko.cdk-internal-gateway
+[2024-04-07 20:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: invexpo
+[2024-04-07 20:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: diffCheck
+[2024-04-07 20:45:32] WARNING root fetch - processPackages [diffCheck]: Skipping, unable to determine old version
+[2024-04-07 20:45:32] INFO root fetch - main [MainThread]: End processing [diffCheck] error
+[2024-04-07 20:45:32] INFO root fetch - processPackages [invexpo]: New version: [0.1.1] Old Version: [0.1]
+[2024-04-07 20:45:32] INFO root fetch - processPackages [invexpo]: Downloading https://files.pythonhosted.org/packages/e1/65/fa90175b9b8ba5c2fa3bd0ede949d4c3a25abd368f51a158d384ea2e2c90/invexpo-0.1.tar.gz
+[2024-04-07 20:45:32] WARNING root fetch - processPackages [tree-sitter-java]: Skipping, unable to determine old version
+[2024-04-07 20:45:32] INFO root fetch - main [MainThread]: End processing [tree-sitter-java] error
+[2024-04-07 20:45:32] INFO root fetch - processPackages [approvaltests]: New version: [9.0.0] Old Version: [8.4.1]
+[2024-04-07 20:45:32] INFO root fetch - processPackages [pharindoko.cdk-internal-gateway]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-04-07 20:45:32] INFO root fetch - processPackages [hatch-ci]: New version: [0.1.4b75] Old Version: [0.1.4b72]
+[2024-04-07 20:45:32] WARNING root fetch - processPackages [invexpo]: Timeout reached during download
+[2024-04-07 20:45:32] INFO root fetch - processPackages [invexpo]: Downloading https://files.pythonhosted.org/packages/20/fe/13c2af39b91356e2314aa59fd9803cd16177b20b248cc377ff590d8d8125/invexpo-0.1.1.tar.gz
+[2024-04-07 20:45:32] INFO root fetch - processPackages [pharindoko.cdk-internal-gateway]: Downloading https://files.pythonhosted.org/packages/b4/c4/6b46967dcaa783d76e3d1d4e1a507138bbc525afce0dd76601ef830678d7/pharindoko.cdk-internal-gateway-1.4.8.tar.gz
+[2024-04-07 20:45:32] INFO root fetch - processPackages [approvaltests]: Downloading https://files.pythonhosted.org/packages/b4/0c/8dc91af1bae9332c5dd142313c1e0c5df47b4f67826bb073f3bf96c9a990/approvaltests-8.4.1.tar.gz
+[2024-04-07 20:45:32] INFO root fetch - processPackages [hatch-ci]: Downloading https://files.pythonhosted.org/packages/97/66/1fe511d71fe0bbb62987856d63ec747b5048d840fe5450005724fba2ae1a/hatch-ci-0.1.4b72.tar.gz
+[2024-04-07 20:45:32] WARNING root fetch - processPackages [invexpo]: Timeout reached during download
+[2024-04-07 20:45:32] INFO root fetch - processPackages [invexpo]: executing diffoscope
+[2024-04-07 20:45:32] INFO root fetch - processPackages [invexpo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invexpo-0.1.tar.gz tmp/invexpo-0.1.1.tar.gz --markdown 20240407/i/invexpo/0.1-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 20:45:33] WARNING root fetch - processPackages [pharindoko.cdk-internal-gateway]: Timeout reached during download
+[2024-04-07 20:45:33] WARNING root fetch - processPackages [hatch-ci]: Timeout reached during download
+[2024-04-07 20:45:33] WARNING root fetch - processPackages [approvaltests]: Timeout reached during download
+[2024-04-07 20:45:33] INFO root fetch - processPackages [pharindoko.cdk-internal-gateway]: Downloading https://files.pythonhosted.org/packages/8a/07/ef2b32da8b00fe395932d288b252a3324e6ccaecf8cb56985433d2fda12e/pharindoko.cdk-internal-gateway-1.4.9.tar.gz
+[2024-04-07 20:45:33] INFO root fetch - processPackages [hatch-ci]: Downloading https://files.pythonhosted.org/packages/f1/ed/8fb662b31e649e7980c6c3a6b8c90047f9772f17930b061eb37cd3ccf72b/hatch-ci-0.1.4b75.tar.gz
+[2024-04-07 20:45:33] INFO root fetch - processPackages [approvaltests]: Downloading https://files.pythonhosted.org/packages/f9/d6/6d5ad8040cc136cc00b96ffb59c749f85024eb4c70fa73d31381ddaf5cd1/approvaltests-9.0.0.tar.gz
+[2024-04-07 20:45:33] WARNING root fetch - processPackages [approvaltests]: Timeout reached during download
+[2024-04-07 20:45:33] INFO root fetch - processPackages [approvaltests]: executing diffoscope
+[2024-04-07 20:45:33] INFO root fetch - processPackages [approvaltests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/approvaltests-8.4.1.tar.gz tmp/approvaltests-9.0.0.tar.gz --markdown 20240407/a/approvaltests/8.4.1-9.0.0/diff.md --exclude *.pyd
+[2024-04-07 20:45:33] WARNING root fetch - processPackages [hatch-ci]: Timeout reached during download
+[2024-04-07 20:45:33] INFO root fetch - processPackages [hatch-ci]: executing diffoscope
+[2024-04-07 20:45:33] INFO root fetch - processPackages [hatch-ci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hatch-ci-0.1.4b72.tar.gz tmp/hatch-ci-0.1.4b75.tar.gz --markdown 20240407/h/hatch-ci/0.1.4b72-0.1.4b75/diff.md --exclude *.pyd
+[2024-04-07 20:45:33] WARNING root fetch - processPackages [pharindoko.cdk-internal-gateway]: Timeout reached during download
+[2024-04-07 20:45:33] INFO root fetch - processPackages [pharindoko.cdk-internal-gateway]: executing diffoscope
+[2024-04-07 20:45:33] INFO root fetch - processPackages [pharindoko.cdk-internal-gateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pharindoko.cdk-internal-gateway-1.4.8.tar.gz tmp/pharindoko.cdk-internal-gateway-1.4.9.tar.gz --markdown 20240407/p/pharindoko.cdk-internal-gateway/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2024-04-07 20:45:33] INFO root fetch - processPackages [invexpo]: Remove: archive file [/home/abi/fetcher/tmp/invexpo-0.1.tar.gz]
+[2024-04-07 20:45:33] INFO root fetch - processPackages [invexpo]: Remove: archive file [/home/abi/fetcher/tmp/invexpo-0.1.1.tar.gz]
+[2024-04-07 20:45:33] INFO root fetch - main [MainThread]: End processing [invexpo]: success
+[2024-04-07 20:45:34] INFO root fetch - processPackages [pharindoko.cdk-internal-gateway]: Remove: archive file [/home/abi/fetcher/tmp/pharindoko.cdk-internal-gateway-1.4.8.tar.gz]
+[2024-04-07 20:45:34] INFO root fetch - processPackages [pharindoko.cdk-internal-gateway]: Remove: archive file [/home/abi/fetcher/tmp/pharindoko.cdk-internal-gateway-1.4.9.tar.gz]
+[2024-04-07 20:45:34] INFO root fetch - main [MainThread]: End processing [pharindoko.cdk-internal-gateway]: success
+[2024-04-07 20:45:34] INFO root fetch - processPackages [hatch-ci]: Remove: archive file [/home/abi/fetcher/tmp/hatch-ci-0.1.4b72.tar.gz]
+[2024-04-07 20:45:34] INFO root fetch - processPackages [hatch-ci]: Remove: archive file [/home/abi/fetcher/tmp/hatch-ci-0.1.4b75.tar.gz]
+[2024-04-07 20:45:34] INFO root fetch - main [MainThread]: End processing [hatch-ci]: success
+[2024-04-07 20:45:34] INFO root fetch - processPackages [approvaltests]: Remove: archive file [/home/abi/fetcher/tmp/approvaltests-8.4.1.tar.gz]
+[2024-04-07 20:45:34] INFO root fetch - processPackages [approvaltests]: Remove: archive file [/home/abi/fetcher/tmp/approvaltests-9.0.0.tar.gz]
+[2024-04-07 20:45:34] INFO root fetch - main [MainThread]: End processing [approvaltests]: success
+[2024-04-07 20:45:34] INFO root fetch - main [MainThread]: Store serial: [22658429]
