@@ -12226,3 +12226,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:08:37] INFO root fetch - processPackages [hiddifypanel]: Remove: archive file [/home/abi/fetcher/tmp/hiddifypanel-8.8.99.tar.gz]
 [2024-04-07 15:08:37] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2024-04-07 15:08:37] INFO root fetch - main [MainThread]: Store serial: [22656369]
+[2024-04-07 15:10:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656369]
+[2024-04-07 15:10:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 15:10:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bestdori-api
+[2024-04-07 15:10:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-alconna
+[2024-04-07 15:10:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: html-text-color
+[2024-04-07 15:10:45] INFO root fetch - processPackages [nonebot-plugin-alconna]: New version: [0.9.3] Old Version: [0.9.0]
+[2024-04-07 15:10:45] INFO root fetch - processPackages [html-text-color]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 15:10:45] INFO root fetch - processPackages [bestdori-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 15:10:45] INFO root fetch - processPackages [nonebot-plugin-alconna]: Downloading https://files.pythonhosted.org/packages/c8/67/1065373af14f845f6112a3d2cb8d6187d838b4c0d90d89282ccef9f5133d/nonebot-plugin-alconna-0.9.0.tar.gz
+[2024-04-07 15:10:45] WARNING root fetch - processPackages [nonebot-plugin-alconna]: Timeout reached during download
+[2024-04-07 15:10:45] INFO root fetch - processPackages [html-text-color]: Downloading https://files.pythonhosted.org/packages/4e/f5/63a29a886abcf3e5b14d785ec063d58d351458fab44fea91c504777504dd/html_text_color-0.0.8.tar.gz
+[2024-04-07 15:10:45] INFO root fetch - processPackages [nonebot-plugin-alconna]: Downloading https://files.pythonhosted.org/packages/f4/fd/830dd6604cd5dc44a467d959ff595e8da0a087d9b75368acaecfc83c3417/nonebot_plugin_alconna-0.9.3.tar.gz
+[2024-04-07 15:10:46] WARNING root fetch - processPackages [nonebot-plugin-alconna]: Timeout reached during download
+[2024-04-07 15:10:46] INFO root fetch - processPackages [nonebot-plugin-alconna]: executing diffoscope
+[2024-04-07 15:10:46] INFO root fetch - processPackages [nonebot-plugin-alconna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-alconna-0.9.0.tar.gz tmp/nonebot_plugin_alconna-0.9.3.tar.gz --markdown 20240407/n/nonebot-plugin-alconna/0.9.0-0.9.3/diff.md --exclude *.pyd
+[2024-04-07 15:10:46] INFO root fetch - processPackages [bestdori-api]: Downloading https://files.pythonhosted.org/packages/81/fd/cfb845fb249267b8cd7573748f153416613ff4d92557b0588175d0ffa06c/bestdori_api-0.1.8.tar.gz
+[2024-04-07 15:10:46] WARNING root fetch - processPackages [html-text-color]: Timeout reached during download
+[2024-04-07 15:10:46] WARNING root fetch - processPackages [bestdori-api]: Timeout reached during download
+[2024-04-07 15:10:46] INFO root fetch - processPackages [html-text-color]: Downloading https://files.pythonhosted.org/packages/2b/27/8e0e67bc0a651692a94660efe004e344cac7d2ac27425025a040c5f0e0dd/html_text_color-0.0.9.tar.gz
+[2024-04-07 15:10:46] WARNING root fetch - processPackages [html-text-color]: Timeout reached during download
+[2024-04-07 15:10:46] INFO root fetch - processPackages [html-text-color]: executing diffoscope
+[2024-04-07 15:10:46] INFO root fetch - processPackages [html-text-color]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/html_text_color-0.0.8.tar.gz tmp/html_text_color-0.0.9.tar.gz --markdown 20240407/h/html-text-color/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 15:10:46] INFO root fetch - processPackages [bestdori-api]: Downloading https://files.pythonhosted.org/packages/e8/c6/efff1f1ea01c0bd24d5e120c25cc983a43678412b030542c4a6cfffdd9ea/bestdori_api-0.1.9.tar.gz
+[2024-04-07 15:10:46] WARNING root fetch - processPackages [bestdori-api]: Timeout reached during download
+[2024-04-07 15:10:46] INFO root fetch - processPackages [bestdori-api]: executing diffoscope
+[2024-04-07 15:10:46] INFO root fetch - processPackages [bestdori-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bestdori_api-0.1.8.tar.gz tmp/bestdori_api-0.1.9.tar.gz --markdown 20240407/b/bestdori-api/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 15:10:46] INFO root fetch - processPackages [nonebot-plugin-alconna]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-alconna-0.9.0.tar.gz]
+[2024-04-07 15:10:46] INFO root fetch - processPackages [nonebot-plugin-alconna]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_alconna-0.9.3.tar.gz]
+[2024-04-07 15:10:46] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-alconna]: success
+[2024-04-07 15:10:46] INFO root fetch - processPackages [html-text-color]: Remove: archive file [/home/abi/fetcher/tmp/html_text_color-0.0.8.tar.gz]
+[2024-04-07 15:10:46] INFO root fetch - processPackages [html-text-color]: Remove: archive file [/home/abi/fetcher/tmp/html_text_color-0.0.9.tar.gz]
+[2024-04-07 15:10:46] INFO root fetch - main [MainThread]: End processing [html-text-color]: success
+[2024-04-07 15:10:47] INFO root fetch - processPackages [bestdori-api]: Remove: archive file [/home/abi/fetcher/tmp/bestdori_api-0.1.8.tar.gz]
+[2024-04-07 15:10:47] INFO root fetch - processPackages [bestdori-api]: Remove: archive file [/home/abi/fetcher/tmp/bestdori_api-0.1.9.tar.gz]
+[2024-04-07 15:10:47] INFO root fetch - main [MainThread]: End processing [bestdori-api]: success
+[2024-04-07 15:10:47] INFO root fetch - main [MainThread]: Store serial: [22656378]
