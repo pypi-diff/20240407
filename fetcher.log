@@ -6546,3 +6546,83 @@
 [2024-04-07 08:40:01] INFO root fetch - processPackages [django-mp-suppliers]: Remove: archive file [/home/abi/fetcher/tmp/django-mp-suppliers-0.5.1.tar.gz]
 [2024-04-07 08:40:01] INFO root fetch - main [MainThread]: End processing [django-mp-suppliers]: success
 [2024-04-07 08:40:01] INFO root fetch - main [MainThread]: Store serial: [22654080]
+[2024-04-07 08:42:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654080]
+[2024-04-07 08:42:09] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-07 08:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bitsrun
+[2024-04-07 08:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bestnlp
+[2024-04-07 08:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pylogrotate
+[2024-04-07 08:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-vault
+[2024-04-07 08:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: corentin-regent-test
+[2024-04-07 08:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-mp-invoices
+[2024-04-07 08:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gdmath
+[2024-04-07 08:42:09] INFO root fetch - processPackages [corentin-regent-test]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-07 08:42:09] INFO root fetch - processPackages [bestnlp]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-07 08:42:09] INFO root fetch - processPackages [pulumi-vault]: New version: [6.1.0a1712233015] Old Version: [6.1.0a1712222735]
+[2024-04-07 08:42:09] INFO root fetch - processPackages [pylogrotate]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-07 08:42:10] INFO root fetch - processPackages [django-mp-invoices]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-04-07 08:42:10] INFO root fetch - processPackages [bestnlp]: Downloading https://files.pythonhosted.org/packages/c4/c6/0e48bc0ac4d18df3bb92c730e99334d27a354df51129e33904ebb7e0ef9b/bestnlp-1.0.1-py3-none-any.whl
+[2024-04-07 08:42:10] INFO root fetch - processPackages [bitsrun]: New version: [3.7.1] Old Version: [3.7.0]
+[2024-04-07 08:42:10] INFO root fetch - processPackages [gdmath]: New version: [1.5.2] Old Version: [1.5.1]
+[2024-04-07 08:42:10] INFO root fetch - processPackages [corentin-regent-test]: Downloading https://files.pythonhosted.org/packages/f8/8a/b4c555e135f144393f32605f8b0f6de9831b1a2cdfa50124a3679886920c/corentin_regent_test-1.0.0.tar.gz
+[2024-04-07 08:42:10] WARNING root fetch - processPackages [bestnlp]: Timeout reached during download
+[2024-04-07 08:42:10] INFO root fetch - processPackages [pylogrotate]: Downloading https://files.pythonhosted.org/packages/7e/6a/538c32d0134f413cd060684ac9f94baeeccdea01d2c86cdceb6fe6cca63d/pylogrotate-1.0.0.tar.gz
+[2024-04-07 08:42:10] INFO root fetch - processPackages [pulumi-vault]: Downloading https://files.pythonhosted.org/packages/3f/f5/1d96163cb8c6cd9af191e04ac6399ec98c40d8e4d0e7dc4e935f9afcb65f/pulumi_vault-6.1.0a1712222735.tar.gz
+[2024-04-07 08:42:10] INFO root fetch - processPackages [django-mp-invoices]: Downloading https://files.pythonhosted.org/packages/3f/fd/bfffa3c567c43b24baa2c76def0d084f0505b12c3bfd549004c55a01f09b/django-mp-invoices-1.1.4.tar.gz
+[2024-04-07 08:42:10] INFO root fetch - processPackages [bitsrun]: Downloading https://files.pythonhosted.org/packages/a5/af/33d8a60c1119555c361813b3bc0ab52f81c67571c0f222e6f7aff5dc90ad/bitsrun-3.7.0.tar.gz
+[2024-04-07 08:42:10] WARNING root fetch - processPackages [corentin-regent-test]: Timeout reached during download
+[2024-04-07 08:42:10] INFO root fetch - processPackages [bestnlp]: Downloading https://files.pythonhosted.org/packages/7e/51/4bd73a4d3115156138ecb4c99a1e7e742b5221197e584bc3ed142274ce01/bestnlp-1.0.2-py3-none-any.whl
+[2024-04-07 08:42:10] WARNING root fetch - processPackages [pylogrotate]: Timeout reached during download
+[2024-04-07 08:42:10] INFO root fetch - processPackages [gdmath]: Downloading https://files.pythonhosted.org/packages/a8/5e/b9283b7ca6c3f1c5b628640359e5b7b162e4b42c965fd9a3a48aecdc3b1c/gdmath-1.5.1.tar.gz
+[2024-04-07 08:42:10] WARNING root fetch - processPackages [pulumi-vault]: Timeout reached during download
+[2024-04-07 08:42:10] WARNING root fetch - processPackages [bestnlp]: Timeout reached during download
+[2024-04-07 08:42:10] INFO root fetch - processPackages [bestnlp]: executing diffoscope
+[2024-04-07 08:42:10] INFO root fetch - processPackages [bestnlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bestnlp-1.0.1-py3-none-any.whl.zip tmp/bestnlp-1.0.2-py3-none-any.whl.zip --markdown 20240407/b/bestnlp/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2024-04-07 08:42:10] WARNING root fetch - processPackages [django-mp-invoices]: Timeout reached during download
+[2024-04-07 08:42:10] WARNING root fetch - processPackages [bitsrun]: Timeout reached during download
+[2024-04-07 08:42:10] WARNING root fetch - processPackages [gdmath]: Timeout reached during download
+[2024-04-07 08:42:10] INFO root fetch - processPackages [pylogrotate]: Downloading https://files.pythonhosted.org/packages/cf/e7/6baf6b475eb1b3b768f3045a3ffed7d750d3c2b433b8499f4b3da6b7795e/pylogrotate-1.1.0.tar.gz
+[2024-04-07 08:42:10] INFO root fetch - processPackages [corentin-regent-test]: Downloading https://files.pythonhosted.org/packages/1c/b2/44b6d9eb283f031b6c00af8fb90d229539dc7092eeee90a5073a043eb4ac/corentin_regent_test-1.0.1.tar.gz
+[2024-04-07 08:42:10] WARNING root fetch - processPackages [corentin-regent-test]: Timeout reached during download
+[2024-04-07 08:42:10] INFO root fetch - processPackages [pulumi-vault]: Downloading https://files.pythonhosted.org/packages/ff/5e/08ba3ebdd283ef19f6f03c2940070cdfa12e229fd41e0814a3cbfeb139c0/pulumi_vault-6.1.0a1712233015.tar.gz
+[2024-04-07 08:42:10] INFO root fetch - processPackages [corentin-regent-test]: executing diffoscope
+[2024-04-07 08:42:10] INFO root fetch - processPackages [corentin-regent-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corentin_regent_test-1.0.0.tar.gz tmp/corentin_regent_test-1.0.1.tar.gz --markdown 20240407/c/corentin-regent-test/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2024-04-07 08:42:10] WARNING root fetch - processPackages [pylogrotate]: Timeout reached during download
+[2024-04-07 08:42:10] INFO root fetch - processPackages [pylogrotate]: executing diffoscope
+[2024-04-07 08:42:10] INFO root fetch - processPackages [pylogrotate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylogrotate-1.0.0.tar.gz tmp/pylogrotate-1.1.0.tar.gz --markdown 20240407/p/pylogrotate/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2024-04-07 08:42:10] INFO root fetch - processPackages [django-mp-invoices]: Downloading https://files.pythonhosted.org/packages/01/19/5977f2eba1730a2ae8e0ec8ed5139cad771078061f2780f4e9ef07741169/django-mp-invoices-1.1.5.tar.gz
+[2024-04-07 08:42:10] INFO root fetch - processPackages [bitsrun]: Downloading https://files.pythonhosted.org/packages/e4/4a/830a3e27caf33b8b07041588e79eafb15373584c755a7c50baa3e233568c/bitsrun-3.7.1.tar.gz
+[2024-04-07 08:42:10] INFO root fetch - processPackages [gdmath]: Downloading https://files.pythonhosted.org/packages/80/46/91a86f50db0e98ec1c9a5623713122b70ef9780f28df438eb6ed73edaa14/gdmath-1.5.2-cp310-cp310-musllinux_1_1_i686.whl
+[2024-04-07 08:42:10] WARNING root fetch - processPackages [bitsrun]: Timeout reached during download
+[2024-04-07 08:42:10] INFO root fetch - processPackages [bitsrun]: executing diffoscope
+[2024-04-07 08:42:10] INFO root fetch - processPackages [bitsrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitsrun-3.7.0.tar.gz tmp/bitsrun-3.7.1.tar.gz --markdown 20240407/b/bitsrun/3.7.0-3.7.1/diff.md --exclude *.pyd
+[2024-04-07 08:42:10] WARNING root fetch - processPackages [pulumi-vault]: Timeout reached during download
+[2024-04-07 08:42:10] INFO root fetch - processPackages [pulumi-vault]: executing diffoscope
+[2024-04-07 08:42:10] INFO root fetch - processPackages [pulumi-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_vault-6.1.0a1712222735.tar.gz tmp/pulumi_vault-6.1.0a1712233015.tar.gz --markdown 20240407/p/pulumi-vault/6.1.0a1712222735-6.1.0a1712233015/diff.md --exclude *.pyd
+[2024-04-07 08:42:10] WARNING root fetch - processPackages [django-mp-invoices]: Timeout reached during download
+[2024-04-07 08:42:10] INFO root fetch - processPackages [django-mp-invoices]: executing diffoscope
+[2024-04-07 08:42:10] INFO root fetch - processPackages [django-mp-invoices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-mp-invoices-1.1.4.tar.gz tmp/django-mp-invoices-1.1.5.tar.gz --markdown 20240407/d/django-mp-invoices/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2024-04-07 08:42:11] INFO root fetch - processPackages [bestnlp]: Remove: archive file [/home/abi/fetcher/tmp/bestnlp-1.0.1-py3-none-any.whl.zip]
+[2024-04-07 08:42:11] INFO root fetch - processPackages [bestnlp]: Remove: archive file [/home/abi/fetcher/tmp/bestnlp-1.0.2-py3-none-any.whl.zip]
+[2024-04-07 08:42:11] INFO root fetch - main [MainThread]: End processing [bestnlp]: success
+[2024-04-07 08:42:11] INFO root fetch - processPackages [corentin-regent-test]: Remove: archive file [/home/abi/fetcher/tmp/corentin_regent_test-1.0.0.tar.gz]
+[2024-04-07 08:42:11] INFO root fetch - processPackages [corentin-regent-test]: Remove: archive file [/home/abi/fetcher/tmp/corentin_regent_test-1.0.1.tar.gz]
+[2024-04-07 08:42:11] INFO root fetch - main [MainThread]: End processing [corentin-regent-test]: success
+[2024-04-07 08:42:11] INFO root fetch - processPackages [pylogrotate]: Remove: archive file [/home/abi/fetcher/tmp/pylogrotate-1.0.0.tar.gz]
+[2024-04-07 08:42:11] INFO root fetch - processPackages [pylogrotate]: Remove: archive file [/home/abi/fetcher/tmp/pylogrotate-1.1.0.tar.gz]
+[2024-04-07 08:42:11] INFO root fetch - main [MainThread]: End processing [pylogrotate]: success
+[2024-04-07 08:42:11] INFO root fetch - processPackages [bitsrun]: Remove: archive file [/home/abi/fetcher/tmp/bitsrun-3.7.0.tar.gz]
+[2024-04-07 08:42:11] INFO root fetch - processPackages [bitsrun]: Remove: archive file [/home/abi/fetcher/tmp/bitsrun-3.7.1.tar.gz]
+[2024-04-07 08:42:11] INFO root fetch - main [MainThread]: End processing [bitsrun]: success
+[2024-04-07 08:42:11] INFO root fetch - processPackages [django-mp-invoices]: Remove: archive file [/home/abi/fetcher/tmp/django-mp-invoices-1.1.4.tar.gz]
+[2024-04-07 08:42:11] INFO root fetch - processPackages [django-mp-invoices]: Remove: archive file [/home/abi/fetcher/tmp/django-mp-invoices-1.1.5.tar.gz]
+[2024-04-07 08:42:11] INFO root fetch - main [MainThread]: End processing [django-mp-invoices]: success
+[2024-04-07 08:42:12] INFO root fetch - processPackages [pulumi-vault]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_vault-6.1.0a1712222735.tar.gz]
+[2024-04-07 08:42:12] INFO root fetch - processPackages [pulumi-vault]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_vault-6.1.0a1712233015.tar.gz]
+[2024-04-07 08:42:12] INFO root fetch - main [MainThread]: End processing [pulumi-vault]: success
+[2024-04-07 08:42:13] WARNING root fetch - processPackages [gdmath]: Timeout reached during download
+[2024-04-07 08:42:13] INFO root fetch - processPackages [gdmath]: executing diffoscope
+[2024-04-07 08:42:13] INFO root fetch - processPackages [gdmath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdmath-1.5.1.tar.gz tmp/gdmath-1.5.2-cp310-cp310-musllinux_1_1_i686.whl.zip --markdown 20240407/g/gdmath/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2024-04-07 08:42:14] INFO root fetch - processPackages [gdmath]: Remove: archive file [/home/abi/fetcher/tmp/gdmath-1.5.1.tar.gz]
+[2024-04-07 08:42:14] INFO root fetch - processPackages [gdmath]: Remove: archive file [/home/abi/fetcher/tmp/gdmath-1.5.2-cp310-cp310-musllinux_1_1_i686.whl.zip]
+[2024-04-07 08:42:14] INFO root fetch - main [MainThread]: End processing [gdmath]: success
+[2024-04-07 08:42:14] INFO root fetch - main [MainThread]: Store serial: [22654100]
