@@ -1271,3 +1271,17 @@
 [2024-04-07 02:01:27] INFO root fetch - processPackages [tjax]: Remove: archive file [/home/abi/fetcher/tmp/tjax-0.9.0.tar.gz]
 [2024-04-07 02:01:28] INFO root fetch - main [MainThread]: End processing [tjax]: success
 [2024-04-07 02:01:28] INFO root fetch - main [MainThread]: Store serial: [22651946]
+[2024-04-07 02:03:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651946]
+[2024-04-07 02:03:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 02:03:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onnxscript
+[2024-04-07 02:03:37] INFO root fetch - processPackages [onnxscript]: New version: [0.1.0.dev20240406] Old Version: [0.1.0.dev20240405]
+[2024-04-07 02:03:37] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/97/f6/04f3af179817b7e6a55cf02a0f7219f514227db8504d4924b1b3f05fb71f/onnxscript-0.1.0.dev20240405.tar.gz
+[2024-04-07 02:03:38] WARNING root fetch - processPackages [onnxscript]: Timeout reached during download
+[2024-04-07 02:03:38] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/f1/a4/93a47b066c541320734220561b1376d3545870419cbf077d7dc3faa82426/onnxscript-0.1.0.dev20240406.tar.gz
+[2024-04-07 02:03:38] WARNING root fetch - processPackages [onnxscript]: Timeout reached during download
+[2024-04-07 02:03:38] INFO root fetch - processPackages [onnxscript]: executing diffoscope
+[2024-04-07 02:03:38] INFO root fetch - processPackages [onnxscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxscript-0.1.0.dev20240405.tar.gz tmp/onnxscript-0.1.0.dev20240406.tar.gz --markdown 20240407/o/onnxscript/0.1.0.dev20240405-0.1.0.dev20240406/diff.md --exclude *.pyd
+[2024-04-07 02:03:39] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240405.tar.gz]
+[2024-04-07 02:03:39] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240406.tar.gz]
+[2024-04-07 02:03:39] INFO root fetch - main [MainThread]: End processing [onnxscript]: success
+[2024-04-07 02:03:39] INFO root fetch - main [MainThread]: Store serial: [22651956]
