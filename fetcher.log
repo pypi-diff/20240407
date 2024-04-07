@@ -8105,3 +8105,20 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 10:26:49] INFO root fetch - processPackages [qianlu-svr-plugin]: Remove: archive file [/home/abi/fetcher/tmp/qianlu-svr-plugin-0.0.9.tar.gz]
 [2024-04-07 10:26:49] INFO root fetch - main [MainThread]: End processing [qianlu-svr-plugin]: success
 [2024-04-07 10:26:49] INFO root fetch - main [MainThread]: Store serial: [22654729]
+[2024-04-07 10:28:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654729]
+[2024-04-07 10:28:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 10:28:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lumibot
+[2024-04-07 10:28:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: testpackage123321
+[2024-04-07 10:28:57] WARNING root fetch - processPackages [testpackage123321]: Skipping, unable to determine old version
+[2024-04-07 10:28:57] INFO root fetch - main [MainThread]: End processing [testpackage123321] error
+[2024-04-07 10:28:57] INFO root fetch - processPackages [lumibot]: New version: [3.3.1] Old Version: [3.2.9]
+[2024-04-07 10:28:58] INFO root fetch - processPackages [lumibot]: Downloading https://files.pythonhosted.org/packages/db/05/8df5784ef880408b7fe1cc402f116f957c9f8be73ed707e1eca19d3b74cc/lumibot-3.2.9.tar.gz
+[2024-04-07 10:28:58] WARNING root fetch - processPackages [lumibot]: Timeout reached during download
+[2024-04-07 10:28:58] INFO root fetch - processPackages [lumibot]: Downloading https://files.pythonhosted.org/packages/09/bf/a8da53e74dad4f3fce1981504a1913231f991254a846a1c12954b7a077f8/lumibot-3.3.1.tar.gz
+[2024-04-07 10:28:58] WARNING root fetch - processPackages [lumibot]: Timeout reached during download
+[2024-04-07 10:28:58] INFO root fetch - processPackages [lumibot]: executing diffoscope
+[2024-04-07 10:28:58] INFO root fetch - processPackages [lumibot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lumibot-3.2.9.tar.gz tmp/lumibot-3.3.1.tar.gz --markdown 20240407/l/lumibot/3.2.9-3.3.1/diff.md --exclude *.pyd
+[2024-04-07 10:28:59] INFO root fetch - processPackages [lumibot]: Remove: archive file [/home/abi/fetcher/tmp/lumibot-3.2.9.tar.gz]
+[2024-04-07 10:28:59] INFO root fetch - processPackages [lumibot]: Remove: archive file [/home/abi/fetcher/tmp/lumibot-3.3.1.tar.gz]
+[2024-04-07 10:28:59] INFO root fetch - main [MainThread]: End processing [lumibot]: success
+[2024-04-07 10:28:59] INFO root fetch - main [MainThread]: Store serial: [22654736]
