@@ -5116,3 +5116,28 @@
 [2024-04-07 07:18:30] INFO root fetch - processPackages [shopyo]: Remove: archive file [/home/abi/fetcher/tmp/shopyo-4.9.5.tar.gz]
 [2024-04-07 07:18:30] INFO root fetch - main [MainThread]: End processing [shopyo]: success
 [2024-04-07 07:18:30] INFO root fetch - main [MainThread]: Store serial: [22653569]
+[2024-04-07 07:20:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653569]
+[2024-04-07 07:20:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 07:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jcci
+[2024-04-07 07:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-openupgrade-scripts
+[2024-04-07 07:20:39] INFO root fetch - processPackages [jcci]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-07 07:20:39] INFO root fetch - processPackages [jcci]: Downloading https://files.pythonhosted.org/packages/ac/a1/8fc7ba90eb932885dacbdc516f4b1269af263844915049fc3e7e48fde141/jcci-0.1.0.tar.gz
+[2024-04-07 07:20:39] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: New version: [17.0.1.0.1.1] Old Version: [17.0.1.0.1]
+[2024-04-07 07:20:39] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/ac/89/1dbbab632b9797a344253e7b7ce222a549a0f9008ea4e6090bd23e63f4a1/odoo_addon_openupgrade_scripts-17.0.1.0.1-py3-none-any.whl
+[2024-04-07 07:20:39] WARNING root fetch - processPackages [jcci]: Timeout reached during download
+[2024-04-07 07:20:39] INFO root fetch - processPackages [jcci]: Downloading https://files.pythonhosted.org/packages/fd/10/5e8c584feb164b903795d36bbdc67daa813adf3e9c2ed43ad3c218c365a5/jcci-0.1.1-py3-none-any.whl
+[2024-04-07 07:20:40] WARNING root fetch - processPackages [jcci]: Timeout reached during download
+[2024-04-07 07:20:40] WARNING root fetch - processPackages [odoo-addon-openupgrade-scripts]: Timeout reached during download
+[2024-04-07 07:20:40] INFO root fetch - processPackages [jcci]: executing diffoscope
+[2024-04-07 07:20:40] INFO root fetch - processPackages [jcci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jcci-0.1.0.tar.gz tmp/jcci-0.1.1-py3-none-any.whl.zip --markdown 20240407/j/jcci/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 07:20:40] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/db/05/04688d4f82370e4bae4a14ef6020e82e09ade6c98c3acef20837d8590431/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl
+[2024-04-07 07:20:40] WARNING root fetch - processPackages [odoo-addon-openupgrade-scripts]: Timeout reached during download
+[2024-04-07 07:20:40] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: executing diffoscope
+[2024-04-07 07:20:40] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl.zip --markdown 20240407/o/odoo-addon-openupgrade-scripts/17.0.1.0.1-17.0.1.0.1.1/diff.md --exclude *.pyd
+[2024-04-07 07:20:40] INFO root fetch - processPackages [jcci]: Remove: archive file [/home/abi/fetcher/tmp/jcci-0.1.0.tar.gz]
+[2024-04-07 07:20:40] INFO root fetch - processPackages [jcci]: Remove: archive file [/home/abi/fetcher/tmp/jcci-0.1.1-py3-none-any.whl.zip]
+[2024-04-07 07:20:40] INFO root fetch - main [MainThread]: End processing [jcci]: success
+[2024-04-07 07:20:42] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1-py3-none-any.whl.zip]
+[2024-04-07 07:20:42] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl.zip]
+[2024-04-07 07:20:42] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
+[2024-04-07 07:20:42] INFO root fetch - main [MainThread]: Store serial: [22653574]
