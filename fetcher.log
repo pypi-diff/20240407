@@ -5141,3 +5141,50 @@
 [2024-04-07 07:20:42] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl.zip]
 [2024-04-07 07:20:42] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
 [2024-04-07 07:20:42] INFO root fetch - main [MainThread]: Store serial: [22653574]
+[2024-04-07 07:22:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653574]
+[2024-04-07 07:22:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 07:22:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pylbm
+[2024-04-07 07:22:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-archive
+[2024-04-07 07:22:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dataframeviewer
+[2024-04-07 07:22:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyeventmanager
+[2024-04-07 07:22:50] INFO root fetch - processPackages [pyeventmanager]: New version: [0.5.5] Old Version: [0.5.4]
+[2024-04-07 07:22:50] INFO root fetch - processPackages [dataframeviewer]: New version: [1.6.7] Old Version: [1.6.13]
+[2024-04-07 07:22:50] INFO root fetch - processPackages [pylbm]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-07 07:22:50] INFO root fetch - processPackages [pulumi-archive]: New version: [0.0.6a1712466571] Old Version: [0.0.6a1712398919]
+[2024-04-07 07:22:50] INFO root fetch - processPackages [dataframeviewer]: Downloading https://files.pythonhosted.org/packages/11/c2/a522fd9694350a70cb294047d8a4e354ad2cc794dbaab3cc1c71d85a69e0/dataframeviewer-1.6.13.tar.gz
+[2024-04-07 07:22:50] INFO root fetch - processPackages [pyeventmanager]: Downloading https://files.pythonhosted.org/packages/95/32/6960bc8752ab9e11adae871c65b4ce454e1452c5d0800921914c8a20c651/pyeventmanager-0.5.4.tar.gz
+[2024-04-07 07:22:50] INFO root fetch - processPackages [pulumi-archive]: Downloading https://files.pythonhosted.org/packages/90/c4/6e2343957860aad4fdc9d8055aa0f2a8446b022181ad34d32cfbfece4691/pulumi_archive-0.0.6a1712398919.tar.gz
+[2024-04-07 07:22:51] WARNING root fetch - processPackages [pyeventmanager]: Timeout reached during download
+[2024-04-07 07:22:51] WARNING root fetch - processPackages [dataframeviewer]: Timeout reached during download
+[2024-04-07 07:22:51] INFO root fetch - processPackages [pylbm]: Downloading https://files.pythonhosted.org/packages/e0/a3/b72ef0bc67e3c59fc28015a07fe759a6ae28cd117e7abd2c07782f42b856/pylbm-0.8.0.tar.gz
+[2024-04-07 07:22:51] INFO root fetch - processPackages [pyeventmanager]: Downloading https://files.pythonhosted.org/packages/81/d4/c9af0477b1d605ed5608113770f501c340ef3e2ce075c009e16bf85d1270/pyeventmanager-0.5.5.tar.gz
+[2024-04-07 07:22:51] INFO root fetch - processPackages [dataframeviewer]: Downloading https://files.pythonhosted.org/packages/21/e8/ea407eb8a644af24de1aa13df442b6d48261d73bb4311b9dc939c1873a83/dataframeviewer-1.6.7.tar.gz
+[2024-04-07 07:22:51] WARNING root fetch - processPackages [pulumi-archive]: Timeout reached during download
+[2024-04-07 07:22:51] WARNING root fetch - processPackages [pylbm]: Timeout reached during download
+[2024-04-07 07:22:51] WARNING root fetch - processPackages [pyeventmanager]: Timeout reached during download
+[2024-04-07 07:22:51] INFO root fetch - processPackages [pyeventmanager]: executing diffoscope
+[2024-04-07 07:22:51] INFO root fetch - processPackages [pyeventmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeventmanager-0.5.4.tar.gz tmp/pyeventmanager-0.5.5.tar.gz --markdown 20240407/p/pyeventmanager/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2024-04-07 07:22:51] WARNING root fetch - processPackages [dataframeviewer]: Timeout reached during download
+[2024-04-07 07:22:51] INFO root fetch - processPackages [dataframeviewer]: executing diffoscope
+[2024-04-07 07:22:51] INFO root fetch - processPackages [dataframeviewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataframeviewer-1.6.13.tar.gz tmp/dataframeviewer-1.6.7.tar.gz --markdown 20240407/d/dataframeviewer/1.6.13-1.6.7/diff.md --exclude *.pyd
+[2024-04-07 07:22:51] INFO root fetch - processPackages [pulumi-archive]: Downloading https://files.pythonhosted.org/packages/f3/85/9327a169db3b87a73e647a046f737c0c7cef645373ca08f0bd854040e692/pulumi_archive-0.0.6a1712466571.tar.gz
+[2024-04-07 07:22:51] INFO root fetch - processPackages [pylbm]: Downloading https://files.pythonhosted.org/packages/0b/ea/e0ea863caaac7aceab136a5bbe2f3bb41025fda492b1f7ef91a9bffd7e2f/pylbm-0.9.0.tar.gz
+[2024-04-07 07:22:51] WARNING root fetch - processPackages [pulumi-archive]: Timeout reached during download
+[2024-04-07 07:22:51] INFO root fetch - processPackages [pulumi-archive]: executing diffoscope
+[2024-04-07 07:22:51] INFO root fetch - processPackages [pulumi-archive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_archive-0.0.6a1712398919.tar.gz tmp/pulumi_archive-0.0.6a1712466571.tar.gz --markdown 20240407/p/pulumi-archive/0.0.6a1712398919-0.0.6a1712466571/diff.md --exclude *.pyd
+[2024-04-07 07:22:51] WARNING root fetch - processPackages [pylbm]: Timeout reached during download
+[2024-04-07 07:22:51] INFO root fetch - processPackages [pylbm]: executing diffoscope
+[2024-04-07 07:22:51] INFO root fetch - processPackages [pylbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylbm-0.8.0.tar.gz tmp/pylbm-0.9.0.tar.gz --markdown 20240407/p/pylbm/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2024-04-07 07:22:51] INFO root fetch - processPackages [pyeventmanager]: Remove: archive file [/home/abi/fetcher/tmp/pyeventmanager-0.5.4.tar.gz]
+[2024-04-07 07:22:51] INFO root fetch - processPackages [pyeventmanager]: Remove: archive file [/home/abi/fetcher/tmp/pyeventmanager-0.5.5.tar.gz]
+[2024-04-07 07:22:51] INFO root fetch - main [MainThread]: End processing [pyeventmanager]: success
+[2024-04-07 07:22:52] INFO root fetch - processPackages [pulumi-archive]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_archive-0.0.6a1712398919.tar.gz]
+[2024-04-07 07:22:52] INFO root fetch - processPackages [pulumi-archive]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_archive-0.0.6a1712466571.tar.gz]
+[2024-04-07 07:22:52] INFO root fetch - main [MainThread]: End processing [pulumi-archive]: success
+[2024-04-07 07:22:52] INFO root fetch - processPackages [dataframeviewer]: Remove: archive file [/home/abi/fetcher/tmp/dataframeviewer-1.6.13.tar.gz]
+[2024-04-07 07:22:52] INFO root fetch - processPackages [dataframeviewer]: Remove: archive file [/home/abi/fetcher/tmp/dataframeviewer-1.6.7.tar.gz]
+[2024-04-07 07:22:52] INFO root fetch - main [MainThread]: End processing [dataframeviewer]: success
+[2024-04-07 07:22:52] INFO root fetch - processPackages [pylbm]: Remove: archive file [/home/abi/fetcher/tmp/pylbm-0.8.0.tar.gz]
+[2024-04-07 07:22:52] INFO root fetch - processPackages [pylbm]: Remove: archive file [/home/abi/fetcher/tmp/pylbm-0.9.0.tar.gz]
+[2024-04-07 07:22:52] INFO root fetch - main [MainThread]: End processing [pylbm]: success
+[2024-04-07 07:22:52] INFO root fetch - main [MainThread]: Store serial: [22653586]
