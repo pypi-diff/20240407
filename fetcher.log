@@ -1738,3 +1738,14 @@
 [2024-04-07 02:39:23] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240406.250.tar.gz]
 [2024-04-07 02:39:23] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-04-07 02:39:23] INFO root fetch - main [MainThread]: Store serial: [22652344]
+[2024-04-07 02:41:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652344]
+[2024-04-07 02:41:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 02:41:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-handyhelpers
+[2024-04-07 02:41:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: msgbridge
+[2024-04-07 02:41:33] WARNING root fetch - processPackages [msgbridge]: Skipping, unable to determine old version
+[2024-04-07 02:41:33] INFO root fetch - main [MainThread]: End processing [msgbridge] error
+[2024-04-07 02:41:33] INFO root fetch - processPackages [django-handyhelpers]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-07 02:41:33] INFO root fetch - processPackages [django-handyhelpers]: Downloading https://files.pythonhosted.org/packages/bf/da/bc4be3d5be966eef80290d034a8681a1db3136255c7f997a6c1d70b7aa18/django-handyhelpers-0.3.8.tar.gz
+[2024-04-07 02:41:33] WARNING root fetch - processPackages [django-handyhelpers]: Skipping package: exceeds size limit 15633971>=10485760
+[2024-04-07 02:41:33] INFO root fetch - main [MainThread]: End processing [django-handyhelpers] error
+[2024-04-07 02:41:33] INFO root fetch - main [MainThread]: Store serial: [22652352]
