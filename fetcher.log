@@ -20609,3 +20609,20 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:24:48] INFO root fetch - processPackages [semantic-text-splitter]: Remove: archive file [/home/abi/fetcher/tmp/semantic_text_splitter-0.9.1.tar.gz]
 [2024-04-07 23:24:48] INFO root fetch - main [MainThread]: End processing [semantic-text-splitter]: success
 [2024-04-07 23:24:48] INFO root fetch - main [MainThread]: Store serial: [22659378]
+[2024-04-07 23:26:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659378]
+[2024-04-07 23:26:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 23:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jafgen
+[2024-04-07 23:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ppynet
+[2024-04-07 23:26:57] INFO root fetch - processPackages [jafgen]: New version: [0.4.6] Old Version: [0.3.1]
+[2024-04-07 23:26:57] WARNING root fetch - processPackages [ppynet]: Skipping, unable to determine old version
+[2024-04-07 23:26:57] INFO root fetch - main [MainThread]: End processing [ppynet] error
+[2024-04-07 23:26:57] INFO root fetch - processPackages [jafgen]: Downloading https://files.pythonhosted.org/packages/64/c4/00cb3fdb46a49f70d6a7d5adf894a380a19ebc7e456ec8d90a8a63e50b59/jafgen-0.3.1.tar.gz
+[2024-04-07 23:26:58] WARNING root fetch - processPackages [jafgen]: Timeout reached during download
+[2024-04-07 23:26:58] INFO root fetch - processPackages [jafgen]: Downloading https://files.pythonhosted.org/packages/46/22/98dec1c130155ed3d16912e7e12421eff1489506bc72f8a0b443f5fa370c/jafgen-0.4.6.tar.gz
+[2024-04-07 23:26:58] WARNING root fetch - processPackages [jafgen]: Timeout reached during download
+[2024-04-07 23:26:58] INFO root fetch - processPackages [jafgen]: executing diffoscope
+[2024-04-07 23:26:58] INFO root fetch - processPackages [jafgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jafgen-0.3.1.tar.gz tmp/jafgen-0.4.6.tar.gz --markdown 20240407/j/jafgen/0.3.1-0.4.6/diff.md --exclude *.pyd
+[2024-04-07 23:26:58] INFO root fetch - processPackages [jafgen]: Remove: archive file [/home/abi/fetcher/tmp/jafgen-0.3.1.tar.gz]
+[2024-04-07 23:26:58] INFO root fetch - processPackages [jafgen]: Remove: archive file [/home/abi/fetcher/tmp/jafgen-0.4.6.tar.gz]
+[2024-04-07 23:26:58] INFO root fetch - main [MainThread]: End processing [jafgen]: success
+[2024-04-07 23:26:58] INFO root fetch - main [MainThread]: Store serial: [22659387]
