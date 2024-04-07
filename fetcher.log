@@ -15425,3 +15425,31 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 18:03:25] INFO root fetch - processPackages [OctoBot-Trading]: Remove: archive file [/home/abi/fetcher/tmp/OctoBot-Trading-2.4.9.tar.gz]
 [2024-04-07 18:03:25] INFO root fetch - main [MainThread]: End processing [OctoBot-Trading]: success
 [2024-04-07 18:03:25] INFO root fetch - main [MainThread]: Store serial: [22657428]
+[2024-04-07 18:05:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657428]
+[2024-04-07 18:05:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 18:05:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pure-cv
+[2024-04-07 18:05:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deaotpy
+[2024-04-07 18:05:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abcac
+[2024-04-07 18:05:34] INFO root fetch - processPackages [deaotpy]: New version: [1.8.0] Old Version: [1.7.0]
+[2024-04-07 18:05:34] INFO root fetch - processPackages [deaotpy]: Downloading https://files.pythonhosted.org/packages/fd/2a/691c7847bde1c73dcc82bc8b1b2a545080ab9e64b474661bddc03482a5d1/deaotpy-1.7.0.tar.gz
+[2024-04-07 18:05:34] INFO root fetch - processPackages [pure-cv]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-07 18:05:34] WARNING root fetch - processPackages [abcac]: Skipping, unable to determine old version
+[2024-04-07 18:05:34] INFO root fetch - main [MainThread]: End processing [abcac] error
+[2024-04-07 18:05:34] WARNING root fetch - processPackages [deaotpy]: Timeout reached during download
+[2024-04-07 18:05:34] INFO root fetch - processPackages [pure-cv]: Downloading https://files.pythonhosted.org/packages/59/cf/233f8ae075466c61d2ea2be60bf56ef8726bf889d06e12f3a5e149f5116a/pure_cv-0.1.5-py3-none-any.whl
+[2024-04-07 18:05:34] INFO root fetch - processPackages [deaotpy]: Downloading https://files.pythonhosted.org/packages/b9/a5/02e25a971c0787b2c6421197a115461f68f3cd01a2f6c8a6b26774f38c2b/deaotpy-1.8.0.tar.gz
+[2024-04-07 18:05:34] WARNING root fetch - processPackages [pure-cv]: Timeout reached during download
+[2024-04-07 18:05:34] WARNING root fetch - processPackages [deaotpy]: Timeout reached during download
+[2024-04-07 18:05:34] INFO root fetch - processPackages [deaotpy]: executing diffoscope
+[2024-04-07 18:05:34] INFO root fetch - processPackages [deaotpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deaotpy-1.7.0.tar.gz tmp/deaotpy-1.8.0.tar.gz --markdown 20240407/d/deaotpy/1.7.0-1.8.0/diff.md --exclude *.pyd
+[2024-04-07 18:05:34] INFO root fetch - processPackages [pure-cv]: Downloading https://files.pythonhosted.org/packages/c2/49/7d7ae2cc9e35c4f4538ab135588d063da2abce58b5c4f4eca024f4c6d2e0/pure-cv-0.1.6.tar.gz
+[2024-04-07 18:05:34] WARNING root fetch - processPackages [pure-cv]: Timeout reached during download
+[2024-04-07 18:05:34] INFO root fetch - processPackages [pure-cv]: executing diffoscope
+[2024-04-07 18:05:34] INFO root fetch - processPackages [pure-cv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pure_cv-0.1.5-py3-none-any.whl.zip tmp/pure-cv-0.1.6.tar.gz --markdown 20240407/p/pure-cv/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2024-04-07 18:05:35] INFO root fetch - processPackages [deaotpy]: Remove: archive file [/home/abi/fetcher/tmp/deaotpy-1.7.0.tar.gz]
+[2024-04-07 18:05:35] INFO root fetch - processPackages [deaotpy]: Remove: archive file [/home/abi/fetcher/tmp/deaotpy-1.8.0.tar.gz]
+[2024-04-07 18:05:35] INFO root fetch - main [MainThread]: End processing [deaotpy]: success
+[2024-04-07 18:05:35] INFO root fetch - processPackages [pure-cv]: Remove: archive file [/home/abi/fetcher/tmp/pure_cv-0.1.5-py3-none-any.whl.zip]
+[2024-04-07 18:05:35] INFO root fetch - processPackages [pure-cv]: Remove: archive file [/home/abi/fetcher/tmp/pure-cv-0.1.6.tar.gz]
+[2024-04-07 18:05:35] INFO root fetch - main [MainThread]: End processing [pure-cv]: success
+[2024-04-07 18:05:35] INFO root fetch - main [MainThread]: Store serial: [22657438]
