@@ -2688,3 +2688,31 @@
 [2024-04-07 04:05:41] INFO root fetch - main [MainThread]: End processing [notional]: success
 [2024-04-07 04:05:41] INFO root fetch - main [MainThread]: End processing [reprompt]: success
 [2024-04-07 04:05:41] INFO root fetch - main [MainThread]: Store serial: [22652798]
+[2024-04-07 04:07:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652798]
+[2024-04-07 04:07:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 04:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ferramentas-basicas-pln
+[2024-04-07 04:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ferramentas-basicas-pln
+[2024-04-07 04:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NearBeach
+[2024-04-07 04:07:49] INFO root fetch - processPackages [ferramentas-basicas-pln]: New version: [0.9.9.4] Old Version: [0.9.9.3]
+[2024-04-07 04:07:49] INFO root fetch - processPackages [ferramentas-basicas-pln]: New version: [0.9.9.4] Old Version: [0.9.9.3]
+[2024-04-07 04:07:49] INFO root fetch - processPackages [NearBeach]: New version: [0.31.9] Old Version: [0.31.8]
+[2024-04-07 04:07:49] INFO root fetch - processPackages [ferramentas-basicas-pln]: Downloading https://files.pythonhosted.org/packages/dd/5d/3ecfa43ac95c3a081a56bb3d58cf19be357a7ee0317a6c14a03d4b761541/ferramentas-basicas-pln-0.9.9.3.tar.gz
+[2024-04-07 04:07:49] INFO root fetch - processPackages [ferramentas-basicas-pln]: Downloading https://files.pythonhosted.org/packages/dd/5d/3ecfa43ac95c3a081a56bb3d58cf19be357a7ee0317a6c14a03d4b761541/ferramentas-basicas-pln-0.9.9.3.tar.gz
+[2024-04-07 04:07:50] WARNING root fetch - processPackages [ferramentas-basicas-pln]: Timeout reached during download
+[2024-04-07 04:07:50] WARNING root fetch - processPackages [ferramentas-basicas-pln]: Timeout reached during download
+[2024-04-07 04:07:50] INFO root fetch - processPackages [NearBeach]: Downloading https://files.pythonhosted.org/packages/d3/c9/4444a9584fae7ddaa87ff4efa7f16f8833a3827e50758749323b05d77edd/nearbeach-0.31.8.tar.gz
+[2024-04-07 04:07:50] WARNING root fetch - processPackages [NearBeach]: Skipping package: exceeds size limit 32530107>=10485760
+[2024-04-07 04:07:50] INFO root fetch - main [MainThread]: End processing [NearBeach] error
+[2024-04-07 04:07:50] INFO root fetch - processPackages [ferramentas-basicas-pln]: Downloading https://files.pythonhosted.org/packages/0b/7b/f8c0799a8d964a1626f4b8f155f980934541366d954dccb2dc0474105499/ferramentas-basicas-pln-0.9.9.4.tar.gz
+[2024-04-07 04:07:50] INFO root fetch - processPackages [ferramentas-basicas-pln]: Downloading https://files.pythonhosted.org/packages/0b/7b/f8c0799a8d964a1626f4b8f155f980934541366d954dccb2dc0474105499/ferramentas-basicas-pln-0.9.9.4.tar.gz
+[2024-04-07 04:07:50] WARNING root fetch - processPackages [ferramentas-basicas-pln]: Timeout reached during download
+[2024-04-07 04:07:50] INFO root fetch - processPackages [ferramentas-basicas-pln]: executing diffoscope
+[2024-04-07 04:07:50] INFO root fetch - processPackages [ferramentas-basicas-pln]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ferramentas-basicas-pln-0.9.9.3.tar.gz tmp/ferramentas-basicas-pln-0.9.9.4.tar.gz --markdown 20240407/f/ferramentas-basicas-pln/0.9.9.3-0.9.9.4/diff.md --exclude *.pyd
+[2024-04-07 04:07:50] WARNING root fetch - processPackages [ferramentas-basicas-pln]: Timeout reached during download
+[2024-04-07 04:07:50] INFO root fetch - processPackages [ferramentas-basicas-pln]: executing diffoscope
+[2024-04-07 04:07:50] INFO root fetch - processPackages [ferramentas-basicas-pln]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ferramentas-basicas-pln-0.9.9.3.tar.gz tmp/ferramentas-basicas-pln-0.9.9.4.tar.gz --markdown 20240407/f/ferramentas-basicas-pln/0.9.9.3-0.9.9.4/diff.md --exclude *.pyd
+[2024-04-07 04:07:50] INFO root fetch - processPackages [ferramentas-basicas-pln]: Remove: archive file [/home/abi/fetcher/tmp/ferramentas-basicas-pln-0.9.9.3.tar.gz]
+[2024-04-07 04:07:50] INFO root fetch - processPackages [ferramentas-basicas-pln]: Remove: archive file [/home/abi/fetcher/tmp/ferramentas-basicas-pln-0.9.9.4.tar.gz]
+[2024-04-07 04:07:50] INFO root fetch - main [MainThread]: End processing [ferramentas-basicas-pln]: success
+[2024-04-07 04:07:51] INFO root fetch - main [MainThread]: End processing [ferramentas-basicas-pln]: success
+[2024-04-07 04:07:51] INFO root fetch - main [MainThread]: Store serial: [22652807]
