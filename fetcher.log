@@ -11116,3 +11116,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:52:05] INFO root fetch - processPackages [envo]: Remove: archive file [/home/abi/fetcher/tmp/envo-1.5.2.tar.gz]
 [2024-04-07 13:52:05] INFO root fetch - main [MainThread]: End processing [envo]: success
 [2024-04-07 13:52:05] INFO root fetch - main [MainThread]: Store serial: [22655858]
+[2024-04-07 13:54:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655858]
+[2024-04-07 13:54:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 13:54:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ehdtd
+[2024-04-07 13:54:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: emhass
+[2024-04-07 13:54:14] INFO root fetch - processPackages [ehdtd]: New version: [0.1.7] Old Version: [0.1.5]
+[2024-04-07 13:54:14] INFO root fetch - processPackages [ehdtd]: Downloading https://files.pythonhosted.org/packages/47/36/87af41460c4e78bb57b5342d678ebe773a3b0d1bd80d791e2ab39d7a1e06/ehdtd-0.1.5.tar.gz
+[2024-04-07 13:54:14] INFO root fetch - processPackages [emhass]: New version: [0.8.6] Old Version: [0.8.5]
+[2024-04-07 13:54:14] WARNING root fetch - processPackages [ehdtd]: Timeout reached during download
+[2024-04-07 13:54:14] INFO root fetch - processPackages [emhass]: Downloading https://files.pythonhosted.org/packages/f1/e4/febd05093402dc31fcbc2d78dfd4d6d7ee69ec071d68fe18e27a56e1b314/emhass-0.8.5.tar.gz
+[2024-04-07 13:54:14] INFO root fetch - processPackages [ehdtd]: Downloading https://files.pythonhosted.org/packages/c4/45/e53d6ec93af1631c64c388a9dda4e25dccc4e9be4a90fa0c8e022e3664e4/ehdtd-0.1.7.tar.gz
+[2024-04-07 13:54:15] WARNING root fetch - processPackages [ehdtd]: Timeout reached during download
+[2024-04-07 13:54:15] INFO root fetch - processPackages [ehdtd]: executing diffoscope
+[2024-04-07 13:54:15] INFO root fetch - processPackages [ehdtd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ehdtd-0.1.5.tar.gz tmp/ehdtd-0.1.7.tar.gz --markdown 20240407/e/ehdtd/0.1.5-0.1.7/diff.md --exclude *.pyd
+[2024-04-07 13:54:15] WARNING root fetch - processPackages [emhass]: Timeout reached during download
+[2024-04-07 13:54:15] INFO root fetch - processPackages [emhass]: Downloading https://files.pythonhosted.org/packages/d4/93/7489daab4a6e5a041efbc8294108eaa20e32761fe97500c7dcc7fa092a8d/emhass-0.8.6.tar.gz
+[2024-04-07 13:54:15] INFO root fetch - processPackages [ehdtd]: Remove: archive file [/home/abi/fetcher/tmp/ehdtd-0.1.5.tar.gz]
+[2024-04-07 13:54:15] INFO root fetch - processPackages [ehdtd]: Remove: archive file [/home/abi/fetcher/tmp/ehdtd-0.1.7.tar.gz]
+[2024-04-07 13:54:15] INFO root fetch - main [MainThread]: End processing [ehdtd]: success
+[2024-04-07 13:54:16] WARNING root fetch - processPackages [emhass]: Timeout reached during download
+[2024-04-07 13:54:16] INFO root fetch - processPackages [emhass]: executing diffoscope
+[2024-04-07 13:54:16] INFO root fetch - processPackages [emhass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emhass-0.8.5.tar.gz tmp/emhass-0.8.6.tar.gz --markdown 20240407/e/emhass/0.8.5-0.8.6/diff.md --exclude *.pyd
+[2024-04-07 13:54:17] INFO root fetch - processPackages [emhass]: Remove: archive file [/home/abi/fetcher/tmp/emhass-0.8.5.tar.gz]
+[2024-04-07 13:54:17] INFO root fetch - processPackages [emhass]: Remove: archive file [/home/abi/fetcher/tmp/emhass-0.8.6.tar.gz]
+[2024-04-07 13:54:17] INFO root fetch - main [MainThread]: End processing [emhass]: success
+[2024-04-07 13:54:17] INFO root fetch - main [MainThread]: Store serial: [22655869]
