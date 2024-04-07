@@ -9734,3 +9734,53 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 12:09:54] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras-nightly-2.17.0.dev2024040609.tar.gz]
 [2024-04-07 12:09:54] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
 [2024-04-07 12:09:54] INFO root fetch - main [MainThread]: Store serial: [22655308]
+[2024-04-07 12:11:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655308]
+[2024-04-07 12:12:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 12:12:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-bvk
+[2024-04-07 12:12:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: websockets-proxy
+[2024-04-07 12:12:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PiFolderOrganizer
+[2024-04-07 12:12:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bosing
+[2024-04-07 12:12:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: qupython
+[2024-04-07 12:12:04] INFO root fetch - processPackages [qupython]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-04-07 12:12:04] INFO root fetch - processPackages [websockets-proxy]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-07 12:12:04] INFO root fetch - processPackages [qupython]: Downloading https://files.pythonhosted.org/packages/ad/b3/b0b366ce055382410c9c9b693e5dd86e9e087dc354060c565aaa8e38a73b/qupython-0.0.1.tar.gz
+[2024-04-07 12:12:04] WARNING root fetch - processPackages [PiFolderOrganizer]: Skipping, unable to determine old version
+[2024-04-07 12:12:04] INFO root fetch - main [MainThread]: End processing [PiFolderOrganizer] error
+[2024-04-07 12:12:04] INFO root fetch - processPackages [python-bvk]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-04-07 12:12:04] INFO root fetch - processPackages [bosing]: New version: [1.0.0b3] Old Version: [1.0.0b2]
+[2024-04-07 12:12:04] WARNING root fetch - processPackages [qupython]: Timeout reached during download
+[2024-04-07 12:12:04] INFO root fetch - processPackages [websockets-proxy]: Downloading https://files.pythonhosted.org/packages/e8/28/e4acd728686b3e9f44c6da79c3d12feaef7f8e760e3699cf18f1316d9d71/websockets_proxy-0.1.1.tar.gz
+[2024-04-07 12:12:04] INFO root fetch - processPackages [bosing]: Downloading https://files.pythonhosted.org/packages/ea/15/e1a2a8b3be4c34078d8d8f55224aa50216a9d8e0a24c8f21dd33fcdb1be2/bosing-1.0.0b2.tar.gz
+[2024-04-07 12:12:04] INFO root fetch - processPackages [python-bvk]: Downloading https://files.pythonhosted.org/packages/4e/77/f1a4dfe074fd2e2e34910e3d2f83e4cbf2f2c46c9f180c4151371a858564/python-bvk-0.2.1.tar.gz
+[2024-04-07 12:12:04] INFO root fetch - processPackages [qupython]: Downloading https://files.pythonhosted.org/packages/6e/51/24b7fe22478861234a46c4c29fafb978577ffe1d47b8f2c02ac58ba6b718/qupython-0.1.0.tar.gz
+[2024-04-07 12:12:04] WARNING root fetch - processPackages [websockets-proxy]: Timeout reached during download
+[2024-04-07 12:12:04] WARNING root fetch - processPackages [bosing]: Timeout reached during download
+[2024-04-07 12:12:04] WARNING root fetch - processPackages [python-bvk]: Timeout reached during download
+[2024-04-07 12:12:05] WARNING root fetch - processPackages [qupython]: Timeout reached during download
+[2024-04-07 12:12:05] INFO root fetch - processPackages [qupython]: executing diffoscope
+[2024-04-07 12:12:05] INFO root fetch - processPackages [qupython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qupython-0.0.1.tar.gz tmp/qupython-0.1.0.tar.gz --markdown 20240407/q/qupython/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2024-04-07 12:12:05] INFO root fetch - processPackages [websockets-proxy]: Downloading https://files.pythonhosted.org/packages/86/1f/d39627d26c0e16271be505697594ec05f8552d735483d52d7107abfe9eca/websockets_proxy-0.1.2.tar.gz
+[2024-04-07 12:12:05] INFO root fetch - processPackages [python-bvk]: Downloading https://files.pythonhosted.org/packages/93/cf/e9d57cde31867a200e82e2cb9557fff31a88102003c6cee50956366924e1/python-bvk-0.3.0.tar.gz
+[2024-04-07 12:12:05] INFO root fetch - processPackages [bosing]: Downloading https://files.pythonhosted.org/packages/5d/58/86d7640de36f7318b0abf3ee8393ad3207cdf1451cf81afb41bd66993a66/bosing-1.0.0b3.tar.gz
+[2024-04-07 12:12:05] WARNING root fetch - processPackages [websockets-proxy]: Timeout reached during download
+[2024-04-07 12:12:05] INFO root fetch - processPackages [websockets-proxy]: executing diffoscope
+[2024-04-07 12:12:05] INFO root fetch - processPackages [websockets-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/websockets_proxy-0.1.1.tar.gz tmp/websockets_proxy-0.1.2.tar.gz --markdown 20240407/w/websockets-proxy/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-07 12:12:05] WARNING root fetch - processPackages [python-bvk]: Timeout reached during download
+[2024-04-07 12:12:05] INFO root fetch - processPackages [python-bvk]: executing diffoscope
+[2024-04-07 12:12:05] INFO root fetch - processPackages [python-bvk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-bvk-0.2.1.tar.gz tmp/python-bvk-0.3.0.tar.gz --markdown 20240407/p/python-bvk/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2024-04-07 12:12:05] WARNING root fetch - processPackages [bosing]: Timeout reached during download
+[2024-04-07 12:12:05] INFO root fetch - processPackages [bosing]: executing diffoscope
+[2024-04-07 12:12:05] INFO root fetch - processPackages [bosing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosing-1.0.0b2.tar.gz tmp/bosing-1.0.0b3.tar.gz --markdown 20240407/b/bosing/1.0.0b2-1.0.0b3/diff.md --exclude *.pyd
+[2024-04-07 12:12:05] INFO root fetch - processPackages [qupython]: Remove: archive file [/home/abi/fetcher/tmp/qupython-0.0.1.tar.gz]
+[2024-04-07 12:12:05] INFO root fetch - processPackages [qupython]: Remove: archive file [/home/abi/fetcher/tmp/qupython-0.1.0.tar.gz]
+[2024-04-07 12:12:05] INFO root fetch - main [MainThread]: End processing [qupython]: success
+[2024-04-07 12:12:05] INFO root fetch - processPackages [python-bvk]: Remove: archive file [/home/abi/fetcher/tmp/python-bvk-0.2.1.tar.gz]
+[2024-04-07 12:12:05] INFO root fetch - processPackages [python-bvk]: Remove: archive file [/home/abi/fetcher/tmp/python-bvk-0.3.0.tar.gz]
+[2024-04-07 12:12:05] INFO root fetch - main [MainThread]: End processing [python-bvk]: success
+[2024-04-07 12:12:05] INFO root fetch - processPackages [websockets-proxy]: Remove: archive file [/home/abi/fetcher/tmp/websockets_proxy-0.1.1.tar.gz]
+[2024-04-07 12:12:05] INFO root fetch - processPackages [websockets-proxy]: Remove: archive file [/home/abi/fetcher/tmp/websockets_proxy-0.1.2.tar.gz]
+[2024-04-07 12:12:05] INFO root fetch - main [MainThread]: End processing [websockets-proxy]: success
+[2024-04-07 12:12:06] INFO root fetch - processPackages [bosing]: Remove: archive file [/home/abi/fetcher/tmp/bosing-1.0.0b2.tar.gz]
+[2024-04-07 12:12:06] INFO root fetch - processPackages [bosing]: Remove: archive file [/home/abi/fetcher/tmp/bosing-1.0.0b3.tar.gz]
+[2024-04-07 12:12:06] INFO root fetch - main [MainThread]: End processing [bosing]: success
+[2024-04-07 12:12:06] INFO root fetch - main [MainThread]: Store serial: [22655330]
