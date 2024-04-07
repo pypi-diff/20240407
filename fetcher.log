@@ -12764,3 +12764,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:41:20] INFO root fetch - processPackages [systembridgefrontend]: Remove: archive file [/home/abi/fetcher/tmp/systembridgefrontend-4.0.3.tar.gz]
 [2024-04-07 15:41:20] INFO root fetch - main [MainThread]: End processing [systembridgefrontend]: success
 [2024-04-07 15:41:20] INFO root fetch - main [MainThread]: Store serial: [22656541]
+[2024-04-07 15:43:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656541]
+[2024-04-07 15:43:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 15:43:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rython-calc
+[2024-04-07 15:43:31] INFO root fetch - processPackages [rython-calc]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-04-07 15:43:31] INFO root fetch - processPackages [rython-calc]: Downloading https://files.pythonhosted.org/packages/b1/3d/b968265a587be0e22dc9766f3ccd25d82afd7b2b1c5f66fe226b9eeabc7b/rython_calc-0.4.5.tar.gz
+[2024-04-07 15:43:31] WARNING root fetch - processPackages [rython-calc]: Timeout reached during download
+[2024-04-07 15:43:31] INFO root fetch - processPackages [rython-calc]: Downloading https://files.pythonhosted.org/packages/08/c4/a93c481f4c9e009305dea8f95616941c00419f61f309c019a324fd5dd565/rython_calc-0.4.6.tar.gz
+[2024-04-07 15:43:31] WARNING root fetch - processPackages [rython-calc]: Timeout reached during download
+[2024-04-07 15:43:31] INFO root fetch - processPackages [rython-calc]: executing diffoscope
+[2024-04-07 15:43:31] INFO root fetch - processPackages [rython-calc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rython_calc-0.4.5.tar.gz tmp/rython_calc-0.4.6.tar.gz --markdown 20240407/r/rython-calc/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2024-04-07 15:43:32] INFO root fetch - processPackages [rython-calc]: Remove: archive file [/home/abi/fetcher/tmp/rython_calc-0.4.5.tar.gz]
+[2024-04-07 15:43:32] INFO root fetch - processPackages [rython-calc]: Remove: archive file [/home/abi/fetcher/tmp/rython_calc-0.4.6.tar.gz]
+[2024-04-07 15:43:32] INFO root fetch - main [MainThread]: End processing [rython-calc]: success
+[2024-04-07 15:43:32] INFO root fetch - main [MainThread]: Store serial: [22656553]
