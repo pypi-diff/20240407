@@ -12045,3 +12045,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:57:37] INFO root fetch - processPackages [dotenv-cli]: Remove: archive file [/home/abi/fetcher/tmp/dotenv-cli-3.3.0.tar.gz]
 [2024-04-07 14:57:37] INFO root fetch - main [MainThread]: End processing [dotenv-cli]: success
 [2024-04-07 14:57:37] INFO root fetch - main [MainThread]: Store serial: [22656311]
+[2024-04-07 14:59:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656311]
+[2024-04-07 14:59:48] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 14:59:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NoobStuffs
+[2024-04-07 14:59:48] INFO root fetch - processPackages [NoobStuffs]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-07 14:59:48] INFO root fetch - processPackages [NoobStuffs]: Downloading https://files.pythonhosted.org/packages/2e/a4/e96ccd93cb51f758b97bc033d530a615c7445f40c07e87f142beb466a4b4/noobstuffs-2.0.0.tar.gz
+[2024-04-07 14:59:48] WARNING root fetch - processPackages [NoobStuffs]: Timeout reached during download
+[2024-04-07 14:59:48] INFO root fetch - processPackages [NoobStuffs]: Downloading https://files.pythonhosted.org/packages/7c/b5/f3530726403339ce327a0ee35fe56bf3627decc86a6e3c4ab7d49b0a5b40/noobstuffs-2.0.1.tar.gz
+[2024-04-07 14:59:48] WARNING root fetch - processPackages [NoobStuffs]: Timeout reached during download
+[2024-04-07 14:59:48] INFO root fetch - processPackages [NoobStuffs]: executing diffoscope
+[2024-04-07 14:59:48] INFO root fetch - processPackages [NoobStuffs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noobstuffs-2.0.0.tar.gz tmp/noobstuffs-2.0.1.tar.gz --markdown 20240407/N/NoobStuffs/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2024-04-07 14:59:49] INFO root fetch - processPackages [NoobStuffs]: Remove: archive file [/home/abi/fetcher/tmp/noobstuffs-2.0.0.tar.gz]
+[2024-04-07 14:59:49] INFO root fetch - processPackages [NoobStuffs]: Remove: archive file [/home/abi/fetcher/tmp/noobstuffs-2.0.1.tar.gz]
+[2024-04-07 14:59:49] INFO root fetch - main [MainThread]: End processing [NoobStuffs]: success
+[2024-04-07 14:59:49] INFO root fetch - main [MainThread]: Store serial: [22656314]
