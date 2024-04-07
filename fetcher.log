@@ -3479,3 +3479,42 @@
 [2024-04-07 04:51:30] INFO root fetch - processPackages [large-image-source-zarr]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-zarr-1.27.5.dev99.tar.gz]
 [2024-04-07 04:51:30] INFO root fetch - main [MainThread]: End processing [large-image-source-zarr]: success
 [2024-04-07 04:51:30] INFO root fetch - main [MainThread]: Store serial: [22653063]
+[2024-04-07 04:53:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653063]
+[2024-04-07 04:53:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 04:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ships
+[2024-04-07 04:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aws-delete-all
+[2024-04-07 04:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dataprepkitRazan
+[2024-04-07 04:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyeventmanager
+[2024-04-07 04:53:39] INFO root fetch - processPackages [ships]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-04-07 04:53:39] INFO root fetch - processPackages [pyeventmanager]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-04-07 04:53:39] INFO root fetch - processPackages [ships]: Downloading https://files.pythonhosted.org/packages/00/af/3dbe13c1b005a14f7e3380a7e0f395c1cf5836e006c143004000ff7dba7e/ships-1.2.4.tar.gz
+[2024-04-07 04:53:39] INFO root fetch - processPackages [aws-delete-all]: New version: [0.5.4.1] Old Version: [0.5.4]
+[2024-04-07 04:53:39] WARNING root fetch - processPackages [dataprepkitRazan]: Skipping, unable to determine old version
+[2024-04-07 04:53:39] INFO root fetch - main [MainThread]: End processing [dataprepkitRazan] error
+[2024-04-07 04:53:39] WARNING root fetch - processPackages [ships]: Timeout reached during download
+[2024-04-07 04:53:39] INFO root fetch - processPackages [pyeventmanager]: Downloading https://files.pythonhosted.org/packages/2f/d0/ba1b23f2194bc803cafcffe8c5268d7b8a3016af92bd07cb3897e29fbcf3/pyeventmanager-0.5.2.tar.gz
+[2024-04-07 04:53:39] INFO root fetch - processPackages [ships]: Downloading https://files.pythonhosted.org/packages/34/d6/1985121a09414a6676d56eef5cc7180043ab5ba9c312989e605b3f19d861/ships-1.2.5.tar.gz
+[2024-04-07 04:53:39] INFO root fetch - processPackages [aws-delete-all]: Downloading https://files.pythonhosted.org/packages/03/ab/fb63fa864543547daf38bd2e068f8307c6f866eb966b920b10ea6c76e461/aws-delete-all-0.5.4.tar.gz
+[2024-04-07 04:53:39] WARNING root fetch - processPackages [ships]: Timeout reached during download
+[2024-04-07 04:53:39] INFO root fetch - processPackages [ships]: executing diffoscope
+[2024-04-07 04:53:39] INFO root fetch - processPackages [ships]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ships-1.2.4.tar.gz tmp/ships-1.2.5.tar.gz --markdown 20240407/s/ships/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2024-04-07 04:53:39] WARNING root fetch - processPackages [pyeventmanager]: Timeout reached during download
+[2024-04-07 04:53:39] WARNING root fetch - processPackages [aws-delete-all]: Timeout reached during download
+[2024-04-07 04:53:40] INFO root fetch - processPackages [pyeventmanager]: Downloading https://files.pythonhosted.org/packages/3d/01/9c43fe1a64ead961bf6ef7dd28bf2a06d02d193098795f00525097634508/pyeventmanager-0.5.3.tar.gz
+[2024-04-07 04:53:40] INFO root fetch - processPackages [aws-delete-all]: Downloading https://files.pythonhosted.org/packages/77/41/52651194040fd4b0444b8757acbddd4472bc28249bc89e70dec660809dac/aws-delete-all-0.5.4.1.tar.gz
+[2024-04-07 04:53:40] WARNING root fetch - processPackages [pyeventmanager]: Timeout reached during download
+[2024-04-07 04:53:40] INFO root fetch - processPackages [pyeventmanager]: executing diffoscope
+[2024-04-07 04:53:40] INFO root fetch - processPackages [pyeventmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeventmanager-0.5.2.tar.gz tmp/pyeventmanager-0.5.3.tar.gz --markdown 20240407/p/pyeventmanager/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2024-04-07 04:53:40] WARNING root fetch - processPackages [aws-delete-all]: Timeout reached during download
+[2024-04-07 04:53:40] INFO root fetch - processPackages [aws-delete-all]: executing diffoscope
+[2024-04-07 04:53:40] INFO root fetch - processPackages [aws-delete-all]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-delete-all-0.5.4.tar.gz tmp/aws-delete-all-0.5.4.1.tar.gz --markdown 20240407/a/aws-delete-all/0.5.4-0.5.4.1/diff.md --exclude *.pyd
+[2024-04-07 04:53:40] INFO root fetch - processPackages [ships]: Remove: archive file [/home/abi/fetcher/tmp/ships-1.2.4.tar.gz]
+[2024-04-07 04:53:40] INFO root fetch - processPackages [ships]: Remove: archive file [/home/abi/fetcher/tmp/ships-1.2.5.tar.gz]
+[2024-04-07 04:53:40] INFO root fetch - main [MainThread]: End processing [ships]: success
+[2024-04-07 04:53:40] INFO root fetch - processPackages [pyeventmanager]: Remove: archive file [/home/abi/fetcher/tmp/pyeventmanager-0.5.2.tar.gz]
+[2024-04-07 04:53:40] INFO root fetch - processPackages [pyeventmanager]: Remove: archive file [/home/abi/fetcher/tmp/pyeventmanager-0.5.3.tar.gz]
+[2024-04-07 04:53:40] INFO root fetch - main [MainThread]: End processing [pyeventmanager]: success
+[2024-04-07 04:53:40] INFO root fetch - processPackages [aws-delete-all]: Remove: archive file [/home/abi/fetcher/tmp/aws-delete-all-0.5.4.tar.gz]
+[2024-04-07 04:53:40] INFO root fetch - processPackages [aws-delete-all]: Remove: archive file [/home/abi/fetcher/tmp/aws-delete-all-0.5.4.1.tar.gz]
+[2024-04-07 04:53:40] INFO root fetch - main [MainThread]: End processing [aws-delete-all]: success
+[2024-04-07 04:53:40] INFO root fetch - main [MainThread]: Store serial: [22653069]
