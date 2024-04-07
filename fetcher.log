@@ -5906,3 +5906,31 @@
 [2024-04-07 08:00:31] INFO root fetch - processPackages [plyvel-ci]: Remove: archive file [/home/abi/fetcher/tmp/plyvel_ci-1.5.1-cp39-cp39-macosx_10_9_universal2.whl.zip]
 [2024-04-07 08:00:31] INFO root fetch - main [MainThread]: End processing [plyvel-ci]: success
 [2024-04-07 08:00:31] INFO root fetch - main [MainThread]: Store serial: [22653844]
+[2024-04-07 08:02:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653844]
+[2024-04-07 08:02:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 08:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dmjone
+[2024-04-07 08:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-blocker
+[2024-04-07 08:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-gitlab
+[2024-04-07 08:02:40] INFO root fetch - processPackages [pulumi-gitlab]: New version: [6.9.0a1708340471] Old Version: [6.9.0a1708063247]
+[2024-04-07 08:02:40] WARNING root fetch - processPackages [dmjone]: Skipping, unable to determine old version
+[2024-04-07 08:02:40] INFO root fetch - main [MainThread]: End processing [dmjone] error
+[2024-04-07 08:02:40] INFO root fetch - processPackages [nonebot-plugin-blocker]: New version: [0.4.7] Old Version: [0.4.6]
+[2024-04-07 08:02:40] INFO root fetch - processPackages [pulumi-gitlab]: Downloading https://files.pythonhosted.org/packages/58/07/ab2778876b4db96da370ecc6d084f38b132c7d1e47cda0350b3de396d7e4/pulumi_gitlab-6.9.0a1708063247.tar.gz
+[2024-04-07 08:02:40] INFO root fetch - processPackages [nonebot-plugin-blocker]: Downloading https://files.pythonhosted.org/packages/f4/60/89009e38e27ae96dd53053e09ffeb3b82a062264ca18af5fb0eda11d61e9/nonebot_plugin_blocker-0.4.6.tar.gz
+[2024-04-07 08:02:40] WARNING root fetch - processPackages [pulumi-gitlab]: Timeout reached during download
+[2024-04-07 08:02:40] INFO root fetch - processPackages [pulumi-gitlab]: Downloading https://files.pythonhosted.org/packages/ec/de/e27b5fc2f3f3a7a5f878850b1b8d0f82d5624c70b642a39146c756ea3d5c/pulumi_gitlab-6.9.0a1708340471.tar.gz
+[2024-04-07 08:02:40] WARNING root fetch - processPackages [nonebot-plugin-blocker]: Timeout reached during download
+[2024-04-07 08:02:40] WARNING root fetch - processPackages [pulumi-gitlab]: Timeout reached during download
+[2024-04-07 08:02:40] INFO root fetch - processPackages [pulumi-gitlab]: executing diffoscope
+[2024-04-07 08:02:40] INFO root fetch - processPackages [pulumi-gitlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_gitlab-6.9.0a1708063247.tar.gz tmp/pulumi_gitlab-6.9.0a1708340471.tar.gz --markdown 20240407/p/pulumi-gitlab/6.9.0a1708063247-6.9.0a1708340471/diff.md --exclude *.pyd
+[2024-04-07 08:02:40] INFO root fetch - processPackages [nonebot-plugin-blocker]: Downloading https://files.pythonhosted.org/packages/0a/80/1ff1d72d1272646d8a7e2332f9da892d4a2e637b13c9904b21942778ba47/nonebot_plugin_blocker-0.4.7.tar.gz
+[2024-04-07 08:02:41] WARNING root fetch - processPackages [nonebot-plugin-blocker]: Timeout reached during download
+[2024-04-07 08:02:41] INFO root fetch - processPackages [nonebot-plugin-blocker]: executing diffoscope
+[2024-04-07 08:02:41] INFO root fetch - processPackages [nonebot-plugin-blocker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_blocker-0.4.6.tar.gz tmp/nonebot_plugin_blocker-0.4.7.tar.gz --markdown 20240407/n/nonebot-plugin-blocker/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2024-04-07 08:02:41] INFO root fetch - processPackages [nonebot-plugin-blocker]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_blocker-0.4.6.tar.gz]
+[2024-04-07 08:02:41] INFO root fetch - processPackages [nonebot-plugin-blocker]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_blocker-0.4.7.tar.gz]
+[2024-04-07 08:02:41] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-blocker]: success
+[2024-04-07 08:02:42] INFO root fetch - processPackages [pulumi-gitlab]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_gitlab-6.9.0a1708063247.tar.gz]
+[2024-04-07 08:02:42] INFO root fetch - processPackages [pulumi-gitlab]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_gitlab-6.9.0a1708340471.tar.gz]
+[2024-04-07 08:02:42] INFO root fetch - main [MainThread]: End processing [pulumi-gitlab]: success
+[2024-04-07 08:02:42] INFO root fetch - main [MainThread]: Store serial: [22653866]
