@@ -11358,3 +11358,53 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:09:35] INFO root fetch - processPackages [dlib-bin]: Remove: archive file [/home/abi/fetcher/tmp/dlib_bin-19.24.2.post1-cp311-cp311-musllinux_1_1_aarch64.whl.zip]
 [2024-04-07 14:09:35] INFO root fetch - main [MainThread]: End processing [dlib-bin]: success
 [2024-04-07 14:09:35] INFO root fetch - main [MainThread]: Store serial: [22655983]
+[2024-04-07 14:11:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655983]
+[2024-04-07 14:11:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 14:11:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hipisejm
+[2024-04-07 14:11:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torcheval-nightly
+[2024-04-07 14:11:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyprecip
+[2024-04-07 14:11:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: matplotlib-visual
+[2024-04-07 14:11:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gmalglib
+[2024-04-07 14:11:44] INFO root fetch - processPackages [matplotlib-visual]: New version: [0.8] Old Version: [0.7.1]
+[2024-04-07 14:11:44] INFO root fetch - processPackages [matplotlib-visual]: Downloading https://files.pythonhosted.org/packages/a6/05/6667605ffe048d23ccf98edb460828734cbaa14df975c8fb8f3bc327cdd3/matplotlib_visual-0.7.1.tar.gz
+[2024-04-07 14:11:44] WARNING root fetch - processPackages [pyprecip]: Skipping, unable to determine old version
+[2024-04-07 14:11:44] INFO root fetch - main [MainThread]: End processing [pyprecip] error
+[2024-04-07 14:11:44] INFO root fetch - processPackages [hipisejm]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-07 14:11:44] INFO root fetch - processPackages [torcheval-nightly]: New version: [2024.4.7] Old Version: [2024.4.6]
+[2024-04-07 14:11:44] INFO root fetch - processPackages [gmalglib]: New version: [0.3.1] Old Version: [0.2.0]
+[2024-04-07 14:11:44] WARNING root fetch - processPackages [matplotlib-visual]: Timeout reached during download
+[2024-04-07 14:11:44] INFO root fetch - processPackages [hipisejm]: Downloading https://files.pythonhosted.org/packages/81/48/b4f297fd353eeae85357b5f72ef0e26960a3f6099ebd12a83937c0ebb9bc/hipisejm-0.2.1.tar.gz
+[2024-04-07 14:11:44] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/78/17/b2abbbbdc6bf41f888d66c06eb24c0b9912c5c19e6dddc53d05d1cf85a63/torcheval-nightly-2024.4.6.tar.gz
+[2024-04-07 14:11:44] INFO root fetch - processPackages [matplotlib-visual]: Downloading https://files.pythonhosted.org/packages/62/be/b715a5e8bb27076d22d487f8e647c0d11208d0fa95b6abe5facb5900d290/matplotlib_visual-0.8.tar.gz
+[2024-04-07 14:11:44] INFO root fetch - processPackages [gmalglib]: Downloading https://files.pythonhosted.org/packages/6f/2b/238053d576f7137def4607e54ed663f60c9163ebd1d754280777e768992b/gmalglib-0.2.0.tar.gz
+[2024-04-07 14:11:44] WARNING root fetch - processPackages [torcheval-nightly]: Timeout reached during download
+[2024-04-07 14:11:44] WARNING root fetch - processPackages [hipisejm]: Timeout reached during download
+[2024-04-07 14:11:45] WARNING root fetch - processPackages [matplotlib-visual]: Timeout reached during download
+[2024-04-07 14:11:45] INFO root fetch - processPackages [matplotlib-visual]: executing diffoscope
+[2024-04-07 14:11:45] INFO root fetch - processPackages [matplotlib-visual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matplotlib_visual-0.7.1.tar.gz tmp/matplotlib_visual-0.8.tar.gz --markdown 20240407/m/matplotlib-visual/0.7.1-0.8/diff.md --exclude *.pyd
+[2024-04-07 14:11:45] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/57/67/94d1c9136757951123c904c2404daf85b825874d453ecfff12776d5e1c24/torcheval-nightly-2024.4.7.tar.gz
+[2024-04-07 14:11:45] INFO root fetch - processPackages [hipisejm]: Downloading https://files.pythonhosted.org/packages/31/b1/eaec9f38fcf2e0f4bf4b9cd620b493204f5a0022cdc7cf900774676a9366/hipisejm-0.2.2.tar.gz
+[2024-04-07 14:11:45] WARNING root fetch - processPackages [hipisejm]: Timeout reached during download
+[2024-04-07 14:11:45] INFO root fetch - processPackages [hipisejm]: executing diffoscope
+[2024-04-07 14:11:45] INFO root fetch - processPackages [hipisejm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hipisejm-0.2.1.tar.gz tmp/hipisejm-0.2.2.tar.gz --markdown 20240407/h/hipisejm/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2024-04-07 14:11:45] WARNING root fetch - processPackages [torcheval-nightly]: Timeout reached during download
+[2024-04-07 14:11:45] INFO root fetch - processPackages [torcheval-nightly]: executing diffoscope
+[2024-04-07 14:11:45] INFO root fetch - processPackages [torcheval-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torcheval-nightly-2024.4.6.tar.gz tmp/torcheval-nightly-2024.4.7.tar.gz --markdown 20240407/t/torcheval-nightly/2024.4.6-2024.4.7/diff.md --exclude *.pyd
+[2024-04-07 14:11:45] WARNING root fetch - processPackages [gmalglib]: Timeout reached during download
+[2024-04-07 14:11:45] INFO root fetch - processPackages [gmalglib]: Downloading https://files.pythonhosted.org/packages/4d/11/09eb8d14ae394c0e6298b13c37ac8c594d1844705df9da972586bd833dce/gmalglib-0.3.1.tar.gz
+[2024-04-07 14:11:45] INFO root fetch - processPackages [matplotlib-visual]: Remove: archive file [/home/abi/fetcher/tmp/matplotlib_visual-0.7.1.tar.gz]
+[2024-04-07 14:11:45] INFO root fetch - processPackages [matplotlib-visual]: Remove: archive file [/home/abi/fetcher/tmp/matplotlib_visual-0.8.tar.gz]
+[2024-04-07 14:11:45] INFO root fetch - main [MainThread]: End processing [matplotlib-visual]: success
+[2024-04-07 14:11:45] WARNING root fetch - processPackages [gmalglib]: Timeout reached during download
+[2024-04-07 14:11:45] INFO root fetch - processPackages [gmalglib]: executing diffoscope
+[2024-04-07 14:11:45] INFO root fetch - processPackages [gmalglib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmalglib-0.2.0.tar.gz tmp/gmalglib-0.3.1.tar.gz --markdown 20240407/g/gmalglib/0.2.0-0.3.1/diff.md --exclude *.pyd
+[2024-04-07 14:11:45] INFO root fetch - processPackages [hipisejm]: Remove: archive file [/home/abi/fetcher/tmp/hipisejm-0.2.1.tar.gz]
+[2024-04-07 14:11:45] INFO root fetch - processPackages [hipisejm]: Remove: archive file [/home/abi/fetcher/tmp/hipisejm-0.2.2.tar.gz]
+[2024-04-07 14:11:45] INFO root fetch - main [MainThread]: End processing [hipisejm]: success
+[2024-04-07 14:11:46] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval-nightly-2024.4.6.tar.gz]
+[2024-04-07 14:11:46] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval-nightly-2024.4.7.tar.gz]
+[2024-04-07 14:11:46] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
+[2024-04-07 14:11:46] INFO root fetch - processPackages [gmalglib]: Remove: archive file [/home/abi/fetcher/tmp/gmalglib-0.2.0.tar.gz]
+[2024-04-07 14:11:46] INFO root fetch - processPackages [gmalglib]: Remove: archive file [/home/abi/fetcher/tmp/gmalglib-0.3.1.tar.gz]
+[2024-04-07 14:11:46] INFO root fetch - main [MainThread]: End processing [gmalglib]: success
+[2024-04-07 14:11:46] INFO root fetch - main [MainThread]: Store serial: [22656027]
