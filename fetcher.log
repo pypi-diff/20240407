@@ -7458,3 +7458,17 @@
 [2024-04-07 09:41:09] WARNING root fetch - processPackages [azure-mgmt-migrationdiscoverysap]: Skipping, unable to determine old version
 [2024-04-07 09:41:09] INFO root fetch - main [MainThread]: End processing [azure-mgmt-migrationdiscoverysap] error
 [2024-04-07 09:41:09] INFO root fetch - main [MainThread]: Store serial: [22654445]
+[2024-04-07 09:43:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654445]
+[2024-04-07 09:43:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 09:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scButterfly
+[2024-04-07 09:43:17] INFO root fetch - processPackages [scButterfly]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-07 09:43:18] INFO root fetch - processPackages [scButterfly]: Downloading https://files.pythonhosted.org/packages/cc/2f/da242b4618643ca907accf5584d91d5c4b87e25fdc92029529ae2f837293/scButterfly-0.0.7.tar.gz
+[2024-04-07 09:43:18] WARNING root fetch - processPackages [scButterfly]: Timeout reached during download
+[2024-04-07 09:43:18] INFO root fetch - processPackages [scButterfly]: Downloading https://files.pythonhosted.org/packages/75/18/1f769c39f1b5b781d04e84476c17910882e4ddc7ad8e489908bf09fb5067/scButterfly-0.0.8.tar.gz
+[2024-04-07 09:43:18] WARNING root fetch - processPackages [scButterfly]: Timeout reached during download
+[2024-04-07 09:43:18] INFO root fetch - processPackages [scButterfly]: executing diffoscope
+[2024-04-07 09:43:18] INFO root fetch - processPackages [scButterfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scButterfly-0.0.7.tar.gz tmp/scButterfly-0.0.8.tar.gz --markdown 20240407/s/scButterfly/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-07 09:43:19] INFO root fetch - processPackages [scButterfly]: Remove: archive file [/home/abi/fetcher/tmp/scButterfly-0.0.7.tar.gz]
+[2024-04-07 09:43:19] INFO root fetch - processPackages [scButterfly]: Remove: archive file [/home/abi/fetcher/tmp/scButterfly-0.0.8.tar.gz]
+[2024-04-07 09:43:19] INFO root fetch - main [MainThread]: End processing [scButterfly]: success
+[2024-04-07 09:43:19] INFO root fetch - main [MainThread]: Store serial: [22654449]
