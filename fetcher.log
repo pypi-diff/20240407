@@ -7515,3 +7515,31 @@
 [2024-04-07 09:49:49] WARNING root fetch - processPackages [hqxtinyai]: Skipping, unable to determine old version
 [2024-04-07 09:49:49] INFO root fetch - main [MainThread]: End processing [hqxtinyai] error
 [2024-04-07 09:49:49] INFO root fetch - main [MainThread]: Store serial: [22654476]
+[2024-04-07 09:51:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654476]
+[2024-04-07 09:51:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 09:51:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: akshare
+[2024-04-07 09:51:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: project-async
+[2024-04-07 09:51:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unicodedata-reader
+[2024-04-07 09:51:57] INFO root fetch - processPackages [unicodedata-reader]: New version: [1.3.0] Old Version: [1.2.0]
+[2024-04-07 09:51:57] INFO root fetch - processPackages [unicodedata-reader]: Downloading https://files.pythonhosted.org/packages/59/2a/52a6ffccdff45d2b626f3ebadd912bc367724bf7765cc551f5e6af8c6a4f/unicodedata_reader-1.2.0.tar.gz
+[2024-04-07 09:51:57] WARNING root fetch - processPackages [project-async]: Skipping, unable to determine old version
+[2024-04-07 09:51:57] INFO root fetch - main [MainThread]: End processing [project-async] error
+[2024-04-07 09:51:57] INFO root fetch - processPackages [akshare]: New version: [1.9.99] Old Version: [1.9.98]
+[2024-04-07 09:51:57] WARNING root fetch - processPackages [unicodedata-reader]: Timeout reached during download
+[2024-04-07 09:51:58] INFO root fetch - processPackages [unicodedata-reader]: Downloading https://files.pythonhosted.org/packages/58/97/14a023e16a3cace34f044b609c7238cfb11da57c643a8f318ae529701929/unicodedata_reader-1.3.0.tar.gz
+[2024-04-07 09:51:58] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/ec/a4/f1c21d8fbb349e15f0bf76d32a496003bcff9b66215f81b940337a510e36/akshare-1.9.98.tar.gz
+[2024-04-07 09:51:58] WARNING root fetch - processPackages [unicodedata-reader]: Timeout reached during download
+[2024-04-07 09:51:58] INFO root fetch - processPackages [unicodedata-reader]: executing diffoscope
+[2024-04-07 09:51:58] INFO root fetch - processPackages [unicodedata-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unicodedata_reader-1.2.0.tar.gz tmp/unicodedata_reader-1.3.0.tar.gz --markdown 20240407/u/unicodedata-reader/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2024-04-07 09:51:58] WARNING root fetch - processPackages [akshare]: Timeout reached during download
+[2024-04-07 09:51:58] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/53/e8/f58e96016752567ca09f3f67abdc7e935d0afa919aded528d50590ed9170/akshare-1.9.99.tar.gz
+[2024-04-07 09:51:58] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-1.2.0.tar.gz]
+[2024-04-07 09:51:58] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-1.3.0.tar.gz]
+[2024-04-07 09:51:58] INFO root fetch - main [MainThread]: End processing [unicodedata-reader]: success
+[2024-04-07 09:51:58] WARNING root fetch - processPackages [akshare]: Timeout reached during download
+[2024-04-07 09:51:58] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2024-04-07 09:51:58] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.98.tar.gz tmp/akshare-1.9.99.tar.gz --markdown 20240407/a/akshare/1.9.98-1.9.99/diff.md --exclude *.pyd
+[2024-04-07 09:52:01] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.98.tar.gz]
+[2024-04-07 09:52:01] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
+[2024-04-07 09:52:01] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2024-04-07 09:52:01] INFO root fetch - main [MainThread]: Store serial: [22654487]
