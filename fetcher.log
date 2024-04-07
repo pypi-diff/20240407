@@ -20789,3 +20789,55 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:37:54] INFO root fetch - processPackages [geoformat]: Remove: archive file [/home/abi/fetcher/tmp/geoformat-20240407.tar.gz]
 [2024-04-07 23:37:54] INFO root fetch - main [MainThread]: End processing [geoformat]: success
 [2024-04-07 23:37:54] INFO root fetch - main [MainThread]: Store serial: [22659538]
+[2024-04-07 23:39:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659538]
+[2024-04-07 23:40:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 23:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-criteria
+[2024-04-07 23:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: highcharts-maps
+[2024-04-07 23:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: craftax
+[2024-04-07 23:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: astromcad
+[2024-04-07 23:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jafgen
+[2024-04-07 23:40:03] INFO root fetch - processPackages [astromcad]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-07 23:40:03] INFO root fetch - processPackages [highcharts-maps]: New version: [1.6.0] Old Version: [1.5.1]
+[2024-04-07 23:40:04] INFO root fetch - processPackages [python-criteria]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-07 23:40:04] INFO root fetch - processPackages [jafgen]: New version: [0.4.6] Old Version: [0.3.1]
+[2024-04-07 23:40:04] INFO root fetch - processPackages [craftax]: New version: [1.3.0] Old Version: [1.2.0]
+[2024-04-07 23:40:04] INFO root fetch - processPackages [highcharts-maps]: Downloading https://files.pythonhosted.org/packages/82/b3/9bd9b910b912750a10c97e7e567a1e05896a5c0dd76e9bd28f92ca5622ee/highcharts_maps-1.5.1.tar.gz
+[2024-04-07 23:40:04] INFO root fetch - processPackages [python-criteria]: Downloading https://files.pythonhosted.org/packages/d0/26/310b4808f2adc124062dae6f84031a1877b2aaae86556538a3af41f593e9/python-criteria-0.3.0.tar.gz
+[2024-04-07 23:40:04] INFO root fetch - processPackages [astromcad]: Downloading https://files.pythonhosted.org/packages/f9/56/00af74572fdf33fa06a0685c54066d2a22868b17075e3be80b29bdaafb52/astromcad-0.1.7.tar.gz
+[2024-04-07 23:40:04] WARNING root fetch - processPackages [highcharts-maps]: Skipping package: exceeds size limit 11950410>=10485760
+[2024-04-07 23:40:04] INFO root fetch - main [MainThread]: End processing [highcharts-maps] error
+[2024-04-07 23:40:04] WARNING root fetch - processPackages [python-criteria]: Timeout reached during download
+[2024-04-07 23:40:04] INFO root fetch - processPackages [jafgen]: Downloading https://files.pythonhosted.org/packages/64/c4/00cb3fdb46a49f70d6a7d5adf894a380a19ebc7e456ec8d90a8a63e50b59/jafgen-0.3.1.tar.gz
+[2024-04-07 23:40:04] INFO root fetch - processPackages [craftax]: Downloading https://files.pythonhosted.org/packages/2b/54/9befefac3fd31163ed071f933131e23f331b7c84dabbdf9d1aaa2403ed7e/craftax-1.2.0.tar.gz
+[2024-04-07 23:40:04] INFO root fetch - processPackages [python-criteria]: Downloading https://files.pythonhosted.org/packages/13/87/cb779f32b2cb2982a533899bb5541f27a0909a025842c0e5b434e0d17f45/python-criteria-0.3.1.tar.gz
+[2024-04-07 23:40:04] WARNING root fetch - processPackages [jafgen]: Timeout reached during download
+[2024-04-07 23:40:04] WARNING root fetch - processPackages [python-criteria]: Timeout reached during download
+[2024-04-07 23:40:04] INFO root fetch - processPackages [python-criteria]: executing diffoscope
+[2024-04-07 23:40:04] INFO root fetch - processPackages [python-criteria]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-criteria-0.3.0.tar.gz tmp/python-criteria-0.3.1.tar.gz --markdown 20240407/p/python-criteria/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2024-04-07 23:40:04] INFO root fetch - processPackages [jafgen]: Downloading https://files.pythonhosted.org/packages/46/22/98dec1c130155ed3d16912e7e12421eff1489506bc72f8a0b443f5fa370c/jafgen-0.4.6.tar.gz
+[2024-04-07 23:40:04] WARNING root fetch - processPackages [astromcad]: Timeout reached during download
+[2024-04-07 23:40:04] WARNING root fetch - processPackages [jafgen]: Timeout reached during download
+[2024-04-07 23:40:04] INFO root fetch - processPackages [jafgen]: executing diffoscope
+[2024-04-07 23:40:04] INFO root fetch - processPackages [jafgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jafgen-0.3.1.tar.gz tmp/jafgen-0.4.6.tar.gz --markdown 20240407/j/jafgen/0.3.1-0.4.6/diff.md --exclude *.pyd
+[2024-04-07 23:40:04] INFO root fetch - processPackages [astromcad]: Downloading https://files.pythonhosted.org/packages/f1/84/837f37d5181120426762c48729579e5e4d38822d417d63d77f0c8f67db8c/astromcad-0.1.8.tar.gz
+[2024-04-07 23:40:04] WARNING root fetch - processPackages [craftax]: Timeout reached during download
+[2024-04-07 23:40:04] INFO root fetch - processPackages [python-criteria]: Remove: archive file [/home/abi/fetcher/tmp/python-criteria-0.3.0.tar.gz]
+[2024-04-07 23:40:04] INFO root fetch - processPackages [python-criteria]: Remove: archive file [/home/abi/fetcher/tmp/python-criteria-0.3.1.tar.gz]
+[2024-04-07 23:40:04] INFO root fetch - main [MainThread]: End processing [python-criteria]: success
+[2024-04-07 23:40:05] INFO root fetch - processPackages [craftax]: Downloading https://files.pythonhosted.org/packages/fa/65/e90d3c296e7101374c68b21d1e334ffd6077c482c40759fa9658167d87c1/craftax-1.3.0.tar.gz
+[2024-04-07 23:40:05] WARNING root fetch - processPackages [astromcad]: Timeout reached during download
+[2024-04-07 23:40:05] INFO root fetch - processPackages [astromcad]: executing diffoscope
+[2024-04-07 23:40:05] INFO root fetch - processPackages [astromcad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astromcad-0.1.7.tar.gz tmp/astromcad-0.1.8.tar.gz --markdown 20240407/a/astromcad/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2024-04-07 23:40:05] INFO root fetch - processPackages [jafgen]: Remove: archive file [/home/abi/fetcher/tmp/jafgen-0.3.1.tar.gz]
+[2024-04-07 23:40:05] INFO root fetch - processPackages [jafgen]: Remove: archive file [/home/abi/fetcher/tmp/jafgen-0.4.6.tar.gz]
+[2024-04-07 23:40:05] INFO root fetch - main [MainThread]: End processing [jafgen]: success
+[2024-04-07 23:40:05] WARNING root fetch - processPackages [craftax]: Timeout reached during download
+[2024-04-07 23:40:05] INFO root fetch - processPackages [craftax]: executing diffoscope
+[2024-04-07 23:40:05] INFO root fetch - processPackages [craftax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/craftax-1.2.0.tar.gz tmp/craftax-1.3.0.tar.gz --markdown 20240407/c/craftax/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2024-04-07 23:40:06] INFO root fetch - processPackages [astromcad]: Remove: archive file [/home/abi/fetcher/tmp/astromcad-0.1.7.tar.gz]
+[2024-04-07 23:40:06] INFO root fetch - processPackages [astromcad]: Remove: archive file [/home/abi/fetcher/tmp/astromcad-0.1.8.tar.gz]
+[2024-04-07 23:40:06] INFO root fetch - main [MainThread]: End processing [astromcad]: success
+[2024-04-07 23:40:06] INFO root fetch - processPackages [craftax]: Remove: archive file [/home/abi/fetcher/tmp/craftax-1.2.0.tar.gz]
+[2024-04-07 23:40:06] INFO root fetch - processPackages [craftax]: Remove: archive file [/home/abi/fetcher/tmp/craftax-1.3.0.tar.gz]
+[2024-04-07 23:40:06] INFO root fetch - main [MainThread]: End processing [craftax]: success
+[2024-04-07 23:40:06] INFO root fetch - main [MainThread]: Store serial: [22659550]
