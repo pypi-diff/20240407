@@ -1285,3 +1285,64 @@
 [2024-04-07 02:03:39] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240406.tar.gz]
 [2024-04-07 02:03:39] INFO root fetch - main [MainThread]: End processing [onnxscript]: success
 [2024-04-07 02:03:39] INFO root fetch - main [MainThread]: Store serial: [22651956]
+[2024-04-07 02:05:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651956]
+[2024-04-07 02:05:49] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 02:05:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: csv_test_package
+[2024-04-07 02:05:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mct-nightly
+[2024-04-07 02:05:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chainlo
+[2024-04-07 02:05:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jaxkern-nightly
+[2024-04-07 02:05:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aws-packages
+[2024-04-07 02:05:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: asifjamali
+[2024-04-07 02:05:49] INFO root fetch - processPackages [asifjamali]: New version: [0.7.1] Old Version: [0.6.9]
+[2024-04-07 02:05:49] INFO root fetch - processPackages [chainlo]: New version: [1.1.414] Old Version: [1.1.413]
+[2024-04-07 02:05:49] WARNING root fetch - processPackages [csv_test_package]: Skipping, unable to determine old version
+[2024-04-07 02:05:49] INFO root fetch - main [MainThread]: End processing [csv_test_package] error
+[2024-04-07 02:05:49] INFO root fetch - processPackages [mct-nightly]: New version: [2.0.0.20240406.415] Old Version: [2.0.0.20240405.428]
+[2024-04-07 02:05:49] INFO root fetch - processPackages [asifjamali]: Downloading https://files.pythonhosted.org/packages/a3/64/6df21eca183a96c5c4ba61d378e772cae8bbc20860598e182165b851155e/asifjamali-0.6.9.tar.gz
+[2024-04-07 02:05:49] INFO root fetch - processPackages [chainlo]: Downloading https://files.pythonhosted.org/packages/33/dc/2f4550d25f4e1a296d2327798c089892edca9c448bc04cdec31ff3fedcea/chainlo-1.1.413.tar.gz
+[2024-04-07 02:05:49] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/da/02/094668e394a2c69fb856f694682efc18ab6e6479bff321e074fb696e5a01/mct-nightly-2.0.0.20240405.428.tar.gz
+[2024-04-07 02:05:49] INFO root fetch - processPackages [aws-packages]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-07 02:05:49] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2024-04-07 02:05:49] WARNING root fetch - processPackages [asifjamali]: Timeout reached during download
+[2024-04-07 02:05:49] WARNING root fetch - processPackages [mct-nightly]: Timeout reached during download
+[2024-04-07 02:05:49] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/76/55/ef13835e3e8e1570e91b3bc7235725e556f183e3222d5e7e66ac8de58ba0/jaxkern-nightly-0.dev20221221.tar.gz
+[2024-04-07 02:05:50] INFO root fetch - processPackages [asifjamali]: Downloading https://files.pythonhosted.org/packages/20/27/cc109e6f1a6bbf0c1b7fe8d33f85701f80bc22b4e7e5a482e3b4aa1adcf4/asifjamali-0.7.1.tar.gz
+[2024-04-07 02:05:50] INFO root fetch - processPackages [aws-packages]: Downloading https://files.pythonhosted.org/packages/e9/f1/21309fb7b31d8adc2dade345bdd4cd3458e0462223f7777a4187a27ca657/aws_packages-0.0.7.tar.gz
+[2024-04-07 02:05:50] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/20/00/103b399ede16d38170a6d52df1229713fc48fbc488a0801319b434c5991c/mct-nightly-2.0.0.20240406.415.tar.gz
+[2024-04-07 02:05:50] WARNING root fetch - processPackages [chainlo]: Timeout reached during download
+[2024-04-07 02:05:50] WARNING root fetch - processPackages [asifjamali]: Timeout reached during download
+[2024-04-07 02:05:50] INFO root fetch - processPackages [asifjamali]: executing diffoscope
+[2024-04-07 02:05:50] INFO root fetch - processPackages [asifjamali]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asifjamali-0.6.9.tar.gz tmp/asifjamali-0.7.1.tar.gz --markdown 20240407/a/asifjamali/0.6.9-0.7.1/diff.md --exclude *.pyd
+[2024-04-07 02:05:50] WARNING root fetch - processPackages [mct-nightly]: Timeout reached during download
+[2024-04-07 02:05:50] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2024-04-07 02:05:50] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-2.0.0.20240405.428.tar.gz tmp/mct-nightly-2.0.0.20240406.415.tar.gz --markdown 20240407/m/mct-nightly/2.0.0.20240405.428-2.0.0.20240406.415/diff.md --exclude *.pyd
+[2024-04-07 02:05:50] WARNING root fetch - processPackages [aws-packages]: Timeout reached during download
+[2024-04-07 02:05:50] INFO root fetch - processPackages [chainlo]: Downloading https://files.pythonhosted.org/packages/41/1e/00eae2d6e0b42382c4843491983a77bb93e6d72e8e6899e9483576343ca0/chainlo-1.1.414.tar.gz
+[2024-04-07 02:05:50] WARNING root fetch - processPackages [chainlo]: Timeout reached during download
+[2024-04-07 02:05:50] INFO root fetch - processPackages [aws-packages]: Downloading https://files.pythonhosted.org/packages/39/db/f063303476564e328b90e567f0d5f50ba07df534925879425a977595f96c/aws_packages-0.0.8-cp37-cp37m-manylinux_2_17_s390x.manylinux2014_s390x.whl
+[2024-04-07 02:05:50] INFO root fetch - processPackages [chainlo]: executing diffoscope
+[2024-04-07 02:05:50] INFO root fetch - processPackages [chainlo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainlo-1.1.413.tar.gz tmp/chainlo-1.1.414.tar.gz --markdown 20240407/c/chainlo/1.1.413-1.1.414/diff.md --exclude *.pyd
+[2024-04-07 02:05:50] INFO root fetch - processPackages [asifjamali]: Remove: archive file [/home/abi/fetcher/tmp/asifjamali-0.6.9.tar.gz]
+[2024-04-07 02:05:50] INFO root fetch - processPackages [asifjamali]: Remove: archive file [/home/abi/fetcher/tmp/asifjamali-0.7.1.tar.gz]
+[2024-04-07 02:05:50] INFO root fetch - main [MainThread]: End processing [asifjamali]: success
+[2024-04-07 02:05:51] WARNING root fetch - processPackages [jaxkern-nightly]: Timeout reached during download
+[2024-04-07 02:05:51] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/ea/b1/fbac44f07e48f8800aada2de8e9114775baf3f3d605ee80382db18a1c728/jaxkern-nightly-0.dev20221222.tar.gz
+[2024-04-07 02:05:51] WARNING root fetch - processPackages [jaxkern-nightly]: Timeout reached during download
+[2024-04-07 02:05:51] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2024-04-07 02:05:51] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20240407/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2024-04-07 02:05:51] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221221.tar.gz]
+[2024-04-07 02:05:51] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221222.tar.gz]
+[2024-04-07 02:05:51] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2024-04-07 02:05:52] WARNING root fetch - processPackages [aws-packages]: Timeout reached during download
+[2024-04-07 02:05:52] INFO root fetch - processPackages [aws-packages]: executing diffoscope
+[2024-04-07 02:05:52] INFO root fetch - processPackages [aws-packages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_packages-0.0.7.tar.gz tmp/aws_packages-0.0.8-cp37-cp37m-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip --markdown 20240407/a/aws-packages/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-07 02:05:52] INFO root fetch - processPackages [chainlo]: Remove: archive file [/home/abi/fetcher/tmp/chainlo-1.1.413.tar.gz]
+[2024-04-07 02:05:52] INFO root fetch - processPackages [chainlo]: Remove: archive file [/home/abi/fetcher/tmp/chainlo-1.1.414.tar.gz]
+[2024-04-07 02:05:52] INFO root fetch - main [MainThread]: End processing [chainlo]: success
+[2024-04-07 02:05:52] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240405.428.tar.gz]
+[2024-04-07 02:05:52] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240406.415.tar.gz]
+[2024-04-07 02:05:52] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2024-04-07 02:05:52] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.7.tar.gz]
+[2024-04-07 02:05:52] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.8-cp37-cp37m-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip]
+[2024-04-07 02:05:52] INFO root fetch - main [MainThread]: End processing [aws-packages]: success
+[2024-04-07 02:05:52] INFO root fetch - main [MainThread]: Store serial: [22652002]
