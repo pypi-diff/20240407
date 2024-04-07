@@ -12983,3 +12983,33 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:56:39] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.0.8.tar.gz]
 [2024-04-07 15:56:39] INFO root fetch - main [MainThread]: End processing [sourcesage]: success
 [2024-04-07 15:56:39] INFO root fetch - main [MainThread]: Store serial: [22656626]
+[2024-04-07 15:58:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656626]
+[2024-04-07 15:58:47] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 16:00:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656631]
+[2024-04-07 16:00:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 16:00:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gskChat
+[2024-04-07 16:00:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: robust-extraction
+[2024-04-07 16:00:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: function2widgets
+[2024-04-07 16:00:52] WARNING root fetch - processPackages [robust-extraction]: Skipping, unable to determine old version
+[2024-04-07 16:00:52] INFO root fetch - processPackages [function2widgets]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-04-07 16:00:52] INFO root fetch - main [MainThread]: End processing [robust-extraction] error
+[2024-04-07 16:00:53] INFO root fetch - processPackages [function2widgets]: Downloading https://files.pythonhosted.org/packages/8d/1f/9c80cc0aab57113a16bdbcc707f880482de6978e247d641da138c8c8c73d/function2widgets-0.6.8.tar.gz
+[2024-04-07 16:00:53] INFO root fetch - processPackages [gskChat]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-07 16:00:53] WARNING root fetch - processPackages [function2widgets]: Timeout reached during download
+[2024-04-07 16:00:53] INFO root fetch - processPackages [gskChat]: Downloading https://files.pythonhosted.org/packages/b7/b5/58a524491105e2968994a1c76dc471aa240493f56774d4ea16cc63062417/gskChat-1.0.8.tar.gz
+[2024-04-07 16:00:53] INFO root fetch - processPackages [function2widgets]: Downloading https://files.pythonhosted.org/packages/33/ed/124419d49f595a1f7fda6ac265ce6834078b604e525ad52a5c3168e69ad1/function2widgets-0.6.9.tar.gz
+[2024-04-07 16:00:53] WARNING root fetch - processPackages [function2widgets]: Timeout reached during download
+[2024-04-07 16:00:53] INFO root fetch - processPackages [function2widgets]: executing diffoscope
+[2024-04-07 16:00:53] INFO root fetch - processPackages [function2widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/function2widgets-0.6.8.tar.gz tmp/function2widgets-0.6.9.tar.gz --markdown 20240407/f/function2widgets/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2024-04-07 16:00:53] WARNING root fetch - processPackages [gskChat]: Timeout reached during download
+[2024-04-07 16:00:53] INFO root fetch - processPackages [function2widgets]: Remove: archive file [/home/abi/fetcher/tmp/function2widgets-0.6.8.tar.gz]
+[2024-04-07 16:00:53] INFO root fetch - processPackages [function2widgets]: Remove: archive file [/home/abi/fetcher/tmp/function2widgets-0.6.9.tar.gz]
+[2024-04-07 16:00:53] INFO root fetch - main [MainThread]: End processing [function2widgets]: success
+[2024-04-07 16:00:53] INFO root fetch - processPackages [gskChat]: Downloading https://files.pythonhosted.org/packages/be/4d/465e06bc2ed1808063d3d4c3f6a799ec2e9c94ccf046567e5cfcef395f54/gskChat-1.0.9.tar.gz
+[2024-04-07 16:00:54] WARNING root fetch - processPackages [gskChat]: Timeout reached during download
+[2024-04-07 16:00:54] INFO root fetch - processPackages [gskChat]: executing diffoscope
+[2024-04-07 16:00:54] INFO root fetch - processPackages [gskChat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gskChat-1.0.8.tar.gz tmp/gskChat-1.0.9.tar.gz --markdown 20240407/g/gskChat/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-07 16:00:56] INFO root fetch - processPackages [gskChat]: Remove: archive file [/home/abi/fetcher/tmp/gskChat-1.0.8.tar.gz]
+[2024-04-07 16:00:56] INFO root fetch - processPackages [gskChat]: Remove: archive file [/home/abi/fetcher/tmp/gskChat-1.0.9.tar.gz]
+[2024-04-07 16:00:56] INFO root fetch - main [MainThread]: End processing [gskChat]: success
+[2024-04-07 16:00:56] INFO root fetch - main [MainThread]: Store serial: [22656639]
