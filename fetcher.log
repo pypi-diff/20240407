@@ -8178,3 +8178,23 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 10:35:28] INFO root fetch - processPackages [dmjone]: Remove: archive file [/home/abi/fetcher/tmp/dmjone-0.1.5.tar.gz]
 [2024-04-07 10:35:28] INFO root fetch - main [MainThread]: End processing [dmjone]: success
 [2024-04-07 10:35:28] INFO root fetch - main [MainThread]: Store serial: [22654754]
+[2024-04-07 10:37:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654754]
+[2024-04-07 10:37:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 10:37:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: feishu-logging-handler
+[2024-04-07 10:37:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moby-distribution
+[2024-04-07 10:37:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: magicalapi
+[2024-04-07 10:37:37] INFO root fetch - processPackages [moby-distribution]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-04-07 10:37:37] INFO root fetch - processPackages [moby-distribution]: Downloading https://files.pythonhosted.org/packages/52/96/c3da4dcf4ba6d1f8914ce89227fc1d2d87f6fc194e41a8b6443e3fdbf29f/moby_distribution-0.7.1.tar.gz
+[2024-04-07 10:37:37] WARNING root fetch - processPackages [feishu-logging-handler]: Skipping, unable to determine old version
+[2024-04-07 10:37:37] INFO root fetch - main [MainThread]: End processing [feishu-logging-handler] error
+[2024-04-07 10:37:37] WARNING root fetch - processPackages [magicalapi]: Skipping, unable to determine old version
+[2024-04-07 10:37:37] INFO root fetch - main [MainThread]: End processing [magicalapi] error
+[2024-04-07 10:37:37] WARNING root fetch - processPackages [moby-distribution]: Timeout reached during download
+[2024-04-07 10:37:37] INFO root fetch - processPackages [moby-distribution]: Downloading https://files.pythonhosted.org/packages/2d/b8/ada0337fc57438af1fab53925badad4131be5ff7cf4a9719e52e175adca2/moby_distribution-0.7.2.tar.gz
+[2024-04-07 10:37:37] WARNING root fetch - processPackages [moby-distribution]: Timeout reached during download
+[2024-04-07 10:37:37] INFO root fetch - processPackages [moby-distribution]: executing diffoscope
+[2024-04-07 10:37:37] INFO root fetch - processPackages [moby-distribution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moby_distribution-0.7.1.tar.gz tmp/moby_distribution-0.7.2.tar.gz --markdown 20240407/m/moby-distribution/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2024-04-07 10:37:38] INFO root fetch - processPackages [moby-distribution]: Remove: archive file [/home/abi/fetcher/tmp/moby_distribution-0.7.1.tar.gz]
+[2024-04-07 10:37:38] INFO root fetch - processPackages [moby-distribution]: Remove: archive file [/home/abi/fetcher/tmp/moby_distribution-0.7.2.tar.gz]
+[2024-04-07 10:37:38] INFO root fetch - main [MainThread]: End processing [moby-distribution]: success
+[2024-04-07 10:37:38] INFO root fetch - main [MainThread]: Store serial: [22654767]
