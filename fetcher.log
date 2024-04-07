@@ -4879,3 +4879,17 @@
 [2024-04-07 06:56:55] INFO root fetch - processPackages [rrlfe]: Remove: archive file [/home/abi/fetcher/tmp/rrlfe-1.0.tar.gz]
 [2024-04-07 06:56:55] INFO root fetch - main [MainThread]: End processing [rrlfe]: success
 [2024-04-07 06:56:55] INFO root fetch - main [MainThread]: Store serial: [22653518]
+[2024-04-07 06:58:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653518]
+[2024-04-07 06:59:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 06:59:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: runtimepy
+[2024-04-07 06:59:04] INFO root fetch - processPackages [runtimepy]: New version: [3.9.0] Old Version: [3.8.0]
+[2024-04-07 06:59:04] INFO root fetch - processPackages [runtimepy]: Downloading https://files.pythonhosted.org/packages/63/02/163bb0d7b47676fd862a1c25c8e850164a850903845887c47d0412b00a42/runtimepy-3.8.0.tar.gz
+[2024-04-07 06:59:05] WARNING root fetch - processPackages [runtimepy]: Timeout reached during download
+[2024-04-07 06:59:05] INFO root fetch - processPackages [runtimepy]: Downloading https://files.pythonhosted.org/packages/fe/02/d2c8959d2c328b4b2ac43d09a6e22318ade375800b93199ee86a028dd12d/runtimepy-3.9.0.tar.gz
+[2024-04-07 06:59:05] WARNING root fetch - processPackages [runtimepy]: Timeout reached during download
+[2024-04-07 06:59:05] INFO root fetch - processPackages [runtimepy]: executing diffoscope
+[2024-04-07 06:59:05] INFO root fetch - processPackages [runtimepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runtimepy-3.8.0.tar.gz tmp/runtimepy-3.9.0.tar.gz --markdown 20240407/r/runtimepy/3.8.0-3.9.0/diff.md --exclude *.pyd
+[2024-04-07 06:59:06] INFO root fetch - processPackages [runtimepy]: Remove: archive file [/home/abi/fetcher/tmp/runtimepy-3.8.0.tar.gz]
+[2024-04-07 06:59:06] INFO root fetch - processPackages [runtimepy]: Remove: archive file [/home/abi/fetcher/tmp/runtimepy-3.9.0.tar.gz]
+[2024-04-07 06:59:06] INFO root fetch - main [MainThread]: End processing [runtimepy]: success
+[2024-04-07 06:59:06] INFO root fetch - main [MainThread]: Store serial: [22653521]
