@@ -2914,3 +2914,42 @@
 [2024-04-07 04:23:16] INFO root fetch - processPackages [pozo]: Remove: archive file [/home/abi/fetcher/tmp/pozo-0.9.9.tar.gz]
 [2024-04-07 04:23:16] INFO root fetch - main [MainThread]: End processing [pozo]: success
 [2024-04-07 04:23:16] INFO root fetch - main [MainThread]: Store serial: [22652858]
+[2024-04-07 04:25:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652858]
+[2024-04-07 04:25:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 04:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dummies
+[2024-04-07 04:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymer4
+[2024-04-07 04:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quant2
+[2024-04-07 04:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyquocca
+[2024-04-07 04:25:25] INFO root fetch - processPackages [pyquocca]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 04:25:25] WARNING root fetch - processPackages [dummies]: Skipping, unable to determine old version
+[2024-04-07 04:25:25] INFO root fetch - main [MainThread]: End processing [dummies] error
+[2024-04-07 04:25:25] INFO root fetch - processPackages [quant2]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 04:25:25] INFO root fetch - processPackages [pymer4]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-04-07 04:25:25] INFO root fetch - processPackages [quant2]: Downloading https://files.pythonhosted.org/packages/11/bf/4225581d3021d37874804da989897221f25fc6c93fa5f1b07d38fcbf01d3/quant2-0.0.8.tar.gz
+[2024-04-07 04:25:25] INFO root fetch - processPackages [pymer4]: Downloading https://files.pythonhosted.org/packages/89/3e/33ba14453817e2c124c9ca95a90e23f57d663307d37ae5bc05c1635b173b/pymer4-0.8.1.tar.gz
+[2024-04-07 04:25:25] INFO root fetch - processPackages [pyquocca]: Downloading https://files.pythonhosted.org/packages/d3/ee/0df9cc749a20ee73217971a4a8accba6e5ae58832d346d23f9bdf85661bb/pyquocca-0.0.8.tar.gz
+[2024-04-07 04:25:25] WARNING root fetch - processPackages [quant2]: Timeout reached during download
+[2024-04-07 04:25:26] WARNING root fetch - processPackages [pymer4]: Timeout reached during download
+[2024-04-07 04:25:26] WARNING root fetch - processPackages [pyquocca]: Timeout reached during download
+[2024-04-07 04:25:26] INFO root fetch - processPackages [quant2]: Downloading https://files.pythonhosted.org/packages/14/b2/02902adfc8374a2d4e7cf6e11c97319142fb7a2f1565e78bcc91dd0cd825/quant2-0.0.9.tar.gz
+[2024-04-07 04:25:26] INFO root fetch - processPackages [pymer4]: Downloading https://files.pythonhosted.org/packages/d2/98/7c7e844cd57b0a2c641b323f4842b14159997158d069f500ce119ccec6f4/pymer4-0.8.2.tar.gz
+[2024-04-07 04:25:26] INFO root fetch - processPackages [pyquocca]: Downloading https://files.pythonhosted.org/packages/14/91/ed05b4a616e1d9c0b20ad8d5ad80c7c832df545d142d03d9d7c56970298d/pyquocca-0.0.9.tar.gz
+[2024-04-07 04:25:26] WARNING root fetch - processPackages [pymer4]: Timeout reached during download
+[2024-04-07 04:25:26] INFO root fetch - processPackages [pymer4]: executing diffoscope
+[2024-04-07 04:25:26] INFO root fetch - processPackages [pymer4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymer4-0.8.1.tar.gz tmp/pymer4-0.8.2.tar.gz --markdown 20240407/p/pymer4/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2024-04-07 04:25:26] WARNING root fetch - processPackages [quant2]: Timeout reached during download
+[2024-04-07 04:25:26] INFO root fetch - processPackages [quant2]: executing diffoscope
+[2024-04-07 04:25:26] INFO root fetch - processPackages [quant2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quant2-0.0.8.tar.gz tmp/quant2-0.0.9.tar.gz --markdown 20240407/q/quant2/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 04:25:26] WARNING root fetch - processPackages [pyquocca]: Timeout reached during download
+[2024-04-07 04:25:26] INFO root fetch - processPackages [pyquocca]: executing diffoscope
+[2024-04-07 04:25:26] INFO root fetch - processPackages [pyquocca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyquocca-0.0.8.tar.gz tmp/pyquocca-0.0.9.tar.gz --markdown 20240407/p/pyquocca/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 04:25:26] INFO root fetch - processPackages [pymer4]: Remove: archive file [/home/abi/fetcher/tmp/pymer4-0.8.1.tar.gz]
+[2024-04-07 04:25:26] INFO root fetch - processPackages [pymer4]: Remove: archive file [/home/abi/fetcher/tmp/pymer4-0.8.2.tar.gz]
+[2024-04-07 04:25:26] INFO root fetch - main [MainThread]: End processing [pymer4]: success
+[2024-04-07 04:25:26] INFO root fetch - processPackages [quant2]: Remove: archive file [/home/abi/fetcher/tmp/quant2-0.0.8.tar.gz]
+[2024-04-07 04:25:26] INFO root fetch - processPackages [quant2]: Remove: archive file [/home/abi/fetcher/tmp/quant2-0.0.9.tar.gz]
+[2024-04-07 04:25:26] INFO root fetch - main [MainThread]: End processing [quant2]: success
+[2024-04-07 04:25:27] INFO root fetch - processPackages [pyquocca]: Remove: archive file [/home/abi/fetcher/tmp/pyquocca-0.0.8.tar.gz]
+[2024-04-07 04:25:27] INFO root fetch - processPackages [pyquocca]: Remove: archive file [/home/abi/fetcher/tmp/pyquocca-0.0.9.tar.gz]
+[2024-04-07 04:25:27] INFO root fetch - main [MainThread]: End processing [pyquocca]: success
+[2024-04-07 04:25:27] INFO root fetch - main [MainThread]: Store serial: [22652876]
