@@ -8077,3 +8077,31 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 10:24:39] WARNING root fetch - processPackages [mlx]: Skipping package: exceeds size limit 31967351>=10485760
 [2024-04-07 10:24:39] INFO root fetch - main [MainThread]: End processing [mlx] error
 [2024-04-07 10:24:39] INFO root fetch - main [MainThread]: Store serial: [22654721]
+[2024-04-07 10:26:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654721]
+[2024-04-07 10:26:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 10:26:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mavlinkHandler
+[2024-04-07 10:26:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qianlu-svr-plugin
+[2024-04-07 10:26:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ms-ait
+[2024-04-07 10:26:48] INFO root fetch - processPackages [mavlinkHandler]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-07 10:26:48] WARNING root fetch - processPackages [ms-ait]: Skipping, unable to determine old version
+[2024-04-07 10:26:48] INFO root fetch - main [MainThread]: End processing [ms-ait] error
+[2024-04-07 10:26:48] INFO root fetch - processPackages [qianlu-svr-plugin]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 10:26:48] INFO root fetch - processPackages [mavlinkHandler]: Downloading https://files.pythonhosted.org/packages/32/80/4e855ef0874ca8c09d07b62ababe334837367e19ce9f2e0c67134320b68b/mavlinkHandler-0.0.1.tar.gz
+[2024-04-07 10:26:48] INFO root fetch - processPackages [qianlu-svr-plugin]: Downloading https://files.pythonhosted.org/packages/9c/3c/b125828e0aa22cae26a3b7c6c11375abc08d17f604ed881c9acb81d9a68b/qianlu-svr-plugin-0.0.8.tar.gz
+[2024-04-07 10:26:48] WARNING root fetch - processPackages [mavlinkHandler]: Timeout reached during download
+[2024-04-07 10:26:48] WARNING root fetch - processPackages [qianlu-svr-plugin]: Timeout reached during download
+[2024-04-07 10:26:48] INFO root fetch - processPackages [mavlinkHandler]: Downloading https://files.pythonhosted.org/packages/88/f3/3a0f0fdcff353b6a201742c762681eb5e5e38d8597c5adc4583dc225a5ee/mavlinkHandler-0.0.2.tar.gz
+[2024-04-07 10:26:48] INFO root fetch - processPackages [qianlu-svr-plugin]: Downloading https://files.pythonhosted.org/packages/07/2f/5a49129beb9bdce08ef7f9dbd90ad51dce97216aaabde4c9a602bf8b76a2/qianlu-svr-plugin-0.0.9.tar.gz
+[2024-04-07 10:26:48] WARNING root fetch - processPackages [mavlinkHandler]: Timeout reached during download
+[2024-04-07 10:26:48] INFO root fetch - processPackages [mavlinkHandler]: executing diffoscope
+[2024-04-07 10:26:48] INFO root fetch - processPackages [mavlinkHandler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mavlinkHandler-0.0.1.tar.gz tmp/mavlinkHandler-0.0.2.tar.gz --markdown 20240407/m/mavlinkHandler/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-07 10:26:48] WARNING root fetch - processPackages [qianlu-svr-plugin]: Timeout reached during download
+[2024-04-07 10:26:48] INFO root fetch - processPackages [qianlu-svr-plugin]: executing diffoscope
+[2024-04-07 10:26:48] INFO root fetch - processPackages [qianlu-svr-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qianlu-svr-plugin-0.0.8.tar.gz tmp/qianlu-svr-plugin-0.0.9.tar.gz --markdown 20240407/q/qianlu-svr-plugin/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 10:26:49] INFO root fetch - processPackages [mavlinkHandler]: Remove: archive file [/home/abi/fetcher/tmp/mavlinkHandler-0.0.1.tar.gz]
+[2024-04-07 10:26:49] INFO root fetch - processPackages [mavlinkHandler]: Remove: archive file [/home/abi/fetcher/tmp/mavlinkHandler-0.0.2.tar.gz]
+[2024-04-07 10:26:49] INFO root fetch - main [MainThread]: End processing [mavlinkHandler]: success
+[2024-04-07 10:26:49] INFO root fetch - processPackages [qianlu-svr-plugin]: Remove: archive file [/home/abi/fetcher/tmp/qianlu-svr-plugin-0.0.8.tar.gz]
+[2024-04-07 10:26:49] INFO root fetch - processPackages [qianlu-svr-plugin]: Remove: archive file [/home/abi/fetcher/tmp/qianlu-svr-plugin-0.0.9.tar.gz]
+[2024-04-07 10:26:49] INFO root fetch - main [MainThread]: End processing [qianlu-svr-plugin]: success
+[2024-04-07 10:26:49] INFO root fetch - main [MainThread]: Store serial: [22654729]
