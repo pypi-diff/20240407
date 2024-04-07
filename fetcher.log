@@ -9584,3 +9584,53 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 12:03:21] INFO root fetch - processPackages [pyhocon-dantic]: Remove: archive file [/home/abi/fetcher/tmp/pyhocon-dantic-0.0.4.tar.gz]
 [2024-04-07 12:03:21] INFO root fetch - main [MainThread]: End processing [pyhocon-dantic]: success
 [2024-04-07 12:03:21] INFO root fetch - main [MainThread]: Store serial: [22655263]
+[2024-04-07 12:05:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655263]
+[2024-04-07 12:05:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 12:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: falcondale
+[2024-04-07 12:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: score-eval
+[2024-04-07 12:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qa-test
+[2024-04-07 12:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: AsyncKandinsky
+[2024-04-07 12:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: swibots
+[2024-04-07 12:05:29] WARNING root fetch - processPackages [qa-test]: Skipping, unable to determine old version
+[2024-04-07 12:05:29] INFO root fetch - main [MainThread]: End processing [qa-test] error
+[2024-04-07 12:05:29] INFO root fetch - processPackages [score-eval]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-07 12:05:29] INFO root fetch - processPackages [AsyncKandinsky]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-07 12:05:29] INFO root fetch - processPackages [falcondale]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-07 12:05:29] INFO root fetch - processPackages [swibots]: New version: [1.4.9b0] Old Version: [1.4.9]
+[2024-04-07 12:05:29] INFO root fetch - processPackages [score-eval]: Downloading https://files.pythonhosted.org/packages/ea/64/b626fbdf216c01c755ca80351971be66e7ef6d437e282bb899c6caea4374/score-eval-0.0.4.tar.gz
+[2024-04-07 12:05:29] INFO root fetch - processPackages [AsyncKandinsky]: Downloading https://files.pythonhosted.org/packages/c0/73/1c41ddcab5fccc9bf8f344182f158eb7fe6a4f1024f5f93bd2c376de4c47/AsyncKandinsky-0.0.1.tar.gz
+[2024-04-07 12:05:30] INFO root fetch - processPackages [falcondale]: Downloading https://files.pythonhosted.org/packages/48/54/40e49797fe90ccf081a95ec3e64816df1b77c38a6821f5e2853a395eeee1/falcondale-0.2.3.tar.gz
+[2024-04-07 12:05:30] WARNING root fetch - processPackages [AsyncKandinsky]: Timeout reached during download
+[2024-04-07 12:05:30] WARNING root fetch - processPackages [score-eval]: Timeout reached during download
+[2024-04-07 12:05:30] INFO root fetch - processPackages [swibots]: Downloading https://files.pythonhosted.org/packages/ab/ad/e9fb4e6104646710bdb7ad640c25bec37453f90d223979930a44f7c8f72e/swibots-1.4.9-py3-none-any.whl
+[2024-04-07 12:05:30] WARNING root fetch - processPackages [falcondale]: Timeout reached during download
+[2024-04-07 12:05:30] INFO root fetch - processPackages [score-eval]: Downloading https://files.pythonhosted.org/packages/50/34/e2be0f455afb323b5b627fb838999b7b551554b92c5a22a3afd3e6cd3214/score-eval-0.0.5.tar.gz
+[2024-04-07 12:05:30] INFO root fetch - processPackages [AsyncKandinsky]: Downloading https://files.pythonhosted.org/packages/7c/34/4e3aa95832baff86b828201904d5e87466b90d4c9fdb5b2c161908824e98/AsyncKandinsky-0.0.2.tar.gz
+[2024-04-07 12:05:30] WARNING root fetch - processPackages [swibots]: Timeout reached during download
+[2024-04-07 12:05:30] WARNING root fetch - processPackages [score-eval]: Timeout reached during download
+[2024-04-07 12:05:30] INFO root fetch - processPackages [score-eval]: executing diffoscope
+[2024-04-07 12:05:30] INFO root fetch - processPackages [score-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/score-eval-0.0.4.tar.gz tmp/score-eval-0.0.5.tar.gz --markdown 20240407/s/score-eval/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-07 12:05:30] INFO root fetch - processPackages [falcondale]: Downloading https://files.pythonhosted.org/packages/90/d8/c2e5aa6157a19a8c667323aaea061297e3e0c43f25e4cab1f1516ccd7572/falcondale-0.2.4.tar.gz
+[2024-04-07 12:05:30] WARNING root fetch - processPackages [AsyncKandinsky]: Timeout reached during download
+[2024-04-07 12:05:30] INFO root fetch - processPackages [AsyncKandinsky]: executing diffoscope
+[2024-04-07 12:05:30] INFO root fetch - processPackages [AsyncKandinsky]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AsyncKandinsky-0.0.1.tar.gz tmp/AsyncKandinsky-0.0.2.tar.gz --markdown 20240407/A/AsyncKandinsky/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-07 12:05:30] WARNING root fetch - processPackages [falcondale]: Timeout reached during download
+[2024-04-07 12:05:30] INFO root fetch - processPackages [falcondale]: executing diffoscope
+[2024-04-07 12:05:30] INFO root fetch - processPackages [falcondale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/falcondale-0.2.3.tar.gz tmp/falcondale-0.2.4.tar.gz --markdown 20240407/f/falcondale/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2024-04-07 12:05:30] INFO root fetch - processPackages [swibots]: Downloading https://files.pythonhosted.org/packages/1a/29/9d4e43dad7e195938372caf1ec2d82ce234bb157328ce98870071d36f923/swibots-1.4.9b0-py3-none-any.whl
+[2024-04-07 12:05:30] WARNING root fetch - processPackages [swibots]: Timeout reached during download
+[2024-04-07 12:05:30] INFO root fetch - processPackages [swibots]: executing diffoscope
+[2024-04-07 12:05:30] INFO root fetch - processPackages [swibots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swibots-1.4.9-py3-none-any.whl.zip tmp/swibots-1.4.9b0-py3-none-any.whl.zip --markdown 20240407/s/swibots/1.4.9-1.4.9b0/diff.md --exclude *.pyd
+[2024-04-07 12:05:30] INFO root fetch - processPackages [AsyncKandinsky]: Remove: archive file [/home/abi/fetcher/tmp/AsyncKandinsky-0.0.1.tar.gz]
+[2024-04-07 12:05:30] INFO root fetch - processPackages [AsyncKandinsky]: Remove: archive file [/home/abi/fetcher/tmp/AsyncKandinsky-0.0.2.tar.gz]
+[2024-04-07 12:05:30] INFO root fetch - main [MainThread]: End processing [AsyncKandinsky]: success
+[2024-04-07 12:05:30] INFO root fetch - processPackages [score-eval]: Remove: archive file [/home/abi/fetcher/tmp/score-eval-0.0.4.tar.gz]
+[2024-04-07 12:05:30] INFO root fetch - processPackages [score-eval]: Remove: archive file [/home/abi/fetcher/tmp/score-eval-0.0.5.tar.gz]
+[2024-04-07 12:05:30] INFO root fetch - main [MainThread]: End processing [score-eval]: success
+[2024-04-07 12:05:31] INFO root fetch - processPackages [falcondale]: Remove: archive file [/home/abi/fetcher/tmp/falcondale-0.2.3.tar.gz]
+[2024-04-07 12:05:31] INFO root fetch - processPackages [falcondale]: Remove: archive file [/home/abi/fetcher/tmp/falcondale-0.2.4.tar.gz]
+[2024-04-07 12:05:31] INFO root fetch - main [MainThread]: End processing [falcondale]: success
+[2024-04-07 12:05:31] INFO root fetch - processPackages [swibots]: Remove: archive file [/home/abi/fetcher/tmp/swibots-1.4.9-py3-none-any.whl.zip]
+[2024-04-07 12:05:31] INFO root fetch - processPackages [swibots]: Remove: archive file [/home/abi/fetcher/tmp/swibots-1.4.9b0-py3-none-any.whl.zip]
+[2024-04-07 12:05:31] INFO root fetch - main [MainThread]: End processing [swibots]: success
+[2024-04-07 12:05:31] INFO root fetch - main [MainThread]: Store serial: [22655278]
