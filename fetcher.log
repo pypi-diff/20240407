@@ -4007,3 +4007,28 @@
 [2024-04-07 05:34:48] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240407.1712458039.tar.gz]
 [2024-04-07 05:34:48] INFO root fetch - main [MainThread]: End processing [gink]: success
 [2024-04-07 05:34:48] INFO root fetch - main [MainThread]: Store serial: [22653274]
+[2024-04-07 05:36:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653274]
+[2024-04-07 05:36:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 05:36:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smaht-submitr
+[2024-04-07 05:36:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yaml-to-markdown
+[2024-04-07 05:36:56] INFO root fetch - processPackages [smaht-submitr]: New version: [0.7.0.1b94] Old Version: [0.7.0.1b90]
+[2024-04-07 05:36:56] INFO root fetch - processPackages [yaml-to-markdown]: New version: [0.1.1712460996] Old Version: [0.1.1712383579]
+[2024-04-07 05:36:56] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/3e/b2/820eb38ed5d1f50586c2a4b758dc69f88a5b147238b58470c9f078443404/smaht_submitr-0.7.0.1b90.tar.gz
+[2024-04-07 05:36:56] INFO root fetch - processPackages [yaml-to-markdown]: Downloading https://files.pythonhosted.org/packages/ae/75/542d222f45213bd070528d6d76a3f0ed3ff0b26443f90dab3da891d73865/yaml-to-markdown-0.1.1712383579.tar.gz
+[2024-04-07 05:36:56] WARNING root fetch - processPackages [yaml-to-markdown]: Timeout reached during download
+[2024-04-07 05:36:56] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 05:36:56] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/44/38/9e4d9d2808f96aa6fc43def6220ecc7c6ff9fa9a66548b47b5fc549e8444/smaht_submitr-0.7.0.1b94.tar.gz
+[2024-04-07 05:36:57] INFO root fetch - processPackages [yaml-to-markdown]: Downloading https://files.pythonhosted.org/packages/05/5a/a99760c02dcf5b979422815eb0f89f75d5c9bfd4eb5d5f81390d84c3c039/yaml-to-markdown-0.1.1712460996.tar.gz
+[2024-04-07 05:36:57] WARNING root fetch - processPackages [yaml-to-markdown]: Timeout reached during download
+[2024-04-07 05:36:57] INFO root fetch - processPackages [yaml-to-markdown]: executing diffoscope
+[2024-04-07 05:36:57] INFO root fetch - processPackages [yaml-to-markdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yaml-to-markdown-0.1.1712383579.tar.gz tmp/yaml-to-markdown-0.1.1712460996.tar.gz --markdown 20240407/y/yaml-to-markdown/0.1.1712383579-0.1.1712460996/diff.md --exclude *.pyd
+[2024-04-07 05:36:57] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 05:36:57] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-07 05:36:57] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.7.0.1b90.tar.gz tmp/smaht_submitr-0.7.0.1b94.tar.gz --markdown 20240407/s/smaht-submitr/0.7.0.1b90-0.7.0.1b94/diff.md --exclude *.pyd
+[2024-04-07 05:36:57] INFO root fetch - processPackages [yaml-to-markdown]: Remove: archive file [/home/abi/fetcher/tmp/yaml-to-markdown-0.1.1712383579.tar.gz]
+[2024-04-07 05:36:57] INFO root fetch - processPackages [yaml-to-markdown]: Remove: archive file [/home/abi/fetcher/tmp/yaml-to-markdown-0.1.1712460996.tar.gz]
+[2024-04-07 05:36:57] INFO root fetch - main [MainThread]: End processing [yaml-to-markdown]: success
+[2024-04-07 05:36:57] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b90.tar.gz]
+[2024-04-07 05:36:57] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b94.tar.gz]
+[2024-04-07 05:36:57] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-07 05:36:57] INFO root fetch - main [MainThread]: Store serial: [22653280]
