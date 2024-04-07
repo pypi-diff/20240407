@@ -14623,3 +14623,37 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:22:04] INFO root fetch - processPackages [direnumerate]: Remove: archive file [/home/abi/fetcher/tmp/direnumerate-3.2rc2.tar.gz]
 [2024-04-07 17:22:04] INFO root fetch - main [MainThread]: End processing [direnumerate]: success
 [2024-04-07 17:22:04] INFO root fetch - main [MainThread]: Store serial: [22657142]
+[2024-04-07 17:24:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657142]
+[2024-04-07 17:24:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 17:24:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mygoogletrans
+[2024-04-07 17:24:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: draggable-line-chart
+[2024-04-07 17:24:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: altvmasterlist
+[2024-04-07 17:24:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rg3py
+[2024-04-07 17:24:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ib-core
+[2024-04-07 17:24:14] WARNING root fetch - processPackages [mygoogletrans]: Skipping, unable to determine old version
+[2024-04-07 17:24:14] INFO root fetch - main [MainThread]: End processing [mygoogletrans] error
+[2024-04-07 17:24:14] INFO root fetch - processPackages [rg3py]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-07 17:24:14] WARNING root fetch - processPackages [ib-core]: Skipping, unable to determine old version
+[2024-04-07 17:24:14] INFO root fetch - main [MainThread]: End processing [ib-core] error
+[2024-04-07 17:24:14] WARNING root fetch - processPackages [draggable-line-chart]: Skipping, unable to determine old version
+[2024-04-07 17:24:14] INFO root fetch - main [MainThread]: End processing [draggable-line-chart] error
+[2024-04-07 17:24:14] INFO root fetch - processPackages [altvmasterlist]: New version: [3.0.9] Old Version: [3.0.8]
+[2024-04-07 17:24:14] INFO root fetch - processPackages [rg3py]: Downloading https://files.pythonhosted.org/packages/16/e4/1493fb11a74ec1107d87df99eb748c1cf1b9a79948e8e4f3ca5d4328ac56/rg3py-0.0.4-py3-none-win_amd64.whl
+[2024-04-07 17:24:15] INFO root fetch - processPackages [altvmasterlist]: Downloading https://files.pythonhosted.org/packages/12/ec/ccaf79b5c7be5cddece367f1811c21db411374da4d8ff9f1592b9a666a0c/altvmasterlist-3.0.8.tar.gz
+[2024-04-07 17:24:15] WARNING root fetch - processPackages [altvmasterlist]: Timeout reached during download
+[2024-04-07 17:24:15] INFO root fetch - processPackages [altvmasterlist]: Downloading https://files.pythonhosted.org/packages/b2/ba/4b6b04c015768d371fda25d6eb383f03906a566acb78f812ead4791198a9/altvmasterlist-3.0.9.tar.gz
+[2024-04-07 17:24:15] WARNING root fetch - processPackages [altvmasterlist]: Timeout reached during download
+[2024-04-07 17:24:15] WARNING root fetch - processPackages [rg3py]: Timeout reached during download
+[2024-04-07 17:24:15] INFO root fetch - processPackages [altvmasterlist]: executing diffoscope
+[2024-04-07 17:24:15] INFO root fetch - processPackages [altvmasterlist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altvmasterlist-3.0.8.tar.gz tmp/altvmasterlist-3.0.9.tar.gz --markdown 20240407/a/altvmasterlist/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2024-04-07 17:24:15] INFO root fetch - processPackages [rg3py]: Downloading https://files.pythonhosted.org/packages/fe/ac/68eb972f686f59124ea890e602b00b0ac825ca9b4006d1c86bfaee9dd5f1/rg3py-0.0.5-py3-none-win_amd64.whl
+[2024-04-07 17:24:15] INFO root fetch - processPackages [altvmasterlist]: Remove: archive file [/home/abi/fetcher/tmp/altvmasterlist-3.0.8.tar.gz]
+[2024-04-07 17:24:15] INFO root fetch - processPackages [altvmasterlist]: Remove: archive file [/home/abi/fetcher/tmp/altvmasterlist-3.0.9.tar.gz]
+[2024-04-07 17:24:15] INFO root fetch - main [MainThread]: End processing [altvmasterlist]: success
+[2024-04-07 17:24:17] WARNING root fetch - processPackages [rg3py]: Timeout reached during download
+[2024-04-07 17:24:17] INFO root fetch - processPackages [rg3py]: executing diffoscope
+[2024-04-07 17:24:17] INFO root fetch - processPackages [rg3py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rg3py-0.0.4-py3-none-win_amd64.whl.zip tmp/rg3py-0.0.5-py3-none-win_amd64.whl.zip --markdown 20240407/r/rg3py/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-07 17:24:17] INFO root fetch - processPackages [rg3py]: Remove: archive file [/home/abi/fetcher/tmp/rg3py-0.0.4-py3-none-win_amd64.whl.zip]
+[2024-04-07 17:24:17] INFO root fetch - processPackages [rg3py]: Remove: archive file [/home/abi/fetcher/tmp/rg3py-0.0.5-py3-none-win_amd64.whl.zip]
+[2024-04-07 17:24:17] INFO root fetch - main [MainThread]: End processing [rg3py]: success
+[2024-04-07 17:24:17] INFO root fetch - main [MainThread]: Store serial: [22657163]
