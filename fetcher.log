@@ -2061,3 +2061,45 @@
 [2024-04-07 03:16:46] INFO root fetch - processPackages [vsg]: Remove: archive file [/home/abi/fetcher/tmp/vsg-3.9.0.tar.gz]
 [2024-04-07 03:16:46] INFO root fetch - main [MainThread]: End processing [vsg]: success
 [2024-04-07 03:16:46] INFO root fetch - main [MainThread]: Store serial: [22652555]
+[2024-04-07 03:18:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652555]
+[2024-04-07 03:18:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 03:18:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytector
+[2024-04-07 03:18:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bioregistry
+[2024-04-07 03:18:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chainlo
+[2024-04-07 03:18:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pillory
+[2024-04-07 03:18:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vxutils
+[2024-04-07 03:18:55] INFO root fetch - processPackages [chainlo]: New version: [1.1.415] Old Version: [1.1.414]
+[2024-04-07 03:18:55] INFO root fetch - processPackages [chainlo]: Downloading https://files.pythonhosted.org/packages/41/1e/00eae2d6e0b42382c4843491983a77bb93e6d72e8e6899e9483576343ca0/chainlo-1.1.414.tar.gz
+[2024-04-07 03:18:55] WARNING root fetch - processPackages [pillory]: Skipping, unable to determine old version
+[2024-04-07 03:18:55] INFO root fetch - main [MainThread]: End processing [pillory] error
+[2024-04-07 03:18:55] ERROR root fetch - processPackages [pytector]: Unable to get metadata: No such project 'pytector'
+[2024-04-07 03:18:55] INFO root fetch - main [MainThread]: End processing [pytector] error
+[2024-04-07 03:18:55] INFO root fetch - processPackages [bioregistry]: New version: [0.9.97] Old Version: [0.9.96]
+[2024-04-07 03:18:55] INFO root fetch - processPackages [vxutils]: New version: [20240406] Old Version: [20240403]
+[2024-04-07 03:18:55] INFO root fetch - processPackages [bioregistry]: Downloading https://files.pythonhosted.org/packages/48/3a/7ab0975f6c89bea709b279c9e39ef3be5439cfec168dbf3a614dac397663/bioregistry-0.9.96.tar.gz
+[2024-04-07 03:18:55] INFO root fetch - processPackages [vxutils]: Downloading https://files.pythonhosted.org/packages/d8/37/b9acc71a627939fc8de8dcb69b2b76b1408a68f049857190dbee0a4829a8/vxutils-20240403.tar.gz
+[2024-04-07 03:18:55] WARNING root fetch - processPackages [chainlo]: Timeout reached during download
+[2024-04-07 03:18:55] WARNING root fetch - processPackages [vxutils]: Timeout reached during download
+[2024-04-07 03:18:55] INFO root fetch - processPackages [chainlo]: Downloading https://files.pythonhosted.org/packages/84/8d/01e8a3387562cd407fb9b36ffa24f640d90fd0e7b14ae8b15be6720f46b9/chainlo-1.1.415.tar.gz
+[2024-04-07 03:18:55] INFO root fetch - processPackages [vxutils]: Downloading https://files.pythonhosted.org/packages/ea/cb/f1594712509497fd05df5dc93fd9a2ac19b4be7433949be5faca2f62931a/vxutils-20240406.tar.gz
+[2024-04-07 03:18:56] WARNING root fetch - processPackages [vxutils]: Timeout reached during download
+[2024-04-07 03:18:56] INFO root fetch - processPackages [vxutils]: executing diffoscope
+[2024-04-07 03:18:56] INFO root fetch - processPackages [vxutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vxutils-20240403.tar.gz tmp/vxutils-20240406.tar.gz --markdown 20240407/v/vxutils/20240403-20240406/diff.md --exclude *.pyd
+[2024-04-07 03:18:56] WARNING root fetch - processPackages [chainlo]: Timeout reached during download
+[2024-04-07 03:18:56] INFO root fetch - processPackages [chainlo]: executing diffoscope
+[2024-04-07 03:18:56] INFO root fetch - processPackages [chainlo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainlo-1.1.414.tar.gz tmp/chainlo-1.1.415.tar.gz --markdown 20240407/c/chainlo/1.1.414-1.1.415/diff.md --exclude *.pyd
+[2024-04-07 03:18:56] WARNING root fetch - processPackages [bioregistry]: Timeout reached during download
+[2024-04-07 03:18:56] INFO root fetch - processPackages [bioregistry]: Downloading https://files.pythonhosted.org/packages/57/7b/30897578f436658ac1f334eb6e9f96ad0bacb0a54846670620df53a5a374/bioregistry-0.9.97.tar.gz
+[2024-04-07 03:18:56] INFO root fetch - processPackages [vxutils]: Remove: archive file [/home/abi/fetcher/tmp/vxutils-20240403.tar.gz]
+[2024-04-07 03:18:56] INFO root fetch - processPackages [vxutils]: Remove: archive file [/home/abi/fetcher/tmp/vxutils-20240406.tar.gz]
+[2024-04-07 03:18:56] INFO root fetch - main [MainThread]: End processing [vxutils]: success
+[2024-04-07 03:18:57] WARNING root fetch - processPackages [bioregistry]: Timeout reached during download
+[2024-04-07 03:18:57] INFO root fetch - processPackages [bioregistry]: executing diffoscope
+[2024-04-07 03:18:57] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.9.96.tar.gz tmp/bioregistry-0.9.97.tar.gz --markdown 20240407/b/bioregistry/0.9.96-0.9.97/diff.md --exclude *.pyd
+[2024-04-07 03:18:57] INFO root fetch - processPackages [chainlo]: Remove: archive file [/home/abi/fetcher/tmp/chainlo-1.1.414.tar.gz]
+[2024-04-07 03:18:57] INFO root fetch - processPackages [chainlo]: Remove: archive file [/home/abi/fetcher/tmp/chainlo-1.1.415.tar.gz]
+[2024-04-07 03:18:57] INFO root fetch - main [MainThread]: End processing [chainlo]: success
+[2024-04-07 03:20:04] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.96.tar.gz]
+[2024-04-07 03:20:04] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.97.tar.gz]
+[2024-04-07 03:20:04] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
+[2024-04-07 03:20:04] INFO root fetch - main [MainThread]: Store serial: [22652574]
