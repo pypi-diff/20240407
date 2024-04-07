@@ -16063,3 +16063,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 18:40:31] INFO root fetch - processPackages [azol]: Remove: archive file [/home/abi/fetcher/tmp/azol-0.2.1b1.tar.gz]
 [2024-04-07 18:40:31] INFO root fetch - main [MainThread]: End processing [azol]: success
 [2024-04-07 18:40:31] INFO root fetch - main [MainThread]: Store serial: [22657633]
+[2024-04-07 18:42:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657633]
+[2024-04-07 18:42:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 18:42:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dmarc
+[2024-04-07 18:42:40] INFO root fetch - processPackages [dmarc]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-07 18:42:41] INFO root fetch - processPackages [dmarc]: Downloading https://files.pythonhosted.org/packages/a8/cc/8faec18acca45a5571a6eb4baed60c9b1bd122abacffa1be9cb7001831c9/dmarc-1.0.4.tar.gz
+[2024-04-07 18:42:41] WARNING root fetch - processPackages [dmarc]: Timeout reached during download
+[2024-04-07 18:42:41] INFO root fetch - processPackages [dmarc]: Downloading https://files.pythonhosted.org/packages/26/23/5e4bff5e0e472cba41629eb935e8df4782b74e246230bea2022ee386b622/dmarc-1.0.5.tar.gz
+[2024-04-07 18:42:41] WARNING root fetch - processPackages [dmarc]: Timeout reached during download
+[2024-04-07 18:42:41] INFO root fetch - processPackages [dmarc]: executing diffoscope
+[2024-04-07 18:42:41] INFO root fetch - processPackages [dmarc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dmarc-1.0.4.tar.gz tmp/dmarc-1.0.5.tar.gz --markdown 20240407/d/dmarc/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2024-04-07 18:42:42] INFO root fetch - processPackages [dmarc]: Remove: archive file [/home/abi/fetcher/tmp/dmarc-1.0.4.tar.gz]
+[2024-04-07 18:42:42] INFO root fetch - processPackages [dmarc]: Remove: archive file [/home/abi/fetcher/tmp/dmarc-1.0.5.tar.gz]
+[2024-04-07 18:42:42] INFO root fetch - main [MainThread]: End processing [dmarc]: success
+[2024-04-07 18:42:42] INFO root fetch - main [MainThread]: Store serial: [22657636]
