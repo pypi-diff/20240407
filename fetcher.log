@@ -10930,3 +10930,105 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:41:14] INFO root fetch - processPackages [qwak-sdk]: Remove: archive file [/home/abi/fetcher/tmp/qwak_sdk-0.5.9.tar.gz]
 [2024-04-07 13:41:14] INFO root fetch - main [MainThread]: End processing [qwak-sdk]: success
 [2024-04-07 13:41:14] INFO root fetch - main [MainThread]: Store serial: [22655797]
+[2024-04-07 13:43:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655797]
+[2024-04-07 13:43:22] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-04-07 13:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: laia-gen-lib
+[2024-04-07 13:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: composio-core
+[2024-04-07 13:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: composio-langchain
+[2024-04-07 13:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: protokolo
+[2024-04-07 13:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: composio-crewai
+[2024-04-07 13:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: composio-autogen
+[2024-04-07 13:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: coded-flows
+[2024-04-07 13:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pulumi-random
+[2024-04-07 13:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dektools
+[2024-04-07 13:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tb1-parser
+[2024-04-07 13:43:23] INFO root fetch - processPackages [composio-langchain]: New version: [0.1.75] Old Version: [0.1.74]
+[2024-04-07 13:43:23] INFO root fetch - processPackages [composio-crewai]: New version: [0.1.75] Old Version: [0.1.74]
+[2024-04-07 13:43:23] INFO root fetch - processPackages [laia-gen-lib]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 13:43:23] INFO root fetch - processPackages [composio-core]: New version: [0.1.75] Old Version: [0.1.74]
+[2024-04-07 13:43:23] INFO root fetch - processPackages [dektools]: New version: [0.1.9] Old Version: [0.1.76]
+[2024-04-07 13:43:23] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/d4/ac/a44f26ce7d8bc7149e74addd42f95e3bc0aa5dc63d3522523fbd226301d0/composio_core-0.1.74.tar.gz
+[2024-04-07 13:43:23] INFO root fetch - processPackages [protokolo]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-07 13:43:23] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/38/3d/0a6dd474c06ce79199849bbd9d70e46751ff3ecf7970cfd491efcfe5289b/composio_langchain-0.1.74.tar.gz
+[2024-04-07 13:43:23] WARNING root fetch - processPackages [tb1-parser]: Skipping, unable to determine old version
+[2024-04-07 13:43:23] INFO root fetch - processPackages [tb1-parser]: Start processing: bigdl-core-xe
+[2024-04-07 13:43:23] INFO root fetch - main [MainThread]: End processing [tb1-parser] error
+[2024-04-07 13:43:23] ERROR root fetch - processPackages [coded-flows]: Unable to get metadata: No such project 'coded-flows'
+[2024-04-07 13:43:23] INFO root fetch - main [MainThread]: End processing [coded-flows] error
+[2024-04-07 13:43:23] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/78/45/6d1c6c4a301a4bac0b095091ea165dd32acde7ef24703a519000bdafcd21/composio_crewai-0.1.74.tar.gz
+[2024-04-07 13:43:23] INFO root fetch - processPackages [composio-autogen]: New version: [0.1.76] Old Version: [0.1.75]
+[2024-04-07 13:43:23] INFO root fetch - processPackages [pulumi-random]: New version: [4.9.0a1674773801] Old Version: [4.9.0a1673556316]
+[2024-04-07 13:43:23] INFO root fetch - processPackages [laia-gen-lib]: Downloading https://files.pythonhosted.org/packages/cf/9d/df25741f3199a178d6bebb43c6f39eeaaa924cb41510466057c7e68ad259/laia-gen-lib-0.1.8.tar.gz
+[2024-04-07 13:43:23] WARNING root fetch - processPackages [composio-core]: Timeout reached during download
+[2024-04-07 13:43:23] WARNING root fetch - processPackages [composio-langchain]: Timeout reached during download
+[2024-04-07 13:43:23] INFO root fetch - processPackages [protokolo]: Downloading https://files.pythonhosted.org/packages/6e/74/f0b1ee782f12ef9c99a07c44c340c9e37c09633d22b6e867e72d7c27d02f/protokolo-0.2.0.tar.gz
+[2024-04-07 13:43:23] WARNING root fetch - processPackages [composio-crewai]: Timeout reached during download
+[2024-04-07 13:43:23] INFO root fetch - processPackages [bigdl-core-xe]: New version: [2.5.0b20240407] Old Version: [2.5.0b20240406]
+[2024-04-07 13:43:23] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/df/f9/96ab652c9b1d01bdff49688b59758eac19377767e25fd9165c7a18dce4ad/dektools-0.1.76.tar.gz
+[2024-04-07 13:43:23] WARNING root fetch - processPackages [laia-gen-lib]: Timeout reached during download
+[2024-04-07 13:43:23] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/41/b0/0d73cd92d624773af9934b19c52d01ef72d2a981e78a5aa7ec2ff580bb6e/composio_autogen-0.1.75.tar.gz
+[2024-04-07 13:43:23] INFO root fetch - processPackages [pulumi-random]: Downloading https://files.pythonhosted.org/packages/e3/37/2cc13bf17f327e646e4b225d9a662c398da5ae064fbaaf071b5093d9200d/pulumi_random-4.9.0a1673556316.tar.gz
+[2024-04-07 13:43:23] WARNING root fetch - processPackages [protokolo]: Timeout reached during download
+[2024-04-07 13:43:23] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/1e/98/e760f4f7b7e0a2137d039c8142c86f140d5de2532986e2772ee6c93bb20f/composio_core-0.1.75.tar.gz
+[2024-04-07 13:43:23] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/b5/07/011b8a665cd9707486ca625a3ce8b452e672204f509ccaa6df9d141c5605/composio_langchain-0.1.75.tar.gz
+[2024-04-07 13:43:23] WARNING root fetch - processPackages [dektools]: Timeout reached during download
+[2024-04-07 13:43:23] INFO root fetch - processPackages [laia-gen-lib]: Downloading https://files.pythonhosted.org/packages/be/61/f1135da258191b7a80992064d66519b24c5cf4c05de8b99ccfa7ad90d9bf/laia-gen-lib-0.1.9.tar.gz
+[2024-04-07 13:43:23] WARNING root fetch - processPackages [composio-autogen]: Timeout reached during download
+[2024-04-07 13:43:23] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/63/1e/691485d856b1e812ac34679c54851cb0890404e41f83644a25d7de0e97bc/composio_crewai-0.1.75.tar.gz
+[2024-04-07 13:43:23] INFO root fetch - processPackages [bigdl-core-xe]: Downloading https://files.pythonhosted.org/packages/5c/7d/29c8f7b1fb9ae7a2278868d3e0c5538c8b709e4786640e52bd7e7d88050c/bigdl_core_xe-2.5.0b20240406-cp39-cp39-manylinux2010_x86_64.whl
+[2024-04-07 13:43:23] WARNING root fetch - processPackages [pulumi-random]: Timeout reached during download
+[2024-04-07 13:43:23] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/68/56/90836602efe1f93ffb0ab3da68807fa41e85e124836bcc0c3cc2d1b2c539/dektools-0.1.9-py3-none-any.whl
+[2024-04-07 13:43:23] WARNING root fetch - processPackages [bigdl-core-xe]: Skipping package: exceeds size limit 95050174>=10485760
+[2024-04-07 13:43:23] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe] error
+[2024-04-07 13:43:23] WARNING root fetch - processPackages [composio-core]: Timeout reached during download
+[2024-04-07 13:43:23] INFO root fetch - processPackages [composio-core]: executing diffoscope
+[2024-04-07 13:43:23] INFO root fetch - processPackages [composio-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_core-0.1.74.tar.gz tmp/composio_core-0.1.75.tar.gz --markdown 20240407/c/composio-core/0.1.74-0.1.75/diff.md --exclude *.pyd
+[2024-04-07 13:43:23] WARNING root fetch - processPackages [composio-langchain]: Timeout reached during download
+[2024-04-07 13:43:23] INFO root fetch - processPackages [composio-langchain]: executing diffoscope
+[2024-04-07 13:43:23] INFO root fetch - processPackages [composio-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_langchain-0.1.74.tar.gz tmp/composio_langchain-0.1.75.tar.gz --markdown 20240407/c/composio-langchain/0.1.74-0.1.75/diff.md --exclude *.pyd
+[2024-04-07 13:43:23] WARNING root fetch - processPackages [composio-crewai]: Timeout reached during download
+[2024-04-07 13:43:23] INFO root fetch - processPackages [protokolo]: Downloading https://files.pythonhosted.org/packages/e1/43/30254ea88f563965341d0208f981109c214325ed2d1b00ea8070474a390b/protokolo-0.3.0.tar.gz
+[2024-04-07 13:43:23] INFO root fetch - processPackages [composio-crewai]: executing diffoscope
+[2024-04-07 13:43:23] INFO root fetch - processPackages [composio-crewai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_crewai-0.1.74.tar.gz tmp/composio_crewai-0.1.75.tar.gz --markdown 20240407/c/composio-crewai/0.1.74-0.1.75/diff.md --exclude *.pyd
+[2024-04-07 13:43:23] WARNING root fetch - processPackages [laia-gen-lib]: Timeout reached during download
+[2024-04-07 13:43:23] INFO root fetch - processPackages [laia-gen-lib]: executing diffoscope
+[2024-04-07 13:43:23] INFO root fetch - processPackages [laia-gen-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/laia-gen-lib-0.1.8.tar.gz tmp/laia-gen-lib-0.1.9.tar.gz --markdown 20240407/l/laia-gen-lib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 13:43:23] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/d4/6a/869148598768e36dde398db521d2362ca801cb6ef6610fe628602809b259/composio_autogen-0.1.76.tar.gz
+[2024-04-07 13:43:23] INFO root fetch - processPackages [pulumi-random]: Downloading https://files.pythonhosted.org/packages/60/4b/3fbb36b8ea6ee761180821419350808d93a817d302404b35a787b0e12917/pulumi_random-4.9.0a1674773801.tar.gz
+[2024-04-07 13:43:23] WARNING root fetch - processPackages [protokolo]: Timeout reached during download
+[2024-04-07 13:43:23] INFO root fetch - processPackages [protokolo]: executing diffoscope
+[2024-04-07 13:43:23] INFO root fetch - processPackages [protokolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protokolo-0.2.0.tar.gz tmp/protokolo-0.3.0.tar.gz --markdown 20240407/p/protokolo/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2024-04-07 13:43:23] WARNING root fetch - processPackages [dektools]: Timeout reached during download
+[2024-04-07 13:43:23] INFO root fetch - processPackages [dektools]: executing diffoscope
+[2024-04-07 13:43:23] INFO root fetch - processPackages [dektools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dektools-0.1.76.tar.gz tmp/dektools-0.1.9-py3-none-any.whl.zip --markdown 20240407/d/dektools/0.1.76-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 13:43:24] WARNING root fetch - processPackages [composio-autogen]: Timeout reached during download
+[2024-04-07 13:43:24] INFO root fetch - processPackages [composio-autogen]: executing diffoscope
+[2024-04-07 13:43:24] INFO root fetch - processPackages [composio-autogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_autogen-0.1.75.tar.gz tmp/composio_autogen-0.1.76.tar.gz --markdown 20240407/c/composio-autogen/0.1.75-0.1.76/diff.md --exclude *.pyd
+[2024-04-07 13:43:24] WARNING root fetch - processPackages [pulumi-random]: Timeout reached during download
+[2024-04-07 13:43:24] INFO root fetch - processPackages [pulumi-random]: executing diffoscope
+[2024-04-07 13:43:24] INFO root fetch - processPackages [pulumi-random]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_random-4.9.0a1673556316.tar.gz tmp/pulumi_random-4.9.0a1674773801.tar.gz --markdown 20240407/p/pulumi-random/4.9.0a1673556316-4.9.0a1674773801/diff.md --exclude *.pyd
+[2024-04-07 13:43:24] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.76.tar.gz]
+[2024-04-07 13:43:24] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.9-py3-none-any.whl.zip]
+[2024-04-07 13:43:24] INFO root fetch - main [MainThread]: End processing [dektools]: success
+[2024-04-07 13:43:24] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.1.74.tar.gz]
+[2024-04-07 13:43:24] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.1.75.tar.gz]
+[2024-04-07 13:43:24] INFO root fetch - main [MainThread]: End processing [composio-langchain]: success
+[2024-04-07 13:43:24] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.1.74.tar.gz]
+[2024-04-07 13:43:24] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.1.75.tar.gz]
+[2024-04-07 13:43:24] INFO root fetch - main [MainThread]: End processing [composio-crewai]: success
+[2024-04-07 13:43:24] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.75.tar.gz]
+[2024-04-07 13:43:24] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.74.tar.gz]
+[2024-04-07 13:43:24] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.76.tar.gz]
+[2024-04-07 13:43:24] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.75.tar.gz]
+[2024-04-07 13:43:24] INFO root fetch - main [MainThread]: End processing [composio-autogen]: success
+[2024-04-07 13:43:24] INFO root fetch - main [MainThread]: End processing [composio-core]: success
+[2024-04-07 13:43:24] INFO root fetch - processPackages [laia-gen-lib]: Remove: archive file [/home/abi/fetcher/tmp/laia-gen-lib-0.1.8.tar.gz]
+[2024-04-07 13:43:24] INFO root fetch - processPackages [laia-gen-lib]: Remove: archive file [/home/abi/fetcher/tmp/laia-gen-lib-0.1.9.tar.gz]
+[2024-04-07 13:43:24] INFO root fetch - main [MainThread]: End processing [laia-gen-lib]: success
+[2024-04-07 13:43:24] INFO root fetch - processPackages [pulumi-random]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_random-4.9.0a1673556316.tar.gz]
+[2024-04-07 13:43:24] INFO root fetch - processPackages [pulumi-random]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_random-4.9.0a1674773801.tar.gz]
+[2024-04-07 13:43:24] INFO root fetch - main [MainThread]: End processing [pulumi-random]: success
+[2024-04-07 13:43:24] INFO root fetch - processPackages [protokolo]: Remove: archive file [/home/abi/fetcher/tmp/protokolo-0.2.0.tar.gz]
+[2024-04-07 13:43:24] INFO root fetch - processPackages [protokolo]: Remove: archive file [/home/abi/fetcher/tmp/protokolo-0.3.0.tar.gz]
+[2024-04-07 13:43:24] INFO root fetch - main [MainThread]: End processing [protokolo]: success
+[2024-04-07 13:43:24] INFO root fetch - main [MainThread]: Store serial: [22655831]
