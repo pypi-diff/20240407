@@ -3056,3 +3056,53 @@
 [2024-04-07 04:40:35] WARNING root fetch - processPackages [climush]: Skipping, unable to determine old version
 [2024-04-07 04:40:35] INFO root fetch - main [MainThread]: End processing [climush] error
 [2024-04-07 04:40:35] INFO root fetch - main [MainThread]: Store serial: [22652944]
+[2024-04-07 04:42:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652944]
+[2024-04-07 04:42:43] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 04:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: databonsai
+[2024-04-07 04:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bestnlp
+[2024-04-07 04:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cpymake
+[2024-04-07 04:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lesscode-database
+[2024-04-07 04:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quickstart-vdk
+[2024-04-07 04:42:43] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-04-07 04:42:43] WARNING root fetch - processPackages [databonsai]: Skipping, unable to determine old version
+[2024-04-07 04:42:43] INFO root fetch - main [MainThread]: End processing [databonsai] error
+[2024-04-07 04:42:43] INFO root fetch - processPackages [bestnlp]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-07 04:42:43] INFO root fetch - processPackages [cpymake]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-07 04:42:43] INFO root fetch - processPackages [lesscode-database]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 04:42:43] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-04-07 04:42:43] WARNING root fetch - processPackages [quickstart-vdk]: Timeout reached during download
+[2024-04-07 04:42:43] INFO root fetch - processPackages [lesscode-database]: Downloading https://files.pythonhosted.org/packages/f5/57/39fb423fc6078570b269f5f37bf20353f71929bcc079a6ad6a70a0b6bd3f/lesscode_database-0.0.8.tar.gz
+[2024-04-07 04:42:43] INFO root fetch - processPackages [bestnlp]: Downloading https://files.pythonhosted.org/packages/c4/c6/0e48bc0ac4d18df3bb92c730e99334d27a354df51129e33904ebb7e0ef9b/bestnlp-1.0.1-py3-none-any.whl
+[2024-04-07 04:42:43] INFO root fetch - processPackages [cpymake]: Downloading https://files.pythonhosted.org/packages/1e/4e/5159770e182cc8227714705815292800114f4ebbe33532237b35f354f46f/cpymake-0.1.4.tar.gz
+[2024-04-07 04:42:44] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-04-07 04:42:44] WARNING root fetch - processPackages [quickstart-vdk]: Timeout reached during download
+[2024-04-07 04:42:44] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-04-07 04:42:44] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240407/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/diff.md --exclude *.pyd
+[2024-04-07 04:42:44] WARNING root fetch - processPackages [cpymake]: Timeout reached during download
+[2024-04-07 04:42:44] WARNING root fetch - processPackages [lesscode-database]: Timeout reached during download
+[2024-04-07 04:42:44] WARNING root fetch - processPackages [bestnlp]: Timeout reached during download
+[2024-04-07 04:42:44] INFO root fetch - processPackages [cpymake]: Downloading https://files.pythonhosted.org/packages/75/cf/66704b06313dc25a7412de9c7bb8c678db38060b58e130573f310b5f9027/cpymake-0.1.5.tar.gz
+[2024-04-07 04:42:44] INFO root fetch - processPackages [lesscode-database]: Downloading https://files.pythonhosted.org/packages/54/2f/c977308be0eb21970e9625b71f0b15fd5a7cb0abc6d695d79f2a4610bde7/lesscode_database-0.0.9.tar.gz
+[2024-04-07 04:42:44] INFO root fetch - processPackages [bestnlp]: Downloading https://files.pythonhosted.org/packages/7e/51/4bd73a4d3115156138ecb4c99a1e7e742b5221197e584bc3ed142274ce01/bestnlp-1.0.2-py3-none-any.whl
+[2024-04-07 04:42:44] WARNING root fetch - processPackages [cpymake]: Timeout reached during download
+[2024-04-07 04:42:44] INFO root fetch - processPackages [cpymake]: executing diffoscope
+[2024-04-07 04:42:44] INFO root fetch - processPackages [cpymake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpymake-0.1.4.tar.gz tmp/cpymake-0.1.5.tar.gz --markdown 20240407/c/cpymake/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2024-04-07 04:42:44] WARNING root fetch - processPackages [lesscode-database]: Timeout reached during download
+[2024-04-07 04:42:44] INFO root fetch - processPackages [lesscode-database]: executing diffoscope
+[2024-04-07 04:42:44] INFO root fetch - processPackages [lesscode-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lesscode_database-0.0.8.tar.gz tmp/lesscode_database-0.0.9.tar.gz --markdown 20240407/l/lesscode-database/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 04:42:44] WARNING root fetch - processPackages [bestnlp]: Timeout reached during download
+[2024-04-07 04:42:44] INFO root fetch - processPackages [bestnlp]: executing diffoscope
+[2024-04-07 04:42:44] INFO root fetch - processPackages [bestnlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bestnlp-1.0.1-py3-none-any.whl.zip tmp/bestnlp-1.0.2-py3-none-any.whl.zip --markdown 20240407/b/bestnlp/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2024-04-07 04:42:44] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-04-07 04:42:44] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-04-07 04:42:44] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-04-07 04:42:45] INFO root fetch - processPackages [bestnlp]: Remove: archive file [/home/abi/fetcher/tmp/bestnlp-1.0.1-py3-none-any.whl.zip]
+[2024-04-07 04:42:45] INFO root fetch - processPackages [bestnlp]: Remove: archive file [/home/abi/fetcher/tmp/bestnlp-1.0.2-py3-none-any.whl.zip]
+[2024-04-07 04:42:45] INFO root fetch - main [MainThread]: End processing [bestnlp]: success
+[2024-04-07 04:42:45] INFO root fetch - processPackages [cpymake]: Remove: archive file [/home/abi/fetcher/tmp/cpymake-0.1.4.tar.gz]
+[2024-04-07 04:42:45] INFO root fetch - processPackages [cpymake]: Remove: archive file [/home/abi/fetcher/tmp/cpymake-0.1.5.tar.gz]
+[2024-04-07 04:42:45] INFO root fetch - main [MainThread]: End processing [cpymake]: success
+[2024-04-07 04:42:45] INFO root fetch - processPackages [lesscode-database]: Remove: archive file [/home/abi/fetcher/tmp/lesscode_database-0.0.8.tar.gz]
+[2024-04-07 04:42:45] INFO root fetch - processPackages [lesscode-database]: Remove: archive file [/home/abi/fetcher/tmp/lesscode_database-0.0.9.tar.gz]
+[2024-04-07 04:42:45] INFO root fetch - main [MainThread]: End processing [lesscode-database]: success
+[2024-04-07 04:42:45] INFO root fetch - main [MainThread]: Store serial: [22652965]
