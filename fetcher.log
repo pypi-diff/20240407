@@ -7982,3 +7982,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 10:13:48] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
 [2024-04-07 10:13:48] INFO root fetch - main [MainThread]: End processing [lalsuite] error
 [2024-04-07 10:13:48] INFO root fetch - main [MainThread]: Store serial: [22654672]
+[2024-04-07 10:15:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654672]
+[2024-04-07 10:15:56] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 10:15:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: funboost
+[2024-04-07 10:15:56] INFO root fetch - processPackages [funboost]: New version: [43.3] Old Version: [43.2]
+[2024-04-07 10:15:57] INFO root fetch - processPackages [funboost]: Downloading https://files.pythonhosted.org/packages/16/ed/cce4334c8d4c6b60e44b5935a99542ddfc4bda513626e337431b2d7e1f93/funboost-43.2.tar.gz
+[2024-04-07 10:15:57] WARNING root fetch - processPackages [funboost]: Timeout reached during download
+[2024-04-07 10:15:57] INFO root fetch - processPackages [funboost]: Downloading https://files.pythonhosted.org/packages/ac/2e/001b5a8da29bf623fd467278d4b28af0b9e9dfb754d076b1e52023254396/funboost-43.3.tar.gz
+[2024-04-07 10:15:57] WARNING root fetch - processPackages [funboost]: Timeout reached during download
+[2024-04-07 10:15:57] INFO root fetch - processPackages [funboost]: executing diffoscope
+[2024-04-07 10:15:57] INFO root fetch - processPackages [funboost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funboost-43.2.tar.gz tmp/funboost-43.3.tar.gz --markdown 20240407/f/funboost/43.2-43.3/diff.md --exclude *.pyd
+[2024-04-07 10:15:59] INFO root fetch - processPackages [funboost]: Remove: archive file [/home/abi/fetcher/tmp/funboost-43.2.tar.gz]
+[2024-04-07 10:15:59] INFO root fetch - processPackages [funboost]: Remove: archive file [/home/abi/fetcher/tmp/funboost-43.3.tar.gz]
+[2024-04-07 10:15:59] INFO root fetch - main [MainThread]: End processing [funboost]: success
+[2024-04-07 10:15:59] INFO root fetch - main [MainThread]: Store serial: [22654682]
