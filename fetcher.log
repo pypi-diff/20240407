@@ -20626,3 +20626,50 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:26:58] INFO root fetch - processPackages [jafgen]: Remove: archive file [/home/abi/fetcher/tmp/jafgen-0.4.6.tar.gz]
 [2024-04-07 23:26:58] INFO root fetch - main [MainThread]: End processing [jafgen]: success
 [2024-04-07 23:26:58] INFO root fetch - main [MainThread]: Store serial: [22659387]
+[2024-04-07 23:29:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659387]
+[2024-04-07 23:29:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 23:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deepllm
+[2024-04-07 23:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nexus-cat
+[2024-04-07 23:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NREL-disco
+[2024-04-07 23:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sprocketship
+[2024-04-07 23:29:07] INFO root fetch - processPackages [sprocketship]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-07 23:29:07] INFO root fetch - processPackages [nexus-cat]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-07 23:29:07] INFO root fetch - processPackages [NREL-disco]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-07 23:29:07] INFO root fetch - processPackages [deepllm]: New version: [1.4.3] Old Version: [1.4.2]
+[2024-04-07 23:29:07] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/bf/c4/37473acd3c048f806049504a239868b0dad8e7c4f850a0870f737019f10d/sprocketship-0.1.3.tar.gz
+[2024-04-07 23:29:08] INFO root fetch - processPackages [nexus-cat]: Downloading https://files.pythonhosted.org/packages/40/08/ed3977f7ca27e0dd568ab3db386943dda4935b166c40609ca0673f8b97b9/nexus-cat-0.1.5.tar.gz
+[2024-04-07 23:29:08] INFO root fetch - processPackages [NREL-disco]: Downloading https://files.pythonhosted.org/packages/ea/be/806b3672f6c2adae746d67eefa63ef1f1a80f13e2998f4a1c6888276c681/NREL-disco-0.5.0.tar.gz
+[2024-04-07 23:29:08] INFO root fetch - processPackages [deepllm]: Downloading https://files.pythonhosted.org/packages/2f/8d/5d1c1a860933f26606e9cd2bb08a7687a67b51489322dbd0293250e1a2c6/deepllm-1.4.2.tar.gz
+[2024-04-07 23:29:08] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-07 23:29:08] WARNING root fetch - processPackages [nexus-cat]: Timeout reached during download
+[2024-04-07 23:29:08] WARNING root fetch - processPackages [deepllm]: Timeout reached during download
+[2024-04-07 23:29:08] WARNING root fetch - processPackages [NREL-disco]: Timeout reached during download
+[2024-04-07 23:29:08] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/dc/b4/50e12debdba2b420f5833a96fde65df2931bb39354d6dfb6b425f0e15776/sprocketship-0.1.4.tar.gz
+[2024-04-07 23:29:08] INFO root fetch - processPackages [nexus-cat]: Downloading https://files.pythonhosted.org/packages/50/c0/2e47609df2168117754cd37a9eb4349b9fecec078a6e6aec163d0cd5f10a/nexus-cat-0.1.6.tar.gz
+[2024-04-07 23:29:08] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-07 23:29:08] INFO root fetch - processPackages [sprocketship]: executing diffoscope
+[2024-04-07 23:29:08] INFO root fetch - processPackages [sprocketship]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sprocketship-0.1.3.tar.gz tmp/sprocketship-0.1.4.tar.gz --markdown 20240407/s/sprocketship/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2024-04-07 23:29:08] INFO root fetch - processPackages [deepllm]: Downloading https://files.pythonhosted.org/packages/b6/bb/c67b68bb8e4389b12cd476f16f27f9b95e0a035b763df631d564e56b3bc9/deepllm-1.4.3.tar.gz
+[2024-04-07 23:29:08] INFO root fetch - processPackages [NREL-disco]: Downloading https://files.pythonhosted.org/packages/1b/04/c44bae0aadbbb166a5682176caee5b8bcd22f70b6420487478c201748426/NREL-disco-0.5.1.tar.gz
+[2024-04-07 23:29:08] WARNING root fetch - processPackages [deepllm]: Timeout reached during download
+[2024-04-07 23:29:08] INFO root fetch - processPackages [deepllm]: executing diffoscope
+[2024-04-07 23:29:08] INFO root fetch - processPackages [deepllm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepllm-1.4.2.tar.gz tmp/deepllm-1.4.3.tar.gz --markdown 20240407/d/deepllm/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2024-04-07 23:29:08] WARNING root fetch - processPackages [nexus-cat]: Timeout reached during download
+[2024-04-07 23:29:08] INFO root fetch - processPackages [nexus-cat]: executing diffoscope
+[2024-04-07 23:29:08] INFO root fetch - processPackages [nexus-cat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nexus-cat-0.1.5.tar.gz tmp/nexus-cat-0.1.6.tar.gz --markdown 20240407/n/nexus-cat/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2024-04-07 23:29:08] WARNING root fetch - processPackages [NREL-disco]: Timeout reached during download
+[2024-04-07 23:29:08] INFO root fetch - processPackages [NREL-disco]: executing diffoscope
+[2024-04-07 23:29:08] INFO root fetch - processPackages [NREL-disco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NREL-disco-0.5.0.tar.gz tmp/NREL-disco-0.5.1.tar.gz --markdown 20240407/N/NREL-disco/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2024-04-07 23:29:09] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.1.3.tar.gz]
+[2024-04-07 23:29:09] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.1.4.tar.gz]
+[2024-04-07 23:29:09] INFO root fetch - main [MainThread]: End processing [sprocketship]: success
+[2024-04-07 23:29:09] INFO root fetch - processPackages [deepllm]: Remove: archive file [/home/abi/fetcher/tmp/deepllm-1.4.2.tar.gz]
+[2024-04-07 23:29:09] INFO root fetch - processPackages [deepllm]: Remove: archive file [/home/abi/fetcher/tmp/deepllm-1.4.3.tar.gz]
+[2024-04-07 23:29:09] INFO root fetch - main [MainThread]: End processing [deepllm]: success
+[2024-04-07 23:29:09] INFO root fetch - processPackages [nexus-cat]: Remove: archive file [/home/abi/fetcher/tmp/nexus-cat-0.1.5.tar.gz]
+[2024-04-07 23:29:09] INFO root fetch - processPackages [nexus-cat]: Remove: archive file [/home/abi/fetcher/tmp/nexus-cat-0.1.6.tar.gz]
+[2024-04-07 23:29:09] INFO root fetch - main [MainThread]: End processing [nexus-cat]: success
+[2024-04-07 23:29:09] INFO root fetch - processPackages [NREL-disco]: Remove: archive file [/home/abi/fetcher/tmp/NREL-disco-0.5.0.tar.gz]
+[2024-04-07 23:29:09] INFO root fetch - processPackages [NREL-disco]: Remove: archive file [/home/abi/fetcher/tmp/NREL-disco-0.5.1.tar.gz]
+[2024-04-07 23:29:09] INFO root fetch - main [MainThread]: End processing [NREL-disco]: success
+[2024-04-07 23:29:09] INFO root fetch - main [MainThread]: Store serial: [22659418]
