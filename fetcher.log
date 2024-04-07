@@ -17288,3 +17288,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:57:22] INFO root fetch - processPackages [dingo-gw]: Remove: archive file [/home/abi/fetcher/tmp/dingo-gw-0.5.9.tar.gz]
 [2024-04-07 19:57:22] INFO root fetch - main [MainThread]: End processing [dingo-gw]: success
 [2024-04-07 19:57:22] INFO root fetch - main [MainThread]: Store serial: [22658103]
+[2024-04-07 19:59:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658103]
+[2024-04-07 19:59:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 19:59:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: requesto-py
+[2024-04-07 19:59:31] INFO root fetch - processPackages [requesto-py]: New version: [1.2.0] Old Version: [1.1.0.1]
+[2024-04-07 19:59:31] INFO root fetch - processPackages [requesto-py]: Downloading https://files.pythonhosted.org/packages/8b/3c/ca778901703298394fa63fd31af0d1b86f646a240b4280c09603091eb343/requesto-py-1.1.0.1.tar.gz
+[2024-04-07 19:59:31] WARNING root fetch - processPackages [requesto-py]: Timeout reached during download
+[2024-04-07 19:59:31] INFO root fetch - processPackages [requesto-py]: Downloading https://files.pythonhosted.org/packages/9f/69/d01e69a4f09c1ffc292749cefbfb1e0106b17688c09bec31a49432b1bc25/requesto-py-1.2.0.tar.gz
+[2024-04-07 19:59:32] WARNING root fetch - processPackages [requesto-py]: Timeout reached during download
+[2024-04-07 19:59:32] INFO root fetch - processPackages [requesto-py]: executing diffoscope
+[2024-04-07 19:59:32] INFO root fetch - processPackages [requesto-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/requesto-py-1.1.0.1.tar.gz tmp/requesto-py-1.2.0.tar.gz --markdown 20240407/r/requesto-py/1.1.0.1-1.2.0/diff.md --exclude *.pyd
+[2024-04-07 19:59:32] INFO root fetch - processPackages [requesto-py]: Remove: archive file [/home/abi/fetcher/tmp/requesto-py-1.1.0.1.tar.gz]
+[2024-04-07 19:59:32] INFO root fetch - processPackages [requesto-py]: Remove: archive file [/home/abi/fetcher/tmp/requesto-py-1.2.0.tar.gz]
+[2024-04-07 19:59:32] INFO root fetch - main [MainThread]: End processing [requesto-py]: success
+[2024-04-07 19:59:32] INFO root fetch - main [MainThread]: Store serial: [22658112]
