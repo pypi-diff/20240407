@@ -9271,3 +9271,53 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 11:38:47] INFO root fetch - processPackages [nef-pipelines]: Remove: archive file [/home/abi/fetcher/tmp/nef_pipelines-0.1.59.tar.gz]
 [2024-04-07 11:38:47] INFO root fetch - main [MainThread]: End processing [nef-pipelines]: success
 [2024-04-07 11:38:47] INFO root fetch - main [MainThread]: Store serial: [22655125]
+[2024-04-07 11:40:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655125]
+[2024-04-07 11:40:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 11:40:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gmsofttest
+[2024-04-07 11:40:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: avrotize
+[2024-04-07 11:40:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yooncloud-dart
+[2024-04-07 11:40:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OpsApi
+[2024-04-07 11:40:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: koalix-crm
+[2024-04-07 11:40:56] INFO root fetch - processPackages [OpsApi]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-04-07 11:40:56] INFO root fetch - processPackages [gmsofttest]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 11:40:56] INFO root fetch - processPackages [koalix-crm]: New version: [1.14.0rc1] Old Version: [1.13.dev9]
+[2024-04-07 11:40:56] INFO root fetch - processPackages [avrotize]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-07 11:40:56] WARNING root fetch - processPackages [yooncloud-dart]: Skipping, unable to determine old version
+[2024-04-07 11:40:56] INFO root fetch - main [MainThread]: End processing [yooncloud-dart] error
+[2024-04-07 11:40:56] INFO root fetch - processPackages [gmsofttest]: Downloading https://files.pythonhosted.org/packages/eb/c9/80a2e9566b35349b1eb8378e20b5a4ed2e0f534992281be6f39de2183dfc/gmsofttest-0.0.8.tar.gz
+[2024-04-07 11:40:56] INFO root fetch - processPackages [OpsApi]: Downloading https://files.pythonhosted.org/packages/cb/96/6ab51ec0bce6c789ca0549b0aa88f666a143b3f4f07e81e0df8c2b63e1b0/OpsApi-1.1.2.tar.gz
+[2024-04-07 11:40:56] INFO root fetch - processPackages [koalix-crm]: Downloading https://files.pythonhosted.org/packages/56/1f/a457a0c5c7861c933500deea33b80eea886a9bb386bf9b25280f4f8820e1/koalix-crm-1.13.dev9.tar.gz
+[2024-04-07 11:40:56] WARNING root fetch - processPackages [gmsofttest]: Timeout reached during download
+[2024-04-07 11:40:56] INFO root fetch - processPackages [avrotize]: Downloading https://files.pythonhosted.org/packages/74/46/eb62099efb66abd88c4f9335013e0af64ad4aaa909b4e74620e656defff2/avrotize-1.0.2.tar.gz
+[2024-04-07 11:40:56] WARNING root fetch - processPackages [OpsApi]: Timeout reached during download
+[2024-04-07 11:40:57] INFO root fetch - processPackages [gmsofttest]: Downloading https://files.pythonhosted.org/packages/ed/9f/122493f4e3bf0b258a259a6fe55e73fbee9bdfc4fad41c41616c86d64327/gmsofttest-0.0.9.tar.gz
+[2024-04-07 11:40:57] WARNING root fetch - processPackages [koalix-crm]: Timeout reached during download
+[2024-04-07 11:40:57] INFO root fetch - processPackages [OpsApi]: Downloading https://files.pythonhosted.org/packages/29/68/55f2d21aad474b44833ae739f9df27f8c238e79ceab4a256681717eb469c/OpsApi-1.1.3.tar.gz
+[2024-04-07 11:40:57] WARNING root fetch - processPackages [gmsofttest]: Timeout reached during download
+[2024-04-07 11:40:57] INFO root fetch - processPackages [gmsofttest]: executing diffoscope
+[2024-04-07 11:40:57] INFO root fetch - processPackages [gmsofttest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmsofttest-0.0.8.tar.gz tmp/gmsofttest-0.0.9.tar.gz --markdown 20240407/g/gmsofttest/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 11:40:57] INFO root fetch - processPackages [koalix-crm]: Downloading https://files.pythonhosted.org/packages/2b/16/97039bfbbe23a012651e3737e436e29dc33db67cd8149e2a263ecdbb4fd7/koalix-crm-1.14.0rc1.tar.gz
+[2024-04-07 11:40:57] WARNING root fetch - processPackages [OpsApi]: Timeout reached during download
+[2024-04-07 11:40:57] INFO root fetch - processPackages [OpsApi]: executing diffoscope
+[2024-04-07 11:40:57] INFO root fetch - processPackages [OpsApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpsApi-1.1.2.tar.gz tmp/OpsApi-1.1.3.tar.gz --markdown 20240407/O/OpsApi/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2024-04-07 11:40:57] WARNING root fetch - processPackages [avrotize]: Timeout reached during download
+[2024-04-07 11:40:57] INFO root fetch - processPackages [avrotize]: Downloading https://files.pythonhosted.org/packages/9e/a1/3782b51ae3fba78432767b3d6531dd2933064060eeaa67e823eddf222c37/avrotize-1.0.3.tar.gz
+[2024-04-07 11:40:57] WARNING root fetch - processPackages [avrotize]: Timeout reached during download
+[2024-04-07 11:40:57] INFO root fetch - processPackages [avrotize]: executing diffoscope
+[2024-04-07 11:40:57] INFO root fetch - processPackages [avrotize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avrotize-1.0.2.tar.gz tmp/avrotize-1.0.3.tar.gz --markdown 20240407/a/avrotize/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2024-04-07 11:40:57] INFO root fetch - processPackages [OpsApi]: Remove: archive file [/home/abi/fetcher/tmp/OpsApi-1.1.2.tar.gz]
+[2024-04-07 11:40:57] INFO root fetch - processPackages [OpsApi]: Remove: archive file [/home/abi/fetcher/tmp/OpsApi-1.1.3.tar.gz]
+[2024-04-07 11:40:57] INFO root fetch - main [MainThread]: End processing [OpsApi]: success
+[2024-04-07 11:40:57] INFO root fetch - processPackages [gmsofttest]: Remove: archive file [/home/abi/fetcher/tmp/gmsofttest-0.0.8.tar.gz]
+[2024-04-07 11:40:57] INFO root fetch - processPackages [gmsofttest]: Remove: archive file [/home/abi/fetcher/tmp/gmsofttest-0.0.9.tar.gz]
+[2024-04-07 11:40:57] INFO root fetch - main [MainThread]: End processing [gmsofttest]: success
+[2024-04-07 11:40:57] WARNING root fetch - processPackages [koalix-crm]: Timeout reached during download
+[2024-04-07 11:40:57] INFO root fetch - processPackages [koalix-crm]: executing diffoscope
+[2024-04-07 11:40:57] INFO root fetch - processPackages [koalix-crm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/koalix-crm-1.13.dev9.tar.gz tmp/koalix-crm-1.14.0rc1.tar.gz --markdown 20240407/k/koalix-crm/1.13.dev9-1.14.0rc1/diff.md --exclude *.pyd
+[2024-04-07 11:40:58] INFO root fetch - processPackages [avrotize]: Remove: archive file [/home/abi/fetcher/tmp/avrotize-1.0.2.tar.gz]
+[2024-04-07 11:40:58] INFO root fetch - processPackages [avrotize]: Remove: archive file [/home/abi/fetcher/tmp/avrotize-1.0.3.tar.gz]
+[2024-04-07 11:40:58] INFO root fetch - main [MainThread]: End processing [avrotize]: success
+[2024-04-07 11:40:59] INFO root fetch - processPackages [koalix-crm]: Remove: archive file [/home/abi/fetcher/tmp/koalix-crm-1.13.dev9.tar.gz]
+[2024-04-07 11:40:59] INFO root fetch - processPackages [koalix-crm]: Remove: archive file [/home/abi/fetcher/tmp/koalix-crm-1.14.0rc1.tar.gz]
+[2024-04-07 11:40:59] INFO root fetch - main [MainThread]: End processing [koalix-crm]: success
+[2024-04-07 11:40:59] INFO root fetch - main [MainThread]: Store serial: [22655146]
