@@ -1886,3 +1886,17 @@
 [2024-04-07 02:59:20] WARNING root fetch - processPackages [prosperity2submit]: Skipping, unable to determine old version
 [2024-04-07 02:59:20] INFO root fetch - main [MainThread]: End processing [prosperity2submit] error
 [2024-04-07 02:59:20] INFO root fetch - main [MainThread]: Store serial: [22652421]
+[2024-04-07 03:01:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652421]
+[2024-04-07 03:01:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 03:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aws-packages
+[2024-04-07 03:01:30] INFO root fetch - processPackages [aws-packages]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 03:01:30] INFO root fetch - processPackages [aws-packages]: Downloading https://files.pythonhosted.org/packages/df/79/dc9dd4f48288c36fa85b903a442b0590b5f087cf3de6feac6a2c7361bd03/aws_packages-0.0.8.tar.gz
+[2024-04-07 03:01:30] WARNING root fetch - processPackages [aws-packages]: Timeout reached during download
+[2024-04-07 03:01:31] INFO root fetch - processPackages [aws-packages]: Downloading https://files.pythonhosted.org/packages/f9/70/6dad25f5681631041b67fc5bad90c0828becfec9e1569cd148b0c104a41d/aws_packages-0.0.9.tar.gz
+[2024-04-07 03:01:31] WARNING root fetch - processPackages [aws-packages]: Timeout reached during download
+[2024-04-07 03:01:31] INFO root fetch - processPackages [aws-packages]: executing diffoscope
+[2024-04-07 03:01:31] INFO root fetch - processPackages [aws-packages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_packages-0.0.8.tar.gz tmp/aws_packages-0.0.9.tar.gz --markdown 20240407/a/aws-packages/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 03:01:31] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.8.tar.gz]
+[2024-04-07 03:01:31] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.9.tar.gz]
+[2024-04-07 03:01:31] INFO root fetch - main [MainThread]: End processing [aws-packages]: success
+[2024-04-07 03:01:31] INFO root fetch - main [MainThread]: Store serial: [22652446]
