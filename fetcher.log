@@ -13788,3 +13788,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:42:20] INFO root fetch - processPackages [bestdori-api]: Remove: archive file [/home/abi/fetcher/tmp/bestdori_api-0.1.9.tar.gz]
 [2024-04-07 16:42:20] INFO root fetch - main [MainThread]: End processing [bestdori-api]: success
 [2024-04-07 16:42:20] INFO root fetch - main [MainThread]: Store serial: [22656880]
+[2024-04-07 16:44:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656880]
+[2024-04-07 16:44:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 16:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: discordanalytics
+[2024-04-07 16:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chipmunkdb-python-client
+[2024-04-07 16:44:29] INFO root fetch - processPackages [discordanalytics]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-07 16:44:29] INFO root fetch - processPackages [discordanalytics]: Downloading https://files.pythonhosted.org/packages/70/34/ea247e540b5e76811a539f3fa8b8eb6bd98c02e8a850e8c1eedf8d849948/discordanalytics-0.0.3.tar.gz
+[2024-04-07 16:44:29] INFO root fetch - processPackages [chipmunkdb-python-client]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-07 16:44:29] WARNING root fetch - processPackages [discordanalytics]: Timeout reached during download
+[2024-04-07 16:44:29] INFO root fetch - processPackages [chipmunkdb-python-client]: Downloading https://files.pythonhosted.org/packages/4f/c7/f002a900023c9ff73783c7dd696a1766082dec94d492b56022ec97752ff5/chipmunkdb_python_client-2.0.8.tar.gz
+[2024-04-07 16:44:29] INFO root fetch - processPackages [discordanalytics]: Downloading https://files.pythonhosted.org/packages/27/c2/2d6147c67d509ece4cb0f4c06c5d7d8555a989a1e4a3b699cfc58ec03c52/discordanalytics-0.0.4.tar.gz
+[2024-04-07 16:44:29] WARNING root fetch - processPackages [chipmunkdb-python-client]: Timeout reached during download
+[2024-04-07 16:44:29] WARNING root fetch - processPackages [discordanalytics]: Timeout reached during download
+[2024-04-07 16:44:29] INFO root fetch - processPackages [discordanalytics]: executing diffoscope
+[2024-04-07 16:44:29] INFO root fetch - processPackages [discordanalytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discordanalytics-0.0.3.tar.gz tmp/discordanalytics-0.0.4.tar.gz --markdown 20240407/d/discordanalytics/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 16:44:29] INFO root fetch - processPackages [chipmunkdb-python-client]: Downloading https://files.pythonhosted.org/packages/a2/44/4f3da7ddbd9a9346a01ae41698404a384d2203e5e8be8134fd74828ffd70/chipmunkdb_python_client-2.0.9.tar.gz
+[2024-04-07 16:44:30] WARNING root fetch - processPackages [chipmunkdb-python-client]: Timeout reached during download
+[2024-04-07 16:44:30] INFO root fetch - processPackages [chipmunkdb-python-client]: executing diffoscope
+[2024-04-07 16:44:30] INFO root fetch - processPackages [chipmunkdb-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chipmunkdb_python_client-2.0.8.tar.gz tmp/chipmunkdb_python_client-2.0.9.tar.gz --markdown 20240407/c/chipmunkdb-python-client/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2024-04-07 16:44:30] INFO root fetch - processPackages [discordanalytics]: Remove: archive file [/home/abi/fetcher/tmp/discordanalytics-0.0.3.tar.gz]
+[2024-04-07 16:44:30] INFO root fetch - processPackages [discordanalytics]: Remove: archive file [/home/abi/fetcher/tmp/discordanalytics-0.0.4.tar.gz]
+[2024-04-07 16:44:30] INFO root fetch - main [MainThread]: End processing [discordanalytics]: success
+[2024-04-07 16:44:30] INFO root fetch - processPackages [chipmunkdb-python-client]: Remove: archive file [/home/abi/fetcher/tmp/chipmunkdb_python_client-2.0.8.tar.gz]
+[2024-04-07 16:44:30] INFO root fetch - processPackages [chipmunkdb-python-client]: Remove: archive file [/home/abi/fetcher/tmp/chipmunkdb_python_client-2.0.9.tar.gz]
+[2024-04-07 16:44:30] INFO root fetch - main [MainThread]: End processing [chipmunkdb-python-client]: success
+[2024-04-07 16:44:30] INFO root fetch - main [MainThread]: Store serial: [22656885]
