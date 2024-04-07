@@ -1900,3 +1900,52 @@
 [2024-04-07 03:01:31] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.9.tar.gz]
 [2024-04-07 03:01:31] INFO root fetch - main [MainThread]: End processing [aws-packages]: success
 [2024-04-07 03:01:31] INFO root fetch - main [MainThread]: Store serial: [22652446]
+[2024-04-07 03:03:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652446]
+[2024-04-07 03:03:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 03:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prosperity2submit
+[2024-04-07 03:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flask-redis-caching
+[2024-04-07 03:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: redis-caching
+[2024-04-07 03:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: LedFx
+[2024-04-07 03:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: highcharts-stock
+[2024-04-07 03:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: EAB-tools
+[2024-04-07 03:03:40] WARNING root fetch - processPackages [prosperity2submit]: Skipping, unable to determine old version
+[2024-04-07 03:03:40] INFO root fetch - main [MainThread]: End processing [prosperity2submit] error
+[2024-04-07 03:03:40] INFO root fetch - processPackages [EAB-tools]: New version: [0.1.1rc0] Old Version: [0.0.3rc0]
+[2024-04-07 03:03:40] INFO root fetch - processPackages [redis-caching]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-07 03:03:40] INFO root fetch - processPackages [LedFx]: New version: [2.0.97] Old Version: [2.0.96]
+[2024-04-07 03:03:40] INFO root fetch - processPackages [EAB-tools]: Downloading https://files.pythonhosted.org/packages/94/0a/5462d18401041dc51a7fc80aea1a6f638741367ba7beebbf07339972b8c0/EAB_tools-0.0.3rc0.tar.gz
+[2024-04-07 03:03:40] INFO root fetch - processPackages [flask-redis-caching]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-07 03:03:40] INFO root fetch - processPackages [highcharts-stock]: New version: [1.6.0] Old Version: [1.5.0]
+[2024-04-07 03:03:40] WARNING root fetch - processPackages [EAB-tools]: Timeout reached during download
+[2024-04-07 03:03:40] INFO root fetch - processPackages [LedFx]: Downloading https://files.pythonhosted.org/packages/5e/95/b2a178318e57ba6294697f9538aa47512224ac9d1e2bd372d412da5567a5/ledfx-2.0.96.tar.gz
+[2024-04-07 03:03:40] INFO root fetch - processPackages [redis-caching]: Downloading https://files.pythonhosted.org/packages/14/6e/1f446e6c8ccd511bc7bc9c5a4b07bcd78b8abd999f6e4333423314a99021/redis_caching-1.0.1.tar.gz
+[2024-04-07 03:03:40] INFO root fetch - processPackages [flask-redis-caching]: Downloading https://files.pythonhosted.org/packages/9e/92/b085426e3486305f99a1cd9a809b7654137a93c8507e0ff984fa4500d0a4/flask_redis_caching-1.0.3.tar.gz
+[2024-04-07 03:03:40] WARNING root fetch - processPackages [LedFx]: Skipping package: exceeds size limit 28040679>=10485760
+[2024-04-07 03:03:40] INFO root fetch - main [MainThread]: End processing [LedFx] error
+[2024-04-07 03:03:40] INFO root fetch - processPackages [EAB-tools]: Downloading https://files.pythonhosted.org/packages/2b/4a/e9357aa4fbaf0ab81812ac8c9b044dce38ea229c275adaf9bf30934bdd38/EAB_tools-0.1.1rc0.tar.gz
+[2024-04-07 03:03:40] INFO root fetch - processPackages [highcharts-stock]: Downloading https://files.pythonhosted.org/packages/3f/03/830cd4ce45da1a3077fda4b62e2ee34fd9989253ef7e485e13421662cd3a/highcharts_stock-1.5.0.tar.gz
+[2024-04-07 03:03:40] WARNING root fetch - processPackages [highcharts-stock]: Skipping package: exceeds size limit 11535020>=10485760
+[2024-04-07 03:03:40] INFO root fetch - main [MainThread]: End processing [highcharts-stock] error
+[2024-04-07 03:03:40] WARNING root fetch - processPackages [flask-redis-caching]: Timeout reached during download
+[2024-04-07 03:03:40] WARNING root fetch - processPackages [EAB-tools]: Timeout reached during download
+[2024-04-07 03:03:40] INFO root fetch - processPackages [EAB-tools]: executing diffoscope
+[2024-04-07 03:03:40] INFO root fetch - processPackages [EAB-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EAB_tools-0.0.3rc0.tar.gz tmp/EAB_tools-0.1.1rc0.tar.gz --markdown 20240407/E/EAB-tools/0.0.3rc0-0.1.1rc0/diff.md --exclude *.pyd
+[2024-04-07 03:03:40] WARNING root fetch - processPackages [redis-caching]: Timeout reached during download
+[2024-04-07 03:03:40] INFO root fetch - processPackages [flask-redis-caching]: Downloading https://files.pythonhosted.org/packages/35/a6/3951e48b855a3fa0fc5943235ac96fac9980c95bf42f545eb6c5869e9e8f/flask_redis_caching-1.0.4.tar.gz
+[2024-04-07 03:03:40] INFO root fetch - processPackages [redis-caching]: Downloading https://files.pythonhosted.org/packages/89/fb/06b65641b3edd0ecc827a84048f3d9a2185b8fb28b4c8d303289c9071b13/redis_caching-1.0.2.tar.gz
+[2024-04-07 03:03:40] WARNING root fetch - processPackages [flask-redis-caching]: Timeout reached during download
+[2024-04-07 03:03:40] INFO root fetch - processPackages [flask-redis-caching]: executing diffoscope
+[2024-04-07 03:03:40] INFO root fetch - processPackages [flask-redis-caching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_redis_caching-1.0.3.tar.gz tmp/flask_redis_caching-1.0.4.tar.gz --markdown 20240407/f/flask-redis-caching/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2024-04-07 03:03:41] WARNING root fetch - processPackages [redis-caching]: Timeout reached during download
+[2024-04-07 03:03:41] INFO root fetch - processPackages [redis-caching]: executing diffoscope
+[2024-04-07 03:03:41] INFO root fetch - processPackages [redis-caching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redis_caching-1.0.1.tar.gz tmp/redis_caching-1.0.2.tar.gz --markdown 20240407/r/redis-caching/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2024-04-07 03:03:41] INFO root fetch - processPackages [EAB-tools]: Remove: archive file [/home/abi/fetcher/tmp/EAB_tools-0.0.3rc0.tar.gz]
+[2024-04-07 03:03:41] INFO root fetch - processPackages [EAB-tools]: Remove: archive file [/home/abi/fetcher/tmp/EAB_tools-0.1.1rc0.tar.gz]
+[2024-04-07 03:03:41] INFO root fetch - main [MainThread]: End processing [EAB-tools]: success
+[2024-04-07 03:03:41] INFO root fetch - processPackages [redis-caching]: Remove: archive file [/home/abi/fetcher/tmp/redis_caching-1.0.1.tar.gz]
+[2024-04-07 03:03:41] INFO root fetch - processPackages [redis-caching]: Remove: archive file [/home/abi/fetcher/tmp/redis_caching-1.0.2.tar.gz]
+[2024-04-07 03:03:41] INFO root fetch - main [MainThread]: End processing [redis-caching]: success
+[2024-04-07 03:03:41] INFO root fetch - processPackages [flask-redis-caching]: Remove: archive file [/home/abi/fetcher/tmp/flask_redis_caching-1.0.3.tar.gz]
+[2024-04-07 03:03:41] INFO root fetch - processPackages [flask-redis-caching]: Remove: archive file [/home/abi/fetcher/tmp/flask_redis_caching-1.0.4.tar.gz]
+[2024-04-07 03:03:41] INFO root fetch - main [MainThread]: End processing [flask-redis-caching]: success
+[2024-04-07 03:03:41] INFO root fetch - main [MainThread]: Store serial: [22652515]
