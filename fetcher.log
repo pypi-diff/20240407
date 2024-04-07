@@ -16105,3 +16105,61 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 18:44:53] INFO root fetch - processPackages [pyrustaudit]: Remove: archive file [/home/abi/fetcher/tmp/pyrustaudit-0.0.2-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-04-07 18:44:53] INFO root fetch - main [MainThread]: End processing [pyrustaudit]: success
 [2024-04-07 18:44:53] INFO root fetch - main [MainThread]: Store serial: [22657645]
+[2024-04-07 18:46:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657645]
+[2024-04-07 18:47:02] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 18:47:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kibo-unibs-fp-lib
+[2024-04-07 18:47:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: avtomat-aws
+[2024-04-07 18:47:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchdbg
+[2024-04-07 18:47:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: passphera-core
+[2024-04-07 18:47:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aisploit
+[2024-04-07 18:47:02] INFO root fetch - processPackages [kibo-unibs-fp-lib]: New version: [1.0.2] Old Version: [1.0.0]
+[2024-04-07 18:47:02] INFO root fetch - processPackages [avtomat-aws]: New version: [0.1.1] Old Version: [0.0.3]
+[2024-04-07 18:47:02] INFO root fetch - processPackages [aisploit]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-07 18:47:03] INFO root fetch - processPackages [kibo-unibs-fp-lib]: Downloading https://files.pythonhosted.org/packages/0f/bc/71c8a52ccf116417b78ebb178612a0f7358e1cedf9162cefb1032e3c17e0/kibo_unibs_fp_lib-1.0.0.tar.gz
+[2024-04-07 18:47:03] INFO root fetch - processPackages [torchdbg]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-07 18:47:03] INFO root fetch - processPackages [passphera-core]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-07 18:47:03] INFO root fetch - processPackages [avtomat-aws]: Downloading https://files.pythonhosted.org/packages/6a/55/79e93753fc6519670777958584fa83257181300a41400cdc3913aacbe2a1/avtomat_aws-0.0.3.tar.gz
+[2024-04-07 18:47:03] INFO root fetch - processPackages [aisploit]: Downloading https://files.pythonhosted.org/packages/1b/4d/ad5f986bf2a6baf67e93df77a8dd6c161722e322bc99a1c5e215fc1d7faa/aisploit-0.0.7.tar.gz
+[2024-04-07 18:47:03] WARNING root fetch - processPackages [kibo-unibs-fp-lib]: Timeout reached during download
+[2024-04-07 18:47:03] WARNING root fetch - processPackages [avtomat-aws]: Timeout reached during download
+[2024-04-07 18:47:03] INFO root fetch - processPackages [torchdbg]: Downloading https://files.pythonhosted.org/packages/b2/96/945a1e04dd680f36128010e613b0ea10b4e76da681f6c1e7f2b42cf55ffb/torchdbg-0.1.0.tar.gz
+[2024-04-07 18:47:03] WARNING root fetch - processPackages [aisploit]: Timeout reached during download
+[2024-04-07 18:47:03] INFO root fetch - processPackages [passphera-core]: Downloading https://files.pythonhosted.org/packages/ff/8f/096b9e948a1aef80e8a50962b37f2decb5131cc516fc22297034db766bb3/passphera-core-0.1.0.tar.gz
+[2024-04-07 18:47:03] INFO root fetch - processPackages [kibo-unibs-fp-lib]: Downloading https://files.pythonhosted.org/packages/6e/ba/dd78608fc5efe9d1d0eea3edbc92d5dfc22b125f96bb2f07d9289c4b55b0/kibo_unibs_fp_lib-1.0.2.tar.gz
+[2024-04-07 18:47:03] WARNING root fetch - processPackages [torchdbg]: Timeout reached during download
+[2024-04-07 18:47:03] INFO root fetch - processPackages [avtomat-aws]: Downloading https://files.pythonhosted.org/packages/b0/9d/60d44a30427f783c1f4064ef11cdbbe753d343429304636ecf488cf977ab/avtomat_aws-0.1.1.tar.gz
+[2024-04-07 18:47:03] WARNING root fetch - processPackages [passphera-core]: Timeout reached during download
+[2024-04-07 18:47:03] WARNING root fetch - processPackages [kibo-unibs-fp-lib]: Timeout reached during download
+[2024-04-07 18:47:03] INFO root fetch - processPackages [kibo-unibs-fp-lib]: executing diffoscope
+[2024-04-07 18:47:03] INFO root fetch - processPackages [kibo-unibs-fp-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kibo_unibs_fp_lib-1.0.0.tar.gz tmp/kibo_unibs_fp_lib-1.0.2.tar.gz --markdown 20240407/k/kibo-unibs-fp-lib/1.0.0-1.0.2/diff.md --exclude *.pyd
+[2024-04-07 18:47:03] INFO root fetch - processPackages [aisploit]: Downloading https://files.pythonhosted.org/packages/1d/74/57334bbb6cdd1f5fb94ed46c97de575ed8c0ab6a66b52cc953fe6946746c/aisploit-0.0.8.tar.gz
+[2024-04-07 18:47:03] INFO root fetch - processPackages [torchdbg]: Downloading https://files.pythonhosted.org/packages/af/c3/793ae8e316da5c8626e8e9dd5ca7261e37dcd42be8c4d2e22cb161d5bc72/torchdbg-0.2.0.tar.gz
+[2024-04-07 18:47:03] WARNING root fetch - processPackages [aisploit]: Timeout reached during download
+[2024-04-07 18:47:03] INFO root fetch - processPackages [aisploit]: executing diffoscope
+[2024-04-07 18:47:03] INFO root fetch - processPackages [aisploit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aisploit-0.0.7.tar.gz tmp/aisploit-0.0.8.tar.gz --markdown 20240407/a/aisploit/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-07 18:47:03] INFO root fetch - processPackages [passphera-core]: Downloading https://files.pythonhosted.org/packages/62/45/1e3473636eddb40aebc11839ce181867ede3e7f3e1acfbb224800f216900/passphera-core-0.2.0.tar.gz
+[2024-04-07 18:47:03] WARNING root fetch - processPackages [avtomat-aws]: Timeout reached during download
+[2024-04-07 18:47:03] INFO root fetch - processPackages [avtomat-aws]: executing diffoscope
+[2024-04-07 18:47:03] INFO root fetch - processPackages [avtomat-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avtomat_aws-0.0.3.tar.gz tmp/avtomat_aws-0.1.1.tar.gz --markdown 20240407/a/avtomat-aws/0.0.3-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 18:47:03] WARNING root fetch - processPackages [torchdbg]: Timeout reached during download
+[2024-04-07 18:47:03] INFO root fetch - processPackages [torchdbg]: executing diffoscope
+[2024-04-07 18:47:03] INFO root fetch - processPackages [torchdbg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdbg-0.1.0.tar.gz tmp/torchdbg-0.2.0.tar.gz --markdown 20240407/t/torchdbg/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2024-04-07 18:47:03] WARNING root fetch - processPackages [passphera-core]: Timeout reached during download
+[2024-04-07 18:47:03] INFO root fetch - processPackages [passphera-core]: executing diffoscope
+[2024-04-07 18:47:03] INFO root fetch - processPackages [passphera-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/passphera-core-0.1.0.tar.gz tmp/passphera-core-0.2.0.tar.gz --markdown 20240407/p/passphera-core/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2024-04-07 18:47:03] INFO root fetch - processPackages [kibo-unibs-fp-lib]: Remove: archive file [/home/abi/fetcher/tmp/kibo_unibs_fp_lib-1.0.0.tar.gz]
+[2024-04-07 18:47:03] INFO root fetch - processPackages [kibo-unibs-fp-lib]: Remove: archive file [/home/abi/fetcher/tmp/kibo_unibs_fp_lib-1.0.2.tar.gz]
+[2024-04-07 18:47:03] INFO root fetch - main [MainThread]: End processing [kibo-unibs-fp-lib]: success
+[2024-04-07 18:47:04] INFO root fetch - processPackages [aisploit]: Remove: archive file [/home/abi/fetcher/tmp/aisploit-0.0.7.tar.gz]
+[2024-04-07 18:47:04] INFO root fetch - processPackages [aisploit]: Remove: archive file [/home/abi/fetcher/tmp/aisploit-0.0.8.tar.gz]
+[2024-04-07 18:47:04] INFO root fetch - main [MainThread]: End processing [aisploit]: success
+[2024-04-07 18:47:04] INFO root fetch - processPackages [torchdbg]: Remove: archive file [/home/abi/fetcher/tmp/torchdbg-0.1.0.tar.gz]
+[2024-04-07 18:47:04] INFO root fetch - processPackages [torchdbg]: Remove: archive file [/home/abi/fetcher/tmp/torchdbg-0.2.0.tar.gz]
+[2024-04-07 18:47:04] INFO root fetch - main [MainThread]: End processing [torchdbg]: success
+[2024-04-07 18:47:04] INFO root fetch - processPackages [passphera-core]: Remove: archive file [/home/abi/fetcher/tmp/passphera-core-0.1.0.tar.gz]
+[2024-04-07 18:47:04] INFO root fetch - processPackages [passphera-core]: Remove: archive file [/home/abi/fetcher/tmp/passphera-core-0.2.0.tar.gz]
+[2024-04-07 18:47:04] INFO root fetch - main [MainThread]: End processing [passphera-core]: success
+[2024-04-07 18:47:04] INFO root fetch - processPackages [avtomat-aws]: Remove: archive file [/home/abi/fetcher/tmp/avtomat_aws-0.0.3.tar.gz]
+[2024-04-07 18:47:04] INFO root fetch - processPackages [avtomat-aws]: Remove: archive file [/home/abi/fetcher/tmp/avtomat_aws-0.1.1.tar.gz]
+[2024-04-07 18:47:04] INFO root fetch - main [MainThread]: End processing [avtomat-aws]: success
+[2024-04-07 18:47:04] INFO root fetch - main [MainThread]: Store serial: [22657687]
