@@ -20124,3 +20124,9 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:50:04] INFO root fetch - processPackages [fovus]: Remove: archive file [/home/abi/fetcher/tmp/fovus-1.1.9-py3-none-any.whl.zip]
 [2024-04-07 22:50:04] INFO root fetch - main [MainThread]: End processing [fovus]: success
 [2024-04-07 22:50:04] INFO root fetch - main [MainThread]: Store serial: [22659206]
+[2024-04-07 22:52:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659206]
+[2024-04-07 22:52:13] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 22:52:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pdfconversorcall
+[2024-04-07 22:52:13] WARNING root fetch - processPackages [pdfconversorcall]: Skipping, unable to determine old version
+[2024-04-07 22:52:13] INFO root fetch - main [MainThread]: End processing [pdfconversorcall] error
+[2024-04-07 22:52:13] INFO root fetch - main [MainThread]: Store serial: [22659210]
