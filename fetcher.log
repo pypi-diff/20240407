@@ -6717,3 +6717,17 @@
 [2024-04-07 08:50:49] INFO root fetch - processPackages [bestnlp]: Remove: archive file [/home/abi/fetcher/tmp/bestnlp-1.0.3-py3-none-any.whl.zip]
 [2024-04-07 08:50:49] INFO root fetch - main [MainThread]: End processing [bestnlp]: success
 [2024-04-07 08:50:49] INFO root fetch - main [MainThread]: Store serial: [22654159]
+[2024-04-07 08:52:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654159]
+[2024-04-07 08:52:59] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 08:52:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-sat
+[2024-04-07 08:52:59] INFO root fetch - processPackages [python-sat]: New version: [1.8.dev9] Old Version: [1.8.dev8]
+[2024-04-07 08:52:59] INFO root fetch - processPackages [python-sat]: Downloading https://files.pythonhosted.org/packages/63/b4/ae527b84f3619dbc9cd55ecb25f8610e81022286b3f26915527c0275951b/python-sat-1.8.dev8.tar.gz
+[2024-04-07 08:53:00] WARNING root fetch - processPackages [python-sat]: Timeout reached during download
+[2024-04-07 08:53:00] INFO root fetch - processPackages [python-sat]: Downloading https://files.pythonhosted.org/packages/73/f6/4ac4fc5a70a70cda807cdf434544823996baa36a3f67549676d3a0390166/python-sat-1.8.dev9.tar.gz
+[2024-04-07 08:53:01] WARNING root fetch - processPackages [python-sat]: Timeout reached during download
+[2024-04-07 08:53:01] INFO root fetch - processPackages [python-sat]: executing diffoscope
+[2024-04-07 08:53:01] INFO root fetch - processPackages [python-sat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-sat-1.8.dev8.tar.gz tmp/python-sat-1.8.dev9.tar.gz --markdown 20240407/p/python-sat/1.8.dev8-1.8.dev9/diff.md --exclude *.pyd
+[2024-04-07 08:53:02] INFO root fetch - processPackages [python-sat]: Remove: archive file [/home/abi/fetcher/tmp/python-sat-1.8.dev8.tar.gz]
+[2024-04-07 08:53:02] INFO root fetch - processPackages [python-sat]: Remove: archive file [/home/abi/fetcher/tmp/python-sat-1.8.dev9.tar.gz]
+[2024-04-07 08:53:02] INFO root fetch - main [MainThread]: End processing [python-sat]: success
+[2024-04-07 08:53:02] INFO root fetch - main [MainThread]: Store serial: [22654174]
