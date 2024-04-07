@@ -10833,3 +10833,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:36:53] INFO root fetch - processPackages [ruleopt]: Remove: archive file [/home/abi/fetcher/tmp/ruleopt-0.1.4-cp39-cp39-win_amd64.whl.zip]
 [2024-04-07 13:36:53] INFO root fetch - main [MainThread]: End processing [ruleopt]: success
 [2024-04-07 13:36:53] INFO root fetch - main [MainThread]: Store serial: [22655770]
+[2024-04-07 13:38:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655770]
+[2024-04-07 13:39:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 13:39:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-learngual
+[2024-04-07 13:39:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: octarine3d
+[2024-04-07 13:39:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: commits2pdf
+[2024-04-07 13:39:02] INFO root fetch - processPackages [django-learngual]: New version: [0.36] Old Version: [0.34]
+[2024-04-07 13:39:02] INFO root fetch - processPackages [django-learngual]: Downloading https://files.pythonhosted.org/packages/c2/bf/a6281a5c4122baef0d953b11712913879dbc2841994893eb531aaedc084c/django-learngual-0.34.tar.gz
+[2024-04-07 13:39:02] INFO root fetch - processPackages [octarine3d]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-07 13:39:02] INFO root fetch - processPackages [commits2pdf]: New version: [1.1.5] Old Version: [1.0.5]
+[2024-04-07 13:39:02] WARNING root fetch - processPackages [django-learngual]: Timeout reached during download
+[2024-04-07 13:39:02] INFO root fetch - processPackages [octarine3d]: Downloading https://files.pythonhosted.org/packages/dd/80/440280d717388dc5ef419d68d2b446adb8080a7e09e31268d410d1400e58/octarine3d-0.1.0.tar.gz
+[2024-04-07 13:39:02] INFO root fetch - processPackages [commits2pdf]: Downloading https://files.pythonhosted.org/packages/94/10/31c3918eeed4f60a01a6383b5bd4089639b8ab7ad65a13beba6c6428ec2e/commits2pdf-1.0.5.tar.gz
+[2024-04-07 13:39:02] INFO root fetch - processPackages [django-learngual]: Downloading https://files.pythonhosted.org/packages/a8/73/d59066778b0f3ae6271b69307b73aeb70671c8ab10841fbe69ce5cd45955/django-learngual-0.36.tar.gz
+[2024-04-07 13:39:02] WARNING root fetch - processPackages [octarine3d]: Timeout reached during download
+[2024-04-07 13:39:02] WARNING root fetch - processPackages [commits2pdf]: Timeout reached during download
+[2024-04-07 13:39:02] WARNING root fetch - processPackages [django-learngual]: Timeout reached during download
+[2024-04-07 13:39:02] INFO root fetch - processPackages [django-learngual]: executing diffoscope
+[2024-04-07 13:39:02] INFO root fetch - processPackages [django-learngual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-learngual-0.34.tar.gz tmp/django-learngual-0.36.tar.gz --markdown 20240407/d/django-learngual/0.34-0.36/diff.md --exclude *.pyd
+[2024-04-07 13:39:02] INFO root fetch - processPackages [commits2pdf]: Downloading https://files.pythonhosted.org/packages/9c/f5/2f1ba033f7decb8bed9ba709ef2789dfc61e9c0b3a761a75a6bb1ab8a783/commits2pdf-1.1.5.tar.gz
+[2024-04-07 13:39:02] INFO root fetch - processPackages [octarine3d]: Downloading https://files.pythonhosted.org/packages/40/22/c79ede3020949a75b3e9478bee9499a65df4cb199437a8338b3e1adbc23e/octarine3d-0.1.1.tar.gz
+[2024-04-07 13:39:03] WARNING root fetch - processPackages [octarine3d]: Timeout reached during download
+[2024-04-07 13:39:03] INFO root fetch - processPackages [octarine3d]: executing diffoscope
+[2024-04-07 13:39:03] INFO root fetch - processPackages [octarine3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octarine3d-0.1.0.tar.gz tmp/octarine3d-0.1.1.tar.gz --markdown 20240407/o/octarine3d/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 13:39:03] WARNING root fetch - processPackages [commits2pdf]: Timeout reached during download
+[2024-04-07 13:39:03] INFO root fetch - processPackages [commits2pdf]: executing diffoscope
+[2024-04-07 13:39:03] INFO root fetch - processPackages [commits2pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commits2pdf-1.0.5.tar.gz tmp/commits2pdf-1.1.5.tar.gz --markdown 20240407/c/commits2pdf/1.0.5-1.1.5/diff.md --exclude *.pyd
+[2024-04-07 13:39:03] INFO root fetch - processPackages [django-learngual]: Remove: archive file [/home/abi/fetcher/tmp/django-learngual-0.34.tar.gz]
+[2024-04-07 13:39:03] INFO root fetch - processPackages [django-learngual]: Remove: archive file [/home/abi/fetcher/tmp/django-learngual-0.36.tar.gz]
+[2024-04-07 13:39:03] INFO root fetch - main [MainThread]: End processing [django-learngual]: success
+[2024-04-07 13:39:03] INFO root fetch - processPackages [octarine3d]: Remove: archive file [/home/abi/fetcher/tmp/octarine3d-0.1.0.tar.gz]
+[2024-04-07 13:39:03] INFO root fetch - processPackages [octarine3d]: Remove: archive file [/home/abi/fetcher/tmp/octarine3d-0.1.1.tar.gz]
+[2024-04-07 13:39:03] INFO root fetch - main [MainThread]: End processing [octarine3d]: success
+[2024-04-07 13:39:03] INFO root fetch - processPackages [commits2pdf]: Remove: archive file [/home/abi/fetcher/tmp/commits2pdf-1.0.5.tar.gz]
+[2024-04-07 13:39:03] INFO root fetch - processPackages [commits2pdf]: Remove: archive file [/home/abi/fetcher/tmp/commits2pdf-1.1.5.tar.gz]
+[2024-04-07 13:39:03] INFO root fetch - main [MainThread]: End processing [commits2pdf]: success
+[2024-04-07 13:39:03] INFO root fetch - main [MainThread]: Store serial: [22655779]
