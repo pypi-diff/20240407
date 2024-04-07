@@ -17957,3 +17957,25 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 20:39:00] INFO root fetch - processPackages [voila-vuetify-thermodynamics]: Remove: archive file [/home/abi/fetcher/tmp/voila-vuetify-thermodynamics-0.6.3.tar.gz]
 [2024-04-07 20:39:00] INFO root fetch - main [MainThread]: End processing [voila-vuetify-thermodynamics]: success
 [2024-04-07 20:39:00] INFO root fetch - main [MainThread]: Store serial: [22658383]
+[2024-04-07 20:41:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658383]
+[2024-04-07 20:41:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 20:41:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nextai-vllm
+[2024-04-07 20:41:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coinprice
+[2024-04-07 20:41:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prayer-times-calculator-offline
+[2024-04-07 20:41:09] WARNING root fetch - processPackages [prayer-times-calculator-offline]: Skipping, unable to determine old version
+[2024-04-07 20:41:09] INFO root fetch - main [MainThread]: End processing [prayer-times-calculator-offline] error
+[2024-04-07 20:41:10] INFO root fetch - processPackages [coinprice]: New version: [1.3.0] Old Version: [1.2.2]
+[2024-04-07 20:41:10] INFO root fetch - processPackages [nextai-vllm]: New version: [0.0.5] Old Version: [0.0.3]
+[2024-04-07 20:41:10] INFO root fetch - processPackages [coinprice]: Downloading https://files.pythonhosted.org/packages/7b/03/c9ff6d728a2e1859123ead5a9355eac28b9c4e990bfc42b25494ceb39893/coinprice-1.2.2.tar.gz
+[2024-04-07 20:41:10] INFO root fetch - processPackages [nextai-vllm]: Downloading https://files.pythonhosted.org/packages/44/e5/e2aef04f25c55d15f453acd43c57a06ea10b70a33ef380c2bf744bd48a33/nextai_vllm-0.0.3-cp310-cp310-manylinux1_x86_64.whl
+[2024-04-07 20:41:10] WARNING root fetch - processPackages [coinprice]: Timeout reached during download
+[2024-04-07 20:41:10] INFO root fetch - processPackages [coinprice]: Downloading https://files.pythonhosted.org/packages/be/b4/401dfa81f28581f6d85ecdd3fd547780ebe31724552463734fa66a45bb1e/coinprice-1.3.0.tar.gz
+[2024-04-07 20:41:10] WARNING root fetch - processPackages [nextai-vllm]: Skipping package: exceeds size limit 15646177>=10485760
+[2024-04-07 20:41:10] INFO root fetch - main [MainThread]: End processing [nextai-vllm] error
+[2024-04-07 20:41:10] WARNING root fetch - processPackages [coinprice]: Timeout reached during download
+[2024-04-07 20:41:10] INFO root fetch - processPackages [coinprice]: executing diffoscope
+[2024-04-07 20:41:10] INFO root fetch - processPackages [coinprice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coinprice-1.2.2.tar.gz tmp/coinprice-1.3.0.tar.gz --markdown 20240407/c/coinprice/1.2.2-1.3.0/diff.md --exclude *.pyd
+[2024-04-07 20:41:11] INFO root fetch - processPackages [coinprice]: Remove: archive file [/home/abi/fetcher/tmp/coinprice-1.2.2.tar.gz]
+[2024-04-07 20:41:11] INFO root fetch - processPackages [coinprice]: Remove: archive file [/home/abi/fetcher/tmp/coinprice-1.3.0.tar.gz]
+[2024-04-07 20:41:11] INFO root fetch - main [MainThread]: End processing [coinprice]: success
+[2024-04-07 20:41:11] INFO root fetch - main [MainThread]: Store serial: [22658392]
