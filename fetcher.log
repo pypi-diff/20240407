@@ -18674,3 +18674,50 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 21:24:53] INFO root fetch - processPackages [hiddifypanel]: Remove: archive file [/home/abi/fetcher/tmp/hiddifypanel-8.8.99.tar.gz]
 [2024-04-07 21:24:53] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2024-04-07 21:24:53] INFO root fetch - main [MainThread]: Store serial: [22658623]
+[2024-04-07 21:26:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658623]
+[2024-04-07 21:27:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 21:27:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyinfra-forked-by-stone-w4tch3r
+[2024-04-07 21:27:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: decoder-plus-plus
+[2024-04-07 21:27:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: javaobj-py3
+[2024-04-07 21:27:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Flask
+[2024-04-07 21:27:02] INFO root fetch - processPackages [decoder-plus-plus]: New version: [1.7.2] Old Version: [1.7.1]
+[2024-04-07 21:27:02] INFO root fetch - processPackages [Flask]: New version: [3.0.2] Old Version: [3.0.1]
+[2024-04-07 21:27:02] INFO root fetch - processPackages [decoder-plus-plus]: Downloading https://files.pythonhosted.org/packages/bb/82/0d84613c5c04acffa81380d67c10e2336653ad8a48212cf035ccb7b59955/decoder-plus-plus-1.7.1.tar.gz
+[2024-04-07 21:27:02] INFO root fetch - processPackages [javaobj-py3]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-04-07 21:27:02] INFO root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-07 21:27:03] INFO root fetch - processPackages [Flask]: Downloading https://files.pythonhosted.org/packages/b2/14/97b9137a02f57d2287f3a9731b3a339fda716d2d3a157d7d1d89c2bebf7b/flask-3.0.1.tar.gz
+[2024-04-07 21:27:03] WARNING root fetch - processPackages [decoder-plus-plus]: Timeout reached during download
+[2024-04-07 21:27:03] INFO root fetch - processPackages [javaobj-py3]: Downloading https://files.pythonhosted.org/packages/66/d3/0e4fa237161b3a00eea031575f46ac052a79b0908982b52794d113f43813/javaobj-py3-0.4.3.tar.gz
+[2024-04-07 21:27:03] INFO root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: Downloading https://files.pythonhosted.org/packages/9c/37/eb69d0ea1a700fc7a31ea094882716901bff79cbee80dad54c1508f65ea1/pyinfra_forked_by_stone-w4tch3r-0.3.2.tar.gz
+[2024-04-07 21:27:03] INFO root fetch - processPackages [decoder-plus-plus]: Downloading https://files.pythonhosted.org/packages/f7/b4/2dea35a3f4597052a6746fd4d740c5073be6091054cd59186c35d38d80c9/decoder-plus-plus-1.7.2.tar.gz
+[2024-04-07 21:27:03] WARNING root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: Timeout reached during download
+[2024-04-07 21:27:03] WARNING root fetch - processPackages [javaobj-py3]: Timeout reached during download
+[2024-04-07 21:27:03] WARNING root fetch - processPackages [decoder-plus-plus]: Timeout reached during download
+[2024-04-07 21:27:03] INFO root fetch - processPackages [decoder-plus-plus]: executing diffoscope
+[2024-04-07 21:27:03] INFO root fetch - processPackages [decoder-plus-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decoder-plus-plus-1.7.1.tar.gz tmp/decoder-plus-plus-1.7.2.tar.gz --markdown 20240407/d/decoder-plus-plus/1.7.1-1.7.2/diff.md --exclude *.pyd
+[2024-04-07 21:27:03] INFO root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: Downloading https://files.pythonhosted.org/packages/ca/2f/df2cdc74baa09f887a93cf9419218f67b927ee2c8c81ad9b09450ae26df6/pyinfra_forked_by_stone-w4tch3r-0.3.3.tar.gz
+[2024-04-07 21:27:03] INFO root fetch - processPackages [javaobj-py3]: Downloading https://files.pythonhosted.org/packages/28/56/38cbec76b6ed625f9b5e9ce7ada7d1a63f02954bab9b2a44151ba17bd578/javaobj-py3-0.4.4.tar.gz
+[2024-04-07 21:27:03] WARNING root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: Timeout reached during download
+[2024-04-07 21:27:03] INFO root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: executing diffoscope
+[2024-04-07 21:27:03] INFO root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinfra_forked_by_stone-w4tch3r-0.3.2.tar.gz tmp/pyinfra_forked_by_stone-w4tch3r-0.3.3.tar.gz --markdown 20240407/p/pyinfra-forked-by-stone-w4tch3r/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2024-04-07 21:27:03] WARNING root fetch - processPackages [Flask]: Timeout reached during download
+[2024-04-07 21:27:03] WARNING root fetch - processPackages [javaobj-py3]: Timeout reached during download
+[2024-04-07 21:27:03] INFO root fetch - processPackages [javaobj-py3]: executing diffoscope
+[2024-04-07 21:27:03] INFO root fetch - processPackages [javaobj-py3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/javaobj-py3-0.4.3.tar.gz tmp/javaobj-py3-0.4.4.tar.gz --markdown 20240407/j/javaobj-py3/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2024-04-07 21:27:03] INFO root fetch - processPackages [Flask]: Downloading https://files.pythonhosted.org/packages/3f/e0/a89e8120faea1edbfca1a9b171cff7f2bf62ec860bbafcb2c2387c0317be/flask-3.0.2.tar.gz
+[2024-04-07 21:27:03] WARNING root fetch - processPackages [Flask]: Timeout reached during download
+[2024-04-07 21:27:03] INFO root fetch - processPackages [Flask]: executing diffoscope
+[2024-04-07 21:27:03] INFO root fetch - processPackages [Flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-3.0.1.tar.gz tmp/flask-3.0.2.tar.gz --markdown 20240407/F/Flask/3.0.1-3.0.2/diff.md --exclude *.pyd
+[2024-04-07 21:27:04] INFO root fetch - processPackages [javaobj-py3]: Remove: archive file [/home/abi/fetcher/tmp/javaobj-py3-0.4.3.tar.gz]
+[2024-04-07 21:27:04] INFO root fetch - processPackages [javaobj-py3]: Remove: archive file [/home/abi/fetcher/tmp/javaobj-py3-0.4.4.tar.gz]
+[2024-04-07 21:27:04] INFO root fetch - main [MainThread]: End processing [javaobj-py3]: success
+[2024-04-07 21:27:04] INFO root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: Remove: archive file [/home/abi/fetcher/tmp/pyinfra_forked_by_stone-w4tch3r-0.3.2.tar.gz]
+[2024-04-07 21:27:04] INFO root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: Remove: archive file [/home/abi/fetcher/tmp/pyinfra_forked_by_stone-w4tch3r-0.3.3.tar.gz]
+[2024-04-07 21:27:04] INFO root fetch - main [MainThread]: End processing [pyinfra-forked-by-stone-w4tch3r]: success
+[2024-04-07 21:27:04] INFO root fetch - processPackages [decoder-plus-plus]: Remove: archive file [/home/abi/fetcher/tmp/decoder-plus-plus-1.7.1.tar.gz]
+[2024-04-07 21:27:04] INFO root fetch - processPackages [decoder-plus-plus]: Remove: archive file [/home/abi/fetcher/tmp/decoder-plus-plus-1.7.2.tar.gz]
+[2024-04-07 21:27:04] INFO root fetch - main [MainThread]: End processing [decoder-plus-plus]: success
+[2024-04-07 21:27:05] INFO root fetch - processPackages [Flask]: Remove: archive file [/home/abi/fetcher/tmp/flask-3.0.1.tar.gz]
+[2024-04-07 21:27:05] INFO root fetch - processPackages [Flask]: Remove: archive file [/home/abi/fetcher/tmp/flask-3.0.2.tar.gz]
+[2024-04-07 21:27:05] INFO root fetch - main [MainThread]: End processing [Flask]: success
+[2024-04-07 21:27:05] INFO root fetch - main [MainThread]: Store serial: [22658645]
