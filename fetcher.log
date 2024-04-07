@@ -4305,3 +4305,39 @@
 [2024-04-07 05:58:35] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev1.tar.gz]
 [2024-04-07 05:58:35] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
 [2024-04-07 05:58:35] INFO root fetch - main [MainThread]: Store serial: [22653359]
+[2024-04-07 06:00:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653359]
+[2024-04-07 06:00:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 06:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipython-ngql
+[2024-04-07 06:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dialog-workflow-local
+[2024-04-07 06:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jupyter-nebulagraph
+[2024-04-07 06:00:44] INFO root fetch - processPackages [dialog-workflow-local]: New version: [0.0.89] Old Version: [0.0.88]
+[2024-04-07 06:00:44] INFO root fetch - processPackages [dialog-workflow-local]: Downloading https://files.pythonhosted.org/packages/b7/1f/cb951830d31db8269b8767589f86bee3633ab386620efc20bf5af8458951/dialog-workflow-local-0.0.88.tar.gz
+[2024-04-07 06:00:44] INFO root fetch - processPackages [jupyter-nebulagraph]: New version: [0.9.1] Old Version: [0.10.1]
+[2024-04-07 06:00:44] INFO root fetch - processPackages [ipython-ngql]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-07 06:00:44] WARNING root fetch - processPackages [dialog-workflow-local]: Timeout reached during download
+[2024-04-07 06:00:44] INFO root fetch - processPackages [ipython-ngql]: Downloading https://files.pythonhosted.org/packages/29/8c/9d77f828925990c5c1f92de36b653cbc1ee6e73b634725e3d098b12f8d05/ipython-ngql-0.9.0.tar.gz
+[2024-04-07 06:00:44] INFO root fetch - processPackages [jupyter-nebulagraph]: Downloading https://files.pythonhosted.org/packages/42/67/861ff35ff4eb0892b08f68f16909dfd953234b6609ef0ae2d35faf5bce4b/jupyter_nebulagraph-0.10.1.tar.gz
+[2024-04-07 06:00:44] INFO root fetch - processPackages [dialog-workflow-local]: Downloading https://files.pythonhosted.org/packages/df/cb/1cdfc3290ae4ac760ca238bcc0eeff2343702def1d997ae9c2a181b3b164/dialog-workflow-local-0.0.89.tar.gz
+[2024-04-07 06:00:45] WARNING root fetch - processPackages [ipython-ngql]: Timeout reached during download
+[2024-04-07 06:00:45] WARNING root fetch - processPackages [dialog-workflow-local]: Timeout reached during download
+[2024-04-07 06:00:45] INFO root fetch - processPackages [dialog-workflow-local]: executing diffoscope
+[2024-04-07 06:00:45] INFO root fetch - processPackages [dialog-workflow-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dialog-workflow-local-0.0.88.tar.gz tmp/dialog-workflow-local-0.0.89.tar.gz --markdown 20240407/d/dialog-workflow-local/0.0.88-0.0.89/diff.md --exclude *.pyd
+[2024-04-07 06:00:45] WARNING root fetch - processPackages [jupyter-nebulagraph]: Timeout reached during download
+[2024-04-07 06:00:45] INFO root fetch - processPackages [ipython-ngql]: Downloading https://files.pythonhosted.org/packages/85/5b/d739e0d6e616df491f6ad44156d4ac4eb6a9a8f3e125574cf1a49296483b/ipython-ngql-0.9.1.tar.gz
+[2024-04-07 06:00:45] INFO root fetch - processPackages [jupyter-nebulagraph]: Downloading https://files.pythonhosted.org/packages/88/06/2fe02a0f2247e1cb1535a7e370f17dac6a53217d2cf9259b8dde3aa9e34a/jupyter_nebulagraph-0.9.1.tar.gz
+[2024-04-07 06:00:45] WARNING root fetch - processPackages [ipython-ngql]: Timeout reached during download
+[2024-04-07 06:00:45] INFO root fetch - processPackages [ipython-ngql]: executing diffoscope
+[2024-04-07 06:00:45] INFO root fetch - processPackages [ipython-ngql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipython-ngql-0.9.0.tar.gz tmp/ipython-ngql-0.9.1.tar.gz --markdown 20240407/i/ipython-ngql/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-07 06:00:45] WARNING root fetch - processPackages [jupyter-nebulagraph]: Timeout reached during download
+[2024-04-07 06:00:45] INFO root fetch - processPackages [jupyter-nebulagraph]: executing diffoscope
+[2024-04-07 06:00:45] INFO root fetch - processPackages [jupyter-nebulagraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_nebulagraph-0.10.1.tar.gz tmp/jupyter_nebulagraph-0.9.1.tar.gz --markdown 20240407/j/jupyter-nebulagraph/0.10.1-0.9.1/diff.md --exclude *.pyd
+[2024-04-07 06:00:45] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog-workflow-local-0.0.88.tar.gz]
+[2024-04-07 06:00:45] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog-workflow-local-0.0.89.tar.gz]
+[2024-04-07 06:00:45] INFO root fetch - main [MainThread]: End processing [dialog-workflow-local]: success
+[2024-04-07 06:00:46] INFO root fetch - processPackages [ipython-ngql]: Remove: archive file [/home/abi/fetcher/tmp/ipython-ngql-0.9.0.tar.gz]
+[2024-04-07 06:00:46] INFO root fetch - processPackages [ipython-ngql]: Remove: archive file [/home/abi/fetcher/tmp/ipython-ngql-0.9.1.tar.gz]
+[2024-04-07 06:00:46] INFO root fetch - main [MainThread]: End processing [ipython-ngql]: success
+[2024-04-07 06:00:46] INFO root fetch - processPackages [jupyter-nebulagraph]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_nebulagraph-0.10.1.tar.gz]
+[2024-04-07 06:00:46] INFO root fetch - processPackages [jupyter-nebulagraph]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_nebulagraph-0.9.1.tar.gz]
+[2024-04-07 06:00:46] INFO root fetch - main [MainThread]: End processing [jupyter-nebulagraph]: success
+[2024-04-07 06:00:46] INFO root fetch - main [MainThread]: Store serial: [22653368]
