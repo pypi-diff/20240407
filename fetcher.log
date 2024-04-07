@@ -10223,3 +10223,30 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 12:46:58] INFO root fetch - processPackages [ms-ait]: Remove: archive file [/home/abi/fetcher/tmp/ms-ait-7.0.0a4.zip]
 [2024-04-07 12:46:58] INFO root fetch - main [MainThread]: End processing [ms-ait]: success
 [2024-04-07 12:46:58] INFO root fetch - main [MainThread]: Store serial: [22655489]
+[2024-04-07 12:49:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655489]
+[2024-04-07 12:49:06] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 12:51:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655543]
+[2024-04-07 12:51:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 12:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: investorzilla
+[2024-04-07 12:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyQvd
+[2024-04-07 12:51:13] INFO root fetch - processPackages [PyQvd]: New version: [1.1.0] Old Version: [1.0.2]
+[2024-04-07 12:51:13] INFO root fetch - processPackages [investorzilla]: New version: [3.2.3] Old Version: [3.2.2]
+[2024-04-07 12:51:13] INFO root fetch - processPackages [PyQvd]: Downloading https://files.pythonhosted.org/packages/4c/92/7528344ef4a9de4dc9ae906b6217a7469740d4449507ef31c36ffef2ded5/PyQvd-1.0.2.tar.gz
+[2024-04-07 12:51:13] INFO root fetch - processPackages [investorzilla]: Downloading https://files.pythonhosted.org/packages/48/4e/92c7f053c3e6c4caa763365f84ca101615f5620fbcef63a724f8d960e0c6/investorzilla-3.2.2.tar.gz
+[2024-04-07 12:51:13] WARNING root fetch - processPackages [PyQvd]: Timeout reached during download
+[2024-04-07 12:51:13] WARNING root fetch - processPackages [investorzilla]: Timeout reached during download
+[2024-04-07 12:51:13] INFO root fetch - processPackages [PyQvd]: Downloading https://files.pythonhosted.org/packages/10/f0/4c5ff6cbf78cfee57fa67662872dfaf2e1d0685fc56d3bc553d9ac50a570/PyQvd-1.1.0.tar.gz
+[2024-04-07 12:51:13] INFO root fetch - processPackages [investorzilla]: Downloading https://files.pythonhosted.org/packages/aa/29/179c587d43f513f59a81095a1546105b051f197f2b1429c0595eca5b9d47/investorzilla-3.2.3.tar.gz
+[2024-04-07 12:51:13] WARNING root fetch - processPackages [PyQvd]: Timeout reached during download
+[2024-04-07 12:51:13] INFO root fetch - processPackages [PyQvd]: executing diffoscope
+[2024-04-07 12:51:13] INFO root fetch - processPackages [PyQvd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQvd-1.0.2.tar.gz tmp/PyQvd-1.1.0.tar.gz --markdown 20240407/P/PyQvd/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2024-04-07 12:51:13] WARNING root fetch - processPackages [investorzilla]: Timeout reached during download
+[2024-04-07 12:51:13] INFO root fetch - processPackages [investorzilla]: executing diffoscope
+[2024-04-07 12:51:13] INFO root fetch - processPackages [investorzilla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/investorzilla-3.2.2.tar.gz tmp/investorzilla-3.2.3.tar.gz --markdown 20240407/i/investorzilla/3.2.2-3.2.3/diff.md --exclude *.pyd
+[2024-04-07 12:51:14] INFO root fetch - processPackages [PyQvd]: Remove: archive file [/home/abi/fetcher/tmp/PyQvd-1.0.2.tar.gz]
+[2024-04-07 12:51:14] INFO root fetch - processPackages [PyQvd]: Remove: archive file [/home/abi/fetcher/tmp/PyQvd-1.1.0.tar.gz]
+[2024-04-07 12:51:14] INFO root fetch - main [MainThread]: End processing [PyQvd]: success
+[2024-04-07 12:51:14] INFO root fetch - processPackages [investorzilla]: Remove: archive file [/home/abi/fetcher/tmp/investorzilla-3.2.2.tar.gz]
+[2024-04-07 12:51:14] INFO root fetch - processPackages [investorzilla]: Remove: archive file [/home/abi/fetcher/tmp/investorzilla-3.2.3.tar.gz]
+[2024-04-07 12:51:14] INFO root fetch - main [MainThread]: End processing [investorzilla]: success
+[2024-04-07 12:51:14] INFO root fetch - main [MainThread]: Store serial: [22655549]
