@@ -1451,3 +1451,17 @@
 [2024-04-07 02:16:45] INFO root fetch - processPackages [pytorch-ignite]: Remove: archive file [/home/abi/fetcher/tmp/pytorch-ignite-0.6.0.dev20240407.tar.gz]
 [2024-04-07 02:16:45] INFO root fetch - main [MainThread]: End processing [pytorch-ignite]: success
 [2024-04-07 02:16:45] INFO root fetch - main [MainThread]: Store serial: [22652145]
+[2024-04-07 02:18:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652145]
+[2024-04-07 02:18:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 02:18:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdklabs.cdk-hyperledger-fabric-network
+[2024-04-07 02:18:53] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-04-07 02:18:53] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Downloading https://files.pythonhosted.org/packages/9b/c8/ddb4d2575b42b36bf1ebf5daccec9c3c53a9ac9cadaeffb66bed93dc3bab/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz
+[2024-04-07 02:18:54] WARNING root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Timeout reached during download
+[2024-04-07 02:18:54] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Downloading https://files.pythonhosted.org/packages/56/40/cbf52f4213018f2d82f0aad0f2fa90e69c2923704c1905bd7e090d3accf2/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz
+[2024-04-07 02:18:54] WARNING root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Timeout reached during download
+[2024-04-07 02:18:54] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: executing diffoscope
+[2024-04-07 02:18:54] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz --markdown 20240407/c/cdklabs.cdk-hyperledger-fabric-network/0.8.98-0.8.99/diff.md --exclude *.pyd
+[2024-04-07 02:18:54] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz]
+[2024-04-07 02:18:54] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz]
+[2024-04-07 02:18:54] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-hyperledger-fabric-network]: success
+[2024-04-07 02:18:54] INFO root fetch - main [MainThread]: Store serial: [22652148]
