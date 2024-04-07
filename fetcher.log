@@ -9210,3 +9210,64 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 11:36:36] INFO root fetch - processPackages [xinvert]: Remove: archive file [/home/abi/fetcher/tmp/xinvert-0.1.7.tar.gz]
 [2024-04-07 11:36:36] INFO root fetch - main [MainThread]: End processing [xinvert]: success
 [2024-04-07 11:36:36] INFO root fetch - main [MainThread]: Store serial: [22655108]
+[2024-04-07 11:38:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655108]
+[2024-04-07 11:38:44] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 11:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nef-pipelines
+[2024-04-07 11:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiotgm
+[2024-04-07 11:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: OpsApi
+[2024-04-07 11:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ts-store
+[2024-04-07 11:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pelican-graphviz
+[2024-04-07 11:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gmsofttest
+[2024-04-07 11:38:44] INFO root fetch - processPackages [OpsApi]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-04-07 11:38:44] INFO root fetch - processPackages [pelican-graphviz]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-04-07 11:38:44] WARNING root fetch - processPackages [ts-store]: Skipping, unable to determine old version
+[2024-04-07 11:38:44] INFO root fetch - main [MainThread]: End processing [ts-store] error
+[2024-04-07 11:38:44] INFO root fetch - processPackages [OpsApi]: Downloading https://files.pythonhosted.org/packages/cb/96/6ab51ec0bce6c789ca0549b0aa88f666a143b3f4f07e81e0df8c2b63e1b0/OpsApi-1.1.2.tar.gz
+[2024-04-07 11:38:44] INFO root fetch - processPackages [aiotgm]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-04-07 11:38:44] INFO root fetch - processPackages [nef-pipelines]: New version: [0.1.59] Old Version: [0.1.58]
+[2024-04-07 11:38:44] INFO root fetch - processPackages [gmsofttest]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 11:38:44] WARNING root fetch - processPackages [OpsApi]: Timeout reached during download
+[2024-04-07 11:38:44] INFO root fetch - processPackages [nef-pipelines]: Downloading https://files.pythonhosted.org/packages/59/11/b0c93c51c5126bf4a49afefd8bfd73b0987d2a9ce3b7bd45e6f9fe8c7784/nef_pipelines-0.1.58.tar.gz
+[2024-04-07 11:38:45] INFO root fetch - processPackages [OpsApi]: Downloading https://files.pythonhosted.org/packages/29/68/55f2d21aad474b44833ae739f9df27f8c238e79ceab4a256681717eb469c/OpsApi-1.1.3.tar.gz
+[2024-04-07 11:38:45] INFO root fetch - processPackages [pelican-graphviz]: Downloading https://files.pythonhosted.org/packages/5b/e6/09b0e0affa9359b508a8eb554f2ffcd9f0baec2a3109c38f1d84db958d06/pelican_graphviz-1.2.3.tar.gz
+[2024-04-07 11:38:45] INFO root fetch - processPackages [gmsofttest]: Downloading https://files.pythonhosted.org/packages/eb/c9/80a2e9566b35349b1eb8378e20b5a4ed2e0f534992281be6f39de2183dfc/gmsofttest-0.0.8.tar.gz
+[2024-04-07 11:38:45] WARNING root fetch - processPackages [OpsApi]: Timeout reached during download
+[2024-04-07 11:38:45] INFO root fetch - processPackages [OpsApi]: executing diffoscope
+[2024-04-07 11:38:45] INFO root fetch - processPackages [OpsApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpsApi-1.1.2.tar.gz tmp/OpsApi-1.1.3.tar.gz --markdown 20240407/O/OpsApi/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2024-04-07 11:38:45] WARNING root fetch - processPackages [nef-pipelines]: Timeout reached during download
+[2024-04-07 11:38:45] WARNING root fetch - processPackages [pelican-graphviz]: Timeout reached during download
+[2024-04-07 11:38:45] INFO root fetch - processPackages [aiotgm]: Downloading https://files.pythonhosted.org/packages/b1/56/ad768a814416d23bf9fbc58f952c62054aa1c557040d18a4afdf971a9402/aiotgm-0.3.5.tar.gz
+[2024-04-07 11:38:45] WARNING root fetch - processPackages [gmsofttest]: Timeout reached during download
+[2024-04-07 11:38:45] INFO root fetch - processPackages [nef-pipelines]: Downloading https://files.pythonhosted.org/packages/5e/71/3c484fceef42538271e142be7deea5670a98746b2262889323d2e9340fd9/nef_pipelines-0.1.59.tar.gz
+[2024-04-07 11:38:45] WARNING root fetch - processPackages [aiotgm]: Timeout reached during download
+[2024-04-07 11:38:45] INFO root fetch - processPackages [pelican-graphviz]: Downloading https://files.pythonhosted.org/packages/f2/57/e653ba91ff1375000dc7432b98505294a4ebf7a69609e3c81576bdf86681/pelican_graphviz-1.2.4.tar.gz
+[2024-04-07 11:38:45] WARNING root fetch - processPackages [pelican-graphviz]: Timeout reached during download
+[2024-04-07 11:38:45] INFO root fetch - processPackages [pelican-graphviz]: executing diffoscope
+[2024-04-07 11:38:45] INFO root fetch - processPackages [pelican-graphviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pelican_graphviz-1.2.3.tar.gz tmp/pelican_graphviz-1.2.4.tar.gz --markdown 20240407/p/pelican-graphviz/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2024-04-07 11:38:45] WARNING root fetch - processPackages [nef-pipelines]: Timeout reached during download
+[2024-04-07 11:38:45] INFO root fetch - processPackages [nef-pipelines]: executing diffoscope
+[2024-04-07 11:38:45] INFO root fetch - processPackages [nef-pipelines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nef_pipelines-0.1.58.tar.gz tmp/nef_pipelines-0.1.59.tar.gz --markdown 20240407/n/nef-pipelines/0.1.58-0.1.59/diff.md --exclude *.pyd
+[2024-04-07 11:38:45] INFO root fetch - processPackages [gmsofttest]: Downloading https://files.pythonhosted.org/packages/ed/9f/122493f4e3bf0b258a259a6fe55e73fbee9bdfc4fad41c41616c86d64327/gmsofttest-0.0.9.tar.gz
+[2024-04-07 11:38:45] INFO root fetch - processPackages [aiotgm]: Downloading https://files.pythonhosted.org/packages/0b/e6/7c0921ea74c3a15896e45d406fc6191f3a6d5d64d5e46bf8a142e116f345/aiotgm-0.3.6.tar.gz
+[2024-04-07 11:38:45] INFO root fetch - processPackages [OpsApi]: Remove: archive file [/home/abi/fetcher/tmp/OpsApi-1.1.2.tar.gz]
+[2024-04-07 11:38:45] INFO root fetch - processPackages [OpsApi]: Remove: archive file [/home/abi/fetcher/tmp/OpsApi-1.1.3.tar.gz]
+[2024-04-07 11:38:45] INFO root fetch - main [MainThread]: End processing [OpsApi]: success
+[2024-04-07 11:38:45] WARNING root fetch - processPackages [gmsofttest]: Timeout reached during download
+[2024-04-07 11:38:45] INFO root fetch - processPackages [gmsofttest]: executing diffoscope
+[2024-04-07 11:38:45] INFO root fetch - processPackages [gmsofttest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmsofttest-0.0.8.tar.gz tmp/gmsofttest-0.0.9.tar.gz --markdown 20240407/g/gmsofttest/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 11:38:45] WARNING root fetch - processPackages [aiotgm]: Timeout reached during download
+[2024-04-07 11:38:45] INFO root fetch - processPackages [aiotgm]: executing diffoscope
+[2024-04-07 11:38:45] INFO root fetch - processPackages [aiotgm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotgm-0.3.5.tar.gz tmp/aiotgm-0.3.6.tar.gz --markdown 20240407/a/aiotgm/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2024-04-07 11:38:46] INFO root fetch - processPackages [pelican-graphviz]: Remove: archive file [/home/abi/fetcher/tmp/pelican_graphviz-1.2.3.tar.gz]
+[2024-04-07 11:38:46] INFO root fetch - processPackages [pelican-graphviz]: Remove: archive file [/home/abi/fetcher/tmp/pelican_graphviz-1.2.4.tar.gz]
+[2024-04-07 11:38:46] INFO root fetch - main [MainThread]: End processing [pelican-graphviz]: success
+[2024-04-07 11:38:46] INFO root fetch - processPackages [gmsofttest]: Remove: archive file [/home/abi/fetcher/tmp/gmsofttest-0.0.8.tar.gz]
+[2024-04-07 11:38:46] INFO root fetch - processPackages [gmsofttest]: Remove: archive file [/home/abi/fetcher/tmp/gmsofttest-0.0.9.tar.gz]
+[2024-04-07 11:38:46] INFO root fetch - main [MainThread]: End processing [gmsofttest]: success
+[2024-04-07 11:38:46] INFO root fetch - processPackages [aiotgm]: Remove: archive file [/home/abi/fetcher/tmp/aiotgm-0.3.5.tar.gz]
+[2024-04-07 11:38:46] INFO root fetch - processPackages [aiotgm]: Remove: archive file [/home/abi/fetcher/tmp/aiotgm-0.3.6.tar.gz]
+[2024-04-07 11:38:46] INFO root fetch - main [MainThread]: End processing [aiotgm]: success
+[2024-04-07 11:38:47] INFO root fetch - processPackages [nef-pipelines]: Remove: archive file [/home/abi/fetcher/tmp/nef_pipelines-0.1.58.tar.gz]
+[2024-04-07 11:38:47] INFO root fetch - processPackages [nef-pipelines]: Remove: archive file [/home/abi/fetcher/tmp/nef_pipelines-0.1.59.tar.gz]
+[2024-04-07 11:38:47] INFO root fetch - main [MainThread]: End processing [nef-pipelines]: success
+[2024-04-07 11:38:47] INFO root fetch - main [MainThread]: Store serial: [22655125]
