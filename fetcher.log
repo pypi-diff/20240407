@@ -4637,3 +4637,17 @@
 [2024-04-07 06:22:34] INFO root fetch - processPackages [HomeAssistant-API]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_api-4.2.2.post1.tar.gz]
 [2024-04-07 06:22:34] INFO root fetch - main [MainThread]: End processing [HomeAssistant-API]: success
 [2024-04-07 06:22:34] INFO root fetch - main [MainThread]: Store serial: [22653458]
+[2024-04-07 06:24:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653458]
+[2024-04-07 06:24:42] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 06:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-l10n-br-base
+[2024-04-07 06:24:43] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: New version: [14.0.3.9.0] Old Version: [14.0.3.8.1.dev1]
+[2024-04-07 06:24:43] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: Downloading https://files.pythonhosted.org/packages/6a/1e/2e1665bcae55b16ddd5f1a198365a14c09cdcc78d9ffd85ae25a9ff848f7/odoo14_addon_l10n_br_base-14.0.3.8.1.dev1-py3-none-any.whl
+[2024-04-07 06:24:43] WARNING root fetch - processPackages [odoo14-addon-l10n-br-base]: Timeout reached during download
+[2024-04-07 06:24:43] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: Downloading https://files.pythonhosted.org/packages/e6/4e/1de605afc3554f26c5d369223ddbdaa172fe7e48ca2958b2cddfea5d5bce/odoo14_addon_l10n_br_base-14.0.3.9.0-py3-none-any.whl
+[2024-04-07 06:24:43] WARNING root fetch - processPackages [odoo14-addon-l10n-br-base]: Timeout reached during download
+[2024-04-07 06:24:43] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: executing diffoscope
+[2024-04-07 06:24:43] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_base-14.0.3.8.1.dev1-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_base-14.0.3.9.0-py3-none-any.whl.zip --markdown 20240407/o/odoo14-addon-l10n-br-base/14.0.3.8.1.dev1-14.0.3.9.0/diff.md --exclude *.pyd
+[2024-04-07 06:24:44] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_base-14.0.3.8.1.dev1-py3-none-any.whl.zip]
+[2024-04-07 06:24:44] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_base-14.0.3.9.0-py3-none-any.whl.zip]
+[2024-04-07 06:24:44] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-base]: success
+[2024-04-07 06:24:44] INFO root fetch - main [MainThread]: Store serial: [22653460]
