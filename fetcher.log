@@ -11141,3 +11141,61 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:54:17] INFO root fetch - processPackages [emhass]: Remove: archive file [/home/abi/fetcher/tmp/emhass-0.8.6.tar.gz]
 [2024-04-07 13:54:17] INFO root fetch - main [MainThread]: End processing [emhass]: success
 [2024-04-07 13:54:17] INFO root fetch - main [MainThread]: Store serial: [22655869]
+[2024-04-07 13:56:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655869]
+[2024-04-07 13:56:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 13:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: decoder-plus-plus
+[2024-04-07 13:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ctkdlib
+[2024-04-07 13:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ellar
+[2024-04-07 13:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: metaapi-cloud-sdk
+[2024-04-07 13:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyaffalddk
+[2024-04-07 13:56:25] INFO root fetch - processPackages [ctkdlib]: New version: [4.1] Old Version: [4.0]
+[2024-04-07 13:56:25] INFO root fetch - processPackages [ctkdlib]: Downloading https://files.pythonhosted.org/packages/bb/5c/a331be2da3c755abe134e4353af5571fa57b8dc0ce7c611da9a2e9d0ff89/ctkdlib-4.0.tar.gz
+[2024-04-07 13:56:25] INFO root fetch - processPackages [decoder-plus-plus]: New version: [1.7.0] Old Version: [1.5.0]
+[2024-04-07 13:56:25] INFO root fetch - processPackages [pyaffalddk]: New version: [2.0.22] Old Version: [2.0.21]
+[2024-04-07 13:56:25] INFO root fetch - processPackages [metaapi-cloud-sdk]: New version: [9.1.0] Old Version: [9.0.0]
+[2024-04-07 13:56:25] INFO root fetch - processPackages [ellar]: New version: [0.7.3] Old Version: [0.7.2]
+[2024-04-07 13:56:25] WARNING root fetch - processPackages [ctkdlib]: Timeout reached during download
+[2024-04-07 13:56:25] INFO root fetch - processPackages [decoder-plus-plus]: Downloading https://files.pythonhosted.org/packages/27/77/b071fa45390a66c2bc1f9ebdb7a77fdd76abeefa37e43e9078c241a91b78/decoder-plus-plus-1.5.0.tar.gz
+[2024-04-07 13:56:25] INFO root fetch - processPackages [metaapi-cloud-sdk]: Downloading https://files.pythonhosted.org/packages/33/8c/7322724753bc179c29f91be8b4964d5f039c5ca35562b2a8df3301f9a5b0/metaapi_cloud_sdk-9.0.0.tar.gz
+[2024-04-07 13:56:25] INFO root fetch - processPackages [ctkdlib]: Downloading https://files.pythonhosted.org/packages/03/9f/3a6bc2acf6aaf6a4ebf69b00e5a779ed7c83c14405c4ca1848effaee9fa9/ctkdlib-4.1.tar.gz
+[2024-04-07 13:56:25] INFO root fetch - processPackages [ellar]: Downloading https://files.pythonhosted.org/packages/6e/50/5026e0b170da25b73bfb5a30d2403a78173ea9debfdf700a7fdf33b4a018/ellar-0.7.2.tar.gz
+[2024-04-07 13:56:25] INFO root fetch - processPackages [pyaffalddk]: Downloading https://files.pythonhosted.org/packages/5f/9b/3f16e514eadb640c608ce8376e26baa64c669c60777e1d9be51c4c72e86c/pyaffalddk-2.0.21.tar.gz
+[2024-04-07 13:56:25] WARNING root fetch - processPackages [pyaffalddk]: Timeout reached during download
+[2024-04-07 13:56:25] WARNING root fetch - processPackages [ctkdlib]: Timeout reached during download
+[2024-04-07 13:56:25] INFO root fetch - processPackages [ctkdlib]: executing diffoscope
+[2024-04-07 13:56:25] INFO root fetch - processPackages [ctkdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctkdlib-4.0.tar.gz tmp/ctkdlib-4.1.tar.gz --markdown 20240407/c/ctkdlib/4.0-4.1/diff.md --exclude *.pyd
+[2024-04-07 13:56:26] WARNING root fetch - processPackages [ellar]: Timeout reached during download
+[2024-04-07 13:56:26] INFO root fetch - processPackages [pyaffalddk]: Downloading https://files.pythonhosted.org/packages/9b/86/4d95916587430c7bb22bc00c9c3ea08ab517713b5ac2bc0ef32750ed616a/pyaffalddk-2.0.22.tar.gz
+[2024-04-07 13:56:26] WARNING root fetch - processPackages [metaapi-cloud-sdk]: Timeout reached during download
+[2024-04-07 13:56:26] INFO root fetch - processPackages [ellar]: Downloading https://files.pythonhosted.org/packages/cd/50/94175d775ea8ae893079f0a4195e093e93505a5f7ddeefb9828482e39061/ellar-0.7.3.tar.gz
+[2024-04-07 13:56:26] WARNING root fetch - processPackages [pyaffalddk]: Timeout reached during download
+[2024-04-07 13:56:26] INFO root fetch - processPackages [pyaffalddk]: executing diffoscope
+[2024-04-07 13:56:26] INFO root fetch - processPackages [pyaffalddk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaffalddk-2.0.21.tar.gz tmp/pyaffalddk-2.0.22.tar.gz --markdown 20240407/p/pyaffalddk/2.0.21-2.0.22/diff.md --exclude *.pyd
+[2024-04-07 13:56:26] INFO root fetch - processPackages [metaapi-cloud-sdk]: Downloading https://files.pythonhosted.org/packages/fd/e4/b2cb22b3a9fdf7221355894a097d71589eb7a4278d087eb9c6cf2102160a/metaapi_cloud_sdk-9.1.0.tar.gz
+[2024-04-07 13:56:26] WARNING root fetch - processPackages [ellar]: Timeout reached during download
+[2024-04-07 13:56:26] INFO root fetch - processPackages [ellar]: executing diffoscope
+[2024-04-07 13:56:26] INFO root fetch - processPackages [ellar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ellar-0.7.2.tar.gz tmp/ellar-0.7.3.tar.gz --markdown 20240407/e/ellar/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2024-04-07 13:56:26] WARNING root fetch - processPackages [decoder-plus-plus]: Timeout reached during download
+[2024-04-07 13:56:26] INFO root fetch - processPackages [ctkdlib]: Remove: archive file [/home/abi/fetcher/tmp/ctkdlib-4.0.tar.gz]
+[2024-04-07 13:56:26] INFO root fetch - processPackages [ctkdlib]: Remove: archive file [/home/abi/fetcher/tmp/ctkdlib-4.1.tar.gz]
+[2024-04-07 13:56:26] INFO root fetch - main [MainThread]: End processing [ctkdlib]: success
+[2024-04-07 13:56:26] WARNING root fetch - processPackages [metaapi-cloud-sdk]: Timeout reached during download
+[2024-04-07 13:56:26] INFO root fetch - processPackages [metaapi-cloud-sdk]: executing diffoscope
+[2024-04-07 13:56:26] INFO root fetch - processPackages [metaapi-cloud-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaapi_cloud_sdk-9.0.0.tar.gz tmp/metaapi_cloud_sdk-9.1.0.tar.gz --markdown 20240407/m/metaapi-cloud-sdk/9.0.0-9.1.0/diff.md --exclude *.pyd
+[2024-04-07 13:56:26] INFO root fetch - processPackages [decoder-plus-plus]: Downloading https://files.pythonhosted.org/packages/50/6b/dcb01f29573fd088079afbf857427b5f6e9d3e27de127bcfa6f32f07b535/decoder-plus-plus-1.7.0.tar.gz
+[2024-04-07 13:56:26] WARNING root fetch - processPackages [decoder-plus-plus]: Timeout reached during download
+[2024-04-07 13:56:26] INFO root fetch - processPackages [decoder-plus-plus]: executing diffoscope
+[2024-04-07 13:56:26] INFO root fetch - processPackages [decoder-plus-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decoder-plus-plus-1.5.0.tar.gz tmp/decoder-plus-plus-1.7.0.tar.gz --markdown 20240407/d/decoder-plus-plus/1.5.0-1.7.0/diff.md --exclude *.pyd
+[2024-04-07 13:56:26] INFO root fetch - processPackages [pyaffalddk]: Remove: archive file [/home/abi/fetcher/tmp/pyaffalddk-2.0.21.tar.gz]
+[2024-04-07 13:56:26] INFO root fetch - processPackages [pyaffalddk]: Remove: archive file [/home/abi/fetcher/tmp/pyaffalddk-2.0.22.tar.gz]
+[2024-04-07 13:56:26] INFO root fetch - main [MainThread]: End processing [pyaffalddk]: success
+[2024-04-07 13:56:27] INFO root fetch - processPackages [ellar]: Remove: archive file [/home/abi/fetcher/tmp/ellar-0.7.2.tar.gz]
+[2024-04-07 13:56:27] INFO root fetch - processPackages [ellar]: Remove: archive file [/home/abi/fetcher/tmp/ellar-0.7.3.tar.gz]
+[2024-04-07 13:56:27] INFO root fetch - main [MainThread]: End processing [ellar]: success
+[2024-04-07 13:56:28] INFO root fetch - processPackages [decoder-plus-plus]: Remove: archive file [/home/abi/fetcher/tmp/decoder-plus-plus-1.5.0.tar.gz]
+[2024-04-07 13:56:28] INFO root fetch - processPackages [decoder-plus-plus]: Remove: archive file [/home/abi/fetcher/tmp/decoder-plus-plus-1.7.0.tar.gz]
+[2024-04-07 13:56:28] INFO root fetch - main [MainThread]: End processing [decoder-plus-plus]: success
+[2024-04-07 13:56:28] INFO root fetch - processPackages [metaapi-cloud-sdk]: Remove: archive file [/home/abi/fetcher/tmp/metaapi_cloud_sdk-9.0.0.tar.gz]
+[2024-04-07 13:56:28] INFO root fetch - processPackages [metaapi-cloud-sdk]: Remove: archive file [/home/abi/fetcher/tmp/metaapi_cloud_sdk-9.1.0.tar.gz]
+[2024-04-07 13:56:28] INFO root fetch - main [MainThread]: End processing [metaapi-cloud-sdk]: success
+[2024-04-07 13:56:28] INFO root fetch - main [MainThread]: Store serial: [22655896]
