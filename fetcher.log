@@ -21016,3 +21016,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:53:15] INFO root fetch - processPackages [enkanetworkv2.py]: Remove: archive file [/home/abi/fetcher/tmp/enkanetworkv2.py-2.0.3.tar.gz]
 [2024-04-07 23:53:15] INFO root fetch - main [MainThread]: End processing [enkanetworkv2.py]: success
 [2024-04-07 23:53:15] INFO root fetch - main [MainThread]: Store serial: [22659601]
+[2024-04-07 23:55:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659601]
+[2024-04-07 23:55:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 23:55:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apple-health-extractor
+[2024-04-07 23:55:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alphaiq-sdk
+[2024-04-07 23:55:24] INFO root fetch - processPackages [apple-health-extractor]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-07 23:55:24] INFO root fetch - processPackages [apple-health-extractor]: Downloading https://files.pythonhosted.org/packages/5b/53/c649697112bc24e4be76efe76572e27df52eb6d345f828e904b01835d96f/apple_health_extractor-0.1.2.tar.gz
+[2024-04-07 23:55:24] INFO root fetch - processPackages [alphaiq-sdk]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-07 23:55:24] WARNING root fetch - processPackages [apple-health-extractor]: Timeout reached during download
+[2024-04-07 23:55:24] INFO root fetch - processPackages [alphaiq-sdk]: Downloading https://files.pythonhosted.org/packages/fe/4d/9882809b2cbea0c733ad820beb6a0a64a56be5ec37436bb3a0aac3309665/alphaiq-sdk-0.2.6.tar.gz
+[2024-04-07 23:55:24] INFO root fetch - processPackages [apple-health-extractor]: Downloading https://files.pythonhosted.org/packages/b1/02/9a7b54b3ba74826ff8f71cf4a94a46f11d2e9b99d426074a469502b392d6/apple_health_extractor-0.1.3.tar.gz
+[2024-04-07 23:55:24] WARNING root fetch - processPackages [alphaiq-sdk]: Timeout reached during download
+[2024-04-07 23:55:24] WARNING root fetch - processPackages [apple-health-extractor]: Timeout reached during download
+[2024-04-07 23:55:24] INFO root fetch - processPackages [apple-health-extractor]: executing diffoscope
+[2024-04-07 23:55:24] INFO root fetch - processPackages [apple-health-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apple_health_extractor-0.1.2.tar.gz tmp/apple_health_extractor-0.1.3.tar.gz --markdown 20240407/a/apple-health-extractor/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2024-04-07 23:55:24] INFO root fetch - processPackages [alphaiq-sdk]: Downloading https://files.pythonhosted.org/packages/7d/70/72a62ee8ba770845be69b2c5617fa3359ee1d3e073f2812c2114df88beca/alphaiq-sdk-0.2.7.tar.gz
+[2024-04-07 23:55:24] WARNING root fetch - processPackages [alphaiq-sdk]: Timeout reached during download
+[2024-04-07 23:55:24] INFO root fetch - processPackages [alphaiq-sdk]: executing diffoscope
+[2024-04-07 23:55:24] INFO root fetch - processPackages [alphaiq-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphaiq-sdk-0.2.6.tar.gz tmp/alphaiq-sdk-0.2.7.tar.gz --markdown 20240407/a/alphaiq-sdk/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2024-04-07 23:55:25] INFO root fetch - processPackages [apple-health-extractor]: Remove: archive file [/home/abi/fetcher/tmp/apple_health_extractor-0.1.2.tar.gz]
+[2024-04-07 23:55:25] INFO root fetch - processPackages [apple-health-extractor]: Remove: archive file [/home/abi/fetcher/tmp/apple_health_extractor-0.1.3.tar.gz]
+[2024-04-07 23:55:25] INFO root fetch - main [MainThread]: End processing [apple-health-extractor]: success
+[2024-04-07 23:55:25] INFO root fetch - processPackages [alphaiq-sdk]: Remove: archive file [/home/abi/fetcher/tmp/alphaiq-sdk-0.2.6.tar.gz]
+[2024-04-07 23:55:25] INFO root fetch - processPackages [alphaiq-sdk]: Remove: archive file [/home/abi/fetcher/tmp/alphaiq-sdk-0.2.7.tar.gz]
+[2024-04-07 23:55:25] INFO root fetch - main [MainThread]: End processing [alphaiq-sdk]: success
+[2024-04-07 23:55:25] INFO root fetch - main [MainThread]: Store serial: [22659607]
