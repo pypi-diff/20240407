@@ -2761,3 +2761,48 @@
 [2024-04-07 04:14:20] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.86.tar.gz]
 [2024-04-07 04:14:20] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
 [2024-04-07 04:14:20] INFO root fetch - main [MainThread]: Store serial: [22652822]
+[2024-04-07 04:16:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652822]
+[2024-04-07 04:16:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 04:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sweetrpg-web-core
+[2024-04-07 04:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: litellm
+[2024-04-07 04:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sweetrpg-web-core
+[2024-04-07 04:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: monai-weekly
+[2024-04-07 04:16:30] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 04:16:30] INFO root fetch - processPackages [litellm]: New version: [1.9.dev0] Old Version: [1.9.5]
+[2024-04-07 04:16:30] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 04:16:30] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-04-07 04:16:30] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/38/f3/1cbeaf4074e7b284cd140263ff165948d8f4cc8f5dd72c89be43a0469387/litellm-1.9.5.tar.gz
+[2024-04-07 04:16:30] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-04-07 04:16:30] WARNING root fetch - processPackages [sweetrpg-web-core]: Timeout reached during download
+[2024-04-07 04:16:30] WARNING root fetch - processPackages [sweetrpg-web-core]: Timeout reached during download
+[2024-04-07 04:16:31] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-04-07 04:16:31] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-04-07 04:16:31] WARNING root fetch - processPackages [litellm]: Timeout reached during download
+[2024-04-07 04:16:31] INFO root fetch - processPackages [monai-weekly]: New version: [1.4.dev2414] Old Version: [1.4.dev2413]
+[2024-04-07 04:16:31] WARNING root fetch - processPackages [sweetrpg-web-core]: Timeout reached during download
+[2024-04-07 04:16:31] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-04-07 04:16:31] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240407/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 04:16:31] WARNING root fetch - processPackages [sweetrpg-web-core]: Timeout reached during download
+[2024-04-07 04:16:31] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-04-07 04:16:31] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/ad/6c/162b83e9cf68f5a94c30153e835414c3ee11c8602ffaacc9a032851dfa26/litellm-1.9.dev0.tar.gz
+[2024-04-07 04:16:31] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240407/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 04:16:31] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/35/d6/92373838d92ddd38c5b0782cc91b2d0cb881c6860aace1d034b709e8aafc/monai-weekly-1.4.dev2413.tar.gz
+[2024-04-07 04:16:31] WARNING root fetch - processPackages [litellm]: Timeout reached during download
+[2024-04-07 04:16:31] INFO root fetch - processPackages [litellm]: executing diffoscope
+[2024-04-07 04:16:31] INFO root fetch - processPackages [litellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm-1.9.5.tar.gz tmp/litellm-1.9.dev0.tar.gz --markdown 20240407/l/litellm/1.9.5-1.9.dev0/diff.md --exclude *.pyd
+[2024-04-07 04:16:31] WARNING root fetch - processPackages [monai-weekly]: Timeout reached during download
+[2024-04-07 04:16:31] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.98.tar.gz]
+[2024-04-07 04:16:31] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.99.tar.gz]
+[2024-04-07 04:16:31] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-04-07 04:16:31] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-04-07 04:16:31] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/dc/0a/cb23c45cc82a2255b340adae3a851d1c39591922734d7d2b733dcb83277b/monai-weekly-1.4.dev2414.tar.gz
+[2024-04-07 04:16:32] WARNING root fetch - processPackages [monai-weekly]: Timeout reached during download
+[2024-04-07 04:16:32] INFO root fetch - processPackages [monai-weekly]: executing diffoscope
+[2024-04-07 04:16:32] INFO root fetch - processPackages [monai-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monai-weekly-1.4.dev2413.tar.gz tmp/monai-weekly-1.4.dev2414.tar.gz --markdown 20240407/m/monai-weekly/1.4.dev2413-1.4.dev2414/diff.md --exclude *.pyd
+[2024-04-07 04:16:32] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.5.tar.gz]
+[2024-04-07 04:16:32] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
+[2024-04-07 04:16:32] INFO root fetch - main [MainThread]: End processing [litellm]: success
+[2024-04-07 04:16:37] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai-weekly-1.4.dev2413.tar.gz]
+[2024-04-07 04:16:37] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai-weekly-1.4.dev2414.tar.gz]
+[2024-04-07 04:16:37] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
+[2024-04-07 04:16:37] INFO root fetch - main [MainThread]: Store serial: [22652833]
