@@ -20249,3 +20249,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:03:03] INFO root fetch - processPackages [enkanetworkv2.py]: Remove: archive file [/home/abi/fetcher/tmp/enkanetworkv2.py-2.0.2.tar.gz]
 [2024-04-07 23:03:03] INFO root fetch - main [MainThread]: End processing [enkanetworkv2.py]: success
 [2024-04-07 23:03:03] INFO root fetch - main [MainThread]: Store serial: [22659244]
+[2024-04-07 23:05:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659244]
+[2024-04-07 23:05:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 23:05:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lmwsip
+[2024-04-07 23:05:12] INFO root fetch - processPackages [lmwsip]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-04-07 23:05:12] INFO root fetch - processPackages [lmwsip]: Downloading https://files.pythonhosted.org/packages/d6/71/e554fb80fca842d19807c23552f55e927430f47f77b083cc2a2d058b8932/lmwsip-0.9.6.tar.gz
+[2024-04-07 23:05:13] WARNING root fetch - processPackages [lmwsip]: Timeout reached during download
+[2024-04-07 23:05:13] INFO root fetch - processPackages [lmwsip]: Downloading https://files.pythonhosted.org/packages/27/0e/26eb35f73433b031200896a217159d9e101220ea7a0cfc72c0f4311aa77d/lmwsip-0.9.7.tar.gz
+[2024-04-07 23:05:14] WARNING root fetch - processPackages [lmwsip]: Timeout reached during download
+[2024-04-07 23:05:14] INFO root fetch - processPackages [lmwsip]: executing diffoscope
+[2024-04-07 23:05:14] INFO root fetch - processPackages [lmwsip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lmwsip-0.9.6.tar.gz tmp/lmwsip-0.9.7.tar.gz --markdown 20240407/l/lmwsip/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2024-04-07 23:05:14] INFO root fetch - processPackages [lmwsip]: Remove: archive file [/home/abi/fetcher/tmp/lmwsip-0.9.6.tar.gz]
+[2024-04-07 23:05:14] INFO root fetch - processPackages [lmwsip]: Remove: archive file [/home/abi/fetcher/tmp/lmwsip-0.9.7.tar.gz]
+[2024-04-07 23:05:14] INFO root fetch - main [MainThread]: End processing [lmwsip]: success
+[2024-04-07 23:05:14] INFO root fetch - main [MainThread]: Store serial: [22659244]
