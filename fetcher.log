@@ -13049,3 +13049,61 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:03:07] INFO root fetch - processPackages [docker-remote-sync]: Remove: archive file [/home/abi/fetcher/tmp/docker_remote_sync-0.5.0.tar.gz]
 [2024-04-07 16:03:07] INFO root fetch - main [MainThread]: End processing [docker-remote-sync]: success
 [2024-04-07 16:03:07] INFO root fetch - main [MainThread]: Store serial: [22656647]
+[2024-04-07 16:05:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656647]
+[2024-04-07 16:05:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 16:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyFunceble-dev
+[2024-04-07 16:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: z4d-certified-devices
+[2024-04-07 16:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flapi
+[2024-04-07 16:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycitysim
+[2024-04-07 16:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: systembridgebackend
+[2024-04-07 16:05:15] INFO root fetch - processPackages [systembridgebackend]: New version: [4.2.1] Old Version: [4.2.0]
+[2024-04-07 16:05:15] INFO root fetch - processPackages [PyFunceble-dev]: New version: [4.2.9] Old Version: [4.2.7]
+[2024-04-07 16:05:15] INFO root fetch - processPackages [pycitysim]: New version: [1.12.1] Old Version: [1.12.0]
+[2024-04-07 16:05:15] INFO root fetch - processPackages [flapi]: New version: [1.0.0] Old Version: [0.4.1]
+[2024-04-07 16:05:15] INFO root fetch - processPackages [z4d-certified-devices]: New version: [4.251] Old Version: [4.250]
+[2024-04-07 16:05:15] INFO root fetch - processPackages [systembridgebackend]: Downloading https://files.pythonhosted.org/packages/e2/5a/135c8d4809fe52940b029561465f57a56c2f3f2c79d5d086d6fdcc957f31/systembridgebackend-4.2.0.tar.gz
+[2024-04-07 16:05:15] INFO root fetch - processPackages [PyFunceble-dev]: Downloading https://files.pythonhosted.org/packages/a9/09/2ffbe87530f0aece577d1ebfa1ea3ff3585590610c864c8b8d3e5b18411c/PyFunceble-dev-4.2.7.tar.gz
+[2024-04-07 16:05:15] INFO root fetch - processPackages [pycitysim]: Downloading https://files.pythonhosted.org/packages/65/11/99cd8cb362dda8c389e1b68a5a73b88e68dbdcc12579d3239b90c0c6835c/pycitysim-1.12.0.tar.gz
+[2024-04-07 16:05:15] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/ec/eb/311fb33cf4a842229a8f4204cefa52e052f8ab604308e7ce8a84cd431dec/z4d-certified-devices-4.250.tar.gz
+[2024-04-07 16:05:15] INFO root fetch - processPackages [flapi]: Downloading https://files.pythonhosted.org/packages/54/a4/c907b5dbe2b1c84005e28cf542ca20e937ea09c7504f3ed77e3c9776b710/flapi-0.4.1.tar.gz
+[2024-04-07 16:05:15] WARNING root fetch - processPackages [systembridgebackend]: Timeout reached during download
+[2024-04-07 16:05:15] WARNING root fetch - processPackages [PyFunceble-dev]: Timeout reached during download
+[2024-04-07 16:05:15] WARNING root fetch - processPackages [flapi]: Timeout reached during download
+[2024-04-07 16:05:15] INFO root fetch - processPackages [PyFunceble-dev]: Downloading https://files.pythonhosted.org/packages/8d/a6/ce1b409ecb908fd4d991b77970805c1b0d784005b2b00817f8b4233ac9d4/PyFunceble-dev-4.2.9.tar.gz
+[2024-04-07 16:05:15] WARNING root fetch - processPackages [z4d-certified-devices]: Timeout reached during download
+[2024-04-07 16:05:16] WARNING root fetch - processPackages [pycitysim]: Timeout reached during download
+[2024-04-07 16:05:16] INFO root fetch - processPackages [systembridgebackend]: Downloading https://files.pythonhosted.org/packages/e9/27/10ad9f875bb352ff84c776f0ee01e3a56023a5ab08c67b4b4ce3d74f4c99/systembridgebackend-4.2.1.tar.gz
+[2024-04-07 16:05:16] WARNING root fetch - processPackages [PyFunceble-dev]: Timeout reached during download
+[2024-04-07 16:05:16] INFO root fetch - processPackages [PyFunceble-dev]: executing diffoscope
+[2024-04-07 16:05:16] INFO root fetch - processPackages [PyFunceble-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyFunceble-dev-4.2.7.tar.gz tmp/PyFunceble-dev-4.2.9.tar.gz --markdown 20240407/P/PyFunceble-dev/4.2.7-4.2.9/diff.md --exclude *.pyd
+[2024-04-07 16:05:16] INFO root fetch - processPackages [flapi]: Downloading https://files.pythonhosted.org/packages/b7/a2/b4b4681624ed4151cb70450735bbf2d65ea0c5a280dd9d15acc7ca989f6e/flapi-1.0.0.tar.gz
+[2024-04-07 16:05:16] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/08/ee/07a6bd093eab3169d815bfaba0f4352c7e9153968d0d3cfc230de7ca92fa/z4d-certified-devices-4.251.tar.gz
+[2024-04-07 16:05:16] INFO root fetch - processPackages [pycitysim]: Downloading https://files.pythonhosted.org/packages/90/e7/64778cf69547f89b775147a574cd40c093c6e90cf89ad72dd2f6b1d2b5cb/pycitysim-1.12.1.tar.gz
+[2024-04-07 16:05:16] WARNING root fetch - processPackages [systembridgebackend]: Timeout reached during download
+[2024-04-07 16:05:16] INFO root fetch - processPackages [systembridgebackend]: executing diffoscope
+[2024-04-07 16:05:16] INFO root fetch - processPackages [systembridgebackend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systembridgebackend-4.2.0.tar.gz tmp/systembridgebackend-4.2.1.tar.gz --markdown 20240407/s/systembridgebackend/4.2.0-4.2.1/diff.md --exclude *.pyd
+[2024-04-07 16:05:16] WARNING root fetch - processPackages [flapi]: Timeout reached during download
+[2024-04-07 16:05:16] INFO root fetch - processPackages [flapi]: executing diffoscope
+[2024-04-07 16:05:16] INFO root fetch - processPackages [flapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flapi-0.4.1.tar.gz tmp/flapi-1.0.0.tar.gz --markdown 20240407/f/flapi/0.4.1-1.0.0/diff.md --exclude *.pyd
+[2024-04-07 16:05:16] WARNING root fetch - processPackages [z4d-certified-devices]: Timeout reached during download
+[2024-04-07 16:05:16] INFO root fetch - processPackages [z4d-certified-devices]: executing diffoscope
+[2024-04-07 16:05:16] INFO root fetch - processPackages [z4d-certified-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z4d-certified-devices-4.250.tar.gz tmp/z4d-certified-devices-4.251.tar.gz --markdown 20240407/z/z4d-certified-devices/4.250-4.251/diff.md --exclude *.pyd
+[2024-04-07 16:05:16] WARNING root fetch - processPackages [pycitysim]: Timeout reached during download
+[2024-04-07 16:05:16] INFO root fetch - processPackages [pycitysim]: executing diffoscope
+[2024-04-07 16:05:16] INFO root fetch - processPackages [pycitysim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycitysim-1.12.0.tar.gz tmp/pycitysim-1.12.1.tar.gz --markdown 20240407/p/pycitysim/1.12.0-1.12.1/diff.md --exclude *.pyd
+[2024-04-07 16:05:16] INFO root fetch - processPackages [systembridgebackend]: Remove: archive file [/home/abi/fetcher/tmp/systembridgebackend-4.2.0.tar.gz]
+[2024-04-07 16:05:16] INFO root fetch - processPackages [systembridgebackend]: Remove: archive file [/home/abi/fetcher/tmp/systembridgebackend-4.2.1.tar.gz]
+[2024-04-07 16:05:16] INFO root fetch - main [MainThread]: End processing [systembridgebackend]: success
+[2024-04-07 16:05:16] INFO root fetch - processPackages [flapi]: Remove: archive file [/home/abi/fetcher/tmp/flapi-0.4.1.tar.gz]
+[2024-04-07 16:05:16] INFO root fetch - processPackages [flapi]: Remove: archive file [/home/abi/fetcher/tmp/flapi-1.0.0.tar.gz]
+[2024-04-07 16:05:16] INFO root fetch - main [MainThread]: End processing [flapi]: success
+[2024-04-07 16:05:17] INFO root fetch - processPackages [pycitysim]: Remove: archive file [/home/abi/fetcher/tmp/pycitysim-1.12.0.tar.gz]
+[2024-04-07 16:05:17] INFO root fetch - processPackages [pycitysim]: Remove: archive file [/home/abi/fetcher/tmp/pycitysim-1.12.1.tar.gz]
+[2024-04-07 16:05:17] INFO root fetch - main [MainThread]: End processing [pycitysim]: success
+[2024-04-07 16:05:17] INFO root fetch - processPackages [PyFunceble-dev]: Remove: archive file [/home/abi/fetcher/tmp/PyFunceble-dev-4.2.7.tar.gz]
+[2024-04-07 16:05:17] INFO root fetch - processPackages [PyFunceble-dev]: Remove: archive file [/home/abi/fetcher/tmp/PyFunceble-dev-4.2.9.tar.gz]
+[2024-04-07 16:05:17] INFO root fetch - main [MainThread]: End processing [PyFunceble-dev]: success
+[2024-04-07 16:05:17] INFO root fetch - processPackages [z4d-certified-devices]: Remove: archive file [/home/abi/fetcher/tmp/z4d-certified-devices-4.250.tar.gz]
+[2024-04-07 16:05:17] INFO root fetch - processPackages [z4d-certified-devices]: Remove: archive file [/home/abi/fetcher/tmp/z4d-certified-devices-4.251.tar.gz]
+[2024-04-07 16:05:17] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
+[2024-04-07 16:05:17] INFO root fetch - main [MainThread]: Store serial: [22656659]
