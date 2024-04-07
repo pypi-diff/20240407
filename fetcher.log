@@ -5516,3 +5516,44 @@
 [2024-04-07 07:38:35] INFO root fetch - processPackages [acstore]: Remove: archive file [/home/abi/fetcher/tmp/acstore-20240407.tar.gz]
 [2024-04-07 07:38:35] INFO root fetch - main [MainThread]: End processing [acstore]: success
 [2024-04-07 07:38:35] INFO root fetch - main [MainThread]: Store serial: [22653680]
+[2024-04-07 07:40:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653680]
+[2024-04-07 07:40:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 07:40:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-aiven
+[2024-04-07 07:40:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: htscf
+[2024-04-07 07:40:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SigProfilerTopography
+[2024-04-07 07:40:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-cloudflare
+[2024-04-07 07:40:44] INFO root fetch - processPackages [htscf]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 07:40:44] INFO root fetch - processPackages [pulumi-cloudflare]: New version: [5.9.0a1692854882] Old Version: [5.9.0a1692851897]
+[2024-04-07 07:40:44] INFO root fetch - processPackages [SigProfilerTopography]: New version: [1.0.9] Old Version: [1.0.86]
+[2024-04-07 07:40:44] INFO root fetch - processPackages [pulumi-aiven]: New version: [6.9.0a1704274395] Old Version: [6.9.0a1704258951]
+[2024-04-07 07:40:44] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/48/31/ef6469f74ffa5f39aaf9ac67ecf2f5b17aec1b223d3f63572efd39a3958f/htscf-0.0.98.tar.gz
+[2024-04-07 07:40:44] INFO root fetch - processPackages [pulumi-cloudflare]: Downloading https://files.pythonhosted.org/packages/ce/4c/bbf50ef75d6a6dc70780f846ef13e19b5ec009e8657c5b847defde7a8dd9/pulumi_cloudflare-5.9.0a1692851897.tar.gz
+[2024-04-07 07:40:44] INFO root fetch - processPackages [pulumi-aiven]: Downloading https://files.pythonhosted.org/packages/89/fb/adacc179c277b4328f00f1483cac3f1c2227c33318802c8f88e0ee8e93c3/pulumi_aiven-6.9.0a1704258951.tar.gz
+[2024-04-07 07:40:44] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 07:40:44] WARNING root fetch - processPackages [pulumi-cloudflare]: Timeout reached during download
+[2024-04-07 07:40:44] INFO root fetch - processPackages [SigProfilerTopography]: Downloading https://files.pythonhosted.org/packages/86/98/296aa9ac9c8a12f1a89b87d3fc5c42909f716102c8969e84bfe558bbd363/SigProfilerTopography-1.0.86-py3-none-any.whl
+[2024-04-07 07:40:44] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/79/48/b9c5a63d0fc652968c826af8815fadd5e1f69403909e12853b5a52d9c6b3/htscf-0.0.99.tar.gz
+[2024-04-07 07:40:45] WARNING root fetch - processPackages [pulumi-aiven]: Timeout reached during download
+[2024-04-07 07:40:45] INFO root fetch - processPackages [pulumi-cloudflare]: Downloading https://files.pythonhosted.org/packages/aa/45/e2040e3054cffd9ce633539517dc7f0063c0b789d73bac75a2b832e469de/pulumi_cloudflare-5.9.0a1692854882.tar.gz
+[2024-04-07 07:40:45] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 07:40:45] INFO root fetch - processPackages [htscf]: executing diffoscope
+[2024-04-07 07:40:45] INFO root fetch - processPackages [htscf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htscf-0.0.98.tar.gz tmp/htscf-0.0.99.tar.gz --markdown 20240407/h/htscf/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 07:40:45] WARNING root fetch - processPackages [SigProfilerTopography]: Skipping package: exceeds size limit 39821348>=10485760
+[2024-04-07 07:40:45] INFO root fetch - main [MainThread]: End processing [SigProfilerTopography] error
+[2024-04-07 07:40:45] WARNING root fetch - processPackages [pulumi-cloudflare]: Timeout reached during download
+[2024-04-07 07:40:45] INFO root fetch - processPackages [pulumi-cloudflare]: executing diffoscope
+[2024-04-07 07:40:45] INFO root fetch - processPackages [pulumi-cloudflare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_cloudflare-5.9.0a1692851897.tar.gz tmp/pulumi_cloudflare-5.9.0a1692854882.tar.gz --markdown 20240407/p/pulumi-cloudflare/5.9.0a1692851897-5.9.0a1692854882/diff.md --exclude *.pyd
+[2024-04-07 07:40:45] INFO root fetch - processPackages [pulumi-aiven]: Downloading https://files.pythonhosted.org/packages/58/4d/df63cee14469cb3bb5ff7e2a4af56d19adf0cd17ce9192b84188dc240736/pulumi_aiven-6.9.0a1704274395.tar.gz
+[2024-04-07 07:40:45] WARNING root fetch - processPackages [pulumi-aiven]: Timeout reached during download
+[2024-04-07 07:40:45] INFO root fetch - processPackages [pulumi-aiven]: executing diffoscope
+[2024-04-07 07:40:45] INFO root fetch - processPackages [pulumi-aiven]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aiven-6.9.0a1704258951.tar.gz tmp/pulumi_aiven-6.9.0a1704274395.tar.gz --markdown 20240407/p/pulumi-aiven/6.9.0a1704258951-6.9.0a1704274395/diff.md --exclude *.pyd
+[2024-04-07 07:40:45] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.98.tar.gz]
+[2024-04-07 07:40:45] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.99.tar.gz]
+[2024-04-07 07:40:45] INFO root fetch - main [MainThread]: End processing [htscf]: success
+[2024-04-07 07:40:46] INFO root fetch - processPackages [pulumi-cloudflare]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_cloudflare-5.9.0a1692851897.tar.gz]
+[2024-04-07 07:40:46] INFO root fetch - processPackages [pulumi-cloudflare]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_cloudflare-5.9.0a1692854882.tar.gz]
+[2024-04-07 07:40:46] INFO root fetch - main [MainThread]: End processing [pulumi-cloudflare]: success
+[2024-04-07 07:40:46] INFO root fetch - processPackages [pulumi-aiven]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aiven-6.9.0a1704258951.tar.gz]
+[2024-04-07 07:40:46] INFO root fetch - processPackages [pulumi-aiven]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aiven-6.9.0a1704274395.tar.gz]
+[2024-04-07 07:40:46] INFO root fetch - main [MainThread]: End processing [pulumi-aiven]: success
+[2024-04-07 07:40:46] INFO root fetch - main [MainThread]: Store serial: [22653690]
