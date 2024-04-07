@@ -2716,3 +2716,17 @@
 [2024-04-07 04:07:50] INFO root fetch - main [MainThread]: End processing [ferramentas-basicas-pln]: success
 [2024-04-07 04:07:51] INFO root fetch - main [MainThread]: End processing [ferramentas-basicas-pln]: success
 [2024-04-07 04:07:51] INFO root fetch - main [MainThread]: Store serial: [22652807]
+[2024-04-07 04:09:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652807]
+[2024-04-07 04:10:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 04:10:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BiLLM
+[2024-04-07 04:10:00] INFO root fetch - processPackages [BiLLM]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-07 04:10:01] INFO root fetch - processPackages [BiLLM]: Downloading https://files.pythonhosted.org/packages/cd/f1/f7d4971bfcf3db66c42dd7ec441be796f867387a833c6bf62f0e3ac5ef97/billm-0.1.1.tar.gz
+[2024-04-07 04:10:01] WARNING root fetch - processPackages [BiLLM]: Timeout reached during download
+[2024-04-07 04:10:01] INFO root fetch - processPackages [BiLLM]: Downloading https://files.pythonhosted.org/packages/f7/be/ce25a08467a0f2925f122d34a2dca5adc644d6682450636c798bb1bec27e/billm-0.1.2.tar.gz
+[2024-04-07 04:10:01] WARNING root fetch - processPackages [BiLLM]: Timeout reached during download
+[2024-04-07 04:10:01] INFO root fetch - processPackages [BiLLM]: executing diffoscope
+[2024-04-07 04:10:01] INFO root fetch - processPackages [BiLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/billm-0.1.1.tar.gz tmp/billm-0.1.2.tar.gz --markdown 20240407/B/BiLLM/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-07 04:10:02] INFO root fetch - processPackages [BiLLM]: Remove: archive file [/home/abi/fetcher/tmp/billm-0.1.1.tar.gz]
+[2024-04-07 04:10:02] INFO root fetch - processPackages [BiLLM]: Remove: archive file [/home/abi/fetcher/tmp/billm-0.1.2.tar.gz]
+[2024-04-07 04:10:02] INFO root fetch - main [MainThread]: End processing [BiLLM]: success
+[2024-04-07 04:10:02] INFO root fetch - main [MainThread]: Store serial: [22652811]
