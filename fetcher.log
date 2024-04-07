@@ -10472,3 +10472,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:15:05] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
 [2024-04-07 13:15:05] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2024-04-07 13:15:05] INFO root fetch - main [MainThread]: Store serial: [22655624]
+[2024-04-07 13:17:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655624]
+[2024-04-07 13:17:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 13:17:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyracf
+[2024-04-07 13:17:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyracf
+[2024-04-07 13:17:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-core-xe-esimd-21
+[2024-04-07 13:17:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: open-aoi
+[2024-04-07 13:17:14] INFO root fetch - processPackages [open-aoi]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 13:17:14] INFO root fetch - processPackages [open-aoi]: Downloading https://files.pythonhosted.org/packages/d2/cb/dd19e4630fb354010db3e6215502966625550ff7a5acbdbcedf536a6cd4d/open_aoi-0.0.8.tar.gz
+[2024-04-07 13:17:14] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: New version: [2.5.0b20240407] Old Version: [2.5.0b20240406]
+[2024-04-07 13:17:14] INFO root fetch - processPackages [pyracf]: New version: [0.8.2] Old Version: [0.7.1]
+[2024-04-07 13:17:14] INFO root fetch - processPackages [pyracf]: New version: [0.8.2] Old Version: [0.7.1]
+[2024-04-07 13:17:14] WARNING root fetch - processPackages [open-aoi]: Timeout reached during download
+[2024-04-07 13:17:14] INFO root fetch - processPackages [pyracf]: Downloading https://files.pythonhosted.org/packages/5f/e9/8d03112b54281ad8ef7c3db0bc5c2c9b2dff65752ded068642bb7fbc9d0b/pyracf-0.7.1.tar.gz
+[2024-04-07 13:17:14] INFO root fetch - processPackages [pyracf]: Downloading https://files.pythonhosted.org/packages/5f/e9/8d03112b54281ad8ef7c3db0bc5c2c9b2dff65752ded068642bb7fbc9d0b/pyracf-0.7.1.tar.gz
+[2024-04-07 13:17:15] INFO root fetch - processPackages [open-aoi]: Downloading https://files.pythonhosted.org/packages/2e/0c/2869daa3fcce6ef21522f04169cfdef7edf737a59d03f86a95b6594d19b3/open_aoi-0.0.9.tar.gz
+[2024-04-07 13:17:15] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/22/52/a76314d3c3aa61b2a4ceead39f33268082ab314bf16b14383f9e9de95ff1/bigdl_core_xe_esimd_21-2.5.0b20240406-cp39-cp39-manylinux2010_x86_64.whl
+[2024-04-07 13:17:15] WARNING root fetch - processPackages [pyracf]: Timeout reached during download
+[2024-04-07 13:17:15] WARNING root fetch - processPackages [bigdl-core-xe-esimd-21]: Skipping package: exceeds size limit 46708654>=10485760
+[2024-04-07 13:17:15] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd-21] error
+[2024-04-07 13:17:15] WARNING root fetch - processPackages [pyracf]: Timeout reached during download
+[2024-04-07 13:17:15] WARNING root fetch - processPackages [open-aoi]: Timeout reached during download
+[2024-04-07 13:17:15] INFO root fetch - processPackages [open-aoi]: executing diffoscope
+[2024-04-07 13:17:15] INFO root fetch - processPackages [open-aoi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_aoi-0.0.8.tar.gz tmp/open_aoi-0.0.9.tar.gz --markdown 20240407/o/open-aoi/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 13:17:15] INFO root fetch - processPackages [pyracf]: Downloading https://files.pythonhosted.org/packages/f6/17/02bf72c6e697519903348d66ce1701f4721f7ba212c1efada4f95b6c2fd1/pyracf-0.8.2.tar.gz
+[2024-04-07 13:17:15] INFO root fetch - processPackages [pyracf]: Downloading https://files.pythonhosted.org/packages/f6/17/02bf72c6e697519903348d66ce1701f4721f7ba212c1efada4f95b6c2fd1/pyracf-0.8.2.tar.gz
+[2024-04-07 13:17:15] WARNING root fetch - processPackages [pyracf]: Timeout reached during download
+[2024-04-07 13:17:15] INFO root fetch - processPackages [pyracf]: executing diffoscope
+[2024-04-07 13:17:15] INFO root fetch - processPackages [pyracf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyracf-0.7.1.tar.gz tmp/pyracf-0.8.2.tar.gz --markdown 20240407/p/pyracf/0.7.1-0.8.2/diff.md --exclude *.pyd
+[2024-04-07 13:17:15] WARNING root fetch - processPackages [pyracf]: Timeout reached during download
+[2024-04-07 13:17:15] INFO root fetch - processPackages [pyracf]: executing diffoscope
+[2024-04-07 13:17:15] INFO root fetch - processPackages [pyracf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyracf-0.7.1.tar.gz tmp/pyracf-0.8.2.tar.gz --markdown 20240407/p/pyracf/0.7.1-0.8.2/diff.md --exclude *.pyd
+[2024-04-07 13:17:15] INFO root fetch - processPackages [open-aoi]: Remove: archive file [/home/abi/fetcher/tmp/open_aoi-0.0.8.tar.gz]
+[2024-04-07 13:17:15] INFO root fetch - processPackages [open-aoi]: Remove: archive file [/home/abi/fetcher/tmp/open_aoi-0.0.9.tar.gz]
+[2024-04-07 13:17:15] INFO root fetch - main [MainThread]: End processing [open-aoi]: success
+[2024-04-07 13:17:16] INFO root fetch - processPackages [pyracf]: Remove: archive file [/home/abi/fetcher/tmp/pyracf-0.7.1.tar.gz]
+[2024-04-07 13:17:16] INFO root fetch - processPackages [pyracf]: Remove: archive file [/home/abi/fetcher/tmp/pyracf-0.8.2.tar.gz]
+[2024-04-07 13:17:16] INFO root fetch - main [MainThread]: End processing [pyracf]: success
+[2024-04-07 13:17:16] INFO root fetch - main [MainThread]: End processing [pyracf]: success
+[2024-04-07 13:17:16] INFO root fetch - main [MainThread]: Store serial: [22655635]
