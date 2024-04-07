@@ -6131,3 +6131,56 @@
 [2024-04-07 08:11:32] INFO root fetch - processPackages [pulumi-newrelic]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_newrelic-5.9.1.tar.gz]
 [2024-04-07 08:11:32] INFO root fetch - main [MainThread]: End processing [pulumi-newrelic]: success
 [2024-04-07 08:11:32] INFO root fetch - main [MainThread]: Store serial: [22653929]
+[2024-04-07 08:13:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653929]
+[2024-04-07 08:13:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 08:13:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyg-nightly
+[2024-04-07 08:13:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-docker
+[2024-04-07 08:13:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nightshifttrader
+[2024-04-07 08:13:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: corentin-regent-test
+[2024-04-07 08:13:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pretext
+[2024-04-07 08:13:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-opsgenie
+[2024-04-07 08:13:41] INFO root fetch - processPackages [pulumi-opsgenie]: New version: [1.4.0a1712400910] Old Version: [1.4.0a1711740009]
+[2024-04-07 08:13:41] WARNING root fetch - processPackages [corentin-regent-test]: Skipping, unable to determine old version
+[2024-04-07 08:13:41] INFO root fetch - main [MainThread]: End processing [corentin-regent-test] error
+[2024-04-07 08:13:41] INFO root fetch - processPackages [pulumi-opsgenie]: Downloading https://files.pythonhosted.org/packages/ae/1e/265e14a5570be1131047c10a88ecd7a830ca13240c5c98c4bc797f051d05/pulumi_opsgenie-1.4.0a1711740009.tar.gz
+[2024-04-07 08:13:41] WARNING root fetch - processPackages [nightshifttrader]: Skipping, unable to determine old version
+[2024-04-07 08:13:41] INFO root fetch - main [MainThread]: End processing [nightshifttrader] error
+[2024-04-07 08:13:41] INFO root fetch - processPackages [pulumi-docker]: New version: [4.7.0a1705628423] Old Version: [4.7.0a1705607229]
+[2024-04-07 08:13:41] INFO root fetch - processPackages [pyg-nightly]: New version: [2.6.0.dev20240407] Old Version: [2.6.0.dev20240406]
+[2024-04-07 08:13:41] INFO root fetch - processPackages [pretext]: New version: [2.3.9.dev20240302] Old Version: [2.3.9.dev20240229]
+[2024-04-07 08:13:42] WARNING root fetch - processPackages [pulumi-opsgenie]: Timeout reached during download
+[2024-04-07 08:13:42] INFO root fetch - processPackages [pulumi-docker]: Downloading https://files.pythonhosted.org/packages/60/4d/20db01394ae207e38e34244a087a77010c3163b5176d5ed60b9e938b94df/pulumi_docker-4.7.0a1705607229.tar.gz
+[2024-04-07 08:13:42] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/80/e0/ff9bcb47689cb01f08890859a79a466dd892e285370377c2d764090533b6/pyg_nightly-2.6.0.dev20240406.tar.gz
+[2024-04-07 08:13:42] WARNING root fetch - processPackages [pulumi-docker]: Timeout reached during download
+[2024-04-07 08:13:42] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/ce/64/85bc57578fbf3322df1cb4958d7c6cf0dda4d8184eb5611f8245cb5d98eb/pretext-2.3.9.dev20240229.tar.gz
+[2024-04-07 08:13:42] INFO root fetch - processPackages [pulumi-opsgenie]: Downloading https://files.pythonhosted.org/packages/0c/b0/d77a788c9d283d9e48e02c4ef7640da63954b44b8e1f5660ab7ca6a53b63/pulumi_opsgenie-1.4.0a1712400910.tar.gz
+[2024-04-07 08:13:42] INFO root fetch - processPackages [pulumi-docker]: Downloading https://files.pythonhosted.org/packages/3a/93/a866b50173039bae813e131505cf7ed97c33cb79c113926b2b63dfd1caf2/pulumi_docker-4.7.0a1705628423.tar.gz
+[2024-04-07 08:13:42] WARNING root fetch - processPackages [pyg-nightly]: Timeout reached during download
+[2024-04-07 08:13:42] WARNING root fetch - processPackages [pulumi-opsgenie]: Timeout reached during download
+[2024-04-07 08:13:42] INFO root fetch - processPackages [pulumi-opsgenie]: executing diffoscope
+[2024-04-07 08:13:42] INFO root fetch - processPackages [pulumi-opsgenie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_opsgenie-1.4.0a1711740009.tar.gz tmp/pulumi_opsgenie-1.4.0a1712400910.tar.gz --markdown 20240407/p/pulumi-opsgenie/1.4.0a1711740009-1.4.0a1712400910/diff.md --exclude *.pyd
+[2024-04-07 08:13:42] WARNING root fetch - processPackages [pretext]: Timeout reached during download
+[2024-04-07 08:13:42] WARNING root fetch - processPackages [pulumi-docker]: Timeout reached during download
+[2024-04-07 08:13:42] INFO root fetch - processPackages [pulumi-docker]: executing diffoscope
+[2024-04-07 08:13:42] INFO root fetch - processPackages [pulumi-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_docker-4.7.0a1705607229.tar.gz tmp/pulumi_docker-4.7.0a1705628423.tar.gz --markdown 20240407/p/pulumi-docker/4.7.0a1705607229-4.7.0a1705628423/diff.md --exclude *.pyd
+[2024-04-07 08:13:42] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/77/48/de39497a8a03f4c2671bb082a5a706f7ba8fbe3a77c14691afe66129b5b4/pyg_nightly-2.6.0.dev20240407.tar.gz
+[2024-04-07 08:13:42] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/3f/2d/22e687f1fb945aeb16176a4f9c25da1aab63664c88cd2966d7ad79f1b144/pretext-2.3.9.dev20240302.tar.gz
+[2024-04-07 08:13:42] WARNING root fetch - processPackages [pyg-nightly]: Timeout reached during download
+[2024-04-07 08:13:42] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2024-04-07 08:13:42] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.6.0.dev20240406.tar.gz tmp/pyg_nightly-2.6.0.dev20240407.tar.gz --markdown 20240407/p/pyg-nightly/2.6.0.dev20240406-2.6.0.dev20240407/diff.md --exclude *.pyd
+[2024-04-07 08:13:42] WARNING root fetch - processPackages [pretext]: Timeout reached during download
+[2024-04-07 08:13:42] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2024-04-07 08:13:42] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-2.3.9.dev20240229.tar.gz tmp/pretext-2.3.9.dev20240302.tar.gz --markdown 20240407/p/pretext/2.3.9.dev20240229-2.3.9.dev20240302/diff.md --exclude *.pyd
+[2024-04-07 08:13:43] INFO root fetch - processPackages [pulumi-opsgenie]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_opsgenie-1.4.0a1711740009.tar.gz]
+[2024-04-07 08:13:43] INFO root fetch - processPackages [pulumi-opsgenie]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_opsgenie-1.4.0a1712400910.tar.gz]
+[2024-04-07 08:13:43] INFO root fetch - main [MainThread]: End processing [pulumi-opsgenie]: success
+[2024-04-07 08:13:43] INFO root fetch - processPackages [pulumi-docker]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_docker-4.7.0a1705607229.tar.gz]
+[2024-04-07 08:13:43] INFO root fetch - processPackages [pulumi-docker]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_docker-4.7.0a1705628423.tar.gz]
+[2024-04-07 08:13:43] INFO root fetch - main [MainThread]: End processing [pulumi-docker]: success
+[2024-04-07 08:13:44] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240406.tar.gz]
+[2024-04-07 08:13:44] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240407.tar.gz]
+[2024-04-07 08:13:44] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2024-04-07 08:13:46] INFO root fetch - processPackages [pretext]: Remove: archive file [/home/abi/fetcher/tmp/pretext-2.3.9.dev20240229.tar.gz]
+[2024-04-07 08:13:46] INFO root fetch - processPackages [pretext]: Remove: archive file [/home/abi/fetcher/tmp/pretext-2.3.9.dev20240302.tar.gz]
+[2024-04-07 08:13:46] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2024-04-07 08:13:46] INFO root fetch - main [MainThread]: Store serial: [22653950]
