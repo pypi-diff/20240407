@@ -8459,3 +8459,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 10:57:15] INFO root fetch - processPackages [metaapi-cloud-copyfactory-sdk]: Remove: archive file [/home/abi/fetcher/tmp/metaapi_cloud_copyfactory_sdk-9.0.1.tar.gz]
 [2024-04-07 10:57:15] INFO root fetch - main [MainThread]: End processing [metaapi-cloud-copyfactory-sdk]: success
 [2024-04-07 10:57:15] INFO root fetch - main [MainThread]: Store serial: [22654870]
+[2024-04-07 10:59:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654870]
+[2024-04-07 10:59:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 10:59:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mavlinkHandler
+[2024-04-07 10:59:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xlutil
+[2024-04-07 10:59:25] INFO root fetch - processPackages [mavlinkHandler]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-07 10:59:26] INFO root fetch - processPackages [xlutil]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-07 10:59:26] INFO root fetch - processPackages [mavlinkHandler]: Downloading https://files.pythonhosted.org/packages/b9/b5/0b610a7a28b755484eef1594482931639b5e60179292221eb01f249fd62c/mavlinkHandler-0.0.3.tar.gz
+[2024-04-07 10:59:26] WARNING root fetch - processPackages [mavlinkHandler]: Timeout reached during download
+[2024-04-07 10:59:26] INFO root fetch - processPackages [xlutil]: Downloading https://files.pythonhosted.org/packages/e5/b4/7561c9741a7f7977915f84e94f2899e1663b4c7d57f7909470751c503df7/xlutil-0.1.2.tar.gz
+[2024-04-07 10:59:26] INFO root fetch - processPackages [mavlinkHandler]: Downloading https://files.pythonhosted.org/packages/e8/86/30d871b7989e3412c95ad8bc322ae044da706d7abc726da521666f9dd1c4/mavlinkHandler-0.0.4.tar.gz
+[2024-04-07 10:59:26] WARNING root fetch - processPackages [xlutil]: Timeout reached during download
+[2024-04-07 10:59:26] WARNING root fetch - processPackages [mavlinkHandler]: Timeout reached during download
+[2024-04-07 10:59:26] INFO root fetch - processPackages [mavlinkHandler]: executing diffoscope
+[2024-04-07 10:59:26] INFO root fetch - processPackages [mavlinkHandler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mavlinkHandler-0.0.3.tar.gz tmp/mavlinkHandler-0.0.4.tar.gz --markdown 20240407/m/mavlinkHandler/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 10:59:26] INFO root fetch - processPackages [xlutil]: Downloading https://files.pythonhosted.org/packages/15/c3/ebdce36c7a0b45bd3df071b8bb7745eb11836888e4fa5d38baffae397323/xlutil-0.1.3.tar.gz
+[2024-04-07 10:59:26] WARNING root fetch - processPackages [xlutil]: Timeout reached during download
+[2024-04-07 10:59:26] INFO root fetch - processPackages [xlutil]: executing diffoscope
+[2024-04-07 10:59:26] INFO root fetch - processPackages [xlutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xlutil-0.1.2.tar.gz tmp/xlutil-0.1.3.tar.gz --markdown 20240407/x/xlutil/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2024-04-07 10:59:27] INFO root fetch - processPackages [mavlinkHandler]: Remove: archive file [/home/abi/fetcher/tmp/mavlinkHandler-0.0.3.tar.gz]
+[2024-04-07 10:59:27] INFO root fetch - processPackages [mavlinkHandler]: Remove: archive file [/home/abi/fetcher/tmp/mavlinkHandler-0.0.4.tar.gz]
+[2024-04-07 10:59:27] INFO root fetch - main [MainThread]: End processing [mavlinkHandler]: success
+[2024-04-07 10:59:27] INFO root fetch - processPackages [xlutil]: Remove: archive file [/home/abi/fetcher/tmp/xlutil-0.1.2.tar.gz]
+[2024-04-07 10:59:27] INFO root fetch - processPackages [xlutil]: Remove: archive file [/home/abi/fetcher/tmp/xlutil-0.1.3.tar.gz]
+[2024-04-07 10:59:27] INFO root fetch - main [MainThread]: End processing [xlutil]: success
+[2024-04-07 10:59:27] INFO root fetch - main [MainThread]: Store serial: [22654876]
