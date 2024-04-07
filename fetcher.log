@@ -2378,3 +2378,28 @@
 [2024-04-07 03:41:52] WARNING root fetch - processPackages [mountaineer]: Skipping package: exceeds size limit 19243678>=10485760
 [2024-04-07 03:41:52] INFO root fetch - main [MainThread]: End processing [mountaineer] error
 [2024-04-07 03:41:52] INFO root fetch - main [MainThread]: Store serial: [22652694]
+[2024-04-07 03:43:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652694]
+[2024-04-07 03:44:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 03:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: funccache
+[2024-04-07 03:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: praetorian-cli
+[2024-04-07 03:44:00] INFO root fetch - processPackages [praetorian-cli]: New version: [0.7.1] Old Version: [0.5.0]
+[2024-04-07 03:44:01] INFO root fetch - processPackages [praetorian-cli]: Downloading https://files.pythonhosted.org/packages/da/d4/71f8f472acea573befe2bc13031ca5fd8f75ee32ddd477580dfb4d34901a/praetorian-cli-0.5.0.tar.gz
+[2024-04-07 03:44:01] INFO root fetch - processPackages [funccache]: New version: [2.0a1] Old Version: [2.0]
+[2024-04-07 03:44:01] WARNING root fetch - processPackages [praetorian-cli]: Timeout reached during download
+[2024-04-07 03:44:01] INFO root fetch - processPackages [funccache]: Downloading https://files.pythonhosted.org/packages/8d/f7/302b08eadcf46754c5dcdac9ab6307d43d61d9c6fe2968763c7970fbf833/funccache-2.0.tar.gz
+[2024-04-07 03:44:01] INFO root fetch - processPackages [praetorian-cli]: Downloading https://files.pythonhosted.org/packages/0c/be/8ff97a5b9a22808e6a2e80d80a3e40ebd8dbe8752542639dd5d2e1c26bf8/praetorian-cli-0.7.1.tar.gz
+[2024-04-07 03:44:01] WARNING root fetch - processPackages [praetorian-cli]: Timeout reached during download
+[2024-04-07 03:44:01] INFO root fetch - processPackages [praetorian-cli]: executing diffoscope
+[2024-04-07 03:44:01] INFO root fetch - processPackages [praetorian-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/praetorian-cli-0.5.0.tar.gz tmp/praetorian-cli-0.7.1.tar.gz --markdown 20240407/p/praetorian-cli/0.5.0-0.7.1/diff.md --exclude *.pyd
+[2024-04-07 03:44:01] WARNING root fetch - processPackages [funccache]: Timeout reached during download
+[2024-04-07 03:44:01] INFO root fetch - processPackages [funccache]: Downloading https://files.pythonhosted.org/packages/d8/5f/590115bb19a10a21dc04a3b3e1a95cab46b0fc89b345cc0dcb3ceb348ffd/funccache-2.0a1.tar.gz
+[2024-04-07 03:44:01] WARNING root fetch - processPackages [funccache]: Timeout reached during download
+[2024-04-07 03:44:01] INFO root fetch - processPackages [funccache]: executing diffoscope
+[2024-04-07 03:44:01] INFO root fetch - processPackages [funccache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funccache-2.0.tar.gz tmp/funccache-2.0a1.tar.gz --markdown 20240407/f/funccache/2.0-2.0a1/diff.md --exclude *.pyd
+[2024-04-07 03:44:01] INFO root fetch - processPackages [praetorian-cli]: Remove: archive file [/home/abi/fetcher/tmp/praetorian-cli-0.5.0.tar.gz]
+[2024-04-07 03:44:01] INFO root fetch - processPackages [praetorian-cli]: Remove: archive file [/home/abi/fetcher/tmp/praetorian-cli-0.7.1.tar.gz]
+[2024-04-07 03:44:01] INFO root fetch - main [MainThread]: End processing [praetorian-cli]: success
+[2024-04-07 03:44:02] INFO root fetch - processPackages [funccache]: Remove: archive file [/home/abi/fetcher/tmp/funccache-2.0.tar.gz]
+[2024-04-07 03:44:02] INFO root fetch - processPackages [funccache]: Remove: archive file [/home/abi/fetcher/tmp/funccache-2.0a1.tar.gz]
+[2024-04-07 03:44:02] INFO root fetch - main [MainThread]: End processing [funccache]: success
+[2024-04-07 03:44:02] INFO root fetch - main [MainThread]: Store serial: [22652705]
