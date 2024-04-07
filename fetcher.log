@@ -12262,3 +12262,64 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:10:47] INFO root fetch - processPackages [bestdori-api]: Remove: archive file [/home/abi/fetcher/tmp/bestdori_api-0.1.9.tar.gz]
 [2024-04-07 15:10:47] INFO root fetch - main [MainThread]: End processing [bestdori-api]: success
 [2024-04-07 15:10:47] INFO root fetch - main [MainThread]: Store serial: [22656378]
+[2024-04-07 15:12:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656378]
+[2024-04-07 15:12:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 15:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qwen-agent
+[2024-04-07 15:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yagooglesearch
+[2024-04-07 15:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: function2widgets
+[2024-04-07 15:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: layeutils
+[2024-04-07 15:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quant2
+[2024-04-07 15:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: profiling-decorator
+[2024-04-07 15:12:55] INFO root fetch - processPackages [function2widgets]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-04-07 15:12:55] INFO root fetch - processPackages [quant2]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 15:12:55] INFO root fetch - processPackages [profiling-decorator]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 15:12:55] INFO root fetch - processPackages [yagooglesearch]: New version: [1.9.0] Old Version: [1.8.2]
+[2024-04-07 15:12:55] INFO root fetch - processPackages [function2widgets]: Downloading https://files.pythonhosted.org/packages/8d/1f/9c80cc0aab57113a16bdbcc707f880482de6978e247d641da138c8c8c73d/function2widgets-0.6.8.tar.gz
+[2024-04-07 15:12:55] INFO root fetch - processPackages [layeutils]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-07 15:12:55] WARNING root fetch - processPackages [qwen-agent]: Skipping, unable to determine old version
+[2024-04-07 15:12:55] INFO root fetch - main [MainThread]: End processing [qwen-agent] error
+[2024-04-07 15:12:55] INFO root fetch - processPackages [profiling-decorator]: Downloading https://files.pythonhosted.org/packages/fa/9e/9a4443de96c05ae2d16f89466d063515d9a7861ea272641a6eb28787e0a8/profiling_decorator-0.0.2.tar.gz
+[2024-04-07 15:12:55] INFO root fetch - processPackages [quant2]: Downloading https://files.pythonhosted.org/packages/11/bf/4225581d3021d37874804da989897221f25fc6c93fa5f1b07d38fcbf01d3/quant2-0.0.8.tar.gz
+[2024-04-07 15:12:56] WARNING root fetch - processPackages [function2widgets]: Timeout reached during download
+[2024-04-07 15:12:56] WARNING root fetch - processPackages [profiling-decorator]: Timeout reached during download
+[2024-04-07 15:12:56] INFO root fetch - processPackages [yagooglesearch]: Downloading https://files.pythonhosted.org/packages/76/82/fbc5bf8f9a788435f765e20f842709a048ebb3514bff98d38151e0efd036/yagooglesearch-1.8.2.tar.gz
+[2024-04-07 15:12:56] WARNING root fetch - processPackages [quant2]: Timeout reached during download
+[2024-04-07 15:12:56] INFO root fetch - processPackages [quant2]: Downloading https://files.pythonhosted.org/packages/14/b2/02902adfc8374a2d4e7cf6e11c97319142fb7a2f1565e78bcc91dd0cd825/quant2-0.0.9.tar.gz
+[2024-04-07 15:12:56] INFO root fetch - processPackages [function2widgets]: Downloading https://files.pythonhosted.org/packages/33/ed/124419d49f595a1f7fda6ac265ce6834078b604e525ad52a5c3168e69ad1/function2widgets-0.6.9.tar.gz
+[2024-04-07 15:12:56] INFO root fetch - processPackages [profiling-decorator]: Downloading https://files.pythonhosted.org/packages/9e/7a/95fdae2198f68e564e205ee6216801b9013d70ce729d733d568e66c38262/profiling_decorator-0.0.3.tar.gz
+[2024-04-07 15:12:56] WARNING root fetch - processPackages [yagooglesearch]: Timeout reached during download
+[2024-04-07 15:12:56] INFO root fetch - processPackages [layeutils]: Downloading https://files.pythonhosted.org/packages/df/8a/5750fd27fb4c3487b4dbdfad44f376e0526542c6ee8cc4234e63d034eff8/layeutils-0.2.8.tar.gz
+[2024-04-07 15:12:56] WARNING root fetch - processPackages [quant2]: Timeout reached during download
+[2024-04-07 15:12:56] INFO root fetch - processPackages [quant2]: executing diffoscope
+[2024-04-07 15:12:56] INFO root fetch - processPackages [quant2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quant2-0.0.8.tar.gz tmp/quant2-0.0.9.tar.gz --markdown 20240407/q/quant2/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 15:12:56] WARNING root fetch - processPackages [function2widgets]: Timeout reached during download
+[2024-04-07 15:12:56] INFO root fetch - processPackages [function2widgets]: executing diffoscope
+[2024-04-07 15:12:56] INFO root fetch - processPackages [function2widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/function2widgets-0.6.8.tar.gz tmp/function2widgets-0.6.9.tar.gz --markdown 20240407/f/function2widgets/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2024-04-07 15:12:56] WARNING root fetch - processPackages [profiling-decorator]: Timeout reached during download
+[2024-04-07 15:12:56] INFO root fetch - processPackages [profiling-decorator]: executing diffoscope
+[2024-04-07 15:12:56] INFO root fetch - processPackages [profiling-decorator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profiling_decorator-0.0.2.tar.gz tmp/profiling_decorator-0.0.3.tar.gz --markdown 20240407/p/profiling-decorator/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 15:12:56] INFO root fetch - processPackages [yagooglesearch]: Downloading https://files.pythonhosted.org/packages/43/c2/4c6ee587d20667472ee3c73ee3313f6c18cb2835b14a0e920d1befb350b9/yagooglesearch-1.9.0-py3-none-any.whl
+[2024-04-07 15:12:56] WARNING root fetch - processPackages [layeutils]: Timeout reached during download
+[2024-04-07 15:12:56] WARNING root fetch - processPackages [yagooglesearch]: Timeout reached during download
+[2024-04-07 15:12:56] INFO root fetch - processPackages [yagooglesearch]: executing diffoscope
+[2024-04-07 15:12:56] INFO root fetch - processPackages [yagooglesearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yagooglesearch-1.8.2.tar.gz tmp/yagooglesearch-1.9.0-py3-none-any.whl.zip --markdown 20240407/y/yagooglesearch/1.8.2-1.9.0/diff.md --exclude *.pyd
+[2024-04-07 15:12:56] INFO root fetch - processPackages [layeutils]: Downloading https://files.pythonhosted.org/packages/49/3d/c713aa3374b8d3b84cd8820b2906eff00ed129c458180bc7ae7c4568a911/layeutils-0.2.9.tar.gz
+[2024-04-07 15:12:56] WARNING root fetch - processPackages [layeutils]: Timeout reached during download
+[2024-04-07 15:12:56] INFO root fetch - processPackages [layeutils]: executing diffoscope
+[2024-04-07 15:12:56] INFO root fetch - processPackages [layeutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/layeutils-0.2.8.tar.gz tmp/layeutils-0.2.9.tar.gz --markdown 20240407/l/layeutils/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2024-04-07 15:12:57] INFO root fetch - processPackages [profiling-decorator]: Remove: archive file [/home/abi/fetcher/tmp/profiling_decorator-0.0.2.tar.gz]
+[2024-04-07 15:12:57] INFO root fetch - processPackages [profiling-decorator]: Remove: archive file [/home/abi/fetcher/tmp/profiling_decorator-0.0.3.tar.gz]
+[2024-04-07 15:12:57] INFO root fetch - main [MainThread]: End processing [profiling-decorator]: success
+[2024-04-07 15:12:57] INFO root fetch - processPackages [function2widgets]: Remove: archive file [/home/abi/fetcher/tmp/function2widgets-0.6.8.tar.gz]
+[2024-04-07 15:12:57] INFO root fetch - processPackages [function2widgets]: Remove: archive file [/home/abi/fetcher/tmp/function2widgets-0.6.9.tar.gz]
+[2024-04-07 15:12:57] INFO root fetch - main [MainThread]: End processing [function2widgets]: success
+[2024-04-07 15:12:57] INFO root fetch - processPackages [quant2]: Remove: archive file [/home/abi/fetcher/tmp/quant2-0.0.8.tar.gz]
+[2024-04-07 15:12:57] INFO root fetch - processPackages [quant2]: Remove: archive file [/home/abi/fetcher/tmp/quant2-0.0.9.tar.gz]
+[2024-04-07 15:12:57] INFO root fetch - main [MainThread]: End processing [quant2]: success
+[2024-04-07 15:12:57] INFO root fetch - processPackages [yagooglesearch]: Remove: archive file [/home/abi/fetcher/tmp/yagooglesearch-1.8.2.tar.gz]
+[2024-04-07 15:12:57] INFO root fetch - processPackages [yagooglesearch]: Remove: archive file [/home/abi/fetcher/tmp/yagooglesearch-1.9.0-py3-none-any.whl.zip]
+[2024-04-07 15:12:57] INFO root fetch - main [MainThread]: End processing [yagooglesearch]: success
+[2024-04-07 15:12:57] INFO root fetch - processPackages [layeutils]: Remove: archive file [/home/abi/fetcher/tmp/layeutils-0.2.8.tar.gz]
+[2024-04-07 15:12:57] INFO root fetch - processPackages [layeutils]: Remove: archive file [/home/abi/fetcher/tmp/layeutils-0.2.9.tar.gz]
+[2024-04-07 15:12:57] INFO root fetch - main [MainThread]: End processing [layeutils]: success
+[2024-04-07 15:12:57] INFO root fetch - main [MainThread]: Store serial: [22656398]
