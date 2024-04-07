@@ -18649,3 +18649,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 21:22:40] INFO root fetch - processPackages [quickfin]: Remove: archive file [/home/abi/fetcher/tmp/quickfin-1.9.0.tar.gz]
 [2024-04-07 21:22:40] INFO root fetch - main [MainThread]: End processing [quickfin]: success
 [2024-04-07 21:22:40] INFO root fetch - main [MainThread]: Store serial: [22658617]
+[2024-04-07 21:24:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658617]
+[2024-04-07 21:24:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 21:24:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: app-lib-py
+[2024-04-07 21:24:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hiddifypanel
+[2024-04-07 21:24:49] INFO root fetch - processPackages [app-lib-py]: New version: [0.0.8] Old Version: [0.0.0]
+[2024-04-07 21:24:49] INFO root fetch - processPackages [hiddifypanel]: New version: [8.8.99] Old Version: [8.8.97]
+[2024-04-07 21:24:49] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/3b/4c/15ca81d9764c196bd632b929c178a21ce2569604e1b7958aaf21f3591f24/hiddifypanel-8.8.97.tar.gz
+[2024-04-07 21:24:49] INFO root fetch - processPackages [app-lib-py]: Downloading https://files.pythonhosted.org/packages/68/2b/4bd597fcaedb1a62637ce119a086cf44f31f1548c90791e8e616f17a4fe9/app_lib_py-0.0.0.tar.gz
+[2024-04-07 21:24:49] WARNING root fetch - processPackages [app-lib-py]: Timeout reached during download
+[2024-04-07 21:24:49] INFO root fetch - processPackages [app-lib-py]: Downloading https://files.pythonhosted.org/packages/a2/54/469ab9dcb5d1bd588ce0a138c9931c250c051c176560115d7d2b2aa8080a/app_lib_py-0.0.8.tar.gz
+[2024-04-07 21:24:49] WARNING root fetch - processPackages [app-lib-py]: Timeout reached during download
+[2024-04-07 21:24:49] INFO root fetch - processPackages [app-lib-py]: executing diffoscope
+[2024-04-07 21:24:49] INFO root fetch - processPackages [app-lib-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/app_lib_py-0.0.0.tar.gz tmp/app_lib_py-0.0.8.tar.gz --markdown 20240407/a/app-lib-py/0.0.0-0.0.8/diff.md --exclude *.pyd
+[2024-04-07 21:24:49] WARNING root fetch - processPackages [hiddifypanel]: Timeout reached during download
+[2024-04-07 21:24:49] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/ef/74/ab9bc5ebe1c31d96fcff0642f25280d3eebba3d867bbf874c9e8c9fe2a23/hiddifypanel-8.8.99.tar.gz
+[2024-04-07 21:24:50] INFO root fetch - processPackages [app-lib-py]: Remove: archive file [/home/abi/fetcher/tmp/app_lib_py-0.0.0.tar.gz]
+[2024-04-07 21:24:50] INFO root fetch - processPackages [app-lib-py]: Remove: archive file [/home/abi/fetcher/tmp/app_lib_py-0.0.8.tar.gz]
+[2024-04-07 21:24:50] INFO root fetch - main [MainThread]: End processing [app-lib-py]: success
+[2024-04-07 21:24:50] WARNING root fetch - processPackages [hiddifypanel]: Timeout reached during download
+[2024-04-07 21:24:50] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2024-04-07 21:24:50] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-8.8.97.tar.gz tmp/hiddifypanel-8.8.99.tar.gz --markdown 20240407/h/hiddifypanel/8.8.97-8.8.99/diff.md --exclude *.pyd
+[2024-04-07 21:24:53] INFO root fetch - processPackages [hiddifypanel]: Remove: archive file [/home/abi/fetcher/tmp/hiddifypanel-8.8.97.tar.gz]
+[2024-04-07 21:24:53] INFO root fetch - processPackages [hiddifypanel]: Remove: archive file [/home/abi/fetcher/tmp/hiddifypanel-8.8.99.tar.gz]
+[2024-04-07 21:24:53] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2024-04-07 21:24:53] INFO root fetch - main [MainThread]: Store serial: [22658623]
