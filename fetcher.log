@@ -13951,3 +13951,64 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:48:53] INFO root fetch - processPackages [inngest]: Remove: archive file [/home/abi/fetcher/tmp/inngest-0.3.8.tar.gz]
 [2024-04-07 16:48:53] INFO root fetch - main [MainThread]: End processing [inngest]: success
 [2024-04-07 16:48:53] INFO root fetch - main [MainThread]: Store serial: [22656919]
+[2024-04-07 16:50:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656919]
+[2024-04-07 16:51:02] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 16:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: composio-crewai
+[2024-04-07 16:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bosing
+[2024-04-07 16:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: composio-autogen
+[2024-04-07 16:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sourcesage
+[2024-04-07 16:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ncmlistdownloader
+[2024-04-07 16:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tilearn-test01
+[2024-04-07 16:51:02] INFO root fetch - processPackages [sourcesage]: New version: [4.0.9] Old Version: [4.0.8]
+[2024-04-07 16:51:02] INFO root fetch - processPackages [composio-autogen]: New version: [0.1.76] Old Version: [0.1.75]
+[2024-04-07 16:51:02] INFO root fetch - processPackages [composio-crewai]: New version: [0.1.76] Old Version: [0.1.75]
+[2024-04-07 16:51:02] INFO root fetch - processPackages [bosing]: New version: [1.0.0b3] Old Version: [1.0.0b2]
+[2024-04-07 16:51:02] WARNING root fetch - processPackages [tilearn-test01]: Skipping, unable to determine old version
+[2024-04-07 16:51:02] INFO root fetch - main [MainThread]: End processing [tilearn-test01] error
+[2024-04-07 16:51:02] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/53/ad/0a94732e2c9b70d4140a091aa95da8f14b71f5c05430e28ca454dd151571/sourcesage-4.0.8.tar.gz
+[2024-04-07 16:51:02] INFO root fetch - processPackages [ncmlistdownloader]: New version: [1.0.0.240407b1] Old Version: [1.0.0.240405a1]
+[2024-04-07 16:51:02] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/63/1e/691485d856b1e812ac34679c54851cb0890404e41f83644a25d7de0e97bc/composio_crewai-0.1.75.tar.gz
+[2024-04-07 16:51:02] INFO root fetch - processPackages [bosing]: Downloading https://files.pythonhosted.org/packages/ea/15/e1a2a8b3be4c34078d8d8f55224aa50216a9d8e0a24c8f21dd33fcdb1be2/bosing-1.0.0b2.tar.gz
+[2024-04-07 16:51:02] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/41/b0/0d73cd92d624773af9934b19c52d01ef72d2a981e78a5aa7ec2ff580bb6e/composio_autogen-0.1.75.tar.gz
+[2024-04-07 16:51:03] WARNING root fetch - processPackages [composio-crewai]: Timeout reached during download
+[2024-04-07 16:51:03] WARNING root fetch - processPackages [sourcesage]: Timeout reached during download
+[2024-04-07 16:51:03] WARNING root fetch - processPackages [bosing]: Timeout reached during download
+[2024-04-07 16:51:03] INFO root fetch - processPackages [ncmlistdownloader]: Downloading https://files.pythonhosted.org/packages/b1/a2/c7a69e7e532a433524fce5f86e417218949b22eea888e4c0fa1fc67dae9c/ncmlistdownloader-1.0.0.240405a1.tar.gz
+[2024-04-07 16:51:03] WARNING root fetch - processPackages [composio-autogen]: Timeout reached during download
+[2024-04-07 16:51:03] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/ca/64/8ca9fec7286b0648ebe8224d4bd0e7190c6d20738e2c7ceb5f5c89f2346b/sourcesage-4.0.9.tar.gz
+[2024-04-07 16:51:03] INFO root fetch - processPackages [bosing]: Downloading https://files.pythonhosted.org/packages/5d/58/86d7640de36f7318b0abf3ee8393ad3207cdf1451cf81afb41bd66993a66/bosing-1.0.0b3.tar.gz
+[2024-04-07 16:51:03] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/ec/22/ddea1243dd86e1be61ff1900a9876e4a107419453fdeb2f5001ae1f5e808/composio_crewai-0.1.76.tar.gz
+[2024-04-07 16:51:03] WARNING root fetch - processPackages [ncmlistdownloader]: Timeout reached during download
+[2024-04-07 16:51:03] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/d4/6a/869148598768e36dde398db521d2362ca801cb6ef6610fe628602809b259/composio_autogen-0.1.76.tar.gz
+[2024-04-07 16:51:03] WARNING root fetch - processPackages [sourcesage]: Timeout reached during download
+[2024-04-07 16:51:03] INFO root fetch - processPackages [sourcesage]: executing diffoscope
+[2024-04-07 16:51:03] INFO root fetch - processPackages [sourcesage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sourcesage-4.0.8.tar.gz tmp/sourcesage-4.0.9.tar.gz --markdown 20240407/s/sourcesage/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2024-04-07 16:51:03] WARNING root fetch - processPackages [composio-crewai]: Timeout reached during download
+[2024-04-07 16:51:03] INFO root fetch - processPackages [composio-crewai]: executing diffoscope
+[2024-04-07 16:51:03] INFO root fetch - processPackages [composio-crewai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_crewai-0.1.75.tar.gz tmp/composio_crewai-0.1.76.tar.gz --markdown 20240407/c/composio-crewai/0.1.75-0.1.76/diff.md --exclude *.pyd
+[2024-04-07 16:51:03] WARNING root fetch - processPackages [bosing]: Timeout reached during download
+[2024-04-07 16:51:03] INFO root fetch - processPackages [bosing]: executing diffoscope
+[2024-04-07 16:51:03] INFO root fetch - processPackages [bosing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosing-1.0.0b2.tar.gz tmp/bosing-1.0.0b3.tar.gz --markdown 20240407/b/bosing/1.0.0b2-1.0.0b3/diff.md --exclude *.pyd
+[2024-04-07 16:51:03] WARNING root fetch - processPackages [composio-autogen]: Timeout reached during download
+[2024-04-07 16:51:03] INFO root fetch - processPackages [composio-autogen]: executing diffoscope
+[2024-04-07 16:51:03] INFO root fetch - processPackages [composio-autogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_autogen-0.1.75.tar.gz tmp/composio_autogen-0.1.76.tar.gz --markdown 20240407/c/composio-autogen/0.1.75-0.1.76/diff.md --exclude *.pyd
+[2024-04-07 16:51:03] INFO root fetch - processPackages [ncmlistdownloader]: Downloading https://files.pythonhosted.org/packages/49/ea/ae26077b26791f0cfece0b486c3ede33d84378301e6b16698e31cf7406ff/ncmlistdownloader-1.0.0.240407b1.tar.gz
+[2024-04-07 16:51:03] WARNING root fetch - processPackages [ncmlistdownloader]: Timeout reached during download
+[2024-04-07 16:51:03] INFO root fetch - processPackages [ncmlistdownloader]: executing diffoscope
+[2024-04-07 16:51:03] INFO root fetch - processPackages [ncmlistdownloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ncmlistdownloader-1.0.0.240405a1.tar.gz tmp/ncmlistdownloader-1.0.0.240407b1.tar.gz --markdown 20240407/n/ncmlistdownloader/1.0.0.240405a1-1.0.0.240407b1/diff.md --exclude *.pyd
+[2024-04-07 16:51:03] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.0.8.tar.gz]
+[2024-04-07 16:51:03] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.0.9.tar.gz]
+[2024-04-07 16:51:03] INFO root fetch - main [MainThread]: End processing [sourcesage]: success
+[2024-04-07 16:51:03] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.1.75.tar.gz]
+[2024-04-07 16:51:03] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.1.76.tar.gz]
+[2024-04-07 16:51:03] INFO root fetch - main [MainThread]: End processing [composio-crewai]: success
+[2024-04-07 16:51:04] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.75.tar.gz]
+[2024-04-07 16:51:04] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.76.tar.gz]
+[2024-04-07 16:51:04] INFO root fetch - main [MainThread]: End processing [composio-autogen]: success
+[2024-04-07 16:51:04] INFO root fetch - processPackages [ncmlistdownloader]: Remove: archive file [/home/abi/fetcher/tmp/ncmlistdownloader-1.0.0.240405a1.tar.gz]
+[2024-04-07 16:51:04] INFO root fetch - processPackages [ncmlistdownloader]: Remove: archive file [/home/abi/fetcher/tmp/ncmlistdownloader-1.0.0.240407b1.tar.gz]
+[2024-04-07 16:51:04] INFO root fetch - main [MainThread]: End processing [ncmlistdownloader]: success
+[2024-04-07 16:51:04] INFO root fetch - processPackages [bosing]: Remove: archive file [/home/abi/fetcher/tmp/bosing-1.0.0b2.tar.gz]
+[2024-04-07 16:51:04] INFO root fetch - processPackages [bosing]: Remove: archive file [/home/abi/fetcher/tmp/bosing-1.0.0b3.tar.gz]
+[2024-04-07 16:51:04] INFO root fetch - main [MainThread]: End processing [bosing]: success
+[2024-04-07 16:51:04] INFO root fetch - main [MainThread]: Store serial: [22656942]
