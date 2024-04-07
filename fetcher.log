@@ -12431,3 +12431,55 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:19:30] INFO root fetch - processPackages [PyEvALL]: Remove: archive file [/home/abi/fetcher/tmp/PyEvALL-0.1.62.tar.gz]
 [2024-04-07 15:19:30] INFO root fetch - main [MainThread]: End processing [PyEvALL]: success
 [2024-04-07 15:19:30] INFO root fetch - main [MainThread]: Store serial: [22656432]
+[2024-04-07 15:21:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656432]
+[2024-04-07 15:21:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 15:21:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seeder
+[2024-04-07 15:21:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Bootstrap-Flask
+[2024-04-07 15:21:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: starparser
+[2024-04-07 15:21:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: solTg
+[2024-04-07 15:21:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: loadimg
+[2024-04-07 15:21:39] INFO root fetch - processPackages [Bootstrap-Flask]: New version: [2.4.0] Old Version: [2.3.3]
+[2024-04-07 15:21:39] INFO root fetch - processPackages [solTg]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-07 15:21:39] INFO root fetch - processPackages [seeder]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-07 15:21:39] INFO root fetch - processPackages [starparser]: New version: [1.52] Old Version: [1.51]
+[2024-04-07 15:21:39] INFO root fetch - processPackages [loadimg]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-07 15:21:39] INFO root fetch - processPackages [solTg]: Downloading https://files.pythonhosted.org/packages/20/3b/dec9003fe12b1fb37eed042d81d787014929140b869c6868d896614ca3de/solTg-0.1.4.tar.gz
+[2024-04-07 15:21:39] INFO root fetch - processPackages [loadimg]: Downloading https://files.pythonhosted.org/packages/26/02/44e1b0d44434bb9ed870e76e302bb9149c7421dd37f29ef38dfaca52f8d8/loadimg-0.1.1.tar.gz
+[2024-04-07 15:21:39] INFO root fetch - processPackages [seeder]: Downloading https://files.pythonhosted.org/packages/4b/fd/05b513208290c3a1ea5c457da90c154c0dd027c599c04bbd9b5b6185a059/seeder-0.0.3.tar.gz
+[2024-04-07 15:21:39] INFO root fetch - processPackages [Bootstrap-Flask]: Downloading https://files.pythonhosted.org/packages/2c/09/214cba688cd2a4f9ffac6f54bb9ba6b3eff13a7ef1e8b47d933044f27c39/Bootstrap-Flask-2.3.3.tar.gz
+[2024-04-07 15:21:39] INFO root fetch - processPackages [starparser]: Downloading https://files.pythonhosted.org/packages/0a/7f/a11d708b24797136802ab6e144d2a964a7ef46b83c236b5b062306da2b86/starparser-1.51.tar.gz
+[2024-04-07 15:21:39] WARNING root fetch - processPackages [seeder]: Timeout reached during download
+[2024-04-07 15:21:39] WARNING root fetch - processPackages [loadimg]: Timeout reached during download
+[2024-04-07 15:21:39] WARNING root fetch - processPackages [solTg]: Skipping package: exceeds size limit 22789105>=10485760
+[2024-04-07 15:21:39] INFO root fetch - main [MainThread]: End processing [solTg] error
+[2024-04-07 15:21:39] WARNING root fetch - processPackages [starparser]: Timeout reached during download
+[2024-04-07 15:21:39] INFO root fetch - processPackages [loadimg]: Downloading https://files.pythonhosted.org/packages/80/b3/05c54c7663b5a6036f99ee553ab4b15511a9619c3120c34ab28c9c9949cd/loadimg-0.1.2.tar.gz
+[2024-04-07 15:21:39] INFO root fetch - processPackages [seeder]: Downloading https://files.pythonhosted.org/packages/08/b7/bbdead4f4b3f7eaaf57c6c25cc5dbb0ab29cf0c1f0119e9d26559a74c063/seeder-0.0.4.tar.gz
+[2024-04-07 15:21:39] WARNING root fetch - processPackages [seeder]: Timeout reached during download
+[2024-04-07 15:21:39] INFO root fetch - processPackages [seeder]: executing diffoscope
+[2024-04-07 15:21:39] INFO root fetch - processPackages [seeder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seeder-0.0.3.tar.gz tmp/seeder-0.0.4.tar.gz --markdown 20240407/s/seeder/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 15:21:39] INFO root fetch - processPackages [starparser]: Downloading https://files.pythonhosted.org/packages/cf/55/5e24a87f25a4c320b2e4f611d34d3eea9900be68abc5512bc206a0cceed8/starparser-1.52.tar.gz
+[2024-04-07 15:21:40] WARNING root fetch - processPackages [loadimg]: Timeout reached during download
+[2024-04-07 15:21:40] INFO root fetch - processPackages [loadimg]: executing diffoscope
+[2024-04-07 15:21:40] INFO root fetch - processPackages [loadimg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loadimg-0.1.1.tar.gz tmp/loadimg-0.1.2.tar.gz --markdown 20240407/l/loadimg/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-07 15:21:40] WARNING root fetch - processPackages [starparser]: Timeout reached during download
+[2024-04-07 15:21:40] INFO root fetch - processPackages [starparser]: executing diffoscope
+[2024-04-07 15:21:40] INFO root fetch - processPackages [starparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starparser-1.51.tar.gz tmp/starparser-1.52.tar.gz --markdown 20240407/s/starparser/1.51-1.52/diff.md --exclude *.pyd
+[2024-04-07 15:21:40] WARNING root fetch - processPackages [Bootstrap-Flask]: Timeout reached during download
+[2024-04-07 15:21:40] INFO root fetch - processPackages [Bootstrap-Flask]: Downloading https://files.pythonhosted.org/packages/7a/af/6db8af36a760e5d00a0f21c147b4ae754d77e25685b7d23464e333746809/Bootstrap-Flask-2.4.0.tar.gz
+[2024-04-07 15:21:40] INFO root fetch - processPackages [seeder]: Remove: archive file [/home/abi/fetcher/tmp/seeder-0.0.3.tar.gz]
+[2024-04-07 15:21:40] INFO root fetch - processPackages [seeder]: Remove: archive file [/home/abi/fetcher/tmp/seeder-0.0.4.tar.gz]
+[2024-04-07 15:21:40] INFO root fetch - main [MainThread]: End processing [seeder]: success
+[2024-04-07 15:21:40] INFO root fetch - processPackages [loadimg]: Remove: archive file [/home/abi/fetcher/tmp/loadimg-0.1.1.tar.gz]
+[2024-04-07 15:21:40] INFO root fetch - processPackages [loadimg]: Remove: archive file [/home/abi/fetcher/tmp/loadimg-0.1.2.tar.gz]
+[2024-04-07 15:21:40] INFO root fetch - main [MainThread]: End processing [loadimg]: success
+[2024-04-07 15:21:40] INFO root fetch - processPackages [starparser]: Remove: archive file [/home/abi/fetcher/tmp/starparser-1.51.tar.gz]
+[2024-04-07 15:21:40] INFO root fetch - processPackages [starparser]: Remove: archive file [/home/abi/fetcher/tmp/starparser-1.52.tar.gz]
+[2024-04-07 15:21:40] INFO root fetch - main [MainThread]: End processing [starparser]: success
+[2024-04-07 15:21:40] WARNING root fetch - processPackages [Bootstrap-Flask]: Timeout reached during download
+[2024-04-07 15:21:40] INFO root fetch - processPackages [Bootstrap-Flask]: executing diffoscope
+[2024-04-07 15:21:40] INFO root fetch - processPackages [Bootstrap-Flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bootstrap-Flask-2.3.3.tar.gz tmp/Bootstrap-Flask-2.4.0.tar.gz --markdown 20240407/B/Bootstrap-Flask/2.3.3-2.4.0/diff.md --exclude *.pyd
+[2024-04-07 15:21:43] INFO root fetch - processPackages [Bootstrap-Flask]: Remove: archive file [/home/abi/fetcher/tmp/Bootstrap-Flask-2.3.3.tar.gz]
+[2024-04-07 15:21:43] INFO root fetch - processPackages [Bootstrap-Flask]: Remove: archive file [/home/abi/fetcher/tmp/Bootstrap-Flask-2.4.0.tar.gz]
+[2024-04-07 15:21:43] INFO root fetch - main [MainThread]: End processing [Bootstrap-Flask]: success
+[2024-04-07 15:21:43] INFO root fetch - main [MainThread]: Store serial: [22656446]
