@@ -15398,3 +15398,30 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:59:06] INFO root fetch - processPackages [ruleopt]: Remove: archive file [/home/abi/fetcher/tmp/ruleopt-0.1.5-cp39-cp39-macosx_11_0_arm64.whl.zip]
 [2024-04-07 17:59:06] INFO root fetch - main [MainThread]: End processing [ruleopt]: success
 [2024-04-07 17:59:06] INFO root fetch - main [MainThread]: Store serial: [22657418]
+[2024-04-07 18:01:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657418]
+[2024-04-07 18:01:15] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 18:03:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657422]
+[2024-04-07 18:03:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 18:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oru2xds
+[2024-04-07 18:03:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: OctoBot-Trading
+[2024-04-07 18:03:21] INFO root fetch - processPackages [oru2xds]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-07 18:03:21] INFO root fetch - processPackages [oru2xds]: Downloading https://files.pythonhosted.org/packages/30/84/c1d703dc028c105d23e8bd6025d8a21bea79336316fed5e772284e51fac8/oru2xds-2.0.8.tar.gz
+[2024-04-07 18:03:21] INFO root fetch - processPackages [OctoBot-Trading]: New version: [2.4.9] Old Version: [2.4.8]
+[2024-04-07 18:03:22] WARNING root fetch - processPackages [oru2xds]: Timeout reached during download
+[2024-04-07 18:03:22] INFO root fetch - processPackages [oru2xds]: Downloading https://files.pythonhosted.org/packages/2b/b6/fd060e2ee4a6f2bd68e4d1be3622482196f992387c487cf50fe6d3315563/oru2xds-2.0.9.tar.gz
+[2024-04-07 18:03:22] INFO root fetch - processPackages [OctoBot-Trading]: Downloading https://files.pythonhosted.org/packages/73/23/c1d7881529a8c9625e383e42f1dc81df6232f45c2ceb32da5ce75194f893/OctoBot-Trading-2.4.8.tar.gz
+[2024-04-07 18:03:22] WARNING root fetch - processPackages [oru2xds]: Timeout reached during download
+[2024-04-07 18:03:22] INFO root fetch - processPackages [oru2xds]: executing diffoscope
+[2024-04-07 18:03:22] INFO root fetch - processPackages [oru2xds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oru2xds-2.0.8.tar.gz tmp/oru2xds-2.0.9.tar.gz --markdown 20240407/o/oru2xds/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2024-04-07 18:03:22] WARNING root fetch - processPackages [OctoBot-Trading]: Timeout reached during download
+[2024-04-07 18:03:22] INFO root fetch - processPackages [OctoBot-Trading]: Downloading https://files.pythonhosted.org/packages/77/bc/ecdb68086de1f382830bf4a54be7e64fdcf11183cbc9e6485fe1c829615e/OctoBot-Trading-2.4.9.tar.gz
+[2024-04-07 18:03:22] INFO root fetch - processPackages [oru2xds]: Remove: archive file [/home/abi/fetcher/tmp/oru2xds-2.0.8.tar.gz]
+[2024-04-07 18:03:22] INFO root fetch - processPackages [oru2xds]: Remove: archive file [/home/abi/fetcher/tmp/oru2xds-2.0.9.tar.gz]
+[2024-04-07 18:03:22] INFO root fetch - main [MainThread]: End processing [oru2xds]: success
+[2024-04-07 18:03:23] WARNING root fetch - processPackages [OctoBot-Trading]: Timeout reached during download
+[2024-04-07 18:03:23] INFO root fetch - processPackages [OctoBot-Trading]: executing diffoscope
+[2024-04-07 18:03:23] INFO root fetch - processPackages [OctoBot-Trading]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoBot-Trading-2.4.8.tar.gz tmp/OctoBot-Trading-2.4.9.tar.gz --markdown 20240407/O/OctoBot-Trading/2.4.8-2.4.9/diff.md --exclude *.pyd
+[2024-04-07 18:03:25] INFO root fetch - processPackages [OctoBot-Trading]: Remove: archive file [/home/abi/fetcher/tmp/OctoBot-Trading-2.4.8.tar.gz]
+[2024-04-07 18:03:25] INFO root fetch - processPackages [OctoBot-Trading]: Remove: archive file [/home/abi/fetcher/tmp/OctoBot-Trading-2.4.9.tar.gz]
+[2024-04-07 18:03:25] INFO root fetch - main [MainThread]: End processing [OctoBot-Trading]: success
+[2024-04-07 18:03:25] INFO root fetch - main [MainThread]: Store serial: [22657428]
