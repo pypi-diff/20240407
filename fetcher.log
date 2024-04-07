@@ -8122,3 +8122,31 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 10:28:59] INFO root fetch - processPackages [lumibot]: Remove: archive file [/home/abi/fetcher/tmp/lumibot-3.3.1.tar.gz]
 [2024-04-07 10:28:59] INFO root fetch - main [MainThread]: End processing [lumibot]: success
 [2024-04-07 10:28:59] INFO root fetch - main [MainThread]: Store serial: [22654736]
+[2024-04-07 10:31:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654736]
+[2024-04-07 10:31:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 10:31:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vincam
+[2024-04-07 10:31:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mavlinkHandler
+[2024-04-07 10:31:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: moby-distribution
+[2024-04-07 10:31:08] INFO root fetch - processPackages [mavlinkHandler]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 10:31:08] INFO root fetch - processPackages [moby-distribution]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-04-07 10:31:08] INFO root fetch - processPackages [mavlinkHandler]: Downloading https://files.pythonhosted.org/packages/88/f3/3a0f0fdcff353b6a201742c762681eb5e5e38d8597c5adc4583dc225a5ee/mavlinkHandler-0.0.2.tar.gz
+[2024-04-07 10:31:08] WARNING root fetch - processPackages [vincam]: Skipping, unable to determine old version
+[2024-04-07 10:31:08] INFO root fetch - main [MainThread]: End processing [vincam] error
+[2024-04-07 10:31:08] INFO root fetch - processPackages [moby-distribution]: Downloading https://files.pythonhosted.org/packages/f7/38/f16a70b9f600291259a2cd65479cc6d2215fce79e8da7d7e76beb92761ac/moby_distribution-0.7.0.tar.gz
+[2024-04-07 10:31:08] WARNING root fetch - processPackages [mavlinkHandler]: Timeout reached during download
+[2024-04-07 10:31:08] WARNING root fetch - processPackages [moby-distribution]: Timeout reached during download
+[2024-04-07 10:31:08] INFO root fetch - processPackages [mavlinkHandler]: Downloading https://files.pythonhosted.org/packages/b9/b5/0b610a7a28b755484eef1594482931639b5e60179292221eb01f249fd62c/mavlinkHandler-0.0.3.tar.gz
+[2024-04-07 10:31:08] INFO root fetch - processPackages [moby-distribution]: Downloading https://files.pythonhosted.org/packages/52/96/c3da4dcf4ba6d1f8914ce89227fc1d2d87f6fc194e41a8b6443e3fdbf29f/moby_distribution-0.7.1.tar.gz
+[2024-04-07 10:31:08] WARNING root fetch - processPackages [mavlinkHandler]: Timeout reached during download
+[2024-04-07 10:31:08] INFO root fetch - processPackages [mavlinkHandler]: executing diffoscope
+[2024-04-07 10:31:08] INFO root fetch - processPackages [mavlinkHandler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mavlinkHandler-0.0.2.tar.gz tmp/mavlinkHandler-0.0.3.tar.gz --markdown 20240407/m/mavlinkHandler/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 10:31:08] WARNING root fetch - processPackages [moby-distribution]: Timeout reached during download
+[2024-04-07 10:31:08] INFO root fetch - processPackages [moby-distribution]: executing diffoscope
+[2024-04-07 10:31:08] INFO root fetch - processPackages [moby-distribution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moby_distribution-0.7.0.tar.gz tmp/moby_distribution-0.7.1.tar.gz --markdown 20240407/m/moby-distribution/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2024-04-07 10:31:09] INFO root fetch - processPackages [mavlinkHandler]: Remove: archive file [/home/abi/fetcher/tmp/mavlinkHandler-0.0.2.tar.gz]
+[2024-04-07 10:31:09] INFO root fetch - processPackages [mavlinkHandler]: Remove: archive file [/home/abi/fetcher/tmp/mavlinkHandler-0.0.3.tar.gz]
+[2024-04-07 10:31:09] INFO root fetch - main [MainThread]: End processing [mavlinkHandler]: success
+[2024-04-07 10:31:09] INFO root fetch - processPackages [moby-distribution]: Remove: archive file [/home/abi/fetcher/tmp/moby_distribution-0.7.0.tar.gz]
+[2024-04-07 10:31:09] INFO root fetch - processPackages [moby-distribution]: Remove: archive file [/home/abi/fetcher/tmp/moby_distribution-0.7.1.tar.gz]
+[2024-04-07 10:31:09] INFO root fetch - main [MainThread]: End processing [moby-distribution]: success
+[2024-04-07 10:31:09] INFO root fetch - main [MainThread]: Store serial: [22654749]
