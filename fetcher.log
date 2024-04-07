@@ -13424,3 +13424,20 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:22:45] INFO root fetch - main [MainThread]: End processing [check-params-by-swagger]: success
 [2024-04-07 16:22:45] INFO root fetch - main [MainThread]: End processing [check-params-by-swagger]: success
 [2024-04-07 16:22:45] INFO root fetch - main [MainThread]: Store serial: [22656762]
+[2024-04-07 16:24:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656762]
+[2024-04-07 16:24:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 16:24:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SNeSCOPE
+[2024-04-07 16:24:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: textual
+[2024-04-07 16:24:53] INFO root fetch - processPackages [textual]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-07 16:24:53] WARNING root fetch - processPackages [SNeSCOPE]: Skipping, unable to determine old version
+[2024-04-07 16:24:53] INFO root fetch - main [MainThread]: End processing [SNeSCOPE] error
+[2024-04-07 16:24:53] INFO root fetch - processPackages [textual]: Downloading https://files.pythonhosted.org/packages/17/d2/002affba91d339187f5699c26fecc3fa3bf966f17c5d08bb696c724b63ee/textual-0.9.0.tar.gz
+[2024-04-07 16:24:54] WARNING root fetch - processPackages [textual]: Timeout reached during download
+[2024-04-07 16:24:54] INFO root fetch - processPackages [textual]: Downloading https://files.pythonhosted.org/packages/0e/7d/2155bf024c3bdf1dc6365e109a16bab46098e032e62666565176ebc9f84a/textual-0.9.1.tar.gz
+[2024-04-07 16:24:54] WARNING root fetch - processPackages [textual]: Timeout reached during download
+[2024-04-07 16:24:54] INFO root fetch - processPackages [textual]: executing diffoscope
+[2024-04-07 16:24:54] INFO root fetch - processPackages [textual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textual-0.9.0.tar.gz tmp/textual-0.9.1.tar.gz --markdown 20240407/t/textual/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-07 16:24:55] INFO root fetch - processPackages [textual]: Remove: archive file [/home/abi/fetcher/tmp/textual-0.9.0.tar.gz]
+[2024-04-07 16:24:55] INFO root fetch - processPackages [textual]: Remove: archive file [/home/abi/fetcher/tmp/textual-0.9.1.tar.gz]
+[2024-04-07 16:24:55] INFO root fetch - main [MainThread]: End processing [textual]: success
+[2024-04-07 16:24:55] INFO root fetch - main [MainThread]: Store serial: [22656770]
