@@ -16399,3 +16399,34 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:06:58] INFO root fetch - processPackages [pyrecipes]: Remove: archive file [/home/abi/fetcher/tmp/pyrecipes-0.2.2.tar.gz]
 [2024-04-07 19:06:58] INFO root fetch - main [MainThread]: End processing [pyrecipes]: success
 [2024-04-07 19:06:58] INFO root fetch - main [MainThread]: Store serial: [22657757]
+[2024-04-07 19:09:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657757]
+[2024-04-07 19:09:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 19:09:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dgcloud
+[2024-04-07 19:09:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: diffCheck
+[2024-04-07 19:09:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aws-cdk-construct-devops01ua
+[2024-04-07 19:09:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: imy
+[2024-04-07 19:09:07] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-07 19:09:07] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: Downloading https://files.pythonhosted.org/packages/9a/05/3b5e876bbbaa440153a0d678eadae5cac472bf7b82fdc307313943bb0e64/aws_cdk_construct_devops01ua-0.0.5.tar.gz
+[2024-04-07 19:09:07] WARNING root fetch - processPackages [dgcloud]: Skipping, unable to determine old version
+[2024-04-07 19:09:07] INFO root fetch - main [MainThread]: End processing [dgcloud] error
+[2024-04-07 19:09:07] INFO root fetch - processPackages [imy]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-04-07 19:09:07] WARNING root fetch - processPackages [diffCheck]: Skipping, unable to determine old version
+[2024-04-07 19:09:07] INFO root fetch - main [MainThread]: End processing [diffCheck] error
+[2024-04-07 19:09:07] WARNING root fetch - processPackages [aws-cdk-construct-devops01ua]: Timeout reached during download
+[2024-04-07 19:09:07] INFO root fetch - processPackages [imy]: Downloading https://files.pythonhosted.org/packages/e1/15/13319ec59f1c201be86dc3426177594e8a48d1c9fdaa8805b29311d56ead/imy-0.1.9.tar.gz
+[2024-04-07 19:09:07] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: Downloading https://files.pythonhosted.org/packages/e6/a0/a1a4586ecb0e6d8858d6c4c0f0404257c7b31da5b93c642772c0c5d5a2f9/aws_cdk_construct_devops01ua-0.0.6.tar.gz
+[2024-04-07 19:09:07] WARNING root fetch - processPackages [imy]: Timeout reached during download
+[2024-04-07 19:09:08] WARNING root fetch - processPackages [aws-cdk-construct-devops01ua]: Timeout reached during download
+[2024-04-07 19:09:08] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: executing diffoscope
+[2024-04-07 19:09:08] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_cdk_construct_devops01ua-0.0.5.tar.gz tmp/aws_cdk_construct_devops01ua-0.0.6.tar.gz --markdown 20240407/a/aws-cdk-construct-devops01ua/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-07 19:09:08] INFO root fetch - processPackages [imy]: Downloading https://files.pythonhosted.org/packages/ba/98/5d965e2db47548c9f4e2c50d97f8d14e1fbba23933b3d7683e7ac628a0e5/imy-0.2.0.tar.gz
+[2024-04-07 19:09:08] WARNING root fetch - processPackages [imy]: Timeout reached during download
+[2024-04-07 19:09:08] INFO root fetch - processPackages [imy]: executing diffoscope
+[2024-04-07 19:09:08] INFO root fetch - processPackages [imy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imy-0.1.9.tar.gz tmp/imy-0.2.0.tar.gz --markdown 20240407/i/imy/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2024-04-07 19:09:08] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: Remove: archive file [/home/abi/fetcher/tmp/aws_cdk_construct_devops01ua-0.0.5.tar.gz]
+[2024-04-07 19:09:08] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: Remove: archive file [/home/abi/fetcher/tmp/aws_cdk_construct_devops01ua-0.0.6.tar.gz]
+[2024-04-07 19:09:08] INFO root fetch - main [MainThread]: End processing [aws-cdk-construct-devops01ua]: success
+[2024-04-07 19:09:08] INFO root fetch - processPackages [imy]: Remove: archive file [/home/abi/fetcher/tmp/imy-0.1.9.tar.gz]
+[2024-04-07 19:09:08] INFO root fetch - processPackages [imy]: Remove: archive file [/home/abi/fetcher/tmp/imy-0.2.0.tar.gz]
+[2024-04-07 19:09:08] INFO root fetch - main [MainThread]: End processing [imy]: success
+[2024-04-07 19:09:08] INFO root fetch - main [MainThread]: Store serial: [22657784]
