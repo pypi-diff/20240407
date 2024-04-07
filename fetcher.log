@@ -12508,3 +12508,50 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:23:53] INFO root fetch - processPackages [profiling-decorator]: Remove: archive file [/home/abi/fetcher/tmp/profiling_decorator-0.0.4.tar.gz]
 [2024-04-07 15:23:53] INFO root fetch - main [MainThread]: End processing [profiling-decorator]: success
 [2024-04-07 15:23:53] INFO root fetch - main [MainThread]: Store serial: [22656452]
+[2024-04-07 15:25:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656452]
+[2024-04-07 15:26:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 15:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sbcli-mig
+[2024-04-07 15:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sldc-cytomine
+[2024-04-07 15:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: telegram-collector
+[2024-04-07 15:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-diary
+[2024-04-07 15:26:02] INFO root fetch - processPackages [sbcli-mig]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-07 15:26:02] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/06/2f/2b2f1cfa7b91365cf5cd645c5967a8e8a8bd7f1c8e89f91d7e43e2aefc87/sbcli-mig-1.0.8.zip
+[2024-04-07 15:26:02] INFO root fetch - processPackages [telegram-collector]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 15:26:02] INFO root fetch - processPackages [sldc-cytomine]: New version: [2.5.0] Old Version: [2.4.0]
+[2024-04-07 15:26:02] INFO root fetch - processPackages [django-diary]: New version: [4.2.7.2] Old Version: [4.2.7.1]
+[2024-04-07 15:26:02] WARNING root fetch - processPackages [sbcli-mig]: Timeout reached during download
+[2024-04-07 15:26:02] INFO root fetch - processPackages [telegram-collector]: Downloading https://files.pythonhosted.org/packages/cf/6b/d795f55bc58ce47ec63c00f84b3db722350ac9aa54724d9ddb10b0e74f1d/telegram_collector-0.0.8.tar.gz
+[2024-04-07 15:26:02] INFO root fetch - processPackages [sldc-cytomine]: Downloading https://files.pythonhosted.org/packages/d2/96/47b7c2301d232f4ecb440168ba5694e9c513e8aced2ea0ecd305a9e8f3df/sldc-cytomine-2.4.0.tar.gz
+[2024-04-07 15:26:02] INFO root fetch - processPackages [django-diary]: Downloading https://files.pythonhosted.org/packages/90/dc/f5f3175c2fabe6a5388b917e62c17da89d3ac5acc45d5c2f15ef77a7b792/django-diary-4.2.7.1.tar.gz
+[2024-04-07 15:26:02] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/4b/15/9c1afe915f08547ce582aeae079f597b2a173df003109bcd1d0f0bbf037e/sbcli-mig-1.0.9.zip
+[2024-04-07 15:26:02] WARNING root fetch - processPackages [telegram-collector]: Timeout reached during download
+[2024-04-07 15:26:02] WARNING root fetch - processPackages [sldc-cytomine]: Timeout reached during download
+[2024-04-07 15:26:02] WARNING root fetch - processPackages [sbcli-mig]: Timeout reached during download
+[2024-04-07 15:26:02] INFO root fetch - processPackages [sbcli-mig]: executing diffoscope
+[2024-04-07 15:26:02] INFO root fetch - processPackages [sbcli-mig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbcli-mig-1.0.8.zip tmp/sbcli-mig-1.0.9.zip --markdown 20240407/s/sbcli-mig/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-07 15:26:02] WARNING root fetch - processPackages [django-diary]: Timeout reached during download
+[2024-04-07 15:26:02] INFO root fetch - processPackages [telegram-collector]: Downloading https://files.pythonhosted.org/packages/58/1a/ee9068adc0920b790ade2df5ec45821f0a6508fa20db8761e1cce449c456/telegram_collector-0.0.9.tar.gz
+[2024-04-07 15:26:02] INFO root fetch - processPackages [sldc-cytomine]: Downloading https://files.pythonhosted.org/packages/a8/a7/76d85b3adb1f4bb6f54abfc73b569737b2772043f3dac882206d7ed3872a/sldc-cytomine-2.5.0.tar.gz
+[2024-04-07 15:26:02] WARNING root fetch - processPackages [telegram-collector]: Timeout reached during download
+[2024-04-07 15:26:02] INFO root fetch - processPackages [django-diary]: Downloading https://files.pythonhosted.org/packages/db/32/42defacf7d97eb0a05a2f5afe94146c749a4882478af580bf428c8c91f78/django-diary-4.2.7.2.tar.gz
+[2024-04-07 15:26:02] WARNING root fetch - processPackages [sldc-cytomine]: Timeout reached during download
+[2024-04-07 15:26:02] INFO root fetch - processPackages [telegram-collector]: executing diffoscope
+[2024-04-07 15:26:02] INFO root fetch - processPackages [telegram-collector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegram_collector-0.0.8.tar.gz tmp/telegram_collector-0.0.9.tar.gz --markdown 20240407/t/telegram-collector/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 15:26:02] INFO root fetch - processPackages [sldc-cytomine]: executing diffoscope
+[2024-04-07 15:26:02] INFO root fetch - processPackages [sldc-cytomine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sldc-cytomine-2.4.0.tar.gz tmp/sldc-cytomine-2.5.0.tar.gz --markdown 20240407/s/sldc-cytomine/2.4.0-2.5.0/diff.md --exclude *.pyd
+[2024-04-07 15:26:03] WARNING root fetch - processPackages [django-diary]: Timeout reached during download
+[2024-04-07 15:26:03] INFO root fetch - processPackages [django-diary]: executing diffoscope
+[2024-04-07 15:26:03] INFO root fetch - processPackages [django-diary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-diary-4.2.7.1.tar.gz tmp/django-diary-4.2.7.2.tar.gz --markdown 20240407/d/django-diary/4.2.7.1-4.2.7.2/diff.md --exclude *.pyd
+[2024-04-07 15:26:03] INFO root fetch - processPackages [telegram-collector]: Remove: archive file [/home/abi/fetcher/tmp/telegram_collector-0.0.8.tar.gz]
+[2024-04-07 15:26:03] INFO root fetch - processPackages [telegram-collector]: Remove: archive file [/home/abi/fetcher/tmp/telegram_collector-0.0.9.tar.gz]
+[2024-04-07 15:26:03] INFO root fetch - main [MainThread]: End processing [telegram-collector]: success
+[2024-04-07 15:26:03] INFO root fetch - processPackages [sldc-cytomine]: Remove: archive file [/home/abi/fetcher/tmp/sldc-cytomine-2.4.0.tar.gz]
+[2024-04-07 15:26:03] INFO root fetch - processPackages [sldc-cytomine]: Remove: archive file [/home/abi/fetcher/tmp/sldc-cytomine-2.5.0.tar.gz]
+[2024-04-07 15:26:03] INFO root fetch - main [MainThread]: End processing [sldc-cytomine]: success
+[2024-04-07 15:26:03] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.8.zip]
+[2024-04-07 15:26:03] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.9.zip]
+[2024-04-07 15:26:03] INFO root fetch - main [MainThread]: End processing [sbcli-mig]: success
+[2024-04-07 15:26:03] INFO root fetch - processPackages [django-diary]: Remove: archive file [/home/abi/fetcher/tmp/django-diary-4.2.7.1.tar.gz]
+[2024-04-07 15:26:03] INFO root fetch - processPackages [django-diary]: Remove: archive file [/home/abi/fetcher/tmp/django-diary-4.2.7.2.tar.gz]
+[2024-04-07 15:26:03] INFO root fetch - main [MainThread]: End processing [django-diary]: success
+[2024-04-07 15:26:03] INFO root fetch - main [MainThread]: Store serial: [22656461]
