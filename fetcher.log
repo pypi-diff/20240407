@@ -13480,3 +13480,78 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:27:05] INFO root fetch - processPackages [Mopidy-Jellyfin]: Remove: archive file [/home/abi/fetcher/tmp/Mopidy-Jellyfin-1.0.5.tar.gz]
 [2024-04-07 16:27:05] INFO root fetch - main [MainThread]: End processing [Mopidy-Jellyfin]: success
 [2024-04-07 16:27:05] INFO root fetch - main [MainThread]: Store serial: [22656782]
+[2024-04-07 16:29:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656782]
+[2024-04-07 16:29:13] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-07 16:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rwmapeditor-exgcdwu
+[2024-04-07 16:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: easy-utils-dev
+[2024-04-07 16:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: app-lib-py
+[2024-04-07 16:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: telegram-markdown-text
+[2024-04-07 16:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytrakt
+[2024-04-07 16:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: laia-gen-lib
+[2024-04-07 16:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: check-params-by-swagger
+[2024-04-07 16:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: DocumentAI-std
+[2024-04-07 16:29:14] INFO root fetch - processPackages [laia-gen-lib]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 16:29:14] INFO root fetch - processPackages [DocumentAI-std]: New version: [0.1.1.dev0] Old Version: [0.1.1]
+[2024-04-07 16:29:14] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: New version: [1.1.1] Old Version: [1.1]
+[2024-04-07 16:29:14] WARNING root fetch - processPackages [app-lib-py]: Skipping, unable to determine old version
+[2024-04-07 16:29:14] INFO root fetch - main [MainThread]: End processing [app-lib-py] error
+[2024-04-07 16:29:14] INFO root fetch - processPackages [laia-gen-lib]: Downloading https://files.pythonhosted.org/packages/cf/9d/df25741f3199a178d6bebb43c6f39eeaaa924cb41510466057c7e68ad259/laia-gen-lib-0.1.8.tar.gz
+[2024-04-07 16:29:14] ERROR root fetch - processPackages [check-params-by-swagger]: Unable to get metadata: No such project 'check-params-by-swagger'
+[2024-04-07 16:29:14] INFO root fetch - main [MainThread]: End processing [check-params-by-swagger] error
+[2024-04-07 16:29:14] INFO root fetch - processPackages [easy-utils-dev]: New version: [2.8.9] Old Version: [2.8.8]
+[2024-04-07 16:29:14] INFO root fetch - processPackages [telegram-markdown-text]: New version: [0.3] Old Version: [0.2]
+[2024-04-07 16:29:14] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Downloading https://files.pythonhosted.org/packages/65/c6/3c53cb24dd07b1d7beec08ceca5ab25a506eaa42749c80adabebaaa7575f/rwmapeditor_exgcdwu-1.1.tar.gz
+[2024-04-07 16:29:14] INFO root fetch - processPackages [DocumentAI-std]: Downloading https://files.pythonhosted.org/packages/10/1a/bc164d78cd2435e24f25bdccdb49e6e8a138f1c895a2d79e3d0bf91fff1c/DocumentAI_std-0.1.1.tar.gz
+[2024-04-07 16:29:14] INFO root fetch - processPackages [pytrakt]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-04-07 16:29:14] WARNING root fetch - processPackages [DocumentAI-std]: Timeout reached during download
+[2024-04-07 16:29:14] WARNING root fetch - processPackages [laia-gen-lib]: Timeout reached during download
+[2024-04-07 16:29:14] WARNING root fetch - processPackages [rwmapeditor-exgcdwu]: Timeout reached during download
+[2024-04-07 16:29:14] INFO root fetch - processPackages [easy-utils-dev]: Downloading https://files.pythonhosted.org/packages/d0/93/7d3610b6f67084ad67ecbd895c5e70590d1edff9babbc72a2d7802d125ad/easy_utils_dev-2.8.8.tar.gz
+[2024-04-07 16:29:14] INFO root fetch - processPackages [telegram-markdown-text]: Downloading https://files.pythonhosted.org/packages/94/32/a37f407d03ac7f86ea38d62832d48bfa0c8cf8d8c5d1f539736672609097/telegram-markdown-text-0.2.tar.gz
+[2024-04-07 16:29:14] INFO root fetch - processPackages [DocumentAI-std]: Downloading https://files.pythonhosted.org/packages/e9/de/8f8726c62a74e10998da6c62e08206712931752603464ad9ea4a922e6af7/DocumentAI_std-0.1.1.dev0.tar.gz
+[2024-04-07 16:29:14] INFO root fetch - processPackages [laia-gen-lib]: Downloading https://files.pythonhosted.org/packages/be/61/f1135da258191b7a80992064d66519b24c5cf4c05de8b99ccfa7ad90d9bf/laia-gen-lib-0.1.9.tar.gz
+[2024-04-07 16:29:14] INFO root fetch - processPackages [pytrakt]: Downloading https://files.pythonhosted.org/packages/83/99/9fd903fa37868c1db1e53bb54e7868f0ac70562f62a70010e27950a9cdf9/pytrakt-3.4.8.tar.gz
+[2024-04-07 16:29:14] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Downloading https://files.pythonhosted.org/packages/15/87/6116465746bf26f170352a9946cfac6301e4b4d0e19a879683ae33f20163/rwmapeditor_exgcdwu-1.1.1.tar.gz
+[2024-04-07 16:29:14] WARNING root fetch - processPackages [DocumentAI-std]: Timeout reached during download
+[2024-04-07 16:29:14] INFO root fetch - processPackages [DocumentAI-std]: executing diffoscope
+[2024-04-07 16:29:14] INFO root fetch - processPackages [DocumentAI-std]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DocumentAI_std-0.1.1.tar.gz tmp/DocumentAI_std-0.1.1.dev0.tar.gz --markdown 20240407/D/DocumentAI-std/0.1.1-0.1.1.dev0/diff.md --exclude *.pyd
+[2024-04-07 16:29:14] WARNING root fetch - processPackages [laia-gen-lib]: Timeout reached during download
+[2024-04-07 16:29:14] INFO root fetch - processPackages [laia-gen-lib]: executing diffoscope
+[2024-04-07 16:29:14] INFO root fetch - processPackages [laia-gen-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/laia-gen-lib-0.1.8.tar.gz tmp/laia-gen-lib-0.1.9.tar.gz --markdown 20240407/l/laia-gen-lib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 16:29:14] WARNING root fetch - processPackages [pytrakt]: Timeout reached during download
+[2024-04-07 16:29:14] WARNING root fetch - processPackages [easy-utils-dev]: Timeout reached during download
+[2024-04-07 16:29:14] WARNING root fetch - processPackages [telegram-markdown-text]: Timeout reached during download
+[2024-04-07 16:29:14] WARNING root fetch - processPackages [rwmapeditor-exgcdwu]: Timeout reached during download
+[2024-04-07 16:29:14] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: executing diffoscope
+[2024-04-07 16:29:14] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rwmapeditor_exgcdwu-1.1.tar.gz tmp/rwmapeditor_exgcdwu-1.1.1.tar.gz --markdown 20240407/r/rwmapeditor-exgcdwu/1.1-1.1.1/diff.md --exclude *.pyd
+[2024-04-07 16:29:14] INFO root fetch - processPackages [pytrakt]: Downloading https://files.pythonhosted.org/packages/e4/a3/4852877de8ad42d589624db0e3ca86946849ed2c7c17b57cf83ed45da33f/pytrakt-3.4.9.tar.gz
+[2024-04-07 16:29:14] INFO root fetch - processPackages [easy-utils-dev]: Downloading https://files.pythonhosted.org/packages/cb/9e/733069bda720d8bb6841ec493e820c3c09b9c4914d51ce9ac1c70aa88fe9/easy_utils_dev-2.8.9.tar.gz
+[2024-04-07 16:29:14] INFO root fetch - processPackages [telegram-markdown-text]: Downloading https://files.pythonhosted.org/packages/ec/12/9bcd9b9bcd046e1b6a524dbb81d18ff691d34093f712172ad084c61e772d/telegram-markdown-text-0.3.tar.gz
+[2024-04-07 16:29:14] WARNING root fetch - processPackages [telegram-markdown-text]: Timeout reached during download
+[2024-04-07 16:29:14] INFO root fetch - processPackages [telegram-markdown-text]: executing diffoscope
+[2024-04-07 16:29:14] INFO root fetch - processPackages [telegram-markdown-text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegram-markdown-text-0.2.tar.gz tmp/telegram-markdown-text-0.3.tar.gz --markdown 20240407/t/telegram-markdown-text/0.2-0.3/diff.md --exclude *.pyd
+[2024-04-07 16:29:15] WARNING root fetch - processPackages [easy-utils-dev]: Timeout reached during download
+[2024-04-07 16:29:15] INFO root fetch - processPackages [easy-utils-dev]: executing diffoscope
+[2024-04-07 16:29:15] INFO root fetch - processPackages [easy-utils-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_utils_dev-2.8.8.tar.gz tmp/easy_utils_dev-2.8.9.tar.gz --markdown 20240407/e/easy-utils-dev/2.8.8-2.8.9/diff.md --exclude *.pyd
+[2024-04-07 16:29:15] WARNING root fetch - processPackages [pytrakt]: Timeout reached during download
+[2024-04-07 16:29:15] INFO root fetch - processPackages [pytrakt]: executing diffoscope
+[2024-04-07 16:29:15] INFO root fetch - processPackages [pytrakt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytrakt-3.4.8.tar.gz tmp/pytrakt-3.4.9.tar.gz --markdown 20240407/p/pytrakt/3.4.8-3.4.9/diff.md --exclude *.pyd
+[2024-04-07 16:29:15] INFO root fetch - processPackages [DocumentAI-std]: Remove: archive file [/home/abi/fetcher/tmp/DocumentAI_std-0.1.1.tar.gz]
+[2024-04-07 16:29:15] INFO root fetch - processPackages [DocumentAI-std]: Remove: archive file [/home/abi/fetcher/tmp/DocumentAI_std-0.1.1.dev0.tar.gz]
+[2024-04-07 16:29:15] INFO root fetch - main [MainThread]: End processing [DocumentAI-std]: success
+[2024-04-07 16:29:15] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Remove: archive file [/home/abi/fetcher/tmp/rwmapeditor_exgcdwu-1.1.tar.gz]
+[2024-04-07 16:29:15] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Remove: archive file [/home/abi/fetcher/tmp/rwmapeditor_exgcdwu-1.1.1.tar.gz]
+[2024-04-07 16:29:15] INFO root fetch - main [MainThread]: End processing [rwmapeditor-exgcdwu]: success
+[2024-04-07 16:29:15] INFO root fetch - processPackages [laia-gen-lib]: Remove: archive file [/home/abi/fetcher/tmp/laia-gen-lib-0.1.8.tar.gz]
+[2024-04-07 16:29:15] INFO root fetch - processPackages [laia-gen-lib]: Remove: archive file [/home/abi/fetcher/tmp/laia-gen-lib-0.1.9.tar.gz]
+[2024-04-07 16:29:15] INFO root fetch - main [MainThread]: End processing [laia-gen-lib]: success
+[2024-04-07 16:29:15] INFO root fetch - processPackages [telegram-markdown-text]: Remove: archive file [/home/abi/fetcher/tmp/telegram-markdown-text-0.2.tar.gz]
+[2024-04-07 16:29:15] INFO root fetch - processPackages [telegram-markdown-text]: Remove: archive file [/home/abi/fetcher/tmp/telegram-markdown-text-0.3.tar.gz]
+[2024-04-07 16:29:15] INFO root fetch - main [MainThread]: End processing [telegram-markdown-text]: success
+[2024-04-07 16:29:15] INFO root fetch - processPackages [easy-utils-dev]: Remove: archive file [/home/abi/fetcher/tmp/easy_utils_dev-2.8.8.tar.gz]
+[2024-04-07 16:29:15] INFO root fetch - processPackages [easy-utils-dev]: Remove: archive file [/home/abi/fetcher/tmp/easy_utils_dev-2.8.9.tar.gz]
+[2024-04-07 16:29:15] INFO root fetch - main [MainThread]: End processing [easy-utils-dev]: success
+[2024-04-07 16:29:16] INFO root fetch - processPackages [pytrakt]: Remove: archive file [/home/abi/fetcher/tmp/pytrakt-3.4.8.tar.gz]
+[2024-04-07 16:29:16] INFO root fetch - processPackages [pytrakt]: Remove: archive file [/home/abi/fetcher/tmp/pytrakt-3.4.9.tar.gz]
+[2024-04-07 16:29:16] INFO root fetch - main [MainThread]: End processing [pytrakt]: success
+[2024-04-07 16:29:16] INFO root fetch - main [MainThread]: Store serial: [22656810]
