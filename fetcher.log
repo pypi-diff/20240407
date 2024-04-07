@@ -7419,3 +7419,36 @@
 [2024-04-07 09:36:51] INFO root fetch - processPackages [japanese-address-parser-py]: Remove: archive file [/home/abi/fetcher/tmp/japanese_address_parser_py-0.1.0b12.tar.gz]
 [2024-04-07 09:36:51] INFO root fetch - main [MainThread]: End processing [japanese-address-parser-py]: success
 [2024-04-07 09:36:51] INFO root fetch - main [MainThread]: Store serial: [22654429]
+[2024-04-07 09:38:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654429]
+[2024-04-07 09:38:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 09:38:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mdpython
+[2024-04-07 09:38:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ragdaemon
+[2024-04-07 09:38:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Products.urban
+[2024-04-07 09:38:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: blue-krill
+[2024-04-07 09:38:59] WARNING root fetch - processPackages [ragdaemon]: Skipping, unable to determine old version
+[2024-04-07 09:38:59] INFO root fetch - main [MainThread]: End processing [ragdaemon] error
+[2024-04-07 09:38:59] INFO root fetch - processPackages [mdpython]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 09:38:59] INFO root fetch - processPackages [blue-krill]: New version: [2.0.2] Old Version: [2.0.0]
+[2024-04-07 09:38:59] INFO root fetch - processPackages [mdpython]: Downloading https://files.pythonhosted.org/packages/85/d2/2fc7a6013d10c5b8844b051c30042047873d222408344e76f2379d35212d/mdpython-0.0.2.tar.gz
+[2024-04-07 09:38:59] INFO root fetch - processPackages [Products.urban]: New version: [2.7.9] Old Version: [2.7.8]
+[2024-04-07 09:38:59] WARNING root fetch - processPackages [mdpython]: Timeout reached during download
+[2024-04-07 09:38:59] INFO root fetch - processPackages [blue-krill]: Downloading https://files.pythonhosted.org/packages/cd/ac/ff9d8aaa8f57dcf78426c293f63396e238c269b484a03b86aad42fb2444a/blue_krill-2.0.0.tar.gz
+[2024-04-07 09:38:59] INFO root fetch - processPackages [Products.urban]: Downloading https://files.pythonhosted.org/packages/62/cf/1ffb24c7205fcd21981095d8787cc318af5c5db4ae86ce3f94784b119e50/Products.urban-2.7.8.tar.gz
+[2024-04-07 09:38:59] WARNING root fetch - processPackages [blue-krill]: Timeout reached during download
+[2024-04-07 09:39:00] INFO root fetch - processPackages [mdpython]: Downloading https://files.pythonhosted.org/packages/40/44/e1552764bf29316f0ab76ce02f444f2ae1e2ce17e015e682f55d01538bc2/mdpython-0.0.3.tar.gz
+[2024-04-07 09:39:00] WARNING root fetch - processPackages [Products.urban]: Skipping package: exceeds size limit 20169294>=10485760
+[2024-04-07 09:39:00] INFO root fetch - main [MainThread]: End processing [Products.urban] error
+[2024-04-07 09:39:00] INFO root fetch - processPackages [blue-krill]: Downloading https://files.pythonhosted.org/packages/13/fc/1580ced71aa7cb101300f1833723a3893542aef7d2771f1833eb4d2f4dca/blue_krill-2.0.2.tar.gz
+[2024-04-07 09:39:00] WARNING root fetch - processPackages [blue-krill]: Timeout reached during download
+[2024-04-07 09:39:00] INFO root fetch - processPackages [blue-krill]: executing diffoscope
+[2024-04-07 09:39:00] INFO root fetch - processPackages [blue-krill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blue_krill-2.0.0.tar.gz tmp/blue_krill-2.0.2.tar.gz --markdown 20240407/b/blue-krill/2.0.0-2.0.2/diff.md --exclude *.pyd
+[2024-04-07 09:39:00] WARNING root fetch - processPackages [mdpython]: Timeout reached during download
+[2024-04-07 09:39:00] INFO root fetch - processPackages [mdpython]: executing diffoscope
+[2024-04-07 09:39:00] INFO root fetch - processPackages [mdpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdpython-0.0.2.tar.gz tmp/mdpython-0.0.3.tar.gz --markdown 20240407/m/mdpython/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 09:39:00] INFO root fetch - processPackages [mdpython]: Remove: archive file [/home/abi/fetcher/tmp/mdpython-0.0.2.tar.gz]
+[2024-04-07 09:39:00] INFO root fetch - processPackages [mdpython]: Remove: archive file [/home/abi/fetcher/tmp/mdpython-0.0.3.tar.gz]
+[2024-04-07 09:39:00] INFO root fetch - main [MainThread]: End processing [mdpython]: success
+[2024-04-07 09:39:00] INFO root fetch - processPackages [blue-krill]: Remove: archive file [/home/abi/fetcher/tmp/blue_krill-2.0.0.tar.gz]
+[2024-04-07 09:39:00] INFO root fetch - processPackages [blue-krill]: Remove: archive file [/home/abi/fetcher/tmp/blue_krill-2.0.2.tar.gz]
+[2024-04-07 09:39:00] INFO root fetch - main [MainThread]: End processing [blue-krill]: success
+[2024-04-07 09:39:00] INFO root fetch - main [MainThread]: Store serial: [22654439]
