@@ -8758,3 +8758,59 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 11:12:33] INFO root fetch - processPackages [cdk8s-plus-27]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-plus-27-2.7.9.tar.gz]
 [2024-04-07 11:12:33] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-27]: success
 [2024-04-07 11:12:33] INFO root fetch - main [MainThread]: Store serial: [22654966]
+[2024-04-07 11:14:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654966]
+[2024-04-07 11:14:47] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 11:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-04-07 11:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: search-data-collector
+[2024-04-07 11:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sphinxcontrib-yowasp-wavedrom
+[2024-04-07 11:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2024-04-07 11:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nvfuser-cu121
+[2024-04-07 11:14:47] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: New version: [1.2] Old Version: [1.1]
+[2024-04-07 11:14:47] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-07 11:14:47] INFO root fetch - processPackages [search-data-collector]: New version: [0.5.0] Old Version: [0.4.3]
+[2024-04-07 11:14:47] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-07 11:14:47] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.2.0.dev20240407] Old Version: [0.2.0.dev20240406]
+[2024-04-07 11:14:47] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: Downloading https://files.pythonhosted.org/packages/86/9f/0955adecac62bd3f5c5135ac2ce7ea801e379c0532533be116349b372f64/sphinxcontrib_yowasp_wavedrom-1.1-py3-none-any.whl
+[2024-04-07 11:14:47] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-07 11:14:47] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-07 11:14:47] WARNING root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: Timeout reached during download
+[2024-04-07 11:14:47] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-07 11:14:47] INFO root fetch - processPackages [search-data-collector]: Downloading https://files.pythonhosted.org/packages/16/74/fabd85b2a7cc2cd14db31e1a9dcd9926f0b00484ddaa07c088348b2c9341/search_data_collector-0.4.3-py3-none-any.whl
+[2024-04-07 11:14:47] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-07 11:14:47] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/fd/86/33583252bfad10f923aff4e1ef60373fa573cdb449e43ae5630d76b8e48e/nvfuser_cu121-0.2.0.dev20240406.tar.gz
+[2024-04-07 11:14:48] WARNING root fetch - processPackages [search-data-collector]: Timeout reached during download
+[2024-04-07 11:14:48] WARNING root fetch - processPackages [nvfuser-cu121]: Timeout reached during download
+[2024-04-07 11:14:48] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: Downloading https://files.pythonhosted.org/packages/44/a2/301ec8d42e4c54ee9725d4821b47739364669d2a03b212215261635e8b60/sphinxcontrib_yowasp_wavedrom-1.2-py3-none-any.whl
+[2024-04-07 11:14:48] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-07 11:14:48] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-07 11:14:48] INFO root fetch - processPackages [search-data-collector]: Downloading https://files.pythonhosted.org/packages/c7/3f/f53da3831b18330dadeb9be2163a25b59ec77d9e1c20a07d095e9318d352/search_data_collector-0.5.0-py3-none-any.whl
+[2024-04-07 11:14:48] WARNING root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: Timeout reached during download
+[2024-04-07 11:14:48] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: executing diffoscope
+[2024-04-07 11:14:48] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib_yowasp_wavedrom-1.1-py3-none-any.whl.zip tmp/sphinxcontrib_yowasp_wavedrom-1.2-py3-none-any.whl.zip --markdown 20240407/s/sphinxcontrib-yowasp-wavedrom/1.1-1.2/diff.md --exclude *.pyd
+[2024-04-07 11:14:48] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/37/6c/c4be4da4c21863482c05879f2831cbaeeff261f564f7a62ce1e4ef0e15d1/nvfuser_cu121-0.2.0.dev20240407.tar.gz
+[2024-04-07 11:14:48] WARNING root fetch - processPackages [search-data-collector]: Timeout reached during download
+[2024-04-07 11:14:48] INFO root fetch - processPackages [search-data-collector]: executing diffoscope
+[2024-04-07 11:14:48] INFO root fetch - processPackages [search-data-collector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/search_data_collector-0.4.3-py3-none-any.whl.zip tmp/search_data_collector-0.5.0-py3-none-any.whl.zip --markdown 20240407/s/search-data-collector/0.4.3-0.5.0/diff.md --exclude *.pyd
+[2024-04-07 11:14:48] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-07 11:14:48] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-07 11:14:48] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-07 11:14:48] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240407/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2024-04-07 11:14:48] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-07 11:14:48] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240407/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2024-04-07 11:14:48] WARNING root fetch - processPackages [nvfuser-cu121]: Timeout reached during download
+[2024-04-07 11:14:48] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2024-04-07 11:14:48] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.2.0.dev20240406.tar.gz tmp/nvfuser_cu121-0.2.0.dev20240407.tar.gz --markdown 20240407/n/nvfuser-cu121/0.2.0.dev20240406-0.2.0.dev20240407/diff.md --exclude *.pyd
+[2024-04-07 11:14:48] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_yowasp_wavedrom-1.1-py3-none-any.whl.zip]
+[2024-04-07 11:14:48] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_yowasp_wavedrom-1.2-py3-none-any.whl.zip]
+[2024-04-07 11:14:48] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-yowasp-wavedrom]: success
+[2024-04-07 11:14:48] INFO root fetch - processPackages [search-data-collector]: Remove: archive file [/home/abi/fetcher/tmp/search_data_collector-0.4.3-py3-none-any.whl.zip]
+[2024-04-07 11:14:48] INFO root fetch - processPackages [search-data-collector]: Remove: archive file [/home/abi/fetcher/tmp/search_data_collector-0.5.0-py3-none-any.whl.zip]
+[2024-04-07 11:14:48] INFO root fetch - main [MainThread]: End processing [search-data-collector]: success
+[2024-04-07 11:14:49] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-04-07 11:14:49] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-04-07 11:14:49] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-07 11:14:49] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-07 11:14:49] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.0.dev20240406.tar.gz]
+[2024-04-07 11:14:49] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.0.dev20240407.tar.gz]
+[2024-04-07 11:14:49] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2024-04-07 11:14:49] INFO root fetch - main [MainThread]: Store serial: [22654974]
