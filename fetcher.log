@@ -2533,3 +2533,27 @@
 [2024-04-07 03:57:01] INFO root fetch - processPackages [reprompt]: Remove: archive file [/home/abi/fetcher/tmp/reprompt-0.0.4.tar.gz]
 [2024-04-07 03:57:01] INFO root fetch - main [MainThread]: End processing [reprompt]: success
 [2024-04-07 03:57:01] INFO root fetch - main [MainThread]: Store serial: [22652754]
+[2024-04-07 03:59:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652754]
+[2024-04-07 03:59:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 03:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rapidocr-openvino
+[2024-04-07 03:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rapidocr-onnxruntime
+[2024-04-07 03:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reprompt
+[2024-04-07 03:59:10] INFO root fetch - processPackages [reprompt]: New version: [0.0.4rc27.post1] Old Version: [0.0.4]
+[2024-04-07 03:59:10] INFO root fetch - processPackages [reprompt]: Downloading https://files.pythonhosted.org/packages/8d/72/7b947fc81f31c471eef388bbf02eb0e5944aabb24263c3a3d47157a75c6e/reprompt-0.0.4.tar.gz
+[2024-04-07 03:59:10] INFO root fetch - processPackages [rapidocr-onnxruntime]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-04-07 03:59:10] INFO root fetch - processPackages [rapidocr-openvino]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-04-07 03:59:10] WARNING root fetch - processPackages [reprompt]: Timeout reached during download
+[2024-04-07 03:59:10] INFO root fetch - processPackages [rapidocr-openvino]: Downloading https://files.pythonhosted.org/packages/78/50/f892aa14197738dcf92d73e794f4c3376d48a6ba1812ee53f1849b8d1959/rapidocr_openvino-1.3.8-py3-none-any.whl
+[2024-04-07 03:59:10] INFO root fetch - processPackages [rapidocr-onnxruntime]: Downloading https://files.pythonhosted.org/packages/be/1d/46391ab38da2fc3ca5c5b09b1541f2a779ba7f84a65e7067e760b2b422e6/rapidocr_onnxruntime-1.3.8-py3-none-any.whl
+[2024-04-07 03:59:10] WARNING root fetch - processPackages [rapidocr-openvino]: Skipping package: exceeds size limit 14923891>=10485760
+[2024-04-07 03:59:10] INFO root fetch - main [MainThread]: End processing [rapidocr-openvino] error
+[2024-04-07 03:59:10] WARNING root fetch - processPackages [rapidocr-onnxruntime]: Skipping package: exceeds size limit 14908000>=10485760
+[2024-04-07 03:59:10] INFO root fetch - main [MainThread]: End processing [rapidocr-onnxruntime] error
+[2024-04-07 03:59:10] INFO root fetch - processPackages [reprompt]: Downloading https://files.pythonhosted.org/packages/6d/5d/264ba98d9181d2b6b667496142e1e696a42185f1f849232c838965ab8a9d/reprompt-0.0.4rc27.post1.tar.gz
+[2024-04-07 03:59:10] WARNING root fetch - processPackages [reprompt]: Timeout reached during download
+[2024-04-07 03:59:10] INFO root fetch - processPackages [reprompt]: executing diffoscope
+[2024-04-07 03:59:10] INFO root fetch - processPackages [reprompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reprompt-0.0.4.tar.gz tmp/reprompt-0.0.4rc27.post1.tar.gz --markdown 20240407/r/reprompt/0.0.4-0.0.4rc27.post1/diff.md --exclude *.pyd
+[2024-04-07 03:59:11] INFO root fetch - processPackages [reprompt]: Remove: archive file [/home/abi/fetcher/tmp/reprompt-0.0.4.tar.gz]
+[2024-04-07 03:59:11] INFO root fetch - processPackages [reprompt]: Remove: archive file [/home/abi/fetcher/tmp/reprompt-0.0.4rc27.post1.tar.gz]
+[2024-04-07 03:59:11] INFO root fetch - main [MainThread]: End processing [reprompt]: success
+[2024-04-07 03:59:11] INFO root fetch - main [MainThread]: Store serial: [22652761]
