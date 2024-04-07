@@ -1699,3 +1699,28 @@
 [2024-04-07 02:35:02] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.8.dev20240406104002.tar.gz]
 [2024-04-07 02:35:02] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
 [2024-04-07 02:35:02] INFO root fetch - main [MainThread]: Store serial: [22652241]
+[2024-04-07 02:37:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652241]
+[2024-04-07 02:37:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 02:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: auth-lib-profcomff
+[2024-04-07 02:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aws-packages
+[2024-04-07 02:37:11] INFO root fetch - processPackages [auth-lib-profcomff]: New version: [2024.4.7.1] Old Version: [2024.4.7]
+[2024-04-07 02:37:11] INFO root fetch - processPackages [aws-packages]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 02:37:11] INFO root fetch - processPackages [auth-lib-profcomff]: Downloading https://files.pythonhosted.org/packages/71/17/d8ae89cc104d238ce67f6ee6ef0649014a9198d2de28e0bdca126d647751/auth_lib_profcomff-2024.4.7.tar.gz
+[2024-04-07 02:37:11] WARNING root fetch - processPackages [auth-lib-profcomff]: Timeout reached during download
+[2024-04-07 02:37:11] INFO root fetch - processPackages [aws-packages]: Downloading https://files.pythonhosted.org/packages/df/79/dc9dd4f48288c36fa85b903a442b0590b5f087cf3de6feac6a2c7361bd03/aws_packages-0.0.8.tar.gz
+[2024-04-07 02:37:11] INFO root fetch - processPackages [auth-lib-profcomff]: Downloading https://files.pythonhosted.org/packages/73/b0/520409701657fc16406480f349453609d9c046f13b24165f55066eb02adf/auth_lib_profcomff-2024.4.7.1.tar.gz
+[2024-04-07 02:37:11] WARNING root fetch - processPackages [aws-packages]: Timeout reached during download
+[2024-04-07 02:37:11] WARNING root fetch - processPackages [auth-lib-profcomff]: Timeout reached during download
+[2024-04-07 02:37:11] INFO root fetch - processPackages [auth-lib-profcomff]: executing diffoscope
+[2024-04-07 02:37:11] INFO root fetch - processPackages [auth-lib-profcomff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auth_lib_profcomff-2024.4.7.tar.gz tmp/auth_lib_profcomff-2024.4.7.1.tar.gz --markdown 20240407/a/auth-lib-profcomff/2024.4.7-2024.4.7.1/diff.md --exclude *.pyd
+[2024-04-07 02:37:12] INFO root fetch - processPackages [aws-packages]: Downloading https://files.pythonhosted.org/packages/57/fc/a377eacef84904ca0fa32b225feab009fb33931e2c7585a1644a0d096000/aws_packages-0.0.9-cp311-cp311-manylinux_2_17_armv7l.manylinux2014_armv7l.whl
+[2024-04-07 02:37:12] INFO root fetch - processPackages [auth-lib-profcomff]: Remove: archive file [/home/abi/fetcher/tmp/auth_lib_profcomff-2024.4.7.tar.gz]
+[2024-04-07 02:37:12] INFO root fetch - processPackages [auth-lib-profcomff]: Remove: archive file [/home/abi/fetcher/tmp/auth_lib_profcomff-2024.4.7.1.tar.gz]
+[2024-04-07 02:37:12] INFO root fetch - main [MainThread]: End processing [auth-lib-profcomff]: success
+[2024-04-07 02:37:13] WARNING root fetch - processPackages [aws-packages]: Timeout reached during download
+[2024-04-07 02:37:13] INFO root fetch - processPackages [aws-packages]: executing diffoscope
+[2024-04-07 02:37:13] INFO root fetch - processPackages [aws-packages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_packages-0.0.8.tar.gz tmp/aws_packages-0.0.9-cp311-cp311-manylinux_2_17_armv7l.manylinux2014_armv7l.whl.zip --markdown 20240407/a/aws-packages/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 02:37:13] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.8.tar.gz]
+[2024-04-07 02:37:13] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.9-cp311-cp311-manylinux_2_17_armv7l.manylinux2014_armv7l.whl.zip]
+[2024-04-07 02:37:13] INFO root fetch - main [MainThread]: End processing [aws-packages]: success
+[2024-04-07 02:37:13] INFO root fetch - main [MainThread]: Store serial: [22652269]
