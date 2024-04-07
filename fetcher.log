@@ -12642,3 +12642,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:32:35] INFO root fetch - main [MainThread]: End processing [MeMeST]: success
 [2024-04-07 15:32:35] INFO root fetch - main [MainThread]: End processing [MeMeST]: success
 [2024-04-07 15:32:35] INFO root fetch - main [MainThread]: Store serial: [22656497]
+[2024-04-07 15:34:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656497]
+[2024-04-07 15:34:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 15:34:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytubefix
+[2024-04-07 15:34:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: profiling-decorator
+[2024-04-07 15:34:44] INFO root fetch - processPackages [profiling-decorator]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-07 15:34:44] INFO root fetch - processPackages [pytubefix]: New version: [5.1rc1] Old Version: [5.0rc2]
+[2024-04-07 15:34:44] INFO root fetch - processPackages [profiling-decorator]: Downloading https://files.pythonhosted.org/packages/04/00/5e3e19a1bd8562a6c6a68a25d759cba2315ac22bf66c4813ac33e0f40604/profiling_decorator-0.0.4.tar.gz
+[2024-04-07 15:34:44] INFO root fetch - processPackages [pytubefix]: Downloading https://files.pythonhosted.org/packages/d9/b2/dc29e2f8c18091cab0afc685438b9c605f5c66ded3c5f867762b96678693/pytubefix-5.0rc2.tar.gz
+[2024-04-07 15:34:45] WARNING root fetch - processPackages [profiling-decorator]: Timeout reached during download
+[2024-04-07 15:34:45] WARNING root fetch - processPackages [pytubefix]: Timeout reached during download
+[2024-04-07 15:34:45] INFO root fetch - processPackages [pytubefix]: Downloading https://files.pythonhosted.org/packages/22/97/4e75a25a55d84f4d309482433534ad8a912b59260cabbf4cb8091b85fcc1/pytubefix-5.1rc1.tar.gz
+[2024-04-07 15:34:45] INFO root fetch - processPackages [profiling-decorator]: Downloading https://files.pythonhosted.org/packages/07/ba/a847f4c003e88589b9a16105421184e5ececa5ea5878fff2adb99ad5402c/profiling_decorator-0.0.5.tar.gz
+[2024-04-07 15:34:45] WARNING root fetch - processPackages [pytubefix]: Timeout reached during download
+[2024-04-07 15:34:45] INFO root fetch - processPackages [pytubefix]: executing diffoscope
+[2024-04-07 15:34:45] INFO root fetch - processPackages [pytubefix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytubefix-5.0rc2.tar.gz tmp/pytubefix-5.1rc1.tar.gz --markdown 20240407/p/pytubefix/5.0rc2-5.1rc1/diff.md --exclude *.pyd
+[2024-04-07 15:34:45] WARNING root fetch - processPackages [profiling-decorator]: Timeout reached during download
+[2024-04-07 15:34:45] INFO root fetch - processPackages [profiling-decorator]: executing diffoscope
+[2024-04-07 15:34:45] INFO root fetch - processPackages [profiling-decorator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profiling_decorator-0.0.4.tar.gz tmp/profiling_decorator-0.0.5.tar.gz --markdown 20240407/p/profiling-decorator/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-07 15:34:45] INFO root fetch - processPackages [profiling-decorator]: Remove: archive file [/home/abi/fetcher/tmp/profiling_decorator-0.0.4.tar.gz]
+[2024-04-07 15:34:45] INFO root fetch - processPackages [profiling-decorator]: Remove: archive file [/home/abi/fetcher/tmp/profiling_decorator-0.0.5.tar.gz]
+[2024-04-07 15:34:45] INFO root fetch - main [MainThread]: End processing [profiling-decorator]: success
+[2024-04-07 15:34:46] INFO root fetch - processPackages [pytubefix]: Remove: archive file [/home/abi/fetcher/tmp/pytubefix-5.0rc2.tar.gz]
+[2024-04-07 15:34:46] INFO root fetch - processPackages [pytubefix]: Remove: archive file [/home/abi/fetcher/tmp/pytubefix-5.1rc1.tar.gz]
+[2024-04-07 15:34:46] INFO root fetch - main [MainThread]: End processing [pytubefix]: success
+[2024-04-07 15:34:46] INFO root fetch - main [MainThread]: Store serial: [22656503]
