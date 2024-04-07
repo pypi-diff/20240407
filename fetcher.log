@@ -20999,3 +20999,20 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:51:03] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
 [2024-04-07 23:51:03] INFO root fetch - main [MainThread]: End processing [litellm]: success
 [2024-04-07 23:51:03] INFO root fetch - main [MainThread]: Store serial: [22659594]
+[2024-04-07 23:53:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659594]
+[2024-04-07 23:53:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 23:53:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: enkanetworkv2.py
+[2024-04-07 23:53:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fivetran-customer-sdk
+[2024-04-07 23:53:13] INFO root fetch - processPackages [enkanetworkv2.py]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-04-07 23:53:13] INFO root fetch - processPackages [enkanetworkv2.py]: Downloading https://files.pythonhosted.org/packages/54/0a/b25c1ede6c2e97db120e7f23062d29841e07f9a3e2c38cca68102dcac722/enkanetworkv2.py-2.0.2.tar.gz
+[2024-04-07 23:53:13] WARNING root fetch - processPackages [fivetran-customer-sdk]: Skipping, unable to determine old version
+[2024-04-07 23:53:13] INFO root fetch - main [MainThread]: End processing [fivetran-customer-sdk] error
+[2024-04-07 23:53:13] WARNING root fetch - processPackages [enkanetworkv2.py]: Timeout reached during download
+[2024-04-07 23:53:14] INFO root fetch - processPackages [enkanetworkv2.py]: Downloading https://files.pythonhosted.org/packages/9a/e4/e41f2e3d932221aecf3e62e6131a715a58d2b6d3815c35bec7ff6ddf7f5f/enkanetworkv2.py-2.0.3.tar.gz
+[2024-04-07 23:53:14] WARNING root fetch - processPackages [enkanetworkv2.py]: Timeout reached during download
+[2024-04-07 23:53:14] INFO root fetch - processPackages [enkanetworkv2.py]: executing diffoscope
+[2024-04-07 23:53:14] INFO root fetch - processPackages [enkanetworkv2.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enkanetworkv2.py-2.0.2.tar.gz tmp/enkanetworkv2.py-2.0.3.tar.gz --markdown 20240407/e/enkanetworkv2.py/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2024-04-07 23:53:15] INFO root fetch - processPackages [enkanetworkv2.py]: Remove: archive file [/home/abi/fetcher/tmp/enkanetworkv2.py-2.0.2.tar.gz]
+[2024-04-07 23:53:15] INFO root fetch - processPackages [enkanetworkv2.py]: Remove: archive file [/home/abi/fetcher/tmp/enkanetworkv2.py-2.0.3.tar.gz]
+[2024-04-07 23:53:15] INFO root fetch - main [MainThread]: End processing [enkanetworkv2.py]: success
+[2024-04-07 23:53:15] INFO root fetch - main [MainThread]: Store serial: [22659601]
