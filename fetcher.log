@@ -12073,3 +12073,48 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:01:58] INFO root fetch - processPackages [ddb_single]: Remove: archive file [/home/abi/fetcher/tmp/ddb_single-0.4.9.tar.gz]
 [2024-04-07 15:01:58] INFO root fetch - main [MainThread]: End processing [ddb_single]: success
 [2024-04-07 15:01:58] INFO root fetch - main [MainThread]: Store serial: [22656317]
+[2024-04-07 15:04:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656317]
+[2024-04-07 15:04:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 15:04:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: profiling-decorator
+[2024-04-07 15:04:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: profiling-decorator
+[2024-04-07 15:04:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: GraphSpy
+[2024-04-07 15:04:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: musicscan
+[2024-04-07 15:04:07] INFO root fetch - processPackages [profiling-decorator]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-07 15:04:07] INFO root fetch - processPackages [profiling-decorator]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-07 15:04:07] INFO root fetch - processPackages [musicscan]: New version: [0.1.2] Old Version: [0.1]
+[2024-04-07 15:04:07] INFO root fetch - processPackages [GraphSpy]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-04-07 15:04:07] INFO root fetch - processPackages [profiling-decorator]: Downloading https://files.pythonhosted.org/packages/b6/50/f733c94845392f0c3646451218187080f32fd4181e66dfc5ab5a271a736a/profiling_decorator-0.0.1.tar.gz
+[2024-04-07 15:04:07] INFO root fetch - processPackages [profiling-decorator]: Downloading https://files.pythonhosted.org/packages/b6/50/f733c94845392f0c3646451218187080f32fd4181e66dfc5ab5a271a736a/profiling_decorator-0.0.1.tar.gz
+[2024-04-07 15:04:07] INFO root fetch - processPackages [GraphSpy]: Downloading https://files.pythonhosted.org/packages/0a/bd/9cbec9ab00c4ebf06c6d6fbd225d318f6a985f8dafdbc74ab9fde4a65ed7/GraphSpy-1.1.2.tar.gz
+[2024-04-07 15:04:07] INFO root fetch - processPackages [musicscan]: Downloading https://files.pythonhosted.org/packages/4b/5d/0fe513d849489589b96bf29dfcbbc1472117a5d69b83ab9d678f38d1b5b3/musicscan-0.1.tar.gz
+[2024-04-07 15:04:07] WARNING root fetch - processPackages [profiling-decorator]: Timeout reached during download
+[2024-04-07 15:04:07] WARNING root fetch - processPackages [profiling-decorator]: Timeout reached during download
+[2024-04-07 15:04:07] WARNING root fetch - processPackages [GraphSpy]: Timeout reached during download
+[2024-04-07 15:04:07] WARNING root fetch - processPackages [musicscan]: Timeout reached during download
+[2024-04-07 15:04:08] INFO root fetch - processPackages [profiling-decorator]: Downloading https://files.pythonhosted.org/packages/fa/9e/9a4443de96c05ae2d16f89466d063515d9a7861ea272641a6eb28787e0a8/profiling_decorator-0.0.2.tar.gz
+[2024-04-07 15:04:08] INFO root fetch - processPackages [profiling-decorator]: Downloading https://files.pythonhosted.org/packages/fa/9e/9a4443de96c05ae2d16f89466d063515d9a7861ea272641a6eb28787e0a8/profiling_decorator-0.0.2.tar.gz
+[2024-04-07 15:04:08] INFO root fetch - processPackages [GraphSpy]: Downloading https://files.pythonhosted.org/packages/c8/7d/e2372a1a52c7d6501baedc0257278bd988230ce91f183eb0343de080a0d7/GraphSpy-1.1.3.tar.gz
+[2024-04-07 15:04:08] INFO root fetch - processPackages [musicscan]: Downloading https://files.pythonhosted.org/packages/63/0c/b0a29747c10584fe98b028c186184213ca8cada2242ebd755ac7a5d2db24/musicscan-0.1.2.tar.gz
+[2024-04-07 15:04:08] WARNING root fetch - processPackages [profiling-decorator]: Timeout reached during download
+[2024-04-07 15:04:08] INFO root fetch - processPackages [profiling-decorator]: executing diffoscope
+[2024-04-07 15:04:08] INFO root fetch - processPackages [profiling-decorator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profiling_decorator-0.0.1.tar.gz tmp/profiling_decorator-0.0.2.tar.gz --markdown 20240407/p/profiling-decorator/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-07 15:04:08] WARNING root fetch - processPackages [profiling-decorator]: Timeout reached during download
+[2024-04-07 15:04:08] INFO root fetch - processPackages [profiling-decorator]: executing diffoscope
+[2024-04-07 15:04:08] INFO root fetch - processPackages [profiling-decorator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profiling_decorator-0.0.1.tar.gz tmp/profiling_decorator-0.0.2.tar.gz --markdown 20240407/p/profiling-decorator/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-07 15:04:08] WARNING root fetch - processPackages [GraphSpy]: Timeout reached during download
+[2024-04-07 15:04:08] INFO root fetch - processPackages [GraphSpy]: executing diffoscope
+[2024-04-07 15:04:08] INFO root fetch - processPackages [GraphSpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GraphSpy-1.1.2.tar.gz tmp/GraphSpy-1.1.3.tar.gz --markdown 20240407/G/GraphSpy/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2024-04-07 15:04:08] WARNING root fetch - processPackages [musicscan]: Timeout reached during download
+[2024-04-07 15:04:08] INFO root fetch - processPackages [musicscan]: executing diffoscope
+[2024-04-07 15:04:08] INFO root fetch - processPackages [musicscan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musicscan-0.1.tar.gz tmp/musicscan-0.1.2.tar.gz --markdown 20240407/m/musicscan/0.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-07 15:04:08] INFO root fetch - processPackages [profiling-decorator]: Remove: archive file [/home/abi/fetcher/tmp/profiling_decorator-0.0.1.tar.gz]
+[2024-04-07 15:04:08] INFO root fetch - processPackages [profiling-decorator]: Remove: archive file [/home/abi/fetcher/tmp/profiling_decorator-0.0.2.tar.gz]
+[2024-04-07 15:04:08] INFO root fetch - main [MainThread]: End processing [profiling-decorator]: success
+[2024-04-07 15:04:08] INFO root fetch - main [MainThread]: End processing [profiling-decorator]: success
+[2024-04-07 15:04:09] INFO root fetch - processPackages [musicscan]: Remove: archive file [/home/abi/fetcher/tmp/musicscan-0.1.tar.gz]
+[2024-04-07 15:04:09] INFO root fetch - processPackages [musicscan]: Remove: archive file [/home/abi/fetcher/tmp/musicscan-0.1.2.tar.gz]
+[2024-04-07 15:04:09] INFO root fetch - main [MainThread]: End processing [musicscan]: success
+[2024-04-07 15:04:09] INFO root fetch - processPackages [GraphSpy]: Remove: archive file [/home/abi/fetcher/tmp/GraphSpy-1.1.2.tar.gz]
+[2024-04-07 15:04:09] INFO root fetch - processPackages [GraphSpy]: Remove: archive file [/home/abi/fetcher/tmp/GraphSpy-1.1.3.tar.gz]
+[2024-04-07 15:04:09] INFO root fetch - main [MainThread]: End processing [GraphSpy]: success
+[2024-04-07 15:04:09] INFO root fetch - main [MainThread]: Store serial: [22656328]
