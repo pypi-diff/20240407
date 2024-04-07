@@ -10286,3 +10286,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 12:53:26] INFO root fetch - processPackages [stockdex]: Remove: archive file [/home/abi/fetcher/tmp/stockdex-0.3.9.tar.gz]
 [2024-04-07 12:53:26] INFO root fetch - main [MainThread]: End processing [stockdex]: success
 [2024-04-07 12:53:26] INFO root fetch - main [MainThread]: Store serial: [22655559]
+[2024-04-07 12:55:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655559]
+[2024-04-07 12:55:35] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 12:57:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655560]
+[2024-04-07 12:57:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 12:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kosmatau3d
+[2024-04-07 12:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: underactuated
+[2024-04-07 12:57:41] INFO root fetch - processPackages [kosmatau3d]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-07 12:57:41] INFO root fetch - processPackages [underactuated]: New version: [2024.4.7] Old Version: [2024.3.7]
+[2024-04-07 12:57:41] INFO root fetch - processPackages [kosmatau3d]: Downloading https://files.pythonhosted.org/packages/d4/f4/ab11e2468d9dcfc603bc93fdb419e71511498c215314ab443fefcd5d0d81/kosmatau3d-1.0.8.tar.gz
+[2024-04-07 12:57:41] INFO root fetch - processPackages [underactuated]: Downloading https://files.pythonhosted.org/packages/24/a2/2c7c58c9033db7d2f2100a4cb21a321fc897faf35df482ce84906513a46f/underactuated-2024.3.7.tar.gz
+[2024-04-07 12:57:41] WARNING root fetch - processPackages [kosmatau3d]: Skipping package: exceeds size limit 19010844>=10485760
+[2024-04-07 12:57:41] INFO root fetch - main [MainThread]: End processing [kosmatau3d] error
+[2024-04-07 12:57:41] WARNING root fetch - processPackages [underactuated]: Timeout reached during download
+[2024-04-07 12:57:42] INFO root fetch - processPackages [underactuated]: Downloading https://files.pythonhosted.org/packages/e9/69/e2c440d1524d4aa6ee285ff4d731759dfa2efd19339b8b8e955777a328a7/underactuated-2024.4.7.tar.gz
+[2024-04-07 12:57:42] WARNING root fetch - processPackages [underactuated]: Timeout reached during download
+[2024-04-07 12:57:42] INFO root fetch - processPackages [underactuated]: executing diffoscope
+[2024-04-07 12:57:42] INFO root fetch - processPackages [underactuated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/underactuated-2024.3.7.tar.gz tmp/underactuated-2024.4.7.tar.gz --markdown 20240407/u/underactuated/2024.3.7-2024.4.7/diff.md --exclude *.pyd
+[2024-04-07 12:57:43] INFO root fetch - processPackages [underactuated]: Remove: archive file [/home/abi/fetcher/tmp/underactuated-2024.3.7.tar.gz]
+[2024-04-07 12:57:43] INFO root fetch - processPackages [underactuated]: Remove: archive file [/home/abi/fetcher/tmp/underactuated-2024.4.7.tar.gz]
+[2024-04-07 12:57:43] INFO root fetch - main [MainThread]: End processing [underactuated]: success
+[2024-04-07 12:57:43] INFO root fetch - main [MainThread]: Store serial: [22655567]
