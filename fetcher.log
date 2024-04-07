@@ -12059,3 +12059,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:59:49] INFO root fetch - processPackages [NoobStuffs]: Remove: archive file [/home/abi/fetcher/tmp/noobstuffs-2.0.1.tar.gz]
 [2024-04-07 14:59:49] INFO root fetch - main [MainThread]: End processing [NoobStuffs]: success
 [2024-04-07 14:59:49] INFO root fetch - main [MainThread]: Store serial: [22656314]
+[2024-04-07 15:01:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656314]
+[2024-04-07 15:01:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 15:01:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ddb_single
+[2024-04-07 15:01:57] INFO root fetch - processPackages [ddb_single]: New version: [0.4.9] Old Version: [0.4.7]
+[2024-04-07 15:01:57] INFO root fetch - processPackages [ddb_single]: Downloading https://files.pythonhosted.org/packages/d1/de/8899823c20b665e6e029ae3b11cc487dca030a78e3ac942f8d7c6715861c/ddb_single-0.4.7.zip
+[2024-04-07 15:01:58] WARNING root fetch - processPackages [ddb_single]: Timeout reached during download
+[2024-04-07 15:01:58] INFO root fetch - processPackages [ddb_single]: Downloading https://files.pythonhosted.org/packages/91/1a/d9f18b8ebb12afc042122bfdf6e24c6316aa24f23dccee58d1b9a7d15cb3/ddb_single-0.4.9.tar.gz
+[2024-04-07 15:01:58] WARNING root fetch - processPackages [ddb_single]: Timeout reached during download
+[2024-04-07 15:01:58] INFO root fetch - processPackages [ddb_single]: executing diffoscope
+[2024-04-07 15:01:58] INFO root fetch - processPackages [ddb_single]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddb_single-0.4.7.zip tmp/ddb_single-0.4.9.tar.gz --markdown 20240407/d/ddb_single/0.4.7-0.4.9/diff.md --exclude *.pyd
+[2024-04-07 15:01:58] INFO root fetch - processPackages [ddb_single]: Remove: archive file [/home/abi/fetcher/tmp/ddb_single-0.4.7.zip]
+[2024-04-07 15:01:58] INFO root fetch - processPackages [ddb_single]: Remove: archive file [/home/abi/fetcher/tmp/ddb_single-0.4.9.tar.gz]
+[2024-04-07 15:01:58] INFO root fetch - main [MainThread]: End processing [ddb_single]: success
+[2024-04-07 15:01:58] INFO root fetch - main [MainThread]: Store serial: [22656317]
