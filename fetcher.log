@@ -19801,3 +19801,44 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:26:02] WARNING root fetch - processPackages [py4phi]: Skipping, unable to determine old version
 [2024-04-07 22:26:02] INFO root fetch - main [MainThread]: End processing [py4phi] error
 [2024-04-07 22:26:02] INFO root fetch - main [MainThread]: Store serial: [22659076]
+[2024-04-07 22:28:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659076]
+[2024-04-07 22:28:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 22:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: meter-digits-recognizer
+[2024-04-07 22:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unicoder
+[2024-04-07 22:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: swiftest
+[2024-04-07 22:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xrenner
+[2024-04-07 22:28:12] INFO root fetch - processPackages [meter-digits-recognizer]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-07 22:28:12] INFO root fetch - processPackages [meter-digits-recognizer]: Downloading https://files.pythonhosted.org/packages/c2/76/6af611b8baa3717891d3313bc5162cccea51a399657cb4c9ec40903dcc58/meter-digits-recognizer-0.2.1.tar.gz
+[2024-04-07 22:28:12] INFO root fetch - processPackages [unicoder]: New version: [1.2.3147] Old Version: [1.1.1017]
+[2024-04-07 22:28:12] INFO root fetch - processPackages [xrenner]: New version: [2.2.1.1] Old Version: [2.2.1.0]
+[2024-04-07 22:28:12] INFO root fetch - processPackages [unicoder]: Downloading https://files.pythonhosted.org/packages/3f/f9/05aa2abe5f94f7d77da041480a3c8238697e0e001077398533608fcf028e/unicoder-1.1.1017.tar.gz
+[2024-04-07 22:28:12] INFO root fetch - processPackages [xrenner]: Downloading https://files.pythonhosted.org/packages/58/8c/28affd41413d100488c675386db07b3e1c4ce291f239a4f61fa2dd6b9075/xrenner-2.2.1.0.tar.gz
+[2024-04-07 22:28:12] INFO root fetch - processPackages [swiftest]: New version: [2024.4.0] Old Version: [2024.3.4]
+[2024-04-07 22:28:12] WARNING root fetch - processPackages [meter-digits-recognizer]: Timeout reached during download
+[2024-04-07 22:28:12] WARNING root fetch - processPackages [xrenner]: Skipping package: exceeds size limit 19525637>=10485760
+[2024-04-07 22:28:12] INFO root fetch - main [MainThread]: End processing [xrenner] error
+[2024-04-07 22:28:12] INFO root fetch - processPackages [swiftest]: Downloading https://files.pythonhosted.org/packages/1e/45/32d04de26c622a266d9268d778824c1fe4f46ff9cc23803e91775e92cd51/swiftest-2024.3.4.tar.gz
+[2024-04-07 22:28:12] INFO root fetch - processPackages [meter-digits-recognizer]: Downloading https://files.pythonhosted.org/packages/ad/40/198bba236698148e65a7b0b99a452bdd00b0c9a19c417c88667088c323a8/meter-digits-recognizer-0.2.2.tar.gz
+[2024-04-07 22:28:13] WARNING root fetch - processPackages [unicoder]: Timeout reached during download
+[2024-04-07 22:28:13] WARNING root fetch - processPackages [swiftest]: Timeout reached during download
+[2024-04-07 22:28:13] WARNING root fetch - processPackages [meter-digits-recognizer]: Timeout reached during download
+[2024-04-07 22:28:13] INFO root fetch - processPackages [meter-digits-recognizer]: executing diffoscope
+[2024-04-07 22:28:13] INFO root fetch - processPackages [meter-digits-recognizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meter-digits-recognizer-0.2.1.tar.gz tmp/meter-digits-recognizer-0.2.2.tar.gz --markdown 20240407/m/meter-digits-recognizer/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2024-04-07 22:28:13] INFO root fetch - processPackages [unicoder]: Downloading https://files.pythonhosted.org/packages/62/80/e9afbef4ce37bd2d529e4774f9ca8c67b311be5008bcf2c5b78ad3a7d2dc/unicoder-1.2.3147.tar.gz
+[2024-04-07 22:28:13] WARNING root fetch - processPackages [unicoder]: Timeout reached during download
+[2024-04-07 22:28:13] INFO root fetch - processPackages [unicoder]: executing diffoscope
+[2024-04-07 22:28:13] INFO root fetch - processPackages [unicoder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unicoder-1.1.1017.tar.gz tmp/unicoder-1.2.3147.tar.gz --markdown 20240407/u/unicoder/1.1.1017-1.2.3147/diff.md --exclude *.pyd
+[2024-04-07 22:28:13] INFO root fetch - processPackages [swiftest]: Downloading https://files.pythonhosted.org/packages/da/ba/e0bbdffe8df5b4d27385f41720871f2c2d4c5aa7d13501cae5bddd353866/swiftest-2024.4.0-cp312-cp312-macosx_12_0_x86_64.whl
+[2024-04-07 22:28:13] INFO root fetch - processPackages [meter-digits-recognizer]: Remove: archive file [/home/abi/fetcher/tmp/meter-digits-recognizer-0.2.1.tar.gz]
+[2024-04-07 22:28:13] INFO root fetch - processPackages [meter-digits-recognizer]: Remove: archive file [/home/abi/fetcher/tmp/meter-digits-recognizer-0.2.2.tar.gz]
+[2024-04-07 22:28:13] INFO root fetch - main [MainThread]: End processing [meter-digits-recognizer]: success
+[2024-04-07 22:28:13] INFO root fetch - processPackages [unicoder]: Remove: archive file [/home/abi/fetcher/tmp/unicoder-1.1.1017.tar.gz]
+[2024-04-07 22:28:13] INFO root fetch - processPackages [unicoder]: Remove: archive file [/home/abi/fetcher/tmp/unicoder-1.2.3147.tar.gz]
+[2024-04-07 22:28:13] INFO root fetch - main [MainThread]: End processing [unicoder]: success
+[2024-04-07 22:28:15] WARNING root fetch - processPackages [swiftest]: Timeout reached during download
+[2024-04-07 22:28:15] INFO root fetch - processPackages [swiftest]: executing diffoscope
+[2024-04-07 22:28:15] INFO root fetch - processPackages [swiftest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swiftest-2024.3.4.tar.gz tmp/swiftest-2024.4.0-cp312-cp312-macosx_12_0_x86_64.whl.zip --markdown 20240407/s/swiftest/2024.3.4-2024.4.0/diff.md --exclude *.pyd
+[2024-04-07 22:28:15] INFO root fetch - processPackages [swiftest]: Remove: archive file [/home/abi/fetcher/tmp/swiftest-2024.3.4.tar.gz]
+[2024-04-07 22:28:15] INFO root fetch - processPackages [swiftest]: Remove: archive file [/home/abi/fetcher/tmp/swiftest-2024.4.0-cp312-cp312-macosx_12_0_x86_64.whl.zip]
+[2024-04-07 22:28:15] INFO root fetch - main [MainThread]: End processing [swiftest]: success
+[2024-04-07 22:28:15] INFO root fetch - main [MainThread]: Store serial: [22659094]
