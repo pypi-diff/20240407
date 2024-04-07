@@ -20855,3 +20855,47 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:42:17] INFO root fetch - processPackages [jafgen]: Remove: archive file [/home/abi/fetcher/tmp/jafgen-0.4.9.tar.gz]
 [2024-04-07 23:42:17] INFO root fetch - main [MainThread]: End processing [jafgen]: success
 [2024-04-07 23:42:17] INFO root fetch - main [MainThread]: Store serial: [22659553]
+[2024-04-07 23:44:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659553]
+[2024-04-07 23:44:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 23:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: highcharts-gantt
+[2024-04-07 23:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ig-trading-lib
+[2024-04-07 23:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: celi-framework
+[2024-04-07 23:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aisploit
+[2024-04-07 23:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dofusdude
+[2024-04-07 23:44:26] WARNING root fetch - processPackages [celi-framework]: Skipping, unable to determine old version
+[2024-04-07 23:44:26] INFO root fetch - main [MainThread]: End processing [celi-framework] error
+[2024-04-07 23:44:26] INFO root fetch - processPackages [aisploit]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 23:44:26] INFO root fetch - processPackages [highcharts-gantt]: New version: [1.7.0] Old Version: [1.5.0]
+[2024-04-07 23:44:26] INFO root fetch - processPackages [dofusdude]: New version: [0.9.0] Old Version: [0.8.3]
+[2024-04-07 23:44:26] INFO root fetch - processPackages [aisploit]: Downloading https://files.pythonhosted.org/packages/1d/74/57334bbb6cdd1f5fb94ed46c97de575ed8c0ab6a66b52cc953fe6946746c/aisploit-0.0.8.tar.gz
+[2024-04-07 23:44:26] WARNING root fetch - processPackages [aisploit]: Timeout reached during download
+[2024-04-07 23:44:26] INFO root fetch - processPackages [highcharts-gantt]: Downloading https://files.pythonhosted.org/packages/19/cd/b9a43cd7aee8c0c86480f1a0aa67f3aa4ac31950423b6cdb9a090a0a4bb2/highcharts_gantt-1.5.0.tar.gz
+[2024-04-07 23:44:26] INFO root fetch - processPackages [dofusdude]: Downloading https://files.pythonhosted.org/packages/d8/79/2d56c77f0730c9a6411bdb27ff999e0cfdef5f0884741f39643c539f7be5/dofusdude-0.8.3.tar.gz
+[2024-04-07 23:44:26] INFO root fetch - processPackages [ig-trading-lib]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-07 23:44:26] WARNING root fetch - processPackages [highcharts-gantt]: Skipping package: exceeds size limit 11555356>=10485760
+[2024-04-07 23:44:26] INFO root fetch - main [MainThread]: End processing [highcharts-gantt] error
+[2024-04-07 23:44:27] WARNING root fetch - processPackages [dofusdude]: Timeout reached during download
+[2024-04-07 23:44:27] INFO root fetch - processPackages [aisploit]: Downloading https://files.pythonhosted.org/packages/79/1a/32067b96fbd51e172e74fa8134d42b6721bd699ae2c9f8e5927b09de2401/aisploit-0.0.9.tar.gz
+[2024-04-07 23:44:27] INFO root fetch - processPackages [ig-trading-lib]: Downloading https://files.pythonhosted.org/packages/6c/48/8f13e4cd8f2e009722d2c66dc6a177958fe74b90f01ac27d717b24e73a7e/ig_trading_lib-0.2.0.tar.gz
+[2024-04-07 23:44:27] WARNING root fetch - processPackages [aisploit]: Timeout reached during download
+[2024-04-07 23:44:27] INFO root fetch - processPackages [aisploit]: executing diffoscope
+[2024-04-07 23:44:27] INFO root fetch - processPackages [aisploit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aisploit-0.0.8.tar.gz tmp/aisploit-0.0.9.tar.gz --markdown 20240407/a/aisploit/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 23:44:27] INFO root fetch - processPackages [dofusdude]: Downloading https://files.pythonhosted.org/packages/52/50/bbdaadd0d58debf96a014b8dcc33bdc963ddf225a5246f21e05de96c7c94/dofusdude-0.9.0.tar.gz
+[2024-04-07 23:44:27] WARNING root fetch - processPackages [ig-trading-lib]: Timeout reached during download
+[2024-04-07 23:44:27] WARNING root fetch - processPackages [dofusdude]: Timeout reached during download
+[2024-04-07 23:44:27] INFO root fetch - processPackages [dofusdude]: executing diffoscope
+[2024-04-07 23:44:27] INFO root fetch - processPackages [dofusdude]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dofusdude-0.8.3.tar.gz tmp/dofusdude-0.9.0.tar.gz --markdown 20240407/d/dofusdude/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2024-04-07 23:44:27] INFO root fetch - processPackages [ig-trading-lib]: Downloading https://files.pythonhosted.org/packages/3d/41/3558053eaf7d856177d052dd9eafa2f751da4dd4fba8e4fbc8d0d4def1f8/ig_trading_lib-0.3.0.tar.gz
+[2024-04-07 23:44:27] WARNING root fetch - processPackages [ig-trading-lib]: Timeout reached during download
+[2024-04-07 23:44:27] INFO root fetch - processPackages [ig-trading-lib]: executing diffoscope
+[2024-04-07 23:44:27] INFO root fetch - processPackages [ig-trading-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ig_trading_lib-0.2.0.tar.gz tmp/ig_trading_lib-0.3.0.tar.gz --markdown 20240407/i/ig-trading-lib/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2024-04-07 23:44:27] INFO root fetch - processPackages [aisploit]: Remove: archive file [/home/abi/fetcher/tmp/aisploit-0.0.8.tar.gz]
+[2024-04-07 23:44:27] INFO root fetch - processPackages [aisploit]: Remove: archive file [/home/abi/fetcher/tmp/aisploit-0.0.9.tar.gz]
+[2024-04-07 23:44:27] INFO root fetch - main [MainThread]: End processing [aisploit]: success
+[2024-04-07 23:44:28] INFO root fetch - processPackages [ig-trading-lib]: Remove: archive file [/home/abi/fetcher/tmp/ig_trading_lib-0.2.0.tar.gz]
+[2024-04-07 23:44:28] INFO root fetch - processPackages [ig-trading-lib]: Remove: archive file [/home/abi/fetcher/tmp/ig_trading_lib-0.3.0.tar.gz]
+[2024-04-07 23:44:28] INFO root fetch - main [MainThread]: End processing [ig-trading-lib]: success
+[2024-04-07 23:44:29] INFO root fetch - processPackages [dofusdude]: Remove: archive file [/home/abi/fetcher/tmp/dofusdude-0.8.3.tar.gz]
+[2024-04-07 23:44:29] INFO root fetch - processPackages [dofusdude]: Remove: archive file [/home/abi/fetcher/tmp/dofusdude-0.9.0.tar.gz]
+[2024-04-07 23:44:29] INFO root fetch - main [MainThread]: End processing [dofusdude]: success
+[2024-04-07 23:44:29] INFO root fetch - main [MainThread]: Store serial: [22659568]
