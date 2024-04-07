@@ -20673,3 +20673,31 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:29:09] INFO root fetch - processPackages [NREL-disco]: Remove: archive file [/home/abi/fetcher/tmp/NREL-disco-0.5.1.tar.gz]
 [2024-04-07 23:29:09] INFO root fetch - main [MainThread]: End processing [NREL-disco]: success
 [2024-04-07 23:29:09] INFO root fetch - main [MainThread]: Store serial: [22659418]
+[2024-04-07 23:31:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659418]
+[2024-04-07 23:31:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 23:31:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: open-aoi
+[2024-04-07 23:31:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: draggable-line-chart
+[2024-04-07 23:31:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: owmpy
+[2024-04-07 23:31:18] WARNING root fetch - processPackages [draggable-line-chart]: Skipping, unable to determine old version
+[2024-04-07 23:31:18] INFO root fetch - processPackages [open-aoi]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 23:31:18] INFO root fetch - main [MainThread]: End processing [draggable-line-chart] error
+[2024-04-07 23:31:18] INFO root fetch - processPackages [open-aoi]: Downloading https://files.pythonhosted.org/packages/d2/cb/dd19e4630fb354010db3e6215502966625550ff7a5acbdbcedf536a6cd4d/open_aoi-0.0.8.tar.gz
+[2024-04-07 23:31:18] INFO root fetch - processPackages [owmpy]: New version: [1.0.0] Old Version: [0.4.1]
+[2024-04-07 23:31:18] WARNING root fetch - processPackages [open-aoi]: Timeout reached during download
+[2024-04-07 23:31:18] INFO root fetch - processPackages [owmpy]: Downloading https://files.pythonhosted.org/packages/1a/dc/28f7b288166ede800fc6c31575baa19e5f7c5567d0c4df72b6fd34fc7dd8/owmpy-0.4.1.tar.gz
+[2024-04-07 23:31:18] INFO root fetch - processPackages [open-aoi]: Downloading https://files.pythonhosted.org/packages/2e/0c/2869daa3fcce6ef21522f04169cfdef7edf737a59d03f86a95b6594d19b3/open_aoi-0.0.9.tar.gz
+[2024-04-07 23:31:18] WARNING root fetch - processPackages [owmpy]: Timeout reached during download
+[2024-04-07 23:31:18] WARNING root fetch - processPackages [open-aoi]: Timeout reached during download
+[2024-04-07 23:31:18] INFO root fetch - processPackages [open-aoi]: executing diffoscope
+[2024-04-07 23:31:18] INFO root fetch - processPackages [open-aoi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_aoi-0.0.8.tar.gz tmp/open_aoi-0.0.9.tar.gz --markdown 20240407/o/open-aoi/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 23:31:19] INFO root fetch - processPackages [owmpy]: Downloading https://files.pythonhosted.org/packages/5d/72/515d493085530bc4b48ee88d8b5d2ae54ca4cc09ea7d6a6df62351c8bebe/owmpy-1.0.0.tar.gz
+[2024-04-07 23:31:19] WARNING root fetch - processPackages [owmpy]: Timeout reached during download
+[2024-04-07 23:31:19] INFO root fetch - processPackages [owmpy]: executing diffoscope
+[2024-04-07 23:31:19] INFO root fetch - processPackages [owmpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/owmpy-0.4.1.tar.gz tmp/owmpy-1.0.0.tar.gz --markdown 20240407/o/owmpy/0.4.1-1.0.0/diff.md --exclude *.pyd
+[2024-04-07 23:31:19] INFO root fetch - processPackages [open-aoi]: Remove: archive file [/home/abi/fetcher/tmp/open_aoi-0.0.8.tar.gz]
+[2024-04-07 23:31:19] INFO root fetch - processPackages [open-aoi]: Remove: archive file [/home/abi/fetcher/tmp/open_aoi-0.0.9.tar.gz]
+[2024-04-07 23:31:19] INFO root fetch - main [MainThread]: End processing [open-aoi]: success
+[2024-04-07 23:31:19] INFO root fetch - processPackages [owmpy]: Remove: archive file [/home/abi/fetcher/tmp/owmpy-0.4.1.tar.gz]
+[2024-04-07 23:31:19] INFO root fetch - processPackages [owmpy]: Remove: archive file [/home/abi/fetcher/tmp/owmpy-1.0.0.tar.gz]
+[2024-04-07 23:31:19] INFO root fetch - main [MainThread]: End processing [owmpy]: success
+[2024-04-07 23:31:19] INFO root fetch - main [MainThread]: Store serial: [22659461]
