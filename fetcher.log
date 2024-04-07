@@ -2953,3 +2953,17 @@
 [2024-04-07 04:25:27] INFO root fetch - processPackages [pyquocca]: Remove: archive file [/home/abi/fetcher/tmp/pyquocca-0.0.9.tar.gz]
 [2024-04-07 04:25:27] INFO root fetch - main [MainThread]: End processing [pyquocca]: success
 [2024-04-07 04:25:27] INFO root fetch - main [MainThread]: Store serial: [22652876]
+[2024-04-07 04:27:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652876]
+[2024-04-07 04:27:35] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 04:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GABRIEL-ratings
+[2024-04-07 04:27:35] INFO root fetch - processPackages [GABRIEL-ratings]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-07 04:27:35] INFO root fetch - processPackages [GABRIEL-ratings]: Downloading https://files.pythonhosted.org/packages/8b/63/f5046c0d0acd1e3708472839764c925ddd41a7b7a2b0214bb7fc56f94ea5/GABRIEL-ratings-0.1.3.tar.gz
+[2024-04-07 04:27:35] WARNING root fetch - processPackages [GABRIEL-ratings]: Timeout reached during download
+[2024-04-07 04:27:35] INFO root fetch - processPackages [GABRIEL-ratings]: Downloading https://files.pythonhosted.org/packages/16/6a/206322ec47884ef7f2983d789e430e8525e1a2bc4435a56d3d3ed6591ac0/GABRIEL-ratings-0.1.4.tar.gz
+[2024-04-07 04:27:35] WARNING root fetch - processPackages [GABRIEL-ratings]: Timeout reached during download
+[2024-04-07 04:27:35] INFO root fetch - processPackages [GABRIEL-ratings]: executing diffoscope
+[2024-04-07 04:27:35] INFO root fetch - processPackages [GABRIEL-ratings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GABRIEL-ratings-0.1.3.tar.gz tmp/GABRIEL-ratings-0.1.4.tar.gz --markdown 20240407/G/GABRIEL-ratings/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2024-04-07 04:27:36] INFO root fetch - processPackages [GABRIEL-ratings]: Remove: archive file [/home/abi/fetcher/tmp/GABRIEL-ratings-0.1.3.tar.gz]
+[2024-04-07 04:27:36] INFO root fetch - processPackages [GABRIEL-ratings]: Remove: archive file [/home/abi/fetcher/tmp/GABRIEL-ratings-0.1.4.tar.gz]
+[2024-04-07 04:27:36] INFO root fetch - main [MainThread]: End processing [GABRIEL-ratings]: success
+[2024-04-07 04:27:36] INFO root fetch - main [MainThread]: Store serial: [22652888]
