@@ -12867,3 +12867,53 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:50:03] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.0.6.tar.gz]
 [2024-04-07 15:50:03] INFO root fetch - main [MainThread]: End processing [sourcesage]: success
 [2024-04-07 15:50:03] INFO root fetch - main [MainThread]: Store serial: [22656580]
+[2024-04-07 15:52:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656580]
+[2024-04-07 15:52:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 15:52:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: solTg
+[2024-04-07 15:52:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dynamicpy
+[2024-04-07 15:52:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sourcesage
+[2024-04-07 15:52:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ipatok
+[2024-04-07 15:52:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sourcesage
+[2024-04-07 15:52:13] INFO root fetch - processPackages [sourcesage]: New version: [4.0.6] Old Version: [4.0.5]
+[2024-04-07 15:52:13] INFO root fetch - processPackages [sourcesage]: New version: [4.0.6] Old Version: [4.0.5]
+[2024-04-07 15:52:13] INFO root fetch - processPackages [solTg]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-07 15:52:13] INFO root fetch - processPackages [ipatok]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-07 15:52:13] INFO root fetch - processPackages [dynamicpy]: New version: [1.3.0] Old Version: [1.2.2]
+[2024-04-07 15:52:13] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/e3/53/6ca64d80eca6e8ecaddaff2602f2f43daf7c67d4ab450750755bb1c17d8b/sourcesage-4.0.5.tar.gz
+[2024-04-07 15:52:13] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/e3/53/6ca64d80eca6e8ecaddaff2602f2f43daf7c67d4ab450750755bb1c17d8b/sourcesage-4.0.5.tar.gz
+[2024-04-07 15:52:13] INFO root fetch - processPackages [solTg]: Downloading https://files.pythonhosted.org/packages/20/3b/dec9003fe12b1fb37eed042d81d787014929140b869c6868d896614ca3de/solTg-0.1.4.tar.gz
+[2024-04-07 15:52:13] WARNING root fetch - processPackages [solTg]: Skipping package: exceeds size limit 22789105>=10485760
+[2024-04-07 15:52:13] INFO root fetch - main [MainThread]: End processing [solTg] error
+[2024-04-07 15:52:13] WARNING root fetch - processPackages [sourcesage]: Timeout reached during download
+[2024-04-07 15:52:13] WARNING root fetch - processPackages [sourcesage]: Timeout reached during download
+[2024-04-07 15:52:13] INFO root fetch - processPackages [ipatok]: Downloading https://files.pythonhosted.org/packages/bb/57/44e1b3c7c85ac3eaec51a532179b4b09604867e6318dd94f3c1d5447136a/ipatok-0.4.1.tar.gz
+[2024-04-07 15:52:13] INFO root fetch - processPackages [dynamicpy]: Downloading https://files.pythonhosted.org/packages/24/8a/b4262c11d866a1f26337ca46d388200cf50af0ba82b71bb1214ef04adb9f/dynamicpy-1.2.2.tar.gz
+[2024-04-07 15:52:13] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/58/f3/a044084a1e0a4efcf80bc520551dcc362b7728cdb5bb3ab784e1db1e79c4/sourcesage-4.0.6.tar.gz
+[2024-04-07 15:52:13] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/58/f3/a044084a1e0a4efcf80bc520551dcc362b7728cdb5bb3ab784e1db1e79c4/sourcesage-4.0.6.tar.gz
+[2024-04-07 15:52:13] WARNING root fetch - processPackages [sourcesage]: Timeout reached during download
+[2024-04-07 15:52:13] INFO root fetch - processPackages [sourcesage]: executing diffoscope
+[2024-04-07 15:52:13] INFO root fetch - processPackages [sourcesage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sourcesage-4.0.5.tar.gz tmp/sourcesage-4.0.6.tar.gz --markdown 20240407/s/sourcesage/4.0.5-4.0.6/diff.md --exclude *.pyd
+[2024-04-07 15:52:14] WARNING root fetch - processPackages [sourcesage]: Timeout reached during download
+[2024-04-07 15:52:14] INFO root fetch - processPackages [sourcesage]: executing diffoscope
+[2024-04-07 15:52:14] INFO root fetch - processPackages [sourcesage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sourcesage-4.0.5.tar.gz tmp/sourcesage-4.0.6.tar.gz --markdown 20240407/s/sourcesage/4.0.5-4.0.6/diff.md --exclude *.pyd
+[2024-04-07 15:52:14] WARNING root fetch - processPackages [ipatok]: Timeout reached during download
+[2024-04-07 15:52:14] WARNING root fetch - processPackages [dynamicpy]: Timeout reached during download
+[2024-04-07 15:52:14] INFO root fetch - processPackages [ipatok]: Downloading https://files.pythonhosted.org/packages/9d/21/d4b74ab75562dbf06a455070965b424c216f2c7de754b2058aa51e487665/ipatok-0.4.2.tar.gz
+[2024-04-07 15:52:14] INFO root fetch - processPackages [dynamicpy]: Downloading https://files.pythonhosted.org/packages/94/7b/219f8d76ce005e68a0951c89c8a9fda63eaa244b2cca2d177a797b35c9f4/dynamicpy-1.3.0.tar.gz
+[2024-04-07 15:52:14] WARNING root fetch - processPackages [ipatok]: Timeout reached during download
+[2024-04-07 15:52:14] INFO root fetch - processPackages [ipatok]: executing diffoscope
+[2024-04-07 15:52:14] INFO root fetch - processPackages [ipatok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipatok-0.4.1.tar.gz tmp/ipatok-0.4.2.tar.gz --markdown 20240407/i/ipatok/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2024-04-07 15:52:14] WARNING root fetch - processPackages [dynamicpy]: Timeout reached during download
+[2024-04-07 15:52:14] INFO root fetch - processPackages [dynamicpy]: executing diffoscope
+[2024-04-07 15:52:14] INFO root fetch - processPackages [dynamicpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dynamicpy-1.2.2.tar.gz tmp/dynamicpy-1.3.0.tar.gz --markdown 20240407/d/dynamicpy/1.2.2-1.3.0/diff.md --exclude *.pyd
+[2024-04-07 15:52:14] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.0.5.tar.gz]
+[2024-04-07 15:52:14] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.0.6.tar.gz]
+[2024-04-07 15:52:14] INFO root fetch - main [MainThread]: End processing [sourcesage]: success
+[2024-04-07 15:52:14] INFO root fetch - main [MainThread]: End processing [sourcesage]: success
+[2024-04-07 15:52:14] INFO root fetch - processPackages [ipatok]: Remove: archive file [/home/abi/fetcher/tmp/ipatok-0.4.1.tar.gz]
+[2024-04-07 15:52:14] INFO root fetch - processPackages [ipatok]: Remove: archive file [/home/abi/fetcher/tmp/ipatok-0.4.2.tar.gz]
+[2024-04-07 15:52:14] INFO root fetch - main [MainThread]: End processing [ipatok]: success
+[2024-04-07 15:52:14] INFO root fetch - processPackages [dynamicpy]: Remove: archive file [/home/abi/fetcher/tmp/dynamicpy-1.2.2.tar.gz]
+[2024-04-07 15:52:14] INFO root fetch - processPackages [dynamicpy]: Remove: archive file [/home/abi/fetcher/tmp/dynamicpy-1.3.0.tar.gz]
+[2024-04-07 15:52:14] INFO root fetch - main [MainThread]: End processing [dynamicpy]: success
+[2024-04-07 15:52:14] INFO root fetch - main [MainThread]: Store serial: [22656595]
