@@ -19954,3 +19954,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:34:50] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.9.tar.gz]
 [2024-04-07 22:34:50] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-04-07 22:34:50] INFO root fetch - main [MainThread]: Store serial: [22659147]
+[2024-04-07 22:36:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659147]
+[2024-04-07 22:36:59] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 22:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: feynmodel
+[2024-04-07 22:36:59] INFO root fetch - processPackages [feynmodel]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-07 22:36:59] INFO root fetch - processPackages [feynmodel]: Downloading https://files.pythonhosted.org/packages/e2/79/351998cc4c5ff2d716b018a8d19259b01ca7f339bc93dbd0a13e4890ed5f/feynmodel-0.0.5.tar.gz
+[2024-04-07 22:36:59] WARNING root fetch - processPackages [feynmodel]: Timeout reached during download
+[2024-04-07 22:36:59] INFO root fetch - processPackages [feynmodel]: Downloading https://files.pythonhosted.org/packages/12/cc/f819fd92265439d6e7eae2ff7110f00a9f58183b835e5ea8f7f33fcda3fd/feynmodel-0.0.6.tar.gz
+[2024-04-07 22:37:00] WARNING root fetch - processPackages [feynmodel]: Timeout reached during download
+[2024-04-07 22:37:00] INFO root fetch - processPackages [feynmodel]: executing diffoscope
+[2024-04-07 22:37:00] INFO root fetch - processPackages [feynmodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feynmodel-0.0.5.tar.gz tmp/feynmodel-0.0.6.tar.gz --markdown 20240407/f/feynmodel/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-07 22:37:00] INFO root fetch - processPackages [feynmodel]: Remove: archive file [/home/abi/fetcher/tmp/feynmodel-0.0.5.tar.gz]
+[2024-04-07 22:37:00] INFO root fetch - processPackages [feynmodel]: Remove: archive file [/home/abi/fetcher/tmp/feynmodel-0.0.6.tar.gz]
+[2024-04-07 22:37:00] INFO root fetch - main [MainThread]: End processing [feynmodel]: success
+[2024-04-07 22:37:00] INFO root fetch - main [MainThread]: Store serial: [22659150]
