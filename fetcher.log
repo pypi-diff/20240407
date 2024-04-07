@@ -6317,3 +6317,22 @@
 [2024-04-07 08:22:39] INFO root fetch - processPackages [xiaoranli]: Remove: archive file [/home/abi/fetcher/tmp/xiaoranli-0.7.8-py3-none-any.whl.zip]
 [2024-04-07 08:22:39] INFO root fetch - main [MainThread]: End processing [xiaoranli]: success
 [2024-04-07 08:22:39] INFO root fetch - main [MainThread]: Store serial: [22653990]
+[2024-04-07 08:24:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653990]
+[2024-04-07 08:24:49] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 08:26:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653990]
+[2024-04-07 08:26:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 08:26:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aniportrait
+[2024-04-07 08:26:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: message-local
+[2024-04-07 08:26:55] INFO root fetch - processPackages [message-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 08:26:55] WARNING root fetch - processPackages [aniportrait]: Skipping, unable to determine old version
+[2024-04-07 08:26:55] INFO root fetch - main [MainThread]: End processing [aniportrait] error
+[2024-04-07 08:26:55] INFO root fetch - processPackages [message-local]: Downloading https://files.pythonhosted.org/packages/58/98/6002a91d9f0eb23b635ecf892333a787e13c1e810b92090bc53584aa2f18/message-local-0.0.98.tar.gz
+[2024-04-07 08:26:55] WARNING root fetch - processPackages [message-local]: Timeout reached during download
+[2024-04-07 08:26:55] INFO root fetch - processPackages [message-local]: Downloading https://files.pythonhosted.org/packages/78/17/d149670c7821186afe25a7b74020f68bd8db48497b170965d75952fbe2d8/message-local-0.0.99.tar.gz
+[2024-04-07 08:26:55] WARNING root fetch - processPackages [message-local]: Timeout reached during download
+[2024-04-07 08:26:55] INFO root fetch - processPackages [message-local]: executing diffoscope
+[2024-04-07 08:26:55] INFO root fetch - processPackages [message-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/message-local-0.0.98.tar.gz tmp/message-local-0.0.99.tar.gz --markdown 20240407/m/message-local/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 08:26:56] INFO root fetch - processPackages [message-local]: Remove: archive file [/home/abi/fetcher/tmp/message-local-0.0.98.tar.gz]
+[2024-04-07 08:26:56] INFO root fetch - processPackages [message-local]: Remove: archive file [/home/abi/fetcher/tmp/message-local-0.0.99.tar.gz]
+[2024-04-07 08:26:56] INFO root fetch - main [MainThread]: End processing [message-local]: success
+[2024-04-07 08:26:56] INFO root fetch - main [MainThread]: Store serial: [22653997]
