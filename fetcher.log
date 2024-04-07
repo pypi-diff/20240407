@@ -2148,3 +2148,31 @@
 [2024-04-07 03:24:26] INFO root fetch - processPackages [runpodinfra]: Remove: archive file [/home/abi/fetcher/tmp/runpodinfra-1.2.7.tar.gz]
 [2024-04-07 03:24:26] INFO root fetch - main [MainThread]: End processing [runpodinfra]: success
 [2024-04-07 03:24:26] INFO root fetch - main [MainThread]: Store serial: [22652590]
+[2024-04-07 03:26:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652590]
+[2024-04-07 03:26:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 03:26:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dogma-rust
+[2024-04-07 03:26:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: legal-citation-parser
+[2024-04-07 03:26:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: skywatch
+[2024-04-07 03:26:35] INFO root fetch - processPackages [dogma-rust]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-07 03:26:35] INFO root fetch - processPackages [dogma-rust]: Downloading https://files.pythonhosted.org/packages/8d/d1/49429e5b42b30b2bace837cff1d87bbc894642d91687c601fc2a8b5924c2/dogma_rust-0.2.0.tar.gz
+[2024-04-07 03:26:35] WARNING root fetch - processPackages [skywatch]: Skipping, unable to determine old version
+[2024-04-07 03:26:35] INFO root fetch - main [MainThread]: End processing [skywatch] error
+[2024-04-07 03:26:35] INFO root fetch - processPackages [legal-citation-parser]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-07 03:26:35] WARNING root fetch - processPackages [dogma-rust]: Timeout reached during download
+[2024-04-07 03:26:35] INFO root fetch - processPackages [legal-citation-parser]: Downloading https://files.pythonhosted.org/packages/58/db/1c8c58c427d002f2bff9b1d63cd1b0a16231b96ef57c14b1daddbddbad2d/legal_citation_parser-0.1.4.tar.gz
+[2024-04-07 03:26:35] INFO root fetch - processPackages [dogma-rust]: Downloading https://files.pythonhosted.org/packages/74/3d/e93408aa15260536c948b5572e27ca4268c9492d67d733fbb0b0001dd564/dogma_rust-0.2.1.tar.gz
+[2024-04-07 03:26:35] WARNING root fetch - processPackages [legal-citation-parser]: Timeout reached during download
+[2024-04-07 03:26:36] WARNING root fetch - processPackages [dogma-rust]: Timeout reached during download
+[2024-04-07 03:26:36] INFO root fetch - processPackages [dogma-rust]: executing diffoscope
+[2024-04-07 03:26:36] INFO root fetch - processPackages [dogma-rust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dogma_rust-0.2.0.tar.gz tmp/dogma_rust-0.2.1.tar.gz --markdown 20240407/d/dogma-rust/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2024-04-07 03:26:36] INFO root fetch - processPackages [legal-citation-parser]: Downloading https://files.pythonhosted.org/packages/79/76/fd51ecc59400cee2331d795dfd7278b680d2e133c8dc41b3561aed10e7be/legal_citation_parser-0.1.5.tar.gz
+[2024-04-07 03:26:36] WARNING root fetch - processPackages [legal-citation-parser]: Timeout reached during download
+[2024-04-07 03:26:36] INFO root fetch - processPackages [legal-citation-parser]: executing diffoscope
+[2024-04-07 03:26:36] INFO root fetch - processPackages [legal-citation-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/legal_citation_parser-0.1.4.tar.gz tmp/legal_citation_parser-0.1.5.tar.gz --markdown 20240407/l/legal-citation-parser/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2024-04-07 03:26:36] INFO root fetch - processPackages [dogma-rust]: Remove: archive file [/home/abi/fetcher/tmp/dogma_rust-0.2.0.tar.gz]
+[2024-04-07 03:26:36] INFO root fetch - processPackages [dogma-rust]: Remove: archive file [/home/abi/fetcher/tmp/dogma_rust-0.2.1.tar.gz]
+[2024-04-07 03:26:36] INFO root fetch - main [MainThread]: End processing [dogma-rust]: success
+[2024-04-07 03:26:36] INFO root fetch - processPackages [legal-citation-parser]: Remove: archive file [/home/abi/fetcher/tmp/legal_citation_parser-0.1.4.tar.gz]
+[2024-04-07 03:26:36] INFO root fetch - processPackages [legal-citation-parser]: Remove: archive file [/home/abi/fetcher/tmp/legal_citation_parser-0.1.5.tar.gz]
+[2024-04-07 03:26:36] INFO root fetch - main [MainThread]: End processing [legal-citation-parser]: success
+[2024-04-07 03:26:36] INFO root fetch - main [MainThread]: Store serial: [22652601]
