@@ -2357,3 +2357,24 @@
 [2024-04-07 03:39:41] WARNING root fetch - processPackages [skywatch]: Skipping, unable to determine old version
 [2024-04-07 03:39:41] INFO root fetch - main [MainThread]: End processing [skywatch] error
 [2024-04-07 03:39:41] INFO root fetch - main [MainThread]: Store serial: [22652684]
+[2024-04-07 03:41:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652684]
+[2024-04-07 03:41:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 03:41:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: praetorian-cli
+[2024-04-07 03:41:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mountaineer
+[2024-04-07 03:41:51] INFO root fetch - processPackages [praetorian-cli]: New version: [0.7.1] Old Version: [0.5.0]
+[2024-04-07 03:41:51] INFO root fetch - processPackages [mountaineer]: New version: [0.4.0] Old Version: [0.3.2.dev4]
+[2024-04-07 03:41:51] INFO root fetch - processPackages [praetorian-cli]: Downloading https://files.pythonhosted.org/packages/da/d4/71f8f472acea573befe2bc13031ca5fd8f75ee32ddd477580dfb4d34901a/praetorian-cli-0.5.0.tar.gz
+[2024-04-07 03:41:51] INFO root fetch - processPackages [mountaineer]: Downloading https://files.pythonhosted.org/packages/1f/ce/6021487545fd9f74995a2e5b2433c39658a8dbf9391f0ed5adad1f083dc0/mountaineer-0.3.2.dev4.tar.gz
+[2024-04-07 03:41:51] WARNING root fetch - processPackages [praetorian-cli]: Timeout reached during download
+[2024-04-07 03:41:51] WARNING root fetch - processPackages [mountaineer]: Timeout reached during download
+[2024-04-07 03:41:51] INFO root fetch - processPackages [praetorian-cli]: Downloading https://files.pythonhosted.org/packages/0c/be/8ff97a5b9a22808e6a2e80d80a3e40ebd8dbe8752542639dd5d2e1c26bf8/praetorian-cli-0.7.1.tar.gz
+[2024-04-07 03:41:51] WARNING root fetch - processPackages [praetorian-cli]: Timeout reached during download
+[2024-04-07 03:41:51] INFO root fetch - processPackages [praetorian-cli]: executing diffoscope
+[2024-04-07 03:41:51] INFO root fetch - processPackages [praetorian-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/praetorian-cli-0.5.0.tar.gz tmp/praetorian-cli-0.7.1.tar.gz --markdown 20240407/p/praetorian-cli/0.5.0-0.7.1/diff.md --exclude *.pyd
+[2024-04-07 03:41:51] INFO root fetch - processPackages [mountaineer]: Downloading https://files.pythonhosted.org/packages/5c/7c/3310e04ed3af1b6fb03464c6ac33c142f19c45cf0f100f21f18b114be482/mountaineer-0.4.0-cp312-cp312-macosx_11_0_arm64.whl
+[2024-04-07 03:41:52] INFO root fetch - processPackages [praetorian-cli]: Remove: archive file [/home/abi/fetcher/tmp/praetorian-cli-0.5.0.tar.gz]
+[2024-04-07 03:41:52] INFO root fetch - processPackages [praetorian-cli]: Remove: archive file [/home/abi/fetcher/tmp/praetorian-cli-0.7.1.tar.gz]
+[2024-04-07 03:41:52] INFO root fetch - main [MainThread]: End processing [praetorian-cli]: success
+[2024-04-07 03:41:52] WARNING root fetch - processPackages [mountaineer]: Skipping package: exceeds size limit 19243678>=10485760
+[2024-04-07 03:41:52] INFO root fetch - main [MainThread]: End processing [mountaineer] error
+[2024-04-07 03:41:52] INFO root fetch - main [MainThread]: Store serial: [22652694]
