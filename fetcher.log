@@ -4651,3 +4651,19 @@
 [2024-04-07 06:24:44] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_base-14.0.3.9.0-py3-none-any.whl.zip]
 [2024-04-07 06:24:44] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-base]: success
 [2024-04-07 06:24:44] INFO root fetch - main [MainThread]: Store serial: [22653460]
+[2024-04-07 06:26:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653460]
+[2024-04-07 06:26:53] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 06:28:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653460]
+[2024-04-07 06:29:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 06:29:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: detoxio
+[2024-04-07 06:29:00] INFO root fetch - processPackages [detoxio]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 06:29:00] INFO root fetch - processPackages [detoxio]: Downloading https://files.pythonhosted.org/packages/7a/5e/2207f75fcd9c9e3eeb1f53ed18cb1468e5ecae5a0d5a386bc0a5eff17fc5/detoxio-0.1.8.tar.gz
+[2024-04-07 06:29:00] WARNING root fetch - processPackages [detoxio]: Timeout reached during download
+[2024-04-07 06:29:01] INFO root fetch - processPackages [detoxio]: Downloading https://files.pythonhosted.org/packages/b9/f4/192d739051a1a272b5b9f8a3638bbb082ff6c329b0a59b2a9e0435bdc1e9/detoxio-0.1.9.tar.gz
+[2024-04-07 06:29:01] WARNING root fetch - processPackages [detoxio]: Timeout reached during download
+[2024-04-07 06:29:01] INFO root fetch - processPackages [detoxio]: executing diffoscope
+[2024-04-07 06:29:01] INFO root fetch - processPackages [detoxio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/detoxio-0.1.8.tar.gz tmp/detoxio-0.1.9.tar.gz --markdown 20240407/d/detoxio/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 06:29:01] INFO root fetch - processPackages [detoxio]: Remove: archive file [/home/abi/fetcher/tmp/detoxio-0.1.8.tar.gz]
+[2024-04-07 06:29:01] INFO root fetch - processPackages [detoxio]: Remove: archive file [/home/abi/fetcher/tmp/detoxio-0.1.9.tar.gz]
+[2024-04-07 06:29:01] INFO root fetch - main [MainThread]: End processing [detoxio]: success
+[2024-04-07 06:29:01] INFO root fetch - main [MainThread]: Store serial: [22653463]
