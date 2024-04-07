@@ -17050,3 +17050,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:39:46] INFO root fetch - processPackages [hich-restrict]: Remove: archive file [/home/abi/fetcher/tmp/hich_restrict-0.1.1-py3-none-any.whl.zip]
 [2024-04-07 19:39:46] INFO root fetch - main [MainThread]: End processing [hich-restrict]: success
 [2024-04-07 19:39:46] INFO root fetch - main [MainThread]: Store serial: [22658008]
+[2024-04-07 19:41:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658008]
+[2024-04-07 19:41:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 19:41:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gpu4pyscf
+[2024-04-07 19:41:55] INFO root fetch - processPackages [gpu4pyscf]: New version: [0.7.6] Old Version: [0.7.5]
+[2024-04-07 19:41:55] INFO root fetch - processPackages [gpu4pyscf]: Downloading https://files.pythonhosted.org/packages/4b/4e/ed094587065ea322d6a48b7febd0889c47cbe598d82617579f61296e1ea6/gpu4pyscf-0.7.5.tar.gz
+[2024-04-07 19:41:56] WARNING root fetch - processPackages [gpu4pyscf]: Timeout reached during download
+[2024-04-07 19:41:56] INFO root fetch - processPackages [gpu4pyscf]: Downloading https://files.pythonhosted.org/packages/9f/32/879d11d5f743d7eee26cf8e4aaaa858664222a48fa472ebe4be49fceb1d5/gpu4pyscf-0.7.6.tar.gz
+[2024-04-07 19:41:56] WARNING root fetch - processPackages [gpu4pyscf]: Timeout reached during download
+[2024-04-07 19:41:56] INFO root fetch - processPackages [gpu4pyscf]: executing diffoscope
+[2024-04-07 19:41:56] INFO root fetch - processPackages [gpu4pyscf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpu4pyscf-0.7.5.tar.gz tmp/gpu4pyscf-0.7.6.tar.gz --markdown 20240407/g/gpu4pyscf/0.7.5-0.7.6/diff.md --exclude *.pyd
+[2024-04-07 19:41:57] INFO root fetch - processPackages [gpu4pyscf]: Remove: archive file [/home/abi/fetcher/tmp/gpu4pyscf-0.7.5.tar.gz]
+[2024-04-07 19:41:57] INFO root fetch - processPackages [gpu4pyscf]: Remove: archive file [/home/abi/fetcher/tmp/gpu4pyscf-0.7.6.tar.gz]
+[2024-04-07 19:41:57] INFO root fetch - main [MainThread]: End processing [gpu4pyscf]: success
+[2024-04-07 19:41:57] INFO root fetch - main [MainThread]: Store serial: [22658011]
