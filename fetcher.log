@@ -9442,3 +9442,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 11:51:57] INFO root fetch - processPackages [PyFunceble-dev]: Remove: archive file [/home/abi/fetcher/tmp/PyFunceble-dev-4.2.9.tar.gz]
 [2024-04-07 11:51:57] INFO root fetch - main [MainThread]: End processing [PyFunceble-dev]: success
 [2024-04-07 11:51:57] INFO root fetch - main [MainThread]: Store serial: [22655208]
+[2024-04-07 11:54:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655208]
+[2024-04-07 11:54:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 11:54:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: khoj-assistant
+[2024-04-07 11:54:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: foss-flame
+[2024-04-07 11:54:06] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev3] Old Version: [1.9.1.dev1]
+[2024-04-07 11:54:06] INFO root fetch - processPackages [foss-flame]: New version: [0.19.9] Old Version: [0.19.8]
+[2024-04-07 11:54:06] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/1b/b3/c7ad0216d51181751ac35eee44280c14bbd807eb23200fb4e180629081ce/khoj_assistant-1.9.1.dev1.tar.gz
+[2024-04-07 11:54:06] INFO root fetch - processPackages [foss-flame]: Downloading https://files.pythonhosted.org/packages/02/4e/96829e5fbfcc3fb128fa0106843f804569b225ca36326d549d5493c39ab7/foss-flame-0.19.8.tar.gz
+[2024-04-07 11:54:06] WARNING root fetch - processPackages [khoj-assistant]: Timeout reached during download
+[2024-04-07 11:54:06] WARNING root fetch - processPackages [foss-flame]: Timeout reached during download
+[2024-04-07 11:54:07] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/8d/74/633bf6d5482a35ee6ee02ecc74161237fb928c9374527e897861aabbeeff/khoj_assistant-1.9.1.dev3.tar.gz
+[2024-04-07 11:54:07] INFO root fetch - processPackages [foss-flame]: Downloading https://files.pythonhosted.org/packages/c4/16/fd0ba022d708570c30f87f3771ced43ef0dda7112ca80acb1dc3b3566fa1/foss-flame-0.19.9.tar.gz
+[2024-04-07 11:54:07] WARNING root fetch - processPackages [foss-flame]: Timeout reached during download
+[2024-04-07 11:54:07] INFO root fetch - processPackages [foss-flame]: executing diffoscope
+[2024-04-07 11:54:07] INFO root fetch - processPackages [foss-flame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foss-flame-0.19.8.tar.gz tmp/foss-flame-0.19.9.tar.gz --markdown 20240407/f/foss-flame/0.19.8-0.19.9/diff.md --exclude *.pyd
+[2024-04-07 11:54:07] WARNING root fetch - processPackages [khoj-assistant]: Timeout reached during download
+[2024-04-07 11:54:07] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-04-07 11:54:07] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev1.tar.gz tmp/khoj_assistant-1.9.1.dev3.tar.gz --markdown 20240407/k/khoj-assistant/1.9.1.dev1-1.9.1.dev3/diff.md --exclude *.pyd
+[2024-04-07 11:54:08] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev1.tar.gz]
+[2024-04-07 11:54:08] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev3.tar.gz]
+[2024-04-07 11:54:08] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-04-07 11:54:08] INFO root fetch - processPackages [foss-flame]: Remove: archive file [/home/abi/fetcher/tmp/foss-flame-0.19.8.tar.gz]
+[2024-04-07 11:54:08] INFO root fetch - processPackages [foss-flame]: Remove: archive file [/home/abi/fetcher/tmp/foss-flame-0.19.9.tar.gz]
+[2024-04-07 11:54:08] INFO root fetch - main [MainThread]: End processing [foss-flame]: success
+[2024-04-07 11:54:08] INFO root fetch - main [MainThread]: Store serial: [22655214]
