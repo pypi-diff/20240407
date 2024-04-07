@@ -9012,3 +9012,104 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 11:30:00] INFO root fetch - processPackages [sphinx-translation-button]: Remove: archive file [/home/abi/fetcher/tmp/sphinx-translation-button-1.1.0.tar.gz]
 [2024-04-07 11:30:00] INFO root fetch - main [MainThread]: End processing [sphinx-translation-button]: success
 [2024-04-07 11:30:00] INFO root fetch - main [MainThread]: Store serial: [22655049]
+[2024-04-07 11:32:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655049]
+[2024-04-07 11:32:09] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-07 11:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OpsApi
+[2024-04-07 11:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: glitter-proto
+[2024-04-07 11:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flaskfy
+[2024-04-07 11:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pelican-avatar
+[2024-04-07 11:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: OpsApi
+[2024-04-07 11:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk8s-plus-26
+[2024-04-07 11:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: uiautomator2
+[2024-04-07 11:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk8s-plus-27
+[2024-04-07 11:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: g4f
+[2024-04-07 11:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: OpsApi
+[2024-04-07 11:32:09] INFO root fetch - processPackages [OpsApi]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-04-07 11:32:09] INFO root fetch - processPackages [OpsApi]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-04-07 11:32:09] INFO root fetch - processPackages [cdk8s-plus-27]: New version: [2.7.9] Old Version: [2.7.86]
+[2024-04-07 11:32:09] INFO root fetch - processPackages [cdk8s-plus-26]: New version: [2.9.0] Old Version: [2.8.1]
+[2024-04-07 11:32:09] INFO root fetch - processPackages [OpsApi]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-04-07 11:32:09] INFO root fetch - processPackages [glitter-proto]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-07 11:32:09] INFO root fetch - processPackages [g4f]: New version: [0.2.8.1] Old Version: [0.2.8.0]
+[2024-04-07 11:32:09] INFO root fetch - processPackages [pelican-avatar]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-04-07 11:32:09] WARNING root fetch - processPackages [flaskfy]: Skipping, unable to determine old version
+[2024-04-07 11:32:09] INFO root fetch - main [MainThread]: End processing [flaskfy] error
+[2024-04-07 11:32:09] INFO root fetch - processPackages [OpsApi]: Downloading https://files.pythonhosted.org/packages/cb/96/6ab51ec0bce6c789ca0549b0aa88f666a143b3f4f07e81e0df8c2b63e1b0/OpsApi-1.1.2.tar.gz
+[2024-04-07 11:32:09] INFO root fetch - processPackages [OpsApi]: Downloading https://files.pythonhosted.org/packages/cb/96/6ab51ec0bce6c789ca0549b0aa88f666a143b3f4f07e81e0df8c2b63e1b0/OpsApi-1.1.2.tar.gz
+[2024-04-07 11:32:09] INFO root fetch - processPackages [cdk8s-plus-27]: Downloading https://files.pythonhosted.org/packages/ad/0b/1f5e0691483aecfd16d12eed5feb28545a9418c8bb2e55b974debec11e9f/cdk8s-plus-27-2.7.86.tar.gz
+[2024-04-07 11:32:09] INFO root fetch - processPackages [cdk8s-plus-26]: Downloading https://files.pythonhosted.org/packages/57/27/c7dc7b7a6ca589c8557e2fcdfa03d98cabb52552fd18df535b3e675f7dc0/cdk8s-plus-26-2.8.1.tar.gz
+[2024-04-07 11:32:09] INFO root fetch - processPackages [OpsApi]: Downloading https://files.pythonhosted.org/packages/cb/96/6ab51ec0bce6c789ca0549b0aa88f666a143b3f4f07e81e0df8c2b63e1b0/OpsApi-1.1.2.tar.gz
+[2024-04-07 11:32:09] INFO root fetch - processPackages [uiautomator2]: New version: [3.0.6] Old Version: [3.0.5]
+[2024-04-07 11:32:10] WARNING root fetch - processPackages [OpsApi]: Timeout reached during download
+[2024-04-07 11:32:10] INFO root fetch - processPackages [glitter-proto]: Downloading https://files.pythonhosted.org/packages/a4/2f/352230cf5defb71bc75c319381efbdee3e53637fc5501df06a1f7d633a92/glitter_proto-0.4.0.tar.gz
+[2024-04-07 11:32:10] WARNING root fetch - processPackages [OpsApi]: Timeout reached during download
+[2024-04-07 11:32:10] INFO root fetch - processPackages [pelican-avatar]: Downloading https://files.pythonhosted.org/packages/07/4e/f47704702884702df5cdde3d269d4429c54b3ab0ed3513bb50d41df73c4d/pelican_avatar-1.0.5.tar.gz
+[2024-04-07 11:32:10] INFO root fetch - processPackages [OpsApi]: Downloading https://files.pythonhosted.org/packages/29/68/55f2d21aad474b44833ae739f9df27f8c238e79ceab4a256681717eb469c/OpsApi-1.1.3.tar.gz
+[2024-04-07 11:32:10] INFO root fetch - processPackages [g4f]: Downloading https://files.pythonhosted.org/packages/08/93/129ae19b4b31d62e653fe8e70b5baaa534023ef115b12d7e7816d0befb6f/g4f-0.2.8.0.tar.gz
+[2024-04-07 11:32:10] WARNING root fetch - processPackages [OpsApi]: Timeout reached during download
+[2024-04-07 11:32:10] INFO root fetch - processPackages [OpsApi]: Downloading https://files.pythonhosted.org/packages/29/68/55f2d21aad474b44833ae739f9df27f8c238e79ceab4a256681717eb469c/OpsApi-1.1.3.tar.gz
+[2024-04-07 11:32:10] WARNING root fetch - processPackages [cdk8s-plus-27]: Timeout reached during download
+[2024-04-07 11:32:10] WARNING root fetch - processPackages [pelican-avatar]: Timeout reached during download
+[2024-04-07 11:32:10] WARNING root fetch - processPackages [cdk8s-plus-26]: Timeout reached during download
+[2024-04-07 11:32:10] INFO root fetch - processPackages [OpsApi]: Downloading https://files.pythonhosted.org/packages/29/68/55f2d21aad474b44833ae739f9df27f8c238e79ceab4a256681717eb469c/OpsApi-1.1.3.tar.gz
+[2024-04-07 11:32:10] WARNING root fetch - processPackages [OpsApi]: Timeout reached during download
+[2024-04-07 11:32:10] INFO root fetch - processPackages [OpsApi]: executing diffoscope
+[2024-04-07 11:32:10] INFO root fetch - processPackages [OpsApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpsApi-1.1.2.tar.gz tmp/OpsApi-1.1.3.tar.gz --markdown 20240407/O/OpsApi/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2024-04-07 11:32:10] INFO root fetch - processPackages [uiautomator2]: Downloading https://files.pythonhosted.org/packages/1f/2d/5d023a13d1185f72acc5b26182a1e44ff0dd22dc3470483173f7b7bf90b6/uiautomator2-3.0.5.tar.gz
+[2024-04-07 11:32:10] WARNING root fetch - processPackages [glitter-proto]: Timeout reached during download
+[2024-04-07 11:32:10] WARNING root fetch - processPackages [g4f]: Timeout reached during download
+[2024-04-07 11:32:10] WARNING root fetch - processPackages [OpsApi]: Timeout reached during download
+[2024-04-07 11:32:10] INFO root fetch - processPackages [OpsApi]: executing diffoscope
+[2024-04-07 11:32:10] INFO root fetch - processPackages [OpsApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpsApi-1.1.2.tar.gz tmp/OpsApi-1.1.3.tar.gz --markdown 20240407/O/OpsApi/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2024-04-07 11:32:10] INFO root fetch - processPackages [cdk8s-plus-26]: Downloading https://files.pythonhosted.org/packages/f9/b5/db2ea94d29c01b146fcfb2e07a32393e9961c1c1f5a9a2bc2232af84a4dd/cdk8s-plus-26-2.9.0.tar.gz
+[2024-04-07 11:32:10] INFO root fetch - processPackages [cdk8s-plus-27]: Downloading https://files.pythonhosted.org/packages/44/30/c61068eb6060bf310799a92d2ef4a04d9a19c4394595290b4ba243cc21c2/cdk8s-plus-27-2.7.9.tar.gz
+[2024-04-07 11:32:10] WARNING root fetch - processPackages [OpsApi]: Timeout reached during download
+[2024-04-07 11:32:10] INFO root fetch - processPackages [OpsApi]: executing diffoscope
+[2024-04-07 11:32:10] INFO root fetch - processPackages [OpsApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpsApi-1.1.2.tar.gz tmp/OpsApi-1.1.3.tar.gz --markdown 20240407/O/OpsApi/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2024-04-07 11:32:10] INFO root fetch - processPackages [pelican-avatar]: Downloading https://files.pythonhosted.org/packages/d6/f1/5f1db76300850602f500f1fe2f50f217a77b73485ed0f90149f632dcb759/pelican_avatar-1.0.6.tar.gz
+[2024-04-07 11:32:10] INFO root fetch - processPackages [glitter-proto]: Downloading https://files.pythonhosted.org/packages/56/7c/2fecf974b646361dd0f600eaa04742c0a207d6edf4e6ecdd471303ba7e04/glitter_proto-0.5.0.tar.gz
+[2024-04-07 11:32:10] INFO root fetch - processPackages [g4f]: Downloading https://files.pythonhosted.org/packages/d4/2b/6ece738bdc786177afd64db44a961f038e9a42b18b42126c4e10bf5f1e28/g4f-0.2.8.1.tar.gz
+[2024-04-07 11:32:10] WARNING root fetch - processPackages [cdk8s-plus-27]: Timeout reached during download
+[2024-04-07 11:32:10] INFO root fetch - processPackages [cdk8s-plus-27]: executing diffoscope
+[2024-04-07 11:32:10] INFO root fetch - processPackages [cdk8s-plus-27]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-27-2.7.86.tar.gz tmp/cdk8s-plus-27-2.7.9.tar.gz --markdown 20240407/c/cdk8s-plus-27/2.7.86-2.7.9/diff.md --exclude *.pyd
+[2024-04-07 11:32:10] WARNING root fetch - processPackages [uiautomator2]: Timeout reached during download
+[2024-04-07 11:32:10] WARNING root fetch - processPackages [pelican-avatar]: Timeout reached during download
+[2024-04-07 11:32:10] INFO root fetch - processPackages [pelican-avatar]: executing diffoscope
+[2024-04-07 11:32:10] INFO root fetch - processPackages [pelican-avatar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pelican_avatar-1.0.5.tar.gz tmp/pelican_avatar-1.0.6.tar.gz --markdown 20240407/p/pelican-avatar/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2024-04-07 11:32:10] WARNING root fetch - processPackages [cdk8s-plus-26]: Timeout reached during download
+[2024-04-07 11:32:10] INFO root fetch - processPackages [cdk8s-plus-26]: executing diffoscope
+[2024-04-07 11:32:10] INFO root fetch - processPackages [cdk8s-plus-26]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-26-2.8.1.tar.gz tmp/cdk8s-plus-26-2.9.0.tar.gz --markdown 20240407/c/cdk8s-plus-26/2.8.1-2.9.0/diff.md --exclude *.pyd
+[2024-04-07 11:32:10] WARNING root fetch - processPackages [glitter-proto]: Timeout reached during download
+[2024-04-07 11:32:10] INFO root fetch - processPackages [glitter-proto]: executing diffoscope
+[2024-04-07 11:32:10] INFO root fetch - processPackages [glitter-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glitter_proto-0.4.0.tar.gz tmp/glitter_proto-0.5.0.tar.gz --markdown 20240407/g/glitter-proto/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2024-04-07 11:32:10] WARNING root fetch - processPackages [g4f]: Timeout reached during download
+[2024-04-07 11:32:10] INFO root fetch - processPackages [uiautomator2]: Downloading https://files.pythonhosted.org/packages/d1/29/10f7cf53c424d6997483e0621de5a971a723bc630c20dae47fa097046eaa/uiautomator2-3.0.6.tar.gz
+[2024-04-07 11:32:10] INFO root fetch - processPackages [g4f]: executing diffoscope
+[2024-04-07 11:32:10] INFO root fetch - processPackages [g4f]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g4f-0.2.8.0.tar.gz tmp/g4f-0.2.8.1.tar.gz --markdown 20240407/g/g4f/0.2.8.0-0.2.8.1/diff.md --exclude *.pyd
+[2024-04-07 11:32:11] INFO root fetch - processPackages [OpsApi]: Remove: archive file [/home/abi/fetcher/tmp/OpsApi-1.1.2.tar.gz]
+[2024-04-07 11:32:11] INFO root fetch - processPackages [OpsApi]: Remove: archive file [/home/abi/fetcher/tmp/OpsApi-1.1.3.tar.gz]
+[2024-04-07 11:32:11] INFO root fetch - main [MainThread]: End processing [OpsApi]: success
+[2024-04-07 11:32:11] INFO root fetch - main [MainThread]: End processing [OpsApi]: success
+[2024-04-07 11:32:11] INFO root fetch - main [MainThread]: End processing [OpsApi]: success
+[2024-04-07 11:32:11] INFO root fetch - processPackages [pelican-avatar]: Remove: archive file [/home/abi/fetcher/tmp/pelican_avatar-1.0.5.tar.gz]
+[2024-04-07 11:32:11] INFO root fetch - processPackages [pelican-avatar]: Remove: archive file [/home/abi/fetcher/tmp/pelican_avatar-1.0.6.tar.gz]
+[2024-04-07 11:32:11] INFO root fetch - main [MainThread]: End processing [pelican-avatar]: success
+[2024-04-07 11:32:11] INFO root fetch - processPackages [glitter-proto]: Remove: archive file [/home/abi/fetcher/tmp/glitter_proto-0.4.0.tar.gz]
+[2024-04-07 11:32:11] INFO root fetch - processPackages [glitter-proto]: Remove: archive file [/home/abi/fetcher/tmp/glitter_proto-0.5.0.tar.gz]
+[2024-04-07 11:32:11] INFO root fetch - main [MainThread]: End processing [glitter-proto]: success
+[2024-04-07 11:32:11] INFO root fetch - processPackages [cdk8s-plus-26]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-plus-26-2.8.1.tar.gz]
+[2024-04-07 11:32:11] INFO root fetch - processPackages [cdk8s-plus-26]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-plus-26-2.9.0.tar.gz]
+[2024-04-07 11:32:11] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-26]: success
+[2024-04-07 11:32:12] INFO root fetch - processPackages [g4f]: Remove: archive file [/home/abi/fetcher/tmp/g4f-0.2.8.0.tar.gz]
+[2024-04-07 11:32:12] INFO root fetch - processPackages [g4f]: Remove: archive file [/home/abi/fetcher/tmp/g4f-0.2.8.1.tar.gz]
+[2024-04-07 11:32:12] INFO root fetch - main [MainThread]: End processing [g4f]: success
+[2024-04-07 11:32:12] WARNING root fetch - processPackages [uiautomator2]: Timeout reached during download
+[2024-04-07 11:32:12] INFO root fetch - processPackages [uiautomator2]: executing diffoscope
+[2024-04-07 11:32:12] INFO root fetch - processPackages [uiautomator2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uiautomator2-3.0.5.tar.gz tmp/uiautomator2-3.0.6.tar.gz --markdown 20240407/u/uiautomator2/3.0.5-3.0.6/diff.md --exclude *.pyd
+[2024-04-07 11:32:13] INFO root fetch - processPackages [uiautomator2]: Remove: archive file [/home/abi/fetcher/tmp/uiautomator2-3.0.5.tar.gz]
+[2024-04-07 11:32:13] INFO root fetch - processPackages [uiautomator2]: Remove: archive file [/home/abi/fetcher/tmp/uiautomator2-3.0.6.tar.gz]
+[2024-04-07 11:32:13] INFO root fetch - main [MainThread]: End processing [uiautomator2]: success
+[2024-04-07 11:32:14] INFO root fetch - processPackages [cdk8s-plus-27]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-plus-27-2.7.86.tar.gz]
+[2024-04-07 11:32:14] INFO root fetch - processPackages [cdk8s-plus-27]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-plus-27-2.7.9.tar.gz]
+[2024-04-07 11:32:14] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-27]: success
+[2024-04-07 11:32:14] INFO root fetch - main [MainThread]: Store serial: [22655078]
