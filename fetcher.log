@@ -11873,3 +11873,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:44:34] INFO root fetch - processPackages [tb1-parser]: Remove: archive file [/home/abi/fetcher/tmp/tb1_parser-0.4.tar.gz]
 [2024-04-07 14:44:34] INFO root fetch - main [MainThread]: End processing [tb1-parser]: success
 [2024-04-07 14:44:34] INFO root fetch - main [MainThread]: Store serial: [22656260]
+[2024-04-07 14:46:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656260]
+[2024-04-07 14:46:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 14:46:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: novelai-api
+[2024-04-07 14:46:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cefi
+[2024-04-07 14:46:42] INFO root fetch - processPackages [novelai-api]: New version: [0.9] Old Version: [0.8]
+[2024-04-07 14:46:42] INFO root fetch - processPackages [cefi]: New version: [4.4.6] Old Version: [4.4.5]
+[2024-04-07 14:46:42] INFO root fetch - processPackages [cefi]: Downloading https://files.pythonhosted.org/packages/3d/89/2e3d3515e1a650cd94b0e7bc20a4778e1c87a0e6e393aab457a3ebb08ace/cefi-4.4.5.tar.gz
+[2024-04-07 14:46:42] INFO root fetch - processPackages [novelai-api]: Downloading https://files.pythonhosted.org/packages/fc/5f/4521adcc080f088c499ad70d5ea4d991b23f72661d4aa68a9112d0b3283e/novelai-api-0.8.tar.gz
+[2024-04-07 14:46:42] WARNING root fetch - processPackages [cefi]: Timeout reached during download
+[2024-04-07 14:46:42] INFO root fetch - processPackages [cefi]: Downloading https://files.pythonhosted.org/packages/4d/99/d315f024daefa1dd3dd269de0f55054d4d1f6e1e88c70cf8fd8629f6ac3a/cefi-4.4.6.tar.gz
+[2024-04-07 14:46:42] WARNING root fetch - processPackages [cefi]: Timeout reached during download
+[2024-04-07 14:46:42] INFO root fetch - processPackages [cefi]: executing diffoscope
+[2024-04-07 14:46:42] INFO root fetch - processPackages [cefi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cefi-4.4.5.tar.gz tmp/cefi-4.4.6.tar.gz --markdown 20240407/c/cefi/4.4.5-4.4.6/diff.md --exclude *.pyd
+[2024-04-07 14:46:43] WARNING root fetch - processPackages [novelai-api]: Timeout reached during download
+[2024-04-07 14:46:43] INFO root fetch - processPackages [novelai-api]: Downloading https://files.pythonhosted.org/packages/69/ed/74960ad9154e8dc49c4d6c47cbc174dc97461bb9e5e113a548c167b72455/novelai-api-0.9.tar.gz
+[2024-04-07 14:46:43] INFO root fetch - processPackages [cefi]: Remove: archive file [/home/abi/fetcher/tmp/cefi-4.4.5.tar.gz]
+[2024-04-07 14:46:43] INFO root fetch - processPackages [cefi]: Remove: archive file [/home/abi/fetcher/tmp/cefi-4.4.6.tar.gz]
+[2024-04-07 14:46:43] INFO root fetch - main [MainThread]: End processing [cefi]: success
+[2024-04-07 14:46:44] WARNING root fetch - processPackages [novelai-api]: Timeout reached during download
+[2024-04-07 14:46:44] INFO root fetch - processPackages [novelai-api]: executing diffoscope
+[2024-04-07 14:46:44] INFO root fetch - processPackages [novelai-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novelai-api-0.8.tar.gz tmp/novelai-api-0.9.tar.gz --markdown 20240407/n/novelai-api/0.8-0.9/diff.md --exclude *.pyd
+[2024-04-07 14:46:45] INFO root fetch - processPackages [novelai-api]: Remove: archive file [/home/abi/fetcher/tmp/novelai-api-0.8.tar.gz]
+[2024-04-07 14:46:45] INFO root fetch - processPackages [novelai-api]: Remove: archive file [/home/abi/fetcher/tmp/novelai-api-0.9.tar.gz]
+[2024-04-07 14:46:45] INFO root fetch - main [MainThread]: End processing [novelai-api]: success
+[2024-04-07 14:46:45] INFO root fetch - main [MainThread]: Store serial: [22656266]
