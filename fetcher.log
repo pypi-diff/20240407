@@ -14012,3 +14012,64 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:51:04] INFO root fetch - processPackages [bosing]: Remove: archive file [/home/abi/fetcher/tmp/bosing-1.0.0b3.tar.gz]
 [2024-04-07 16:51:04] INFO root fetch - main [MainThread]: End processing [bosing]: success
 [2024-04-07 16:51:04] INFO root fetch - main [MainThread]: Store serial: [22656942]
+[2024-04-07 16:53:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656942]
+[2024-04-07 16:53:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 16:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easy-utils-dev
+[2024-04-07 16:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tcrutils
+[2024-04-07 16:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: multigit.lib
+[2024-04-07 16:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: petdb
+[2024-04-07 16:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: TB2J
+[2024-04-07 16:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyresp
+[2024-04-07 16:53:13] INFO root fetch - processPackages [easy-utils-dev]: New version: [2.8.9] Old Version: [2.8.8]
+[2024-04-07 16:53:13] INFO root fetch - processPackages [tcrutils]: New version: [12.0.140] Old Version: [12.0.139]
+[2024-04-07 16:53:13] INFO root fetch - processPackages [easy-utils-dev]: Downloading https://files.pythonhosted.org/packages/d0/93/7d3610b6f67084ad67ecbd895c5e70590d1edff9babbc72a2d7802d125ad/easy_utils_dev-2.8.8.tar.gz
+[2024-04-07 16:53:13] WARNING root fetch - processPackages [multigit.lib]: Skipping, unable to determine old version
+[2024-04-07 16:53:13] INFO root fetch - main [MainThread]: End processing [multigit.lib] error
+[2024-04-07 16:53:13] INFO root fetch - processPackages [pyresp]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-07 16:53:13] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/9f/05/1b92db4ff08f0427b7362b850b08f01bc825d50e7c3de461151fe075ca1c/tcrutils-12.0.139.tar.gz
+[2024-04-07 16:53:13] INFO root fetch - processPackages [TB2J]: New version: [0.8.2.7] Old Version: [0.8.2.5]
+[2024-04-07 16:53:13] INFO root fetch - processPackages [petdb]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-04-07 16:53:13] WARNING root fetch - processPackages [easy-utils-dev]: Timeout reached during download
+[2024-04-07 16:53:13] WARNING root fetch - processPackages [tcrutils]: Timeout reached during download
+[2024-04-07 16:53:13] INFO root fetch - processPackages [easy-utils-dev]: Downloading https://files.pythonhosted.org/packages/cb/9e/733069bda720d8bb6841ec493e820c3c09b9c4914d51ce9ac1c70aa88fe9/easy_utils_dev-2.8.9.tar.gz
+[2024-04-07 16:53:13] INFO root fetch - processPackages [pyresp]: Downloading https://files.pythonhosted.org/packages/4d/6d/242eb0d262bcf1e6dd05dc241e1aabfc8c251f62ecc0445ffa9fe89d005b/pyresp-1.0.2.tar.gz
+[2024-04-07 16:53:13] INFO root fetch - processPackages [TB2J]: Downloading https://files.pythonhosted.org/packages/c3/51/8813d0d26d8a0413ccc41d5a4d0604b56cef19841b893a6dacd39a4fe561/TB2J-0.8.2.5.tar.gz
+[2024-04-07 16:53:13] INFO root fetch - processPackages [petdb]: Downloading https://files.pythonhosted.org/packages/6a/8d/053e0c53905592a9a42160d1e65a2dd1ef2f8204865b9ec2ab4d35a9933b/petdb-0.5.0.tar.gz
+[2024-04-07 16:53:13] WARNING root fetch - processPackages [easy-utils-dev]: Timeout reached during download
+[2024-04-07 16:53:13] INFO root fetch - processPackages [easy-utils-dev]: executing diffoscope
+[2024-04-07 16:53:13] INFO root fetch - processPackages [easy-utils-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_utils_dev-2.8.8.tar.gz tmp/easy_utils_dev-2.8.9.tar.gz --markdown 20240407/e/easy-utils-dev/2.8.8-2.8.9/diff.md --exclude *.pyd
+[2024-04-07 16:53:13] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/48/76/633621567aaddeb8f71c6f298f505f50bea4c4f8abc1165e8fe10a467aff/tcrutils-12.0.140.tar.gz
+[2024-04-07 16:53:13] WARNING root fetch - processPackages [pyresp]: Timeout reached during download
+[2024-04-07 16:53:13] WARNING root fetch - processPackages [petdb]: Timeout reached during download
+[2024-04-07 16:53:13] WARNING root fetch - processPackages [TB2J]: Timeout reached during download
+[2024-04-07 16:53:13] WARNING root fetch - processPackages [tcrutils]: Timeout reached during download
+[2024-04-07 16:53:13] INFO root fetch - processPackages [tcrutils]: executing diffoscope
+[2024-04-07 16:53:13] INFO root fetch - processPackages [tcrutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcrutils-12.0.139.tar.gz tmp/tcrutils-12.0.140.tar.gz --markdown 20240407/t/tcrutils/12.0.139-12.0.140/diff.md --exclude *.pyd
+[2024-04-07 16:53:13] INFO root fetch - processPackages [pyresp]: Downloading https://files.pythonhosted.org/packages/ef/b5/8c4c2ac3fb6994b1b73dd7c39ad7a8991194a182309a9414fa057de89e95/pyresp-1.0.3.tar.gz
+[2024-04-07 16:53:13] INFO root fetch - processPackages [petdb]: Downloading https://files.pythonhosted.org/packages/7b/d3/5a7813748e634dad234112ec2ffcbdd4cbaf6f77b3e5d732ba22bcf500f0/petdb-0.6.0.tar.gz
+[2024-04-07 16:53:13] INFO root fetch - processPackages [TB2J]: Downloading https://files.pythonhosted.org/packages/76/61/fc9b69af16275b768dc4ddce44ad6d8e3058e71eeadc3f5d170306886505/TB2J-0.8.2.7.tar.gz
+[2024-04-07 16:53:13] WARNING root fetch - processPackages [petdb]: Timeout reached during download
+[2024-04-07 16:53:13] INFO root fetch - processPackages [petdb]: executing diffoscope
+[2024-04-07 16:53:13] INFO root fetch - processPackages [petdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petdb-0.5.0.tar.gz tmp/petdb-0.6.0.tar.gz --markdown 20240407/p/petdb/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2024-04-07 16:53:13] WARNING root fetch - processPackages [TB2J]: Timeout reached during download
+[2024-04-07 16:53:13] INFO root fetch - processPackages [TB2J]: executing diffoscope
+[2024-04-07 16:53:13] INFO root fetch - processPackages [TB2J]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TB2J-0.8.2.5.tar.gz tmp/TB2J-0.8.2.7.tar.gz --markdown 20240407/T/TB2J/0.8.2.5-0.8.2.7/diff.md --exclude *.pyd
+[2024-04-07 16:53:14] WARNING root fetch - processPackages [pyresp]: Timeout reached during download
+[2024-04-07 16:53:14] INFO root fetch - processPackages [pyresp]: executing diffoscope
+[2024-04-07 16:53:14] INFO root fetch - processPackages [pyresp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyresp-1.0.2.tar.gz tmp/pyresp-1.0.3.tar.gz --markdown 20240407/p/pyresp/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2024-04-07 16:53:14] INFO root fetch - processPackages [easy-utils-dev]: Remove: archive file [/home/abi/fetcher/tmp/easy_utils_dev-2.8.8.tar.gz]
+[2024-04-07 16:53:14] INFO root fetch - processPackages [easy-utils-dev]: Remove: archive file [/home/abi/fetcher/tmp/easy_utils_dev-2.8.9.tar.gz]
+[2024-04-07 16:53:14] INFO root fetch - main [MainThread]: End processing [easy-utils-dev]: success
+[2024-04-07 16:53:14] INFO root fetch - processPackages [petdb]: Remove: archive file [/home/abi/fetcher/tmp/petdb-0.5.0.tar.gz]
+[2024-04-07 16:53:14] INFO root fetch - processPackages [petdb]: Remove: archive file [/home/abi/fetcher/tmp/petdb-0.6.0.tar.gz]
+[2024-04-07 16:53:14] INFO root fetch - main [MainThread]: End processing [petdb]: success
+[2024-04-07 16:53:14] INFO root fetch - processPackages [pyresp]: Remove: archive file [/home/abi/fetcher/tmp/pyresp-1.0.2.tar.gz]
+[2024-04-07 16:53:14] INFO root fetch - processPackages [pyresp]: Remove: archive file [/home/abi/fetcher/tmp/pyresp-1.0.3.tar.gz]
+[2024-04-07 16:53:14] INFO root fetch - main [MainThread]: End processing [pyresp]: success
+[2024-04-07 16:53:14] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.139.tar.gz]
+[2024-04-07 16:53:14] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.140.tar.gz]
+[2024-04-07 16:53:14] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
+[2024-04-07 16:53:14] INFO root fetch - processPackages [TB2J]: Remove: archive file [/home/abi/fetcher/tmp/TB2J-0.8.2.5.tar.gz]
+[2024-04-07 16:53:14] INFO root fetch - processPackages [TB2J]: Remove: archive file [/home/abi/fetcher/tmp/TB2J-0.8.2.7.tar.gz]
+[2024-04-07 16:53:14] INFO root fetch - main [MainThread]: End processing [TB2J]: success
+[2024-04-07 16:53:14] INFO root fetch - main [MainThread]: Store serial: [22656962]
