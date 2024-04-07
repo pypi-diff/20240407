@@ -20296,3 +20296,50 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:07:25] INFO root fetch - processPackages [podpointclient]: Remove: archive file [/home/abi/fetcher/tmp/podpointclient-1.5.0.tar.gz]
 [2024-04-07 23:07:25] INFO root fetch - main [MainThread]: End processing [podpointclient]: success
 [2024-04-07 23:07:25] INFO root fetch - main [MainThread]: Store serial: [22659259]
+[2024-04-07 23:09:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659259]
+[2024-04-07 23:09:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 23:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: astromcad
+[2024-04-07 23:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: podpointclient
+[2024-04-07 23:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fmbench
+[2024-04-07 23:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: easydebugger
+[2024-04-07 23:09:35] INFO root fetch - processPackages [easydebugger]: New version: [1.0.0] Old Version: [0.0.1]
+[2024-04-07 23:09:35] INFO root fetch - processPackages [podpointclient]: New version: [1.5.0] Old Version: [1.4.3]
+[2024-04-07 23:09:35] INFO root fetch - processPackages [astromcad]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-07 23:09:35] INFO root fetch - processPackages [fmbench]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-07 23:09:35] INFO root fetch - processPackages [podpointclient]: Downloading https://files.pythonhosted.org/packages/01/3d/508d3688931e9db17b058164690f9235bcd63001dd2514f6532362cd2d57/podpointclient-1.4.3.tar.gz
+[2024-04-07 23:09:35] INFO root fetch - processPackages [astromcad]: Downloading https://files.pythonhosted.org/packages/dd/b6/2e29d19b61eed00a977539ce9932e9e1ea9fab89425411cf64a8647ec895/astromcad-0.1.6.tar.gz
+[2024-04-07 23:09:35] INFO root fetch - processPackages [easydebugger]: Downloading https://files.pythonhosted.org/packages/1d/fc/24a3559f480c6b94fe272adf8ff6fee80aa7fde993257f1e1e49a175cf42/easydebugger-0.0.1.tar.gz
+[2024-04-07 23:09:35] WARNING root fetch - processPackages [podpointclient]: Timeout reached during download
+[2024-04-07 23:09:35] INFO root fetch - processPackages [fmbench]: Downloading https://files.pythonhosted.org/packages/12/ff/7ccc41c0fab7fb2a7b7db448775887d29837bdaabdb47265fcd435e8eb35/fmbench-1.0.8.tar.gz
+[2024-04-07 23:09:35] WARNING root fetch - processPackages [easydebugger]: Timeout reached during download
+[2024-04-07 23:09:35] INFO root fetch - processPackages [podpointclient]: Downloading https://files.pythonhosted.org/packages/89/2e/d83f97c8bd30c3081eb12eb2736602caa3674738205a22b9b54f1ed766a8/podpointclient-1.5.0.tar.gz
+[2024-04-07 23:09:35] WARNING root fetch - processPackages [podpointclient]: Timeout reached during download
+[2024-04-07 23:09:35] INFO root fetch - processPackages [podpointclient]: executing diffoscope
+[2024-04-07 23:09:35] INFO root fetch - processPackages [podpointclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/podpointclient-1.4.3.tar.gz tmp/podpointclient-1.5.0.tar.gz --markdown 20240407/p/podpointclient/1.4.3-1.5.0/diff.md --exclude *.pyd
+[2024-04-07 23:09:35] INFO root fetch - processPackages [easydebugger]: Downloading https://files.pythonhosted.org/packages/86/d3/265a798de1962676f82a68a2be6a4ee99a24593c08b91e6862d536319a5c/easydebugger-1.0.0.tar.gz
+[2024-04-07 23:09:35] WARNING root fetch - processPackages [astromcad]: Timeout reached during download
+[2024-04-07 23:09:35] WARNING root fetch - processPackages [fmbench]: Timeout reached during download
+[2024-04-07 23:09:35] WARNING root fetch - processPackages [easydebugger]: Timeout reached during download
+[2024-04-07 23:09:35] INFO root fetch - processPackages [easydebugger]: executing diffoscope
+[2024-04-07 23:09:35] INFO root fetch - processPackages [easydebugger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easydebugger-0.0.1.tar.gz tmp/easydebugger-1.0.0.tar.gz --markdown 20240407/e/easydebugger/0.0.1-1.0.0/diff.md --exclude *.pyd
+[2024-04-07 23:09:35] INFO root fetch - processPackages [astromcad]: Downloading https://files.pythonhosted.org/packages/f9/56/00af74572fdf33fa06a0685c54066d2a22868b17075e3be80b29bdaafb52/astromcad-0.1.7.tar.gz
+[2024-04-07 23:09:35] INFO root fetch - processPackages [fmbench]: Downloading https://files.pythonhosted.org/packages/84/ee/d5b3731e328488d9664f215a9cdceeb188cdf6dd2c19b5f99a6a59daa9e4/fmbench-1.0.9.tar.gz
+[2024-04-07 23:09:36] WARNING root fetch - processPackages [fmbench]: Timeout reached during download
+[2024-04-07 23:09:36] INFO root fetch - processPackages [fmbench]: executing diffoscope
+[2024-04-07 23:09:36] INFO root fetch - processPackages [fmbench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fmbench-1.0.8.tar.gz tmp/fmbench-1.0.9.tar.gz --markdown 20240407/f/fmbench/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-07 23:09:36] INFO root fetch - processPackages [podpointclient]: Remove: archive file [/home/abi/fetcher/tmp/podpointclient-1.4.3.tar.gz]
+[2024-04-07 23:09:36] INFO root fetch - processPackages [podpointclient]: Remove: archive file [/home/abi/fetcher/tmp/podpointclient-1.5.0.tar.gz]
+[2024-04-07 23:09:36] INFO root fetch - main [MainThread]: End processing [podpointclient]: success
+[2024-04-07 23:09:36] INFO root fetch - processPackages [easydebugger]: Remove: archive file [/home/abi/fetcher/tmp/easydebugger-0.0.1.tar.gz]
+[2024-04-07 23:09:36] INFO root fetch - processPackages [easydebugger]: Remove: archive file [/home/abi/fetcher/tmp/easydebugger-1.0.0.tar.gz]
+[2024-04-07 23:09:36] INFO root fetch - main [MainThread]: End processing [easydebugger]: success
+[2024-04-07 23:09:36] WARNING root fetch - processPackages [astromcad]: Timeout reached during download
+[2024-04-07 23:09:36] INFO root fetch - processPackages [astromcad]: executing diffoscope
+[2024-04-07 23:09:36] INFO root fetch - processPackages [astromcad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astromcad-0.1.6.tar.gz tmp/astromcad-0.1.7.tar.gz --markdown 20240407/a/astromcad/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2024-04-07 23:09:37] INFO root fetch - processPackages [fmbench]: Remove: archive file [/home/abi/fetcher/tmp/fmbench-1.0.8.tar.gz]
+[2024-04-07 23:09:37] INFO root fetch - processPackages [fmbench]: Remove: archive file [/home/abi/fetcher/tmp/fmbench-1.0.9.tar.gz]
+[2024-04-07 23:09:37] INFO root fetch - main [MainThread]: End processing [fmbench]: success
+[2024-04-07 23:09:37] INFO root fetch - processPackages [astromcad]: Remove: archive file [/home/abi/fetcher/tmp/astromcad-0.1.6.tar.gz]
+[2024-04-07 23:09:37] INFO root fetch - processPackages [astromcad]: Remove: archive file [/home/abi/fetcher/tmp/astromcad-0.1.7.tar.gz]
+[2024-04-07 23:09:37] INFO root fetch - main [MainThread]: End processing [astromcad]: success
+[2024-04-07 23:09:37] INFO root fetch - main [MainThread]: Store serial: [22659274]
