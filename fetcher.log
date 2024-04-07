@@ -2889,3 +2889,28 @@
 [2024-04-07 04:21:06] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240407.tar.gz]
 [2024-04-07 04:21:06] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2024-04-07 04:21:06] INFO root fetch - main [MainThread]: Store serial: [22652853]
+[2024-04-07 04:23:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652853]
+[2024-04-07 04:23:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 04:23:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pozo
+[2024-04-07 04:23:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: istari
+[2024-04-07 04:23:15] INFO root fetch - processPackages [istari]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-07 04:23:15] INFO root fetch - processPackages [pozo]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-07 04:23:15] INFO root fetch - processPackages [istari]: Downloading https://files.pythonhosted.org/packages/8a/a4/bb8cb0c0c52cc7c14467a3eacabcea90d1cf4dd097fd714f7546e53b9db6/istari-0.0.6.tar.gz
+[2024-04-07 04:23:15] INFO root fetch - processPackages [pozo]: Downloading https://files.pythonhosted.org/packages/ef/7a/70cc41989b58836004e0f48f2cf2ddd932e5e9295ab1f0a82aad851d8e36/pozo-0.9.8.tar.gz
+[2024-04-07 04:23:15] WARNING root fetch - processPackages [istari]: Timeout reached during download
+[2024-04-07 04:23:15] WARNING root fetch - processPackages [pozo]: Timeout reached during download
+[2024-04-07 04:23:16] INFO root fetch - processPackages [istari]: Downloading https://files.pythonhosted.org/packages/9a/73/b8c119b5d83ce8e78ee338b6d9c4a8dc93be5e1a1cb416fd9171590d3224/istari-0.0.7.tar.gz
+[2024-04-07 04:23:16] INFO root fetch - processPackages [pozo]: Downloading https://files.pythonhosted.org/packages/de/4f/e91520a992cf86e73ddd640ef44b953c363e67f272e67d99d4f2f8549bd4/pozo-0.9.9.tar.gz
+[2024-04-07 04:23:16] WARNING root fetch - processPackages [istari]: Timeout reached during download
+[2024-04-07 04:23:16] INFO root fetch - processPackages [istari]: executing diffoscope
+[2024-04-07 04:23:16] INFO root fetch - processPackages [istari]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/istari-0.0.6.tar.gz tmp/istari-0.0.7.tar.gz --markdown 20240407/i/istari/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2024-04-07 04:23:16] WARNING root fetch - processPackages [pozo]: Timeout reached during download
+[2024-04-07 04:23:16] INFO root fetch - processPackages [pozo]: executing diffoscope
+[2024-04-07 04:23:16] INFO root fetch - processPackages [pozo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pozo-0.9.8.tar.gz tmp/pozo-0.9.9.tar.gz --markdown 20240407/p/pozo/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2024-04-07 04:23:16] INFO root fetch - processPackages [istari]: Remove: archive file [/home/abi/fetcher/tmp/istari-0.0.6.tar.gz]
+[2024-04-07 04:23:16] INFO root fetch - processPackages [istari]: Remove: archive file [/home/abi/fetcher/tmp/istari-0.0.7.tar.gz]
+[2024-04-07 04:23:16] INFO root fetch - main [MainThread]: End processing [istari]: success
+[2024-04-07 04:23:16] INFO root fetch - processPackages [pozo]: Remove: archive file [/home/abi/fetcher/tmp/pozo-0.9.8.tar.gz]
+[2024-04-07 04:23:16] INFO root fetch - processPackages [pozo]: Remove: archive file [/home/abi/fetcher/tmp/pozo-0.9.9.tar.gz]
+[2024-04-07 04:23:16] INFO root fetch - main [MainThread]: End processing [pozo]: success
+[2024-04-07 04:23:16] INFO root fetch - main [MainThread]: Store serial: [22652858]
