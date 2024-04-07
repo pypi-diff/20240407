@@ -10391,3 +10391,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:10:42] WARNING root fetch - processPackages [bigdl-core-cpp]: Skipping package: exceeds size limit 35509727>=10485760
 [2024-04-07 13:10:42] INFO root fetch - main [MainThread]: End processing [bigdl-core-cpp] error
 [2024-04-07 13:10:42] INFO root fetch - main [MainThread]: Store serial: [22655602]
+[2024-04-07 13:12:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655602]
+[2024-04-07 13:12:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 13:12:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PYield
+[2024-04-07 13:12:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: assisted-service-client
+[2024-04-07 13:12:51] INFO root fetch - processPackages [PYield]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-04-07 13:12:51] INFO root fetch - processPackages [PYield]: Downloading https://files.pythonhosted.org/packages/3c/90/e8a6fd73a87723a7a01a7f041118c60d3e7feb9f9a532bd3fef08398d6ae/pyield-0.4.1.tar.gz
+[2024-04-07 13:12:51] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2024-04-07 13:12:51] WARNING root fetch - processPackages [PYield]: Timeout reached during download
+[2024-04-07 13:12:51] INFO root fetch - processPackages [assisted-service-client]: Downloading https://files.pythonhosted.org/packages/a5/ee/a5837c5427b0689f863021f5d65c42ff9d4ae267905a751492653198b2dc/assisted_service_client-2.9.0.post8-py3-none-any.whl
+[2024-04-07 13:12:51] INFO root fetch - processPackages [PYield]: Downloading https://files.pythonhosted.org/packages/a1/54/474a8ffbeaaff78ebc7ddd516525409e4b077a5d0044ecb1a85c7b666683/pyield-0.5.0.tar.gz
+[2024-04-07 13:12:51] WARNING root fetch - processPackages [assisted-service-client]: Timeout reached during download
+[2024-04-07 13:12:51] WARNING root fetch - processPackages [PYield]: Timeout reached during download
+[2024-04-07 13:12:51] INFO root fetch - processPackages [PYield]: executing diffoscope
+[2024-04-07 13:12:51] INFO root fetch - processPackages [PYield]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyield-0.4.1.tar.gz tmp/pyield-0.5.0.tar.gz --markdown 20240407/P/PYield/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2024-04-07 13:12:51] INFO root fetch - processPackages [assisted-service-client]: Downloading https://files.pythonhosted.org/packages/f6/90/2599b3c134ea21c06d22f83dd1dfac6801d974b9aa0958f008fb332e5b4d/assisted_service_client-2.9.0.post9-py3-none-any.whl
+[2024-04-07 13:12:52] WARNING root fetch - processPackages [assisted-service-client]: Timeout reached during download
+[2024-04-07 13:12:52] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2024-04-07 13:12:52] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20240407/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2024-04-07 13:12:52] INFO root fetch - processPackages [PYield]: Remove: archive file [/home/abi/fetcher/tmp/pyield-0.4.1.tar.gz]
+[2024-04-07 13:12:52] INFO root fetch - processPackages [PYield]: Remove: archive file [/home/abi/fetcher/tmp/pyield-0.5.0.tar.gz]
+[2024-04-07 13:12:52] INFO root fetch - main [MainThread]: End processing [PYield]: success
+[2024-04-07 13:12:53] INFO root fetch - processPackages [assisted-service-client]: Remove: archive file [/home/abi/fetcher/tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip]
+[2024-04-07 13:12:53] INFO root fetch - processPackages [assisted-service-client]: Remove: archive file [/home/abi/fetcher/tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip]
+[2024-04-07 13:12:53] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2024-04-07 13:12:53] INFO root fetch - main [MainThread]: Store serial: [22655608]
