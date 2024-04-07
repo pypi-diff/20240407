@@ -3662,3 +3662,53 @@
 [2024-04-07 05:06:37] INFO root fetch - processPackages [reprompt]: Remove: archive file [/home/abi/fetcher/tmp/reprompt-0.0.5rc31.post1.tar.gz]
 [2024-04-07 05:06:37] INFO root fetch - main [MainThread]: End processing [reprompt]: success
 [2024-04-07 05:06:37] INFO root fetch - main [MainThread]: Store serial: [22653114]
+[2024-04-07 05:08:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653114]
+[2024-04-07 05:08:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 05:08:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aws-delete-all
+[2024-04-07 05:08:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rockai-cli-app
+[2024-04-07 05:08:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deadline
+[2024-04-07 05:08:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zsx-pack
+[2024-04-07 05:08:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytector
+[2024-04-07 05:08:45] INFO root fetch - processPackages [zsx-pack]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-07 05:08:45] INFO root fetch - processPackages [aws-delete-all]: New version: [0.5.4.1] Old Version: [0.5.4]
+[2024-04-07 05:08:46] INFO root fetch - processPackages [zsx-pack]: Downloading https://files.pythonhosted.org/packages/e3/70/3ae12d0c0d4c7fd15dd287353789733dc2c9807f65cc6c8cdc75a6d8355a/zsx_pack-0.0.3.tar.gz
+[2024-04-07 05:08:46] INFO root fetch - processPackages [aws-delete-all]: Downloading https://files.pythonhosted.org/packages/03/ab/fb63fa864543547daf38bd2e068f8307c6f866eb966b920b10ea6c76e461/aws-delete-all-0.5.4.tar.gz
+[2024-04-07 05:08:46] ERROR root fetch - processPackages [pytector]: Unable to get metadata: No such project 'pytector'
+[2024-04-07 05:08:46] INFO root fetch - main [MainThread]: End processing [pytector] error
+[2024-04-07 05:08:46] INFO root fetch - processPackages [deadline]: New version: [0.47.2] Old Version: [0.47.1]
+[2024-04-07 05:08:46] INFO root fetch - processPackages [rockai-cli-app]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 05:08:46] WARNING root fetch - processPackages [zsx-pack]: Timeout reached during download
+[2024-04-07 05:08:46] WARNING root fetch - processPackages [aws-delete-all]: Timeout reached during download
+[2024-04-07 05:08:46] INFO root fetch - processPackages [aws-delete-all]: Downloading https://files.pythonhosted.org/packages/77/41/52651194040fd4b0444b8757acbddd4472bc28249bc89e70dec660809dac/aws-delete-all-0.5.4.1.tar.gz
+[2024-04-07 05:08:46] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/f0/bc/2ef2551f965243f6f9f47cb640af5273a26e27909c921207686579e48c31/rockai_cli_app-0.1.8.tar.gz
+[2024-04-07 05:08:46] INFO root fetch - processPackages [deadline]: Downloading https://files.pythonhosted.org/packages/e3/7b/402e4eeea27421449e4bf34eaa286c91d00d3af06e3b74f2b08b77c722b0/deadline-0.47.1.tar.gz
+[2024-04-07 05:08:46] WARNING root fetch - processPackages [aws-delete-all]: Timeout reached during download
+[2024-04-07 05:08:46] INFO root fetch - processPackages [aws-delete-all]: executing diffoscope
+[2024-04-07 05:08:46] INFO root fetch - processPackages [aws-delete-all]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-delete-all-0.5.4.tar.gz tmp/aws-delete-all-0.5.4.1.tar.gz --markdown 20240407/a/aws-delete-all/0.5.4-0.5.4.1/diff.md --exclude *.pyd
+[2024-04-07 05:08:46] INFO root fetch - processPackages [zsx-pack]: Downloading https://files.pythonhosted.org/packages/03/8f/f48dc2c16ab49dc41eb3ddec6f77ca76bdfd1725a9b381ec384733464041/zsx_pack-0.0.4.tar.gz
+[2024-04-07 05:08:46] WARNING root fetch - processPackages [zsx-pack]: Timeout reached during download
+[2024-04-07 05:08:46] INFO root fetch - processPackages [zsx-pack]: executing diffoscope
+[2024-04-07 05:08:46] INFO root fetch - processPackages [zsx-pack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zsx_pack-0.0.3.tar.gz tmp/zsx_pack-0.0.4.tar.gz --markdown 20240407/z/zsx-pack/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 05:08:46] WARNING root fetch - processPackages [rockai-cli-app]: Timeout reached during download
+[2024-04-07 05:08:46] WARNING root fetch - processPackages [deadline]: Timeout reached during download
+[2024-04-07 05:08:46] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/03/43/8cb70726cf2b5f1ece1ef4d90da9286ad7720ee524cc75848ff0801a9fde/rockai_cli_app-0.1.9.tar.gz
+[2024-04-07 05:08:46] INFO root fetch - processPackages [deadline]: Downloading https://files.pythonhosted.org/packages/3f/14/178bf0af1709b4e4fa558f1d9582f91e101528a540781cc4d8720e63efc5/deadline-0.47.2.tar.gz
+[2024-04-07 05:08:46] WARNING root fetch - processPackages [rockai-cli-app]: Timeout reached during download
+[2024-04-07 05:08:46] INFO root fetch - processPackages [rockai-cli-app]: executing diffoscope
+[2024-04-07 05:08:46] INFO root fetch - processPackages [rockai-cli-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rockai_cli_app-0.1.8.tar.gz tmp/rockai_cli_app-0.1.9.tar.gz --markdown 20240407/r/rockai-cli-app/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 05:08:47] WARNING root fetch - processPackages [deadline]: Timeout reached during download
+[2024-04-07 05:08:47] INFO root fetch - processPackages [deadline]: executing diffoscope
+[2024-04-07 05:08:47] INFO root fetch - processPackages [deadline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deadline-0.47.1.tar.gz tmp/deadline-0.47.2.tar.gz --markdown 20240407/d/deadline/0.47.1-0.47.2/diff.md --exclude *.pyd
+[2024-04-07 05:08:47] INFO root fetch - processPackages [aws-delete-all]: Remove: archive file [/home/abi/fetcher/tmp/aws-delete-all-0.5.4.tar.gz]
+[2024-04-07 05:08:47] INFO root fetch - processPackages [aws-delete-all]: Remove: archive file [/home/abi/fetcher/tmp/aws-delete-all-0.5.4.1.tar.gz]
+[2024-04-07 05:08:47] INFO root fetch - main [MainThread]: End processing [aws-delete-all]: success
+[2024-04-07 05:08:47] INFO root fetch - processPackages [zsx-pack]: Remove: archive file [/home/abi/fetcher/tmp/zsx_pack-0.0.3.tar.gz]
+[2024-04-07 05:08:47] INFO root fetch - processPackages [zsx-pack]: Remove: archive file [/home/abi/fetcher/tmp/zsx_pack-0.0.4.tar.gz]
+[2024-04-07 05:08:47] INFO root fetch - main [MainThread]: End processing [zsx-pack]: success
+[2024-04-07 05:08:47] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.1.8.tar.gz]
+[2024-04-07 05:08:47] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.1.9.tar.gz]
+[2024-04-07 05:08:47] INFO root fetch - main [MainThread]: End processing [rockai-cli-app]: success
+[2024-04-07 05:08:47] INFO root fetch - processPackages [deadline]: Remove: archive file [/home/abi/fetcher/tmp/deadline-0.47.1.tar.gz]
+[2024-04-07 05:08:47] INFO root fetch - processPackages [deadline]: Remove: archive file [/home/abi/fetcher/tmp/deadline-0.47.2.tar.gz]
+[2024-04-07 05:08:47] INFO root fetch - main [MainThread]: End processing [deadline]: success
+[2024-04-07 05:08:47] INFO root fetch - main [MainThread]: Store serial: [22653130]
