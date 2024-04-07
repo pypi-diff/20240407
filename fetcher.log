@@ -11733,3 +11733,27 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:33:33] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
 [2024-04-07 14:33:33] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2024-04-07 14:33:33] INFO root fetch - main [MainThread]: Store serial: [22656215]
+[2024-04-07 14:35:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656215]
+[2024-04-07 14:35:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 14:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: komodo-sdk
+[2024-04-07 14:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlgym
+[2024-04-07 14:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-mongo-backend
+[2024-04-07 14:35:42] INFO root fetch - processPackages [komodo-sdk]: New version: [0.0.9] Old Version: [0.0.80]
+[2024-04-07 14:35:42] WARNING root fetch - processPackages [sqlgym]: Skipping, unable to determine old version
+[2024-04-07 14:35:42] INFO root fetch - main [MainThread]: End processing [sqlgym] error
+[2024-04-07 14:35:42] INFO root fetch - processPackages [django-mongo-backend]: New version: [0.26] Old Version: [0.25.3]
+[2024-04-07 14:35:42] INFO root fetch - processPackages [komodo-sdk]: Downloading https://files.pythonhosted.org/packages/a2/80/4cabc3b48954e2cc95e1c1c3543a7518fd70b09a40d450ee09cf81e4515d/komodo_sdk-0.0.80.tar.gz
+[2024-04-07 14:35:43] INFO root fetch - processPackages [django-mongo-backend]: Downloading https://files.pythonhosted.org/packages/e6/7e/79f8be937e50af8a60aba53f1bed8c80441172118ed62962ce5708b4d227/django_mongo_backend-0.25.3.tar.gz
+[2024-04-07 14:35:43] WARNING root fetch - processPackages [django-mongo-backend]: Timeout reached during download
+[2024-04-07 14:35:43] INFO root fetch - processPackages [django-mongo-backend]: Downloading https://files.pythonhosted.org/packages/7e/de/4793f7ca63f328c0754c086e0f1a1d22f4816cb596d2c4dfefeaa33d6364/django_mongo_backend-0.26.tar.gz
+[2024-04-07 14:35:43] WARNING root fetch - processPackages [komodo-sdk]: Timeout reached during download
+[2024-04-07 14:35:43] WARNING root fetch - processPackages [django-mongo-backend]: Timeout reached during download
+[2024-04-07 14:35:43] INFO root fetch - processPackages [django-mongo-backend]: executing diffoscope
+[2024-04-07 14:35:43] INFO root fetch - processPackages [django-mongo-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_mongo_backend-0.25.3.tar.gz tmp/django_mongo_backend-0.26.tar.gz --markdown 20240407/d/django-mongo-backend/0.25.3-0.26/diff.md --exclude *.pyd
+[2024-04-07 14:35:43] INFO root fetch - processPackages [komodo-sdk]: Downloading https://files.pythonhosted.org/packages/c1/75/64665f8823652ae983842708f771508649b4a085802d170fbb9d173d580d/komodo_sdk-0.0.9.tar.gz
+[2024-04-07 14:35:43] WARNING root fetch - processPackages [komodo-sdk]: Skipping package: exceeds size limit 41417628>=10485760
+[2024-04-07 14:35:43] INFO root fetch - main [MainThread]: End processing [komodo-sdk] error
+[2024-04-07 14:35:44] INFO root fetch - processPackages [django-mongo-backend]: Remove: archive file [/home/abi/fetcher/tmp/django_mongo_backend-0.25.3.tar.gz]
+[2024-04-07 14:35:44] INFO root fetch - processPackages [django-mongo-backend]: Remove: archive file [/home/abi/fetcher/tmp/django_mongo_backend-0.26.tar.gz]
+[2024-04-07 14:35:44] INFO root fetch - main [MainThread]: End processing [django-mongo-backend]: success
+[2024-04-07 14:35:44] INFO root fetch - main [MainThread]: Store serial: [22656226]
