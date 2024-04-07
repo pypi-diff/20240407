@@ -1871,3 +1871,9 @@
 [2024-04-07 02:55:02] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
 [2024-04-07 02:55:02] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2024-04-07 02:55:02] INFO root fetch - main [MainThread]: Store serial: [22652393]
+[2024-04-07 02:57:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652393]
+[2024-04-07 02:57:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 02:57:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycounts_rms
+[2024-04-07 02:57:11] WARNING root fetch - processPackages [pycounts_rms]: Skipping, unable to determine old version
+[2024-04-07 02:57:11] INFO root fetch - main [MainThread]: End processing [pycounts_rms] error
+[2024-04-07 02:57:11] INFO root fetch - main [MainThread]: Store serial: [22652410]
