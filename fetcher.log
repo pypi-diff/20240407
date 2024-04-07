@@ -3951,3 +3951,17 @@
 [2024-04-07 05:28:18] INFO root fetch - processPackages [pytubefix]: Remove: archive file [/home/abi/fetcher/tmp/pytubefix-5.1rc1.tar.gz]
 [2024-04-07 05:28:18] INFO root fetch - main [MainThread]: End processing [pytubefix]: success
 [2024-04-07 05:28:18] INFO root fetch - main [MainThread]: Store serial: [22653254]
+[2024-04-07 05:30:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653254]
+[2024-04-07 05:30:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 05:30:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keras-nlp-nightly
+[2024-04-07 05:30:27] INFO root fetch - processPackages [keras-nlp-nightly]: New version: [0.9.0.dev2024040703] Old Version: [0.9.0.dev2024040603]
+[2024-04-07 05:30:27] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/9d/9a/5ad9152df1e1add55c5d31ca1bbebffe04e02a25785409b642260a63fa07/keras-nlp-nightly-0.9.0.dev2024040603.tar.gz
+[2024-04-07 05:30:27] WARNING root fetch - processPackages [keras-nlp-nightly]: Timeout reached during download
+[2024-04-07 05:30:27] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/cf/f2/4b77da3d59eb32fb8f12ee555c96b140d71ab67a897687f104ba1c8746bf/keras-nlp-nightly-0.9.0.dev2024040703.tar.gz
+[2024-04-07 05:30:27] WARNING root fetch - processPackages [keras-nlp-nightly]: Timeout reached during download
+[2024-04-07 05:30:27] INFO root fetch - processPackages [keras-nlp-nightly]: executing diffoscope
+[2024-04-07 05:30:27] INFO root fetch - processPackages [keras-nlp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-nlp-nightly-0.9.0.dev2024040603.tar.gz tmp/keras-nlp-nightly-0.9.0.dev2024040703.tar.gz --markdown 20240407/k/keras-nlp-nightly/0.9.0.dev2024040603-0.9.0.dev2024040703/diff.md --exclude *.pyd
+[2024-04-07 05:30:28] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024040603.tar.gz]
+[2024-04-07 05:30:28] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024040703.tar.gz]
+[2024-04-07 05:30:28] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
+[2024-04-07 05:30:28] INFO root fetch - main [MainThread]: Store serial: [22653259]
