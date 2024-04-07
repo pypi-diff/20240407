@@ -14233,3 +14233,94 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:59:47] INFO root fetch - processPackages [thothglyph-doc]: Remove: archive file [/home/abi/fetcher/tmp/thothglyph_doc-0.2.1.tar.gz]
 [2024-04-07 16:59:47] INFO root fetch - main [MainThread]: End processing [thothglyph-doc]: success
 [2024-04-07 16:59:47] INFO root fetch - main [MainThread]: Store serial: [22657007]
+[2024-04-07 17:01:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657007]
+[2024-04-07 17:01:56] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-07 17:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: z4d-certified-devices
+[2024-04-07 17:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anonymous-chatgpt
+[2024-04-07 17:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: composio-core
+[2024-04-07 17:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mfoci
+[2024-04-07 17:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: composio-langchain
+[2024-04-07 17:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: composio-crewai
+[2024-04-07 17:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: composio-autogen
+[2024-04-07 17:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dynamicpy
+[2024-04-07 17:01:56] INFO root fetch - processPackages [composio-core]: New version: [0.1.77] Old Version: [0.1.76]
+[2024-04-07 17:01:56] INFO root fetch - processPackages [composio-langchain]: New version: [0.1.77] Old Version: [0.1.76]
+[2024-04-07 17:01:56] INFO root fetch - processPackages [dynamicpy]: New version: [1.3.0] Old Version: [1.2.2]
+[2024-04-07 17:01:56] INFO root fetch - processPackages [anonymous-chatgpt]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-07 17:01:56] INFO root fetch - processPackages [composio-crewai]: New version: [0.1.77] Old Version: [0.1.76]
+[2024-04-07 17:01:56] INFO root fetch - processPackages [composio-autogen]: New version: [0.1.77] Old Version: [0.1.76]
+[2024-04-07 17:01:56] INFO root fetch - processPackages [mfoci]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-07 17:01:56] INFO root fetch - processPackages [z4d-certified-devices]: New version: [4.251] Old Version: [4.250]
+[2024-04-07 17:01:56] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/07/66/6e321aa3c89dcc3e93296d6409be2a10cab95d913220bf03c55d2af6590a/composio_core-0.1.76.tar.gz
+[2024-04-07 17:01:56] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/1a/f8/832a0b69fec797e7b2fffa67a35d8f2b2825bf78e375e77139cb8b75157e/composio_langchain-0.1.76.tar.gz
+[2024-04-07 17:01:56] INFO root fetch - processPackages [dynamicpy]: Downloading https://files.pythonhosted.org/packages/24/8a/b4262c11d866a1f26337ca46d388200cf50af0ba82b71bb1214ef04adb9f/dynamicpy-1.2.2.tar.gz
+[2024-04-07 17:01:57] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/d4/6a/869148598768e36dde398db521d2362ca801cb6ef6610fe628602809b259/composio_autogen-0.1.76.tar.gz
+[2024-04-07 17:01:57] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/ec/22/ddea1243dd86e1be61ff1900a9876e4a107419453fdeb2f5001ae1f5e808/composio_crewai-0.1.76.tar.gz
+[2024-04-07 17:01:57] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/ec/eb/311fb33cf4a842229a8f4204cefa52e052f8ab604308e7ce8a84cd431dec/z4d-certified-devices-4.250.tar.gz
+[2024-04-07 17:01:57] INFO root fetch - processPackages [anonymous-chatgpt]: Downloading https://files.pythonhosted.org/packages/79/71/c9f8ccd9de6df37e258801c24849ec0dacdde62a336a1d2ec0ad21bd9e78/anonymous-chatgpt-0.0.1.tar.gz
+[2024-04-07 17:01:57] INFO root fetch - processPackages [mfoci]: Downloading https://files.pythonhosted.org/packages/53/8a/8b33bc3bb50e2b3296930e9df81e1f30e124abc526dbe06a76ae73b25718/mfoci-0.1.2.tar.gz
+[2024-04-07 17:01:57] WARNING root fetch - processPackages [composio-langchain]: Timeout reached during download
+[2024-04-07 17:01:57] WARNING root fetch - processPackages [composio-core]: Timeout reached during download
+[2024-04-07 17:01:57] WARNING root fetch - processPackages [dynamicpy]: Timeout reached during download
+[2024-04-07 17:01:57] WARNING root fetch - processPackages [composio-autogen]: Timeout reached during download
+[2024-04-07 17:01:57] WARNING root fetch - processPackages [composio-crewai]: Timeout reached during download
+[2024-04-07 17:01:57] WARNING root fetch - processPackages [z4d-certified-devices]: Timeout reached during download
+[2024-04-07 17:01:57] INFO root fetch - processPackages [dynamicpy]: Downloading https://files.pythonhosted.org/packages/94/7b/219f8d76ce005e68a0951c89c8a9fda63eaa244b2cca2d177a797b35c9f4/dynamicpy-1.3.0.tar.gz
+[2024-04-07 17:01:57] WARNING root fetch - processPackages [mfoci]: Timeout reached during download
+[2024-04-07 17:01:57] WARNING root fetch - processPackages [anonymous-chatgpt]: Timeout reached during download
+[2024-04-07 17:01:57] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/08/ee/07a6bd093eab3169d815bfaba0f4352c7e9153968d0d3cfc230de7ca92fa/z4d-certified-devices-4.251.tar.gz
+[2024-04-07 17:01:57] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/79/da/2256dabd156aaebbe20943dad81850679d7802804f9e5a77ff33a692d0ca/composio_langchain-0.1.77.tar.gz
+[2024-04-07 17:01:57] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/0d/e5/c11d8f2ac241dc3bdf5333bd207deac1a6c950e64c0481e4042971bdc96f/composio_core-0.1.77.tar.gz
+[2024-04-07 17:01:57] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/1d/be/9705d4c705ebf94c5492848e12d32e86733979bc9bd24be65ae690ce6309/composio_autogen-0.1.77.tar.gz
+[2024-04-07 17:01:57] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/86/22/955421724f23ccadc6f0c42cf50c7df520b7ae1d244a81b11bf7a19ca846/composio_crewai-0.1.77.tar.gz
+[2024-04-07 17:01:57] WARNING root fetch - processPackages [dynamicpy]: Timeout reached during download
+[2024-04-07 17:01:57] INFO root fetch - processPackages [dynamicpy]: executing diffoscope
+[2024-04-07 17:01:57] INFO root fetch - processPackages [dynamicpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dynamicpy-1.2.2.tar.gz tmp/dynamicpy-1.3.0.tar.gz --markdown 20240407/d/dynamicpy/1.2.2-1.3.0/diff.md --exclude *.pyd
+[2024-04-07 17:01:57] INFO root fetch - processPackages [mfoci]: Downloading https://files.pythonhosted.org/packages/b0/b2/7c0ef5cbd3f60824069bdcfa31bf76edb74158f2162d1dc5f83c165727ff/mfoci-0.1.3.tar.gz
+[2024-04-07 17:01:57] WARNING root fetch - processPackages [z4d-certified-devices]: Timeout reached during download
+[2024-04-07 17:01:57] INFO root fetch - processPackages [z4d-certified-devices]: executing diffoscope
+[2024-04-07 17:01:57] INFO root fetch - processPackages [z4d-certified-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z4d-certified-devices-4.250.tar.gz tmp/z4d-certified-devices-4.251.tar.gz --markdown 20240407/z/z4d-certified-devices/4.250-4.251/diff.md --exclude *.pyd
+[2024-04-07 17:01:57] WARNING root fetch - processPackages [composio-langchain]: Timeout reached during download
+[2024-04-07 17:01:57] INFO root fetch - processPackages [composio-langchain]: executing diffoscope
+[2024-04-07 17:01:57] INFO root fetch - processPackages [composio-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_langchain-0.1.76.tar.gz tmp/composio_langchain-0.1.77.tar.gz --markdown 20240407/c/composio-langchain/0.1.76-0.1.77/diff.md --exclude *.pyd
+[2024-04-07 17:01:57] WARNING root fetch - processPackages [composio-core]: Timeout reached during download
+[2024-04-07 17:01:57] INFO root fetch - processPackages [composio-core]: executing diffoscope
+[2024-04-07 17:01:57] INFO root fetch - processPackages [composio-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_core-0.1.76.tar.gz tmp/composio_core-0.1.77.tar.gz --markdown 20240407/c/composio-core/0.1.76-0.1.77/diff.md --exclude *.pyd
+[2024-04-07 17:01:57] INFO root fetch - processPackages [anonymous-chatgpt]: Downloading https://files.pythonhosted.org/packages/24/ca/bd0fe3f069703f962894f605517169d3544083e2d2c1f22e8dfffb2ec81b/anonymous-chatgpt-0.0.2.tar.gz
+[2024-04-07 17:01:57] WARNING root fetch - processPackages [composio-crewai]: Timeout reached during download
+[2024-04-07 17:01:57] INFO root fetch - processPackages [composio-crewai]: executing diffoscope
+[2024-04-07 17:01:57] INFO root fetch - processPackages [composio-crewai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_crewai-0.1.76.tar.gz tmp/composio_crewai-0.1.77.tar.gz --markdown 20240407/c/composio-crewai/0.1.76-0.1.77/diff.md --exclude *.pyd
+[2024-04-07 17:01:57] WARNING root fetch - processPackages [composio-autogen]: Timeout reached during download
+[2024-04-07 17:01:57] INFO root fetch - processPackages [composio-autogen]: executing diffoscope
+[2024-04-07 17:01:57] INFO root fetch - processPackages [composio-autogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_autogen-0.1.76.tar.gz tmp/composio_autogen-0.1.77.tar.gz --markdown 20240407/c/composio-autogen/0.1.76-0.1.77/diff.md --exclude *.pyd
+[2024-04-07 17:01:57] WARNING root fetch - processPackages [mfoci]: Timeout reached during download
+[2024-04-07 17:01:57] INFO root fetch - processPackages [mfoci]: executing diffoscope
+[2024-04-07 17:01:57] INFO root fetch - processPackages [mfoci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mfoci-0.1.2.tar.gz tmp/mfoci-0.1.3.tar.gz --markdown 20240407/m/mfoci/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2024-04-07 17:01:57] WARNING root fetch - processPackages [anonymous-chatgpt]: Timeout reached during download
+[2024-04-07 17:01:57] INFO root fetch - processPackages [anonymous-chatgpt]: executing diffoscope
+[2024-04-07 17:01:57] INFO root fetch - processPackages [anonymous-chatgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anonymous-chatgpt-0.0.1.tar.gz tmp/anonymous-chatgpt-0.0.2.tar.gz --markdown 20240407/a/anonymous-chatgpt/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-07 17:01:58] INFO root fetch - processPackages [dynamicpy]: Remove: archive file [/home/abi/fetcher/tmp/dynamicpy-1.2.2.tar.gz]
+[2024-04-07 17:01:58] INFO root fetch - processPackages [dynamicpy]: Remove: archive file [/home/abi/fetcher/tmp/dynamicpy-1.3.0.tar.gz]
+[2024-04-07 17:01:58] INFO root fetch - main [MainThread]: End processing [dynamicpy]: success
+[2024-04-07 17:01:58] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.1.76.tar.gz]
+[2024-04-07 17:01:58] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.1.77.tar.gz]
+[2024-04-07 17:01:58] INFO root fetch - main [MainThread]: End processing [composio-langchain]: success
+[2024-04-07 17:01:58] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.76.tar.gz]
+[2024-04-07 17:01:58] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.77.tar.gz]
+[2024-04-07 17:01:58] INFO root fetch - main [MainThread]: End processing [composio-autogen]: success
+[2024-04-07 17:01:58] INFO root fetch - processPackages [anonymous-chatgpt]: Remove: archive file [/home/abi/fetcher/tmp/anonymous-chatgpt-0.0.1.tar.gz]
+[2024-04-07 17:01:58] INFO root fetch - processPackages [anonymous-chatgpt]: Remove: archive file [/home/abi/fetcher/tmp/anonymous-chatgpt-0.0.2.tar.gz]
+[2024-04-07 17:01:58] INFO root fetch - main [MainThread]: End processing [anonymous-chatgpt]: success
+[2024-04-07 17:01:58] INFO root fetch - processPackages [mfoci]: Remove: archive file [/home/abi/fetcher/tmp/mfoci-0.1.2.tar.gz]
+[2024-04-07 17:01:58] INFO root fetch - processPackages [mfoci]: Remove: archive file [/home/abi/fetcher/tmp/mfoci-0.1.3.tar.gz]
+[2024-04-07 17:01:58] INFO root fetch - main [MainThread]: End processing [mfoci]: success
+[2024-04-07 17:01:58] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.76.tar.gz]
+[2024-04-07 17:01:58] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.77.tar.gz]
+[2024-04-07 17:01:58] INFO root fetch - main [MainThread]: End processing [composio-core]: success
+[2024-04-07 17:01:58] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.1.76.tar.gz]
+[2024-04-07 17:01:58] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.1.77.tar.gz]
+[2024-04-07 17:01:58] INFO root fetch - main [MainThread]: End processing [composio-crewai]: success
+[2024-04-07 17:01:59] INFO root fetch - processPackages [z4d-certified-devices]: Remove: archive file [/home/abi/fetcher/tmp/z4d-certified-devices-4.250.tar.gz]
+[2024-04-07 17:01:59] INFO root fetch - processPackages [z4d-certified-devices]: Remove: archive file [/home/abi/fetcher/tmp/z4d-certified-devices-4.251.tar.gz]
+[2024-04-07 17:01:59] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
+[2024-04-07 17:01:59] INFO root fetch - main [MainThread]: Store serial: [22657030]
