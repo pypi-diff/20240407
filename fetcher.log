@@ -18777,3 +18777,92 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 21:31:27] INFO root fetch - processPackages [StonerPlots]: Remove: archive file [/home/abi/fetcher/tmp/StonerPlots-1.3.4.tar.gz]
 [2024-04-07 21:31:27] INFO root fetch - main [MainThread]: End processing [StonerPlots]: success
 [2024-04-07 21:31:27] INFO root fetch - main [MainThread]: Store serial: [22658671]
+[2024-04-07 21:33:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658671]
+[2024-04-07 21:33:37] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-07 21:33:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spotify-win-cli
+[2024-04-07 21:33:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotify-win-cli
+[2024-04-07 21:33:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bpf4
+[2024-04-07 21:33:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: modal
+[2024-04-07 21:33:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: modal-client
+[2024-04-07 21:33:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: exllamav2
+[2024-04-07 21:33:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: meter-digits-recognizer
+[2024-04-07 21:33:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hatch-ci
+[2024-04-07 21:33:37] INFO root fetch - processPackages [spotify-win-cli]: New version: [4.0.2] Old Version: [4.0.1]
+[2024-04-07 21:33:37] INFO root fetch - processPackages [meter-digits-recognizer]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-07 21:33:37] INFO root fetch - processPackages [spotify-win-cli]: New version: [4.0.2] Old Version: [4.0.1]
+[2024-04-07 21:33:37] INFO root fetch - processPackages [hatch-ci]: New version: [0.1.4b75] Old Version: [0.1.4b72]
+[2024-04-07 21:33:38] INFO root fetch - processPackages [spotify-win-cli]: Downloading https://files.pythonhosted.org/packages/5c/cb/91a7bd35b55727275fb269d379a38fea02bafc84f7f98c67464057cf316a/spotify-win-cli-4.0.1.tar.gz
+[2024-04-07 21:33:38] INFO root fetch - processPackages [modal]: New version: [0.62.9] Old Version: [0.62.8]
+[2024-04-07 21:33:38] INFO root fetch - processPackages [exllamav2]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 21:33:38] INFO root fetch - processPackages [meter-digits-recognizer]: Downloading https://files.pythonhosted.org/packages/b1/c1/b567b4007cbb8b03d7f52b861cca16c2d475fad5be3e607ef38ee2c24e07/meter-digits-recognizer-0.2.0.tar.gz
+[2024-04-07 21:33:38] INFO root fetch - processPackages [bpf4]: New version: [1.9.0] Old Version: [1.8.8]
+[2024-04-07 21:33:38] INFO root fetch - processPackages [spotify-win-cli]: Downloading https://files.pythonhosted.org/packages/5c/cb/91a7bd35b55727275fb269d379a38fea02bafc84f7f98c67464057cf316a/spotify-win-cli-4.0.1.tar.gz
+[2024-04-07 21:33:38] INFO root fetch - processPackages [hatch-ci]: Downloading https://files.pythonhosted.org/packages/97/66/1fe511d71fe0bbb62987856d63ec747b5048d840fe5450005724fba2ae1a/hatch-ci-0.1.4b72.tar.gz
+[2024-04-07 21:33:38] INFO root fetch - processPackages [modal-client]: New version: [0.62.9] Old Version: [0.62.8]
+[2024-04-07 21:33:38] WARNING root fetch - processPackages [spotify-win-cli]: Timeout reached during download
+[2024-04-07 21:33:38] WARNING root fetch - processPackages [hatch-ci]: Timeout reached during download
+[2024-04-07 21:33:38] WARNING root fetch - processPackages [spotify-win-cli]: Timeout reached during download
+[2024-04-07 21:33:38] INFO root fetch - processPackages [exllamav2]: Downloading https://files.pythonhosted.org/packages/a0/6c/bb8613bcf4288ed911d39f136486cef750a7ba5c05892052ef83422ccfa7/exllamav2-0.0.8-py3-none-any.whl
+[2024-04-07 21:33:38] INFO root fetch - processPackages [bpf4]: Downloading https://files.pythonhosted.org/packages/34/4c/f880f7ecc41a78a874c1203add530f46c246b7428b1cbcb303464109558e/bpf4-1.8.8-cp39-cp39-win_amd64.whl
+[2024-04-07 21:33:38] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/8a/dd/32da92c8c574400929f770cfc5c78136ebc7b566de71c8e84a423d0ee9cc/modal-0.62.8-py3-none-any.whl
+[2024-04-07 21:33:38] WARNING root fetch - processPackages [meter-digits-recognizer]: Timeout reached during download
+[2024-04-07 21:33:38] INFO root fetch - processPackages [hatch-ci]: Downloading https://files.pythonhosted.org/packages/f1/ed/8fb662b31e649e7980c6c3a6b8c90047f9772f17930b061eb37cd3ccf72b/hatch-ci-0.1.4b75.tar.gz
+[2024-04-07 21:33:38] INFO root fetch - processPackages [spotify-win-cli]: Downloading https://files.pythonhosted.org/packages/31/3b/fa21368e571abcedcdb475186f8db1637ca3f6a8004408c2e9cd2080b6bd/spotify-win-cli-4.0.2.tar.gz
+[2024-04-07 21:33:38] INFO root fetch - processPackages [spotify-win-cli]: Downloading https://files.pythonhosted.org/packages/31/3b/fa21368e571abcedcdb475186f8db1637ca3f6a8004408c2e9cd2080b6bd/spotify-win-cli-4.0.2.tar.gz
+[2024-04-07 21:33:38] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/d0/c2/c05a679647fc54f88ed4f2453aec5ec1ea866c5ddaf1d85b52981f84c662/modal_client-0.62.8-py3-none-any.whl
+[2024-04-07 21:33:38] INFO root fetch - processPackages [meter-digits-recognizer]: Downloading https://files.pythonhosted.org/packages/c2/76/6af611b8baa3717891d3313bc5162cccea51a399657cb4c9ec40903dcc58/meter-digits-recognizer-0.2.1.tar.gz
+[2024-04-07 21:33:38] WARNING root fetch - processPackages [modal]: Timeout reached during download
+[2024-04-07 21:33:38] WARNING root fetch - processPackages [hatch-ci]: Timeout reached during download
+[2024-04-07 21:33:38] INFO root fetch - processPackages [hatch-ci]: executing diffoscope
+[2024-04-07 21:33:38] INFO root fetch - processPackages [hatch-ci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hatch-ci-0.1.4b72.tar.gz tmp/hatch-ci-0.1.4b75.tar.gz --markdown 20240407/h/hatch-ci/0.1.4b72-0.1.4b75/diff.md --exclude *.pyd
+[2024-04-07 21:33:38] WARNING root fetch - processPackages [exllamav2]: Timeout reached during download
+[2024-04-07 21:33:38] WARNING root fetch - processPackages [bpf4]: Timeout reached during download
+[2024-04-07 21:33:38] WARNING root fetch - processPackages [spotify-win-cli]: Timeout reached during download
+[2024-04-07 21:33:38] INFO root fetch - processPackages [spotify-win-cli]: executing diffoscope
+[2024-04-07 21:33:38] INFO root fetch - processPackages [spotify-win-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotify-win-cli-4.0.1.tar.gz tmp/spotify-win-cli-4.0.2.tar.gz --markdown 20240407/s/spotify-win-cli/4.0.1-4.0.2/diff.md --exclude *.pyd
+[2024-04-07 21:33:38] WARNING root fetch - processPackages [spotify-win-cli]: Timeout reached during download
+[2024-04-07 21:33:38] INFO root fetch - processPackages [spotify-win-cli]: executing diffoscope
+[2024-04-07 21:33:38] INFO root fetch - processPackages [spotify-win-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotify-win-cli-4.0.1.tar.gz tmp/spotify-win-cli-4.0.2.tar.gz --markdown 20240407/s/spotify-win-cli/4.0.1-4.0.2/diff.md --exclude *.pyd
+[2024-04-07 21:33:38] WARNING root fetch - processPackages [modal-client]: Timeout reached during download
+[2024-04-07 21:33:38] INFO root fetch - processPackages [bpf4]: Downloading https://files.pythonhosted.org/packages/e5/42/8f7c320b81440e46c87c8dcc5b689868099eeea5fbe483e610cd299aadb9/bpf4-1.9.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-07 21:33:38] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/c0/f7/8dd227328bcea0baf27836ce9f00c26e7e27195101883dc782c55387e12f/modal-0.62.9-py3-none-any.whl
+[2024-04-07 21:33:38] WARNING root fetch - processPackages [meter-digits-recognizer]: Timeout reached during download
+[2024-04-07 21:33:38] INFO root fetch - processPackages [meter-digits-recognizer]: executing diffoscope
+[2024-04-07 21:33:38] INFO root fetch - processPackages [meter-digits-recognizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meter-digits-recognizer-0.2.0.tar.gz tmp/meter-digits-recognizer-0.2.1.tar.gz --markdown 20240407/m/meter-digits-recognizer/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2024-04-07 21:33:38] INFO root fetch - processPackages [exllamav2]: Downloading https://files.pythonhosted.org/packages/f2/79/8956771fb34831200a9ccf6ba088252e3efccd09220c6197d8fca522fd2c/exllamav2-0.0.9-py3-none-any.whl
+[2024-04-07 21:33:38] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/08/2d/ba9d3e39c32f579d689b9f619a197109b7086b3f8e0764e5eed9501a303e/modal_client-0.62.9-py3-none-any.whl
+[2024-04-07 21:33:38] WARNING root fetch - processPackages [modal]: Timeout reached during download
+[2024-04-07 21:33:38] INFO root fetch - processPackages [modal]: executing diffoscope
+[2024-04-07 21:33:38] INFO root fetch - processPackages [modal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal-0.62.8-py3-none-any.whl.zip tmp/modal-0.62.9-py3-none-any.whl.zip --markdown 20240407/m/modal/0.62.8-0.62.9/diff.md --exclude *.pyd
+[2024-04-07 21:33:39] WARNING root fetch - processPackages [modal-client]: Timeout reached during download
+[2024-04-07 21:33:39] INFO root fetch - processPackages [modal-client]: executing diffoscope
+[2024-04-07 21:33:39] INFO root fetch - processPackages [modal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal_client-0.62.8-py3-none-any.whl.zip tmp/modal_client-0.62.9-py3-none-any.whl.zip --markdown 20240407/m/modal-client/0.62.8-0.62.9/diff.md --exclude *.pyd
+[2024-04-07 21:33:39] WARNING root fetch - processPackages [exllamav2]: Timeout reached during download
+[2024-04-07 21:33:39] INFO root fetch - processPackages [exllamav2]: executing diffoscope
+[2024-04-07 21:33:39] INFO root fetch - processPackages [exllamav2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exllamav2-0.0.8-py3-none-any.whl.zip tmp/exllamav2-0.0.9-py3-none-any.whl.zip --markdown 20240407/e/exllamav2/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 21:33:39] INFO root fetch - processPackages [spotify-win-cli]: Remove: archive file [/home/abi/fetcher/tmp/spotify-win-cli-4.0.1.tar.gz]
+[2024-04-07 21:33:39] INFO root fetch - processPackages [spotify-win-cli]: Remove: archive file [/home/abi/fetcher/tmp/spotify-win-cli-4.0.2.tar.gz]
+[2024-04-07 21:33:39] INFO root fetch - main [MainThread]: End processing [spotify-win-cli]: success
+[2024-04-07 21:33:39] INFO root fetch - main [MainThread]: End processing [spotify-win-cli]: success
+[2024-04-07 21:33:39] INFO root fetch - processPackages [hatch-ci]: Remove: archive file [/home/abi/fetcher/tmp/hatch-ci-0.1.4b72.tar.gz]
+[2024-04-07 21:33:39] INFO root fetch - processPackages [hatch-ci]: Remove: archive file [/home/abi/fetcher/tmp/hatch-ci-0.1.4b75.tar.gz]
+[2024-04-07 21:33:39] INFO root fetch - main [MainThread]: End processing [hatch-ci]: success
+[2024-04-07 21:33:39] WARNING root fetch - processPackages [bpf4]: Timeout reached during download
+[2024-04-07 21:33:39] INFO root fetch - processPackages [bpf4]: executing diffoscope
+[2024-04-07 21:33:39] INFO root fetch - processPackages [bpf4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bpf4-1.8.8-cp39-cp39-win_amd64.whl.zip tmp/bpf4-1.9.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240407/b/bpf4/1.8.8-1.9.0/diff.md --exclude *.pyd
+[2024-04-07 21:33:39] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.8-py3-none-any.whl.zip]
+[2024-04-07 21:33:39] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.9-py3-none-any.whl.zip]
+[2024-04-07 21:33:39] INFO root fetch - main [MainThread]: End processing [modal-client]: success
+[2024-04-07 21:33:39] INFO root fetch - processPackages [meter-digits-recognizer]: Remove: archive file [/home/abi/fetcher/tmp/meter-digits-recognizer-0.2.0.tar.gz]
+[2024-04-07 21:33:39] INFO root fetch - processPackages [meter-digits-recognizer]: Remove: archive file [/home/abi/fetcher/tmp/meter-digits-recognizer-0.2.1.tar.gz]
+[2024-04-07 21:33:39] INFO root fetch - main [MainThread]: End processing [meter-digits-recognizer]: success
+[2024-04-07 21:33:40] INFO root fetch - processPackages [exllamav2]: Remove: archive file [/home/abi/fetcher/tmp/exllamav2-0.0.8-py3-none-any.whl.zip]
+[2024-04-07 21:33:40] INFO root fetch - processPackages [exllamav2]: Remove: archive file [/home/abi/fetcher/tmp/exllamav2-0.0.9-py3-none-any.whl.zip]
+[2024-04-07 21:33:40] INFO root fetch - main [MainThread]: End processing [exllamav2]: success
+[2024-04-07 21:33:40] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.8-py3-none-any.whl.zip]
+[2024-04-07 21:33:40] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.9-py3-none-any.whl.zip]
+[2024-04-07 21:33:40] INFO root fetch - main [MainThread]: End processing [modal]: success
+[2024-04-07 21:33:40] INFO root fetch - processPackages [bpf4]: Remove: archive file [/home/abi/fetcher/tmp/bpf4-1.8.8-cp39-cp39-win_amd64.whl.zip]
+[2024-04-07 21:33:40] INFO root fetch - processPackages [bpf4]: Remove: archive file [/home/abi/fetcher/tmp/bpf4-1.9.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-07 21:33:40] INFO root fetch - main [MainThread]: End processing [bpf4]: success
+[2024-04-07 21:33:40] INFO root fetch - main [MainThread]: Store serial: [22658693]
