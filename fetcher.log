@@ -5488,3 +5488,31 @@
 [2024-04-07 07:36:25] INFO root fetch - processPackages [pulumi-azuredevops]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_azuredevops-3.1.0a1712399297.tar.gz]
 [2024-04-07 07:36:25] INFO root fetch - main [MainThread]: End processing [pulumi-azuredevops]: success
 [2024-04-07 07:36:25] INFO root fetch - main [MainThread]: Store serial: [22653670]
+[2024-04-07 07:38:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653670]
+[2024-04-07 07:38:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 07:38:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: acstore
+[2024-04-07 07:38:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: netbound
+[2024-04-07 07:38:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: restartprocwithvars
+[2024-04-07 07:38:34] INFO root fetch - processPackages [netbound]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 07:38:34] INFO root fetch - processPackages [netbound]: Downloading https://files.pythonhosted.org/packages/9c/ee/f89027b09e67ef76da5b4193174903df8d97c42510bc6e06d0cb30c508a2/netbound-0.1.8.tar.gz
+[2024-04-07 07:38:34] INFO root fetch - processPackages [acstore]: New version: [20240407] Old Version: [20240406]
+[2024-04-07 07:38:34] WARNING root fetch - processPackages [restartprocwithvars]: Skipping, unable to determine old version
+[2024-04-07 07:38:34] INFO root fetch - main [MainThread]: End processing [restartprocwithvars] error
+[2024-04-07 07:38:34] WARNING root fetch - processPackages [netbound]: Timeout reached during download
+[2024-04-07 07:38:34] INFO root fetch - processPackages [acstore]: Downloading https://files.pythonhosted.org/packages/f0/11/9c0801a8316d5067d729358db97fc360189ce9819aba957696c19e26eda3/acstore-20240406.tar.gz
+[2024-04-07 07:38:34] INFO root fetch - processPackages [netbound]: Downloading https://files.pythonhosted.org/packages/e1/c7/9bed379e99d5f984cf1fa304c3bebcf19b87ce8e3507b5ee0028fae5631f/netbound-0.1.9.tar.gz
+[2024-04-07 07:38:34] WARNING root fetch - processPackages [acstore]: Timeout reached during download
+[2024-04-07 07:38:34] WARNING root fetch - processPackages [netbound]: Timeout reached during download
+[2024-04-07 07:38:34] INFO root fetch - processPackages [netbound]: executing diffoscope
+[2024-04-07 07:38:34] INFO root fetch - processPackages [netbound]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbound-0.1.8.tar.gz tmp/netbound-0.1.9.tar.gz --markdown 20240407/n/netbound/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 07:38:35] INFO root fetch - processPackages [acstore]: Downloading https://files.pythonhosted.org/packages/b3/70/6cb057c1dffa774c83ef20d0e6f0e8bc1887387c7d4b94e2a8981b79b59b/acstore-20240407.tar.gz
+[2024-04-07 07:38:35] WARNING root fetch - processPackages [acstore]: Timeout reached during download
+[2024-04-07 07:38:35] INFO root fetch - processPackages [acstore]: executing diffoscope
+[2024-04-07 07:38:35] INFO root fetch - processPackages [acstore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acstore-20240406.tar.gz tmp/acstore-20240407.tar.gz --markdown 20240407/a/acstore/20240406-20240407/diff.md --exclude *.pyd
+[2024-04-07 07:38:35] INFO root fetch - processPackages [netbound]: Remove: archive file [/home/abi/fetcher/tmp/netbound-0.1.8.tar.gz]
+[2024-04-07 07:38:35] INFO root fetch - processPackages [netbound]: Remove: archive file [/home/abi/fetcher/tmp/netbound-0.1.9.tar.gz]
+[2024-04-07 07:38:35] INFO root fetch - main [MainThread]: End processing [netbound]: success
+[2024-04-07 07:38:35] INFO root fetch - processPackages [acstore]: Remove: archive file [/home/abi/fetcher/tmp/acstore-20240406.tar.gz]
+[2024-04-07 07:38:35] INFO root fetch - processPackages [acstore]: Remove: archive file [/home/abi/fetcher/tmp/acstore-20240407.tar.gz]
+[2024-04-07 07:38:35] INFO root fetch - main [MainThread]: End processing [acstore]: success
+[2024-04-07 07:38:35] INFO root fetch - main [MainThread]: Store serial: [22653680]
