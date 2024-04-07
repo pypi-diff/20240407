@@ -2864,3 +2864,28 @@
 [2024-04-07 04:18:55] INFO root fetch - processPackages [Nuitka-winsvc]: Remove: archive file [/home/abi/fetcher/tmp/Nuitka-winsvc-2.1.5.tar.gz]
 [2024-04-07 04:18:55] INFO root fetch - main [MainThread]: End processing [Nuitka-winsvc]: success
 [2024-04-07 04:18:55] INFO root fetch - main [MainThread]: Store serial: [22652847]
+[2024-04-07 04:20:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652847]
+[2024-04-07 04:21:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 04:21:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iam-actions
+[2024-04-07 04:21:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stock-open-api
+[2024-04-07 04:21:04] INFO root fetch - processPackages [stock-open-api]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-07 04:21:04] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20240407] Old Version: [1.2.20240406]
+[2024-04-07 04:21:04] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/f2/48/e4413848a8d504886c77e99416fc2c3ecd8d60774d36ea727addfdd8b7bd/iam_actions-1.2.20240406.tar.gz
+[2024-04-07 04:21:04] INFO root fetch - processPackages [stock-open-api]: Downloading https://files.pythonhosted.org/packages/8b/d4/854a15acdfbf0365bb3fa34c07ac59911ca87a052ffdbad55a71285224af/stock-open-api-1.0.1.tar.gz
+[2024-04-07 04:21:04] WARNING root fetch - processPackages [iam-actions]: Timeout reached during download
+[2024-04-07 04:21:04] WARNING root fetch - processPackages [stock-open-api]: Timeout reached during download
+[2024-04-07 04:21:05] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/ab/b9/d6b9cc2dc519f4c40a0f5b7353a12f927379a59f69337f7f81cc0c0c1b8e/iam_actions-1.2.20240407.tar.gz
+[2024-04-07 04:21:05] INFO root fetch - processPackages [stock-open-api]: Downloading https://files.pythonhosted.org/packages/d8/3b/6de6b0a605b7a612be3e81b7b303953494566360bb97a6ba9f44cdb7fc26/stock-open-api-1.0.2.tar.gz
+[2024-04-07 04:21:05] WARNING root fetch - processPackages [stock-open-api]: Timeout reached during download
+[2024-04-07 04:21:05] INFO root fetch - processPackages [stock-open-api]: executing diffoscope
+[2024-04-07 04:21:05] INFO root fetch - processPackages [stock-open-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stock-open-api-1.0.1.tar.gz tmp/stock-open-api-1.0.2.tar.gz --markdown 20240407/s/stock-open-api/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2024-04-07 04:21:05] WARNING root fetch - processPackages [iam-actions]: Timeout reached during download
+[2024-04-07 04:21:05] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2024-04-07 04:21:05] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20240406.tar.gz tmp/iam_actions-1.2.20240407.tar.gz --markdown 20240407/i/iam-actions/1.2.20240406-1.2.20240407/diff.md --exclude *.pyd
+[2024-04-07 04:21:05] INFO root fetch - processPackages [stock-open-api]: Remove: archive file [/home/abi/fetcher/tmp/stock-open-api-1.0.1.tar.gz]
+[2024-04-07 04:21:05] INFO root fetch - processPackages [stock-open-api]: Remove: archive file [/home/abi/fetcher/tmp/stock-open-api-1.0.2.tar.gz]
+[2024-04-07 04:21:05] INFO root fetch - main [MainThread]: End processing [stock-open-api]: success
+[2024-04-07 04:21:06] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240406.tar.gz]
+[2024-04-07 04:21:06] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240407.tar.gz]
+[2024-04-07 04:21:06] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2024-04-07 04:21:06] INFO root fetch - main [MainThread]: Store serial: [22652853]
