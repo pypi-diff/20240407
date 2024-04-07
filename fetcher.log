@@ -8937,3 +8937,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 11:25:40] INFO root fetch - processPackages [ffconverter]: Remove: archive file [/home/abi/fetcher/tmp/ffconverter-2.4.1.tar.gz]
 [2024-04-07 11:25:40] INFO root fetch - main [MainThread]: End processing [ffconverter]: success
 [2024-04-07 11:25:40] INFO root fetch - main [MainThread]: Store serial: [22655023]
+[2024-04-07 11:27:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655023]
+[2024-04-07 11:27:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 11:27:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pelican-linkclass
+[2024-04-07 11:27:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk8s-plus-28
+[2024-04-07 11:27:49] INFO root fetch - processPackages [cdk8s-plus-28]: New version: [2.0.6] Old Version: [2.0.5]
+[2024-04-07 11:27:49] INFO root fetch - processPackages [pelican-linkclass]: New version: [2.1.3] Old Version: [2.1.2]
+[2024-04-07 11:27:49] INFO root fetch - processPackages [cdk8s-plus-28]: Downloading https://files.pythonhosted.org/packages/2e/71/d0b86c2ed83fae333aadb2679a9cf782c34c4b98473ed8b9d547893778c4/cdk8s-plus-28-2.0.5.tar.gz
+[2024-04-07 11:27:49] INFO root fetch - processPackages [pelican-linkclass]: Downloading https://files.pythonhosted.org/packages/38/a9/55dbbd85e7ad7c24076690471b8b68d3e6bf133bb24e9948b38bd9c1b0b7/pelican_linkclass-2.1.2.tar.gz
+[2024-04-07 11:27:49] WARNING root fetch - processPackages [cdk8s-plus-28]: Timeout reached during download
+[2024-04-07 11:27:49] WARNING root fetch - processPackages [pelican-linkclass]: Timeout reached during download
+[2024-04-07 11:27:49] INFO root fetch - processPackages [cdk8s-plus-28]: Downloading https://files.pythonhosted.org/packages/51/f4/1217e6922a66b97d26b41545017fe974738ed436944b12464f5b46a49182/cdk8s-plus-28-2.0.6.tar.gz
+[2024-04-07 11:27:49] INFO root fetch - processPackages [pelican-linkclass]: Downloading https://files.pythonhosted.org/packages/ad/93/9fe4bd40e1e1f64068bfaea0728d63537f1bf4f7fbb6bdc19a76f5288c9f/pelican_linkclass-2.1.3.tar.gz
+[2024-04-07 11:27:49] WARNING root fetch - processPackages [cdk8s-plus-28]: Timeout reached during download
+[2024-04-07 11:27:49] INFO root fetch - processPackages [cdk8s-plus-28]: executing diffoscope
+[2024-04-07 11:27:49] INFO root fetch - processPackages [cdk8s-plus-28]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-28-2.0.5.tar.gz tmp/cdk8s-plus-28-2.0.6.tar.gz --markdown 20240407/c/cdk8s-plus-28/2.0.5-2.0.6/diff.md --exclude *.pyd
+[2024-04-07 11:27:49] WARNING root fetch - processPackages [pelican-linkclass]: Timeout reached during download
+[2024-04-07 11:27:49] INFO root fetch - processPackages [pelican-linkclass]: executing diffoscope
+[2024-04-07 11:27:49] INFO root fetch - processPackages [pelican-linkclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pelican_linkclass-2.1.2.tar.gz tmp/pelican_linkclass-2.1.3.tar.gz --markdown 20240407/p/pelican-linkclass/2.1.2-2.1.3/diff.md --exclude *.pyd
+[2024-04-07 11:27:50] INFO root fetch - processPackages [pelican-linkclass]: Remove: archive file [/home/abi/fetcher/tmp/pelican_linkclass-2.1.2.tar.gz]
+[2024-04-07 11:27:50] INFO root fetch - processPackages [pelican-linkclass]: Remove: archive file [/home/abi/fetcher/tmp/pelican_linkclass-2.1.3.tar.gz]
+[2024-04-07 11:27:50] INFO root fetch - main [MainThread]: End processing [pelican-linkclass]: success
+[2024-04-07 11:27:50] INFO root fetch - processPackages [cdk8s-plus-28]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-plus-28-2.0.5.tar.gz]
+[2024-04-07 11:27:50] INFO root fetch - processPackages [cdk8s-plus-28]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-plus-28-2.0.6.tar.gz]
+[2024-04-07 11:27:50] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-28]: success
+[2024-04-07 11:27:50] INFO root fetch - main [MainThread]: Store serial: [22655034]
