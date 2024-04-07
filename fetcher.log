@@ -10597,3 +10597,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:21:35] INFO root fetch - processPackages [nonebot-plugin-blocker]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_blocker-0.4.7.tar.gz]
 [2024-04-07 13:21:35] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-blocker]: success
 [2024-04-07 13:21:35] INFO root fetch - main [MainThread]: Store serial: [22655663]
+[2024-04-07 13:23:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655663]
+[2024-04-07 13:23:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 13:23:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qa-test
+[2024-04-07 13:23:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: syncMyMoodle
+[2024-04-07 13:23:44] INFO root fetch - processPackages [qa-test]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 13:23:44] INFO root fetch - processPackages [qa-test]: Downloading https://files.pythonhosted.org/packages/8e/1d/773eadc0b9331c2c3dba85dab2e4bdebc9e62c8060e2c7c45733a1ddd55c/qa_test-0.0.2.tar.gz
+[2024-04-07 13:23:44] INFO root fetch - processPackages [syncMyMoodle]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-07 13:23:44] INFO root fetch - processPackages [syncMyMoodle]: Downloading https://files.pythonhosted.org/packages/49/1d/69155ba24981d8590b442116cc161f1983f5a54326fccc107031e23d1ef3/syncMyMoodle-0.1.0.tar.gz
+[2024-04-07 13:23:44] WARNING root fetch - processPackages [syncMyMoodle]: Timeout reached during download
+[2024-04-07 13:23:44] WARNING root fetch - processPackages [qa-test]: Timeout reached during download
+[2024-04-07 13:23:44] INFO root fetch - processPackages [syncMyMoodle]: Downloading https://files.pythonhosted.org/packages/8c/88/63a391456dac97adf0f2fcdd05c95ad5b35be1910e1a5021cea94d811afe/syncMyMoodle-0.1.1.tar.gz
+[2024-04-07 13:23:45] WARNING root fetch - processPackages [syncMyMoodle]: Timeout reached during download
+[2024-04-07 13:23:45] INFO root fetch - processPackages [syncMyMoodle]: executing diffoscope
+[2024-04-07 13:23:45] INFO root fetch - processPackages [syncMyMoodle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncMyMoodle-0.1.0.tar.gz tmp/syncMyMoodle-0.1.1.tar.gz --markdown 20240407/s/syncMyMoodle/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 13:23:45] INFO root fetch - processPackages [qa-test]: Downloading https://files.pythonhosted.org/packages/5a/fe/c913d7a414ce969e50e829961a32741981556b42800f34eb0f6d5730954b/qa_test-0.0.3.tar.gz
+[2024-04-07 13:23:45] WARNING root fetch - processPackages [qa-test]: Timeout reached during download
+[2024-04-07 13:23:45] INFO root fetch - processPackages [qa-test]: executing diffoscope
+[2024-04-07 13:23:45] INFO root fetch - processPackages [qa-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qa_test-0.0.2.tar.gz tmp/qa_test-0.0.3.tar.gz --markdown 20240407/q/qa-test/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 13:23:45] INFO root fetch - processPackages [syncMyMoodle]: Remove: archive file [/home/abi/fetcher/tmp/syncMyMoodle-0.1.0.tar.gz]
+[2024-04-07 13:23:45] INFO root fetch - processPackages [syncMyMoodle]: Remove: archive file [/home/abi/fetcher/tmp/syncMyMoodle-0.1.1.tar.gz]
+[2024-04-07 13:23:45] INFO root fetch - main [MainThread]: End processing [syncMyMoodle]: success
+[2024-04-07 13:23:47] INFO root fetch - processPackages [qa-test]: Remove: archive file [/home/abi/fetcher/tmp/qa_test-0.0.2.tar.gz]
+[2024-04-07 13:23:47] INFO root fetch - processPackages [qa-test]: Remove: archive file [/home/abi/fetcher/tmp/qa_test-0.0.3.tar.gz]
+[2024-04-07 13:23:47] INFO root fetch - main [MainThread]: End processing [qa-test]: success
+[2024-04-07 13:23:47] INFO root fetch - main [MainThread]: Store serial: [22655674]
