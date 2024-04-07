@@ -4802,3 +4802,50 @@
 [2024-04-07 06:48:18] INFO root fetch - processPackages [FluoSA]: Remove: archive file [/home/abi/fetcher/tmp/fluosa-0.9.3.tar.gz]
 [2024-04-07 06:48:18] INFO root fetch - main [MainThread]: End processing [FluoSA]: success
 [2024-04-07 06:48:18] INFO root fetch - main [MainThread]: Store serial: [22653496]
+[2024-04-07 06:50:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653496]
+[2024-04-07 06:50:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 06:50:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unitsnet-py
+[2024-04-07 06:50:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: whereabouts
+[2024-04-07 06:50:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mavsdk
+[2024-04-07 06:50:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quickstart-vdk
+[2024-04-07 06:50:27] INFO root fetch - processPackages [unitsnet-py]: New version: [0.1.94] Old Version: [0.1.93]
+[2024-04-07 06:50:27] INFO root fetch - processPackages [unitsnet-py]: Downloading https://files.pythonhosted.org/packages/b2/a7/531e9e6ee38c7d758ca897c8760a891c71bab0a4a19bb6e5cd13a1ac012d/unitsnet-py-0.1.93.tar.gz
+[2024-04-07 06:50:27] INFO root fetch - processPackages [whereabouts]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-04-07 06:50:27] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-04-07 06:50:27] INFO root fetch - processPackages [mavsdk]: New version: [2.3.0] Old Version: [2.2.0]
+[2024-04-07 06:50:27] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-04-07 06:50:27] WARNING root fetch - processPackages [unitsnet-py]: Timeout reached during download
+[2024-04-07 06:50:27] INFO root fetch - processPackages [whereabouts]: Downloading https://files.pythonhosted.org/packages/93/21/8754bdf369bd56c46f2584f76011181c8f1ed59c9d42c991cefd964c1f57/whereabouts-0.3.5.tar.gz
+[2024-04-07 06:50:27] WARNING root fetch - processPackages [quickstart-vdk]: Timeout reached during download
+[2024-04-07 06:50:27] INFO root fetch - processPackages [mavsdk]: Downloading https://files.pythonhosted.org/packages/16/d7/423a8a2ba7a07add0113be721076c227fbd9d7a37244244be318b214b50e/mavsdk-2.2.0-py3-none-win_amd64.whl
+[2024-04-07 06:50:27] WARNING root fetch - processPackages [whereabouts]: Timeout reached during download
+[2024-04-07 06:50:27] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-04-07 06:50:27] INFO root fetch - processPackages [unitsnet-py]: Downloading https://files.pythonhosted.org/packages/92/80/2f8a731110e6cc4ddf07c3ad998b19756bea59e9dbf9e55dbf0830b584e1/unitsnet-py-0.1.94.tar.gz
+[2024-04-07 06:50:27] WARNING root fetch - processPackages [quickstart-vdk]: Timeout reached during download
+[2024-04-07 06:50:27] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-04-07 06:50:27] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240407/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/diff.md --exclude *.pyd
+[2024-04-07 06:50:27] INFO root fetch - processPackages [whereabouts]: Downloading https://files.pythonhosted.org/packages/62/f3/fdb608d76b32db4d474d5bd79f670d5fd51657ba3a535528e92281b6259c/whereabouts-0.3.6.tar.gz
+[2024-04-07 06:50:27] WARNING root fetch - processPackages [unitsnet-py]: Timeout reached during download
+[2024-04-07 06:50:27] INFO root fetch - processPackages [unitsnet-py]: executing diffoscope
+[2024-04-07 06:50:27] INFO root fetch - processPackages [unitsnet-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unitsnet-py-0.1.93.tar.gz tmp/unitsnet-py-0.1.94.tar.gz --markdown 20240407/u/unitsnet-py/0.1.93-0.1.94/diff.md --exclude *.pyd
+[2024-04-07 06:50:27] WARNING root fetch - processPackages [mavsdk]: Timeout reached during download
+[2024-04-07 06:50:27] WARNING root fetch - processPackages [whereabouts]: Timeout reached during download
+[2024-04-07 06:50:27] INFO root fetch - processPackages [whereabouts]: executing diffoscope
+[2024-04-07 06:50:27] INFO root fetch - processPackages [whereabouts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whereabouts-0.3.5.tar.gz tmp/whereabouts-0.3.6.tar.gz --markdown 20240407/w/whereabouts/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2024-04-07 06:50:28] INFO root fetch - processPackages [mavsdk]: Downloading https://files.pythonhosted.org/packages/66/94/532f5a9b63e58c3d7f65b6db0f06581f7896eafda96c5c236f948cebf65b/mavsdk-2.3.0-py3-none-win_amd64.whl
+[2024-04-07 06:50:28] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-04-07 06:50:28] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-04-07 06:50:28] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-04-07 06:50:28] WARNING root fetch - processPackages [mavsdk]: Timeout reached during download
+[2024-04-07 06:50:28] INFO root fetch - processPackages [mavsdk]: executing diffoscope
+[2024-04-07 06:50:28] INFO root fetch - processPackages [mavsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mavsdk-2.2.0-py3-none-win_amd64.whl.zip tmp/mavsdk-2.3.0-py3-none-win_amd64.whl.zip --markdown 20240407/m/mavsdk/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2024-04-07 06:50:28] INFO root fetch - processPackages [whereabouts]: Remove: archive file [/home/abi/fetcher/tmp/whereabouts-0.3.5.tar.gz]
+[2024-04-07 06:50:28] INFO root fetch - processPackages [whereabouts]: Remove: archive file [/home/abi/fetcher/tmp/whereabouts-0.3.6.tar.gz]
+[2024-04-07 06:50:28] INFO root fetch - main [MainThread]: End processing [whereabouts]: success
+[2024-04-07 06:50:28] INFO root fetch - processPackages [unitsnet-py]: Remove: archive file [/home/abi/fetcher/tmp/unitsnet-py-0.1.93.tar.gz]
+[2024-04-07 06:50:28] INFO root fetch - processPackages [unitsnet-py]: Remove: archive file [/home/abi/fetcher/tmp/unitsnet-py-0.1.94.tar.gz]
+[2024-04-07 06:50:28] INFO root fetch - main [MainThread]: End processing [unitsnet-py]: success
+[2024-04-07 06:50:29] INFO root fetch - processPackages [mavsdk]: Remove: archive file [/home/abi/fetcher/tmp/mavsdk-2.2.0-py3-none-win_amd64.whl.zip]
+[2024-04-07 06:50:29] INFO root fetch - processPackages [mavsdk]: Remove: archive file [/home/abi/fetcher/tmp/mavsdk-2.3.0-py3-none-win_amd64.whl.zip]
+[2024-04-07 06:50:29] INFO root fetch - main [MainThread]: End processing [mavsdk]: success
+[2024-04-07 06:50:29] INFO root fetch - main [MainThread]: Store serial: [22653510]
