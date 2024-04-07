@@ -18491,3 +18491,67 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 21:13:59] WARNING root fetch - processPackages [solidipy-mipt]: Skipping, unable to determine old version
 [2024-04-07 21:13:59] INFO root fetch - main [MainThread]: End processing [solidipy-mipt] error
 [2024-04-07 21:13:59] INFO root fetch - main [MainThread]: Store serial: [22658563]
+[2024-04-07 21:16:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658563]
+[2024-04-07 21:16:08] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-07 21:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: open-aoi
+[2024-04-07 21:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyds-cli
+[2024-04-07 21:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mweather
+[2024-04-07 21:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: osm-rawdata
+[2024-04-07 21:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: solidipy-mipt
+[2024-04-07 21:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: eitaa
+[2024-04-07 21:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: niro
+[2024-04-07 21:16:08] WARNING root fetch - processPackages [solidipy-mipt]: Skipping, unable to determine old version
+[2024-04-07 21:16:08] INFO root fetch - main [MainThread]: End processing [solidipy-mipt] error
+[2024-04-07 21:16:08] INFO root fetch - processPackages [pyds-cli]: New version: [0.4.0] Old Version: [0.3.9]
+[2024-04-07 21:16:08] INFO root fetch - processPackages [open-aoi]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 21:16:08] INFO root fetch - processPackages [pyds-cli]: Downloading https://files.pythonhosted.org/packages/59/00/19a3c085f6ee6e2f0aa29685d8230d5e35fb11144387670c66d73c97d034/pyds-cli-0.3.9.tar.gz
+[2024-04-07 21:16:08] INFO root fetch - processPackages [mweather]: New version: [1.2] Old Version: [1.1]
+[2024-04-07 21:16:08] WARNING root fetch - processPackages [niro]: Skipping, unable to determine old version
+[2024-04-07 21:16:08] INFO root fetch - main [MainThread]: End processing [niro] error
+[2024-04-07 21:16:08] INFO root fetch - processPackages [open-aoi]: Downloading https://files.pythonhosted.org/packages/d2/cb/dd19e4630fb354010db3e6215502966625550ff7a5acbdbcedf536a6cd4d/open_aoi-0.0.8.tar.gz
+[2024-04-07 21:16:08] INFO root fetch - processPackages [eitaa]: New version: [2.1.2] Old Version: [2.1.1]
+[2024-04-07 21:16:08] WARNING root fetch - processPackages [pyds-cli]: Timeout reached during download
+[2024-04-07 21:16:08] WARNING root fetch - processPackages [open-aoi]: Timeout reached during download
+[2024-04-07 21:16:08] INFO root fetch - processPackages [osm-rawdata]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-07 21:16:08] INFO root fetch - processPackages [mweather]: Downloading https://files.pythonhosted.org/packages/b6/6c/806de737656339d47ffbb149f898c2502d3577d5480416d6545b4ad4fc69/mweather-1.1.tar.gz
+[2024-04-07 21:16:08] INFO root fetch - processPackages [pyds-cli]: Downloading https://files.pythonhosted.org/packages/35/a4/0ce783de8608437c2dd70f98cdd58cbd09db07e35219f1934bcd083998b5/pyds-cli-0.4.0.tar.gz
+[2024-04-07 21:16:08] INFO root fetch - processPackages [open-aoi]: Downloading https://files.pythonhosted.org/packages/2e/0c/2869daa3fcce6ef21522f04169cfdef7edf737a59d03f86a95b6594d19b3/open_aoi-0.0.9.tar.gz
+[2024-04-07 21:16:08] INFO root fetch - processPackages [eitaa]: Downloading https://files.pythonhosted.org/packages/f4/72/af75439651ec33767274e4dc8ad7b45611469ab0873ade37bc922ee71f95/eitaa-2.1.1.tar.gz
+[2024-04-07 21:16:08] WARNING root fetch - processPackages [mweather]: Timeout reached during download
+[2024-04-07 21:16:08] WARNING root fetch - processPackages [pyds-cli]: Timeout reached during download
+[2024-04-07 21:16:08] INFO root fetch - processPackages [pyds-cli]: executing diffoscope
+[2024-04-07 21:16:08] INFO root fetch - processPackages [pyds-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyds-cli-0.3.9.tar.gz tmp/pyds-cli-0.4.0.tar.gz --markdown 20240407/p/pyds-cli/0.3.9-0.4.0/diff.md --exclude *.pyd
+[2024-04-07 21:16:08] INFO root fetch - processPackages [osm-rawdata]: Downloading https://files.pythonhosted.org/packages/4d/9c/25c5dcf2e17d253936d8bda7a4829169755f8d455a7e9704e0468c77f7f7/osm-rawdata-0.2.3.tar.gz
+[2024-04-07 21:16:08] WARNING root fetch - processPackages [open-aoi]: Timeout reached during download
+[2024-04-07 21:16:08] INFO root fetch - processPackages [open-aoi]: executing diffoscope
+[2024-04-07 21:16:08] INFO root fetch - processPackages [open-aoi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_aoi-0.0.8.tar.gz tmp/open_aoi-0.0.9.tar.gz --markdown 20240407/o/open-aoi/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 21:16:08] WARNING root fetch - processPackages [eitaa]: Timeout reached during download
+[2024-04-07 21:16:08] INFO root fetch - processPackages [mweather]: Downloading https://files.pythonhosted.org/packages/df/e2/660c3a087223a8ced6bf5e78f6bfb62dc3a7a550498ca1ccfebc3dc38923/mweather-1.2.tar.gz
+[2024-04-07 21:16:08] WARNING root fetch - processPackages [osm-rawdata]: Timeout reached during download
+[2024-04-07 21:16:08] WARNING root fetch - processPackages [mweather]: Timeout reached during download
+[2024-04-07 21:16:08] INFO root fetch - processPackages [mweather]: executing diffoscope
+[2024-04-07 21:16:08] INFO root fetch - processPackages [mweather]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mweather-1.1.tar.gz tmp/mweather-1.2.tar.gz --markdown 20240407/m/mweather/1.1-1.2/diff.md --exclude *.pyd
+[2024-04-07 21:16:08] INFO root fetch - processPackages [eitaa]: Downloading https://files.pythonhosted.org/packages/69/97/7cf691ae443db0000a09ec550d681fef20b413831e9501a403f3429bb1ca/eitaa-2.1.2.tar.gz
+[2024-04-07 21:16:09] INFO root fetch - processPackages [osm-rawdata]: Downloading https://files.pythonhosted.org/packages/8b/c8/dfa2c5824e75b3be45a1a1cb4135d2777165e08763eec5991e7b17aecf02/osm-rawdata-0.2.4.tar.gz
+[2024-04-07 21:16:09] WARNING root fetch - processPackages [eitaa]: Timeout reached during download
+[2024-04-07 21:16:09] INFO root fetch - processPackages [eitaa]: executing diffoscope
+[2024-04-07 21:16:09] INFO root fetch - processPackages [eitaa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eitaa-2.1.1.tar.gz tmp/eitaa-2.1.2.tar.gz --markdown 20240407/e/eitaa/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2024-04-07 21:16:09] WARNING root fetch - processPackages [osm-rawdata]: Timeout reached during download
+[2024-04-07 21:16:09] INFO root fetch - processPackages [osm-rawdata]: executing diffoscope
+[2024-04-07 21:16:09] INFO root fetch - processPackages [osm-rawdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osm-rawdata-0.2.3.tar.gz tmp/osm-rawdata-0.2.4.tar.gz --markdown 20240407/o/osm-rawdata/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2024-04-07 21:16:09] INFO root fetch - processPackages [open-aoi]: Remove: archive file [/home/abi/fetcher/tmp/open_aoi-0.0.8.tar.gz]
+[2024-04-07 21:16:09] INFO root fetch - processPackages [open-aoi]: Remove: archive file [/home/abi/fetcher/tmp/open_aoi-0.0.9.tar.gz]
+[2024-04-07 21:16:09] INFO root fetch - main [MainThread]: End processing [open-aoi]: success
+[2024-04-07 21:16:09] INFO root fetch - processPackages [pyds-cli]: Remove: archive file [/home/abi/fetcher/tmp/pyds-cli-0.3.9.tar.gz]
+[2024-04-07 21:16:09] INFO root fetch - processPackages [pyds-cli]: Remove: archive file [/home/abi/fetcher/tmp/pyds-cli-0.4.0.tar.gz]
+[2024-04-07 21:16:09] INFO root fetch - main [MainThread]: End processing [pyds-cli]: success
+[2024-04-07 21:16:09] INFO root fetch - processPackages [mweather]: Remove: archive file [/home/abi/fetcher/tmp/mweather-1.1.tar.gz]
+[2024-04-07 21:16:09] INFO root fetch - processPackages [mweather]: Remove: archive file [/home/abi/fetcher/tmp/mweather-1.2.tar.gz]
+[2024-04-07 21:16:09] INFO root fetch - main [MainThread]: End processing [mweather]: success
+[2024-04-07 21:16:09] INFO root fetch - processPackages [eitaa]: Remove: archive file [/home/abi/fetcher/tmp/eitaa-2.1.1.tar.gz]
+[2024-04-07 21:16:09] INFO root fetch - processPackages [eitaa]: Remove: archive file [/home/abi/fetcher/tmp/eitaa-2.1.2.tar.gz]
+[2024-04-07 21:16:09] INFO root fetch - main [MainThread]: End processing [eitaa]: success
+[2024-04-07 21:16:09] INFO root fetch - processPackages [osm-rawdata]: Remove: archive file [/home/abi/fetcher/tmp/osm-rawdata-0.2.3.tar.gz]
+[2024-04-07 21:16:09] INFO root fetch - processPackages [osm-rawdata]: Remove: archive file [/home/abi/fetcher/tmp/osm-rawdata-0.2.4.tar.gz]
+[2024-04-07 21:16:09] INFO root fetch - main [MainThread]: End processing [osm-rawdata]: success
+[2024-04-07 21:16:09] INFO root fetch - main [MainThread]: Store serial: [22658586]
