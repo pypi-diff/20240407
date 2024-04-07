@@ -15046,3 +15046,53 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:43:54] INFO root fetch - processPackages [songfindercli]: Remove: archive file [/home/abi/fetcher/tmp/songfindercli-0.9.7-py3-none-any.whl.zip]
 [2024-04-07 17:43:54] INFO root fetch - main [MainThread]: End processing [songfindercli]: success
 [2024-04-07 17:43:54] INFO root fetch - main [MainThread]: Store serial: [22657280]
+[2024-04-07 17:45:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657280]
+[2024-04-07 17:46:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 17:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: query-package-documentation
+[2024-04-07 17:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: affixapi
+[2024-04-07 17:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oru2xds
+[2024-04-07 17:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MultiGATE
+[2024-04-07 17:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: easydebugger
+[2024-04-07 17:46:03] INFO root fetch - processPackages [MultiGATE]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-07 17:46:03] INFO root fetch - processPackages [oru2xds]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-07 17:46:03] INFO root fetch - processPackages [query-package-documentation]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 17:46:03] INFO root fetch - processPackages [affixapi]: New version: [1.1.50] Old Version: [1.1.49]
+[2024-04-07 17:46:03] INFO root fetch - processPackages [oru2xds]: Downloading https://files.pythonhosted.org/packages/30/84/c1d703dc028c105d23e8bd6025d8a21bea79336316fed5e772284e51fac8/oru2xds-2.0.8.tar.gz
+[2024-04-07 17:46:03] WARNING root fetch - processPackages [easydebugger]: Skipping, unable to determine old version
+[2024-04-07 17:46:03] INFO root fetch - main [MainThread]: End processing [easydebugger] error
+[2024-04-07 17:46:03] INFO root fetch - processPackages [MultiGATE]: Downloading https://files.pythonhosted.org/packages/e8/3e/caf8b0ea948ab43e91a922a54d73a76510f1441d197d4b1607764f5fd918/MultiGATE-0.0.1.tar.gz
+[2024-04-07 17:46:03] INFO root fetch - processPackages [affixapi]: Downloading https://files.pythonhosted.org/packages/2c/76/8aa3228b9c921db4fae195abcdff922485d3d96971fa8480a7cc04e0e530/affixapi-1.1.49.tar.gz
+[2024-04-07 17:46:03] INFO root fetch - processPackages [query-package-documentation]: Downloading https://files.pythonhosted.org/packages/c5/29/65f5b860e9a1a8cf2b6e2cac4939d818e2fa813d49eaf7b129e91c3cf0eb/query-package-documentation-0.0.2.tar.gz
+[2024-04-07 17:46:03] WARNING root fetch - processPackages [MultiGATE]: Timeout reached during download
+[2024-04-07 17:46:03] WARNING root fetch - processPackages [oru2xds]: Timeout reached during download
+[2024-04-07 17:46:03] INFO root fetch - processPackages [oru2xds]: Downloading https://files.pythonhosted.org/packages/2b/b6/fd060e2ee4a6f2bd68e4d1be3622482196f992387c487cf50fe6d3315563/oru2xds-2.0.9.tar.gz
+[2024-04-07 17:46:03] WARNING root fetch - processPackages [affixapi]: Timeout reached during download
+[2024-04-07 17:46:03] WARNING root fetch - processPackages [query-package-documentation]: Timeout reached during download
+[2024-04-07 17:46:03] INFO root fetch - processPackages [MultiGATE]: Downloading https://files.pythonhosted.org/packages/5b/3f/9a8dedc6568f4563b1fb27471d87e8c485b436d9ac91e57d99297ef16418/MultiGATE-0.0.2.tar.gz
+[2024-04-07 17:46:03] WARNING root fetch - processPackages [oru2xds]: Timeout reached during download
+[2024-04-07 17:46:03] INFO root fetch - processPackages [oru2xds]: executing diffoscope
+[2024-04-07 17:46:03] INFO root fetch - processPackages [oru2xds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oru2xds-2.0.8.tar.gz tmp/oru2xds-2.0.9.tar.gz --markdown 20240407/o/oru2xds/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2024-04-07 17:46:03] WARNING root fetch - processPackages [MultiGATE]: Timeout reached during download
+[2024-04-07 17:46:03] INFO root fetch - processPackages [MultiGATE]: executing diffoscope
+[2024-04-07 17:46:03] INFO root fetch - processPackages [MultiGATE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MultiGATE-0.0.1.tar.gz tmp/MultiGATE-0.0.2.tar.gz --markdown 20240407/M/MultiGATE/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-07 17:46:03] INFO root fetch - processPackages [affixapi]: Downloading https://files.pythonhosted.org/packages/de/2c/7be3f3f8598769a7d9bd015a044b8a595aa3433b7aa01ece4790d29d184d/affixapi-1.1.50.tar.gz
+[2024-04-07 17:46:03] INFO root fetch - processPackages [query-package-documentation]: Downloading https://files.pythonhosted.org/packages/a8/ce/5494090282369b057908fab0651e76e53878176d6ac2ba97f9cabd072833/query-package-documentation-0.0.3.tar.gz
+[2024-04-07 17:46:04] WARNING root fetch - processPackages [affixapi]: Timeout reached during download
+[2024-04-07 17:46:04] INFO root fetch - processPackages [affixapi]: executing diffoscope
+[2024-04-07 17:46:04] INFO root fetch - processPackages [affixapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/affixapi-1.1.49.tar.gz tmp/affixapi-1.1.50.tar.gz --markdown 20240407/a/affixapi/1.1.49-1.1.50/diff.md --exclude *.pyd
+[2024-04-07 17:46:04] WARNING root fetch - processPackages [query-package-documentation]: Timeout reached during download
+[2024-04-07 17:46:04] INFO root fetch - processPackages [query-package-documentation]: executing diffoscope
+[2024-04-07 17:46:04] INFO root fetch - processPackages [query-package-documentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/query-package-documentation-0.0.2.tar.gz tmp/query-package-documentation-0.0.3.tar.gz --markdown 20240407/q/query-package-documentation/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 17:46:04] INFO root fetch - processPackages [MultiGATE]: Remove: archive file [/home/abi/fetcher/tmp/MultiGATE-0.0.1.tar.gz]
+[2024-04-07 17:46:04] INFO root fetch - processPackages [MultiGATE]: Remove: archive file [/home/abi/fetcher/tmp/MultiGATE-0.0.2.tar.gz]
+[2024-04-07 17:46:04] INFO root fetch - main [MainThread]: End processing [MultiGATE]: success
+[2024-04-07 17:46:04] INFO root fetch - processPackages [oru2xds]: Remove: archive file [/home/abi/fetcher/tmp/oru2xds-2.0.8.tar.gz]
+[2024-04-07 17:46:04] INFO root fetch - processPackages [oru2xds]: Remove: archive file [/home/abi/fetcher/tmp/oru2xds-2.0.9.tar.gz]
+[2024-04-07 17:46:04] INFO root fetch - main [MainThread]: End processing [oru2xds]: success
+[2024-04-07 17:46:04] INFO root fetch - processPackages [query-package-documentation]: Remove: archive file [/home/abi/fetcher/tmp/query-package-documentation-0.0.2.tar.gz]
+[2024-04-07 17:46:04] INFO root fetch - processPackages [query-package-documentation]: Remove: archive file [/home/abi/fetcher/tmp/query-package-documentation-0.0.3.tar.gz]
+[2024-04-07 17:46:04] INFO root fetch - main [MainThread]: End processing [query-package-documentation]: success
+[2024-04-07 17:46:05] INFO root fetch - processPackages [affixapi]: Remove: archive file [/home/abi/fetcher/tmp/affixapi-1.1.49.tar.gz]
+[2024-04-07 17:46:05] INFO root fetch - processPackages [affixapi]: Remove: archive file [/home/abi/fetcher/tmp/affixapi-1.1.50.tar.gz]
+[2024-04-07 17:46:05] INFO root fetch - main [MainThread]: End processing [affixapi]: success
+[2024-04-07 17:46:05] INFO root fetch - main [MainThread]: Store serial: [22657306]
