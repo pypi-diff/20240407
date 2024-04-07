@@ -19917,3 +19917,40 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:32:39] INFO root fetch - processPackages [yglu]: Remove: archive file [/home/abi/fetcher/tmp/yglu-1.1.2.tar.gz]
 [2024-04-07 22:32:39] INFO root fetch - main [MainThread]: End processing [yglu]: success
 [2024-04-07 22:32:39] INFO root fetch - main [MainThread]: Store serial: [22659133]
+[2024-04-07 22:34:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659133]
+[2024-04-07 22:34:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 22:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pdf-conversor-test-123
+[2024-04-07 22:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: freegenius
+[2024-04-07 22:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reprompt
+[2024-04-07 22:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: reprompt
+[2024-04-07 22:34:49] INFO root fetch - processPackages [reprompt]: New version: [0.0.5rc42.post1] Old Version: [0.0.5rc31.post1]
+[2024-04-07 22:34:49] INFO root fetch - processPackages [reprompt]: New version: [0.0.5rc42.post1] Old Version: [0.0.5rc31.post1]
+[2024-04-07 22:34:49] INFO root fetch - processPackages [reprompt]: Downloading https://files.pythonhosted.org/packages/be/9d/f37f9515ca8119c95db49658210555732ce552155a75502e6a6425698163/reprompt-0.0.5rc31.post1.tar.gz
+[2024-04-07 22:34:49] INFO root fetch - processPackages [reprompt]: Downloading https://files.pythonhosted.org/packages/be/9d/f37f9515ca8119c95db49658210555732ce552155a75502e6a6425698163/reprompt-0.0.5rc31.post1.tar.gz
+[2024-04-07 22:34:49] WARNING root fetch - processPackages [pdf-conversor-test-123]: Skipping, unable to determine old version
+[2024-04-07 22:34:49] INFO root fetch - main [MainThread]: End processing [pdf-conversor-test-123] error
+[2024-04-07 22:34:49] WARNING root fetch - processPackages [reprompt]: Timeout reached during download
+[2024-04-07 22:34:49] WARNING root fetch - processPackages [reprompt]: Timeout reached during download
+[2024-04-07 22:34:49] INFO root fetch - processPackages [freegenius]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 22:34:49] INFO root fetch - processPackages [reprompt]: Downloading https://files.pythonhosted.org/packages/1c/c4/760a059ace64b2b34ae27eb4adc45f84214e0bd3790bd26c109476964069/reprompt-0.0.5rc42.post1.tar.gz
+[2024-04-07 22:34:49] INFO root fetch - processPackages [reprompt]: Downloading https://files.pythonhosted.org/packages/1c/c4/760a059ace64b2b34ae27eb4adc45f84214e0bd3790bd26c109476964069/reprompt-0.0.5rc42.post1.tar.gz
+[2024-04-07 22:34:49] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/6f/a0/f28ee0e233993d710b958fb4eca9f4892fdc879db0894cb221c3c672db85/freegenius-0.0.8.tar.gz
+[2024-04-07 22:34:49] WARNING root fetch - processPackages [reprompt]: Timeout reached during download
+[2024-04-07 22:34:49] INFO root fetch - processPackages [reprompt]: executing diffoscope
+[2024-04-07 22:34:49] INFO root fetch - processPackages [reprompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reprompt-0.0.5rc31.post1.tar.gz tmp/reprompt-0.0.5rc42.post1.tar.gz --markdown 20240407/r/reprompt/0.0.5rc31.post1-0.0.5rc42.post1/diff.md --exclude *.pyd
+[2024-04-07 22:34:49] WARNING root fetch - processPackages [reprompt]: Timeout reached during download
+[2024-04-07 22:34:49] INFO root fetch - processPackages [reprompt]: executing diffoscope
+[2024-04-07 22:34:49] INFO root fetch - processPackages [reprompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reprompt-0.0.5rc31.post1.tar.gz tmp/reprompt-0.0.5rc42.post1.tar.gz --markdown 20240407/r/reprompt/0.0.5rc31.post1-0.0.5rc42.post1/diff.md --exclude *.pyd
+[2024-04-07 22:34:49] WARNING root fetch - processPackages [freegenius]: Timeout reached during download
+[2024-04-07 22:34:49] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/64/a9/f3ae6b148a4bd786790a124582c069ff16ee88fb307a8ebff8181577bb4d/freegenius-0.0.9.tar.gz
+[2024-04-07 22:34:50] WARNING root fetch - processPackages [freegenius]: Timeout reached during download
+[2024-04-07 22:34:50] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-04-07 22:34:50] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.0.8.tar.gz tmp/freegenius-0.0.9.tar.gz --markdown 20240407/f/freegenius/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 22:34:50] INFO root fetch - processPackages [reprompt]: Remove: archive file [/home/abi/fetcher/tmp/reprompt-0.0.5rc31.post1.tar.gz]
+[2024-04-07 22:34:50] INFO root fetch - processPackages [reprompt]: Remove: archive file [/home/abi/fetcher/tmp/reprompt-0.0.5rc42.post1.tar.gz]
+[2024-04-07 22:34:50] INFO root fetch - main [MainThread]: End processing [reprompt]: success
+[2024-04-07 22:34:50] INFO root fetch - main [MainThread]: End processing [reprompt]: success
+[2024-04-07 22:34:50] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.8.tar.gz]
+[2024-04-07 22:34:50] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.9.tar.gz]
+[2024-04-07 22:34:50] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-04-07 22:34:50] INFO root fetch - main [MainThread]: Store serial: [22659147]
