@@ -18632,3 +18632,20 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 21:20:30] INFO root fetch - processPackages [gammarer.aws-secure-flow-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-flow-log-bucket-1.3.4.tar.gz]
 [2024-04-07 21:20:30] INFO root fetch - main [MainThread]: End processing [gammarer.aws-secure-flow-log-bucket]: success
 [2024-04-07 21:20:30] INFO root fetch - main [MainThread]: Store serial: [22658609]
+[2024-04-07 21:22:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658609]
+[2024-04-07 21:22:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 21:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quickfin
+[2024-04-07 21:22:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: audio-sed
+[2024-04-07 21:22:39] INFO root fetch - processPackages [quickfin]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-04-07 21:22:39] WARNING root fetch - processPackages [audio-sed]: Skipping, unable to determine old version
+[2024-04-07 21:22:39] INFO root fetch - main [MainThread]: End processing [audio-sed] error
+[2024-04-07 21:22:39] INFO root fetch - processPackages [quickfin]: Downloading https://files.pythonhosted.org/packages/58/18/9ec071d9e79468ec8cba17cae9e96600c2e70e6f0749c7829a9a1eaf5f65/quickfin-1.8.0.tar.gz
+[2024-04-07 21:22:39] WARNING root fetch - processPackages [quickfin]: Timeout reached during download
+[2024-04-07 21:22:39] INFO root fetch - processPackages [quickfin]: Downloading https://files.pythonhosted.org/packages/f7/81/5611cebce8db0b6121d92bd2ee76f47e49b160d9e5d1bde8f6a81ffd0961/quickfin-1.9.0.tar.gz
+[2024-04-07 21:22:39] WARNING root fetch - processPackages [quickfin]: Timeout reached during download
+[2024-04-07 21:22:39] INFO root fetch - processPackages [quickfin]: executing diffoscope
+[2024-04-07 21:22:39] INFO root fetch - processPackages [quickfin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickfin-1.8.0.tar.gz tmp/quickfin-1.9.0.tar.gz --markdown 20240407/q/quickfin/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2024-04-07 21:22:40] INFO root fetch - processPackages [quickfin]: Remove: archive file [/home/abi/fetcher/tmp/quickfin-1.8.0.tar.gz]
+[2024-04-07 21:22:40] INFO root fetch - processPackages [quickfin]: Remove: archive file [/home/abi/fetcher/tmp/quickfin-1.9.0.tar.gz]
+[2024-04-07 21:22:40] INFO root fetch - main [MainThread]: End processing [quickfin]: success
+[2024-04-07 21:22:40] INFO root fetch - main [MainThread]: Store serial: [22658617]
