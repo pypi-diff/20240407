@@ -15801,3 +15801,51 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 18:27:25] INFO root fetch - processPackages [pyfdmss]: Remove: archive file [/home/abi/fetcher/tmp/pyfdmss-0.0.6.tar.gz]
 [2024-04-07 18:27:25] INFO root fetch - main [MainThread]: End processing [pyfdmss]: success
 [2024-04-07 18:27:25] INFO root fetch - main [MainThread]: Store serial: [22657557]
+[2024-04-07 18:29:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657557]
+[2024-04-07 18:29:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 18:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swebench
+[2024-04-07 18:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfdmss
+[2024-04-07 18:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyfdmss
+[2024-04-07 18:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: astromcad
+[2024-04-07 18:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sslsv
+[2024-04-07 18:29:34] INFO root fetch - processPackages [pyfdmss]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-07 18:29:34] INFO root fetch - processPackages [astromcad]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-07 18:29:34] INFO root fetch - processPackages [pyfdmss]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-07 18:29:34] INFO root fetch - processPackages [pyfdmss]: Downloading https://files.pythonhosted.org/packages/8e/43/a14b0c35c2eb6da58eae5ff6133c41160e845d4e12f213c1dffadb6850fa/pyfdmss-0.0.6.tar.gz
+[2024-04-07 18:29:34] INFO root fetch - processPackages [swebench]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-07 18:29:34] INFO root fetch - processPackages [astromcad]: Downloading https://files.pythonhosted.org/packages/8b/54/96d933048bea86efeae0c6a4c49da4d11a01350596a91bdba3e7cd3c0e0e/astromcad-0.1.1.tar.gz
+[2024-04-07 18:29:34] INFO root fetch - processPackages [pyfdmss]: Downloading https://files.pythonhosted.org/packages/8e/43/a14b0c35c2eb6da58eae5ff6133c41160e845d4e12f213c1dffadb6850fa/pyfdmss-0.0.6.tar.gz
+[2024-04-07 18:29:34] WARNING root fetch - processPackages [sslsv]: Skipping, unable to determine old version
+[2024-04-07 18:29:34] INFO root fetch - main [MainThread]: End processing [sslsv] error
+[2024-04-07 18:29:34] INFO root fetch - processPackages [swebench]: Downloading https://files.pythonhosted.org/packages/e8/3a/062ba77f631a9c50dd8cc2b405b367456c21694e72685ea6763f1eb8a4e8/swebench-1.0.4.tar.gz
+[2024-04-07 18:29:34] WARNING root fetch - processPackages [pyfdmss]: Timeout reached during download
+[2024-04-07 18:29:34] WARNING root fetch - processPackages [pyfdmss]: Timeout reached during download
+[2024-04-07 18:29:34] WARNING root fetch - processPackages [swebench]: Timeout reached during download
+[2024-04-07 18:29:34] INFO root fetch - processPackages [pyfdmss]: Downloading https://files.pythonhosted.org/packages/60/a4/7bad895cd821fa613af220d5aeec64717c45d57dd6592c2d13f1f36ba9d1/pyfdmss-0.0.7.tar.gz
+[2024-04-07 18:29:34] INFO root fetch - processPackages [pyfdmss]: Downloading https://files.pythonhosted.org/packages/60/a4/7bad895cd821fa613af220d5aeec64717c45d57dd6592c2d13f1f36ba9d1/pyfdmss-0.0.7.tar.gz
+[2024-04-07 18:29:34] WARNING root fetch - processPackages [astromcad]: Timeout reached during download
+[2024-04-07 18:29:35] INFO root fetch - processPackages [swebench]: Downloading https://files.pythonhosted.org/packages/05/9e/95454459b85523ff682ebcde40e56379d1c925344bb8ba6c648b35d4ba80/swebench-1.0.5.tar.gz
+[2024-04-07 18:29:35] WARNING root fetch - processPackages [pyfdmss]: Timeout reached during download
+[2024-04-07 18:29:35] INFO root fetch - processPackages [pyfdmss]: executing diffoscope
+[2024-04-07 18:29:35] INFO root fetch - processPackages [pyfdmss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfdmss-0.0.6.tar.gz tmp/pyfdmss-0.0.7.tar.gz --markdown 20240407/p/pyfdmss/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2024-04-07 18:29:35] WARNING root fetch - processPackages [pyfdmss]: Timeout reached during download
+[2024-04-07 18:29:35] INFO root fetch - processPackages [pyfdmss]: executing diffoscope
+[2024-04-07 18:29:35] INFO root fetch - processPackages [pyfdmss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfdmss-0.0.6.tar.gz tmp/pyfdmss-0.0.7.tar.gz --markdown 20240407/p/pyfdmss/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2024-04-07 18:29:35] INFO root fetch - processPackages [astromcad]: Downloading https://files.pythonhosted.org/packages/11/8c/271e418951c1913daec28f83e3afc06618713b8feee05a7e1f991912a0bf/astromcad-0.1.2.tar.gz
+[2024-04-07 18:29:35] WARNING root fetch - processPackages [swebench]: Timeout reached during download
+[2024-04-07 18:29:35] INFO root fetch - processPackages [swebench]: executing diffoscope
+[2024-04-07 18:29:35] INFO root fetch - processPackages [swebench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swebench-1.0.4.tar.gz tmp/swebench-1.0.5.tar.gz --markdown 20240407/s/swebench/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2024-04-07 18:29:35] WARNING root fetch - processPackages [astromcad]: Timeout reached during download
+[2024-04-07 18:29:35] INFO root fetch - processPackages [astromcad]: executing diffoscope
+[2024-04-07 18:29:35] INFO root fetch - processPackages [astromcad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astromcad-0.1.1.tar.gz tmp/astromcad-0.1.2.tar.gz --markdown 20240407/a/astromcad/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-07 18:29:35] INFO root fetch - processPackages [swebench]: Remove: archive file [/home/abi/fetcher/tmp/swebench-1.0.4.tar.gz]
+[2024-04-07 18:29:35] INFO root fetch - processPackages [swebench]: Remove: archive file [/home/abi/fetcher/tmp/swebench-1.0.5.tar.gz]
+[2024-04-07 18:29:35] INFO root fetch - main [MainThread]: End processing [swebench]: success
+[2024-04-07 18:29:35] INFO root fetch - processPackages [pyfdmss]: Remove: archive file [/home/abi/fetcher/tmp/pyfdmss-0.0.6.tar.gz]
+[2024-04-07 18:29:35] INFO root fetch - processPackages [pyfdmss]: Remove: archive file [/home/abi/fetcher/tmp/pyfdmss-0.0.7.tar.gz]
+[2024-04-07 18:29:35] INFO root fetch - main [MainThread]: End processing [pyfdmss]: success
+[2024-04-07 18:29:36] INFO root fetch - main [MainThread]: End processing [pyfdmss]: success
+[2024-04-07 18:29:36] INFO root fetch - processPackages [astromcad]: Remove: archive file [/home/abi/fetcher/tmp/astromcad-0.1.1.tar.gz]
+[2024-04-07 18:29:36] INFO root fetch - processPackages [astromcad]: Remove: archive file [/home/abi/fetcher/tmp/astromcad-0.1.2.tar.gz]
+[2024-04-07 18:29:36] INFO root fetch - main [MainThread]: End processing [astromcad]: success
+[2024-04-07 18:29:36] INFO root fetch - main [MainThread]: Store serial: [22657568]
