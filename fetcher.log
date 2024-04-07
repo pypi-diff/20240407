@@ -5557,3 +5557,34 @@
 [2024-04-07 07:40:46] INFO root fetch - processPackages [pulumi-aiven]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aiven-6.9.0a1704274395.tar.gz]
 [2024-04-07 07:40:46] INFO root fetch - main [MainThread]: End processing [pulumi-aiven]: success
 [2024-04-07 07:40:46] INFO root fetch - main [MainThread]: Store serial: [22653690]
+[2024-04-07 07:42:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653690]
+[2024-04-07 07:42:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 07:42:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-purchase-backorder
+[2024-04-07 07:42:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langkit
+[2024-04-07 07:42:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addons-oca-purchase-reporting
+[2024-04-07 07:42:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycounts_olliegullery
+[2024-04-07 07:42:56] WARNING root fetch - processPackages [odoo-addon-purchase-backorder]: Skipping, unable to determine old version
+[2024-04-07 07:42:56] INFO root fetch - main [MainThread]: End processing [odoo-addon-purchase-backorder] error
+[2024-04-07 07:42:56] WARNING root fetch - processPackages [pycounts_olliegullery]: Skipping, unable to determine old version
+[2024-04-07 07:42:56] INFO root fetch - processPackages [odoo-addons-oca-purchase-reporting]: New version: [16.0.20240406.0] Old Version: [16.0.20240401.0]
+[2024-04-07 07:42:56] INFO root fetch - main [MainThread]: End processing [pycounts_olliegullery] error
+[2024-04-07 07:42:56] INFO root fetch - processPackages [langkit]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 07:42:56] INFO root fetch - processPackages [langkit]: Downloading https://files.pythonhosted.org/packages/ce/e3/7969ef4cda66f7a8d2dc2a61af3bb067c395b8fc3c8bf9e6777139afa351/langkit-0.0.8.tar.gz
+[2024-04-07 07:42:56] INFO root fetch - processPackages [odoo-addons-oca-purchase-reporting]: Downloading https://files.pythonhosted.org/packages/c4/4c/ebdcad3223d58da4ecda2ded1c9c5fe9162b4a4bdbeb1e1a200119aa302e/odoo_addons_oca_purchase_reporting-16.0.20240401.0-py3-none-any.whl
+[2024-04-07 07:42:56] WARNING root fetch - processPackages [odoo-addons-oca-purchase-reporting]: Timeout reached during download
+[2024-04-07 07:42:57] WARNING root fetch - processPackages [langkit]: Timeout reached during download
+[2024-04-07 07:42:57] INFO root fetch - processPackages [odoo-addons-oca-purchase-reporting]: Downloading https://files.pythonhosted.org/packages/a5/c4/8895412a3121d72e76af6ab60f42e91ddfcc0c85d199c36262ce947e47e2/odoo_addons_oca_purchase_reporting-16.0.20240406.0-py3-none-any.whl
+[2024-04-07 07:42:57] INFO root fetch - processPackages [langkit]: Downloading https://files.pythonhosted.org/packages/32/28/704a6d98bd58a324050772e6b9dc1479ab2f09c77c3a83a38e3697af8ef3/langkit-0.0.9.tar.gz
+[2024-04-07 07:42:57] WARNING root fetch - processPackages [odoo-addons-oca-purchase-reporting]: Timeout reached during download
+[2024-04-07 07:42:57] INFO root fetch - processPackages [odoo-addons-oca-purchase-reporting]: executing diffoscope
+[2024-04-07 07:42:57] INFO root fetch - processPackages [odoo-addons-oca-purchase-reporting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_purchase_reporting-16.0.20240401.0-py3-none-any.whl.zip tmp/odoo_addons_oca_purchase_reporting-16.0.20240406.0-py3-none-any.whl.zip --markdown 20240407/o/odoo-addons-oca-purchase-reporting/16.0.20240401.0-16.0.20240406.0/diff.md --exclude *.pyd
+[2024-04-07 07:42:57] WARNING root fetch - processPackages [langkit]: Timeout reached during download
+[2024-04-07 07:42:57] INFO root fetch - processPackages [langkit]: executing diffoscope
+[2024-04-07 07:42:57] INFO root fetch - processPackages [langkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langkit-0.0.8.tar.gz tmp/langkit-0.0.9.tar.gz --markdown 20240407/l/langkit/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 07:42:57] INFO root fetch - processPackages [odoo-addons-oca-purchase-reporting]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_purchase_reporting-16.0.20240401.0-py3-none-any.whl.zip]
+[2024-04-07 07:42:57] INFO root fetch - processPackages [odoo-addons-oca-purchase-reporting]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_purchase_reporting-16.0.20240406.0-py3-none-any.whl.zip]
+[2024-04-07 07:42:57] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-purchase-reporting]: success
+[2024-04-07 07:42:58] INFO root fetch - processPackages [langkit]: Remove: archive file [/home/abi/fetcher/tmp/langkit-0.0.8.tar.gz]
+[2024-04-07 07:42:58] INFO root fetch - processPackages [langkit]: Remove: archive file [/home/abi/fetcher/tmp/langkit-0.0.9.tar.gz]
+[2024-04-07 07:42:58] INFO root fetch - main [MainThread]: End processing [langkit]: success
+[2024-04-07 07:42:58] INFO root fetch - main [MainThread]: Store serial: [22653709]
