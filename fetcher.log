@@ -9784,3 +9784,45 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 12:12:06] INFO root fetch - processPackages [bosing]: Remove: archive file [/home/abi/fetcher/tmp/bosing-1.0.0b3.tar.gz]
 [2024-04-07 12:12:06] INFO root fetch - main [MainThread]: End processing [bosing]: success
 [2024-04-07 12:12:06] INFO root fetch - main [MainThread]: Store serial: [22655330]
+[2024-04-07 12:14:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655330]
+[2024-04-07 12:14:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 12:14:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qa-test
+[2024-04-07 12:14:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: OpsApi
+[2024-04-07 12:14:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytest_tagging
+[2024-04-07 12:14:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tensorpc
+[2024-04-07 12:14:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mvlib
+[2024-04-07 12:14:16] INFO root fetch - processPackages [qa-test]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-07 12:14:16] INFO root fetch - processPackages [pytest_tagging]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-04-07 12:14:16] WARNING root fetch - processPackages [mvlib]: Skipping, unable to determine old version
+[2024-04-07 12:14:16] INFO root fetch - main [MainThread]: End processing [mvlib] error
+[2024-04-07 12:14:16] INFO root fetch - processPackages [OpsApi]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-07 12:14:16] WARNING root fetch - processPackages [tensorpc]: Skipping, unable to determine old version
+[2024-04-07 12:14:16] INFO root fetch - main [MainThread]: End processing [tensorpc] error
+[2024-04-07 12:14:16] INFO root fetch - processPackages [pytest_tagging]: Downloading https://files.pythonhosted.org/packages/8a/99/50858e24fc44d225a129844d82fe7a5d571ec1ff141ab949b75a1a163885/pytest_tagging-1.4.1.tar.gz
+[2024-04-07 12:14:16] INFO root fetch - processPackages [OpsApi]: Downloading https://files.pythonhosted.org/packages/36/40/46d943ab06696979e61945f4a9bf42c17647e633a52e3645496c613ef5ab/OpsApi-1.0.0.tar.gz
+[2024-04-07 12:14:16] INFO root fetch - processPackages [qa-test]: Downloading https://files.pythonhosted.org/packages/4d/af/b04163b10b6a69b997a06b1d527f97ea8a5404c002719ed5b671b343a1b6/qa_test-0.0.1.tar.gz
+[2024-04-07 12:14:16] WARNING root fetch - processPackages [OpsApi]: Timeout reached during download
+[2024-04-07 12:14:16] WARNING root fetch - processPackages [pytest_tagging]: Timeout reached during download
+[2024-04-07 12:14:16] INFO root fetch - processPackages [OpsApi]: Downloading https://files.pythonhosted.org/packages/f6/bb/9092e4861b1c181855734cc2601e3fd69fbe7e259328bf45e003a33389d5/OpsApi-1.0.1.tar.gz
+[2024-04-07 12:14:16] INFO root fetch - processPackages [pytest_tagging]: Downloading https://files.pythonhosted.org/packages/d0/59/b50a4d43274b0b247ed7b02bdfdbbc706627a9fbbc89722114be85f5e123/pytest_tagging-1.4.2.tar.gz
+[2024-04-07 12:14:17] WARNING root fetch - processPackages [OpsApi]: Timeout reached during download
+[2024-04-07 12:14:17] INFO root fetch - processPackages [OpsApi]: executing diffoscope
+[2024-04-07 12:14:17] INFO root fetch - processPackages [OpsApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpsApi-1.0.0.tar.gz tmp/OpsApi-1.0.1.tar.gz --markdown 20240407/O/OpsApi/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2024-04-07 12:14:17] WARNING root fetch - processPackages [pytest_tagging]: Timeout reached during download
+[2024-04-07 12:14:17] INFO root fetch - processPackages [pytest_tagging]: executing diffoscope
+[2024-04-07 12:14:17] INFO root fetch - processPackages [pytest_tagging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_tagging-1.4.1.tar.gz tmp/pytest_tagging-1.4.2.tar.gz --markdown 20240407/p/pytest_tagging/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2024-04-07 12:14:17] WARNING root fetch - processPackages [qa-test]: Timeout reached during download
+[2024-04-07 12:14:17] INFO root fetch - processPackages [qa-test]: Downloading https://files.pythonhosted.org/packages/8e/1d/773eadc0b9331c2c3dba85dab2e4bdebc9e62c8060e2c7c45733a1ddd55c/qa_test-0.0.2.tar.gz
+[2024-04-07 12:14:17] INFO root fetch - processPackages [OpsApi]: Remove: archive file [/home/abi/fetcher/tmp/OpsApi-1.0.0.tar.gz]
+[2024-04-07 12:14:17] INFO root fetch - processPackages [OpsApi]: Remove: archive file [/home/abi/fetcher/tmp/OpsApi-1.0.1.tar.gz]
+[2024-04-07 12:14:17] INFO root fetch - main [MainThread]: End processing [OpsApi]: success
+[2024-04-07 12:14:17] INFO root fetch - processPackages [pytest_tagging]: Remove: archive file [/home/abi/fetcher/tmp/pytest_tagging-1.4.1.tar.gz]
+[2024-04-07 12:14:17] INFO root fetch - processPackages [pytest_tagging]: Remove: archive file [/home/abi/fetcher/tmp/pytest_tagging-1.4.2.tar.gz]
+[2024-04-07 12:14:17] INFO root fetch - main [MainThread]: End processing [pytest_tagging]: success
+[2024-04-07 12:14:19] WARNING root fetch - processPackages [qa-test]: Timeout reached during download
+[2024-04-07 12:14:19] INFO root fetch - processPackages [qa-test]: executing diffoscope
+[2024-04-07 12:14:19] INFO root fetch - processPackages [qa-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qa_test-0.0.1.tar.gz tmp/qa_test-0.0.2.tar.gz --markdown 20240407/q/qa-test/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-07 12:14:21] INFO root fetch - processPackages [qa-test]: Remove: archive file [/home/abi/fetcher/tmp/qa_test-0.0.1.tar.gz]
+[2024-04-07 12:14:21] INFO root fetch - processPackages [qa-test]: Remove: archive file [/home/abi/fetcher/tmp/qa_test-0.0.2.tar.gz]
+[2024-04-07 12:14:21] INFO root fetch - main [MainThread]: End processing [qa-test]: success
+[2024-04-07 12:14:21] INFO root fetch - main [MainThread]: Store serial: [22655350]
