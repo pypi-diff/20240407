@@ -7780,3 +7780,45 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 10:05:03] INFO root fetch - processPackages [exl2conv]: Remove: archive file [/home/abi/fetcher/tmp/exl2conv-0.0.17.1.tar.gz]
 [2024-04-07 10:05:03] INFO root fetch - main [MainThread]: End processing [exl2conv]: success
 [2024-04-07 10:05:03] INFO root fetch - main [MainThread]: Store serial: [22654562]
+[2024-04-07 10:07:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654562]
+[2024-04-07 10:07:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 10:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nb-log
+[2024-04-07 10:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clip-mosaic
+[2024-04-07 10:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qdls
+[2024-04-07 10:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: moby-distribution
+[2024-04-07 10:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: binance-network
+[2024-04-07 10:07:12] INFO root fetch - processPackages [moby-distribution]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-04-07 10:07:12] WARNING root fetch - processPackages [binance-network]: Skipping, unable to determine old version
+[2024-04-07 10:07:12] INFO root fetch - main [MainThread]: End processing [binance-network] error
+[2024-04-07 10:07:12] INFO root fetch - processPackages [moby-distribution]: Downloading https://files.pythonhosted.org/packages/c8/bc/be29bff94a99bd218fd075d907263fbf8d815c56076b5c6e2fa2001d239b/moby_distribution-0.6.0.tar.gz
+[2024-04-07 10:07:12] INFO root fetch - processPackages [qdls]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-07 10:07:12] WARNING root fetch - processPackages [clip-mosaic]: Skipping, unable to determine old version
+[2024-04-07 10:07:12] INFO root fetch - main [MainThread]: End processing [clip-mosaic] error
+[2024-04-07 10:07:12] INFO root fetch - processPackages [nb-log]: New version: [9.9] Old Version: [9.8]
+[2024-04-07 10:07:12] WARNING root fetch - processPackages [moby-distribution]: Timeout reached during download
+[2024-04-07 10:07:12] INFO root fetch - processPackages [qdls]: Downloading https://files.pythonhosted.org/packages/b1/dc/a5e2e07cdd8ca93f4dfb2833b8f46220c66f99408adf419c3a20ae7244ee/qdls-0.1.1.tar.gz
+[2024-04-07 10:07:12] INFO root fetch - processPackages [nb-log]: Downloading https://files.pythonhosted.org/packages/22/98/61f2b3a749cdecb69a6010138138fcffa16875119c0e669be11105b6ba58/nb_log-9.8.tar.gz
+[2024-04-07 10:07:12] INFO root fetch - processPackages [moby-distribution]: Downloading https://files.pythonhosted.org/packages/f7/38/f16a70b9f600291259a2cd65479cc6d2215fce79e8da7d7e76beb92761ac/moby_distribution-0.7.0.tar.gz
+[2024-04-07 10:07:13] WARNING root fetch - processPackages [moby-distribution]: Timeout reached during download
+[2024-04-07 10:07:13] INFO root fetch - processPackages [moby-distribution]: executing diffoscope
+[2024-04-07 10:07:13] INFO root fetch - processPackages [moby-distribution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moby_distribution-0.6.0.tar.gz tmp/moby_distribution-0.7.0.tar.gz --markdown 20240407/m/moby-distribution/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2024-04-07 10:07:13] WARNING root fetch - processPackages [qdls]: Timeout reached during download
+[2024-04-07 10:07:13] WARNING root fetch - processPackages [nb-log]: Timeout reached during download
+[2024-04-07 10:07:13] INFO root fetch - processPackages [qdls]: Downloading https://files.pythonhosted.org/packages/ff/ea/f064abe3547569cb5321db34376c0d6dcf2d5bb232e75101e02b9d44433f/qdls-0.1.2.tar.gz
+[2024-04-07 10:07:13] INFO root fetch - processPackages [nb-log]: Downloading https://files.pythonhosted.org/packages/71/b4/b5fd7191646e224248dd5e17266bc6a64d40d6fb5a20f465bb538b007259/nb_log-9.9.tar.gz
+[2024-04-07 10:07:13] WARNING root fetch - processPackages [qdls]: Timeout reached during download
+[2024-04-07 10:07:13] INFO root fetch - processPackages [qdls]: executing diffoscope
+[2024-04-07 10:07:13] INFO root fetch - processPackages [qdls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qdls-0.1.1.tar.gz tmp/qdls-0.1.2.tar.gz --markdown 20240407/q/qdls/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-07 10:07:13] WARNING root fetch - processPackages [nb-log]: Timeout reached during download
+[2024-04-07 10:07:13] INFO root fetch - processPackages [nb-log]: executing diffoscope
+[2024-04-07 10:07:13] INFO root fetch - processPackages [nb-log]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nb_log-9.8.tar.gz tmp/nb_log-9.9.tar.gz --markdown 20240407/n/nb-log/9.8-9.9/diff.md --exclude *.pyd
+[2024-04-07 10:07:13] INFO root fetch - processPackages [moby-distribution]: Remove: archive file [/home/abi/fetcher/tmp/moby_distribution-0.6.0.tar.gz]
+[2024-04-07 10:07:13] INFO root fetch - processPackages [moby-distribution]: Remove: archive file [/home/abi/fetcher/tmp/moby_distribution-0.7.0.tar.gz]
+[2024-04-07 10:07:13] INFO root fetch - main [MainThread]: End processing [moby-distribution]: success
+[2024-04-07 10:07:14] INFO root fetch - processPackages [qdls]: Remove: archive file [/home/abi/fetcher/tmp/qdls-0.1.1.tar.gz]
+[2024-04-07 10:07:14] INFO root fetch - processPackages [qdls]: Remove: archive file [/home/abi/fetcher/tmp/qdls-0.1.2.tar.gz]
+[2024-04-07 10:07:14] INFO root fetch - main [MainThread]: End processing [qdls]: success
+[2024-04-07 10:07:14] INFO root fetch - processPackages [nb-log]: Remove: archive file [/home/abi/fetcher/tmp/nb_log-9.8.tar.gz]
+[2024-04-07 10:07:14] INFO root fetch - processPackages [nb-log]: Remove: archive file [/home/abi/fetcher/tmp/nb_log-9.9.tar.gz]
+[2024-04-07 10:07:14] INFO root fetch - main [MainThread]: End processing [nb-log]: success
+[2024-04-07 10:07:14] INFO root fetch - main [MainThread]: Store serial: [22654585]
