@@ -18866,3 +18866,72 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 21:33:40] INFO root fetch - processPackages [bpf4]: Remove: archive file [/home/abi/fetcher/tmp/bpf4-1.9.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-04-07 21:33:40] INFO root fetch - main [MainThread]: End processing [bpf4]: success
 [2024-04-07 21:33:40] INFO root fetch - main [MainThread]: Store serial: [22658693]
+[2024-04-07 21:35:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658693]
+[2024-04-07 21:35:49] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 21:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: imcsdk-ecoen66
+[2024-04-07 21:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: automatic-meter-reader
+[2024-04-07 21:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: typedpy
+[2024-04-07 21:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: visiontext
+[2024-04-07 21:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: reddit2text
+[2024-04-07 21:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: stefutils
+[2024-04-07 21:35:49] INFO root fetch - processPackages [automatic-meter-reader]: New version: [1.2.1] Old Version: [1.1.0]
+[2024-04-07 21:35:49] INFO root fetch - processPackages [reddit2text]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-07 21:35:49] INFO root fetch - processPackages [imcsdk-ecoen66]: New version: [0.9.29] Old Version: [0.9.28]
+[2024-04-07 21:35:50] INFO root fetch - processPackages [visiontext]: New version: [0.9.1] Old Version: [0.8.6]
+[2024-04-07 21:35:50] INFO root fetch - processPackages [reddit2text]: Downloading https://files.pythonhosted.org/packages/61/00/623816f6933e3a6dc21833543e25ab573831987c8662be20945c5e2330be/reddit2text-0.0.7.tar.gz
+[2024-04-07 21:35:50] INFO root fetch - processPackages [automatic-meter-reader]: Downloading https://files.pythonhosted.org/packages/59/98/85781d6e0ec70d82ad73bdc5db8c15463fd808e0a2f34c62c25614717e1f/automatic-meter-reader-1.1.0.tar.gz
+[2024-04-07 21:35:50] INFO root fetch - processPackages [imcsdk-ecoen66]: Downloading https://files.pythonhosted.org/packages/f7/4a/6682b905014ef973640fb66143196d5b9f0498c693266f317e47230f0120/imcsdk_ecoen66-0.9.28.tar.gz
+[2024-04-07 21:35:50] INFO root fetch - processPackages [stefutils]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-04-07 21:35:50] INFO root fetch - processPackages [typedpy]: New version: [2.9.0] Old Version: [2.8.2]
+[2024-04-07 21:35:50] WARNING root fetch - processPackages [reddit2text]: Timeout reached during download
+[2024-04-07 21:35:50] WARNING root fetch - processPackages [imcsdk-ecoen66]: Timeout reached during download
+[2024-04-07 21:35:50] INFO root fetch - processPackages [visiontext]: Downloading https://files.pythonhosted.org/packages/4d/d2/d3e501291183b4e76abdb586538695aa2bc0edff00501cb58c56aeff3a06/visiontext-0.8.6.tar.gz
+[2024-04-07 21:35:50] WARNING root fetch - processPackages [automatic-meter-reader]: Timeout reached during download
+[2024-04-07 21:35:50] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/35/8a/1e1d14788f07a9e2f1f826ff7ed0782d942b144ca6bdd3e7aba10d88d63c/stefutils-0.8.2.tar.gz
+[2024-04-07 21:35:50] INFO root fetch - processPackages [typedpy]: Downloading https://files.pythonhosted.org/packages/27/f4/f7ae09b3573eaf9438274f873686c75134c5c6d14d9ecbfe0759ef1a6908/typedpy-2.8.2.tar.gz
+[2024-04-07 21:35:50] INFO root fetch - processPackages [imcsdk-ecoen66]: Downloading https://files.pythonhosted.org/packages/ba/75/33f04216b3ff0da108e99410b87faba6d05b4da2d24ab9519bfb83974d1d/imcsdk_ecoen66-0.9.29.tar.gz
+[2024-04-07 21:35:50] INFO root fetch - processPackages [automatic-meter-reader]: Downloading https://files.pythonhosted.org/packages/a3/7c/6184cb04cb2fec842bd3dc796a57496764d4c913d11b011f0f3a62bf593b/automatic-meter-reader-1.2.1.tar.gz
+[2024-04-07 21:35:50] INFO root fetch - processPackages [reddit2text]: Downloading https://files.pythonhosted.org/packages/47/f1/859efa6152d0b50baad2a561f9ad320103bb71fe221b43df776a5a1b2d5a/reddit2text-0.0.8.tar.gz
+[2024-04-07 21:35:50] WARNING root fetch - processPackages [visiontext]: Timeout reached during download
+[2024-04-07 21:35:50] WARNING root fetch - processPackages [automatic-meter-reader]: Timeout reached during download
+[2024-04-07 21:35:50] INFO root fetch - processPackages [automatic-meter-reader]: executing diffoscope
+[2024-04-07 21:35:50] INFO root fetch - processPackages [automatic-meter-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automatic-meter-reader-1.1.0.tar.gz tmp/automatic-meter-reader-1.2.1.tar.gz --markdown 20240407/a/automatic-meter-reader/1.1.0-1.2.1/diff.md --exclude *.pyd
+[2024-04-07 21:35:50] WARNING root fetch - processPackages [imcsdk-ecoen66]: Timeout reached during download
+[2024-04-07 21:35:50] INFO root fetch - processPackages [imcsdk-ecoen66]: executing diffoscope
+[2024-04-07 21:35:50] INFO root fetch - processPackages [imcsdk-ecoen66]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imcsdk_ecoen66-0.9.28.tar.gz tmp/imcsdk_ecoen66-0.9.29.tar.gz --markdown 20240407/i/imcsdk-ecoen66/0.9.28-0.9.29/diff.md --exclude *.pyd
+[2024-04-07 21:35:50] INFO root fetch - processPackages [visiontext]: Downloading https://files.pythonhosted.org/packages/c4/54/f0cb82036a9806f5e6d3c7b2db3469ea248709fae8c435613ce4d0818486/visiontext-0.9.1.tar.gz
+[2024-04-07 21:35:50] WARNING root fetch - processPackages [reddit2text]: Timeout reached during download
+[2024-04-07 21:35:50] INFO root fetch - processPackages [reddit2text]: executing diffoscope
+[2024-04-07 21:35:50] INFO root fetch - processPackages [reddit2text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reddit2text-0.0.7.tar.gz tmp/reddit2text-0.0.8.tar.gz --markdown 20240407/r/reddit2text/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-07 21:35:51] WARNING root fetch - processPackages [visiontext]: Timeout reached during download
+[2024-04-07 21:35:51] INFO root fetch - processPackages [visiontext]: executing diffoscope
+[2024-04-07 21:35:51] INFO root fetch - processPackages [visiontext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/visiontext-0.8.6.tar.gz tmp/visiontext-0.9.1.tar.gz --markdown 20240407/v/visiontext/0.8.6-0.9.1/diff.md --exclude *.pyd
+[2024-04-07 21:35:51] WARNING root fetch - processPackages [typedpy]: Timeout reached during download
+[2024-04-07 21:35:51] WARNING root fetch - processPackages [stefutils]: Timeout reached during download
+[2024-04-07 21:35:51] INFO root fetch - processPackages [automatic-meter-reader]: Remove: archive file [/home/abi/fetcher/tmp/automatic-meter-reader-1.1.0.tar.gz]
+[2024-04-07 21:35:51] INFO root fetch - processPackages [automatic-meter-reader]: Remove: archive file [/home/abi/fetcher/tmp/automatic-meter-reader-1.2.1.tar.gz]
+[2024-04-07 21:35:51] INFO root fetch - main [MainThread]: End processing [automatic-meter-reader]: success
+[2024-04-07 21:35:51] INFO root fetch - processPackages [typedpy]: Downloading https://files.pythonhosted.org/packages/09/0d/3518f7fd28505046b25ea42ab09a2b7ca99222a917f91ffd54ea61a0e007/typedpy-2.9.0.tar.gz
+[2024-04-07 21:35:51] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/97/83/18c4d714dca8e70776fec14f20e075956fd6a82321ac6df03f78534d47eb/stefutils-0.9.0.tar.gz
+[2024-04-07 21:35:51] INFO root fetch - processPackages [reddit2text]: Remove: archive file [/home/abi/fetcher/tmp/reddit2text-0.0.7.tar.gz]
+[2024-04-07 21:35:51] INFO root fetch - processPackages [reddit2text]: Remove: archive file [/home/abi/fetcher/tmp/reddit2text-0.0.8.tar.gz]
+[2024-04-07 21:35:51] INFO root fetch - main [MainThread]: End processing [reddit2text]: success
+[2024-04-07 21:35:51] WARNING root fetch - processPackages [stefutils]: Timeout reached during download
+[2024-04-07 21:35:51] INFO root fetch - processPackages [stefutils]: executing diffoscope
+[2024-04-07 21:35:51] INFO root fetch - processPackages [stefutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stefutils-0.8.2.tar.gz tmp/stefutils-0.9.0.tar.gz --markdown 20240407/s/stefutils/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2024-04-07 21:35:51] INFO root fetch - processPackages [visiontext]: Remove: archive file [/home/abi/fetcher/tmp/visiontext-0.8.6.tar.gz]
+[2024-04-07 21:35:51] INFO root fetch - processPackages [visiontext]: Remove: archive file [/home/abi/fetcher/tmp/visiontext-0.9.1.tar.gz]
+[2024-04-07 21:35:51] INFO root fetch - main [MainThread]: End processing [visiontext]: success
+[2024-04-07 21:35:51] WARNING root fetch - processPackages [typedpy]: Timeout reached during download
+[2024-04-07 21:35:51] INFO root fetch - processPackages [typedpy]: executing diffoscope
+[2024-04-07 21:35:51] INFO root fetch - processPackages [typedpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typedpy-2.8.2.tar.gz tmp/typedpy-2.9.0.tar.gz --markdown 20240407/t/typedpy/2.8.2-2.9.0/diff.md --exclude *.pyd
+[2024-04-07 21:35:52] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.8.2.tar.gz]
+[2024-04-07 21:35:52] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.9.0.tar.gz]
+[2024-04-07 21:35:52] INFO root fetch - main [MainThread]: End processing [stefutils]: success
+[2024-04-07 21:35:52] INFO root fetch - processPackages [typedpy]: Remove: archive file [/home/abi/fetcher/tmp/typedpy-2.8.2.tar.gz]
+[2024-04-07 21:35:52] INFO root fetch - processPackages [typedpy]: Remove: archive file [/home/abi/fetcher/tmp/typedpy-2.9.0.tar.gz]
+[2024-04-07 21:35:52] INFO root fetch - main [MainThread]: End processing [typedpy]: success
+[2024-04-07 21:35:53] INFO root fetch - processPackages [imcsdk-ecoen66]: Remove: archive file [/home/abi/fetcher/tmp/imcsdk_ecoen66-0.9.28.tar.gz]
+[2024-04-07 21:35:53] INFO root fetch - processPackages [imcsdk-ecoen66]: Remove: archive file [/home/abi/fetcher/tmp/imcsdk_ecoen66-0.9.29.tar.gz]
+[2024-04-07 21:35:53] INFO root fetch - main [MainThread]: End processing [imcsdk-ecoen66]: success
+[2024-04-07 21:35:53] INFO root fetch - main [MainThread]: Store serial: [22658707]
