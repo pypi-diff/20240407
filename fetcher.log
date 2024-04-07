@@ -19584,3 +19584,47 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:08:39] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
 [2024-04-07 22:08:39] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2024-04-07 22:08:39] INFO root fetch - main [MainThread]: Store serial: [22658927]
+[2024-04-07 22:10:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658927]
+[2024-04-07 22:10:49] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 22:10:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysem
+[2024-04-07 22:10:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tidal-wave
+[2024-04-07 22:10:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: adpipwfwconst
+[2024-04-07 22:10:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-handyhelpers
+[2024-04-07 22:10:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ib-core-lite
+[2024-04-07 22:10:49] INFO root fetch - processPackages [adpipwfwconst]: New version: [0.1.1] Old Version: [0.1]
+[2024-04-07 22:10:49] INFO root fetch - processPackages [adpipwfwconst]: Downloading https://files.pythonhosted.org/packages/e5/92/372bfd913808c0a43e1449b482eb2c7901a6329560640c18015948e4f215/adpipwfwconst-0.1.tar.gz
+[2024-04-07 22:10:49] WARNING root fetch - processPackages [ib-core-lite]: Skipping, unable to determine old version
+[2024-04-07 22:10:49] INFO root fetch - main [MainThread]: End processing [ib-core-lite] error
+[2024-04-07 22:10:49] INFO root fetch - processPackages [django-handyhelpers]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-07 22:10:49] INFO root fetch - processPackages [pysem]: New version: [0.8] Old Version: [0.7.0]
+[2024-04-07 22:10:49] INFO root fetch - processPackages [tidal-wave]: New version: [2024.4.1.1] Old Version: [2024.3.6]
+[2024-04-07 22:10:49] WARNING root fetch - processPackages [adpipwfwconst]: Timeout reached during download
+[2024-04-07 22:10:49] INFO root fetch - processPackages [django-handyhelpers]: Downloading https://files.pythonhosted.org/packages/bf/da/bc4be3d5be966eef80290d034a8681a1db3136255c7f997a6c1d70b7aa18/django-handyhelpers-0.3.8.tar.gz
+[2024-04-07 22:10:49] INFO root fetch - processPackages [pysem]: Downloading https://files.pythonhosted.org/packages/5f/33/e3c241f559b75d4be034f10137e730b1e7383eba6023c43f7e54d345eba0/pysem-0.7.0.tar.gz
+[2024-04-07 22:10:49] INFO root fetch - processPackages [adpipwfwconst]: Downloading https://files.pythonhosted.org/packages/44/dd/8104c7f4ea6a7a1bd1ab71c6e8d442d1e2ecf29e817a7a633badb2a824da/adpipwfwconst-0.1.1.tar.gz
+[2024-04-07 22:10:49] INFO root fetch - processPackages [tidal-wave]: Downloading https://files.pythonhosted.org/packages/9c/04/2b0efc4b7d0bb79a8b3dbe4b9240cc6f578984b3e9f1dafbf92573d7c746/tidal-wave-2024.3.6.tar.gz
+[2024-04-07 22:10:49] WARNING root fetch - processPackages [django-handyhelpers]: Skipping package: exceeds size limit 15633971>=10485760
+[2024-04-07 22:10:49] INFO root fetch - main [MainThread]: End processing [django-handyhelpers] error
+[2024-04-07 22:10:49] WARNING root fetch - processPackages [adpipwfwconst]: Timeout reached during download
+[2024-04-07 22:10:49] INFO root fetch - processPackages [adpipwfwconst]: executing diffoscope
+[2024-04-07 22:10:49] INFO root fetch - processPackages [adpipwfwconst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adpipwfwconst-0.1.tar.gz tmp/adpipwfwconst-0.1.1.tar.gz --markdown 20240407/a/adpipwfwconst/0.1-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 22:10:49] WARNING root fetch - processPackages [tidal-wave]: Timeout reached during download
+[2024-04-07 22:10:49] WARNING root fetch - processPackages [pysem]: Timeout reached during download
+[2024-04-07 22:10:49] INFO root fetch - processPackages [tidal-wave]: Downloading https://files.pythonhosted.org/packages/52/56/635ecfa2c33c7fac9a1f96268449caab84ef9fdca483181103ea99fa12a5/tidal-wave-2024.4.1.1.tar.gz
+[2024-04-07 22:10:50] WARNING root fetch - processPackages [tidal-wave]: Timeout reached during download
+[2024-04-07 22:10:50] INFO root fetch - processPackages [tidal-wave]: executing diffoscope
+[2024-04-07 22:10:50] INFO root fetch - processPackages [tidal-wave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tidal-wave-2024.3.6.tar.gz tmp/tidal-wave-2024.4.1.1.tar.gz --markdown 20240407/t/tidal-wave/2024.3.6-2024.4.1.1/diff.md --exclude *.pyd
+[2024-04-07 22:10:50] INFO root fetch - processPackages [pysem]: Downloading https://files.pythonhosted.org/packages/2b/c3/c7715ae4ffde299a4bb1c08a2dc42b7e04ec2eaad8b9d57ff48ae07bd9ba/pysem-0.8.tar.gz
+[2024-04-07 22:10:50] INFO root fetch - processPackages [adpipwfwconst]: Remove: archive file [/home/abi/fetcher/tmp/adpipwfwconst-0.1.tar.gz]
+[2024-04-07 22:10:50] INFO root fetch - processPackages [adpipwfwconst]: Remove: archive file [/home/abi/fetcher/tmp/adpipwfwconst-0.1.1.tar.gz]
+[2024-04-07 22:10:50] INFO root fetch - main [MainThread]: End processing [adpipwfwconst]: success
+[2024-04-07 22:10:50] WARNING root fetch - processPackages [pysem]: Timeout reached during download
+[2024-04-07 22:10:50] INFO root fetch - processPackages [pysem]: executing diffoscope
+[2024-04-07 22:10:50] INFO root fetch - processPackages [pysem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysem-0.7.0.tar.gz tmp/pysem-0.8.tar.gz --markdown 20240407/p/pysem/0.7.0-0.8/diff.md --exclude *.pyd
+[2024-04-07 22:10:50] INFO root fetch - processPackages [tidal-wave]: Remove: archive file [/home/abi/fetcher/tmp/tidal-wave-2024.3.6.tar.gz]
+[2024-04-07 22:10:50] INFO root fetch - processPackages [tidal-wave]: Remove: archive file [/home/abi/fetcher/tmp/tidal-wave-2024.4.1.1.tar.gz]
+[2024-04-07 22:10:50] INFO root fetch - main [MainThread]: End processing [tidal-wave]: success
+[2024-04-07 22:10:50] INFO root fetch - processPackages [pysem]: Remove: archive file [/home/abi/fetcher/tmp/pysem-0.7.0.tar.gz]
+[2024-04-07 22:10:50] INFO root fetch - processPackages [pysem]: Remove: archive file [/home/abi/fetcher/tmp/pysem-0.8.tar.gz]
+[2024-04-07 22:10:50] INFO root fetch - main [MainThread]: End processing [pysem]: success
+[2024-04-07 22:10:50] INFO root fetch - main [MainThread]: Store serial: [22658945]
