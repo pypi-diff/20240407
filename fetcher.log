@@ -12739,3 +12739,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:39:07] INFO root fetch - processPackages [tensordict]: Remove: archive file [/home/abi/fetcher/tmp/tensordict-0.3.2-cp39-cp39-win_amd64.whl.zip]
 [2024-04-07 15:39:07] INFO root fetch - main [MainThread]: End processing [tensordict]: success
 [2024-04-07 15:39:07] INFO root fetch - main [MainThread]: Store serial: [22656535]
+[2024-04-07 15:41:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656535]
+[2024-04-07 15:41:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 15:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: systembridgefrontend
+[2024-04-07 15:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wikimediaci-utils
+[2024-04-07 15:41:17] INFO root fetch - processPackages [wikimediaci-utils]: New version: [1.3.0] Old Version: [1.2.0]
+[2024-04-07 15:41:17] INFO root fetch - processPackages [systembridgefrontend]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-04-07 15:41:17] INFO root fetch - processPackages [wikimediaci-utils]: Downloading https://files.pythonhosted.org/packages/6d/d4/7c1ea5f122ed76a12c0eb0436a6e810334eb4734cd23dc99f2767fdf943f/wikimediaci_utils-1.2.0.tar.gz
+[2024-04-07 15:41:17] INFO root fetch - processPackages [systembridgefrontend]: Downloading https://files.pythonhosted.org/packages/08/9e/befafa654de371b94f642fa54289ff0c205da171bb7b47fa55196e281e27/systembridgefrontend-4.0.2.tar.gz
+[2024-04-07 15:41:17] WARNING root fetch - processPackages [wikimediaci-utils]: Timeout reached during download
+[2024-04-07 15:41:18] WARNING root fetch - processPackages [systembridgefrontend]: Timeout reached during download
+[2024-04-07 15:41:18] INFO root fetch - processPackages [wikimediaci-utils]: Downloading https://files.pythonhosted.org/packages/3a/da/2711247f465e7b9b42c070b7eca708ca50f9091c3f7188ca84daa082eb5f/wikimediaci_utils-1.3.0.tar.gz
+[2024-04-07 15:41:18] INFO root fetch - processPackages [systembridgefrontend]: Downloading https://files.pythonhosted.org/packages/83/d8/01db0a28e371c6f2de5c15447d395b4b51ccff19b5feccec771fe874e87e/systembridgefrontend-4.0.3.tar.gz
+[2024-04-07 15:41:18] WARNING root fetch - processPackages [wikimediaci-utils]: Timeout reached during download
+[2024-04-07 15:41:18] INFO root fetch - processPackages [wikimediaci-utils]: executing diffoscope
+[2024-04-07 15:41:18] INFO root fetch - processPackages [wikimediaci-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wikimediaci_utils-1.2.0.tar.gz tmp/wikimediaci_utils-1.3.0.tar.gz --markdown 20240407/w/wikimediaci-utils/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2024-04-07 15:41:18] WARNING root fetch - processPackages [systembridgefrontend]: Timeout reached during download
+[2024-04-07 15:41:18] INFO root fetch - processPackages [systembridgefrontend]: executing diffoscope
+[2024-04-07 15:41:18] INFO root fetch - processPackages [systembridgefrontend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systembridgefrontend-4.0.2.tar.gz tmp/systembridgefrontend-4.0.3.tar.gz --markdown 20240407/s/systembridgefrontend/4.0.2-4.0.3/diff.md --exclude *.pyd
+[2024-04-07 15:41:18] INFO root fetch - processPackages [wikimediaci-utils]: Remove: archive file [/home/abi/fetcher/tmp/wikimediaci_utils-1.2.0.tar.gz]
+[2024-04-07 15:41:18] INFO root fetch - processPackages [wikimediaci-utils]: Remove: archive file [/home/abi/fetcher/tmp/wikimediaci_utils-1.3.0.tar.gz]
+[2024-04-07 15:41:18] INFO root fetch - main [MainThread]: End processing [wikimediaci-utils]: success
+[2024-04-07 15:41:20] INFO root fetch - processPackages [systembridgefrontend]: Remove: archive file [/home/abi/fetcher/tmp/systembridgefrontend-4.0.2.tar.gz]
+[2024-04-07 15:41:20] INFO root fetch - processPackages [systembridgefrontend]: Remove: archive file [/home/abi/fetcher/tmp/systembridgefrontend-4.0.3.tar.gz]
+[2024-04-07 15:41:20] INFO root fetch - main [MainThread]: End processing [systembridgefrontend]: success
+[2024-04-07 15:41:20] INFO root fetch - main [MainThread]: Store serial: [22656541]
