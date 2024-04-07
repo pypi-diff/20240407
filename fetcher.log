@@ -20343,3 +20343,31 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:09:37] INFO root fetch - processPackages [astromcad]: Remove: archive file [/home/abi/fetcher/tmp/astromcad-0.1.7.tar.gz]
 [2024-04-07 23:09:37] INFO root fetch - main [MainThread]: End processing [astromcad]: success
 [2024-04-07 23:09:37] INFO root fetch - main [MainThread]: Store serial: [22659274]
+[2024-04-07 23:11:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659274]
+[2024-04-07 23:11:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 23:11:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: weba
+[2024-04-07 23:11:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kivy-garden-invisible-magnet
+[2024-04-07 23:11:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastclip
+[2024-04-07 23:11:48] WARNING root fetch - processPackages [kivy-garden-invisible-magnet]: Skipping, unable to determine old version
+[2024-04-07 23:11:48] INFO root fetch - main [MainThread]: End processing [kivy-garden-invisible-magnet] error
+[2024-04-07 23:11:48] INFO root fetch - processPackages [fastclip]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-07 23:11:48] INFO root fetch - processPackages [weba]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 23:11:48] INFO root fetch - processPackages [weba]: Downloading https://files.pythonhosted.org/packages/ae/24/e1aa2777a04f5f4f0dd14e494fd6eef05934d7c4f4da63844760afa3afb4/weba-0.0.8.tar.gz
+[2024-04-07 23:11:48] INFO root fetch - processPackages [fastclip]: Downloading https://files.pythonhosted.org/packages/c4/35/2ef2dc0b42c6fe85a7ec30e4f563e3ba8efc53b56a3b7fb9b546d14082fa/fastclip-0.0.7.tar.gz
+[2024-04-07 23:11:48] WARNING root fetch - processPackages [weba]: Timeout reached during download
+[2024-04-07 23:11:48] WARNING root fetch - processPackages [fastclip]: Timeout reached during download
+[2024-04-07 23:11:48] INFO root fetch - processPackages [weba]: Downloading https://files.pythonhosted.org/packages/1d/f8/07d2de1cb43b86bc39abfea5527c766888ce0adb2b79600ff4a1a84b1720/weba-0.0.9.tar.gz
+[2024-04-07 23:11:48] INFO root fetch - processPackages [fastclip]: Downloading https://files.pythonhosted.org/packages/c1/bd/57b35376ba802aab693a0628a3c7796f63f4fcd862fd343cf2bc34263a70/fastclip-0.0.8.tar.gz
+[2024-04-07 23:11:48] WARNING root fetch - processPackages [weba]: Timeout reached during download
+[2024-04-07 23:11:48] INFO root fetch - processPackages [weba]: executing diffoscope
+[2024-04-07 23:11:48] INFO root fetch - processPackages [weba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weba-0.0.8.tar.gz tmp/weba-0.0.9.tar.gz --markdown 20240407/w/weba/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 23:11:48] WARNING root fetch - processPackages [fastclip]: Timeout reached during download
+[2024-04-07 23:11:48] INFO root fetch - processPackages [fastclip]: executing diffoscope
+[2024-04-07 23:11:48] INFO root fetch - processPackages [fastclip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastclip-0.0.7.tar.gz tmp/fastclip-0.0.8.tar.gz --markdown 20240407/f/fastclip/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-07 23:11:49] INFO root fetch - processPackages [fastclip]: Remove: archive file [/home/abi/fetcher/tmp/fastclip-0.0.7.tar.gz]
+[2024-04-07 23:11:49] INFO root fetch - processPackages [fastclip]: Remove: archive file [/home/abi/fetcher/tmp/fastclip-0.0.8.tar.gz]
+[2024-04-07 23:11:49] INFO root fetch - main [MainThread]: End processing [fastclip]: success
+[2024-04-07 23:11:49] INFO root fetch - processPackages [weba]: Remove: archive file [/home/abi/fetcher/tmp/weba-0.0.8.tar.gz]
+[2024-04-07 23:11:49] INFO root fetch - processPackages [weba]: Remove: archive file [/home/abi/fetcher/tmp/weba-0.0.9.tar.gz]
+[2024-04-07 23:11:49] INFO root fetch - main [MainThread]: End processing [weba]: success
+[2024-04-07 23:11:49] INFO root fetch - main [MainThread]: Store serial: [22659287]
