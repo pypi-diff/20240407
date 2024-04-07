@@ -11644,3 +11644,31 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:29:11] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.9.zip]
 [2024-04-07 14:29:11] INFO root fetch - main [MainThread]: End processing [sbcli-mig]: success
 [2024-04-07 14:29:11] INFO root fetch - main [MainThread]: Store serial: [22656185]
+[2024-04-07 14:31:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656185]
+[2024-04-07 14:31:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 14:31:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tb1-parser
+[2024-04-07 14:31:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lljz-tools
+[2024-04-07 14:31:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: adbutils
+[2024-04-07 14:31:20] WARNING root fetch - processPackages [tb1-parser]: Skipping, unable to determine old version
+[2024-04-07 14:31:20] INFO root fetch - main [MainThread]: End processing [tb1-parser] error
+[2024-04-07 14:31:20] INFO root fetch - processPackages [lljz-tools]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-07 14:31:20] INFO root fetch - processPackages [adbutils]: New version: [2.3.0] Old Version: [2.2.3]
+[2024-04-07 14:31:20] INFO root fetch - processPackages [lljz-tools]: Downloading https://files.pythonhosted.org/packages/07/e1/d8ad41d04bd7526045884eb68fffdf0d0584720dc1f876fa9b7b87605451/lljz_tools-0.2.8.tar.gz
+[2024-04-07 14:31:20] INFO root fetch - processPackages [adbutils]: Downloading https://files.pythonhosted.org/packages/b5/7c/d1b9edccbdec166fb1ab5931f128db567f7e6cdad023417ecf057c9921c8/adbutils-2.2.3.tar.gz
+[2024-04-07 14:31:20] WARNING root fetch - processPackages [adbutils]: Timeout reached during download
+[2024-04-07 14:31:20] WARNING root fetch - processPackages [lljz-tools]: Timeout reached during download
+[2024-04-07 14:31:21] INFO root fetch - processPackages [lljz-tools]: Downloading https://files.pythonhosted.org/packages/a7/af/a18c36655f7f553567ff5dd5fb22c0f4e280c4a0200a0b3c876136e8201f/lljz_tools-0.2.9.tar.gz
+[2024-04-07 14:31:21] INFO root fetch - processPackages [adbutils]: Downloading https://files.pythonhosted.org/packages/a8/cf/0f27738a9a06affd08b6f7ea803e310214df179b1dab74b88af842a1cc7c/adbutils-2.3.0.tar.gz
+[2024-04-07 14:31:21] WARNING root fetch - processPackages [lljz-tools]: Timeout reached during download
+[2024-04-07 14:31:21] INFO root fetch - processPackages [lljz-tools]: executing diffoscope
+[2024-04-07 14:31:21] INFO root fetch - processPackages [lljz-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lljz_tools-0.2.8.tar.gz tmp/lljz_tools-0.2.9.tar.gz --markdown 20240407/l/lljz-tools/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2024-04-07 14:31:21] WARNING root fetch - processPackages [adbutils]: Timeout reached during download
+[2024-04-07 14:31:21] INFO root fetch - processPackages [adbutils]: executing diffoscope
+[2024-04-07 14:31:21] INFO root fetch - processPackages [adbutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adbutils-2.2.3.tar.gz tmp/adbutils-2.3.0.tar.gz --markdown 20240407/a/adbutils/2.2.3-2.3.0/diff.md --exclude *.pyd
+[2024-04-07 14:31:21] INFO root fetch - processPackages [lljz-tools]: Remove: archive file [/home/abi/fetcher/tmp/lljz_tools-0.2.8.tar.gz]
+[2024-04-07 14:31:21] INFO root fetch - processPackages [lljz-tools]: Remove: archive file [/home/abi/fetcher/tmp/lljz_tools-0.2.9.tar.gz]
+[2024-04-07 14:31:21] INFO root fetch - main [MainThread]: End processing [lljz-tools]: success
+[2024-04-07 14:31:21] INFO root fetch - processPackages [adbutils]: Remove: archive file [/home/abi/fetcher/tmp/adbutils-2.2.3.tar.gz]
+[2024-04-07 14:31:21] INFO root fetch - processPackages [adbutils]: Remove: archive file [/home/abi/fetcher/tmp/adbutils-2.3.0.tar.gz]
+[2024-04-07 14:31:21] INFO root fetch - main [MainThread]: End processing [adbutils]: success
+[2024-04-07 14:31:21] INFO root fetch - main [MainThread]: Store serial: [22656196]
