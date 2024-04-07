@@ -15567,3 +15567,70 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 18:16:22] INFO root fetch - processPackages [retry-reloaded]: Remove: archive file [/home/abi/fetcher/tmp/retry-reloaded-0.0.3.tar.gz]
 [2024-04-07 18:16:22] INFO root fetch - main [MainThread]: End processing [retry-reloaded]: success
 [2024-04-07 18:16:22] INFO root fetch - main [MainThread]: Store serial: [22657483]
+[2024-04-07 18:18:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657483]
+[2024-04-07 18:18:31] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 18:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AsyncKandinsky
+[2024-04-07 18:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ark-sdk-python
+[2024-04-07 18:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wolfbet
+[2024-04-07 18:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyfdmss
+[2024-04-07 18:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wolfbet
+[2024-04-07 18:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tko
+[2024-04-07 18:18:31] INFO root fetch - processPackages [tko]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-07 18:18:32] INFO root fetch - processPackages [AsyncKandinsky]: New version: [1.0.1] Old Version: [0.0.4]
+[2024-04-07 18:18:32] INFO root fetch - processPackages [tko]: Downloading https://files.pythonhosted.org/packages/5d/f9/58ed42bf3a9b208a2ca309acd9381ed80521e5c5b0fb03912758693f6dff/tko-0.3.8.tar.gz
+[2024-04-07 18:18:32] INFO root fetch - processPackages [wolfbet]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-07 18:18:32] INFO root fetch - processPackages [wolfbet]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-07 18:18:32] INFO root fetch - processPackages [AsyncKandinsky]: Downloading https://files.pythonhosted.org/packages/c1/4a/ce9219d76cab398b2d367f6f0caae4c6b9e6c15536bb31c46f1508dd21b2/AsyncKandinsky-0.0.4.tar.gz
+[2024-04-07 18:18:32] INFO root fetch - processPackages [ark-sdk-python]: New version: [1.1.0] Old Version: [1.0.7]
+[2024-04-07 18:18:32] INFO root fetch - processPackages [pyfdmss]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-07 18:18:32] WARNING root fetch - processPackages [AsyncKandinsky]: Timeout reached during download
+[2024-04-07 18:18:32] INFO root fetch - processPackages [wolfbet]: Downloading https://files.pythonhosted.org/packages/90/6c/d53d34db766f8f42923f7349454bca7f2b47f94e59a9bf446bd29ccfd89d/wolfbet-1.0.0.tar.gz
+[2024-04-07 18:18:32] INFO root fetch - processPackages [wolfbet]: Downloading https://files.pythonhosted.org/packages/90/6c/d53d34db766f8f42923f7349454bca7f2b47f94e59a9bf446bd29ccfd89d/wolfbet-1.0.0.tar.gz
+[2024-04-07 18:18:32] INFO root fetch - processPackages [pyfdmss]: Downloading https://files.pythonhosted.org/packages/56/2a/e12b3518e3a2829738654383bf2a8619a55fcf47894d5fe07908a99c9b85/pyfdmss-0.0.5.tar.gz
+[2024-04-07 18:18:32] INFO root fetch - processPackages [ark-sdk-python]: Downloading https://files.pythonhosted.org/packages/85/93/05628e9faa6f3d34a1559f183d9f556471aeb0aa1711159eaa3aff51877d/ark_sdk_python-1.0.7-py3-none-any.whl
+[2024-04-07 18:18:32] WARNING root fetch - processPackages [tko]: Timeout reached during download
+[2024-04-07 18:18:32] INFO root fetch - processPackages [AsyncKandinsky]: Downloading https://files.pythonhosted.org/packages/c5/c3/fff2b9e3e058f1d5b4ffd574f919ec9cf418589d92f691f43bd63f44ac71/AsyncKandinsky-1.0.1.tar.gz
+[2024-04-07 18:18:32] WARNING root fetch - processPackages [wolfbet]: Timeout reached during download
+[2024-04-07 18:18:32] WARNING root fetch - processPackages [wolfbet]: Timeout reached during download
+[2024-04-07 18:18:32] INFO root fetch - processPackages [tko]: Downloading https://files.pythonhosted.org/packages/c0/d1/ba21f6ff2b1c36e732034bc8588c08c4defb1fcecaf20aaf6b205de21541/tko-0.3.9.tar.gz
+[2024-04-07 18:18:32] WARNING root fetch - processPackages [AsyncKandinsky]: Timeout reached during download
+[2024-04-07 18:18:32] INFO root fetch - processPackages [AsyncKandinsky]: executing diffoscope
+[2024-04-07 18:18:32] INFO root fetch - processPackages [AsyncKandinsky]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AsyncKandinsky-0.0.4.tar.gz tmp/AsyncKandinsky-1.0.1.tar.gz --markdown 20240407/A/AsyncKandinsky/0.0.4-1.0.1/diff.md --exclude *.pyd
+[2024-04-07 18:18:32] WARNING root fetch - processPackages [ark-sdk-python]: Timeout reached during download
+[2024-04-07 18:18:32] WARNING root fetch - processPackages [tko]: Timeout reached during download
+[2024-04-07 18:18:32] INFO root fetch - processPackages [tko]: executing diffoscope
+[2024-04-07 18:18:32] INFO root fetch - processPackages [tko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tko-0.3.8.tar.gz tmp/tko-0.3.9.tar.gz --markdown 20240407/t/tko/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-07 18:18:32] INFO root fetch - processPackages [wolfbet]: Downloading https://files.pythonhosted.org/packages/66/bb/7bdb39d47e70bdb38e12589a99d47401e26917d6d7249afdaf9162386186/wolfbet-1.0.1.tar.gz
+[2024-04-07 18:18:32] INFO root fetch - processPackages [wolfbet]: Downloading https://files.pythonhosted.org/packages/66/bb/7bdb39d47e70bdb38e12589a99d47401e26917d6d7249afdaf9162386186/wolfbet-1.0.1.tar.gz
+[2024-04-07 18:18:32] WARNING root fetch - processPackages [pyfdmss]: Timeout reached during download
+[2024-04-07 18:18:32] INFO root fetch - processPackages [ark-sdk-python]: Downloading https://files.pythonhosted.org/packages/81/63/06e3043a9746b7836b3e6123756fac4f65520ca2e76baf2d5bb8bfc59252/ark_sdk_python-1.1.0-py3-none-any.whl
+[2024-04-07 18:18:32] WARNING root fetch - processPackages [wolfbet]: Timeout reached during download
+[2024-04-07 18:18:32] INFO root fetch - processPackages [wolfbet]: executing diffoscope
+[2024-04-07 18:18:32] INFO root fetch - processPackages [wolfbet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wolfbet-1.0.0.tar.gz tmp/wolfbet-1.0.1.tar.gz --markdown 20240407/w/wolfbet/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2024-04-07 18:18:32] WARNING root fetch - processPackages [wolfbet]: Timeout reached during download
+[2024-04-07 18:18:32] INFO root fetch - processPackages [wolfbet]: executing diffoscope
+[2024-04-07 18:18:32] INFO root fetch - processPackages [wolfbet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wolfbet-1.0.0.tar.gz tmp/wolfbet-1.0.1.tar.gz --markdown 20240407/w/wolfbet/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2024-04-07 18:18:32] INFO root fetch - processPackages [pyfdmss]: Downloading https://files.pythonhosted.org/packages/8e/43/a14b0c35c2eb6da58eae5ff6133c41160e845d4e12f213c1dffadb6850fa/pyfdmss-0.0.6.tar.gz
+[2024-04-07 18:18:33] WARNING root fetch - processPackages [ark-sdk-python]: Timeout reached during download
+[2024-04-07 18:18:33] INFO root fetch - processPackages [ark-sdk-python]: executing diffoscope
+[2024-04-07 18:18:33] INFO root fetch - processPackages [ark-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ark_sdk_python-1.0.7-py3-none-any.whl.zip tmp/ark_sdk_python-1.1.0-py3-none-any.whl.zip --markdown 20240407/a/ark-sdk-python/1.0.7-1.1.0/diff.md --exclude *.pyd
+[2024-04-07 18:18:33] WARNING root fetch - processPackages [pyfdmss]: Timeout reached during download
+[2024-04-07 18:18:33] INFO root fetch - processPackages [pyfdmss]: executing diffoscope
+[2024-04-07 18:18:33] INFO root fetch - processPackages [pyfdmss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfdmss-0.0.5.tar.gz tmp/pyfdmss-0.0.6.tar.gz --markdown 20240407/p/pyfdmss/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-07 18:18:33] INFO root fetch - processPackages [AsyncKandinsky]: Remove: archive file [/home/abi/fetcher/tmp/AsyncKandinsky-0.0.4.tar.gz]
+[2024-04-07 18:18:33] INFO root fetch - processPackages [AsyncKandinsky]: Remove: archive file [/home/abi/fetcher/tmp/AsyncKandinsky-1.0.1.tar.gz]
+[2024-04-07 18:18:33] INFO root fetch - main [MainThread]: End processing [AsyncKandinsky]: success
+[2024-04-07 18:18:33] INFO root fetch - processPackages [tko]: Remove: archive file [/home/abi/fetcher/tmp/tko-0.3.8.tar.gz]
+[2024-04-07 18:18:33] INFO root fetch - processPackages [tko]: Remove: archive file [/home/abi/fetcher/tmp/tko-0.3.9.tar.gz]
+[2024-04-07 18:18:33] INFO root fetch - main [MainThread]: End processing [tko]: success
+[2024-04-07 18:18:33] INFO root fetch - processPackages [wolfbet]: Remove: archive file [/home/abi/fetcher/tmp/wolfbet-1.0.0.tar.gz]
+[2024-04-07 18:18:33] INFO root fetch - processPackages [wolfbet]: Remove: archive file [/home/abi/fetcher/tmp/wolfbet-1.0.1.tar.gz]
+[2024-04-07 18:18:33] INFO root fetch - main [MainThread]: End processing [wolfbet]: success
+[2024-04-07 18:18:33] INFO root fetch - main [MainThread]: End processing [wolfbet]: success
+[2024-04-07 18:18:33] INFO root fetch - processPackages [pyfdmss]: Remove: archive file [/home/abi/fetcher/tmp/pyfdmss-0.0.5.tar.gz]
+[2024-04-07 18:18:33] INFO root fetch - processPackages [pyfdmss]: Remove: archive file [/home/abi/fetcher/tmp/pyfdmss-0.0.6.tar.gz]
+[2024-04-07 18:18:33] INFO root fetch - main [MainThread]: End processing [pyfdmss]: success
+[2024-04-07 18:18:34] INFO root fetch - processPackages [ark-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/ark_sdk_python-1.0.7-py3-none-any.whl.zip]
+[2024-04-07 18:18:34] INFO root fetch - processPackages [ark-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/ark_sdk_python-1.1.0-py3-none-any.whl.zip]
+[2024-04-07 18:18:34] INFO root fetch - main [MainThread]: End processing [ark-sdk-python]: success
+[2024-04-07 18:18:34] INFO root fetch - main [MainThread]: Store serial: [22657508]
