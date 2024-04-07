@@ -11082,3 +11082,12 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:47:45] INFO root fetch - processPackages [gantt-project-maker]: Remove: archive file [/home/abi/fetcher/tmp/gantt-project-maker-0.4.2.tar.gz]
 [2024-04-07 13:47:45] INFO root fetch - main [MainThread]: End processing [gantt-project-maker]: success
 [2024-04-07 13:47:45] INFO root fetch - main [MainThread]: Store serial: [22655846]
+[2024-04-07 13:49:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655846]
+[2024-04-07 13:49:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 13:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: montpy
+[2024-04-07 13:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coded-flows
+[2024-04-07 13:49:55] WARNING root fetch - processPackages [montpy]: Skipping, unable to determine old version
+[2024-04-07 13:49:55] INFO root fetch - main [MainThread]: End processing [montpy] error
+[2024-04-07 13:49:55] WARNING root fetch - processPackages [coded-flows]: Skipping, unable to determine old version
+[2024-04-07 13:49:55] INFO root fetch - main [MainThread]: End processing [coded-flows] error
+[2024-04-07 13:49:55] INFO root fetch - main [MainThread]: Store serial: [22655852]
