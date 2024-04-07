@@ -16646,3 +16646,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:15:46] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-04-07 19:15:46] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-04-07 19:15:46] INFO root fetch - main [MainThread]: Store serial: [22657859]
+[2024-04-07 19:17:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657859]
+[2024-04-07 19:17:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 19:17:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ccxt
+[2024-04-07 19:17:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: robotframework-flaui
+[2024-04-07 19:17:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autobean-refactor
+[2024-04-07 19:17:55] INFO root fetch - processPackages [autobean-refactor]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-07 19:17:55] INFO root fetch - processPackages [ccxt]: New version: [4.2.91] Old Version: [4.2.90]
+[2024-04-07 19:17:55] INFO root fetch - processPackages [robotframework-flaui]: New version: [3.0.3] Old Version: [3.0.2]
+[2024-04-07 19:17:56] INFO root fetch - processPackages [autobean-refactor]: Downloading https://files.pythonhosted.org/packages/ee/fe/37e9ce6bc723b39da3cf0056a309a7223a603ced8b9b0ca34b8cd737e5f1/autobean-refactor-0.2.4.tar.gz
+[2024-04-07 19:17:56] INFO root fetch - processPackages [robotframework-flaui]: Downloading https://files.pythonhosted.org/packages/6c/35/00efd0d2b2a11c0f34d3cc132da1dafa26ebd8f82ea65e78917ee4a14019/robotframework-flaui-3.0.2.tar.gz
+[2024-04-07 19:17:56] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/ce/dc/c152a791f6c2cbb11ef3e3cd4a28898a0a5959b1090e6a543c3e06590003/ccxt-4.2.90.tar.gz
+[2024-04-07 19:17:56] WARNING root fetch - processPackages [robotframework-flaui]: Timeout reached during download
+[2024-04-07 19:17:56] WARNING root fetch - processPackages [autobean-refactor]: Timeout reached during download
+[2024-04-07 19:17:56] INFO root fetch - processPackages [robotframework-flaui]: Downloading https://files.pythonhosted.org/packages/ed/32/69890d0eaf0721ce2c704c27c7d28d1e7446e33fdd43c42c3cf352575219/robotframework-flaui-3.0.3.tar.gz
+[2024-04-07 19:17:56] WARNING root fetch - processPackages [ccxt]: Timeout reached during download
+[2024-04-07 19:17:56] INFO root fetch - processPackages [autobean-refactor]: Downloading https://files.pythonhosted.org/packages/0c/88/1b6a6bcff25272c0d00c655ac2c16dc3c30ab5aec057fb07b643f2fb030b/autobean-refactor-0.2.5.tar.gz
+[2024-04-07 19:17:56] WARNING root fetch - processPackages [robotframework-flaui]: Timeout reached during download
+[2024-04-07 19:17:56] INFO root fetch - processPackages [robotframework-flaui]: executing diffoscope
+[2024-04-07 19:17:56] INFO root fetch - processPackages [robotframework-flaui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotframework-flaui-3.0.2.tar.gz tmp/robotframework-flaui-3.0.3.tar.gz --markdown 20240407/r/robotframework-flaui/3.0.2-3.0.3/diff.md --exclude *.pyd
+[2024-04-07 19:17:56] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/7d/d2/2a50ad344f96e36c096e86c34e5a48ac4fefee79fc3dbd57c62e64673b1a/ccxt-4.2.91.tar.gz
+[2024-04-07 19:17:56] WARNING root fetch - processPackages [autobean-refactor]: Timeout reached during download
+[2024-04-07 19:17:56] INFO root fetch - processPackages [autobean-refactor]: executing diffoscope
+[2024-04-07 19:17:56] INFO root fetch - processPackages [autobean-refactor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autobean-refactor-0.2.4.tar.gz tmp/autobean-refactor-0.2.5.tar.gz --markdown 20240407/a/autobean-refactor/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2024-04-07 19:17:57] WARNING root fetch - processPackages [ccxt]: Timeout reached during download
+[2024-04-07 19:17:57] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2024-04-07 19:17:57] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-4.2.90.tar.gz tmp/ccxt-4.2.91.tar.gz --markdown 20240407/c/ccxt/4.2.90-4.2.91/diff.md --exclude *.pyd
+[2024-04-07 19:17:57] INFO root fetch - processPackages [robotframework-flaui]: Remove: archive file [/home/abi/fetcher/tmp/robotframework-flaui-3.0.2.tar.gz]
+[2024-04-07 19:17:57] INFO root fetch - processPackages [robotframework-flaui]: Remove: archive file [/home/abi/fetcher/tmp/robotframework-flaui-3.0.3.tar.gz]
+[2024-04-07 19:17:57] INFO root fetch - main [MainThread]: End processing [robotframework-flaui]: success
+[2024-04-07 19:17:57] INFO root fetch - processPackages [autobean-refactor]: Remove: archive file [/home/abi/fetcher/tmp/autobean-refactor-0.2.4.tar.gz]
+[2024-04-07 19:17:57] INFO root fetch - processPackages [autobean-refactor]: Remove: archive file [/home/abi/fetcher/tmp/autobean-refactor-0.2.5.tar.gz]
+[2024-04-07 19:17:57] INFO root fetch - main [MainThread]: End processing [autobean-refactor]: success
+[2024-04-07 19:18:01] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.2.90.tar.gz]
+[2024-04-07 19:18:01] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.2.91.tar.gz]
+[2024-04-07 19:18:01] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2024-04-07 19:18:01] INFO root fetch - main [MainThread]: Store serial: [22657867]
