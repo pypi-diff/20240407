@@ -10416,3 +10416,59 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:12:53] INFO root fetch - processPackages [assisted-service-client]: Remove: archive file [/home/abi/fetcher/tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip]
 [2024-04-07 13:12:53] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
 [2024-04-07 13:12:53] INFO root fetch - main [MainThread]: Store serial: [22655608]
+[2024-04-07 13:14:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655608]
+[2024-04-07 13:15:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 13:15:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tb-nightly
+[2024-04-07 13:15:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dash-spread-grid
+[2024-04-07 13:15:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: djangocms-katex
+[2024-04-07 13:15:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Dav-vesit-codes
+[2024-04-07 13:15:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Dav-vesit-codes
+[2024-04-07 13:15:01] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-07 13:15:01] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2024-04-07 13:15:02] INFO root fetch - processPackages [djangocms-katex]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-04-07 13:15:02] INFO root fetch - processPackages [Dav-vesit-codes]: New version: [0.2] Old Version: [0.1]
+[2024-04-07 13:15:02] INFO root fetch - processPackages [Dav-vesit-codes]: New version: [0.2] Old Version: [0.1]
+[2024-04-07 13:15:02] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/84/3e/6a7ff0e28ffc05c82b70277129eb185106df5e180e7e561ef4f4a46cc77d/dash_spread_grid-0.0.3.tar.gz
+[2024-04-07 13:15:02] WARNING root fetch - processPackages [dash-spread-grid]: Timeout reached during download
+[2024-04-07 13:15:02] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/cc/bf/76bb32cf070e37f4b777ed5596c5d082fb60a1bfc06e9463401d07021a8a/tb_nightly-2.9.0a20220501-py3-none-any.whl
+[2024-04-07 13:15:02] INFO root fetch - processPackages [Dav-vesit-codes]: Downloading https://files.pythonhosted.org/packages/c7/85/83634b717091dc7fecc73edf224ef99899aead44bbca8b7e624eb2638916/Dav_vesit_codes-0.1.tar.gz
+[2024-04-07 13:15:02] INFO root fetch - processPackages [Dav-vesit-codes]: Downloading https://files.pythonhosted.org/packages/c7/85/83634b717091dc7fecc73edf224ef99899aead44bbca8b7e624eb2638916/Dav_vesit_codes-0.1.tar.gz
+[2024-04-07 13:15:02] INFO root fetch - processPackages [djangocms-katex]: Downloading https://files.pythonhosted.org/packages/ac/77/818d10138a2972c09d41dfb96a49ac1634312ef4477b18b5799b514576ce/djangocms_katex-0.5.2.tar.gz
+[2024-04-07 13:15:02] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/77/59/7119f0b04af1daaef620f3e309033ceb24c2da9a82895480db28cd6e1ae9/dash_spread_grid-0.0.4.tar.gz
+[2024-04-07 13:15:02] WARNING root fetch - processPackages [Dav-vesit-codes]: Timeout reached during download
+[2024-04-07 13:15:02] WARNING root fetch - processPackages [Dav-vesit-codes]: Timeout reached during download
+[2024-04-07 13:15:02] WARNING root fetch - processPackages [dash-spread-grid]: Timeout reached during download
+[2024-04-07 13:15:02] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-04-07 13:15:02] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.3.tar.gz tmp/dash_spread_grid-0.0.4.tar.gz --markdown 20240407/d/dash-spread-grid/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 13:15:02] INFO root fetch - processPackages [Dav-vesit-codes]: Downloading https://files.pythonhosted.org/packages/93/0d/4f60e42c37d202a34a2e8a9084f536df511671fdca2e95a4f9b3c447af6d/Dav_vesit_codes-0.2.tar.gz
+[2024-04-07 13:15:02] INFO root fetch - processPackages [Dav-vesit-codes]: Downloading https://files.pythonhosted.org/packages/93/0d/4f60e42c37d202a34a2e8a9084f536df511671fdca2e95a4f9b3c447af6d/Dav_vesit_codes-0.2.tar.gz
+[2024-04-07 13:15:02] WARNING root fetch - processPackages [Dav-vesit-codes]: Timeout reached during download
+[2024-04-07 13:15:02] INFO root fetch - processPackages [Dav-vesit-codes]: executing diffoscope
+[2024-04-07 13:15:02] INFO root fetch - processPackages [Dav-vesit-codes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Dav_vesit_codes-0.1.tar.gz tmp/Dav_vesit_codes-0.2.tar.gz --markdown 20240407/D/Dav-vesit-codes/0.1-0.2/diff.md --exclude *.pyd
+[2024-04-07 13:15:02] WARNING root fetch - processPackages [Dav-vesit-codes]: Timeout reached during download
+[2024-04-07 13:15:02] INFO root fetch - processPackages [Dav-vesit-codes]: executing diffoscope
+[2024-04-07 13:15:02] INFO root fetch - processPackages [Dav-vesit-codes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Dav_vesit_codes-0.1.tar.gz tmp/Dav_vesit_codes-0.2.tar.gz --markdown 20240407/D/Dav-vesit-codes/0.1-0.2/diff.md --exclude *.pyd
+[2024-04-07 13:15:03] WARNING root fetch - processPackages [djangocms-katex]: Timeout reached during download
+[2024-04-07 13:15:03] WARNING root fetch - processPackages [tb-nightly]: Timeout reached during download
+[2024-04-07 13:15:03] INFO root fetch - processPackages [djangocms-katex]: Downloading https://files.pythonhosted.org/packages/28/65/0ded990d0cc592935e00b864e6a8b3e913e890d85c071ea6d27deb5d6489/djangocms_katex-0.5.3.tar.gz
+[2024-04-07 13:15:03] INFO root fetch - processPackages [Dav-vesit-codes]: Remove: archive file [/home/abi/fetcher/tmp/Dav_vesit_codes-0.1.tar.gz]
+[2024-04-07 13:15:03] INFO root fetch - processPackages [Dav-vesit-codes]: Remove: archive file [/home/abi/fetcher/tmp/Dav_vesit_codes-0.2.tar.gz]
+[2024-04-07 13:15:03] INFO root fetch - main [MainThread]: End processing [Dav-vesit-codes]: success
+[2024-04-07 13:15:03] INFO root fetch - main [MainThread]: End processing [Dav-vesit-codes]: success
+[2024-04-07 13:15:03] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/68/8e/03bca092830a4abf26a80c7387b02478c5f948656cb79d63c1bffab65c00/tb_nightly-2.9.0a20220502-py3-none-any.whl
+[2024-04-07 13:15:03] WARNING root fetch - processPackages [djangocms-katex]: Timeout reached during download
+[2024-04-07 13:15:03] INFO root fetch - processPackages [djangocms-katex]: executing diffoscope
+[2024-04-07 13:15:03] INFO root fetch - processPackages [djangocms-katex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangocms_katex-0.5.2.tar.gz tmp/djangocms_katex-0.5.3.tar.gz --markdown 20240407/d/djangocms-katex/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2024-04-07 13:15:04] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.3.tar.gz]
+[2024-04-07 13:15:04] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.4.tar.gz]
+[2024-04-07 13:15:04] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-04-07 13:15:04] WARNING root fetch - processPackages [tb-nightly]: Timeout reached during download
+[2024-04-07 13:15:04] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2024-04-07 13:15:04] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20240407/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/diff.md --exclude *.pyd
+[2024-04-07 13:15:04] INFO root fetch - processPackages [djangocms-katex]: Remove: archive file [/home/abi/fetcher/tmp/djangocms_katex-0.5.2.tar.gz]
+[2024-04-07 13:15:04] INFO root fetch - processPackages [djangocms-katex]: Remove: archive file [/home/abi/fetcher/tmp/djangocms_katex-0.5.3.tar.gz]
+[2024-04-07 13:15:04] INFO root fetch - main [MainThread]: End processing [djangocms-katex]: success
+[2024-04-07 13:15:05] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip]
+[2024-04-07 13:15:05] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
+[2024-04-07 13:15:05] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2024-04-07 13:15:05] INFO root fetch - main [MainThread]: Store serial: [22655624]
