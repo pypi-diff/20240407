@@ -17671,3 +17671,31 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 20:21:30] INFO root fetch - processPackages [chat-portal]: Remove: archive file [/home/abi/fetcher/tmp/chat_portal-0.2.8.tar.gz]
 [2024-04-07 20:21:30] INFO root fetch - main [MainThread]: End processing [chat-portal]: success
 [2024-04-07 20:21:30] INFO root fetch - main [MainThread]: Store serial: [22658248]
+[2024-04-07 20:23:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658248]
+[2024-04-07 20:23:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 20:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gammarer.aws-secure-frontend-web-app-cloudfront-distribution
+[2024-04-07 20:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apple-health-extractor
+[2024-04-07 20:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gammarer.aws-secure-log-bucket
+[2024-04-07 20:23:39] WARNING root fetch - processPackages [apple-health-extractor]: Skipping, unable to determine old version
+[2024-04-07 20:23:39] INFO root fetch - main [MainThread]: End processing [apple-health-extractor] error
+[2024-04-07 20:23:39] INFO root fetch - processPackages [gammarer.aws-secure-frontend-web-app-cloudfront-distribution]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-04-07 20:23:39] INFO root fetch - processPackages [gammarer.aws-secure-log-bucket]: New version: [1.5.4] Old Version: [1.5.3]
+[2024-04-07 20:23:39] INFO root fetch - processPackages [gammarer.aws-secure-log-bucket]: Downloading https://files.pythonhosted.org/packages/9d/5a/18ab4d2eabbe0ff5293a2d61379994ac0e575585086c9469c739c2435817/gammarer.aws-secure-log-bucket-1.5.3.tar.gz
+[2024-04-07 20:23:39] INFO root fetch - processPackages [gammarer.aws-secure-frontend-web-app-cloudfront-distribution]: Downloading https://files.pythonhosted.org/packages/b2/a3/7b7f0c4c7c6be7a338a4311a9c02bd380fd7cfc44a0ea4cd564c3db40881/gammarer.aws-secure-frontend-web-app-cloudfront-distribution-1.1.3.tar.gz
+[2024-04-07 20:23:40] WARNING root fetch - processPackages [gammarer.aws-secure-log-bucket]: Timeout reached during download
+[2024-04-07 20:23:40] WARNING root fetch - processPackages [gammarer.aws-secure-frontend-web-app-cloudfront-distribution]: Timeout reached during download
+[2024-04-07 20:23:40] INFO root fetch - processPackages [gammarer.aws-secure-log-bucket]: Downloading https://files.pythonhosted.org/packages/59/bf/8c1961781e8f57fe6bd62ef73323d6203b7d1bd8478c8cafdb954021d5ae/gammarer.aws-secure-log-bucket-1.5.4.tar.gz
+[2024-04-07 20:23:40] INFO root fetch - processPackages [gammarer.aws-secure-frontend-web-app-cloudfront-distribution]: Downloading https://files.pythonhosted.org/packages/28/d5/1b277ed2d0aa3ac3a1e8cdb3a0494aa7559d50db74c4ed4e50ed3da07d19/gammarer.aws-secure-frontend-web-app-cloudfront-distribution-1.1.4.tar.gz
+[2024-04-07 20:23:40] WARNING root fetch - processPackages [gammarer.aws-secure-log-bucket]: Timeout reached during download
+[2024-04-07 20:23:40] INFO root fetch - processPackages [gammarer.aws-secure-log-bucket]: executing diffoscope
+[2024-04-07 20:23:40] INFO root fetch - processPackages [gammarer.aws-secure-log-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarer.aws-secure-log-bucket-1.5.3.tar.gz tmp/gammarer.aws-secure-log-bucket-1.5.4.tar.gz --markdown 20240407/g/gammarer.aws-secure-log-bucket/1.5.3-1.5.4/diff.md --exclude *.pyd
+[2024-04-07 20:23:40] WARNING root fetch - processPackages [gammarer.aws-secure-frontend-web-app-cloudfront-distribution]: Timeout reached during download
+[2024-04-07 20:23:40] INFO root fetch - processPackages [gammarer.aws-secure-frontend-web-app-cloudfront-distribution]: executing diffoscope
+[2024-04-07 20:23:40] INFO root fetch - processPackages [gammarer.aws-secure-frontend-web-app-cloudfront-distribution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarer.aws-secure-frontend-web-app-cloudfront-distribution-1.1.3.tar.gz tmp/gammarer.aws-secure-frontend-web-app-cloudfront-distribution-1.1.4.tar.gz --markdown 20240407/g/gammarer.aws-secure-frontend-web-app-cloudfront-distribution/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2024-04-07 20:23:40] INFO root fetch - processPackages [gammarer.aws-secure-frontend-web-app-cloudfront-distribution]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-frontend-web-app-cloudfront-distribution-1.1.3.tar.gz]
+[2024-04-07 20:23:40] INFO root fetch - processPackages [gammarer.aws-secure-frontend-web-app-cloudfront-distribution]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-frontend-web-app-cloudfront-distribution-1.1.4.tar.gz]
+[2024-04-07 20:23:40] INFO root fetch - main [MainThread]: End processing [gammarer.aws-secure-frontend-web-app-cloudfront-distribution]: success
+[2024-04-07 20:23:40] INFO root fetch - processPackages [gammarer.aws-secure-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-log-bucket-1.5.3.tar.gz]
+[2024-04-07 20:23:40] INFO root fetch - processPackages [gammarer.aws-secure-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-log-bucket-1.5.4.tar.gz]
+[2024-04-07 20:23:40] INFO root fetch - main [MainThread]: End processing [gammarer.aws-secure-log-bucket]: success
+[2024-04-07 20:23:40] INFO root fetch - main [MainThread]: Store serial: [22658261]
