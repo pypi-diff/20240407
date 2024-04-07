@@ -14518,3 +14518,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:15:35] INFO root fetch - processPackages [nodeorc]: Remove: archive file [/home/abi/fetcher/tmp/nodeorc-0.1.1.tar.gz]
 [2024-04-07 17:15:35] INFO root fetch - main [MainThread]: End processing [nodeorc]: success
 [2024-04-07 17:15:35] INFO root fetch - main [MainThread]: Store serial: [22657112]
+[2024-04-07 17:17:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657112]
+[2024-04-07 17:17:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 17:17:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zood
+[2024-04-07 17:17:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eyepop
+[2024-04-07 17:17:43] INFO root fetch - processPackages [zood]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-07 17:17:43] INFO root fetch - processPackages [zood]: Downloading https://files.pythonhosted.org/packages/89/e1/2abadf4115e1c497b2e87231a9a0a251c0e44ed694e151e7f25bec80a101/zood-0.9.8.tar.gz
+[2024-04-07 17:17:43] INFO root fetch - processPackages [eyepop]: New version: [0.9.2] Old Version: [0.15.0]
+[2024-04-07 17:17:44] WARNING root fetch - processPackages [zood]: Timeout reached during download
+[2024-04-07 17:17:44] INFO root fetch - processPackages [eyepop]: Downloading https://files.pythonhosted.org/packages/96/8a/40a3933a02444a40d385b4510db89064c8ef5d8e7f202756f5d44d0b1403/eyepop-0.15.0.tar.gz
+[2024-04-07 17:17:44] INFO root fetch - processPackages [zood]: Downloading https://files.pythonhosted.org/packages/13/67/343c8b411342d4b9f36abe60fc2985c346b2e83ac8868ed88fac755fa3eb/zood-0.9.9.tar.gz
+[2024-04-07 17:17:44] WARNING root fetch - processPackages [eyepop]: Timeout reached during download
+[2024-04-07 17:17:44] WARNING root fetch - processPackages [zood]: Timeout reached during download
+[2024-04-07 17:17:44] INFO root fetch - processPackages [zood]: executing diffoscope
+[2024-04-07 17:17:44] INFO root fetch - processPackages [zood]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zood-0.9.8.tar.gz tmp/zood-0.9.9.tar.gz --markdown 20240407/z/zood/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2024-04-07 17:17:44] INFO root fetch - processPackages [eyepop]: Downloading https://files.pythonhosted.org/packages/8d/76/baee6524d83a1cc10886c0bff9d6477e13ff8a24b73404338eaa33ae8cb6/eyepop-0.9.2.tar.gz
+[2024-04-07 17:17:44] WARNING root fetch - processPackages [eyepop]: Timeout reached during download
+[2024-04-07 17:17:44] INFO root fetch - processPackages [eyepop]: executing diffoscope
+[2024-04-07 17:17:44] INFO root fetch - processPackages [eyepop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eyepop-0.15.0.tar.gz tmp/eyepop-0.9.2.tar.gz --markdown 20240407/e/eyepop/0.15.0-0.9.2/diff.md --exclude *.pyd
+[2024-04-07 17:17:44] INFO root fetch - processPackages [zood]: Remove: archive file [/home/abi/fetcher/tmp/zood-0.9.8.tar.gz]
+[2024-04-07 17:17:44] INFO root fetch - processPackages [zood]: Remove: archive file [/home/abi/fetcher/tmp/zood-0.9.9.tar.gz]
+[2024-04-07 17:17:44] INFO root fetch - main [MainThread]: End processing [zood]: success
+[2024-04-07 17:17:45] INFO root fetch - processPackages [eyepop]: Remove: archive file [/home/abi/fetcher/tmp/eyepop-0.15.0.tar.gz]
+[2024-04-07 17:17:45] INFO root fetch - processPackages [eyepop]: Remove: archive file [/home/abi/fetcher/tmp/eyepop-0.9.2.tar.gz]
+[2024-04-07 17:17:45] INFO root fetch - main [MainThread]: End processing [eyepop]: success
+[2024-04-07 17:17:45] INFO root fetch - main [MainThread]: Store serial: [22657118]
