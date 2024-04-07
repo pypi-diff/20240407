@@ -2981,3 +2981,30 @@
 [2024-04-07 04:29:45] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Remove: archive file [/home/abi/fetcher/tmp/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz]
 [2024-04-07 04:29:45] INFO root fetch - main [MainThread]: End processing [sleipnirgroup-jormungandr]: success
 [2024-04-07 04:29:45] INFO root fetch - main [MainThread]: Store serial: [22652904]
+[2024-04-07 04:31:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652904]
+[2024-04-07 04:31:55] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 04:33:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652904]
+[2024-04-07 04:34:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 04:34:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stock-open-api
+[2024-04-07 04:34:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PygameToolsBox
+[2024-04-07 04:34:00] INFO root fetch - processPackages [stock-open-api]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-07 04:34:00] INFO root fetch - processPackages [PygameToolsBox]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-07 04:34:00] INFO root fetch - processPackages [stock-open-api]: Downloading https://files.pythonhosted.org/packages/8b/d4/854a15acdfbf0365bb3fa34c07ac59911ca87a052ffdbad55a71285224af/stock-open-api-1.0.1.tar.gz
+[2024-04-07 04:34:00] INFO root fetch - processPackages [PygameToolsBox]: Downloading https://files.pythonhosted.org/packages/24/ff/85d3e93c40dce53b0a2ce6a820af106f9596b94113a36afcf96c44ccea2b/PygameToolsBox-1.0.8.tar.gz
+[2024-04-07 04:34:00] WARNING root fetch - processPackages [PygameToolsBox]: Timeout reached during download
+[2024-04-07 04:34:00] WARNING root fetch - processPackages [stock-open-api]: Timeout reached during download
+[2024-04-07 04:34:00] INFO root fetch - processPackages [stock-open-api]: Downloading https://files.pythonhosted.org/packages/d8/3b/6de6b0a605b7a612be3e81b7b303953494566360bb97a6ba9f44cdb7fc26/stock-open-api-1.0.2.tar.gz
+[2024-04-07 04:34:00] INFO root fetch - processPackages [PygameToolsBox]: Downloading https://files.pythonhosted.org/packages/1d/43/233a609cc2c7cbe304961409949a549f92768653d1593edd89fa642ae585/PygameToolsBox-1.0.9.tar.gz
+[2024-04-07 04:34:00] WARNING root fetch - processPackages [stock-open-api]: Timeout reached during download
+[2024-04-07 04:34:00] INFO root fetch - processPackages [stock-open-api]: executing diffoscope
+[2024-04-07 04:34:00] INFO root fetch - processPackages [stock-open-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stock-open-api-1.0.1.tar.gz tmp/stock-open-api-1.0.2.tar.gz --markdown 20240407/s/stock-open-api/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2024-04-07 04:34:00] WARNING root fetch - processPackages [PygameToolsBox]: Timeout reached during download
+[2024-04-07 04:34:00] INFO root fetch - processPackages [PygameToolsBox]: executing diffoscope
+[2024-04-07 04:34:00] INFO root fetch - processPackages [PygameToolsBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PygameToolsBox-1.0.8.tar.gz tmp/PygameToolsBox-1.0.9.tar.gz --markdown 20240407/P/PygameToolsBox/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-07 04:34:01] INFO root fetch - processPackages [stock-open-api]: Remove: archive file [/home/abi/fetcher/tmp/stock-open-api-1.0.1.tar.gz]
+[2024-04-07 04:34:01] INFO root fetch - processPackages [stock-open-api]: Remove: archive file [/home/abi/fetcher/tmp/stock-open-api-1.0.2.tar.gz]
+[2024-04-07 04:34:01] INFO root fetch - main [MainThread]: End processing [stock-open-api]: success
+[2024-04-07 04:34:01] INFO root fetch - processPackages [PygameToolsBox]: Remove: archive file [/home/abi/fetcher/tmp/PygameToolsBox-1.0.8.tar.gz]
+[2024-04-07 04:34:01] INFO root fetch - processPackages [PygameToolsBox]: Remove: archive file [/home/abi/fetcher/tmp/PygameToolsBox-1.0.9.tar.gz]
+[2024-04-07 04:34:01] INFO root fetch - main [MainThread]: End processing [PygameToolsBox]: success
+[2024-04-07 04:34:01] INFO root fetch - main [MainThread]: Store serial: [22652910]
