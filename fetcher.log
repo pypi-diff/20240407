@@ -4697,3 +4697,29 @@
 [2024-04-07 06:35:26] INFO root fetch - processPackages [pytector]: Remove: archive file [/home/abi/fetcher/tmp/pytector-0.0.7.tar.gz]
 [2024-04-07 06:35:26] INFO root fetch - main [MainThread]: End processing [pytector]: success
 [2024-04-07 06:35:26] INFO root fetch - main [MainThread]: Store serial: [22653468]
+[2024-04-07 06:37:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653468]
+[2024-04-07 06:37:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 06:37:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whereabouts
+[2024-04-07 06:37:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: whereabouts
+[2024-04-07 06:37:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: meta-nbextension
+[2024-04-07 06:37:35] INFO root fetch - processPackages [whereabouts]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-07 06:37:35] INFO root fetch - processPackages [whereabouts]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-07 06:37:35] WARNING root fetch - processPackages [meta-nbextension]: Skipping, unable to determine old version
+[2024-04-07 06:37:35] INFO root fetch - main [MainThread]: End processing [meta-nbextension] error
+[2024-04-07 06:37:35] INFO root fetch - processPackages [whereabouts]: Downloading https://files.pythonhosted.org/packages/94/16/3b43f690f1b852a39ccfa29cbeebcca1a2cb7f9cb64b477837bcaf543655/whereabouts-0.3.2.tar.gz
+[2024-04-07 06:37:35] INFO root fetch - processPackages [whereabouts]: Downloading https://files.pythonhosted.org/packages/94/16/3b43f690f1b852a39ccfa29cbeebcca1a2cb7f9cb64b477837bcaf543655/whereabouts-0.3.2.tar.gz
+[2024-04-07 06:37:35] WARNING root fetch - processPackages [whereabouts]: Timeout reached during download
+[2024-04-07 06:37:35] WARNING root fetch - processPackages [whereabouts]: Timeout reached during download
+[2024-04-07 06:37:36] INFO root fetch - processPackages [whereabouts]: Downloading https://files.pythonhosted.org/packages/a8/45/4cd4b89468c2d4479a6db84543d380ba6b43b4039bef272533cfa5e920c3/whereabouts-0.3.3.tar.gz
+[2024-04-07 06:37:36] INFO root fetch - processPackages [whereabouts]: Downloading https://files.pythonhosted.org/packages/a8/45/4cd4b89468c2d4479a6db84543d380ba6b43b4039bef272533cfa5e920c3/whereabouts-0.3.3.tar.gz
+[2024-04-07 06:37:36] WARNING root fetch - processPackages [whereabouts]: Timeout reached during download
+[2024-04-07 06:37:36] INFO root fetch - processPackages [whereabouts]: executing diffoscope
+[2024-04-07 06:37:36] INFO root fetch - processPackages [whereabouts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whereabouts-0.3.2.tar.gz tmp/whereabouts-0.3.3.tar.gz --markdown 20240407/w/whereabouts/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2024-04-07 06:37:36] WARNING root fetch - processPackages [whereabouts]: Timeout reached during download
+[2024-04-07 06:37:36] INFO root fetch - processPackages [whereabouts]: executing diffoscope
+[2024-04-07 06:37:36] INFO root fetch - processPackages [whereabouts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whereabouts-0.3.2.tar.gz tmp/whereabouts-0.3.3.tar.gz --markdown 20240407/w/whereabouts/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2024-04-07 06:37:36] INFO root fetch - processPackages [whereabouts]: Remove: archive file [/home/abi/fetcher/tmp/whereabouts-0.3.2.tar.gz]
+[2024-04-07 06:37:36] INFO root fetch - processPackages [whereabouts]: Remove: archive file [/home/abi/fetcher/tmp/whereabouts-0.3.3.tar.gz]
+[2024-04-07 06:37:36] INFO root fetch - main [MainThread]: End processing [whereabouts]: success
+[2024-04-07 06:37:36] INFO root fetch - main [MainThread]: End processing [whereabouts]: success
+[2024-04-07 06:37:36] INFO root fetch - main [MainThread]: Store serial: [22653479]
