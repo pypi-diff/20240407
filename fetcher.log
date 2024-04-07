@@ -2031,3 +2031,33 @@
 [2024-04-07 03:14:31] INFO root fetch - processPackages [reprompt]: Remove: archive file [/home/abi/fetcher/tmp/reprompt-0.0.4.tar.gz]
 [2024-04-07 03:14:31] INFO root fetch - main [MainThread]: End processing [reprompt]: success
 [2024-04-07 03:14:31] INFO root fetch - main [MainThread]: Store serial: [22652547]
+[2024-04-07 03:16:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652547]
+[2024-04-07 03:16:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 03:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gcsim-pypi
+[2024-04-07 03:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dogma-rust
+[2024-04-07 03:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vsg
+[2024-04-07 03:16:41] INFO root fetch - processPackages [dogma-rust]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-07 03:16:41] INFO root fetch - processPackages [gcsim-pypi]: New version: [2.8.3] Old Version: [2.8.2.9]
+[2024-04-07 03:16:41] INFO root fetch - processPackages [vsg]: New version: [3.9.0] Old Version: [3.8.0]
+[2024-04-07 03:16:41] INFO root fetch - processPackages [dogma-rust]: Downloading https://files.pythonhosted.org/packages/df/dc/758c05215ac7746030ed81539db567ad4ca4d601df030bd044f2c79e1f59/dogma_rust-0.1.0.tar.gz
+[2024-04-07 03:16:41] INFO root fetch - processPackages [vsg]: Downloading https://files.pythonhosted.org/packages/6a/e1/32f0923a9b582ca1c2687e6b699ab29e3ef0ca38d7fb35303867bd5c782a/vsg-3.8.0.tar.gz
+[2024-04-07 03:16:41] INFO root fetch - processPackages [gcsim-pypi]: Downloading https://files.pythonhosted.org/packages/b4/85/60b3457fb8a7a51fc3bdc45ee9b0ece761585d1fe779576eee0f5a4b062d/gcsim_pypi-2.8.2.9.tar.gz
+[2024-04-07 03:16:41] WARNING root fetch - processPackages [dogma-rust]: Timeout reached during download
+[2024-04-07 03:16:41] INFO root fetch - processPackages [dogma-rust]: Downloading https://files.pythonhosted.org/packages/8d/d1/49429e5b42b30b2bace837cff1d87bbc894642d91687c601fc2a8b5924c2/dogma_rust-0.2.0.tar.gz
+[2024-04-07 03:16:42] WARNING root fetch - processPackages [vsg]: Timeout reached during download
+[2024-04-07 03:16:42] WARNING root fetch - processPackages [dogma-rust]: Timeout reached during download
+[2024-04-07 03:16:42] INFO root fetch - processPackages [dogma-rust]: executing diffoscope
+[2024-04-07 03:16:42] INFO root fetch - processPackages [dogma-rust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dogma_rust-0.1.0.tar.gz tmp/dogma_rust-0.2.0.tar.gz --markdown 20240407/d/dogma-rust/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2024-04-07 03:16:42] WARNING root fetch - processPackages [gcsim-pypi]: Skipping package: exceeds size limit 25507462>=10485760
+[2024-04-07 03:16:42] INFO root fetch - main [MainThread]: End processing [gcsim-pypi] error
+[2024-04-07 03:16:42] INFO root fetch - processPackages [vsg]: Downloading https://files.pythonhosted.org/packages/30/69/67bd520c470f1dd577288b40d8ec196da3f8bf5f5f2aec3c2d0317146e3d/vsg-3.9.0.tar.gz
+[2024-04-07 03:16:42] INFO root fetch - processPackages [dogma-rust]: Remove: archive file [/home/abi/fetcher/tmp/dogma_rust-0.1.0.tar.gz]
+[2024-04-07 03:16:42] INFO root fetch - processPackages [dogma-rust]: Remove: archive file [/home/abi/fetcher/tmp/dogma_rust-0.2.0.tar.gz]
+[2024-04-07 03:16:42] INFO root fetch - main [MainThread]: End processing [dogma-rust]: success
+[2024-04-07 03:16:42] WARNING root fetch - processPackages [vsg]: Timeout reached during download
+[2024-04-07 03:16:42] INFO root fetch - processPackages [vsg]: executing diffoscope
+[2024-04-07 03:16:42] INFO root fetch - processPackages [vsg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vsg-3.8.0.tar.gz tmp/vsg-3.9.0.tar.gz --markdown 20240407/v/vsg/3.8.0-3.9.0/diff.md --exclude *.pyd
+[2024-04-07 03:16:46] INFO root fetch - processPackages [vsg]: Remove: archive file [/home/abi/fetcher/tmp/vsg-3.8.0.tar.gz]
+[2024-04-07 03:16:46] INFO root fetch - processPackages [vsg]: Remove: archive file [/home/abi/fetcher/tmp/vsg-3.9.0.tar.gz]
+[2024-04-07 03:16:46] INFO root fetch - main [MainThread]: End processing [vsg]: success
+[2024-04-07 03:16:46] INFO root fetch - main [MainThread]: Store serial: [22652555]
