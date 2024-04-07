@@ -10190,3 +10190,36 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 12:44:47] INFO root fetch - processPackages [LyPythonToolbox]: Remove: archive file [/home/abi/fetcher/tmp/LyPythonToolbox-0.1.3.tar.gz]
 [2024-04-07 12:44:47] INFO root fetch - main [MainThread]: End processing [LyPythonToolbox]: success
 [2024-04-07 12:44:47] INFO root fetch - main [MainThread]: Store serial: [22655476]
+[2024-04-07 12:46:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655476]
+[2024-04-07 12:46:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 12:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-master
+[2024-04-07 12:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odooer
+[2024-04-07 12:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: astyle
+[2024-04-07 12:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ms-ait
+[2024-04-07 12:46:55] INFO root fetch - processPackages [ms-ait]: New version: [7.0.0a4] Old Version: [7.0.0a2]
+[2024-04-07 12:46:55] WARNING root fetch - processPackages [odooer]: Skipping, unable to determine old version
+[2024-04-07 12:46:55] INFO root fetch - main [MainThread]: End processing [odooer] error
+[2024-04-07 12:46:55] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240407.10.46.245471] Old Version: [20240406.17.45.356043]
+[2024-04-07 12:46:55] INFO root fetch - processPackages [ms-ait]: Downloading https://files.pythonhosted.org/packages/a7/ed/643395857c49ad4a25f50e869b5113cc702919315744143229a6aa4c750a/ms-ait-7.0.0a2.zip
+[2024-04-07 12:46:56] INFO root fetch - processPackages [astyle]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-04-07 12:46:56] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/70/39/d02bfb6f01d1f4804b179132a29649626032cb9c4e4bf15a2ba6e8eac3aa/certora-cli-alpha-master-20240406.17.45.356043.tar.gz
+[2024-04-07 12:46:56] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14477980>=10485760
+[2024-04-07 12:46:56] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-04-07 12:46:56] WARNING root fetch - processPackages [ms-ait]: Timeout reached during download
+[2024-04-07 12:46:56] INFO root fetch - processPackages [astyle]: Downloading https://files.pythonhosted.org/packages/25/eb/57aa5f31d3011322333bc2db7d9a16042e60cd6552c54a20a3c385cbf4e6/astyle-3.4.8.tar.gz
+[2024-04-07 12:46:56] INFO root fetch - processPackages [ms-ait]: Downloading https://files.pythonhosted.org/packages/f3/59/82d0852448f3251d6effe59a604980bc685bc5dcb54101c109e259e1fcdb/ms-ait-7.0.0a4.zip
+[2024-04-07 12:46:56] WARNING root fetch - processPackages [astyle]: Timeout reached during download
+[2024-04-07 12:46:56] WARNING root fetch - processPackages [ms-ait]: Timeout reached during download
+[2024-04-07 12:46:56] INFO root fetch - processPackages [ms-ait]: executing diffoscope
+[2024-04-07 12:46:56] INFO root fetch - processPackages [ms-ait]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ms-ait-7.0.0a2.zip tmp/ms-ait-7.0.0a4.zip --markdown 20240407/m/ms-ait/7.0.0a2-7.0.0a4/diff.md --exclude *.pyd
+[2024-04-07 12:46:56] INFO root fetch - processPackages [astyle]: Downloading https://files.pythonhosted.org/packages/32/5a/2ea2b9bd054336d687e531dbe22ad68f706fa192101011380de33b3c3487/astyle-3.4.9.tar.gz
+[2024-04-07 12:46:57] WARNING root fetch - processPackages [astyle]: Timeout reached during download
+[2024-04-07 12:46:57] INFO root fetch - processPackages [astyle]: executing diffoscope
+[2024-04-07 12:46:57] INFO root fetch - processPackages [astyle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astyle-3.4.8.tar.gz tmp/astyle-3.4.9.tar.gz --markdown 20240407/a/astyle/3.4.8-3.4.9/diff.md --exclude *.pyd
+[2024-04-07 12:46:57] INFO root fetch - processPackages [astyle]: Remove: archive file [/home/abi/fetcher/tmp/astyle-3.4.8.tar.gz]
+[2024-04-07 12:46:57] INFO root fetch - processPackages [astyle]: Remove: archive file [/home/abi/fetcher/tmp/astyle-3.4.9.tar.gz]
+[2024-04-07 12:46:57] INFO root fetch - main [MainThread]: End processing [astyle]: success
+[2024-04-07 12:46:58] INFO root fetch - processPackages [ms-ait]: Remove: archive file [/home/abi/fetcher/tmp/ms-ait-7.0.0a2.zip]
+[2024-04-07 12:46:58] INFO root fetch - processPackages [ms-ait]: Remove: archive file [/home/abi/fetcher/tmp/ms-ait-7.0.0a4.zip]
+[2024-04-07 12:46:58] INFO root fetch - main [MainThread]: End processing [ms-ait]: success
+[2024-04-07 12:46:58] INFO root fetch - main [MainThread]: Store serial: [22655489]
