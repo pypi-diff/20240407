@@ -11091,3 +11091,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:49:55] WARNING root fetch - processPackages [coded-flows]: Skipping, unable to determine old version
 [2024-04-07 13:49:55] INFO root fetch - main [MainThread]: End processing [coded-flows] error
 [2024-04-07 13:49:55] INFO root fetch - main [MainThread]: Store serial: [22655852]
+[2024-04-07 13:51:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655852]
+[2024-04-07 13:52:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 13:52:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: special-octo-robot
+[2024-04-07 13:52:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: envo
+[2024-04-07 13:52:04] INFO root fetch - processPackages [special-octo-robot]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-07 13:52:04] INFO root fetch - processPackages [envo]: New version: [1.5.2] Old Version: [1.5.1]
+[2024-04-07 13:52:04] INFO root fetch - processPackages [special-octo-robot]: Downloading https://files.pythonhosted.org/packages/6c/f3/1b238e64ee51aa555fed88d966e34ea864f3bca918f42d5b6e7154c2c209/special-octo-robot-0.0.1.tar.gz
+[2024-04-07 13:52:04] INFO root fetch - processPackages [envo]: Downloading https://files.pythonhosted.org/packages/96/41/b5c953cf7c4d7a84f6aaff83e8f23d832221ba60a1554126d9a07b324dc5/envo-1.5.1.tar.gz
+[2024-04-07 13:52:04] WARNING root fetch - processPackages [special-octo-robot]: Timeout reached during download
+[2024-04-07 13:52:04] WARNING root fetch - processPackages [envo]: Timeout reached during download
+[2024-04-07 13:52:04] INFO root fetch - processPackages [special-octo-robot]: Downloading https://files.pythonhosted.org/packages/b0/d0/6e68d26c8eb6c3ef5e4f2fd7c99d49a88d646ef5d731f5346f31fecdb93f/special-octo-robot-0.0.2.tar.gz
+[2024-04-07 13:52:05] INFO root fetch - processPackages [envo]: Downloading https://files.pythonhosted.org/packages/b2/ff/6481bd3780eeea5ccb7dde0e1e39696ce364a544392830fb23ec518dd9f1/envo-1.5.2.tar.gz
+[2024-04-07 13:52:05] WARNING root fetch - processPackages [special-octo-robot]: Timeout reached during download
+[2024-04-07 13:52:05] INFO root fetch - processPackages [special-octo-robot]: executing diffoscope
+[2024-04-07 13:52:05] INFO root fetch - processPackages [special-octo-robot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/special-octo-robot-0.0.1.tar.gz tmp/special-octo-robot-0.0.2.tar.gz --markdown 20240407/s/special-octo-robot/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-07 13:52:05] WARNING root fetch - processPackages [envo]: Timeout reached during download
+[2024-04-07 13:52:05] INFO root fetch - processPackages [envo]: executing diffoscope
+[2024-04-07 13:52:05] INFO root fetch - processPackages [envo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/envo-1.5.1.tar.gz tmp/envo-1.5.2.tar.gz --markdown 20240407/e/envo/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2024-04-07 13:52:05] INFO root fetch - processPackages [special-octo-robot]: Remove: archive file [/home/abi/fetcher/tmp/special-octo-robot-0.0.1.tar.gz]
+[2024-04-07 13:52:05] INFO root fetch - processPackages [special-octo-robot]: Remove: archive file [/home/abi/fetcher/tmp/special-octo-robot-0.0.2.tar.gz]
+[2024-04-07 13:52:05] INFO root fetch - main [MainThread]: End processing [special-octo-robot]: success
+[2024-04-07 13:52:05] INFO root fetch - processPackages [envo]: Remove: archive file [/home/abi/fetcher/tmp/envo-1.5.1.tar.gz]
+[2024-04-07 13:52:05] INFO root fetch - processPackages [envo]: Remove: archive file [/home/abi/fetcher/tmp/envo-1.5.2.tar.gz]
+[2024-04-07 13:52:05] INFO root fetch - main [MainThread]: End processing [envo]: success
+[2024-04-07 13:52:05] INFO root fetch - main [MainThread]: Store serial: [22655858]
