@@ -20701,3 +20701,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:31:19] INFO root fetch - processPackages [owmpy]: Remove: archive file [/home/abi/fetcher/tmp/owmpy-1.0.0.tar.gz]
 [2024-04-07 23:31:19] INFO root fetch - main [MainThread]: End processing [owmpy]: success
 [2024-04-07 23:31:19] INFO root fetch - main [MainThread]: Store serial: [22659461]
+[2024-04-07 23:33:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659461]
+[2024-04-07 23:33:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 23:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pthugefileviewer
+[2024-04-07 23:33:29] INFO root fetch - processPackages [pthugefileviewer]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-07 23:33:29] INFO root fetch - processPackages [pthugefileviewer]: Downloading https://files.pythonhosted.org/packages/07/1d/0d33cb15300141d0f770ec0e4524caccf3094a45842ff5929dcf3bf17095/pthugefileviewer-0.3.0.tar.gz
+[2024-04-07 23:33:29] WARNING root fetch - processPackages [pthugefileviewer]: Timeout reached during download
+[2024-04-07 23:33:30] INFO root fetch - processPackages [pthugefileviewer]: Downloading https://files.pythonhosted.org/packages/20/74/8da2e83089c4465bf0576b77f36a6ae4f2abcadacd0a7b9f53e06f7516c1/pthugefileviewer-0.4.0.tar.gz
+[2024-04-07 23:33:30] WARNING root fetch - processPackages [pthugefileviewer]: Timeout reached during download
+[2024-04-07 23:33:30] INFO root fetch - processPackages [pthugefileviewer]: executing diffoscope
+[2024-04-07 23:33:30] INFO root fetch - processPackages [pthugefileviewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pthugefileviewer-0.3.0.tar.gz tmp/pthugefileviewer-0.4.0.tar.gz --markdown 20240407/p/pthugefileviewer/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2024-04-07 23:33:30] INFO root fetch - processPackages [pthugefileviewer]: Remove: archive file [/home/abi/fetcher/tmp/pthugefileviewer-0.3.0.tar.gz]
+[2024-04-07 23:33:30] INFO root fetch - processPackages [pthugefileviewer]: Remove: archive file [/home/abi/fetcher/tmp/pthugefileviewer-0.4.0.tar.gz]
+[2024-04-07 23:33:30] INFO root fetch - main [MainThread]: End processing [pthugefileviewer]: success
+[2024-04-07 23:33:30] INFO root fetch - main [MainThread]: Store serial: [22659498]
