@@ -10333,3 +10333,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:02:02] INFO root fetch - processPackages [soundtools]: Remove: archive file [/home/abi/fetcher/tmp/soundtools-0.1.3.2.tar.gz]
 [2024-04-07 13:02:02] INFO root fetch - main [MainThread]: End processing [soundtools]: success
 [2024-04-07 13:02:02] INFO root fetch - main [MainThread]: Store serial: [22655582]
+[2024-04-07 13:04:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655582]
+[2024-04-07 13:04:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 13:04:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: slinn
+[2024-04-07 13:04:12] INFO root fetch - processPackages [slinn]: New version: [2.2.2] Old Version: [2.2.0]
+[2024-04-07 13:04:12] INFO root fetch - processPackages [slinn]: Downloading https://files.pythonhosted.org/packages/4e/60/67f8b5e6ea7161699cc05ccae0c72f864e268503d9694dbd099da3b3e4af/slinn-2.2.0.tar.gz
+[2024-04-07 13:04:12] WARNING root fetch - processPackages [slinn]: Timeout reached during download
+[2024-04-07 13:04:13] INFO root fetch - processPackages [slinn]: Downloading https://files.pythonhosted.org/packages/74/33/873a1620973375bb1b1e02caac21c05b89a0e7ea61de16d76b8aefc277a0/slinn-2.2.2.tar.gz
+[2024-04-07 13:04:13] WARNING root fetch - processPackages [slinn]: Timeout reached during download
+[2024-04-07 13:04:13] INFO root fetch - processPackages [slinn]: executing diffoscope
+[2024-04-07 13:04:13] INFO root fetch - processPackages [slinn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slinn-2.2.0.tar.gz tmp/slinn-2.2.2.tar.gz --markdown 20240407/s/slinn/2.2.0-2.2.2/diff.md --exclude *.pyd
+[2024-04-07 13:04:13] INFO root fetch - processPackages [slinn]: Remove: archive file [/home/abi/fetcher/tmp/slinn-2.2.0.tar.gz]
+[2024-04-07 13:04:13] INFO root fetch - processPackages [slinn]: Remove: archive file [/home/abi/fetcher/tmp/slinn-2.2.2.tar.gz]
+[2024-04-07 13:04:13] INFO root fetch - main [MainThread]: End processing [slinn]: success
+[2024-04-07 13:04:13] INFO root fetch - main [MainThread]: Store serial: [22655584]
