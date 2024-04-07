@@ -18341,3 +18341,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 21:00:58] INFO root fetch - processPackages [dotcon]: Remove: archive file [/home/abi/fetcher/tmp/dotcon-0.4.0.tar.gz]
 [2024-04-07 21:00:58] INFO root fetch - main [MainThread]: End processing [dotcon]: success
 [2024-04-07 21:00:58] INFO root fetch - main [MainThread]: Store serial: [22658515]
+[2024-04-07 21:03:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658515]
+[2024-04-07 21:03:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 21:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spotify-win-cli
+[2024-04-07 21:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openlane
+[2024-04-07 21:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: buildz
+[2024-04-07 21:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PHX
+[2024-04-07 21:03:07] INFO root fetch - processPackages [buildz]: New version: [0.4.8] Old Version: [0.4.7]
+[2024-04-07 21:03:07] WARNING root fetch - processPackages [spotify-win-cli]: Skipping, unable to determine old version
+[2024-04-07 21:03:07] INFO root fetch - main [MainThread]: End processing [spotify-win-cli] error
+[2024-04-07 21:03:07] INFO root fetch - processPackages [buildz]: Downloading https://files.pythonhosted.org/packages/5a/9f/a6ecc6a392d303552aeea726243af7c5523bd3b6b29e21e640ec212002ff/buildz-0.4.7.tar.gz
+[2024-04-07 21:03:07] INFO root fetch - processPackages [PHX]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-04-07 21:03:07] INFO root fetch - processPackages [openlane]: New version: [2.0.0rc2] Old Version: [2.0.0b9]
+[2024-04-07 21:03:07] INFO root fetch - processPackages [openlane]: Downloading https://files.pythonhosted.org/packages/e8/fb/6b25c8e3dd2fbe44ed2a0c7316e4b046805d4586f0a05bad09f51a7c8be7/openlane-2.0.0b9.tar.gz
+[2024-04-07 21:03:07] INFO root fetch - processPackages [PHX]: Downloading https://files.pythonhosted.org/packages/ad/48/a9b966f484d5fbfbde35e2c15c1211cc18359a09978bfbaafcd30f095d50/PHX-1.8.1.tar.gz
+[2024-04-07 21:03:07] WARNING root fetch - processPackages [openlane]: Timeout reached during download
+[2024-04-07 21:03:07] WARNING root fetch - processPackages [PHX]: Timeout reached during download
+[2024-04-07 21:03:08] WARNING root fetch - processPackages [buildz]: Timeout reached during download
+[2024-04-07 21:03:08] INFO root fetch - processPackages [openlane]: Downloading https://files.pythonhosted.org/packages/2f/69/d5ca48e06d9886d2cca15003a3f8d5a628ab626fd9401a4890d5a4530fa9/openlane-2.0.0rc2.tar.gz
+[2024-04-07 21:03:08] INFO root fetch - processPackages [PHX]: Downloading https://files.pythonhosted.org/packages/d5/cf/427f0ced8ef3cc98e22c877b4eb980575483e2cf3ac2387f5e901120b744/PHX-1.9.0.tar.gz
+[2024-04-07 21:03:08] INFO root fetch - processPackages [buildz]: Downloading https://files.pythonhosted.org/packages/61/4e/df4118d2dd832e3b79e16ea38ca5e3537a678e7ee858413c8f93556cbe0a/buildz-0.4.8.tar.gz
+[2024-04-07 21:03:08] WARNING root fetch - processPackages [openlane]: Timeout reached during download
+[2024-04-07 21:03:08] INFO root fetch - processPackages [openlane]: executing diffoscope
+[2024-04-07 21:03:08] INFO root fetch - processPackages [openlane]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlane-2.0.0b9.tar.gz tmp/openlane-2.0.0rc2.tar.gz --markdown 20240407/o/openlane/2.0.0b9-2.0.0rc2/diff.md --exclude *.pyd
+[2024-04-07 21:03:08] WARNING root fetch - processPackages [PHX]: Timeout reached during download
+[2024-04-07 21:03:08] INFO root fetch - processPackages [PHX]: executing diffoscope
+[2024-04-07 21:03:08] INFO root fetch - processPackages [PHX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PHX-1.8.1.tar.gz tmp/PHX-1.9.0.tar.gz --markdown 20240407/P/PHX/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2024-04-07 21:03:08] WARNING root fetch - processPackages [buildz]: Timeout reached during download
+[2024-04-07 21:03:08] INFO root fetch - processPackages [buildz]: executing diffoscope
+[2024-04-07 21:03:08] INFO root fetch - processPackages [buildz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buildz-0.4.7.tar.gz tmp/buildz-0.4.8.tar.gz --markdown 20240407/b/buildz/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2024-04-07 21:03:09] INFO root fetch - processPackages [buildz]: Remove: archive file [/home/abi/fetcher/tmp/buildz-0.4.7.tar.gz]
+[2024-04-07 21:03:09] INFO root fetch - processPackages [buildz]: Remove: archive file [/home/abi/fetcher/tmp/buildz-0.4.8.tar.gz]
+[2024-04-07 21:03:09] INFO root fetch - main [MainThread]: End processing [buildz]: success
+[2024-04-07 21:03:09] INFO root fetch - processPackages [PHX]: Remove: archive file [/home/abi/fetcher/tmp/PHX-1.8.1.tar.gz]
+[2024-04-07 21:03:09] INFO root fetch - processPackages [PHX]: Remove: archive file [/home/abi/fetcher/tmp/PHX-1.9.0.tar.gz]
+[2024-04-07 21:03:09] INFO root fetch - main [MainThread]: End processing [PHX]: success
+[2024-04-07 21:03:09] INFO root fetch - processPackages [openlane]: Remove: archive file [/home/abi/fetcher/tmp/openlane-2.0.0b9.tar.gz]
+[2024-04-07 21:03:09] INFO root fetch - processPackages [openlane]: Remove: archive file [/home/abi/fetcher/tmp/openlane-2.0.0rc2.tar.gz]
+[2024-04-07 21:03:09] INFO root fetch - main [MainThread]: End processing [openlane]: success
+[2024-04-07 21:03:09] INFO root fetch - main [MainThread]: Store serial: [22658526]
