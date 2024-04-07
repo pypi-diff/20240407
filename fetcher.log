@@ -8484,3 +8484,31 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 10:59:27] INFO root fetch - processPackages [xlutil]: Remove: archive file [/home/abi/fetcher/tmp/xlutil-0.1.3.tar.gz]
 [2024-04-07 10:59:27] INFO root fetch - main [MainThread]: End processing [xlutil]: success
 [2024-04-07 10:59:27] INFO root fetch - main [MainThread]: Store serial: [22654876]
+[2024-04-07 11:01:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654876]
+[2024-04-07 11:01:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 11:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: feynamp
+[2024-04-07 11:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ait-openapi
+[2024-04-07 11:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bestnlp
+[2024-04-07 11:01:36] INFO root fetch - processPackages [bestnlp]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-07 11:01:36] INFO root fetch - processPackages [feynamp]: New version: [0.0.5.12] Old Version: [0.0.5]
+[2024-04-07 11:01:36] WARNING root fetch - processPackages [ait-openapi]: Skipping, unable to determine old version
+[2024-04-07 11:01:36] INFO root fetch - main [MainThread]: End processing [ait-openapi] error
+[2024-04-07 11:01:36] INFO root fetch - processPackages [bestnlp]: Downloading https://files.pythonhosted.org/packages/49/e2/7f99186a5862ba3a5825df049c07847cc2e1705a1270f67ca13f709f842d/bestnlp-1.0.4-py3-none-any.whl
+[2024-04-07 11:01:36] INFO root fetch - processPackages [feynamp]: Downloading https://files.pythonhosted.org/packages/c5/81/a855bb1a936def1e44f14b9934bac1c1c9432398e0d0403ac47caba6bc1a/feynamp-0.0.5.tar.gz
+[2024-04-07 11:01:36] WARNING root fetch - processPackages [bestnlp]: Timeout reached during download
+[2024-04-07 11:01:36] WARNING root fetch - processPackages [feynamp]: Timeout reached during download
+[2024-04-07 11:01:36] INFO root fetch - processPackages [feynamp]: Downloading https://files.pythonhosted.org/packages/71/4e/be1200101e89937d3a8b1a0353e3ec8b00b1f5ff50af6d1577f444587ed9/feynamp-0.0.5.12.tar.gz
+[2024-04-07 11:01:36] INFO root fetch - processPackages [bestnlp]: Downloading https://files.pythonhosted.org/packages/59/94/f80a51428e0ab7156c2b7c624a18d13ad396bd98a638d148eb46fbe84a6c/bestnlp-1.0.5-py3-none-any.whl
+[2024-04-07 11:01:36] WARNING root fetch - processPackages [feynamp]: Timeout reached during download
+[2024-04-07 11:01:36] INFO root fetch - processPackages [feynamp]: executing diffoscope
+[2024-04-07 11:01:36] INFO root fetch - processPackages [feynamp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feynamp-0.0.5.tar.gz tmp/feynamp-0.0.5.12.tar.gz --markdown 20240407/f/feynamp/0.0.5-0.0.5.12/diff.md --exclude *.pyd
+[2024-04-07 11:01:36] WARNING root fetch - processPackages [bestnlp]: Timeout reached during download
+[2024-04-07 11:01:36] INFO root fetch - processPackages [bestnlp]: executing diffoscope
+[2024-04-07 11:01:36] INFO root fetch - processPackages [bestnlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bestnlp-1.0.4-py3-none-any.whl.zip tmp/bestnlp-1.0.5-py3-none-any.whl.zip --markdown 20240407/b/bestnlp/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2024-04-07 11:01:37] INFO root fetch - processPackages [feynamp]: Remove: archive file [/home/abi/fetcher/tmp/feynamp-0.0.5.tar.gz]
+[2024-04-07 11:01:37] INFO root fetch - processPackages [feynamp]: Remove: archive file [/home/abi/fetcher/tmp/feynamp-0.0.5.12.tar.gz]
+[2024-04-07 11:01:37] INFO root fetch - main [MainThread]: End processing [feynamp]: success
+[2024-04-07 11:01:37] INFO root fetch - processPackages [bestnlp]: Remove: archive file [/home/abi/fetcher/tmp/bestnlp-1.0.4-py3-none-any.whl.zip]
+[2024-04-07 11:01:37] INFO root fetch - processPackages [bestnlp]: Remove: archive file [/home/abi/fetcher/tmp/bestnlp-1.0.5-py3-none-any.whl.zip]
+[2024-04-07 11:01:37] INFO root fetch - main [MainThread]: End processing [bestnlp]: success
+[2024-04-07 11:01:37] INFO root fetch - main [MainThread]: Store serial: [22654883]
