@@ -11859,3 +11859,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:42:23] INFO root fetch - processPackages [gns3-gui]: Remove: archive file [/home/abi/fetcher/tmp/gns3-gui-3.0.0b2.tar.gz]
 [2024-04-07 14:42:23] INFO root fetch - main [MainThread]: End processing [gns3-gui]: success
 [2024-04-07 14:42:23] INFO root fetch - main [MainThread]: Store serial: [22656258]
+[2024-04-07 14:44:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656258]
+[2024-04-07 14:44:32] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 14:44:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tb1-parser
+[2024-04-07 14:44:33] INFO root fetch - processPackages [tb1-parser]: New version: [0.4] Old Version: [0.3]
+[2024-04-07 14:44:33] INFO root fetch - processPackages [tb1-parser]: Downloading https://files.pythonhosted.org/packages/04/f5/e768637509b3864afa3673e04aff5ef7a4e08334fde0a452e9b1968d895a/tb1_parser-0.3.tar.gz
+[2024-04-07 14:44:33] WARNING root fetch - processPackages [tb1-parser]: Timeout reached during download
+[2024-04-07 14:44:33] INFO root fetch - processPackages [tb1-parser]: Downloading https://files.pythonhosted.org/packages/91/ab/202c93e017ab604c009d23bcc30c5cc75625898136c918cd9bf1312152d7/tb1_parser-0.4.tar.gz
+[2024-04-07 14:44:33] WARNING root fetch - processPackages [tb1-parser]: Timeout reached during download
+[2024-04-07 14:44:33] INFO root fetch - processPackages [tb1-parser]: executing diffoscope
+[2024-04-07 14:44:33] INFO root fetch - processPackages [tb1-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb1_parser-0.3.tar.gz tmp/tb1_parser-0.4.tar.gz --markdown 20240407/t/tb1-parser/0.3-0.4/diff.md --exclude *.pyd
+[2024-04-07 14:44:34] INFO root fetch - processPackages [tb1-parser]: Remove: archive file [/home/abi/fetcher/tmp/tb1_parser-0.3.tar.gz]
+[2024-04-07 14:44:34] INFO root fetch - processPackages [tb1-parser]: Remove: archive file [/home/abi/fetcher/tmp/tb1_parser-0.4.tar.gz]
+[2024-04-07 14:44:34] INFO root fetch - main [MainThread]: End processing [tb1-parser]: success
+[2024-04-07 14:44:34] INFO root fetch - main [MainThread]: Store serial: [22656260]
