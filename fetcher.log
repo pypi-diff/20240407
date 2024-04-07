@@ -4667,3 +4667,19 @@
 [2024-04-07 06:29:01] INFO root fetch - processPackages [detoxio]: Remove: archive file [/home/abi/fetcher/tmp/detoxio-0.1.9.tar.gz]
 [2024-04-07 06:29:01] INFO root fetch - main [MainThread]: End processing [detoxio]: success
 [2024-04-07 06:29:01] INFO root fetch - main [MainThread]: Store serial: [22653463]
+[2024-04-07 06:31:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653463]
+[2024-04-07 06:31:10] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 06:33:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653463]
+[2024-04-07 06:33:15] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 06:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-ssi-revenue-recognition
+[2024-04-07 06:33:15] INFO root fetch - processPackages [odoo14-addon-ssi-revenue-recognition]: New version: [14.0.3.9.0] Old Version: [14.0.3.8.0]
+[2024-04-07 06:33:15] INFO root fetch - processPackages [odoo14-addon-ssi-revenue-recognition]: Downloading https://files.pythonhosted.org/packages/34/a6/fc7167a6f8693ad783f5591a870205848d48166fd8a0039708e51e592479/odoo14_addon_ssi_revenue_recognition-14.0.3.8.0-py3-none-any.whl
+[2024-04-07 06:33:16] WARNING root fetch - processPackages [odoo14-addon-ssi-revenue-recognition]: Timeout reached during download
+[2024-04-07 06:33:16] INFO root fetch - processPackages [odoo14-addon-ssi-revenue-recognition]: Downloading https://files.pythonhosted.org/packages/4d/d8/472263a7b05dec212f88a69c00ae941edb5d763a1f67eff2e2f3741be294/odoo14_addon_ssi_revenue_recognition-14.0.3.9.0-py3-none-any.whl
+[2024-04-07 06:33:16] WARNING root fetch - processPackages [odoo14-addon-ssi-revenue-recognition]: Timeout reached during download
+[2024-04-07 06:33:16] INFO root fetch - processPackages [odoo14-addon-ssi-revenue-recognition]: executing diffoscope
+[2024-04-07 06:33:16] INFO root fetch - processPackages [odoo14-addon-ssi-revenue-recognition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_ssi_revenue_recognition-14.0.3.8.0-py3-none-any.whl.zip tmp/odoo14_addon_ssi_revenue_recognition-14.0.3.9.0-py3-none-any.whl.zip --markdown 20240407/o/odoo14-addon-ssi-revenue-recognition/14.0.3.8.0-14.0.3.9.0/diff.md --exclude *.pyd
+[2024-04-07 06:33:17] INFO root fetch - processPackages [odoo14-addon-ssi-revenue-recognition]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_revenue_recognition-14.0.3.8.0-py3-none-any.whl.zip]
+[2024-04-07 06:33:17] INFO root fetch - processPackages [odoo14-addon-ssi-revenue-recognition]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_revenue_recognition-14.0.3.9.0-py3-none-any.whl.zip]
+[2024-04-07 06:33:17] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-revenue-recognition]: success
+[2024-04-07 06:33:17] INFO root fetch - main [MainThread]: Store serial: [22653465]
