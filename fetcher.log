@@ -19728,3 +19728,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:19:31] INFO root fetch - processPackages [astromcad]: Remove: archive file [/home/abi/fetcher/tmp/astromcad-0.1.6.tar.gz]
 [2024-04-07 22:19:31] INFO root fetch - main [MainThread]: End processing [astromcad]: success
 [2024-04-07 22:19:31] INFO root fetch - main [MainThread]: Store serial: [22658984]
+[2024-04-07 22:21:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658984]
+[2024-04-07 22:21:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 22:21:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hex-renderer-py
+[2024-04-07 22:21:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfibaro
+[2024-04-07 22:21:40] INFO root fetch - processPackages [hex-renderer-py]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-07 22:21:40] INFO root fetch - processPackages [pyfibaro]: New version: [0.7.7] Old Version: [0.7.6]
+[2024-04-07 22:21:40] INFO root fetch - processPackages [pyfibaro]: Downloading https://files.pythonhosted.org/packages/fe/ad/660f7f57d1559c70122de9090a910a339502bbf70895ee17cc12cb46c349/pyfibaro-0.7.6.tar.gz
+[2024-04-07 22:21:40] INFO root fetch - processPackages [hex-renderer-py]: Downloading https://files.pythonhosted.org/packages/0b/b9/cb2d4ec3944502263f77528915b8f1efa1f7d381e927f207e9b7dafe1bb1/hex_renderer_py-0.1.1.tar.gz
+[2024-04-07 22:21:41] WARNING root fetch - processPackages [pyfibaro]: Timeout reached during download
+[2024-04-07 22:21:41] WARNING root fetch - processPackages [hex-renderer-py]: Timeout reached during download
+[2024-04-07 22:21:41] INFO root fetch - processPackages [pyfibaro]: Downloading https://files.pythonhosted.org/packages/25/f7/20a2bb2c6de79ca3c171516177f64fba9a8ae81c362fdac0994e2726bca9/pyfibaro-0.7.7.tar.gz
+[2024-04-07 22:21:41] INFO root fetch - processPackages [hex-renderer-py]: Downloading https://files.pythonhosted.org/packages/6e/dd/c59d33e89f8e5cb9c410cc95d6a65e1f9e0831f0152ac98e5d1fc0e26c92/hex_renderer_py-0.1.2-cp38-none-win32.whl
+[2024-04-07 22:21:41] WARNING root fetch - processPackages [pyfibaro]: Timeout reached during download
+[2024-04-07 22:21:41] INFO root fetch - processPackages [pyfibaro]: executing diffoscope
+[2024-04-07 22:21:41] INFO root fetch - processPackages [pyfibaro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfibaro-0.7.6.tar.gz tmp/pyfibaro-0.7.7.tar.gz --markdown 20240407/p/pyfibaro/0.7.6-0.7.7/diff.md --exclude *.pyd
+[2024-04-07 22:21:41] INFO root fetch - processPackages [pyfibaro]: Remove: archive file [/home/abi/fetcher/tmp/pyfibaro-0.7.6.tar.gz]
+[2024-04-07 22:21:41] INFO root fetch - processPackages [pyfibaro]: Remove: archive file [/home/abi/fetcher/tmp/pyfibaro-0.7.7.tar.gz]
+[2024-04-07 22:21:41] INFO root fetch - main [MainThread]: End processing [pyfibaro]: success
+[2024-04-07 22:21:42] WARNING root fetch - processPackages [hex-renderer-py]: Timeout reached during download
+[2024-04-07 22:21:42] INFO root fetch - processPackages [hex-renderer-py]: executing diffoscope
+[2024-04-07 22:21:42] INFO root fetch - processPackages [hex-renderer-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hex_renderer_py-0.1.1.tar.gz tmp/hex_renderer_py-0.1.2-cp38-none-win32.whl.zip --markdown 20240407/h/hex-renderer-py/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-07 22:21:42] INFO root fetch - processPackages [hex-renderer-py]: Remove: archive file [/home/abi/fetcher/tmp/hex_renderer_py-0.1.1.tar.gz]
+[2024-04-07 22:21:42] INFO root fetch - processPackages [hex-renderer-py]: Remove: archive file [/home/abi/fetcher/tmp/hex_renderer_py-0.1.2-cp38-none-win32.whl.zip]
+[2024-04-07 22:21:42] INFO root fetch - main [MainThread]: End processing [hex-renderer-py]: success
+[2024-04-07 22:21:42] INFO root fetch - main [MainThread]: Store serial: [22659023]
