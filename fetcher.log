@@ -3965,3 +3965,20 @@
 [2024-04-07 05:30:28] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024040703.tar.gz]
 [2024-04-07 05:30:28] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
 [2024-04-07 05:30:28] INFO root fetch - main [MainThread]: Store serial: [22653259]
+[2024-04-07 05:32:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653259]
+[2024-04-07 05:32:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 05:32:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zsx-pack
+[2024-04-07 05:32:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: picle
+[2024-04-07 05:32:37] INFO root fetch - processPackages [picle]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-07 05:32:37] INFO root fetch - processPackages [picle]: Downloading https://files.pythonhosted.org/packages/04/54/32e5e1c850aedab376b9d685b9c264022600e788e82edbfa821feed4c51c/picle-0.4.0.tar.gz
+[2024-04-07 05:32:37] WARNING root fetch - processPackages [zsx-pack]: Skipping, unable to determine old version
+[2024-04-07 05:32:37] INFO root fetch - main [MainThread]: End processing [zsx-pack] error
+[2024-04-07 05:32:37] WARNING root fetch - processPackages [picle]: Timeout reached during download
+[2024-04-07 05:32:37] INFO root fetch - processPackages [picle]: Downloading https://files.pythonhosted.org/packages/ae/2f/bea5a433b587ba9dab1299288a47d36b3941dc1f70db211e7af666d52c71/picle-0.5.0.tar.gz
+[2024-04-07 05:32:37] WARNING root fetch - processPackages [picle]: Timeout reached during download
+[2024-04-07 05:32:37] INFO root fetch - processPackages [picle]: executing diffoscope
+[2024-04-07 05:32:37] INFO root fetch - processPackages [picle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/picle-0.4.0.tar.gz tmp/picle-0.5.0.tar.gz --markdown 20240407/p/picle/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2024-04-07 05:32:38] INFO root fetch - processPackages [picle]: Remove: archive file [/home/abi/fetcher/tmp/picle-0.4.0.tar.gz]
+[2024-04-07 05:32:38] INFO root fetch - processPackages [picle]: Remove: archive file [/home/abi/fetcher/tmp/picle-0.5.0.tar.gz]
+[2024-04-07 05:32:38] INFO root fetch - main [MainThread]: End processing [picle]: success
+[2024-04-07 05:32:38] INFO root fetch - main [MainThread]: Store serial: [22653268]
