@@ -9523,3 +9523,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 11:58:59] INFO root fetch - processPackages [feffery-antd-components]: Remove: archive file [/home/abi/fetcher/tmp/feffery_antd_components-0.3.0rc9.tar.gz]
 [2024-04-07 11:58:59] INFO root fetch - main [MainThread]: End processing [feffery-antd-components]: success
 [2024-04-07 11:58:59] INFO root fetch - main [MainThread]: Store serial: [22655230]
+[2024-04-07 12:01:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655230]
+[2024-04-07 12:01:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 12:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tulona
+[2024-04-07 12:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-jaxtyping
+[2024-04-07 12:01:10] INFO root fetch - processPackages [py-jaxtyping]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-07 12:01:10] INFO root fetch - processPackages [tulona]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-07 12:01:10] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/b5/14/1a5845e939b0a7c33eee4c9d3162db5785febd25d7f615838ed56f58a66d/tulona-0.2.4.tar.gz
+[2024-04-07 12:01:10] INFO root fetch - processPackages [py-jaxtyping]: Downloading https://files.pythonhosted.org/packages/87/53/a0b82a0212ee6eafe75af30a4dfe5af979e0ffb78b6a969757ff78741f40/py-jaxtyping-0.1.0.tar.gz
+[2024-04-07 12:01:10] WARNING root fetch - processPackages [tulona]: Timeout reached during download
+[2024-04-07 12:01:10] WARNING root fetch - processPackages [py-jaxtyping]: Timeout reached during download
+[2024-04-07 12:01:10] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/01/5d/0ed3fed00c4732082142cc3f4f4c4048b29edb52a1181aa4dea6d1701bc1/tulona-0.2.5.tar.gz
+[2024-04-07 12:01:10] INFO root fetch - processPackages [py-jaxtyping]: Downloading https://files.pythonhosted.org/packages/aa/99/3ddf588be23c38408f32c019841b399ad25fca46f2de67bb70c40c036d62/py-jaxtyping-0.1.1.tar.gz
+[2024-04-07 12:01:10] WARNING root fetch - processPackages [tulona]: Timeout reached during download
+[2024-04-07 12:01:10] INFO root fetch - processPackages [tulona]: executing diffoscope
+[2024-04-07 12:01:10] INFO root fetch - processPackages [tulona]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulona-0.2.4.tar.gz tmp/tulona-0.2.5.tar.gz --markdown 20240407/t/tulona/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2024-04-07 12:01:10] WARNING root fetch - processPackages [py-jaxtyping]: Timeout reached during download
+[2024-04-07 12:01:10] INFO root fetch - processPackages [py-jaxtyping]: executing diffoscope
+[2024-04-07 12:01:10] INFO root fetch - processPackages [py-jaxtyping]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-jaxtyping-0.1.0.tar.gz tmp/py-jaxtyping-0.1.1.tar.gz --markdown 20240407/p/py-jaxtyping/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 12:01:11] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.2.4.tar.gz]
+[2024-04-07 12:01:11] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.2.5.tar.gz]
+[2024-04-07 12:01:11] INFO root fetch - main [MainThread]: End processing [tulona]: success
+[2024-04-07 12:01:11] INFO root fetch - processPackages [py-jaxtyping]: Remove: archive file [/home/abi/fetcher/tmp/py-jaxtyping-0.1.0.tar.gz]
+[2024-04-07 12:01:11] INFO root fetch - processPackages [py-jaxtyping]: Remove: archive file [/home/abi/fetcher/tmp/py-jaxtyping-0.1.1.tar.gz]
+[2024-04-07 12:01:11] INFO root fetch - main [MainThread]: End processing [py-jaxtyping]: success
+[2024-04-07 12:01:11] INFO root fetch - main [MainThread]: Store serial: [22655254]
