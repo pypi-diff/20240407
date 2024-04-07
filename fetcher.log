@@ -16606,3 +16606,43 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:13:35] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.7.5.tar.gz]
 [2024-04-07 19:13:35] INFO root fetch - main [MainThread]: End processing [pypomes-core]: success
 [2024-04-07 19:13:35] INFO root fetch - main [MainThread]: Store serial: [22657842]
+[2024-04-07 19:15:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657842]
+[2024-04-07 19:15:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 19:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-04-07 19:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dgcloud
+[2024-04-07 19:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2024-04-07 19:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gammarer.aws-secure-bucket
+[2024-04-07 19:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spotify-win-cli
+[2024-04-07 19:15:44] WARNING root fetch - processPackages [dgcloud]: Skipping, unable to determine old version
+[2024-04-07 19:15:44] INFO root fetch - main [MainThread]: End processing [dgcloud] error
+[2024-04-07 19:15:44] WARNING root fetch - processPackages [spotify-win-cli]: Skipping, unable to determine old version
+[2024-04-07 19:15:44] INFO root fetch - main [MainThread]: End processing [spotify-win-cli] error
+[2024-04-07 19:15:44] INFO root fetch - processPackages [gammarer.aws-secure-bucket]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-07 19:15:45] INFO root fetch - processPackages [gammarer.aws-secure-bucket]: Downloading https://files.pythonhosted.org/packages/f4/fd/bf4393a9503d9abb11d85514ac0677e81821c9afde3bbe87b99d51106868/gammarer.aws-secure-bucket-1.2.0.tar.gz
+[2024-04-07 19:15:45] WARNING root fetch - processPackages [gammarer.aws-secure-bucket]: Timeout reached during download
+[2024-04-07 19:15:45] INFO root fetch - processPackages [gammarer.aws-secure-bucket]: Downloading https://files.pythonhosted.org/packages/4e/ad/a8a9a5fe6985bc5913179da355a1cb9f3bbabae96a7f9ac6e83bc128eaf1/gammarer.aws-secure-bucket-1.2.1.tar.gz
+[2024-04-07 19:15:45] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-07 19:15:45] WARNING root fetch - processPackages [gammarer.aws-secure-bucket]: Timeout reached during download
+[2024-04-07 19:15:45] INFO root fetch - processPackages [gammarer.aws-secure-bucket]: executing diffoscope
+[2024-04-07 19:15:45] INFO root fetch - processPackages [gammarer.aws-secure-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarer.aws-secure-bucket-1.2.0.tar.gz tmp/gammarer.aws-secure-bucket-1.2.1.tar.gz --markdown 20240407/g/gammarer.aws-secure-bucket/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2024-04-07 19:15:45] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-07 19:15:45] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-07 19:15:45] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-07 19:15:45] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-07 19:15:45] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-07 19:15:46] INFO root fetch - processPackages [gammarer.aws-secure-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-bucket-1.2.0.tar.gz]
+[2024-04-07 19:15:46] INFO root fetch - processPackages [gammarer.aws-secure-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-bucket-1.2.1.tar.gz]
+[2024-04-07 19:15:46] INFO root fetch - main [MainThread]: End processing [gammarer.aws-secure-bucket]: success
+[2024-04-07 19:15:46] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-07 19:15:46] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-07 19:15:46] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-07 19:15:46] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-07 19:15:46] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240407/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2024-04-07 19:15:46] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-07 19:15:46] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-07 19:15:46] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240407/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2024-04-07 19:15:46] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-04-07 19:15:46] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-04-07 19:15:46] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-07 19:15:46] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-07 19:15:46] INFO root fetch - main [MainThread]: Store serial: [22657859]
