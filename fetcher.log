@@ -10383,3 +10383,11 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:08:33] INFO root fetch - processPackages [weac]: Remove: archive file [/home/abi/fetcher/tmp/weac-2.5.2.tar.gz]
 [2024-04-07 13:08:33] INFO root fetch - main [MainThread]: End processing [weac]: success
 [2024-04-07 13:08:33] INFO root fetch - main [MainThread]: Store serial: [22655598]
+[2024-04-07 13:10:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655598]
+[2024-04-07 13:10:42] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 13:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-core-cpp
+[2024-04-07 13:10:42] INFO root fetch - processPackages [bigdl-core-cpp]: New version: [2.5.0b20240406] Old Version: [2.5.0b20240405]
+[2024-04-07 13:10:42] INFO root fetch - processPackages [bigdl-core-cpp]: Downloading https://files.pythonhosted.org/packages/a6/8a/6492a7f84b1b9dc12aa832d614077207fb152d51e9b5160a592d2ffdbadd/bigdl_core_cpp-2.5.0b20240405-py3-none-win_amd64.whl
+[2024-04-07 13:10:42] WARNING root fetch - processPackages [bigdl-core-cpp]: Skipping package: exceeds size limit 35509727>=10485760
+[2024-04-07 13:10:42] INFO root fetch - main [MainThread]: End processing [bigdl-core-cpp] error
+[2024-04-07 13:10:42] INFO root fetch - main [MainThread]: Store serial: [22655602]
