@@ -3873,3 +3873,39 @@
 [2024-04-07 05:21:46] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nightly-3.2.0.dev2024040503.tar.gz]
 [2024-04-07 05:21:46] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2024-04-07 05:21:46] INFO root fetch - main [MainThread]: Store serial: [22653189]
+[2024-04-07 05:23:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653189]
+[2024-04-07 05:23:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 05:23:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dash-spread-grid
+[2024-04-07 05:23:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aviatrix-discovery
+[2024-04-07 05:23:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aviatrix-migration
+[2024-04-07 05:23:54] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 05:23:54] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/3e/b3/8b140080110d2949af9088d903cfab83af1ed4a73952d08a9b55aa8d94d0/dash_spread_grid-0.0.2.tar.gz
+[2024-04-07 05:23:54] INFO root fetch - processPackages [aviatrix-discovery]: New version: [0.2.9] Old Version: [0.2.85]
+[2024-04-07 05:23:54] INFO root fetch - processPackages [aviatrix-migration]: New version: [0.2.85] Old Version: [0.2.84]
+[2024-04-07 05:23:54] WARNING root fetch - processPackages [dash-spread-grid]: Timeout reached during download
+[2024-04-07 05:23:54] INFO root fetch - processPackages [aviatrix-discovery]: Downloading https://files.pythonhosted.org/packages/8d/b3/09617a2c3867084edc5b1650445db00b6c60ad1f47b860ee2ce43c6f565b/aviatrix_discovery-0.2.85-cp39-cp39-win_amd64.whl
+[2024-04-07 05:23:54] INFO root fetch - processPackages [aviatrix-migration]: Downloading https://files.pythonhosted.org/packages/74/5a/3d0878d7cdec53bb2f95f97524c548abf1e7bfb1be0912ee1069de6e5787/aviatrix_migration-0.2.84-cp39-cp39-win_amd64.whl
+[2024-04-07 05:23:55] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/84/3e/6a7ff0e28ffc05c82b70277129eb185106df5e180e7e561ef4f4a46cc77d/dash_spread_grid-0.0.3.tar.gz
+[2024-04-07 05:23:55] WARNING root fetch - processPackages [aviatrix-discovery]: Timeout reached during download
+[2024-04-07 05:23:55] WARNING root fetch - processPackages [dash-spread-grid]: Timeout reached during download
+[2024-04-07 05:23:55] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-04-07 05:23:55] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.2.tar.gz tmp/dash_spread_grid-0.0.3.tar.gz --markdown 20240407/d/dash-spread-grid/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 05:23:55] INFO root fetch - processPackages [aviatrix-discovery]: Downloading https://files.pythonhosted.org/packages/18/ef/7d0c0938fbb6fab82da833245ac82adaa5314e519d3506c2a7972a598fe5/aviatrix_discovery-0.2.9-cp39-cp39-win_amd64.whl
+[2024-04-07 05:23:55] WARNING root fetch - processPackages [aviatrix-migration]: Timeout reached during download
+[2024-04-07 05:23:55] WARNING root fetch - processPackages [aviatrix-discovery]: Timeout reached during download
+[2024-04-07 05:23:55] INFO root fetch - processPackages [aviatrix-discovery]: executing diffoscope
+[2024-04-07 05:23:55] INFO root fetch - processPackages [aviatrix-discovery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aviatrix_discovery-0.2.85-cp39-cp39-win_amd64.whl.zip tmp/aviatrix_discovery-0.2.9-cp39-cp39-win_amd64.whl.zip --markdown 20240407/a/aviatrix-discovery/0.2.85-0.2.9/diff.md --exclude *.pyd
+[2024-04-07 05:23:55] INFO root fetch - processPackages [aviatrix-migration]: Downloading https://files.pythonhosted.org/packages/f9/ec/8fe19881b015050c879d31f333a6358bd9a686162d6fbf3486a4c6cbff0d/aviatrix_migration-0.2.85-cp39-cp39-win_amd64.whl
+[2024-04-07 05:23:56] INFO root fetch - processPackages [aviatrix-discovery]: Remove: archive file [/home/abi/fetcher/tmp/aviatrix_discovery-0.2.85-cp39-cp39-win_amd64.whl.zip]
+[2024-04-07 05:23:56] INFO root fetch - processPackages [aviatrix-discovery]: Remove: archive file [/home/abi/fetcher/tmp/aviatrix_discovery-0.2.9-cp39-cp39-win_amd64.whl.zip]
+[2024-04-07 05:23:56] INFO root fetch - main [MainThread]: End processing [aviatrix-discovery]: success
+[2024-04-07 05:23:56] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.2.tar.gz]
+[2024-04-07 05:23:56] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.3.tar.gz]
+[2024-04-07 05:23:56] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-04-07 05:23:56] WARNING root fetch - processPackages [aviatrix-migration]: Timeout reached during download
+[2024-04-07 05:23:56] INFO root fetch - processPackages [aviatrix-migration]: executing diffoscope
+[2024-04-07 05:23:56] INFO root fetch - processPackages [aviatrix-migration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aviatrix_migration-0.2.84-cp39-cp39-win_amd64.whl.zip tmp/aviatrix_migration-0.2.85-cp39-cp39-win_amd64.whl.zip --markdown 20240407/a/aviatrix-migration/0.2.84-0.2.85/diff.md --exclude *.pyd
+[2024-04-07 05:23:57] INFO root fetch - processPackages [aviatrix-migration]: Remove: archive file [/home/abi/fetcher/tmp/aviatrix_migration-0.2.84-cp39-cp39-win_amd64.whl.zip]
+[2024-04-07 05:23:57] INFO root fetch - processPackages [aviatrix-migration]: Remove: archive file [/home/abi/fetcher/tmp/aviatrix_migration-0.2.85-cp39-cp39-win_amd64.whl.zip]
+[2024-04-07 05:23:57] INFO root fetch - main [MainThread]: End processing [aviatrix-migration]: success
+[2024-04-07 05:23:57] INFO root fetch - main [MainThread]: Store serial: [22653238]
