@@ -17139,3 +17139,31 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:46:17] INFO root fetch - processPackages [postgresql-integration-test]: Remove: archive file [/home/abi/fetcher/tmp/postgresql-integration-test-0.0.2.tar.gz]
 [2024-04-07 19:46:17] INFO root fetch - main [MainThread]: End processing [postgresql-integration-test]: success
 [2024-04-07 19:46:17] INFO root fetch - main [MainThread]: Store serial: [22658047]
+[2024-04-07 19:48:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658047]
+[2024-04-07 19:48:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 19:48:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qstd-async-tools
+[2024-04-07 19:48:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: holboxai
+[2024-04-07 19:48:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: moto
+[2024-04-07 19:48:26] INFO root fetch - processPackages [holboxai]: New version: [0.9] Old Version: [0.8]
+[2024-04-07 19:48:26] INFO root fetch - processPackages [moto]: New version: [5.0.5.dev9] Old Version: [5.0.5.dev8]
+[2024-04-07 19:48:26] WARNING root fetch - processPackages [qstd-async-tools]: Skipping, unable to determine old version
+[2024-04-07 19:48:26] INFO root fetch - main [MainThread]: End processing [qstd-async-tools] error
+[2024-04-07 19:48:26] INFO root fetch - processPackages [holboxai]: Downloading https://files.pythonhosted.org/packages/19/b9/f451a3d2db1b97819fa90850e684986e080497db8d6e454c2e51317a4d52/holboxai-0.8.tar.gz
+[2024-04-07 19:48:26] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/ed/46/2a9361da84c96246dd0cc47567b9cdc7059baf5a4a390c4c1f43decbed34/moto-5.0.5.dev8.tar.gz
+[2024-04-07 19:48:27] WARNING root fetch - processPackages [holboxai]: Timeout reached during download
+[2024-04-07 19:48:27] INFO root fetch - processPackages [holboxai]: Downloading https://files.pythonhosted.org/packages/d4/61/cc151dd218d100f17a91f7ed69e6ede7fd7b6d4a9175097fad342846a047/holboxai-0.9.tar.gz
+[2024-04-07 19:48:27] WARNING root fetch - processPackages [moto]: Timeout reached during download
+[2024-04-07 19:48:27] WARNING root fetch - processPackages [holboxai]: Timeout reached during download
+[2024-04-07 19:48:27] INFO root fetch - processPackages [holboxai]: executing diffoscope
+[2024-04-07 19:48:27] INFO root fetch - processPackages [holboxai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/holboxai-0.8.tar.gz tmp/holboxai-0.9.tar.gz --markdown 20240407/h/holboxai/0.8-0.9/diff.md --exclude *.pyd
+[2024-04-07 19:48:28] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/08/c1/f93b75265b5128856f763bdb046a348f3952cca0dc9de2e9c1268050b7ba/moto-5.0.5.dev9.tar.gz
+[2024-04-07 19:48:28] INFO root fetch - processPackages [holboxai]: Remove: archive file [/home/abi/fetcher/tmp/holboxai-0.8.tar.gz]
+[2024-04-07 19:48:28] INFO root fetch - processPackages [holboxai]: Remove: archive file [/home/abi/fetcher/tmp/holboxai-0.9.tar.gz]
+[2024-04-07 19:48:28] INFO root fetch - main [MainThread]: End processing [holboxai]: success
+[2024-04-07 19:48:28] WARNING root fetch - processPackages [moto]: Timeout reached during download
+[2024-04-07 19:48:28] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-04-07 19:48:28] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.5.dev8.tar.gz tmp/moto-5.0.5.dev9.tar.gz --markdown 20240407/m/moto/5.0.5.dev8-5.0.5.dev9/diff.md --exclude *.pyd
+[2024-04-07 19:48:40] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.5.dev8.tar.gz]
+[2024-04-07 19:48:40] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.5.dev9.tar.gz]
+[2024-04-07 19:48:40] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-04-07 19:48:40] INFO root fetch - main [MainThread]: Store serial: [22658057]
