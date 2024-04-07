@@ -4683,3 +4683,17 @@
 [2024-04-07 06:33:17] INFO root fetch - processPackages [odoo14-addon-ssi-revenue-recognition]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_revenue_recognition-14.0.3.9.0-py3-none-any.whl.zip]
 [2024-04-07 06:33:17] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-revenue-recognition]: success
 [2024-04-07 06:33:17] INFO root fetch - main [MainThread]: Store serial: [22653465]
+[2024-04-07 06:35:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653465]
+[2024-04-07 06:35:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 06:35:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytector
+[2024-04-07 06:35:25] INFO root fetch - processPackages [pytector]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-07 06:35:25] INFO root fetch - processPackages [pytector]: Downloading https://files.pythonhosted.org/packages/4c/20/8d3a426c3b2e99e8f961908e3de74704b85c10afb974388298ce5615dae0/pytector-0.0.6.tar.gz
+[2024-04-07 06:35:25] WARNING root fetch - processPackages [pytector]: Timeout reached during download
+[2024-04-07 06:35:26] INFO root fetch - processPackages [pytector]: Downloading https://files.pythonhosted.org/packages/dd/23/16cdd49862d51c5e0391602868dcfd0fabdd13e4d2f40a7b678754fc7d08/pytector-0.0.7.tar.gz
+[2024-04-07 06:35:26] WARNING root fetch - processPackages [pytector]: Timeout reached during download
+[2024-04-07 06:35:26] INFO root fetch - processPackages [pytector]: executing diffoscope
+[2024-04-07 06:35:26] INFO root fetch - processPackages [pytector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytector-0.0.6.tar.gz tmp/pytector-0.0.7.tar.gz --markdown 20240407/p/pytector/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2024-04-07 06:35:26] INFO root fetch - processPackages [pytector]: Remove: archive file [/home/abi/fetcher/tmp/pytector-0.0.6.tar.gz]
+[2024-04-07 06:35:26] INFO root fetch - processPackages [pytector]: Remove: archive file [/home/abi/fetcher/tmp/pytector-0.0.7.tar.gz]
+[2024-04-07 06:35:26] INFO root fetch - main [MainThread]: End processing [pytector]: success
+[2024-04-07 06:35:26] INFO root fetch - main [MainThread]: Store serial: [22653468]
