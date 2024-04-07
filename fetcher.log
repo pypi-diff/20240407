@@ -4107,3 +4107,39 @@
 [2024-04-07 05:41:19] INFO root fetch - processPackages [lineagex]: Remove: archive file [/home/abi/fetcher/tmp/lineagex-0.0.9.tar.gz]
 [2024-04-07 05:41:19] INFO root fetch - main [MainThread]: End processing [lineagex]: success
 [2024-04-07 05:41:19] INFO root fetch - main [MainThread]: Store serial: [22653299]
+[2024-04-07 05:43:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653299]
+[2024-04-07 05:43:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 05:43:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PygameToolsBox
+[2024-04-07 05:43:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: feno
+[2024-04-07 05:43:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: litellm
+[2024-04-07 05:43:27] INFO root fetch - processPackages [PygameToolsBox]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-07 05:43:27] INFO root fetch - processPackages [litellm]: New version: [1.9.dev0] Old Version: [1.9.5]
+[2024-04-07 05:43:27] INFO root fetch - processPackages [feno]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-07 05:43:27] INFO root fetch - processPackages [PygameToolsBox]: Downloading https://files.pythonhosted.org/packages/8f/b9/33c1e2a76cf0c3e6be00b377979d1968913952933b4734c6ac4e8b5e6895/PygameToolsBox-1.1.1.tar.gz
+[2024-04-07 05:43:27] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/38/f3/1cbeaf4074e7b284cd140263ff165948d8f4cc8f5dd72c89be43a0469387/litellm-1.9.5.tar.gz
+[2024-04-07 05:43:27] INFO root fetch - processPackages [feno]: Downloading https://files.pythonhosted.org/packages/d3/80/6c2226abf8322e187b1a9b062332c0842b49c432e21e22459a52f77acf57/feno-0.1.3.tar.gz
+[2024-04-07 05:43:27] WARNING root fetch - processPackages [PygameToolsBox]: Timeout reached during download
+[2024-04-07 05:43:27] WARNING root fetch - processPackages [feno]: Timeout reached during download
+[2024-04-07 05:43:28] WARNING root fetch - processPackages [litellm]: Timeout reached during download
+[2024-04-07 05:43:28] INFO root fetch - processPackages [PygameToolsBox]: Downloading https://files.pythonhosted.org/packages/91/0c/cd3b4c32dd208f6154bc07fa0a881e85c0a034f0877ca1b43d0432ede3a5/PygameToolsBox-1.1.2.tar.gz
+[2024-04-07 05:43:28] INFO root fetch - processPackages [feno]: Downloading https://files.pythonhosted.org/packages/56/20/305a1883e437039cf037249d331997848caaf24c8102a195a81048c0df43/feno-0.1.4.tar.gz
+[2024-04-07 05:43:28] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/ad/6c/162b83e9cf68f5a94c30153e835414c3ee11c8602ffaacc9a032851dfa26/litellm-1.9.dev0.tar.gz
+[2024-04-07 05:43:28] WARNING root fetch - processPackages [PygameToolsBox]: Timeout reached during download
+[2024-04-07 05:43:28] INFO root fetch - processPackages [PygameToolsBox]: executing diffoscope
+[2024-04-07 05:43:28] INFO root fetch - processPackages [PygameToolsBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PygameToolsBox-1.1.1.tar.gz tmp/PygameToolsBox-1.1.2.tar.gz --markdown 20240407/P/PygameToolsBox/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2024-04-07 05:43:28] WARNING root fetch - processPackages [feno]: Timeout reached during download
+[2024-04-07 05:43:28] INFO root fetch - processPackages [feno]: executing diffoscope
+[2024-04-07 05:43:28] INFO root fetch - processPackages [feno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feno-0.1.3.tar.gz tmp/feno-0.1.4.tar.gz --markdown 20240407/f/feno/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2024-04-07 05:43:28] WARNING root fetch - processPackages [litellm]: Timeout reached during download
+[2024-04-07 05:43:28] INFO root fetch - processPackages [litellm]: executing diffoscope
+[2024-04-07 05:43:28] INFO root fetch - processPackages [litellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm-1.9.5.tar.gz tmp/litellm-1.9.dev0.tar.gz --markdown 20240407/l/litellm/1.9.5-1.9.dev0/diff.md --exclude *.pyd
+[2024-04-07 05:43:28] INFO root fetch - processPackages [PygameToolsBox]: Remove: archive file [/home/abi/fetcher/tmp/PygameToolsBox-1.1.1.tar.gz]
+[2024-04-07 05:43:28] INFO root fetch - processPackages [PygameToolsBox]: Remove: archive file [/home/abi/fetcher/tmp/PygameToolsBox-1.1.2.tar.gz]
+[2024-04-07 05:43:28] INFO root fetch - main [MainThread]: End processing [PygameToolsBox]: success
+[2024-04-07 05:43:28] INFO root fetch - processPackages [feno]: Remove: archive file [/home/abi/fetcher/tmp/feno-0.1.3.tar.gz]
+[2024-04-07 05:43:28] INFO root fetch - processPackages [feno]: Remove: archive file [/home/abi/fetcher/tmp/feno-0.1.4.tar.gz]
+[2024-04-07 05:43:28] INFO root fetch - main [MainThread]: End processing [feno]: success
+[2024-04-07 05:43:29] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.5.tar.gz]
+[2024-04-07 05:43:29] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
+[2024-04-07 05:43:29] INFO root fetch - main [MainThread]: End processing [litellm]: success
+[2024-04-07 05:43:29] INFO root fetch - main [MainThread]: Store serial: [22653308]
