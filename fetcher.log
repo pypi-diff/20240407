@@ -20065,3 +20065,20 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:45:42] INFO root fetch - processPackages [hexdoc]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc-1!0.1.0a9.tar.gz]
 [2024-04-07 22:45:42] INFO root fetch - main [MainThread]: End processing [hexdoc]: success
 [2024-04-07 22:45:42] INFO root fetch - main [MainThread]: Store serial: [22659179]
+[2024-04-07 22:47:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659179]
+[2024-04-07 22:47:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 22:47:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FNews
+[2024-04-07 22:47:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EasyOutput
+[2024-04-07 22:47:51] WARNING root fetch - processPackages [FNews]: Skipping, unable to determine old version
+[2024-04-07 22:47:51] INFO root fetch - main [MainThread]: End processing [FNews] error
+[2024-04-07 22:47:51] INFO root fetch - processPackages [EasyOutput]: New version: [0.0.9] Old Version: [0.0.8.1]
+[2024-04-07 22:47:51] INFO root fetch - processPackages [EasyOutput]: Downloading https://files.pythonhosted.org/packages/e5/62/323a96a5ce1539dd91ad6f347b2ee81c1c8c492bc71a6f951a627dbcd7a8/easyoutput-0.0.8.1.tar.gz
+[2024-04-07 22:47:51] WARNING root fetch - processPackages [EasyOutput]: Timeout reached during download
+[2024-04-07 22:47:51] INFO root fetch - processPackages [EasyOutput]: Downloading https://files.pythonhosted.org/packages/62/47/a1d99d9401b1fbb047e21ea90ba6a0d8c584c0de62de1fe55233175d5be9/easyoutput-0.0.9.tar.gz
+[2024-04-07 22:47:51] WARNING root fetch - processPackages [EasyOutput]: Timeout reached during download
+[2024-04-07 22:47:51] INFO root fetch - processPackages [EasyOutput]: executing diffoscope
+[2024-04-07 22:47:51] INFO root fetch - processPackages [EasyOutput]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyoutput-0.0.8.1.tar.gz tmp/easyoutput-0.0.9.tar.gz --markdown 20240407/E/EasyOutput/0.0.8.1-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 22:47:52] INFO root fetch - processPackages [EasyOutput]: Remove: archive file [/home/abi/fetcher/tmp/easyoutput-0.0.8.1.tar.gz]
+[2024-04-07 22:47:52] INFO root fetch - processPackages [EasyOutput]: Remove: archive file [/home/abi/fetcher/tmp/easyoutput-0.0.9.tar.gz]
+[2024-04-07 22:47:52] INFO root fetch - main [MainThread]: End processing [EasyOutput]: success
+[2024-04-07 22:47:52] INFO root fetch - main [MainThread]: Store serial: [22659187]
