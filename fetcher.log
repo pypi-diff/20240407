@@ -2103,3 +2103,20 @@
 [2024-04-07 03:20:04] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.97.tar.gz]
 [2024-04-07 03:20:04] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2024-04-07 03:20:04] INFO root fetch - main [MainThread]: Store serial: [22652574]
+[2024-04-07 03:22:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652574]
+[2024-04-07 03:22:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 03:22:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-snowflake
+[2024-04-07 03:22:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unstable-reader
+[2024-04-07 03:22:15] WARNING root fetch - processPackages [unstable-reader]: Skipping, unable to determine old version
+[2024-04-07 03:22:15] INFO root fetch - main [MainThread]: End processing [unstable-reader] error
+[2024-04-07 03:22:15] INFO root fetch - processPackages [django-snowflake]: New version: [5.0.3] Old Version: [5.0.2]
+[2024-04-07 03:22:15] INFO root fetch - processPackages [django-snowflake]: Downloading https://files.pythonhosted.org/packages/f2/b0/488cff57e63e3ca0ecf734ad2392ffa46526d6986beba16027495de68628/django-snowflake-5.0.2.tar.gz
+[2024-04-07 03:22:15] WARNING root fetch - processPackages [django-snowflake]: Timeout reached during download
+[2024-04-07 03:22:15] INFO root fetch - processPackages [django-snowflake]: Downloading https://files.pythonhosted.org/packages/10/50/5ff38ec332d31033fd07873ea148bfc4b8cbb4232f37cd0b2e886a37f6a7/django-snowflake-5.0.3.tar.gz
+[2024-04-07 03:22:15] WARNING root fetch - processPackages [django-snowflake]: Timeout reached during download
+[2024-04-07 03:22:15] INFO root fetch - processPackages [django-snowflake]: executing diffoscope
+[2024-04-07 03:22:15] INFO root fetch - processPackages [django-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-snowflake-5.0.2.tar.gz tmp/django-snowflake-5.0.3.tar.gz --markdown 20240407/d/django-snowflake/5.0.2-5.0.3/diff.md --exclude *.pyd
+[2024-04-07 03:22:16] INFO root fetch - processPackages [django-snowflake]: Remove: archive file [/home/abi/fetcher/tmp/django-snowflake-5.0.2.tar.gz]
+[2024-04-07 03:22:16] INFO root fetch - processPackages [django-snowflake]: Remove: archive file [/home/abi/fetcher/tmp/django-snowflake-5.0.3.tar.gz]
+[2024-04-07 03:22:16] INFO root fetch - main [MainThread]: End processing [django-snowflake]: success
+[2024-04-07 03:22:16] INFO root fetch - main [MainThread]: Store serial: [22652583]
