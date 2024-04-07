@@ -14963,3 +14963,86 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:41:43] INFO root fetch - processPackages [nettowel]: Remove: archive file [/home/abi/fetcher/tmp/nettowel-0.6.0.tar.gz]
 [2024-04-07 17:41:43] INFO root fetch - main [MainThread]: End processing [nettowel]: success
 [2024-04-07 17:41:43] INFO root fetch - main [MainThread]: Store serial: [22657258]
+[2024-04-07 17:43:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657258]
+[2024-04-07 17:43:52] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-07 17:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: songfinder
+[2024-04-07 17:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: songfindercli
+[2024-04-07 17:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tjfu
+[2024-04-07 17:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: narwhals
+[2024-04-07 17:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: slinn
+[2024-04-07 17:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: oru2xds
+[2024-04-07 17:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: devopsdriver
+[2024-04-07 17:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kkpyai
+[2024-04-07 17:43:52] INFO root fetch - processPackages [slinn]: New version: [2.2.2] Old Version: [2.2.0]
+[2024-04-07 17:43:52] WARNING root fetch - processPackages [kkpyai]: Skipping, unable to determine old version
+[2024-04-07 17:43:52] INFO root fetch - main [MainThread]: End processing [kkpyai] error
+[2024-04-07 17:43:52] INFO root fetch - processPackages [oru2xds]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-07 17:43:52] INFO root fetch - processPackages [devopsdriver]: New version: [0.1.39] Old Version: [0.1.37]
+[2024-04-07 17:43:52] INFO root fetch - processPackages [slinn]: Downloading https://files.pythonhosted.org/packages/4e/60/67f8b5e6ea7161699cc05ccae0c72f864e268503d9694dbd099da3b3e4af/slinn-2.2.0.tar.gz
+[2024-04-07 17:43:52] INFO root fetch - processPackages [oru2xds]: Downloading https://files.pythonhosted.org/packages/30/84/c1d703dc028c105d23e8bd6025d8a21bea79336316fed5e772284e51fac8/oru2xds-2.0.8.tar.gz
+[2024-04-07 17:43:52] INFO root fetch - processPackages [tjfu]: New version: [3.1.0] Old Version: [3.0.0]
+[2024-04-07 17:43:52] INFO root fetch - processPackages [devopsdriver]: Downloading https://files.pythonhosted.org/packages/4e/73/9137ce746440781c8aab3c0b6c43a20decb8abcce345ee3188e589e9c032/devopsdriver-0.1.37.tar.gz
+[2024-04-07 17:43:52] INFO root fetch - processPackages [narwhals]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-07 17:43:52] INFO root fetch - processPackages [songfindercli]: New version: [0.9.7] Old Version: [0.9.5]
+[2024-04-07 17:43:52] INFO root fetch - processPackages [songfinder]: New version: [0.9.7] Old Version: [0.9.5]
+[2024-04-07 17:43:52] WARNING root fetch - processPackages [slinn]: Timeout reached during download
+[2024-04-07 17:43:52] WARNING root fetch - processPackages [oru2xds]: Timeout reached during download
+[2024-04-07 17:43:52] INFO root fetch - processPackages [tjfu]: Downloading https://files.pythonhosted.org/packages/a3/52/6eac71b8351c500f3f2211d0065e14735156bcac78cd0d25542200589b65/tjfu-3.0.0.tar.gz
+[2024-04-07 17:43:52] INFO root fetch - processPackages [songfindercli]: Downloading https://files.pythonhosted.org/packages/16/db/126ee764619b1e3e11bac4b35631a31c33c2c836bb9825d65347861e1e48/songfindercli-0.9.5-py3-none-any.whl
+[2024-04-07 17:43:52] INFO root fetch - processPackages [narwhals]: Downloading https://files.pythonhosted.org/packages/e9/b0/5d4cebdfc1af7026e72d6359f9b774b6fe68419f425d81996d3095cd15c1/narwhals-0.7.8.tar.gz
+[2024-04-07 17:43:52] INFO root fetch - processPackages [oru2xds]: Downloading https://files.pythonhosted.org/packages/2b/b6/fd060e2ee4a6f2bd68e4d1be3622482196f992387c487cf50fe6d3315563/oru2xds-2.0.9.tar.gz
+[2024-04-07 17:43:52] WARNING root fetch - processPackages [devopsdriver]: Timeout reached during download
+[2024-04-07 17:43:52] INFO root fetch - processPackages [songfinder]: Downloading https://files.pythonhosted.org/packages/a4/ad/9182e05cd8b08d52fcc4a76126a30fc9f524025f3e4c573acdb778f54a23/songfinder-0.9.5-py3-none-any.whl
+[2024-04-07 17:43:52] INFO root fetch - processPackages [slinn]: Downloading https://files.pythonhosted.org/packages/74/33/873a1620973375bb1b1e02caac21c05b89a0e7ea61de16d76b8aefc277a0/slinn-2.2.2.tar.gz
+[2024-04-07 17:43:52] WARNING root fetch - processPackages [oru2xds]: Timeout reached during download
+[2024-04-07 17:43:52] INFO root fetch - processPackages [oru2xds]: executing diffoscope
+[2024-04-07 17:43:52] INFO root fetch - processPackages [oru2xds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oru2xds-2.0.8.tar.gz tmp/oru2xds-2.0.9.tar.gz --markdown 20240407/o/oru2xds/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2024-04-07 17:43:52] WARNING root fetch - processPackages [tjfu]: Timeout reached during download
+[2024-04-07 17:43:52] WARNING root fetch - processPackages [narwhals]: Timeout reached during download
+[2024-04-07 17:43:52] WARNING root fetch - processPackages [slinn]: Timeout reached during download
+[2024-04-07 17:43:52] INFO root fetch - processPackages [slinn]: executing diffoscope
+[2024-04-07 17:43:52] INFO root fetch - processPackages [slinn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slinn-2.2.0.tar.gz tmp/slinn-2.2.2.tar.gz --markdown 20240407/s/slinn/2.2.0-2.2.2/diff.md --exclude *.pyd
+[2024-04-07 17:43:52] WARNING root fetch - processPackages [songfinder]: Timeout reached during download
+[2024-04-07 17:43:52] INFO root fetch - processPackages [devopsdriver]: Downloading https://files.pythonhosted.org/packages/cb/0e/69267afa24a9d455f06454568ec8594cb6653e5b9be86d97c5610bee1d15/devopsdriver-0.1.39.tar.gz
+[2024-04-07 17:43:52] WARNING root fetch - processPackages [songfindercli]: Timeout reached during download
+[2024-04-07 17:43:52] INFO root fetch - processPackages [tjfu]: Downloading https://files.pythonhosted.org/packages/98/d7/20587430f900904475f5d621ba39ddb0153bd117ad1b257d8798d97c0456/tjfu-3.1.0.tar.gz
+[2024-04-07 17:43:53] WARNING root fetch - processPackages [devopsdriver]: Timeout reached during download
+[2024-04-07 17:43:53] INFO root fetch - processPackages [devopsdriver]: executing diffoscope
+[2024-04-07 17:43:53] INFO root fetch - processPackages [devopsdriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devopsdriver-0.1.37.tar.gz tmp/devopsdriver-0.1.39.tar.gz --markdown 20240407/d/devopsdriver/0.1.37-0.1.39/diff.md --exclude *.pyd
+[2024-04-07 17:43:53] INFO root fetch - processPackages [songfinder]: Downloading https://files.pythonhosted.org/packages/58/a4/8d6ec2246f1d896b47cb78752c0e9be1b58f3bcd7d8fa589ca5bb37cf07a/songfinder-0.9.7-py3-none-any.whl
+[2024-04-07 17:43:53] INFO root fetch - processPackages [narwhals]: Downloading https://files.pythonhosted.org/packages/8e/b0/b325b1fa81ccb08d9d018240ecf5c29d300745e2541cbc4f1aef9cc4a06a/narwhals-0.7.9.tar.gz
+[2024-04-07 17:43:53] WARNING root fetch - processPackages [tjfu]: Timeout reached during download
+[2024-04-07 17:43:53] INFO root fetch - processPackages [tjfu]: executing diffoscope
+[2024-04-07 17:43:53] INFO root fetch - processPackages [tjfu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tjfu-3.0.0.tar.gz tmp/tjfu-3.1.0.tar.gz --markdown 20240407/t/tjfu/3.0.0-3.1.0/diff.md --exclude *.pyd
+[2024-04-07 17:43:53] INFO root fetch - processPackages [songfindercli]: Downloading https://files.pythonhosted.org/packages/33/3b/641deefaf0e91cf6a1df5eba6ee91bd111b880aa2e6b3fb259217b9e0459/songfindercli-0.9.7-py3-none-any.whl
+[2024-04-07 17:43:53] WARNING root fetch - processPackages [narwhals]: Timeout reached during download
+[2024-04-07 17:43:53] INFO root fetch - processPackages [narwhals]: executing diffoscope
+[2024-04-07 17:43:53] INFO root fetch - processPackages [narwhals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/narwhals-0.7.8.tar.gz tmp/narwhals-0.7.9.tar.gz --markdown 20240407/n/narwhals/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2024-04-07 17:43:53] WARNING root fetch - processPackages [songfinder]: Timeout reached during download
+[2024-04-07 17:43:53] INFO root fetch - processPackages [songfinder]: executing diffoscope
+[2024-04-07 17:43:53] INFO root fetch - processPackages [songfinder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/songfinder-0.9.5-py3-none-any.whl.zip tmp/songfinder-0.9.7-py3-none-any.whl.zip --markdown 20240407/s/songfinder/0.9.5-0.9.7/diff.md --exclude *.pyd
+[2024-04-07 17:43:53] INFO root fetch - processPackages [oru2xds]: Remove: archive file [/home/abi/fetcher/tmp/oru2xds-2.0.8.tar.gz]
+[2024-04-07 17:43:53] INFO root fetch - processPackages [oru2xds]: Remove: archive file [/home/abi/fetcher/tmp/oru2xds-2.0.9.tar.gz]
+[2024-04-07 17:43:53] INFO root fetch - main [MainThread]: End processing [oru2xds]: success
+[2024-04-07 17:43:53] WARNING root fetch - processPackages [songfindercli]: Timeout reached during download
+[2024-04-07 17:43:53] INFO root fetch - processPackages [songfindercli]: executing diffoscope
+[2024-04-07 17:43:53] INFO root fetch - processPackages [songfindercli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/songfindercli-0.9.5-py3-none-any.whl.zip tmp/songfindercli-0.9.7-py3-none-any.whl.zip --markdown 20240407/s/songfindercli/0.9.5-0.9.7/diff.md --exclude *.pyd
+[2024-04-07 17:43:53] INFO root fetch - processPackages [slinn]: Remove: archive file [/home/abi/fetcher/tmp/slinn-2.2.0.tar.gz]
+[2024-04-07 17:43:53] INFO root fetch - processPackages [slinn]: Remove: archive file [/home/abi/fetcher/tmp/slinn-2.2.2.tar.gz]
+[2024-04-07 17:43:53] INFO root fetch - main [MainThread]: End processing [slinn]: success
+[2024-04-07 17:43:53] INFO root fetch - processPackages [tjfu]: Remove: archive file [/home/abi/fetcher/tmp/tjfu-3.0.0.tar.gz]
+[2024-04-07 17:43:53] INFO root fetch - processPackages [tjfu]: Remove: archive file [/home/abi/fetcher/tmp/tjfu-3.1.0.tar.gz]
+[2024-04-07 17:43:53] INFO root fetch - main [MainThread]: End processing [tjfu]: success
+[2024-04-07 17:43:53] INFO root fetch - processPackages [devopsdriver]: Remove: archive file [/home/abi/fetcher/tmp/devopsdriver-0.1.37.tar.gz]
+[2024-04-07 17:43:53] INFO root fetch - processPackages [devopsdriver]: Remove: archive file [/home/abi/fetcher/tmp/devopsdriver-0.1.39.tar.gz]
+[2024-04-07 17:43:53] INFO root fetch - main [MainThread]: End processing [devopsdriver]: success
+[2024-04-07 17:43:54] INFO root fetch - processPackages [songfinder]: Remove: archive file [/home/abi/fetcher/tmp/songfinder-0.9.5-py3-none-any.whl.zip]
+[2024-04-07 17:43:54] INFO root fetch - processPackages [songfinder]: Remove: archive file [/home/abi/fetcher/tmp/songfinder-0.9.7-py3-none-any.whl.zip]
+[2024-04-07 17:43:54] INFO root fetch - main [MainThread]: End processing [songfinder]: success
+[2024-04-07 17:43:54] INFO root fetch - processPackages [narwhals]: Remove: archive file [/home/abi/fetcher/tmp/narwhals-0.7.8.tar.gz]
+[2024-04-07 17:43:54] INFO root fetch - processPackages [narwhals]: Remove: archive file [/home/abi/fetcher/tmp/narwhals-0.7.9.tar.gz]
+[2024-04-07 17:43:54] INFO root fetch - main [MainThread]: End processing [narwhals]: success
+[2024-04-07 17:43:54] INFO root fetch - processPackages [songfindercli]: Remove: archive file [/home/abi/fetcher/tmp/songfindercli-0.9.5-py3-none-any.whl.zip]
+[2024-04-07 17:43:54] INFO root fetch - processPackages [songfindercli]: Remove: archive file [/home/abi/fetcher/tmp/songfindercli-0.9.7-py3-none-any.whl.zip]
+[2024-04-07 17:43:54] INFO root fetch - main [MainThread]: End processing [songfindercli]: success
+[2024-04-07 17:43:54] INFO root fetch - main [MainThread]: Store serial: [22657280]
