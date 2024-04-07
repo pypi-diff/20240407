@@ -13107,3 +13107,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:05:17] INFO root fetch - processPackages [z4d-certified-devices]: Remove: archive file [/home/abi/fetcher/tmp/z4d-certified-devices-4.251.tar.gz]
 [2024-04-07 16:05:17] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
 [2024-04-07 16:05:17] INFO root fetch - main [MainThread]: Store serial: [22656659]
+[2024-04-07 16:07:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656659]
+[2024-04-07 16:07:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 16:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: systembridgebackend
+[2024-04-07 16:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sourcesage
+[2024-04-07 16:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gouge
+[2024-04-07 16:07:27] INFO root fetch - processPackages [gouge]: New version: [2.2] Old Version: [2.1]
+[2024-04-07 16:07:27] INFO root fetch - processPackages [sourcesage]: New version: [4.0.9] Old Version: [4.0.8]
+[2024-04-07 16:07:27] INFO root fetch - processPackages [systembridgebackend]: New version: [4.2.2] Old Version: [4.2.1]
+[2024-04-07 16:07:27] INFO root fetch - processPackages [gouge]: Downloading https://files.pythonhosted.org/packages/32/71/815bd38a37b702be45b6cadc215049132c743991d926d46007c3897419d4/gouge-2.1.tar.gz
+[2024-04-07 16:07:27] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/53/ad/0a94732e2c9b70d4140a091aa95da8f14b71f5c05430e28ca454dd151571/sourcesage-4.0.8.tar.gz
+[2024-04-07 16:07:27] INFO root fetch - processPackages [systembridgebackend]: Downloading https://files.pythonhosted.org/packages/e9/27/10ad9f875bb352ff84c776f0ee01e3a56023a5ab08c67b4b4ce3d74f4c99/systembridgebackend-4.2.1.tar.gz
+[2024-04-07 16:07:27] WARNING root fetch - processPackages [sourcesage]: Timeout reached during download
+[2024-04-07 16:07:27] WARNING root fetch - processPackages [systembridgebackend]: Timeout reached during download
+[2024-04-07 16:07:27] WARNING root fetch - processPackages [gouge]: Timeout reached during download
+[2024-04-07 16:07:27] INFO root fetch - processPackages [gouge]: Downloading https://files.pythonhosted.org/packages/46/9f/39f31945b028c444b439ad369b626142ec291a7134ae91d08028a1b9a0ba/gouge-2.2.tar.gz
+[2024-04-07 16:07:27] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/ca/64/8ca9fec7286b0648ebe8224d4bd0e7190c6d20738e2c7ceb5f5c89f2346b/sourcesage-4.0.9.tar.gz
+[2024-04-07 16:07:27] INFO root fetch - processPackages [systembridgebackend]: Downloading https://files.pythonhosted.org/packages/08/a0/4a02bf81e4c8e2dc5ea24a9fa61adb3df44159d4c3836a5b8c8472b20f9a/systembridgebackend-4.2.2.tar.gz
+[2024-04-07 16:07:27] WARNING root fetch - processPackages [gouge]: Timeout reached during download
+[2024-04-07 16:07:27] INFO root fetch - processPackages [gouge]: executing diffoscope
+[2024-04-07 16:07:27] INFO root fetch - processPackages [gouge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gouge-2.1.tar.gz tmp/gouge-2.2.tar.gz --markdown 20240407/g/gouge/2.1-2.2/diff.md --exclude *.pyd
+[2024-04-07 16:07:27] WARNING root fetch - processPackages [sourcesage]: Timeout reached during download
+[2024-04-07 16:07:27] INFO root fetch - processPackages [sourcesage]: executing diffoscope
+[2024-04-07 16:07:27] INFO root fetch - processPackages [sourcesage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sourcesage-4.0.8.tar.gz tmp/sourcesage-4.0.9.tar.gz --markdown 20240407/s/sourcesage/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2024-04-07 16:07:27] WARNING root fetch - processPackages [systembridgebackend]: Timeout reached during download
+[2024-04-07 16:07:27] INFO root fetch - processPackages [systembridgebackend]: executing diffoscope
+[2024-04-07 16:07:27] INFO root fetch - processPackages [systembridgebackend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systembridgebackend-4.2.1.tar.gz tmp/systembridgebackend-4.2.2.tar.gz --markdown 20240407/s/systembridgebackend/4.2.1-4.2.2/diff.md --exclude *.pyd
+[2024-04-07 16:07:28] INFO root fetch - processPackages [systembridgebackend]: Remove: archive file [/home/abi/fetcher/tmp/systembridgebackend-4.2.1.tar.gz]
+[2024-04-07 16:07:28] INFO root fetch - processPackages [systembridgebackend]: Remove: archive file [/home/abi/fetcher/tmp/systembridgebackend-4.2.2.tar.gz]
+[2024-04-07 16:07:28] INFO root fetch - main [MainThread]: End processing [systembridgebackend]: success
+[2024-04-07 16:07:28] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.0.8.tar.gz]
+[2024-04-07 16:07:28] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.0.9.tar.gz]
+[2024-04-07 16:07:28] INFO root fetch - main [MainThread]: End processing [sourcesage]: success
+[2024-04-07 16:07:28] INFO root fetch - processPackages [gouge]: Remove: archive file [/home/abi/fetcher/tmp/gouge-2.1.tar.gz]
+[2024-04-07 16:07:28] INFO root fetch - processPackages [gouge]: Remove: archive file [/home/abi/fetcher/tmp/gouge-2.2.tar.gz]
+[2024-04-07 16:07:28] INFO root fetch - main [MainThread]: End processing [gouge]: success
+[2024-04-07 16:07:28] INFO root fetch - main [MainThread]: Store serial: [22656668]
