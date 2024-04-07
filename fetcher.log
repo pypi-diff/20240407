@@ -15256,3 +15256,67 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:52:34] INFO root fetch - processPackages [eyepop]: Remove: archive file [/home/abi/fetcher/tmp/eyepop-0.9.2.tar.gz]
 [2024-04-07 17:52:34] INFO root fetch - main [MainThread]: End processing [eyepop]: success
 [2024-04-07 17:52:34] INFO root fetch - main [MainThread]: Store serial: [22657362]
+[2024-04-07 17:54:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657362]
+[2024-04-07 17:54:43] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-07 17:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ib-core
+[2024-04-07 17:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: example-package-TonySeah
+[2024-04-07 17:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smartcitizen-connector
+[2024-04-07 17:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: composio-core
+[2024-04-07 17:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: composio-langchain
+[2024-04-07 17:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: composio-crewai
+[2024-04-07 17:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: composio-autogen
+[2024-04-07 17:54:43] INFO root fetch - processPackages [composio-autogen]: New version: [0.1.78] Old Version: [0.1.77]
+[2024-04-07 17:54:43] INFO root fetch - processPackages [composio-core]: New version: [0.1.78] Old Version: [0.1.77]
+[2024-04-07 17:54:43] WARNING root fetch - processPackages [ib-core]: Skipping, unable to determine old version
+[2024-04-07 17:54:43] INFO root fetch - main [MainThread]: End processing [ib-core] error
+[2024-04-07 17:54:43] INFO root fetch - processPackages [composio-crewai]: New version: [0.1.78] Old Version: [0.1.77]
+[2024-04-07 17:54:43] INFO root fetch - processPackages [composio-langchain]: New version: [0.1.78] Old Version: [0.1.77]
+[2024-04-07 17:54:43] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/86/22/955421724f23ccadc6f0c42cf50c7df520b7ae1d244a81b11bf7a19ca846/composio_crewai-0.1.77.tar.gz
+[2024-04-07 17:54:43] WARNING root fetch - processPackages [example-package-TonySeah]: Skipping, unable to determine old version
+[2024-04-07 17:54:43] INFO root fetch - main [MainThread]: End processing [example-package-TonySeah] error
+[2024-04-07 17:54:43] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/1d/be/9705d4c705ebf94c5492848e12d32e86733979bc9bd24be65ae690ce6309/composio_autogen-0.1.77.tar.gz
+[2024-04-07 17:54:43] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/0d/e5/c11d8f2ac241dc3bdf5333bd207deac1a6c950e64c0481e4042971bdc96f/composio_core-0.1.77.tar.gz
+[2024-04-07 17:54:44] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/79/da/2256dabd156aaebbe20943dad81850679d7802804f9e5a77ff33a692d0ca/composio_langchain-0.1.77.tar.gz
+[2024-04-07 17:54:44] WARNING root fetch - processPackages [composio-crewai]: Timeout reached during download
+[2024-04-07 17:54:44] WARNING root fetch - processPackages [composio-autogen]: Timeout reached during download
+[2024-04-07 17:54:44] WARNING root fetch - processPackages [composio-core]: Timeout reached during download
+[2024-04-07 17:54:44] INFO root fetch - processPackages [smartcitizen-connector]: New version: [1.0.0] Old Version: [0.2.0]
+[2024-04-07 17:54:44] WARNING root fetch - processPackages [composio-langchain]: Timeout reached during download
+[2024-04-07 17:54:44] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/d9/3d/499866812219a72224cd9101064efb2bf66589f65655da39a462119cd3bd/composio_crewai-0.1.78.tar.gz
+[2024-04-07 17:54:44] INFO root fetch - processPackages [smartcitizen-connector]: Downloading https://files.pythonhosted.org/packages/d7/2f/0c6cdddb3bf5cc849ccbe4e28ecffc2cb6e5b9a8ec908f7f4929917bab4a/smartcitizen-connector-0.2.0.tar.gz
+[2024-04-07 17:54:44] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/5e/6e/04ee8369af10870ba94c8a3349504e7f115162cab418f779ab537cc131f9/composio_autogen-0.1.78.tar.gz
+[2024-04-07 17:54:44] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/05/70/3a6c0b40bb2a0b3b0188081837a7c41f87dc488484b4222e20325865576b/composio_core-0.1.78.tar.gz
+[2024-04-07 17:54:44] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/de/49/390b8ad786d7201c5e1c07e73069c183561f1688ccc4cfa6a19a9030883b/composio_langchain-0.1.78.tar.gz
+[2024-04-07 17:54:44] WARNING root fetch - processPackages [composio-crewai]: Timeout reached during download
+[2024-04-07 17:54:44] INFO root fetch - processPackages [composio-crewai]: executing diffoscope
+[2024-04-07 17:54:44] INFO root fetch - processPackages [composio-crewai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_crewai-0.1.77.tar.gz tmp/composio_crewai-0.1.78.tar.gz --markdown 20240407/c/composio-crewai/0.1.77-0.1.78/diff.md --exclude *.pyd
+[2024-04-07 17:54:44] WARNING root fetch - processPackages [smartcitizen-connector]: Timeout reached during download
+[2024-04-07 17:54:44] WARNING root fetch - processPackages [composio-autogen]: Timeout reached during download
+[2024-04-07 17:54:44] INFO root fetch - processPackages [composio-autogen]: executing diffoscope
+[2024-04-07 17:54:44] INFO root fetch - processPackages [composio-autogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_autogen-0.1.77.tar.gz tmp/composio_autogen-0.1.78.tar.gz --markdown 20240407/c/composio-autogen/0.1.77-0.1.78/diff.md --exclude *.pyd
+[2024-04-07 17:54:44] WARNING root fetch - processPackages [composio-core]: Timeout reached during download
+[2024-04-07 17:54:44] INFO root fetch - processPackages [composio-core]: executing diffoscope
+[2024-04-07 17:54:44] INFO root fetch - processPackages [composio-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_core-0.1.77.tar.gz tmp/composio_core-0.1.78.tar.gz --markdown 20240407/c/composio-core/0.1.77-0.1.78/diff.md --exclude *.pyd
+[2024-04-07 17:54:44] WARNING root fetch - processPackages [composio-langchain]: Timeout reached during download
+[2024-04-07 17:54:44] INFO root fetch - processPackages [composio-langchain]: executing diffoscope
+[2024-04-07 17:54:44] INFO root fetch - processPackages [composio-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_langchain-0.1.77.tar.gz tmp/composio_langchain-0.1.78.tar.gz --markdown 20240407/c/composio-langchain/0.1.77-0.1.78/diff.md --exclude *.pyd
+[2024-04-07 17:54:44] INFO root fetch - processPackages [smartcitizen-connector]: Downloading https://files.pythonhosted.org/packages/72/b6/12bca61be37d2e24833eda34d9c5aebbc43744094a7bad930c74343b5d50/smartcitizen-connector-1.0.0.tar.gz
+[2024-04-07 17:54:44] WARNING root fetch - processPackages [smartcitizen-connector]: Timeout reached during download
+[2024-04-07 17:54:44] INFO root fetch - processPackages [smartcitizen-connector]: executing diffoscope
+[2024-04-07 17:54:44] INFO root fetch - processPackages [smartcitizen-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartcitizen-connector-0.2.0.tar.gz tmp/smartcitizen-connector-1.0.0.tar.gz --markdown 20240407/s/smartcitizen-connector/0.2.0-1.0.0/diff.md --exclude *.pyd
+[2024-04-07 17:54:45] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.1.77.tar.gz]
+[2024-04-07 17:54:45] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.1.78.tar.gz]
+[2024-04-07 17:54:45] INFO root fetch - main [MainThread]: End processing [composio-crewai]: success
+[2024-04-07 17:54:45] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.77.tar.gz]
+[2024-04-07 17:54:45] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.78.tar.gz]
+[2024-04-07 17:54:45] INFO root fetch - main [MainThread]: End processing [composio-core]: success
+[2024-04-07 17:54:45] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.77.tar.gz]
+[2024-04-07 17:54:45] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.78.tar.gz]
+[2024-04-07 17:54:45] INFO root fetch - main [MainThread]: End processing [composio-autogen]: success
+[2024-04-07 17:54:45] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.1.77.tar.gz]
+[2024-04-07 17:54:45] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.1.78.tar.gz]
+[2024-04-07 17:54:45] INFO root fetch - main [MainThread]: End processing [composio-langchain]: success
+[2024-04-07 17:54:45] INFO root fetch - processPackages [smartcitizen-connector]: Remove: archive file [/home/abi/fetcher/tmp/smartcitizen-connector-0.2.0.tar.gz]
+[2024-04-07 17:54:45] INFO root fetch - processPackages [smartcitizen-connector]: Remove: archive file [/home/abi/fetcher/tmp/smartcitizen-connector-1.0.0.tar.gz]
+[2024-04-07 17:54:45] INFO root fetch - main [MainThread]: End processing [smartcitizen-connector]: success
+[2024-04-07 17:54:45] INFO root fetch - main [MainThread]: Store serial: [22657384]
