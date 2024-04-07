@@ -9853,3 +9853,37 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 12:18:38] INFO root fetch - processPackages [mecord-cli]: Remove: archive file [/home/abi/fetcher/tmp/mecord-cli-0.7.9.tar.gz]
 [2024-04-07 12:18:38] INFO root fetch - main [MainThread]: End processing [mecord-cli]: success
 [2024-04-07 12:18:38] INFO root fetch - main [MainThread]: Store serial: [22655361]
+[2024-04-07 12:20:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655361]
+[2024-04-07 12:20:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 12:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: feishu-logging-handler
+[2024-04-07 12:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torch-fn
+[2024-04-07 12:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dltrain
+[2024-04-07 12:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: q2db
+[2024-04-07 12:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-adapter-satori
+[2024-04-07 12:20:47] WARNING root fetch - processPackages [feishu-logging-handler]: Skipping, unable to determine old version
+[2024-04-07 12:20:47] INFO root fetch - main [MainThread]: End processing [feishu-logging-handler] error
+[2024-04-07 12:20:47] WARNING root fetch - processPackages [dltrain]: Skipping, unable to determine old version
+[2024-04-07 12:20:47] INFO root fetch - main [MainThread]: End processing [dltrain] error
+[2024-04-07 12:20:47] INFO root fetch - processPackages [q2db]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 12:20:47] WARNING root fetch - processPackages [torch-fn]: Skipping, unable to determine old version
+[2024-04-07 12:20:47] INFO root fetch - main [MainThread]: End processing [torch-fn] error
+[2024-04-07 12:20:47] INFO root fetch - processPackages [nonebot-adapter-satori]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-07 12:20:47] INFO root fetch - processPackages [q2db]: Downloading https://files.pythonhosted.org/packages/17/38/79b233e045a339bde6d7f5231ab1078cdf7c948755cd92294ac52862b3f8/q2db-0.1.8.tar.gz
+[2024-04-07 12:20:47] INFO root fetch - processPackages [nonebot-adapter-satori]: Downloading https://files.pythonhosted.org/packages/38/9e/332ff095f0a58b1f2f01a556c59f3eb43d514cbd5de0e528f6566e765f8d/nonebot_adapter_satori-0.9.2.tar.gz
+[2024-04-07 12:20:47] WARNING root fetch - processPackages [q2db]: Timeout reached during download
+[2024-04-07 12:20:47] WARNING root fetch - processPackages [nonebot-adapter-satori]: Timeout reached during download
+[2024-04-07 12:20:47] INFO root fetch - processPackages [q2db]: Downloading https://files.pythonhosted.org/packages/5f/ad/9e4d5db2bcb37b0ac45071edbac7a5449963193849b9df003b9586649cf9/q2db-0.1.9.tar.gz
+[2024-04-07 12:20:47] WARNING root fetch - processPackages [q2db]: Timeout reached during download
+[2024-04-07 12:20:47] INFO root fetch - processPackages [q2db]: executing diffoscope
+[2024-04-07 12:20:47] INFO root fetch - processPackages [q2db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2db-0.1.8.tar.gz tmp/q2db-0.1.9.tar.gz --markdown 20240407/q/q2db/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 12:20:47] INFO root fetch - processPackages [nonebot-adapter-satori]: Downloading https://files.pythonhosted.org/packages/b4/63/45cf90e98509d6081103ac32e520e3fd73306f9f2d7ead8be5ece0680e16/nonebot_adapter_satori-0.9.3.tar.gz
+[2024-04-07 12:20:48] WARNING root fetch - processPackages [nonebot-adapter-satori]: Timeout reached during download
+[2024-04-07 12:20:48] INFO root fetch - processPackages [nonebot-adapter-satori]: executing diffoscope
+[2024-04-07 12:20:48] INFO root fetch - processPackages [nonebot-adapter-satori]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_adapter_satori-0.9.2.tar.gz tmp/nonebot_adapter_satori-0.9.3.tar.gz --markdown 20240407/n/nonebot-adapter-satori/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2024-04-07 12:20:48] INFO root fetch - processPackages [q2db]: Remove: archive file [/home/abi/fetcher/tmp/q2db-0.1.8.tar.gz]
+[2024-04-07 12:20:48] INFO root fetch - processPackages [q2db]: Remove: archive file [/home/abi/fetcher/tmp/q2db-0.1.9.tar.gz]
+[2024-04-07 12:20:48] INFO root fetch - main [MainThread]: End processing [q2db]: success
+[2024-04-07 12:20:48] INFO root fetch - processPackages [nonebot-adapter-satori]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_adapter_satori-0.9.2.tar.gz]
+[2024-04-07 12:20:48] INFO root fetch - processPackages [nonebot-adapter-satori]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_adapter_satori-0.9.3.tar.gz]
+[2024-04-07 12:20:48] INFO root fetch - main [MainThread]: End processing [nonebot-adapter-satori]: success
+[2024-04-07 12:20:48] INFO root fetch - main [MainThread]: Store serial: [22655378]
