@@ -20155,3 +20155,45 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:54:25] INFO root fetch - processPackages [gdpx]: Remove: archive file [/home/abi/fetcher/tmp/gdpx-0.0.6.tar.gz]
 [2024-04-07 22:54:25] INFO root fetch - main [MainThread]: End processing [gdpx]: success
 [2024-04-07 22:54:25] INFO root fetch - main [MainThread]: Store serial: [22659216]
+[2024-04-07 22:56:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659216]
+[2024-04-07 22:56:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 22:56:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FNews
+[2024-04-07 22:56:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: csv_test_package
+[2024-04-07 22:56:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CnbcNews
+[2024-04-07 22:56:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: slinn
+[2024-04-07 22:56:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: steelas
+[2024-04-07 22:56:34] INFO root fetch - processPackages [slinn]: New version: [2.2.4] Old Version: [2.2.3]
+[2024-04-07 22:56:34] INFO root fetch - processPackages [csv_test_package]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-07 22:56:34] WARNING root fetch - processPackages [CnbcNews]: Skipping, unable to determine old version
+[2024-04-07 22:56:34] INFO root fetch - main [MainThread]: End processing [CnbcNews] error
+[2024-04-07 22:56:34] INFO root fetch - processPackages [csv_test_package]: Downloading https://files.pythonhosted.org/packages/56/f4/0877d96e25131904019d255bb5eb668cddd0f55d7af0239b990427132a19/csv_test_package-0.1.4.tar.gz
+[2024-04-07 22:56:34] INFO root fetch - processPackages [slinn]: Downloading https://files.pythonhosted.org/packages/15/6f/984ef10fb322e0b6749775038f89aa4d61c1ee1a0ad8204c833763a04848/slinn-2.2.3.tar.gz
+[2024-04-07 22:56:34] WARNING root fetch - processPackages [FNews]: Skipping, unable to determine old version
+[2024-04-07 22:56:34] INFO root fetch - main [MainThread]: End processing [FNews] error
+[2024-04-07 22:56:34] INFO root fetch - processPackages [steelas]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-04-07 22:56:35] INFO root fetch - processPackages [steelas]: Downloading https://files.pythonhosted.org/packages/9b/b3/d6e20eda8b99b7128ee7a4ad617083c0a29aed930c9c9f5d6ec605e4c6e5/steelas-0.1.2.tar.gz
+[2024-04-07 22:56:36] WARNING root fetch - processPackages [csv_test_package]: Timeout reached during download
+[2024-04-07 22:56:36] WARNING root fetch - processPackages [slinn]: Timeout reached during download
+[2024-04-07 22:56:36] WARNING root fetch - processPackages [steelas]: Timeout reached during download
+[2024-04-07 22:56:36] INFO root fetch - processPackages [csv_test_package]: Downloading https://files.pythonhosted.org/packages/aa/23/aeacd32e598c8b0702d2c4bbea44b466aece14786edcd130ebd206c0ff5a/csv_test_package-0.1.5.tar.gz
+[2024-04-07 22:56:36] INFO root fetch - processPackages [steelas]: Downloading https://files.pythonhosted.org/packages/0c/49/d9ba488bd2c7da18a42f57939eb5b44339e564f397527093fc74b414dd52/steelas-0.2.0.tar.gz
+[2024-04-07 22:56:36] INFO root fetch - processPackages [slinn]: Downloading https://files.pythonhosted.org/packages/f1/5f/409663bbfb5eaa4a56629e1f52894a96b161ca32eac419cc4ee386a9a9ac/slinn-2.2.4.tar.gz
+[2024-04-07 22:56:36] WARNING root fetch - processPackages [csv_test_package]: Timeout reached during download
+[2024-04-07 22:56:36] INFO root fetch - processPackages [csv_test_package]: executing diffoscope
+[2024-04-07 22:56:36] INFO root fetch - processPackages [csv_test_package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csv_test_package-0.1.4.tar.gz tmp/csv_test_package-0.1.5.tar.gz --markdown 20240407/c/csv_test_package/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2024-04-07 22:56:36] WARNING root fetch - processPackages [steelas]: Timeout reached during download
+[2024-04-07 22:56:36] INFO root fetch - processPackages [steelas]: executing diffoscope
+[2024-04-07 22:56:36] INFO root fetch - processPackages [steelas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steelas-0.1.2.tar.gz tmp/steelas-0.2.0.tar.gz --markdown 20240407/s/steelas/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2024-04-07 22:56:36] WARNING root fetch - processPackages [slinn]: Timeout reached during download
+[2024-04-07 22:56:36] INFO root fetch - processPackages [slinn]: executing diffoscope
+[2024-04-07 22:56:36] INFO root fetch - processPackages [slinn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slinn-2.2.3.tar.gz tmp/slinn-2.2.4.tar.gz --markdown 20240407/s/slinn/2.2.3-2.2.4/diff.md --exclude *.pyd
+[2024-04-07 22:56:37] INFO root fetch - processPackages [csv_test_package]: Remove: archive file [/home/abi/fetcher/tmp/csv_test_package-0.1.4.tar.gz]
+[2024-04-07 22:56:37] INFO root fetch - processPackages [csv_test_package]: Remove: archive file [/home/abi/fetcher/tmp/csv_test_package-0.1.5.tar.gz]
+[2024-04-07 22:56:37] INFO root fetch - main [MainThread]: End processing [csv_test_package]: success
+[2024-04-07 22:56:37] INFO root fetch - processPackages [slinn]: Remove: archive file [/home/abi/fetcher/tmp/slinn-2.2.3.tar.gz]
+[2024-04-07 22:56:37] INFO root fetch - processPackages [slinn]: Remove: archive file [/home/abi/fetcher/tmp/slinn-2.2.4.tar.gz]
+[2024-04-07 22:56:37] INFO root fetch - main [MainThread]: End processing [slinn]: success
+[2024-04-07 22:56:37] INFO root fetch - processPackages [steelas]: Remove: archive file [/home/abi/fetcher/tmp/steelas-0.1.2.tar.gz]
+[2024-04-07 22:56:37] INFO root fetch - processPackages [steelas]: Remove: archive file [/home/abi/fetcher/tmp/steelas-0.2.0.tar.gz]
+[2024-04-07 22:56:37] INFO root fetch - main [MainThread]: End processing [steelas]: success
+[2024-04-07 22:56:37] INFO root fetch - main [MainThread]: Store serial: [22659232]
