@@ -10098,3 +10098,50 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 12:38:13] INFO root fetch - processPackages [mdpython]: Remove: archive file [/home/abi/fetcher/tmp/mdpython-0.0.3.tar.gz]
 [2024-04-07 12:38:13] INFO root fetch - main [MainThread]: End processing [mdpython]: success
 [2024-04-07 12:38:13] INFO root fetch - main [MainThread]: Store serial: [22655448]
+[2024-04-07 12:40:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655448]
+[2024-04-07 12:40:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 12:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-learngual
+[2024-04-07 12:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymemgpt-nightly
+[2024-04-07 12:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: LyPythonToolbox
+[2024-04-07 12:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stockdex
+[2024-04-07 12:40:22] INFO root fetch - processPackages [stockdex]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-04-07 12:40:22] INFO root fetch - processPackages [django-learngual]: New version: [0.34] Old Version: [0.33]
+[2024-04-07 12:40:22] INFO root fetch - processPackages [pymemgpt-nightly]: New version: [0.3.8.dev20240407003448] Old Version: [0.3.8.dev20240406104002]
+[2024-04-07 12:40:22] INFO root fetch - processPackages [LyPythonToolbox]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-07 12:40:22] INFO root fetch - processPackages [stockdex]: Downloading https://files.pythonhosted.org/packages/c6/56/7bcc32cf1deef72d2c4dc2047a1bc81ed69d8caede152c84006d26e93fec/stockdex-0.3.7.tar.gz
+[2024-04-07 12:40:22] INFO root fetch - processPackages [django-learngual]: Downloading https://files.pythonhosted.org/packages/d1/b3/702b7302f097412af357969ae38333216ce0e058d788793fdfd7b148a9f1/django-learngual-0.33.tar.gz
+[2024-04-07 12:40:22] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/c2/c8/df5283d9c9a649ba61a6f1a99b9ec0e30cf451e7b25a521027d40dcadfba/pymemgpt_nightly-0.3.8.dev20240406104002.tar.gz
+[2024-04-07 12:40:22] WARNING root fetch - processPackages [django-learngual]: Timeout reached during download
+[2024-04-07 12:40:22] WARNING root fetch - processPackages [stockdex]: Timeout reached during download
+[2024-04-07 12:40:22] WARNING root fetch - processPackages [pymemgpt-nightly]: Timeout reached during download
+[2024-04-07 12:40:22] INFO root fetch - processPackages [LyPythonToolbox]: Downloading https://files.pythonhosted.org/packages/64/54/41bfd6bc91bd856fc70fcd6645ac379d79ea6c1f6f2696b1fc4fe91664bf/LyPythonToolbox-0.1.2.tar.gz
+[2024-04-07 12:40:23] INFO root fetch - processPackages [django-learngual]: Downloading https://files.pythonhosted.org/packages/c2/bf/a6281a5c4122baef0d953b11712913879dbc2841994893eb531aaedc084c/django-learngual-0.34.tar.gz
+[2024-04-07 12:40:23] WARNING root fetch - processPackages [LyPythonToolbox]: Timeout reached during download
+[2024-04-07 12:40:23] WARNING root fetch - processPackages [django-learngual]: Timeout reached during download
+[2024-04-07 12:40:23] INFO root fetch - processPackages [django-learngual]: executing diffoscope
+[2024-04-07 12:40:23] INFO root fetch - processPackages [django-learngual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-learngual-0.33.tar.gz tmp/django-learngual-0.34.tar.gz --markdown 20240407/d/django-learngual/0.33-0.34/diff.md --exclude *.pyd
+[2024-04-07 12:40:23] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/07/78/9f15e6a3aca4e38c32d467e37303c1ae6376d50aed631f66ec665e24d868/pymemgpt_nightly-0.3.8.dev20240407003448.tar.gz
+[2024-04-07 12:40:23] INFO root fetch - processPackages [stockdex]: Downloading https://files.pythonhosted.org/packages/37/05/ab4e68366df13ec9a36235d4dadc66588992f1ba567dcf5f7f29b8eb1348/stockdex-0.3.8.tar.gz
+[2024-04-07 12:40:23] INFO root fetch - processPackages [LyPythonToolbox]: Downloading https://files.pythonhosted.org/packages/1e/11/e5e3ba02511d48dc0f7341f78ad40bfc01e683557920f84f64ed9324cf1a/LyPythonToolbox-0.1.3.tar.gz
+[2024-04-07 12:40:23] WARNING root fetch - processPackages [stockdex]: Timeout reached during download
+[2024-04-07 12:40:23] INFO root fetch - processPackages [stockdex]: executing diffoscope
+[2024-04-07 12:40:23] INFO root fetch - processPackages [stockdex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stockdex-0.3.7.tar.gz tmp/stockdex-0.3.8.tar.gz --markdown 20240407/s/stockdex/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2024-04-07 12:40:23] WARNING root fetch - processPackages [pymemgpt-nightly]: Timeout reached during download
+[2024-04-07 12:40:23] INFO root fetch - processPackages [pymemgpt-nightly]: executing diffoscope
+[2024-04-07 12:40:23] INFO root fetch - processPackages [pymemgpt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemgpt_nightly-0.3.8.dev20240406104002.tar.gz tmp/pymemgpt_nightly-0.3.8.dev20240407003448.tar.gz --markdown 20240407/p/pymemgpt-nightly/0.3.8.dev20240406104002-0.3.8.dev20240407003448/diff.md --exclude *.pyd
+[2024-04-07 12:40:23] WARNING root fetch - processPackages [LyPythonToolbox]: Timeout reached during download
+[2024-04-07 12:40:23] INFO root fetch - processPackages [LyPythonToolbox]: executing diffoscope
+[2024-04-07 12:40:23] INFO root fetch - processPackages [LyPythonToolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LyPythonToolbox-0.1.2.tar.gz tmp/LyPythonToolbox-0.1.3.tar.gz --markdown 20240407/L/LyPythonToolbox/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2024-04-07 12:40:23] INFO root fetch - processPackages [django-learngual]: Remove: archive file [/home/abi/fetcher/tmp/django-learngual-0.33.tar.gz]
+[2024-04-07 12:40:23] INFO root fetch - processPackages [django-learngual]: Remove: archive file [/home/abi/fetcher/tmp/django-learngual-0.34.tar.gz]
+[2024-04-07 12:40:23] INFO root fetch - main [MainThread]: End processing [django-learngual]: success
+[2024-04-07 12:40:23] INFO root fetch - processPackages [stockdex]: Remove: archive file [/home/abi/fetcher/tmp/stockdex-0.3.7.tar.gz]
+[2024-04-07 12:40:23] INFO root fetch - processPackages [stockdex]: Remove: archive file [/home/abi/fetcher/tmp/stockdex-0.3.8.tar.gz]
+[2024-04-07 12:40:23] INFO root fetch - main [MainThread]: End processing [stockdex]: success
+[2024-04-07 12:40:24] INFO root fetch - processPackages [LyPythonToolbox]: Remove: archive file [/home/abi/fetcher/tmp/LyPythonToolbox-0.1.2.tar.gz]
+[2024-04-07 12:40:24] INFO root fetch - processPackages [LyPythonToolbox]: Remove: archive file [/home/abi/fetcher/tmp/LyPythonToolbox-0.1.3.tar.gz]
+[2024-04-07 12:40:24] INFO root fetch - main [MainThread]: End processing [LyPythonToolbox]: success
+[2024-04-07 12:40:24] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.8.dev20240406104002.tar.gz]
+[2024-04-07 12:40:24] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.8.dev20240407003448.tar.gz]
+[2024-04-07 12:40:24] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
+[2024-04-07 12:40:24] INFO root fetch - main [MainThread]: Store serial: [22655460]
