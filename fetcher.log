@@ -5995,3 +5995,50 @@
 [2024-04-07 08:04:59] INFO root fetch - processPackages [pulumi-alicloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_alicloud-3.9.0a1637592974.tar.gz]
 [2024-04-07 08:04:59] INFO root fetch - main [MainThread]: End processing [pulumi-alicloud]: success
 [2024-04-07 08:04:59] INFO root fetch - main [MainThread]: Store serial: [22653885]
+[2024-04-07 08:07:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653885]
+[2024-04-07 08:07:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 08:07:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-espresso
+[2024-04-07 08:07:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ehdtd
+[2024-04-07 08:07:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: netbound
+[2024-04-07 08:07:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-mailgun
+[2024-04-07 08:07:08] INFO root fetch - processPackages [netbound]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 08:07:08] INFO root fetch - processPackages [pulumi-mailgun]: New version: [3.6.0a1712399629] Old Version: [3.6.0a1711736704]
+[2024-04-07 08:07:08] INFO root fetch - processPackages [netbound]: Downloading https://files.pythonhosted.org/packages/9c/ee/f89027b09e67ef76da5b4193174903df8d97c42510bc6e06d0cb30c508a2/netbound-0.1.8.tar.gz
+[2024-04-07 08:07:08] INFO root fetch - processPackages [python-espresso]: New version: [1.6] Old Version: [1.5]
+[2024-04-07 08:07:08] INFO root fetch - processPackages [ehdtd]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-07 08:07:08] INFO root fetch - processPackages [pulumi-mailgun]: Downloading https://files.pythonhosted.org/packages/54/1c/73896987f60e7d95df7830c98945759cec2ffdfaa20f3ad6cc0354559357/pulumi_mailgun-3.6.0a1711736704.tar.gz
+[2024-04-07 08:07:08] WARNING root fetch - processPackages [netbound]: Timeout reached during download
+[2024-04-07 08:07:08] WARNING root fetch - processPackages [pulumi-mailgun]: Timeout reached during download
+[2024-04-07 08:07:09] INFO root fetch - processPackages [python-espresso]: Downloading https://files.pythonhosted.org/packages/0a/af/dd47cbfd891c415c296634bd83f1d2e4ce1424f7d39f56de6fd05d77609c/python-espresso-1.5.tar.gz
+[2024-04-07 08:07:09] INFO root fetch - processPackages [ehdtd]: Downloading https://files.pythonhosted.org/packages/60/b8/f3db5d1a0404185d0ab7be1ab28f78f7d77dec6c3492e04b0f9878609460/ehdtd-0.1.3.tar.gz
+[2024-04-07 08:07:09] INFO root fetch - processPackages [netbound]: Downloading https://files.pythonhosted.org/packages/e1/c7/9bed379e99d5f984cf1fa304c3bebcf19b87ce8e3507b5ee0028fae5631f/netbound-0.1.9.tar.gz
+[2024-04-07 08:07:09] INFO root fetch - processPackages [pulumi-mailgun]: Downloading https://files.pythonhosted.org/packages/0b/0a/0837d0008cf2dade0adf25ec39ef2fdd32eb5db7468b1deae77d0a188c54/pulumi_mailgun-3.6.0a1712399629.tar.gz
+[2024-04-07 08:07:09] WARNING root fetch - processPackages [netbound]: Timeout reached during download
+[2024-04-07 08:07:09] INFO root fetch - processPackages [netbound]: executing diffoscope
+[2024-04-07 08:07:09] INFO root fetch - processPackages [netbound]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbound-0.1.8.tar.gz tmp/netbound-0.1.9.tar.gz --markdown 20240407/n/netbound/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 08:07:09] WARNING root fetch - processPackages [pulumi-mailgun]: Timeout reached during download
+[2024-04-07 08:07:09] INFO root fetch - processPackages [pulumi-mailgun]: executing diffoscope
+[2024-04-07 08:07:09] INFO root fetch - processPackages [pulumi-mailgun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_mailgun-3.6.0a1711736704.tar.gz tmp/pulumi_mailgun-3.6.0a1712399629.tar.gz --markdown 20240407/p/pulumi-mailgun/3.6.0a1711736704-3.6.0a1712399629/diff.md --exclude *.pyd
+[2024-04-07 08:07:09] WARNING root fetch - processPackages [python-espresso]: Timeout reached during download
+[2024-04-07 08:07:09] WARNING root fetch - processPackages [ehdtd]: Timeout reached during download
+[2024-04-07 08:07:09] INFO root fetch - processPackages [python-espresso]: Downloading https://files.pythonhosted.org/packages/57/d1/5de2c784929d1ae750f8b9591a516e54d81591dc0dea7e41c2f7b24afc80/python-espresso-1.6.tar.gz
+[2024-04-07 08:07:09] INFO root fetch - processPackages [ehdtd]: Downloading https://files.pythonhosted.org/packages/8c/22/a05130a7ba96c649bf147c1ad3c65e04a08bbb45c60644c2707cc050dd06/ehdtd-0.1.4.tar.gz
+[2024-04-07 08:07:09] WARNING root fetch - processPackages [python-espresso]: Timeout reached during download
+[2024-04-07 08:07:09] INFO root fetch - processPackages [python-espresso]: executing diffoscope
+[2024-04-07 08:07:09] INFO root fetch - processPackages [python-espresso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-espresso-1.5.tar.gz tmp/python-espresso-1.6.tar.gz --markdown 20240407/p/python-espresso/1.5-1.6/diff.md --exclude *.pyd
+[2024-04-07 08:07:09] WARNING root fetch - processPackages [ehdtd]: Timeout reached during download
+[2024-04-07 08:07:09] INFO root fetch - processPackages [ehdtd]: executing diffoscope
+[2024-04-07 08:07:09] INFO root fetch - processPackages [ehdtd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ehdtd-0.1.3.tar.gz tmp/ehdtd-0.1.4.tar.gz --markdown 20240407/e/ehdtd/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2024-04-07 08:07:09] INFO root fetch - processPackages [pulumi-mailgun]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_mailgun-3.6.0a1711736704.tar.gz]
+[2024-04-07 08:07:09] INFO root fetch - processPackages [pulumi-mailgun]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_mailgun-3.6.0a1712399629.tar.gz]
+[2024-04-07 08:07:09] INFO root fetch - main [MainThread]: End processing [pulumi-mailgun]: success
+[2024-04-07 08:07:09] INFO root fetch - processPackages [netbound]: Remove: archive file [/home/abi/fetcher/tmp/netbound-0.1.8.tar.gz]
+[2024-04-07 08:07:09] INFO root fetch - processPackages [netbound]: Remove: archive file [/home/abi/fetcher/tmp/netbound-0.1.9.tar.gz]
+[2024-04-07 08:07:09] INFO root fetch - main [MainThread]: End processing [netbound]: success
+[2024-04-07 08:07:10] INFO root fetch - processPackages [python-espresso]: Remove: archive file [/home/abi/fetcher/tmp/python-espresso-1.5.tar.gz]
+[2024-04-07 08:07:10] INFO root fetch - processPackages [python-espresso]: Remove: archive file [/home/abi/fetcher/tmp/python-espresso-1.6.tar.gz]
+[2024-04-07 08:07:10] INFO root fetch - main [MainThread]: End processing [python-espresso]: success
+[2024-04-07 08:07:10] INFO root fetch - processPackages [ehdtd]: Remove: archive file [/home/abi/fetcher/tmp/ehdtd-0.1.3.tar.gz]
+[2024-04-07 08:07:10] INFO root fetch - processPackages [ehdtd]: Remove: archive file [/home/abi/fetcher/tmp/ehdtd-0.1.4.tar.gz]
+[2024-04-07 08:07:10] INFO root fetch - main [MainThread]: End processing [ehdtd]: success
+[2024-04-07 08:07:10] INFO root fetch - main [MainThread]: Store serial: [22653897]
