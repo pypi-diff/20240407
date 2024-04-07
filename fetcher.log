@@ -17252,3 +17252,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:55:11] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Remove: archive file [/home/abi/fetcher/tmp/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz]
 [2024-04-07 19:55:11] INFO root fetch - main [MainThread]: End processing [sleipnirgroup-jormungandr]: success
 [2024-04-07 19:55:11] INFO root fetch - main [MainThread]: Store serial: [22658091]
+[2024-04-07 19:57:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658091]
+[2024-04-07 19:57:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 19:57:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: diagnostic
+[2024-04-07 19:57:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crewai
+[2024-04-07 19:57:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dingo-gw
+[2024-04-07 19:57:20] INFO root fetch - processPackages [dingo-gw]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-07 19:57:20] INFO root fetch - processPackages [crewai]: New version: [0.5.5] Old Version: [0.5.3]
+[2024-04-07 19:57:21] INFO root fetch - processPackages [diagnostic]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-04-07 19:57:21] INFO root fetch - processPackages [dingo-gw]: Downloading https://files.pythonhosted.org/packages/0b/3e/08699b09722a587b031f6e27e678b43d21940d85e61ef6efe190ceb6a281/dingo-gw-0.5.8.tar.gz
+[2024-04-07 19:57:21] INFO root fetch - processPackages [crewai]: Downloading https://files.pythonhosted.org/packages/e9/e3/15cbe7ed14b2b805613edd70fe8d16de0f00ad49e45f0496db0d34c3274c/crewai-0.5.3.tar.gz
+[2024-04-07 19:57:21] WARNING root fetch - processPackages [crewai]: Timeout reached during download
+[2024-04-07 19:57:21] INFO root fetch - processPackages [diagnostic]: Downloading https://files.pythonhosted.org/packages/62/8f/e8600f6c2b52b620be7bfda707955f7cf6ebe78cac899add840dc066f8c7/diagnostic-2.0.0.tar.gz
+[2024-04-07 19:57:21] WARNING root fetch - processPackages [dingo-gw]: Timeout reached during download
+[2024-04-07 19:57:21] INFO root fetch - processPackages [crewai]: Downloading https://files.pythonhosted.org/packages/4e/2d/131d296cf0495637bfea59b11af0767de8fa11466880e3d702ab43a360d0/crewai-0.5.5.tar.gz
+[2024-04-07 19:57:21] INFO root fetch - processPackages [dingo-gw]: Downloading https://files.pythonhosted.org/packages/8b/66/03463e7101afc07f0dc769969a6228b50efa40c142c483d6134b8a6d1673/dingo-gw-0.5.9.tar.gz
+[2024-04-07 19:57:21] WARNING root fetch - processPackages [crewai]: Timeout reached during download
+[2024-04-07 19:57:21] INFO root fetch - processPackages [crewai]: executing diffoscope
+[2024-04-07 19:57:21] INFO root fetch - processPackages [crewai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crewai-0.5.3.tar.gz tmp/crewai-0.5.5.tar.gz --markdown 20240407/c/crewai/0.5.3-0.5.5/diff.md --exclude *.pyd
+[2024-04-07 19:57:21] WARNING root fetch - processPackages [diagnostic]: Timeout reached during download
+[2024-04-07 19:57:21] WARNING root fetch - processPackages [dingo-gw]: Timeout reached during download
+[2024-04-07 19:57:21] INFO root fetch - processPackages [dingo-gw]: executing diffoscope
+[2024-04-07 19:57:21] INFO root fetch - processPackages [dingo-gw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dingo-gw-0.5.8.tar.gz tmp/dingo-gw-0.5.9.tar.gz --markdown 20240407/d/dingo-gw/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2024-04-07 19:57:21] INFO root fetch - processPackages [diagnostic]: Downloading https://files.pythonhosted.org/packages/3f/b1/33711b5b82062018295dd130b75050179380d32d616b37f8895012780156/diagnostic-2.1.0.tar.gz
+[2024-04-07 19:57:21] WARNING root fetch - processPackages [diagnostic]: Timeout reached during download
+[2024-04-07 19:57:21] INFO root fetch - processPackages [diagnostic]: executing diffoscope
+[2024-04-07 19:57:21] INFO root fetch - processPackages [diagnostic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diagnostic-2.0.0.tar.gz tmp/diagnostic-2.1.0.tar.gz --markdown 20240407/d/diagnostic/2.0.0-2.1.0/diff.md --exclude *.pyd
+[2024-04-07 19:57:22] INFO root fetch - processPackages [crewai]: Remove: archive file [/home/abi/fetcher/tmp/crewai-0.5.3.tar.gz]
+[2024-04-07 19:57:22] INFO root fetch - processPackages [crewai]: Remove: archive file [/home/abi/fetcher/tmp/crewai-0.5.5.tar.gz]
+[2024-04-07 19:57:22] INFO root fetch - main [MainThread]: End processing [crewai]: success
+[2024-04-07 19:57:22] INFO root fetch - processPackages [diagnostic]: Remove: archive file [/home/abi/fetcher/tmp/diagnostic-2.0.0.tar.gz]
+[2024-04-07 19:57:22] INFO root fetch - processPackages [diagnostic]: Remove: archive file [/home/abi/fetcher/tmp/diagnostic-2.1.0.tar.gz]
+[2024-04-07 19:57:22] INFO root fetch - main [MainThread]: End processing [diagnostic]: success
+[2024-04-07 19:57:22] INFO root fetch - processPackages [dingo-gw]: Remove: archive file [/home/abi/fetcher/tmp/dingo-gw-0.5.8.tar.gz]
+[2024-04-07 19:57:22] INFO root fetch - processPackages [dingo-gw]: Remove: archive file [/home/abi/fetcher/tmp/dingo-gw-0.5.9.tar.gz]
+[2024-04-07 19:57:22] INFO root fetch - main [MainThread]: End processing [dingo-gw]: success
+[2024-04-07 19:57:22] INFO root fetch - main [MainThread]: Store serial: [22658103]
