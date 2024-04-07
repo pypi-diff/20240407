@@ -1838,3 +1838,17 @@
 [2024-04-07 02:50:24] INFO root fetch - processPackages [hiddifypanel]: Remove: archive file [/home/abi/fetcher/tmp/hiddifypanel-8.8.99.tar.gz]
 [2024-04-07 02:50:24] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2024-04-07 02:50:24] INFO root fetch - main [MainThread]: Store serial: [22652383]
+[2024-04-07 02:52:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652383]
+[2024-04-07 02:52:32] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 02:52:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ansar-connect
+[2024-04-07 02:52:32] INFO root fetch - processPackages [ansar-connect]: New version: [0.1.135] Old Version: [0.1.134]
+[2024-04-07 02:52:33] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/bc/af/45f78f1dd4892d4dc868b04db58db12f662ae8b8ff9c04a30cdba1996de1/ansar-connect-0.1.134.tar.gz
+[2024-04-07 02:52:33] WARNING root fetch - processPackages [ansar-connect]: Timeout reached during download
+[2024-04-07 02:52:33] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/48/e5/30cff0e16da1ebbb2e23a51021281a6f2ca2f953551e63bb2175255cb2e0/ansar-connect-0.1.135.tar.gz
+[2024-04-07 02:52:33] WARNING root fetch - processPackages [ansar-connect]: Timeout reached during download
+[2024-04-07 02:52:33] INFO root fetch - processPackages [ansar-connect]: executing diffoscope
+[2024-04-07 02:52:33] INFO root fetch - processPackages [ansar-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar-connect-0.1.134.tar.gz tmp/ansar-connect-0.1.135.tar.gz --markdown 20240407/a/ansar-connect/0.1.134-0.1.135/diff.md --exclude *.pyd
+[2024-04-07 02:52:34] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar-connect-0.1.134.tar.gz]
+[2024-04-07 02:52:34] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar-connect-0.1.135.tar.gz]
+[2024-04-07 02:52:34] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
+[2024-04-07 02:52:34] INFO root fetch - main [MainThread]: Store serial: [22652387]
