@@ -7963,3 +7963,22 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 10:11:37] INFO root fetch - processPackages [pikepdf]: Remove: archive file [/home/abi/fetcher/tmp/pikepdf-8.9.0.tar.gz]
 [2024-04-07 10:11:37] INFO root fetch - main [MainThread]: End processing [pikepdf]: success
 [2024-04-07 10:11:37] INFO root fetch - main [MainThread]: Store serial: [22654627]
+[2024-04-07 10:13:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654627]
+[2024-04-07 10:13:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 10:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lalsuite
+[2024-04-07 10:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: antigranular-enterprise
+[2024-04-07 10:13:46] INFO root fetch - processPackages [antigranular-enterprise]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 10:13:46] INFO root fetch - processPackages [antigranular-enterprise]: Downloading https://files.pythonhosted.org/packages/dc/48/f85d1c91a1eb7c426d4fa1547c6be50a626792f013105f0894512a870b7d/antigranular_enterprise-0.0.8.tar.gz
+[2024-04-07 10:13:47] WARNING root fetch - processPackages [antigranular-enterprise]: Timeout reached during download
+[2024-04-07 10:13:47] INFO root fetch - processPackages [antigranular-enterprise]: Downloading https://files.pythonhosted.org/packages/5d/18/702094ea5066cebb773782930cf6b5542d08502fa3475a55793509e8c859/antigranular_enterprise-0.0.9.tar.gz
+[2024-04-07 10:13:47] WARNING root fetch - processPackages [antigranular-enterprise]: Timeout reached during download
+[2024-04-07 10:13:47] INFO root fetch - processPackages [antigranular-enterprise]: executing diffoscope
+[2024-04-07 10:13:47] INFO root fetch - processPackages [antigranular-enterprise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antigranular_enterprise-0.0.8.tar.gz tmp/antigranular_enterprise-0.0.9.tar.gz --markdown 20240407/a/antigranular-enterprise/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 10:13:47] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2024-04-07 10:13:48] INFO root fetch - processPackages [antigranular-enterprise]: Remove: archive file [/home/abi/fetcher/tmp/antigranular_enterprise-0.0.8.tar.gz]
+[2024-04-07 10:13:48] INFO root fetch - processPackages [antigranular-enterprise]: Remove: archive file [/home/abi/fetcher/tmp/antigranular_enterprise-0.0.9.tar.gz]
+[2024-04-07 10:13:48] INFO root fetch - main [MainThread]: End processing [antigranular-enterprise]: success
+[2024-04-07 10:13:48] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-07 10:13:48] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2024-04-07 10:13:48] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2024-04-07 10:13:48] INFO root fetch - main [MainThread]: Store serial: [22654672]
