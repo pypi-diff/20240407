@@ -3106,3 +3106,17 @@
 [2024-04-07 04:42:45] INFO root fetch - processPackages [lesscode-database]: Remove: archive file [/home/abi/fetcher/tmp/lesscode_database-0.0.9.tar.gz]
 [2024-04-07 04:42:45] INFO root fetch - main [MainThread]: End processing [lesscode-database]: success
 [2024-04-07 04:42:45] INFO root fetch - main [MainThread]: Store serial: [22652965]
+[2024-04-07 04:44:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652965]
+[2024-04-07 04:44:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 04:44:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: open-parser
+[2024-04-07 04:44:53] INFO root fetch - processPackages [open-parser]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 04:44:54] INFO root fetch - processPackages [open-parser]: Downloading https://files.pythonhosted.org/packages/32/69/8b27338746d68fe2992a92364e40afae7194cea834f3dbec56b0fb9853a0/open_parser-0.0.2.tar.gz
+[2024-04-07 04:44:54] WARNING root fetch - processPackages [open-parser]: Timeout reached during download
+[2024-04-07 04:44:54] INFO root fetch - processPackages [open-parser]: Downloading https://files.pythonhosted.org/packages/bf/4d/398a2600d3f4012ccc0a609acd8b43f0efff1d1c090bb6eafada11633511/open_parser-0.0.3.tar.gz
+[2024-04-07 04:44:54] WARNING root fetch - processPackages [open-parser]: Timeout reached during download
+[2024-04-07 04:44:54] INFO root fetch - processPackages [open-parser]: executing diffoscope
+[2024-04-07 04:44:54] INFO root fetch - processPackages [open-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_parser-0.0.2.tar.gz tmp/open_parser-0.0.3.tar.gz --markdown 20240407/o/open-parser/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 04:44:55] INFO root fetch - processPackages [open-parser]: Remove: archive file [/home/abi/fetcher/tmp/open_parser-0.0.2.tar.gz]
+[2024-04-07 04:44:55] INFO root fetch - processPackages [open-parser]: Remove: archive file [/home/abi/fetcher/tmp/open_parser-0.0.3.tar.gz]
+[2024-04-07 04:44:55] INFO root fetch - main [MainThread]: End processing [open-parser]: success
+[2024-04-07 04:44:55] INFO root fetch - main [MainThread]: Store serial: [22652968]
