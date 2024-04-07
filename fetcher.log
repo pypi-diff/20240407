@@ -8512,3 +8512,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 11:01:37] INFO root fetch - processPackages [bestnlp]: Remove: archive file [/home/abi/fetcher/tmp/bestnlp-1.0.5-py3-none-any.whl.zip]
 [2024-04-07 11:01:37] INFO root fetch - main [MainThread]: End processing [bestnlp]: success
 [2024-04-07 11:01:37] INFO root fetch - main [MainThread]: Store serial: [22654883]
+[2024-04-07 11:03:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654883]
+[2024-04-07 11:03:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 11:03:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gouge
+[2024-04-07 11:03:46] INFO root fetch - processPackages [gouge]: New version: [2.2] Old Version: [2.1]
+[2024-04-07 11:03:46] INFO root fetch - processPackages [gouge]: Downloading https://files.pythonhosted.org/packages/32/71/815bd38a37b702be45b6cadc215049132c743991d926d46007c3897419d4/gouge-2.1.tar.gz
+[2024-04-07 11:03:46] WARNING root fetch - processPackages [gouge]: Timeout reached during download
+[2024-04-07 11:03:46] INFO root fetch - processPackages [gouge]: Downloading https://files.pythonhosted.org/packages/46/9f/39f31945b028c444b439ad369b626142ec291a7134ae91d08028a1b9a0ba/gouge-2.2.tar.gz
+[2024-04-07 11:03:46] WARNING root fetch - processPackages [gouge]: Timeout reached during download
+[2024-04-07 11:03:46] INFO root fetch - processPackages [gouge]: executing diffoscope
+[2024-04-07 11:03:46] INFO root fetch - processPackages [gouge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gouge-2.1.tar.gz tmp/gouge-2.2.tar.gz --markdown 20240407/g/gouge/2.1-2.2/diff.md --exclude *.pyd
+[2024-04-07 11:03:47] INFO root fetch - processPackages [gouge]: Remove: archive file [/home/abi/fetcher/tmp/gouge-2.1.tar.gz]
+[2024-04-07 11:03:47] INFO root fetch - processPackages [gouge]: Remove: archive file [/home/abi/fetcher/tmp/gouge-2.2.tar.gz]
+[2024-04-07 11:03:47] INFO root fetch - main [MainThread]: End processing [gouge]: success
+[2024-04-07 11:03:47] INFO root fetch - main [MainThread]: Store serial: [22654888]
