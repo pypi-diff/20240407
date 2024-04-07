@@ -14324,3 +14324,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:01:59] INFO root fetch - processPackages [z4d-certified-devices]: Remove: archive file [/home/abi/fetcher/tmp/z4d-certified-devices-4.251.tar.gz]
 [2024-04-07 17:01:59] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
 [2024-04-07 17:01:59] INFO root fetch - main [MainThread]: Store serial: [22657030]
+[2024-04-07 17:04:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657030]
+[2024-04-07 17:04:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 17:04:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smaht-submitr
+[2024-04-07 17:04:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: docker-remote-sync
+[2024-04-07 17:04:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sindmap
+[2024-04-07 17:04:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dmjone
+[2024-04-07 17:04:07] INFO root fetch - processPackages [dmjone]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 17:04:07] INFO root fetch - processPackages [docker-remote-sync]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-04-07 17:04:08] INFO root fetch - processPackages [smaht-submitr]: New version: [0.7.0.2b3] Old Version: [0.7.0.2b2]
+[2024-04-07 17:04:08] INFO root fetch - processPackages [dmjone]: Downloading https://files.pythonhosted.org/packages/85/4e/2ce7960433ce5035c672546ae89532ef9d6d95b4f4b344cbc85d8e9634f9/dmjone-0.1.8.tar.gz
+[2024-04-07 17:04:08] WARNING root fetch - processPackages [sindmap]: Skipping, unable to determine old version
+[2024-04-07 17:04:08] INFO root fetch - main [MainThread]: End processing [sindmap] error
+[2024-04-07 17:04:08] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/5b/2b/5da2e1167fc00a116d0c9ae0626ac86f8bb85714aea08d554da1ef37db8d/smaht_submitr-0.7.0.2b2.tar.gz
+[2024-04-07 17:04:08] INFO root fetch - processPackages [docker-remote-sync]: Downloading https://files.pythonhosted.org/packages/ff/26/5b8ab27cea6a9bac904cfee3ac7b2fc59526e80c8b480ac28dc956c441c9/docker_remote_sync-0.4.1.tar.gz
+[2024-04-07 17:04:08] WARNING root fetch - processPackages [dmjone]: Timeout reached during download
+[2024-04-07 17:04:08] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 17:04:08] WARNING root fetch - processPackages [docker-remote-sync]: Timeout reached during download
+[2024-04-07 17:04:08] INFO root fetch - processPackages [docker-remote-sync]: Downloading https://files.pythonhosted.org/packages/b2/9c/29e154b5e72526d1ebe5a1f432334871355d7bdb3f6ae5ef7ffda69a9972/docker_remote_sync-0.5.0.tar.gz
+[2024-04-07 17:04:08] INFO root fetch - processPackages [dmjone]: Downloading https://files.pythonhosted.org/packages/ec/85/88c9a2ba157e71f3e5bb12fbfa62d29ffde1c03de62265cedb85c490de65/dmjone-0.1.9.tar.gz
+[2024-04-07 17:04:08] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/f5/e2/0f10d0dbe6c05d442f47cf53eab08565f3195f06ca76f99de0ae52bc1cc8/smaht_submitr-0.7.0.2b3.tar.gz
+[2024-04-07 17:04:08] WARNING root fetch - processPackages [docker-remote-sync]: Timeout reached during download
+[2024-04-07 17:04:08] INFO root fetch - processPackages [docker-remote-sync]: executing diffoscope
+[2024-04-07 17:04:08] INFO root fetch - processPackages [docker-remote-sync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docker_remote_sync-0.4.1.tar.gz tmp/docker_remote_sync-0.5.0.tar.gz --markdown 20240407/d/docker-remote-sync/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2024-04-07 17:04:08] WARNING root fetch - processPackages [dmjone]: Timeout reached during download
+[2024-04-07 17:04:08] INFO root fetch - processPackages [dmjone]: executing diffoscope
+[2024-04-07 17:04:08] INFO root fetch - processPackages [dmjone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dmjone-0.1.8.tar.gz tmp/dmjone-0.1.9.tar.gz --markdown 20240407/d/dmjone/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 17:04:08] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 17:04:08] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-07 17:04:08] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.7.0.2b2.tar.gz tmp/smaht_submitr-0.7.0.2b3.tar.gz --markdown 20240407/s/smaht-submitr/0.7.0.2b2-0.7.0.2b3/diff.md --exclude *.pyd
+[2024-04-07 17:04:09] INFO root fetch - processPackages [docker-remote-sync]: Remove: archive file [/home/abi/fetcher/tmp/docker_remote_sync-0.4.1.tar.gz]
+[2024-04-07 17:04:09] INFO root fetch - processPackages [docker-remote-sync]: Remove: archive file [/home/abi/fetcher/tmp/docker_remote_sync-0.5.0.tar.gz]
+[2024-04-07 17:04:09] INFO root fetch - main [MainThread]: End processing [docker-remote-sync]: success
+[2024-04-07 17:04:09] INFO root fetch - processPackages [dmjone]: Remove: archive file [/home/abi/fetcher/tmp/dmjone-0.1.8.tar.gz]
+[2024-04-07 17:04:09] INFO root fetch - processPackages [dmjone]: Remove: archive file [/home/abi/fetcher/tmp/dmjone-0.1.9.tar.gz]
+[2024-04-07 17:04:09] INFO root fetch - main [MainThread]: End processing [dmjone]: success
+[2024-04-07 17:04:09] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.2b2.tar.gz]
+[2024-04-07 17:04:09] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.2b3.tar.gz]
+[2024-04-07 17:04:09] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-07 17:04:09] INFO root fetch - main [MainThread]: Store serial: [22657045]
