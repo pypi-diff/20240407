@@ -2806,3 +2806,61 @@
 [2024-04-07 04:16:37] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai-weekly-1.4.dev2414.tar.gz]
 [2024-04-07 04:16:37] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
 [2024-04-07 04:16:37] INFO root fetch - main [MainThread]: Store serial: [22652833]
+[2024-04-07 04:18:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652833]
+[2024-04-07 04:18:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 04:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: duspider
+[2024-04-07 04:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: types-python-xlib
+[2024-04-07 04:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cpg-workflows
+[2024-04-07 04:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flarespy
+[2024-04-07 04:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Nuitka-winsvc
+[2024-04-07 04:18:45] INFO root fetch - processPackages [flarespy]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-04-07 04:18:45] INFO root fetch - processPackages [types-python-xlib]: New version: [0.33.0.9] Old Version: [0.33.0.8]
+[2024-04-07 04:18:46] INFO root fetch - processPackages [cpg-workflows]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-04-07 04:18:46] INFO root fetch - processPackages [flarespy]: Downloading https://files.pythonhosted.org/packages/04/25/388588a964ee3e165799f36a52ac68432b412f43d936c345577d8f7314ff/flarespy-0.9.7.tar.gz
+[2024-04-07 04:18:46] INFO root fetch - processPackages [duspider]: New version: [0.0.8] Old Version: [0.0.6]
+[2024-04-07 04:18:46] INFO root fetch - processPackages [Nuitka-winsvc]: New version: [2.1.5] Old Version: [2.1.4]
+[2024-04-07 04:18:46] INFO root fetch - processPackages [types-python-xlib]: Downloading https://files.pythonhosted.org/packages/cd/73/4ff60477f78be027e6ae7f50ccc186a9d89ebb2c659f223bc991dade3dfc/types-python-xlib-0.33.0.8.tar.gz
+[2024-04-07 04:18:46] WARNING root fetch - processPackages [flarespy]: Timeout reached during download
+[2024-04-07 04:18:46] INFO root fetch - processPackages [cpg-workflows]: Downloading https://files.pythonhosted.org/packages/97/85/ebcf50223506f96abcfa077315ab244e192faa632ed400789582dcf565e0/cpg-workflows-1.9.0.tar.gz
+[2024-04-07 04:18:46] INFO root fetch - processPackages [duspider]: Downloading https://files.pythonhosted.org/packages/6d/4d/cf1dbe670d4ac85e382a6375cb14418fd793142b11ecdf8f9c1e841f3277/duspider-0.0.6.tar.gz
+[2024-04-07 04:18:46] WARNING root fetch - processPackages [types-python-xlib]: Timeout reached during download
+[2024-04-07 04:18:46] INFO root fetch - processPackages [Nuitka-winsvc]: Downloading https://files.pythonhosted.org/packages/27/c8/6a9ff0999ec5c9bea899b33b14a33009920c89d14aa8271e24f6787fc1a9/Nuitka-winsvc-2.1.4.tar.gz
+[2024-04-07 04:18:46] INFO root fetch - processPackages [flarespy]: Downloading https://files.pythonhosted.org/packages/c8/7e/3f154203fb0f1369802551bb5c886d19787ba3740cac776f1ab46ff30696/flarespy-0.9.8.tar.gz
+[2024-04-07 04:18:46] WARNING root fetch - processPackages [cpg-workflows]: Timeout reached during download
+[2024-04-07 04:18:46] WARNING root fetch - processPackages [flarespy]: Timeout reached during download
+[2024-04-07 04:18:46] INFO root fetch - processPackages [flarespy]: executing diffoscope
+[2024-04-07 04:18:46] INFO root fetch - processPackages [flarespy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flarespy-0.9.7.tar.gz tmp/flarespy-0.9.8.tar.gz --markdown 20240407/f/flarespy/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2024-04-07 04:18:46] INFO root fetch - processPackages [types-python-xlib]: Downloading https://files.pythonhosted.org/packages/95/86/eb775af9c0557bbb4242c7a6f9b5a3ef5eb6d4cbfa5c9fd6611d9145186a/types-python-xlib-0.33.0.9.tar.gz
+[2024-04-07 04:18:46] WARNING root fetch - processPackages [duspider]: Timeout reached during download
+[2024-04-07 04:18:46] INFO root fetch - processPackages [cpg-workflows]: Downloading https://files.pythonhosted.org/packages/0d/82/bd0cb905c3b340f5cd9b1eb95911c5444e8ba0f6369afc3c60336fed7e14/cpg-workflows-1.9.1.tar.gz
+[2024-04-07 04:18:46] INFO root fetch - processPackages [duspider]: Downloading https://files.pythonhosted.org/packages/d5/ed/60df32825846fc5e11d51ac3433ca5f5784777b6f7bce4ebcf57df21705b/duspider-0.0.8.tar.gz
+[2024-04-07 04:18:46] WARNING root fetch - processPackages [cpg-workflows]: Timeout reached during download
+[2024-04-07 04:18:46] WARNING root fetch - processPackages [types-python-xlib]: Timeout reached during download
+[2024-04-07 04:18:46] INFO root fetch - processPackages [types-python-xlib]: executing diffoscope
+[2024-04-07 04:18:46] INFO root fetch - processPackages [types-python-xlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-python-xlib-0.33.0.8.tar.gz tmp/types-python-xlib-0.33.0.9.tar.gz --markdown 20240407/t/types-python-xlib/0.33.0.8-0.33.0.9/diff.md --exclude *.pyd
+[2024-04-07 04:18:46] INFO root fetch - processPackages [cpg-workflows]: executing diffoscope
+[2024-04-07 04:18:46] INFO root fetch - processPackages [cpg-workflows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpg-workflows-1.9.0.tar.gz tmp/cpg-workflows-1.9.1.tar.gz --markdown 20240407/c/cpg-workflows/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2024-04-07 04:18:46] WARNING root fetch - processPackages [duspider]: Timeout reached during download
+[2024-04-07 04:18:46] INFO root fetch - processPackages [duspider]: executing diffoscope
+[2024-04-07 04:18:46] INFO root fetch - processPackages [duspider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duspider-0.0.6.tar.gz tmp/duspider-0.0.8.tar.gz --markdown 20240407/d/duspider/0.0.6-0.0.8/diff.md --exclude *.pyd
+[2024-04-07 04:18:47] WARNING root fetch - processPackages [Nuitka-winsvc]: Timeout reached during download
+[2024-04-07 04:18:47] INFO root fetch - processPackages [flarespy]: Remove: archive file [/home/abi/fetcher/tmp/flarespy-0.9.7.tar.gz]
+[2024-04-07 04:18:47] INFO root fetch - processPackages [flarespy]: Remove: archive file [/home/abi/fetcher/tmp/flarespy-0.9.8.tar.gz]
+[2024-04-07 04:18:47] INFO root fetch - main [MainThread]: End processing [flarespy]: success
+[2024-04-07 04:18:47] INFO root fetch - processPackages [Nuitka-winsvc]: Downloading https://files.pythonhosted.org/packages/2a/72/d760f4d1a437901b5f3381f42e3edcfd2eb740ed5f47bc48d8673ccb165b/Nuitka-winsvc-2.1.5.tar.gz
+[2024-04-07 04:18:47] INFO root fetch - processPackages [duspider]: Remove: archive file [/home/abi/fetcher/tmp/duspider-0.0.6.tar.gz]
+[2024-04-07 04:18:47] INFO root fetch - processPackages [duspider]: Remove: archive file [/home/abi/fetcher/tmp/duspider-0.0.8.tar.gz]
+[2024-04-07 04:18:47] INFO root fetch - main [MainThread]: End processing [duspider]: success
+[2024-04-07 04:18:47] INFO root fetch - processPackages [types-python-xlib]: Remove: archive file [/home/abi/fetcher/tmp/types-python-xlib-0.33.0.8.tar.gz]
+[2024-04-07 04:18:47] INFO root fetch - processPackages [types-python-xlib]: Remove: archive file [/home/abi/fetcher/tmp/types-python-xlib-0.33.0.9.tar.gz]
+[2024-04-07 04:18:47] INFO root fetch - main [MainThread]: End processing [types-python-xlib]: success
+[2024-04-07 04:18:47] INFO root fetch - processPackages [cpg-workflows]: Remove: archive file [/home/abi/fetcher/tmp/cpg-workflows-1.9.0.tar.gz]
+[2024-04-07 04:18:47] INFO root fetch - processPackages [cpg-workflows]: Remove: archive file [/home/abi/fetcher/tmp/cpg-workflows-1.9.1.tar.gz]
+[2024-04-07 04:18:47] INFO root fetch - main [MainThread]: End processing [cpg-workflows]: success
+[2024-04-07 04:18:47] WARNING root fetch - processPackages [Nuitka-winsvc]: Timeout reached during download
+[2024-04-07 04:18:47] INFO root fetch - processPackages [Nuitka-winsvc]: executing diffoscope
+[2024-04-07 04:18:47] INFO root fetch - processPackages [Nuitka-winsvc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Nuitka-winsvc-2.1.4.tar.gz tmp/Nuitka-winsvc-2.1.5.tar.gz --markdown 20240407/N/Nuitka-winsvc/2.1.4-2.1.5/diff.md --exclude *.pyd
+[2024-04-07 04:18:55] INFO root fetch - processPackages [Nuitka-winsvc]: Remove: archive file [/home/abi/fetcher/tmp/Nuitka-winsvc-2.1.4.tar.gz]
+[2024-04-07 04:18:55] INFO root fetch - processPackages [Nuitka-winsvc]: Remove: archive file [/home/abi/fetcher/tmp/Nuitka-winsvc-2.1.5.tar.gz]
+[2024-04-07 04:18:55] INFO root fetch - main [MainThread]: End processing [Nuitka-winsvc]: success
+[2024-04-07 04:18:55] INFO root fetch - main [MainThread]: Store serial: [22652847]
