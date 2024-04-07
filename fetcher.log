@@ -13580,3 +13580,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:31:27] INFO root fetch - processPackages [atomicshop]: Remove: archive file [/home/abi/fetcher/tmp/atomicshop-2.9.9-py3-none-any.whl.zip]
 [2024-04-07 16:31:27] INFO root fetch - main [MainThread]: End processing [atomicshop]: success
 [2024-04-07 16:31:27] INFO root fetch - main [MainThread]: Store serial: [22656816]
+[2024-04-07 16:33:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656816]
+[2024-04-07 16:33:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 16:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: esrt
+[2024-04-07 16:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkdocs-addresses
+[2024-04-07 16:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sourcesage
+[2024-04-07 16:33:35] INFO root fetch - processPackages [esrt]: New version: [1.28.0] Old Version: [1.27.0]
+[2024-04-07 16:33:35] INFO root fetch - processPackages [sourcesage]: New version: [4.0.9] Old Version: [4.0.8]
+[2024-04-07 16:33:35] INFO root fetch - processPackages [esrt]: Downloading https://files.pythonhosted.org/packages/a1/fe/dd98579e13af9b096d6d93d7a2714c5d768c23a6f3995c3f4645057ab3e9/esrt-1.27.0.tar.gz
+[2024-04-07 16:33:35] INFO root fetch - processPackages [mkdocs-addresses]: New version: [0.3.0] Old Version: [0.2.4]
+[2024-04-07 16:33:35] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/53/ad/0a94732e2c9b70d4140a091aa95da8f14b71f5c05430e28ca454dd151571/sourcesage-4.0.8.tar.gz
+[2024-04-07 16:33:35] WARNING root fetch - processPackages [esrt]: Timeout reached during download
+[2024-04-07 16:33:36] WARNING root fetch - processPackages [sourcesage]: Timeout reached during download
+[2024-04-07 16:33:36] INFO root fetch - processPackages [esrt]: Downloading https://files.pythonhosted.org/packages/fc/f8/78ceb77d20a04a10c987f2e2a1824bbebcb7968785e031e7863260e968cb/esrt-1.28.0.tar.gz
+[2024-04-07 16:33:36] INFO root fetch - processPackages [mkdocs-addresses]: Downloading https://files.pythonhosted.org/packages/9c/b1/137df6ef138305dbb3a26c2821aaace75f4511d14a03668afca7a4b0fa22/mkdocs_addresses-0.2.4.tar.gz
+[2024-04-07 16:33:36] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/ca/64/8ca9fec7286b0648ebe8224d4bd0e7190c6d20738e2c7ceb5f5c89f2346b/sourcesage-4.0.9.tar.gz
+[2024-04-07 16:33:36] WARNING root fetch - processPackages [esrt]: Timeout reached during download
+[2024-04-07 16:33:36] INFO root fetch - processPackages [esrt]: executing diffoscope
+[2024-04-07 16:33:36] INFO root fetch - processPackages [esrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esrt-1.27.0.tar.gz tmp/esrt-1.28.0.tar.gz --markdown 20240407/e/esrt/1.27.0-1.28.0/diff.md --exclude *.pyd
+[2024-04-07 16:33:36] WARNING root fetch - processPackages [sourcesage]: Timeout reached during download
+[2024-04-07 16:33:36] INFO root fetch - processPackages [sourcesage]: executing diffoscope
+[2024-04-07 16:33:36] INFO root fetch - processPackages [sourcesage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sourcesage-4.0.8.tar.gz tmp/sourcesage-4.0.9.tar.gz --markdown 20240407/s/sourcesage/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2024-04-07 16:33:36] WARNING root fetch - processPackages [mkdocs-addresses]: Timeout reached during download
+[2024-04-07 16:33:36] INFO root fetch - processPackages [mkdocs-addresses]: Downloading https://files.pythonhosted.org/packages/d4/f7/b31475c8f09f4f183aabc44f9a10bd812eaebba82e6fa1dfdf41dca2fb89/mkdocs_addresses-0.3.0.tar.gz
+[2024-04-07 16:33:36] INFO root fetch - processPackages [esrt]: Remove: archive file [/home/abi/fetcher/tmp/esrt-1.27.0.tar.gz]
+[2024-04-07 16:33:36] INFO root fetch - processPackages [esrt]: Remove: archive file [/home/abi/fetcher/tmp/esrt-1.28.0.tar.gz]
+[2024-04-07 16:33:36] INFO root fetch - main [MainThread]: End processing [esrt]: success
+[2024-04-07 16:33:36] WARNING root fetch - processPackages [mkdocs-addresses]: Timeout reached during download
+[2024-04-07 16:33:36] INFO root fetch - processPackages [mkdocs-addresses]: executing diffoscope
+[2024-04-07 16:33:36] INFO root fetch - processPackages [mkdocs-addresses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_addresses-0.2.4.tar.gz tmp/mkdocs_addresses-0.3.0.tar.gz --markdown 20240407/m/mkdocs-addresses/0.2.4-0.3.0/diff.md --exclude *.pyd
+[2024-04-07 16:33:36] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.0.8.tar.gz]
+[2024-04-07 16:33:36] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.0.9.tar.gz]
+[2024-04-07 16:33:36] INFO root fetch - main [MainThread]: End processing [sourcesage]: success
+[2024-04-07 16:33:37] INFO root fetch - processPackages [mkdocs-addresses]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_addresses-0.2.4.tar.gz]
+[2024-04-07 16:33:37] INFO root fetch - processPackages [mkdocs-addresses]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_addresses-0.3.0.tar.gz]
+[2024-04-07 16:33:37] INFO root fetch - main [MainThread]: End processing [mkdocs-addresses]: success
+[2024-04-07 16:33:37] INFO root fetch - main [MainThread]: Store serial: [22656825]
