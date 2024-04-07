@@ -8357,3 +8357,30 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 10:48:38] INFO root fetch - processPackages [qz-pdf-export]: Remove: archive file [/home/abi/fetcher/tmp/qz_pdf_export-0.1.9.tar.gz]
 [2024-04-07 10:48:38] INFO root fetch - main [MainThread]: End processing [qz-pdf-export]: success
 [2024-04-07 10:48:38] INFO root fetch - main [MainThread]: Store serial: [22654846]
+[2024-04-07 10:50:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654846]
+[2024-04-07 10:50:47] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 10:52:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654846]
+[2024-04-07 10:52:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 10:52:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sphinxcontrib-yowasp-wavedrom
+[2024-04-07 10:52:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deepeval
+[2024-04-07 10:52:52] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: New version: [1.1] Old Version: [1.0]
+[2024-04-07 10:52:52] INFO root fetch - processPackages [deepeval]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-07 10:52:52] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: Downloading https://files.pythonhosted.org/packages/15/36/d7b64f7b5179e751866e804ccb05eaffd426b58aa8cdc8cf6fa84c1b59c0/sphinxcontrib_yowasp_wavedrom-1.0-py3-none-any.whl
+[2024-04-07 10:52:52] INFO root fetch - processPackages [deepeval]: Downloading https://files.pythonhosted.org/packages/8b/4e/74892f0e4e740898d3d9bbcb8e3e22adc9d2ca430699cb8a78a8b5e2697b/deepeval-0.9.8.tar.gz
+[2024-04-07 10:52:52] WARNING root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: Timeout reached during download
+[2024-04-07 10:52:52] WARNING root fetch - processPackages [deepeval]: Timeout reached during download
+[2024-04-07 10:52:52] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: Downloading https://files.pythonhosted.org/packages/86/9f/0955adecac62bd3f5c5135ac2ce7ea801e379c0532533be116349b372f64/sphinxcontrib_yowasp_wavedrom-1.1-py3-none-any.whl
+[2024-04-07 10:52:52] INFO root fetch - processPackages [deepeval]: Downloading https://files.pythonhosted.org/packages/79/cd/f07ea4ba3fa8fae91bc1bdecc3a7fc8882146f65614215058425221ac2e8/deepeval-0.9.9.tar.gz
+[2024-04-07 10:52:52] WARNING root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: Timeout reached during download
+[2024-04-07 10:52:52] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: executing diffoscope
+[2024-04-07 10:52:52] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib_yowasp_wavedrom-1.0-py3-none-any.whl.zip tmp/sphinxcontrib_yowasp_wavedrom-1.1-py3-none-any.whl.zip --markdown 20240407/s/sphinxcontrib-yowasp-wavedrom/1.0-1.1/diff.md --exclude *.pyd
+[2024-04-07 10:52:52] WARNING root fetch - processPackages [deepeval]: Timeout reached during download
+[2024-04-07 10:52:52] INFO root fetch - processPackages [deepeval]: executing diffoscope
+[2024-04-07 10:52:52] INFO root fetch - processPackages [deepeval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepeval-0.9.8.tar.gz tmp/deepeval-0.9.9.tar.gz --markdown 20240407/d/deepeval/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2024-04-07 10:52:53] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_yowasp_wavedrom-1.0-py3-none-any.whl.zip]
+[2024-04-07 10:52:53] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_yowasp_wavedrom-1.1-py3-none-any.whl.zip]
+[2024-04-07 10:52:53] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-yowasp-wavedrom]: success
+[2024-04-07 10:52:53] INFO root fetch - processPackages [deepeval]: Remove: archive file [/home/abi/fetcher/tmp/deepeval-0.9.8.tar.gz]
+[2024-04-07 10:52:53] INFO root fetch - processPackages [deepeval]: Remove: archive file [/home/abi/fetcher/tmp/deepeval-0.9.9.tar.gz]
+[2024-04-07 10:52:53] INFO root fetch - main [MainThread]: End processing [deepeval]: success
+[2024-04-07 10:52:53] INFO root fetch - main [MainThread]: Store serial: [22654851]
