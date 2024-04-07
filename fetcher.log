@@ -5790,3 +5790,36 @@
 [2024-04-07 07:53:57] INFO root fetch - processPackages [pulumi-github]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_github-6.3.0a1712399590.tar.gz]
 [2024-04-07 07:53:57] INFO root fetch - main [MainThread]: End processing [pulumi-github]: success
 [2024-04-07 07:53:57] INFO root fetch - main [MainThread]: Store serial: [22653769]
+[2024-04-07 07:56:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653769]
+[2024-04-07 07:56:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 07:56:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cloud-orbit-api
+[2024-04-07 07:56:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-digitalocean
+[2024-04-07 07:56:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymobiledevice3
+[2024-04-07 07:56:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-datadog
+[2024-04-07 07:56:05] INFO root fetch - processPackages [pulumi-digitalocean]: New version: [4.9.0a1637244514] Old Version: [4.9.0]
+[2024-04-07 07:56:05] INFO root fetch - processPackages [pulumi-datadog]: New version: [4.9.0a1653604828] Old Version: [4.9.0a1650908051]
+[2024-04-07 07:56:05] WARNING root fetch - processPackages [cloud-orbit-api]: Skipping, unable to determine old version
+[2024-04-07 07:56:05] INFO root fetch - main [MainThread]: End processing [cloud-orbit-api] error
+[2024-04-07 07:56:05] INFO root fetch - processPackages [pymobiledevice3]: New version: [3.3.0] Old Version: [3.2.0]
+[2024-04-07 07:56:05] INFO root fetch - processPackages [pulumi-digitalocean]: Downloading https://files.pythonhosted.org/packages/27/fe/88f79d9daf961f609409c5330a59d5bf5ff3effa841b5317256e773c92dd/pulumi_digitalocean-4.9.0.tar.gz
+[2024-04-07 07:56:05] INFO root fetch - processPackages [pulumi-datadog]: Downloading https://files.pythonhosted.org/packages/d8/b5/8991a5e2174de51c32d71e18a0d3eb5ac2f6bb5fe9f15ca8f908cee6e214/pulumi_datadog-4.9.0a1650908051.tar.gz
+[2024-04-07 07:56:06] WARNING root fetch - processPackages [pulumi-digitalocean]: Timeout reached during download
+[2024-04-07 07:56:06] WARNING root fetch - processPackages [pulumi-datadog]: Timeout reached during download
+[2024-04-07 07:56:06] INFO root fetch - processPackages [pymobiledevice3]: Downloading https://files.pythonhosted.org/packages/a7/b0/95e01c527113355ac6fdc3ca9f02e41b96ad4bb0996c5d07c0715c7c4762/pymobiledevice3-3.2.0.tar.gz
+[2024-04-07 07:56:06] WARNING root fetch - processPackages [pymobiledevice3]: Skipping package: exceeds size limit 31539753>=10485760
+[2024-04-07 07:56:06] INFO root fetch - main [MainThread]: End processing [pymobiledevice3] error
+[2024-04-07 07:56:06] INFO root fetch - processPackages [pulumi-digitalocean]: Downloading https://files.pythonhosted.org/packages/aa/e4/0dfa539667fb3462b4c16072050ebf8e1a80d862ac88c8b00ae29b019195/pulumi_digitalocean-4.9.0a1637244514.tar.gz
+[2024-04-07 07:56:06] WARNING root fetch - processPackages [pulumi-digitalocean]: Timeout reached during download
+[2024-04-07 07:56:06] INFO root fetch - processPackages [pulumi-digitalocean]: executing diffoscope
+[2024-04-07 07:56:06] INFO root fetch - processPackages [pulumi-digitalocean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_digitalocean-4.9.0.tar.gz tmp/pulumi_digitalocean-4.9.0a1637244514.tar.gz --markdown 20240407/p/pulumi-digitalocean/4.9.0-4.9.0a1637244514/diff.md --exclude *.pyd
+[2024-04-07 07:56:06] INFO root fetch - processPackages [pulumi-datadog]: Downloading https://files.pythonhosted.org/packages/de/b3/aee4697d07beb69799f35031c032637a1c998c8ba8a18ace02fb30a3011f/pulumi_datadog-4.9.0a1653604828.tar.gz
+[2024-04-07 07:56:06] WARNING root fetch - processPackages [pulumi-datadog]: Timeout reached during download
+[2024-04-07 07:56:06] INFO root fetch - processPackages [pulumi-datadog]: executing diffoscope
+[2024-04-07 07:56:06] INFO root fetch - processPackages [pulumi-datadog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_datadog-4.9.0a1650908051.tar.gz tmp/pulumi_datadog-4.9.0a1653604828.tar.gz --markdown 20240407/p/pulumi-datadog/4.9.0a1650908051-4.9.0a1653604828/diff.md --exclude *.pyd
+[2024-04-07 07:56:07] INFO root fetch - processPackages [pulumi-digitalocean]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_digitalocean-4.9.0.tar.gz]
+[2024-04-07 07:56:07] INFO root fetch - processPackages [pulumi-digitalocean]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_digitalocean-4.9.0a1637244514.tar.gz]
+[2024-04-07 07:56:07] INFO root fetch - main [MainThread]: End processing [pulumi-digitalocean]: success
+[2024-04-07 07:56:09] INFO root fetch - processPackages [pulumi-datadog]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_datadog-4.9.0a1650908051.tar.gz]
+[2024-04-07 07:56:09] INFO root fetch - processPackages [pulumi-datadog]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_datadog-4.9.0a1653604828.tar.gz]
+[2024-04-07 07:56:09] INFO root fetch - main [MainThread]: End processing [pulumi-datadog]: success
+[2024-04-07 07:56:09] INFO root fetch - main [MainThread]: Store serial: [22653780]
