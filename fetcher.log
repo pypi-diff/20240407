@@ -19968,3 +19968,9 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:37:00] INFO root fetch - processPackages [feynmodel]: Remove: archive file [/home/abi/fetcher/tmp/feynmodel-0.0.6.tar.gz]
 [2024-04-07 22:37:00] INFO root fetch - main [MainThread]: End processing [feynmodel]: success
 [2024-04-07 22:37:00] INFO root fetch - main [MainThread]: Store serial: [22659150]
+[2024-04-07 22:39:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659150]
+[2024-04-07 22:39:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 22:39:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: graph-validation-tests
+[2024-04-07 22:39:09] WARNING root fetch - processPackages [graph-validation-tests]: Skipping, unable to determine old version
+[2024-04-07 22:39:09] INFO root fetch - main [MainThread]: End processing [graph-validation-tests] error
+[2024-04-07 22:39:09] INFO root fetch - main [MainThread]: Store serial: [22659155]
