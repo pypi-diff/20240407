@@ -7472,3 +7472,28 @@
 [2024-04-07 09:43:19] INFO root fetch - processPackages [scButterfly]: Remove: archive file [/home/abi/fetcher/tmp/scButterfly-0.0.8.tar.gz]
 [2024-04-07 09:43:19] INFO root fetch - main [MainThread]: End processing [scButterfly]: success
 [2024-04-07 09:43:19] INFO root fetch - main [MainThread]: Store serial: [22654449]
+[2024-04-07 09:45:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654449]
+[2024-04-07 09:45:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 09:45:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netbound
+[2024-04-07 09:45:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlora
+[2024-04-07 09:45:29] INFO root fetch - processPackages [netbound]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 09:45:29] INFO root fetch - processPackages [mlora]: New version: [0.2.1.dev1] Old Version: [0.1]
+[2024-04-07 09:45:29] INFO root fetch - processPackages [netbound]: Downloading https://files.pythonhosted.org/packages/9c/ee/f89027b09e67ef76da5b4193174903df8d97c42510bc6e06d0cb30c508a2/netbound-0.1.8.tar.gz
+[2024-04-07 09:45:29] INFO root fetch - processPackages [mlora]: Downloading https://files.pythonhosted.org/packages/a1/37/82d90db2dd134b36fe5d7ac198a90bd63f5c1b953ae38c38f2e9b02762c5/mlora-0.1.tar.gz
+[2024-04-07 09:45:29] WARNING root fetch - processPackages [netbound]: Timeout reached during download
+[2024-04-07 09:45:29] WARNING root fetch - processPackages [mlora]: Timeout reached during download
+[2024-04-07 09:45:29] INFO root fetch - processPackages [netbound]: Downloading https://files.pythonhosted.org/packages/e1/c7/9bed379e99d5f984cf1fa304c3bebcf19b87ce8e3507b5ee0028fae5631f/netbound-0.1.9.tar.gz
+[2024-04-07 09:45:29] INFO root fetch - processPackages [mlora]: Downloading https://files.pythonhosted.org/packages/b6/b7/4a50152a7525c893e55404384ea4704763b2d4e9058a6a018097281d76f2/mlora-0.2.1.dev1.tar.gz
+[2024-04-07 09:45:29] WARNING root fetch - processPackages [netbound]: Timeout reached during download
+[2024-04-07 09:45:29] INFO root fetch - processPackages [netbound]: executing diffoscope
+[2024-04-07 09:45:29] INFO root fetch - processPackages [netbound]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbound-0.1.8.tar.gz tmp/netbound-0.1.9.tar.gz --markdown 20240407/n/netbound/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 09:45:29] WARNING root fetch - processPackages [mlora]: Timeout reached during download
+[2024-04-07 09:45:29] INFO root fetch - processPackages [mlora]: executing diffoscope
+[2024-04-07 09:45:29] INFO root fetch - processPackages [mlora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlora-0.1.tar.gz tmp/mlora-0.2.1.dev1.tar.gz --markdown 20240407/m/mlora/0.1-0.2.1.dev1/diff.md --exclude *.pyd
+[2024-04-07 09:45:30] INFO root fetch - processPackages [mlora]: Remove: archive file [/home/abi/fetcher/tmp/mlora-0.1.tar.gz]
+[2024-04-07 09:45:30] INFO root fetch - processPackages [mlora]: Remove: archive file [/home/abi/fetcher/tmp/mlora-0.2.1.dev1.tar.gz]
+[2024-04-07 09:45:30] INFO root fetch - main [MainThread]: End processing [mlora]: success
+[2024-04-07 09:45:30] INFO root fetch - processPackages [netbound]: Remove: archive file [/home/abi/fetcher/tmp/netbound-0.1.8.tar.gz]
+[2024-04-07 09:45:30] INFO root fetch - processPackages [netbound]: Remove: archive file [/home/abi/fetcher/tmp/netbound-0.1.9.tar.gz]
+[2024-04-07 09:45:30] INFO root fetch - main [MainThread]: End processing [netbound]: success
+[2024-04-07 09:45:30] INFO root fetch - main [MainThread]: Store serial: [22654456]
