@@ -14443,3 +14443,31 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:11:12] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.6.tar.gz]
 [2024-04-07 17:11:12] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
 [2024-04-07 17:11:12] INFO root fetch - main [MainThread]: Store serial: [22657092]
+[2024-04-07 17:13:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657092]
+[2024-04-07 17:13:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 17:13:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dxsp
+[2024-04-07 17:13:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: postgresql-integration-test
+[2024-04-07 17:13:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dmjone
+[2024-04-07 17:13:23] WARNING root fetch - processPackages [postgresql-integration-test]: Skipping, unable to determine old version
+[2024-04-07 17:13:23] INFO root fetch - main [MainThread]: End processing [postgresql-integration-test] error
+[2024-04-07 17:13:23] INFO root fetch - processPackages [dmjone]: New version: [0.1.9.1] Old Version: [0.1.9]
+[2024-04-07 17:13:23] INFO root fetch - processPackages [dmjone]: Downloading https://files.pythonhosted.org/packages/ec/85/88c9a2ba157e71f3e5bb12fbfa62d29ffde1c03de62265cedb85c490de65/dmjone-0.1.9.tar.gz
+[2024-04-07 17:13:23] WARNING root fetch - processPackages [dmjone]: Timeout reached during download
+[2024-04-07 17:13:23] INFO root fetch - processPackages [dxsp]: New version: [9.0.7] Old Version: [9.0.6]
+[2024-04-07 17:13:23] INFO root fetch - processPackages [dmjone]: Downloading https://files.pythonhosted.org/packages/95/4c/7d54f144a1cdc6223b5c11e5c22ed85a2001ad385e5549266311e7a3eaad/dmjone-0.1.9.1.tar.gz
+[2024-04-07 17:13:23] WARNING root fetch - processPackages [dmjone]: Timeout reached during download
+[2024-04-07 17:13:23] INFO root fetch - processPackages [dmjone]: executing diffoscope
+[2024-04-07 17:13:23] INFO root fetch - processPackages [dmjone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dmjone-0.1.9.tar.gz tmp/dmjone-0.1.9.1.tar.gz --markdown 20240407/d/dmjone/0.1.9-0.1.9.1/diff.md --exclude *.pyd
+[2024-04-07 17:13:23] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/a1/1f/4b20f69e5b75066726b10760e4d553170d395263325ba26fe170c2978d0b/dxsp-9.0.6.tar.gz
+[2024-04-07 17:13:23] WARNING root fetch - processPackages [dxsp]: Timeout reached during download
+[2024-04-07 17:13:24] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/c1/02/3119800c1eceb087f71694d8f6d21bce46ec401d2511bf92ed3ee83d9db4/dxsp-9.0.7.tar.gz
+[2024-04-07 17:13:24] WARNING root fetch - processPackages [dxsp]: Timeout reached during download
+[2024-04-07 17:13:24] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2024-04-07 17:13:24] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-9.0.6.tar.gz tmp/dxsp-9.0.7.tar.gz --markdown 20240407/d/dxsp/9.0.6-9.0.7/diff.md --exclude *.pyd
+[2024-04-07 17:13:24] INFO root fetch - processPackages [dmjone]: Remove: archive file [/home/abi/fetcher/tmp/dmjone-0.1.9.tar.gz]
+[2024-04-07 17:13:24] INFO root fetch - processPackages [dmjone]: Remove: archive file [/home/abi/fetcher/tmp/dmjone-0.1.9.1.tar.gz]
+[2024-04-07 17:13:24] INFO root fetch - main [MainThread]: End processing [dmjone]: success
+[2024-04-07 17:13:24] INFO root fetch - processPackages [dxsp]: Remove: archive file [/home/abi/fetcher/tmp/dxsp-9.0.6.tar.gz]
+[2024-04-07 17:13:24] INFO root fetch - processPackages [dxsp]: Remove: archive file [/home/abi/fetcher/tmp/dxsp-9.0.7.tar.gz]
+[2024-04-07 17:13:24] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2024-04-07 17:13:24] INFO root fetch - main [MainThread]: Store serial: [22657101]
