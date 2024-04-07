@@ -17896,3 +17896,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 20:34:39] INFO root fetch - processPackages [discovery-capability]: Remove: archive file [/home/abi/fetcher/tmp/discovery-capability-0.9.6.tar.gz]
 [2024-04-07 20:34:39] INFO root fetch - main [MainThread]: End processing [discovery-capability]: success
 [2024-04-07 20:34:39] INFO root fetch - main [MainThread]: Store serial: [22658367]
+[2024-04-07 20:36:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658367]
+[2024-04-07 20:36:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 20:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: msgraphhelper
+[2024-04-07 20:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eezo
+[2024-04-07 20:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ring-attention-pytorch
+[2024-04-07 20:36:48] INFO root fetch - processPackages [ring-attention-pytorch]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-07 20:36:48] INFO root fetch - processPackages [ring-attention-pytorch]: Downloading https://files.pythonhosted.org/packages/63/e9/a8c519d274f7464d6035139ade2610b1ec38972d3e65ff1a2ab72ec96d13/ring-attention-pytorch-0.3.4.tar.gz
+[2024-04-07 20:36:48] INFO root fetch - processPackages [eezo]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-07 20:36:48] INFO root fetch - processPackages [msgraphhelper]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-07 20:36:49] WARNING root fetch - processPackages [ring-attention-pytorch]: Timeout reached during download
+[2024-04-07 20:36:49] INFO root fetch - processPackages [eezo]: Downloading https://files.pythonhosted.org/packages/e4/20/59df2cc24d10937891a1ea5fa9a34173cfb267863c0afd751e876c0bf21e/eezo-0.1.6.tar.gz
+[2024-04-07 20:36:49] INFO root fetch - processPackages [msgraphhelper]: Downloading https://files.pythonhosted.org/packages/0f/69/d096418d4a3a4b54b55bafa9b5a1f0dc45c31e31f079c13fa8fc4892281b/msgraphhelper-0.2.0.tar.gz
+[2024-04-07 20:36:49] INFO root fetch - processPackages [ring-attention-pytorch]: Downloading https://files.pythonhosted.org/packages/62/2b/037a61f373da6faa8110f505cc83a7b5a9597d79f1e7433074073ec5c16d/ring-attention-pytorch-0.3.5.tar.gz
+[2024-04-07 20:36:49] WARNING root fetch - processPackages [ring-attention-pytorch]: Timeout reached during download
+[2024-04-07 20:36:49] INFO root fetch - processPackages [ring-attention-pytorch]: executing diffoscope
+[2024-04-07 20:36:49] INFO root fetch - processPackages [ring-attention-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ring-attention-pytorch-0.3.4.tar.gz tmp/ring-attention-pytorch-0.3.5.tar.gz --markdown 20240407/r/ring-attention-pytorch/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2024-04-07 20:36:49] WARNING root fetch - processPackages [eezo]: Timeout reached during download
+[2024-04-07 20:36:49] WARNING root fetch - processPackages [msgraphhelper]: Timeout reached during download
+[2024-04-07 20:36:49] INFO root fetch - processPackages [eezo]: Downloading https://files.pythonhosted.org/packages/0b/95/21baf920e2afa58d6ea355487b7e21cb4a523be0674f4bf1ac3fbf2378f2/eezo-0.1.7.tar.gz
+[2024-04-07 20:36:49] INFO root fetch - processPackages [msgraphhelper]: Downloading https://files.pythonhosted.org/packages/19/1c/5781818c5b91e89d8d89cd2e8911efab2952dd91a46a969759d7e283904b/msgraphhelper-0.3.0.tar.gz
+[2024-04-07 20:36:49] WARNING root fetch - processPackages [eezo]: Timeout reached during download
+[2024-04-07 20:36:49] INFO root fetch - processPackages [eezo]: executing diffoscope
+[2024-04-07 20:36:49] INFO root fetch - processPackages [eezo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eezo-0.1.6.tar.gz tmp/eezo-0.1.7.tar.gz --markdown 20240407/e/eezo/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2024-04-07 20:36:49] WARNING root fetch - processPackages [msgraphhelper]: Timeout reached during download
+[2024-04-07 20:36:49] INFO root fetch - processPackages [msgraphhelper]: executing diffoscope
+[2024-04-07 20:36:49] INFO root fetch - processPackages [msgraphhelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msgraphhelper-0.2.0.tar.gz tmp/msgraphhelper-0.3.0.tar.gz --markdown 20240407/m/msgraphhelper/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2024-04-07 20:36:49] INFO root fetch - processPackages [ring-attention-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/ring-attention-pytorch-0.3.4.tar.gz]
+[2024-04-07 20:36:49] INFO root fetch - processPackages [ring-attention-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/ring-attention-pytorch-0.3.5.tar.gz]
+[2024-04-07 20:36:49] INFO root fetch - main [MainThread]: End processing [ring-attention-pytorch]: success
+[2024-04-07 20:36:50] INFO root fetch - processPackages [eezo]: Remove: archive file [/home/abi/fetcher/tmp/eezo-0.1.6.tar.gz]
+[2024-04-07 20:36:50] INFO root fetch - processPackages [eezo]: Remove: archive file [/home/abi/fetcher/tmp/eezo-0.1.7.tar.gz]
+[2024-04-07 20:36:50] INFO root fetch - main [MainThread]: End processing [eezo]: success
+[2024-04-07 20:36:50] INFO root fetch - processPackages [msgraphhelper]: Remove: archive file [/home/abi/fetcher/tmp/msgraphhelper-0.2.0.tar.gz]
+[2024-04-07 20:36:50] INFO root fetch - processPackages [msgraphhelper]: Remove: archive file [/home/abi/fetcher/tmp/msgraphhelper-0.3.0.tar.gz]
+[2024-04-07 20:36:50] INFO root fetch - main [MainThread]: End processing [msgraphhelper]: success
+[2024-04-07 20:36:50] INFO root fetch - main [MainThread]: Store serial: [22658377]
