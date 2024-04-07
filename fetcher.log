@@ -11238,3 +11238,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:58:40] INFO root fetch - processPackages [koalix-crm]: Remove: archive file [/home/abi/fetcher/tmp/koalix-crm-1.14.0rc2.tar.gz]
 [2024-04-07 13:58:40] INFO root fetch - main [MainThread]: End processing [koalix-crm]: success
 [2024-04-07 13:58:40] INFO root fetch - main [MainThread]: Store serial: [22655921]
+[2024-04-07 14:00:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655921]
+[2024-04-07 14:00:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 14:00:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DocumentAI-std
+[2024-04-07 14:00:49] INFO root fetch - processPackages [DocumentAI-std]: New version: [0.1.1.dev0] Old Version: [0.1.1]
+[2024-04-07 14:00:49] INFO root fetch - processPackages [DocumentAI-std]: Downloading https://files.pythonhosted.org/packages/10/1a/bc164d78cd2435e24f25bdccdb49e6e8a138f1c895a2d79e3d0bf91fff1c/DocumentAI_std-0.1.1.tar.gz
+[2024-04-07 14:00:49] WARNING root fetch - processPackages [DocumentAI-std]: Timeout reached during download
+[2024-04-07 14:00:49] INFO root fetch - processPackages [DocumentAI-std]: Downloading https://files.pythonhosted.org/packages/e9/de/8f8726c62a74e10998da6c62e08206712931752603464ad9ea4a922e6af7/DocumentAI_std-0.1.1.dev0.tar.gz
+[2024-04-07 14:00:49] WARNING root fetch - processPackages [DocumentAI-std]: Timeout reached during download
+[2024-04-07 14:00:49] INFO root fetch - processPackages [DocumentAI-std]: executing diffoscope
+[2024-04-07 14:00:49] INFO root fetch - processPackages [DocumentAI-std]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DocumentAI_std-0.1.1.tar.gz tmp/DocumentAI_std-0.1.1.dev0.tar.gz --markdown 20240407/D/DocumentAI-std/0.1.1-0.1.1.dev0/diff.md --exclude *.pyd
+[2024-04-07 14:00:50] INFO root fetch - processPackages [DocumentAI-std]: Remove: archive file [/home/abi/fetcher/tmp/DocumentAI_std-0.1.1.tar.gz]
+[2024-04-07 14:00:50] INFO root fetch - processPackages [DocumentAI-std]: Remove: archive file [/home/abi/fetcher/tmp/DocumentAI_std-0.1.1.dev0.tar.gz]
+[2024-04-07 14:00:50] INFO root fetch - main [MainThread]: End processing [DocumentAI-std]: success
+[2024-04-07 14:00:50] INFO root fetch - main [MainThread]: Store serial: [22655928]
