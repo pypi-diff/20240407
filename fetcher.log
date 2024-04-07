@@ -11199,3 +11199,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:56:28] INFO root fetch - processPackages [metaapi-cloud-sdk]: Remove: archive file [/home/abi/fetcher/tmp/metaapi_cloud_sdk-9.1.0.tar.gz]
 [2024-04-07 13:56:28] INFO root fetch - main [MainThread]: End processing [metaapi-cloud-sdk]: success
 [2024-04-07 13:56:28] INFO root fetch - main [MainThread]: Store serial: [22655896]
+[2024-04-07 13:58:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655896]
+[2024-04-07 13:58:37] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 13:58:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cos-python-sdk-v5
+[2024-04-07 13:58:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tb1-parser
+[2024-04-07 13:58:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: koalix-crm
+[2024-04-07 13:58:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rython-calc
+[2024-04-07 13:58:37] INFO root fetch - processPackages [koalix-crm]: New version: [1.14.0rc2] Old Version: [1.14.0rc1]
+[2024-04-07 13:58:38] INFO root fetch - processPackages [koalix-crm]: Downloading https://files.pythonhosted.org/packages/2b/16/97039bfbbe23a012651e3737e436e29dc33db67cd8149e2a263ecdbb4fd7/koalix-crm-1.14.0rc1.tar.gz
+[2024-04-07 13:58:38] WARNING root fetch - processPackages [tb1-parser]: Skipping, unable to determine old version
+[2024-04-07 13:58:38] INFO root fetch - main [MainThread]: End processing [tb1-parser] error
+[2024-04-07 13:58:38] INFO root fetch - processPackages [rython-calc]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-04-07 13:58:38] INFO root fetch - processPackages [cos-python-sdk-v5]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-04-07 13:58:38] WARNING root fetch - processPackages [koalix-crm]: Timeout reached during download
+[2024-04-07 13:58:38] INFO root fetch - processPackages [cos-python-sdk-v5]: Downloading https://files.pythonhosted.org/packages/56/00/adfd8c15cfcfcbfbe41eef63d59bfc1e0a26a69de452322f18291be4eeff/cos-python-sdk-v5-1.9.8.tar.gz
+[2024-04-07 13:58:38] INFO root fetch - processPackages [rython-calc]: Downloading https://files.pythonhosted.org/packages/35/c7/075741cd10401608440091b5f8167f1930c786534e1044241d0a875bda1c/rython_calc-0.4.3.tar.gz
+[2024-04-07 13:58:38] WARNING root fetch - processPackages [cos-python-sdk-v5]: Timeout reached during download
+[2024-04-07 13:58:38] INFO root fetch - processPackages [koalix-crm]: Downloading https://files.pythonhosted.org/packages/aa/21/e52412762c9b063608e8063c12d099f3383bc74f6c358ea30969c416fcbd/koalix-crm-1.14.0rc2.tar.gz
+[2024-04-07 13:58:38] WARNING root fetch - processPackages [rython-calc]: Timeout reached during download
+[2024-04-07 13:58:38] INFO root fetch - processPackages [cos-python-sdk-v5]: Downloading https://files.pythonhosted.org/packages/ba/cf/5aa5f8807b88ddce659de12bcae67c8043b9251ccbdbced11ac4a96c87e3/cos-python-sdk-v5-1.9.9.tar.gz
+[2024-04-07 13:58:38] WARNING root fetch - processPackages [koalix-crm]: Timeout reached during download
+[2024-04-07 13:58:38] INFO root fetch - processPackages [koalix-crm]: executing diffoscope
+[2024-04-07 13:58:38] INFO root fetch - processPackages [koalix-crm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/koalix-crm-1.14.0rc1.tar.gz tmp/koalix-crm-1.14.0rc2.tar.gz --markdown 20240407/k/koalix-crm/1.14.0rc1-1.14.0rc2/diff.md --exclude *.pyd
+[2024-04-07 13:58:38] INFO root fetch - processPackages [rython-calc]: Downloading https://files.pythonhosted.org/packages/70/84/57c4109b3947e8c2e13422aa98525f46d361671c3daad84f5a1ef60945cb/rython_calc-0.4.4.tar.gz
+[2024-04-07 13:58:38] WARNING root fetch - processPackages [cos-python-sdk-v5]: Timeout reached during download
+[2024-04-07 13:58:38] INFO root fetch - processPackages [cos-python-sdk-v5]: executing diffoscope
+[2024-04-07 13:58:38] INFO root fetch - processPackages [cos-python-sdk-v5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cos-python-sdk-v5-1.9.8.tar.gz tmp/cos-python-sdk-v5-1.9.9.tar.gz --markdown 20240407/c/cos-python-sdk-v5/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2024-04-07 13:58:38] WARNING root fetch - processPackages [rython-calc]: Timeout reached during download
+[2024-04-07 13:58:38] INFO root fetch - processPackages [rython-calc]: executing diffoscope
+[2024-04-07 13:58:38] INFO root fetch - processPackages [rython-calc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rython_calc-0.4.3.tar.gz tmp/rython_calc-0.4.4.tar.gz --markdown 20240407/r/rython-calc/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2024-04-07 13:58:39] INFO root fetch - processPackages [cos-python-sdk-v5]: Remove: archive file [/home/abi/fetcher/tmp/cos-python-sdk-v5-1.9.8.tar.gz]
+[2024-04-07 13:58:39] INFO root fetch - processPackages [cos-python-sdk-v5]: Remove: archive file [/home/abi/fetcher/tmp/cos-python-sdk-v5-1.9.9.tar.gz]
+[2024-04-07 13:58:39] INFO root fetch - main [MainThread]: End processing [cos-python-sdk-v5]: success
+[2024-04-07 13:58:39] INFO root fetch - processPackages [rython-calc]: Remove: archive file [/home/abi/fetcher/tmp/rython_calc-0.4.3.tar.gz]
+[2024-04-07 13:58:39] INFO root fetch - processPackages [rython-calc]: Remove: archive file [/home/abi/fetcher/tmp/rython_calc-0.4.4.tar.gz]
+[2024-04-07 13:58:39] INFO root fetch - main [MainThread]: End processing [rython-calc]: success
+[2024-04-07 13:58:40] INFO root fetch - processPackages [koalix-crm]: Remove: archive file [/home/abi/fetcher/tmp/koalix-crm-1.14.0rc1.tar.gz]
+[2024-04-07 13:58:40] INFO root fetch - processPackages [koalix-crm]: Remove: archive file [/home/abi/fetcher/tmp/koalix-crm-1.14.0rc2.tar.gz]
+[2024-04-07 13:58:40] INFO root fetch - main [MainThread]: End processing [koalix-crm]: success
+[2024-04-07 13:58:40] INFO root fetch - main [MainThread]: Store serial: [22655921]
