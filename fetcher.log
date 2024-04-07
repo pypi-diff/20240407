@@ -2326,3 +2326,28 @@
 [2024-04-07 03:35:22] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip]
 [2024-04-07 03:35:22] INFO root fetch - main [MainThread]: End processing [pyAgrum-nightly]: success
 [2024-04-07 03:35:22] INFO root fetch - main [MainThread]: Store serial: [22652655]
+[2024-04-07 03:37:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652655]
+[2024-04-07 03:37:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 03:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: galileo-core
+[2024-04-07 03:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ergastirio
+[2024-04-07 03:37:30] INFO root fetch - processPackages [galileo-core]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-07 03:37:30] INFO root fetch - processPackages [ergastirio]: New version: [0.9] Old Version: [0.8]
+[2024-04-07 03:37:30] INFO root fetch - processPackages [ergastirio]: Downloading https://files.pythonhosted.org/packages/61/7d/c683f388b59a46faa64f65a295b23a38a778d5c9d5ca081bd324d89a664f/ergastirio-0.8.tar.gz
+[2024-04-07 03:37:30] INFO root fetch - processPackages [galileo-core]: Downloading https://files.pythonhosted.org/packages/d2/03/c51ede67328c7173ccc8bb0dea072c7f9e50b7612e2d261ce32d678d1b55/galileo_core-0.5.0.tar.gz
+[2024-04-07 03:37:30] WARNING root fetch - processPackages [galileo-core]: Timeout reached during download
+[2024-04-07 03:37:30] WARNING root fetch - processPackages [ergastirio]: Timeout reached during download
+[2024-04-07 03:37:30] INFO root fetch - processPackages [ergastirio]: Downloading https://files.pythonhosted.org/packages/c2/8d/5916468ebb64b91fb8f309adb235d4c6b724f39cd5a78c2ebd2f6f506007/ergastirio-0.9.tar.gz
+[2024-04-07 03:37:30] INFO root fetch - processPackages [galileo-core]: Downloading https://files.pythonhosted.org/packages/72/9a/16b2f49db813b8fbb833f18aa0ac7afe9cd3f5137397bb36c1bcf5d7306d/galileo_core-0.5.1.tar.gz
+[2024-04-07 03:37:31] WARNING root fetch - processPackages [ergastirio]: Timeout reached during download
+[2024-04-07 03:37:31] INFO root fetch - processPackages [ergastirio]: executing diffoscope
+[2024-04-07 03:37:31] INFO root fetch - processPackages [ergastirio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ergastirio-0.8.tar.gz tmp/ergastirio-0.9.tar.gz --markdown 20240407/e/ergastirio/0.8-0.9/diff.md --exclude *.pyd
+[2024-04-07 03:37:31] WARNING root fetch - processPackages [galileo-core]: Timeout reached during download
+[2024-04-07 03:37:31] INFO root fetch - processPackages [galileo-core]: executing diffoscope
+[2024-04-07 03:37:31] INFO root fetch - processPackages [galileo-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/galileo_core-0.5.0.tar.gz tmp/galileo_core-0.5.1.tar.gz --markdown 20240407/g/galileo-core/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2024-04-07 03:37:31] INFO root fetch - processPackages [galileo-core]: Remove: archive file [/home/abi/fetcher/tmp/galileo_core-0.5.0.tar.gz]
+[2024-04-07 03:37:31] INFO root fetch - processPackages [galileo-core]: Remove: archive file [/home/abi/fetcher/tmp/galileo_core-0.5.1.tar.gz]
+[2024-04-07 03:37:31] INFO root fetch - main [MainThread]: End processing [galileo-core]: success
+[2024-04-07 03:37:31] INFO root fetch - processPackages [ergastirio]: Remove: archive file [/home/abi/fetcher/tmp/ergastirio-0.8.tar.gz]
+[2024-04-07 03:37:31] INFO root fetch - processPackages [ergastirio]: Remove: archive file [/home/abi/fetcher/tmp/ergastirio-0.9.tar.gz]
+[2024-04-07 03:37:31] INFO root fetch - main [MainThread]: End processing [ergastirio]: success
+[2024-04-07 03:37:31] INFO root fetch - main [MainThread]: Store serial: [22652681]
