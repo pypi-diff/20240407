@@ -8702,3 +8702,59 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 11:10:19] INFO root fetch - processPackages [desktop-env]: Remove: archive file [/home/abi/fetcher/tmp/desktop_env-0.1.3.tar.gz]
 [2024-04-07 11:10:19] INFO root fetch - main [MainThread]: End processing [desktop-env]: success
 [2024-04-07 11:10:19] INFO root fetch - main [MainThread]: Store serial: [22654943]
+[2024-04-07 11:12:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654943]
+[2024-04-07 11:12:29] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-07 11:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: binance-network
+[2024-04-07 11:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk8s-plus-26
+[2024-04-07 11:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk8s-plus-27
+[2024-04-07 11:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tk-config-tools
+[2024-04-07 11:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-maintenance-equipment-meter
+[2024-04-07 11:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: feynmodel
+[2024-04-07 11:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tui-dsmt
+[2024-04-07 11:12:29] INFO root fetch - processPackages [cdk8s-plus-26]: New version: [2.9.0] Old Version: [2.8.1]
+[2024-04-07 11:12:29] WARNING root fetch - processPackages [binance-network]: Skipping, unable to determine old version
+[2024-04-07 11:12:29] INFO root fetch - main [MainThread]: End processing [binance-network] error
+[2024-04-07 11:12:29] WARNING root fetch - processPackages [tk-config-tools]: Skipping, unable to determine old version
+[2024-04-07 11:12:29] INFO root fetch - main [MainThread]: End processing [tk-config-tools] error
+[2024-04-07 11:12:29] INFO root fetch - processPackages [cdk8s-plus-26]: Downloading https://files.pythonhosted.org/packages/57/27/c7dc7b7a6ca589c8557e2fcdfa03d98cabb52552fd18df535b3e675f7dc0/cdk8s-plus-26-2.8.1.tar.gz
+[2024-04-07 11:12:29] WARNING root fetch - processPackages [odoo14-addon-maintenance-equipment-meter]: Skipping, unable to determine old version
+[2024-04-07 11:12:29] INFO root fetch - main [MainThread]: End processing [odoo14-addon-maintenance-equipment-meter] error
+[2024-04-07 11:12:29] INFO root fetch - processPackages [feynmodel]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-07 11:12:29] INFO root fetch - processPackages [tui-dsmt]: New version: [202404070905] Old Version: [202404051439]
+[2024-04-07 11:12:29] INFO root fetch - processPackages [cdk8s-plus-27]: New version: [2.7.9] Old Version: [2.7.86]
+[2024-04-07 11:12:29] INFO root fetch - processPackages [feynmodel]: Downloading https://files.pythonhosted.org/packages/e2/79/351998cc4c5ff2d716b018a8d19259b01ca7f339bc93dbd0a13e4890ed5f/feynmodel-0.0.5.tar.gz
+[2024-04-07 11:12:29] INFO root fetch - processPackages [cdk8s-plus-27]: Downloading https://files.pythonhosted.org/packages/ad/0b/1f5e0691483aecfd16d12eed5feb28545a9418c8bb2e55b974debec11e9f/cdk8s-plus-27-2.7.86.tar.gz
+[2024-04-07 11:12:29] WARNING root fetch - processPackages [cdk8s-plus-26]: Timeout reached during download
+[2024-04-07 11:12:29] WARNING root fetch - processPackages [feynmodel]: Timeout reached during download
+[2024-04-07 11:12:29] INFO root fetch - processPackages [tui-dsmt]: Downloading https://files.pythonhosted.org/packages/cf/0b/bf29bc6f883c5c001508286388669653864486c1b65b6f1917697df73de2/tui_dsmt-202404051439.tar.gz
+[2024-04-07 11:12:29] INFO root fetch - processPackages [cdk8s-plus-26]: Downloading https://files.pythonhosted.org/packages/f9/b5/db2ea94d29c01b146fcfb2e07a32393e9961c1c1f5a9a2bc2232af84a4dd/cdk8s-plus-26-2.9.0.tar.gz
+[2024-04-07 11:12:30] WARNING root fetch - processPackages [cdk8s-plus-27]: Timeout reached during download
+[2024-04-07 11:12:30] WARNING root fetch - processPackages [tui-dsmt]: Timeout reached during download
+[2024-04-07 11:12:30] INFO root fetch - processPackages [feynmodel]: Downloading https://files.pythonhosted.org/packages/12/cc/f819fd92265439d6e7eae2ff7110f00a9f58183b835e5ea8f7f33fcda3fd/feynmodel-0.0.6.tar.gz
+[2024-04-07 11:12:30] INFO root fetch - processPackages [cdk8s-plus-27]: Downloading https://files.pythonhosted.org/packages/44/30/c61068eb6060bf310799a92d2ef4a04d9a19c4394595290b4ba243cc21c2/cdk8s-plus-27-2.7.9.tar.gz
+[2024-04-07 11:12:30] INFO root fetch - processPackages [tui-dsmt]: Downloading https://files.pythonhosted.org/packages/34/eb/254721c505a474e5698dde7da6620b8196e2c350878ad7ba0341c36c3f32/tui_dsmt-202404070905.tar.gz
+[2024-04-07 11:12:30] WARNING root fetch - processPackages [cdk8s-plus-26]: Timeout reached during download
+[2024-04-07 11:12:30] INFO root fetch - processPackages [cdk8s-plus-26]: executing diffoscope
+[2024-04-07 11:12:30] INFO root fetch - processPackages [cdk8s-plus-26]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-26-2.8.1.tar.gz tmp/cdk8s-plus-26-2.9.0.tar.gz --markdown 20240407/c/cdk8s-plus-26/2.8.1-2.9.0/diff.md --exclude *.pyd
+[2024-04-07 11:12:30] WARNING root fetch - processPackages [feynmodel]: Timeout reached during download
+[2024-04-07 11:12:30] INFO root fetch - processPackages [feynmodel]: executing diffoscope
+[2024-04-07 11:12:30] INFO root fetch - processPackages [feynmodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feynmodel-0.0.5.tar.gz tmp/feynmodel-0.0.6.tar.gz --markdown 20240407/f/feynmodel/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-07 11:12:30] WARNING root fetch - processPackages [tui-dsmt]: Timeout reached during download
+[2024-04-07 11:12:30] INFO root fetch - processPackages [tui-dsmt]: executing diffoscope
+[2024-04-07 11:12:30] INFO root fetch - processPackages [tui-dsmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tui_dsmt-202404051439.tar.gz tmp/tui_dsmt-202404070905.tar.gz --markdown 20240407/t/tui-dsmt/202404051439-202404070905/diff.md --exclude *.pyd
+[2024-04-07 11:12:30] WARNING root fetch - processPackages [cdk8s-plus-27]: Timeout reached during download
+[2024-04-07 11:12:30] INFO root fetch - processPackages [cdk8s-plus-27]: executing diffoscope
+[2024-04-07 11:12:30] INFO root fetch - processPackages [cdk8s-plus-27]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-27-2.7.86.tar.gz tmp/cdk8s-plus-27-2.7.9.tar.gz --markdown 20240407/c/cdk8s-plus-27/2.7.86-2.7.9/diff.md --exclude *.pyd
+[2024-04-07 11:12:30] INFO root fetch - processPackages [feynmodel]: Remove: archive file [/home/abi/fetcher/tmp/feynmodel-0.0.5.tar.gz]
+[2024-04-07 11:12:30] INFO root fetch - processPackages [feynmodel]: Remove: archive file [/home/abi/fetcher/tmp/feynmodel-0.0.6.tar.gz]
+[2024-04-07 11:12:30] INFO root fetch - main [MainThread]: End processing [feynmodel]: success
+[2024-04-07 11:12:31] INFO root fetch - processPackages [cdk8s-plus-26]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-plus-26-2.8.1.tar.gz]
+[2024-04-07 11:12:31] INFO root fetch - processPackages [cdk8s-plus-26]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-plus-26-2.9.0.tar.gz]
+[2024-04-07 11:12:31] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-26]: success
+[2024-04-07 11:12:31] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202404051439.tar.gz]
+[2024-04-07 11:12:31] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202404070905.tar.gz]
+[2024-04-07 11:12:31] INFO root fetch - main [MainThread]: End processing [tui-dsmt]: success
+[2024-04-07 11:12:33] INFO root fetch - processPackages [cdk8s-plus-27]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-plus-27-2.7.86.tar.gz]
+[2024-04-07 11:12:33] INFO root fetch - processPackages [cdk8s-plus-27]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-plus-27-2.7.9.tar.gz]
+[2024-04-07 11:12:33] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-27]: success
+[2024-04-07 11:12:33] INFO root fetch - main [MainThread]: Store serial: [22654966]
