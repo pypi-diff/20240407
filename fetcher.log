@@ -4032,3 +4032,28 @@
 [2024-04-07 05:36:57] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b94.tar.gz]
 [2024-04-07 05:36:57] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
 [2024-04-07 05:36:57] INFO root fetch - main [MainThread]: Store serial: [22653280]
+[2024-04-07 05:39:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653280]
+[2024-04-07 05:39:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 05:39:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytector
+[2024-04-07 05:39:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smaht-submitr
+[2024-04-07 05:39:06] INFO root fetch - processPackages [smaht-submitr]: New version: [0.7.0.1b95] Old Version: [0.7.0.1b94]
+[2024-04-07 05:39:06] INFO root fetch - processPackages [pytector]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-07 05:39:06] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/44/38/9e4d9d2808f96aa6fc43def6220ecc7c6ff9fa9a66548b47b5fc549e8444/smaht_submitr-0.7.0.1b94.tar.gz
+[2024-04-07 05:39:06] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 05:39:06] INFO root fetch - processPackages [pytector]: Downloading https://files.pythonhosted.org/packages/a4/8a/879d8b0e8871f6713d7487ff62049282e0d26eb733c58d79e02d15d4a16d/pytector-0.0.5.tar.gz
+[2024-04-07 05:39:06] WARNING root fetch - processPackages [pytector]: Timeout reached during download
+[2024-04-07 05:39:06] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/75/8c/f9beb6bc26510a3ad2313c7a18cb3cc75780f92db46d4c01c010594409b6/smaht_submitr-0.7.0.1b95.tar.gz
+[2024-04-07 05:39:06] INFO root fetch - processPackages [pytector]: Downloading https://files.pythonhosted.org/packages/4c/20/8d3a426c3b2e99e8f961908e3de74704b85c10afb974388298ce5615dae0/pytector-0.0.6.tar.gz
+[2024-04-07 05:39:06] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 05:39:06] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-07 05:39:06] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.7.0.1b94.tar.gz tmp/smaht_submitr-0.7.0.1b95.tar.gz --markdown 20240407/s/smaht-submitr/0.7.0.1b94-0.7.0.1b95/diff.md --exclude *.pyd
+[2024-04-07 05:39:06] WARNING root fetch - processPackages [pytector]: Timeout reached during download
+[2024-04-07 05:39:06] INFO root fetch - processPackages [pytector]: executing diffoscope
+[2024-04-07 05:39:06] INFO root fetch - processPackages [pytector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytector-0.0.5.tar.gz tmp/pytector-0.0.6.tar.gz --markdown 20240407/p/pytector/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-07 05:39:07] INFO root fetch - processPackages [pytector]: Remove: archive file [/home/abi/fetcher/tmp/pytector-0.0.5.tar.gz]
+[2024-04-07 05:39:07] INFO root fetch - processPackages [pytector]: Remove: archive file [/home/abi/fetcher/tmp/pytector-0.0.6.tar.gz]
+[2024-04-07 05:39:07] INFO root fetch - main [MainThread]: End processing [pytector]: success
+[2024-04-07 05:39:07] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b94.tar.gz]
+[2024-04-07 05:39:07] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b95.tar.gz]
+[2024-04-07 05:39:07] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-07 05:39:07] INFO root fetch - main [MainThread]: Store serial: [22653283]
