@@ -6626,3 +6626,30 @@
 [2024-04-07 08:42:14] INFO root fetch - processPackages [gdmath]: Remove: archive file [/home/abi/fetcher/tmp/gdmath-1.5.2-cp310-cp310-musllinux_1_1_i686.whl.zip]
 [2024-04-07 08:42:14] INFO root fetch - main [MainThread]: End processing [gdmath]: success
 [2024-04-07 08:42:14] INFO root fetch - main [MainThread]: Store serial: [22654100]
+[2024-04-07 08:44:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654100]
+[2024-04-07 08:44:23] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 08:46:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654138]
+[2024-04-07 08:46:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 08:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: commit-check
+[2024-04-07 08:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: WebexCompassSDK
+[2024-04-07 08:46:28] INFO root fetch - processPackages [commit-check]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-04-07 08:46:28] INFO root fetch - processPackages [WebexCompassSDK]: New version: [44.4.1] Old Version: [44.3.4]
+[2024-04-07 08:46:29] INFO root fetch - processPackages [commit-check]: Downloading https://files.pythonhosted.org/packages/ea/d5/a7dd0db5329548dae9842174a179570270837f6685f4284025c4c79eb15a/commit_check-0.7.3-py3-none-any.whl
+[2024-04-07 08:46:29] INFO root fetch - processPackages [WebexCompassSDK]: Downloading https://files.pythonhosted.org/packages/d8/5b/9f4bab38cf6bd191b4ca7d0402e475ab7976f15cebe81696b621e5c8e582/WebexCompassSDK-44.3.4.tar.gz
+[2024-04-07 08:46:29] WARNING root fetch - processPackages [WebexCompassSDK]: Timeout reached during download
+[2024-04-07 08:46:29] WARNING root fetch - processPackages [commit-check]: Timeout reached during download
+[2024-04-07 08:46:29] INFO root fetch - processPackages [WebexCompassSDK]: Downloading https://files.pythonhosted.org/packages/1f/c7/b3351b7836cf7ebc9dd4b4f906797f5cd42d4a1a6e461df2938989f7db18/WebexCompassSDK-44.4.1.tar.gz
+[2024-04-07 08:46:29] INFO root fetch - processPackages [commit-check]: Downloading https://files.pythonhosted.org/packages/1b/db/3f192fb0c40b0d682845ab8fcc5b0d81a67e43c9ddd9b9f6e73771a18bad/commit_check-0.7.4-py3-none-any.whl
+[2024-04-07 08:46:29] WARNING root fetch - processPackages [WebexCompassSDK]: Timeout reached during download
+[2024-04-07 08:46:29] INFO root fetch - processPackages [WebexCompassSDK]: executing diffoscope
+[2024-04-07 08:46:29] INFO root fetch - processPackages [WebexCompassSDK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WebexCompassSDK-44.3.4.tar.gz tmp/WebexCompassSDK-44.4.1.tar.gz --markdown 20240407/W/WebexCompassSDK/44.3.4-44.4.1/diff.md --exclude *.pyd
+[2024-04-07 08:46:29] WARNING root fetch - processPackages [commit-check]: Timeout reached during download
+[2024-04-07 08:46:29] INFO root fetch - processPackages [commit-check]: executing diffoscope
+[2024-04-07 08:46:29] INFO root fetch - processPackages [commit-check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commit_check-0.7.3-py3-none-any.whl.zip tmp/commit_check-0.7.4-py3-none-any.whl.zip --markdown 20240407/c/commit-check/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2024-04-07 08:46:30] INFO root fetch - processPackages [WebexCompassSDK]: Remove: archive file [/home/abi/fetcher/tmp/WebexCompassSDK-44.3.4.tar.gz]
+[2024-04-07 08:46:30] INFO root fetch - processPackages [WebexCompassSDK]: Remove: archive file [/home/abi/fetcher/tmp/WebexCompassSDK-44.4.1.tar.gz]
+[2024-04-07 08:46:30] INFO root fetch - main [MainThread]: End processing [WebexCompassSDK]: success
+[2024-04-07 08:46:30] INFO root fetch - processPackages [commit-check]: Remove: archive file [/home/abi/fetcher/tmp/commit_check-0.7.3-py3-none-any.whl.zip]
+[2024-04-07 08:46:30] INFO root fetch - processPackages [commit-check]: Remove: archive file [/home/abi/fetcher/tmp/commit_check-0.7.4-py3-none-any.whl.zip]
+[2024-04-07 08:46:30] INFO root fetch - main [MainThread]: End processing [commit-check]: success
+[2024-04-07 08:46:30] INFO root fetch - main [MainThread]: Store serial: [22654142]
