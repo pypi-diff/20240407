@@ -17468,3 +17468,20 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 20:10:31] INFO root fetch - processPackages [jsonschema-gen]: Remove: archive file [/home/abi/fetcher/tmp/jsonschema_gen-0.1.1-py3-none-any.whl.zip]
 [2024-04-07 20:10:31] INFO root fetch - main [MainThread]: End processing [jsonschema-gen]: success
 [2024-04-07 20:10:31] INFO root fetch - main [MainThread]: Store serial: [22658181]
+[2024-04-07 20:12:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658181]
+[2024-04-07 20:12:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 20:12:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: adspkg
+[2024-04-07 20:12:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simplebox
+[2024-04-07 20:12:41] INFO root fetch - processPackages [simplebox]: New version: [0.0.1a189] Old Version: [0.0.1a188]
+[2024-04-07 20:12:41] WARNING root fetch - processPackages [adspkg]: Skipping, unable to determine old version
+[2024-04-07 20:12:41] INFO root fetch - main [MainThread]: End processing [adspkg] error
+[2024-04-07 20:12:41] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/d1/b7/6f128998547d3e68153764c4ef28098a98efb35d898608ebd9ac2d8598bd/simplebox-0.0.1a188-py3-none-any.whl
+[2024-04-07 20:12:41] WARNING root fetch - processPackages [simplebox]: Timeout reached during download
+[2024-04-07 20:12:41] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/fd/1b/eb918e0fcb37159da064a3c74f49957b043fd1206b86988f78c4467da383/simplebox-0.0.1a189-py3-none-any.whl
+[2024-04-07 20:12:42] WARNING root fetch - processPackages [simplebox]: Timeout reached during download
+[2024-04-07 20:12:42] INFO root fetch - processPackages [simplebox]: executing diffoscope
+[2024-04-07 20:12:42] INFO root fetch - processPackages [simplebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplebox-0.0.1a188-py3-none-any.whl.zip tmp/simplebox-0.0.1a189-py3-none-any.whl.zip --markdown 20240407/s/simplebox/0.0.1a188-0.0.1a189/diff.md --exclude *.pyd
+[2024-04-07 20:12:43] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a188-py3-none-any.whl.zip]
+[2024-04-07 20:12:43] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a189-py3-none-any.whl.zip]
+[2024-04-07 20:12:43] INFO root fetch - main [MainThread]: End processing [simplebox]: success
+[2024-04-07 20:12:43] INFO root fetch - main [MainThread]: Store serial: [22658191]
