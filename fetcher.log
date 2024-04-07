@@ -14657,3 +14657,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:24:17] INFO root fetch - processPackages [rg3py]: Remove: archive file [/home/abi/fetcher/tmp/rg3py-0.0.5-py3-none-win_amd64.whl.zip]
 [2024-04-07 17:24:17] INFO root fetch - main [MainThread]: End processing [rg3py]: success
 [2024-04-07 17:24:17] INFO root fetch - main [MainThread]: Store serial: [22657163]
+[2024-04-07 17:26:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657163]
+[2024-04-07 17:26:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 17:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: upsonic
+[2024-04-07 17:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-markov
+[2024-04-07 17:26:26] INFO root fetch - processPackages [django-markov]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-07 17:26:26] INFO root fetch - processPackages [upsonic]: New version: [0.9.0] Old Version: [0.8.4]
+[2024-04-07 17:26:26] INFO root fetch - processPackages [django-markov]: Downloading https://files.pythonhosted.org/packages/79/ff/f07553a2c3cc110fa5824636f8adf6e83a8077768fa4d555ad0053adacc6/django_markov-0.2.1.tar.gz
+[2024-04-07 17:26:26] INFO root fetch - processPackages [upsonic]: Downloading https://files.pythonhosted.org/packages/28/4f/e4de97c3853a38f0003dd35e31de9d8003b16d10fd76b190f4778626ce27/upsonic-0.8.4.tar.gz
+[2024-04-07 17:26:26] WARNING root fetch - processPackages [upsonic]: Timeout reached during download
+[2024-04-07 17:26:26] WARNING root fetch - processPackages [django-markov]: Timeout reached during download
+[2024-04-07 17:26:27] INFO root fetch - processPackages [upsonic]: Downloading https://files.pythonhosted.org/packages/e2/c6/1f2c73c8b576a9a13477f4177f58dce58e65a860c35204e42f53a5db8144/upsonic-0.9.0.tar.gz
+[2024-04-07 17:26:27] INFO root fetch - processPackages [django-markov]: Downloading https://files.pythonhosted.org/packages/56/ba/2c5fa25fdc77602548723e5ed02f37c7d3bcf77b758fbb1e33918e81749c/django_markov-0.2.2.tar.gz
+[2024-04-07 17:26:27] WARNING root fetch - processPackages [django-markov]: Timeout reached during download
+[2024-04-07 17:26:27] INFO root fetch - processPackages [django-markov]: executing diffoscope
+[2024-04-07 17:26:27] INFO root fetch - processPackages [django-markov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_markov-0.2.1.tar.gz tmp/django_markov-0.2.2.tar.gz --markdown 20240407/d/django-markov/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2024-04-07 17:26:27] WARNING root fetch - processPackages [upsonic]: Timeout reached during download
+[2024-04-07 17:26:27] INFO root fetch - processPackages [upsonic]: executing diffoscope
+[2024-04-07 17:26:27] INFO root fetch - processPackages [upsonic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upsonic-0.8.4.tar.gz tmp/upsonic-0.9.0.tar.gz --markdown 20240407/u/upsonic/0.8.4-0.9.0/diff.md --exclude *.pyd
+[2024-04-07 17:26:27] INFO root fetch - processPackages [django-markov]: Remove: archive file [/home/abi/fetcher/tmp/django_markov-0.2.1.tar.gz]
+[2024-04-07 17:26:27] INFO root fetch - processPackages [django-markov]: Remove: archive file [/home/abi/fetcher/tmp/django_markov-0.2.2.tar.gz]
+[2024-04-07 17:26:27] INFO root fetch - main [MainThread]: End processing [django-markov]: success
+[2024-04-07 17:26:28] INFO root fetch - processPackages [upsonic]: Remove: archive file [/home/abi/fetcher/tmp/upsonic-0.8.4.tar.gz]
+[2024-04-07 17:26:28] INFO root fetch - processPackages [upsonic]: Remove: archive file [/home/abi/fetcher/tmp/upsonic-0.9.0.tar.gz]
+[2024-04-07 17:26:28] INFO root fetch - main [MainThread]: End processing [upsonic]: success
+[2024-04-07 17:26:28] INFO root fetch - main [MainThread]: Store serial: [22657170]
