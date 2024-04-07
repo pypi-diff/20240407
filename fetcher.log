@@ -13555,3 +13555,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:29:16] INFO root fetch - processPackages [pytrakt]: Remove: archive file [/home/abi/fetcher/tmp/pytrakt-3.4.9.tar.gz]
 [2024-04-07 16:29:16] INFO root fetch - main [MainThread]: End processing [pytrakt]: success
 [2024-04-07 16:29:16] INFO root fetch - main [MainThread]: Store serial: [22656810]
+[2024-04-07 16:31:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656810]
+[2024-04-07 16:31:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 16:31:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: atomicshop
+[2024-04-07 16:31:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypdf
+[2024-04-07 16:31:24] INFO root fetch - processPackages [pypdf]: New version: [4.2.0] Old Version: [4.1.0]
+[2024-04-07 16:31:24] INFO root fetch - processPackages [atomicshop]: New version: [2.9.9] Old Version: [2.9.8]
+[2024-04-07 16:31:25] INFO root fetch - processPackages [pypdf]: Downloading https://files.pythonhosted.org/packages/49/6c/4ffb864f1f41b7ef7bf8a397b16888cf191161a98d4c345fa32ec5aa1454/pypdf-4.1.0.tar.gz
+[2024-04-07 16:31:25] INFO root fetch - processPackages [atomicshop]: Downloading https://files.pythonhosted.org/packages/d2/21/28f2fa378fa9384a46ee0bb783f24dada88c68f21215a2f579c4546b4378/atomicshop-2.9.8-py3-none-any.whl
+[2024-04-07 16:31:25] WARNING root fetch - processPackages [pypdf]: Timeout reached during download
+[2024-04-07 16:31:25] INFO root fetch - processPackages [pypdf]: Downloading https://files.pythonhosted.org/packages/71/01/2b94d9be4ae36f30e7f980db2f05c9b92831cea87b96669d528d07f44bad/pypdf-4.2.0.tar.gz
+[2024-04-07 16:31:25] WARNING root fetch - processPackages [atomicshop]: Timeout reached during download
+[2024-04-07 16:31:25] WARNING root fetch - processPackages [pypdf]: Timeout reached during download
+[2024-04-07 16:31:25] INFO root fetch - processPackages [pypdf]: executing diffoscope
+[2024-04-07 16:31:25] INFO root fetch - processPackages [pypdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypdf-4.1.0.tar.gz tmp/pypdf-4.2.0.tar.gz --markdown 20240407/p/pypdf/4.1.0-4.2.0/diff.md --exclude *.pyd
+[2024-04-07 16:31:25] INFO root fetch - processPackages [atomicshop]: Downloading https://files.pythonhosted.org/packages/c7/eb/d8ab161ca5be5b103111d67161f5490ddfc3a3b3ed4b1862ad35a83e0846/atomicshop-2.9.9-py3-none-any.whl
+[2024-04-07 16:31:25] WARNING root fetch - processPackages [atomicshop]: Timeout reached during download
+[2024-04-07 16:31:25] INFO root fetch - processPackages [atomicshop]: executing diffoscope
+[2024-04-07 16:31:25] INFO root fetch - processPackages [atomicshop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atomicshop-2.9.8-py3-none-any.whl.zip tmp/atomicshop-2.9.9-py3-none-any.whl.zip --markdown 20240407/a/atomicshop/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2024-04-07 16:31:26] INFO root fetch - processPackages [pypdf]: Remove: archive file [/home/abi/fetcher/tmp/pypdf-4.1.0.tar.gz]
+[2024-04-07 16:31:26] INFO root fetch - processPackages [pypdf]: Remove: archive file [/home/abi/fetcher/tmp/pypdf-4.2.0.tar.gz]
+[2024-04-07 16:31:26] INFO root fetch - main [MainThread]: End processing [pypdf]: success
+[2024-04-07 16:31:27] INFO root fetch - processPackages [atomicshop]: Remove: archive file [/home/abi/fetcher/tmp/atomicshop-2.9.8-py3-none-any.whl.zip]
+[2024-04-07 16:31:27] INFO root fetch - processPackages [atomicshop]: Remove: archive file [/home/abi/fetcher/tmp/atomicshop-2.9.9-py3-none-any.whl.zip]
+[2024-04-07 16:31:27] INFO root fetch - main [MainThread]: End processing [atomicshop]: success
+[2024-04-07 16:31:27] INFO root fetch - main [MainThread]: Store serial: [22656816]
