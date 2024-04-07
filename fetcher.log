@@ -11594,3 +11594,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:24:51] INFO root fetch - processPackages [dcs-code-injector]: Remove: archive file [/home/abi/fetcher/tmp/dcs-code-injector-1.4.7.tar.gz]
 [2024-04-07 14:24:51] INFO root fetch - main [MainThread]: End processing [dcs-code-injector]: success
 [2024-04-07 14:24:51] INFO root fetch - main [MainThread]: Store serial: [22656122]
+[2024-04-07 14:26:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656122]
+[2024-04-07 14:27:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 14:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: special-octo-robot
+[2024-04-07 14:27:00] INFO root fetch - processPackages [special-octo-robot]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-07 14:27:00] INFO root fetch - processPackages [special-octo-robot]: Downloading https://files.pythonhosted.org/packages/6c/f3/1b238e64ee51aa555fed88d966e34ea864f3bca918f42d5b6e7154c2c209/special-octo-robot-0.0.1.tar.gz
+[2024-04-07 14:27:00] WARNING root fetch - processPackages [special-octo-robot]: Timeout reached during download
+[2024-04-07 14:27:00] INFO root fetch - processPackages [special-octo-robot]: Downloading https://files.pythonhosted.org/packages/b0/d0/6e68d26c8eb6c3ef5e4f2fd7c99d49a88d646ef5d731f5346f31fecdb93f/special-octo-robot-0.0.2.tar.gz
+[2024-04-07 14:27:00] WARNING root fetch - processPackages [special-octo-robot]: Timeout reached during download
+[2024-04-07 14:27:00] INFO root fetch - processPackages [special-octo-robot]: executing diffoscope
+[2024-04-07 14:27:00] INFO root fetch - processPackages [special-octo-robot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/special-octo-robot-0.0.1.tar.gz tmp/special-octo-robot-0.0.2.tar.gz --markdown 20240407/s/special-octo-robot/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-07 14:27:01] INFO root fetch - processPackages [special-octo-robot]: Remove: archive file [/home/abi/fetcher/tmp/special-octo-robot-0.0.1.tar.gz]
+[2024-04-07 14:27:01] INFO root fetch - processPackages [special-octo-robot]: Remove: archive file [/home/abi/fetcher/tmp/special-octo-robot-0.0.2.tar.gz]
+[2024-04-07 14:27:01] INFO root fetch - main [MainThread]: End processing [special-octo-robot]: success
+[2024-04-07 14:27:01] INFO root fetch - main [MainThread]: Store serial: [22656177]
