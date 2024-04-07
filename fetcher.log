@@ -20899,3 +20899,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:44:29] INFO root fetch - processPackages [dofusdude]: Remove: archive file [/home/abi/fetcher/tmp/dofusdude-0.9.0.tar.gz]
 [2024-04-07 23:44:29] INFO root fetch - main [MainThread]: End processing [dofusdude]: success
 [2024-04-07 23:44:29] INFO root fetch - main [MainThread]: Store serial: [22659568]
+[2024-04-07 23:46:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659568]
+[2024-04-07 23:46:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 23:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ramodels
+[2024-04-07 23:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: owasp-depscan
+[2024-04-07 23:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aind-slurm-rest
+[2024-04-07 23:46:38] INFO root fetch - processPackages [aind-slurm-rest]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-04-07 23:46:38] INFO root fetch - processPackages [owasp-depscan]: New version: [5.3.2] Old Version: [5.3.1]
+[2024-04-07 23:46:38] INFO root fetch - processPackages [aind-slurm-rest]: Downloading https://files.pythonhosted.org/packages/f3/39/95351f217a51ea03654eca58e18904070f16731067c6ce00c153c4771cde/aind-slurm-rest-0.0.1.tar.gz
+[2024-04-07 23:46:38] INFO root fetch - processPackages [owasp-depscan]: Downloading https://files.pythonhosted.org/packages/15/79/fbf47167204d0d3ff8b7dac194a4398ca05e0aaa3012d35bd0c91b490949/owasp-depscan-5.3.1.tar.gz
+[2024-04-07 23:46:38] INFO root fetch - processPackages [ramodels]: New version: [9.7.3] Old Version: [9.7.2]
+[2024-04-07 23:46:38] INFO root fetch - processPackages [ramodels]: Downloading https://files.pythonhosted.org/packages/29/94/25c6513c9642d16d4d771d154cb5d58a1f40fbf5e9234badf73bf79c1b4d/ramodels-9.7.2.tar.gz
+[2024-04-07 23:46:38] WARNING root fetch - processPackages [aind-slurm-rest]: Timeout reached during download
+[2024-04-07 23:46:38] WARNING root fetch - processPackages [owasp-depscan]: Timeout reached during download
+[2024-04-07 23:46:38] WARNING root fetch - processPackages [ramodels]: Timeout reached during download
+[2024-04-07 23:46:38] INFO root fetch - processPackages [aind-slurm-rest]: Downloading https://files.pythonhosted.org/packages/2c/81/7dc00a895105e10e09f2830f077933de18eeaf6a8deafaa2b8fe58d544e8/aind-slurm-rest-0.1.0.tar.gz
+[2024-04-07 23:46:38] INFO root fetch - processPackages [owasp-depscan]: Downloading https://files.pythonhosted.org/packages/97/d2/904341d6e5ce404261774ca507c281b2be183a836639ce52b5349f7af34e/owasp-depscan-5.3.2.tar.gz
+[2024-04-07 23:46:38] INFO root fetch - processPackages [ramodels]: Downloading https://files.pythonhosted.org/packages/b1/d1/a8e61257ea98cd3ecc586e4ab73fdc4c6dc2c4b71071bd21a7915b67aeb9/ramodels-9.7.3.tar.gz
+[2024-04-07 23:46:38] WARNING root fetch - processPackages [aind-slurm-rest]: Timeout reached during download
+[2024-04-07 23:46:38] INFO root fetch - processPackages [aind-slurm-rest]: executing diffoscope
+[2024-04-07 23:46:38] INFO root fetch - processPackages [aind-slurm-rest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind-slurm-rest-0.0.1.tar.gz tmp/aind-slurm-rest-0.1.0.tar.gz --markdown 20240407/a/aind-slurm-rest/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2024-04-07 23:46:38] WARNING root fetch - processPackages [owasp-depscan]: Timeout reached during download
+[2024-04-07 23:46:38] INFO root fetch - processPackages [owasp-depscan]: executing diffoscope
+[2024-04-07 23:46:38] INFO root fetch - processPackages [owasp-depscan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/owasp-depscan-5.3.1.tar.gz tmp/owasp-depscan-5.3.2.tar.gz --markdown 20240407/o/owasp-depscan/5.3.1-5.3.2/diff.md --exclude *.pyd
+[2024-04-07 23:46:38] WARNING root fetch - processPackages [ramodels]: Timeout reached during download
+[2024-04-07 23:46:38] INFO root fetch - processPackages [ramodels]: executing diffoscope
+[2024-04-07 23:46:38] INFO root fetch - processPackages [ramodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ramodels-9.7.2.tar.gz tmp/ramodels-9.7.3.tar.gz --markdown 20240407/r/ramodels/9.7.2-9.7.3/diff.md --exclude *.pyd
+[2024-04-07 23:46:39] INFO root fetch - processPackages [ramodels]: Remove: archive file [/home/abi/fetcher/tmp/ramodels-9.7.2.tar.gz]
+[2024-04-07 23:46:39] INFO root fetch - processPackages [ramodels]: Remove: archive file [/home/abi/fetcher/tmp/ramodels-9.7.3.tar.gz]
+[2024-04-07 23:46:39] INFO root fetch - main [MainThread]: End processing [ramodels]: success
+[2024-04-07 23:46:39] INFO root fetch - processPackages [owasp-depscan]: Remove: archive file [/home/abi/fetcher/tmp/owasp-depscan-5.3.1.tar.gz]
+[2024-04-07 23:46:39] INFO root fetch - processPackages [owasp-depscan]: Remove: archive file [/home/abi/fetcher/tmp/owasp-depscan-5.3.2.tar.gz]
+[2024-04-07 23:46:39] INFO root fetch - main [MainThread]: End processing [owasp-depscan]: success
+[2024-04-07 23:46:40] INFO root fetch - processPackages [aind-slurm-rest]: Remove: archive file [/home/abi/fetcher/tmp/aind-slurm-rest-0.0.1.tar.gz]
+[2024-04-07 23:46:40] INFO root fetch - processPackages [aind-slurm-rest]: Remove: archive file [/home/abi/fetcher/tmp/aind-slurm-rest-0.1.0.tar.gz]
+[2024-04-07 23:46:40] INFO root fetch - main [MainThread]: End processing [aind-slurm-rest]: success
+[2024-04-07 23:46:40] INFO root fetch - main [MainThread]: Store serial: [22659577]
