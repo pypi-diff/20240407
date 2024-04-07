@@ -8870,3 +8870,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 11:19:07] WARNING root fetch - processPackages [py-jaxtyping]: Skipping, unable to determine old version
 [2024-04-07 11:19:07] INFO root fetch - main [MainThread]: End processing [py-jaxtyping] error
 [2024-04-07 11:19:07] INFO root fetch - main [MainThread]: Store serial: [22655003]
+[2024-04-07 11:21:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655003]
+[2024-04-07 11:21:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 11:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tbp-nightly
+[2024-04-07 11:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: RegexRiot
+[2024-04-07 11:21:16] INFO root fetch - processPackages [RegexRiot]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 11:21:16] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2024-04-07 11:21:16] INFO root fetch - processPackages [RegexRiot]: Downloading https://files.pythonhosted.org/packages/91/14/4861f19e16be618381bd314649982c65c5c9a6b36ce4cb20a1043a25e7ba/regexriot-0.0.2.tar.gz
+[2024-04-07 11:21:16] INFO root fetch - processPackages [tbp-nightly]: Downloading https://files.pythonhosted.org/packages/b9/6c/43a589e5ab1d1b961e5780e41057576c7abd5bf16d3f871d8ef4ebdaf461/tbp-nightly-2.9.0a20221129.tar.gz
+[2024-04-07 11:21:16] WARNING root fetch - processPackages [RegexRiot]: Timeout reached during download
+[2024-04-07 11:21:16] INFO root fetch - processPackages [RegexRiot]: Downloading https://files.pythonhosted.org/packages/44/8f/85d61a6f078e275c781de2985c09b47f83c7e9065511e5af661cd5d948f3/regexriot-0.0.3.tar.gz
+[2024-04-07 11:21:16] WARNING root fetch - processPackages [RegexRiot]: Timeout reached during download
+[2024-04-07 11:21:16] INFO root fetch - processPackages [RegexRiot]: executing diffoscope
+[2024-04-07 11:21:16] INFO root fetch - processPackages [RegexRiot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regexriot-0.0.2.tar.gz tmp/regexriot-0.0.3.tar.gz --markdown 20240407/R/RegexRiot/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 11:21:16] WARNING root fetch - processPackages [tbp-nightly]: Timeout reached during download
+[2024-04-07 11:21:17] INFO root fetch - processPackages [tbp-nightly]: Downloading https://files.pythonhosted.org/packages/2e/31/c611af28c0d42c7cbb86781523f94e57796654fd8b7a7049e8a6db2eecf3/tbp-nightly-2.9.0a20221130.tar.gz
+[2024-04-07 11:21:17] INFO root fetch - processPackages [RegexRiot]: Remove: archive file [/home/abi/fetcher/tmp/regexriot-0.0.2.tar.gz]
+[2024-04-07 11:21:17] INFO root fetch - processPackages [RegexRiot]: Remove: archive file [/home/abi/fetcher/tmp/regexriot-0.0.3.tar.gz]
+[2024-04-07 11:21:17] INFO root fetch - main [MainThread]: End processing [RegexRiot]: success
+[2024-04-07 11:21:17] WARNING root fetch - processPackages [tbp-nightly]: Timeout reached during download
+[2024-04-07 11:21:17] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2024-04-07 11:21:17] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20240407/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
+[2024-04-07 11:21:19] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221129.tar.gz]
+[2024-04-07 11:21:19] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221130.tar.gz]
+[2024-04-07 11:21:19] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2024-04-07 11:21:19] INFO root fetch - main [MainThread]: Store serial: [22655009]
