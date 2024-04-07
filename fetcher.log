@@ -6521,3 +6521,28 @@
 [2024-04-07 08:37:51] INFO root fetch - processPackages [f5-sphinx-theme]: Remove: archive file [/home/abi/fetcher/tmp/f5_sphinx_theme-2.5.2.tar.gz]
 [2024-04-07 08:37:51] INFO root fetch - main [MainThread]: End processing [f5-sphinx-theme]: success
 [2024-04-07 08:37:51] INFO root fetch - main [MainThread]: Store serial: [22654075]
+[2024-04-07 08:39:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654075]
+[2024-04-07 08:39:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 08:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-vsphere
+[2024-04-07 08:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-mp-suppliers
+[2024-04-07 08:39:59] INFO root fetch - processPackages [django-mp-suppliers]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-07 08:39:59] INFO root fetch - processPackages [pulumi-vsphere]: New version: [4.9.2] Old Version: [4.9.1]
+[2024-04-07 08:40:00] INFO root fetch - processPackages [pulumi-vsphere]: Downloading https://files.pythonhosted.org/packages/2c/b7/9b9215ee833910abd7a86275fdf600ed12fb1777b5fed56078b15cabaa70/pulumi_vsphere-4.9.1.tar.gz
+[2024-04-07 08:40:00] INFO root fetch - processPackages [django-mp-suppliers]: Downloading https://files.pythonhosted.org/packages/a1/3e/eac5cca3f930bb6ed448a1cf6d44562afa95cb55375420e8de226227416c/django-mp-suppliers-0.5.0.tar.gz
+[2024-04-07 08:40:00] WARNING root fetch - processPackages [pulumi-vsphere]: Timeout reached during download
+[2024-04-07 08:40:00] INFO root fetch - processPackages [pulumi-vsphere]: Downloading https://files.pythonhosted.org/packages/11/0f/d6e12dc0f0f87ffbedada279d30f59cf591dde549b68503412913fd87d8b/pulumi_vsphere-4.9.2.tar.gz
+[2024-04-07 08:40:00] WARNING root fetch - processPackages [django-mp-suppliers]: Timeout reached during download
+[2024-04-07 08:40:00] WARNING root fetch - processPackages [pulumi-vsphere]: Timeout reached during download
+[2024-04-07 08:40:00] INFO root fetch - processPackages [pulumi-vsphere]: executing diffoscope
+[2024-04-07 08:40:00] INFO root fetch - processPackages [pulumi-vsphere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_vsphere-4.9.1.tar.gz tmp/pulumi_vsphere-4.9.2.tar.gz --markdown 20240407/p/pulumi-vsphere/4.9.1-4.9.2/diff.md --exclude *.pyd
+[2024-04-07 08:40:00] INFO root fetch - processPackages [django-mp-suppliers]: Downloading https://files.pythonhosted.org/packages/f6/8a/bbba098b395a5ce68a26926a1a7ec648847a437b3e5077a71ba226f9b1da/django-mp-suppliers-0.5.1.tar.gz
+[2024-04-07 08:40:00] WARNING root fetch - processPackages [django-mp-suppliers]: Timeout reached during download
+[2024-04-07 08:40:00] INFO root fetch - processPackages [django-mp-suppliers]: executing diffoscope
+[2024-04-07 08:40:00] INFO root fetch - processPackages [django-mp-suppliers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-mp-suppliers-0.5.0.tar.gz tmp/django-mp-suppliers-0.5.1.tar.gz --markdown 20240407/d/django-mp-suppliers/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2024-04-07 08:40:01] INFO root fetch - processPackages [pulumi-vsphere]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_vsphere-4.9.1.tar.gz]
+[2024-04-07 08:40:01] INFO root fetch - processPackages [pulumi-vsphere]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_vsphere-4.9.2.tar.gz]
+[2024-04-07 08:40:01] INFO root fetch - main [MainThread]: End processing [pulumi-vsphere]: success
+[2024-04-07 08:40:01] INFO root fetch - processPackages [django-mp-suppliers]: Remove: archive file [/home/abi/fetcher/tmp/django-mp-suppliers-0.5.0.tar.gz]
+[2024-04-07 08:40:01] INFO root fetch - processPackages [django-mp-suppliers]: Remove: archive file [/home/abi/fetcher/tmp/django-mp-suppliers-0.5.1.tar.gz]
+[2024-04-07 08:40:01] INFO root fetch - main [MainThread]: End processing [django-mp-suppliers]: success
+[2024-04-07 08:40:01] INFO root fetch - main [MainThread]: Store serial: [22654080]
