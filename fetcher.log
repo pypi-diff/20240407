@@ -13276,3 +13276,34 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:14:00] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
 [2024-04-07 16:14:00] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-04-07 16:14:00] INFO root fetch - main [MainThread]: Store serial: [22656714]
+[2024-04-07 16:16:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656714]
+[2024-04-07 16:16:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 16:16:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mfoci
+[2024-04-07 16:16:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scikit-multilearn-ng
+[2024-04-07 16:16:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: special-octo-robot
+[2024-04-07 16:16:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pydpt
+[2024-04-07 16:16:11] INFO root fetch - processPackages [special-octo-robot]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-07 16:16:11] WARNING root fetch - processPackages [mfoci]: Skipping, unable to determine old version
+[2024-04-07 16:16:11] INFO root fetch - main [MainThread]: End processing [mfoci] error
+[2024-04-07 16:16:11] INFO root fetch - processPackages [special-octo-robot]: Downloading https://files.pythonhosted.org/packages/fe/bc/49f900f32b13e51043380c61ae16647faec366f75b0bbc196b336796a6dd/special-octo-robot-0.0.4.tar.gz
+[2024-04-07 16:16:11] WARNING root fetch - processPackages [pydpt]: Skipping, unable to determine old version
+[2024-04-07 16:16:11] INFO root fetch - main [MainThread]: End processing [pydpt] error
+[2024-04-07 16:16:11] INFO root fetch - processPackages [scikit-multilearn-ng]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-07 16:16:11] WARNING root fetch - processPackages [special-octo-robot]: Timeout reached during download
+[2024-04-07 16:16:11] INFO root fetch - processPackages [scikit-multilearn-ng]: Downloading https://files.pythonhosted.org/packages/b0/5f/9be5d87181f0099f1e723bbfa6890b3558dcb4b519e66b00b9f8977ce984/scikit-multilearn-ng-0.0.6.tar.gz
+[2024-04-07 16:16:11] INFO root fetch - processPackages [special-octo-robot]: Downloading https://files.pythonhosted.org/packages/8c/b5/eec3e8810600ede1e12d133cc248c10e50a2b560d7ff4fb402ecaf1ed976/special-octo-robot-0.0.5.tar.gz
+[2024-04-07 16:16:11] WARNING root fetch - processPackages [scikit-multilearn-ng]: Timeout reached during download
+[2024-04-07 16:16:12] WARNING root fetch - processPackages [special-octo-robot]: Timeout reached during download
+[2024-04-07 16:16:12] INFO root fetch - processPackages [special-octo-robot]: executing diffoscope
+[2024-04-07 16:16:12] INFO root fetch - processPackages [special-octo-robot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/special-octo-robot-0.0.4.tar.gz tmp/special-octo-robot-0.0.5.tar.gz --markdown 20240407/s/special-octo-robot/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-07 16:16:12] INFO root fetch - processPackages [scikit-multilearn-ng]: Downloading https://files.pythonhosted.org/packages/4c/d4/e5f2e996535a8955c94d906d3c95c693f6708d0d5a291bdec6f23dfc9adf/scikit-multilearn-ng-0.0.7.tar.gz
+[2024-04-07 16:16:12] WARNING root fetch - processPackages [scikit-multilearn-ng]: Timeout reached during download
+[2024-04-07 16:16:12] INFO root fetch - processPackages [scikit-multilearn-ng]: executing diffoscope
+[2024-04-07 16:16:12] INFO root fetch - processPackages [scikit-multilearn-ng]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit-multilearn-ng-0.0.6.tar.gz tmp/scikit-multilearn-ng-0.0.7.tar.gz --markdown 20240407/s/scikit-multilearn-ng/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2024-04-07 16:16:12] INFO root fetch - processPackages [special-octo-robot]: Remove: archive file [/home/abi/fetcher/tmp/special-octo-robot-0.0.4.tar.gz]
+[2024-04-07 16:16:12] INFO root fetch - processPackages [special-octo-robot]: Remove: archive file [/home/abi/fetcher/tmp/special-octo-robot-0.0.5.tar.gz]
+[2024-04-07 16:16:12] INFO root fetch - main [MainThread]: End processing [special-octo-robot]: success
+[2024-04-07 16:16:12] INFO root fetch - processPackages [scikit-multilearn-ng]: Remove: archive file [/home/abi/fetcher/tmp/scikit-multilearn-ng-0.0.6.tar.gz]
+[2024-04-07 16:16:12] INFO root fetch - processPackages [scikit-multilearn-ng]: Remove: archive file [/home/abi/fetcher/tmp/scikit-multilearn-ng-0.0.7.tar.gz]
+[2024-04-07 16:16:12] INFO root fetch - main [MainThread]: End processing [scikit-multilearn-ng]: success
+[2024-04-07 16:16:12] INFO root fetch - main [MainThread]: Store serial: [22656731]
