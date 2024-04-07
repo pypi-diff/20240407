@@ -8024,3 +8024,9 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 10:18:09] INFO root fetch - processPackages [dmtgen]: Remove: archive file [/home/abi/fetcher/tmp/dmtgen-1.0.0.dev0.tar.gz]
 [2024-04-07 10:18:09] INFO root fetch - main [MainThread]: End processing [dmtgen]: success
 [2024-04-07 10:18:09] INFO root fetch - main [MainThread]: Store serial: [22654690]
+[2024-04-07 10:20:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654690]
+[2024-04-07 10:20:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 10:20:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: train-test-sim
+[2024-04-07 10:20:18] WARNING root fetch - processPackages [train-test-sim]: Skipping, unable to determine old version
+[2024-04-07 10:20:18] INFO root fetch - main [MainThread]: End processing [train-test-sim] error
+[2024-04-07 10:20:18] INFO root fetch - main [MainThread]: Store serial: [22654696]
