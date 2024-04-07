@@ -20743,3 +20743,49 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:35:41] INFO root fetch - processPackages [lagoon]: Remove: archive file [/home/abi/fetcher/tmp/lagoon-9.tar.gz]
 [2024-04-07 23:35:41] INFO root fetch - main [MainThread]: End processing [lagoon]: success
 [2024-04-07 23:35:41] INFO root fetch - main [MainThread]: Store serial: [22659524]
+[2024-04-07 23:37:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659524]
+[2024-04-07 23:37:49] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 23:37:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apple-health-extractor
+[2024-04-07 23:37:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bd_to_avp
+[2024-04-07 23:37:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: open-aoi
+[2024-04-07 23:37:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: highcharts-stock
+[2024-04-07 23:37:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: geoformat
+[2024-04-07 23:37:50] INFO root fetch - processPackages [highcharts-stock]: New version: [1.6.0] Old Version: [1.5.0]
+[2024-04-07 23:37:50] INFO root fetch - processPackages [open-aoi]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 23:37:50] INFO root fetch - processPackages [apple-health-extractor]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-07 23:37:50] INFO root fetch - processPackages [highcharts-stock]: Downloading https://files.pythonhosted.org/packages/3f/03/830cd4ce45da1a3077fda4b62e2ee34fd9989253ef7e485e13421662cd3a/highcharts_stock-1.5.0.tar.gz
+[2024-04-07 23:37:50] INFO root fetch - processPackages [open-aoi]: Downloading https://files.pythonhosted.org/packages/d2/cb/dd19e4630fb354010db3e6215502966625550ff7a5acbdbcedf536a6cd4d/open_aoi-0.0.8.tar.gz
+[2024-04-07 23:37:50] INFO root fetch - processPackages [apple-health-extractor]: Downloading https://files.pythonhosted.org/packages/e5/0c/1b48c4e4a3379bcc5b16afa512eb289b7951e0a29f637fd7cb4fe3c5e482/apple_health_extractor-0.1.1.tar.gz
+[2024-04-07 23:37:50] INFO root fetch - processPackages [bd_to_avp]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 23:37:50] INFO root fetch - processPackages [geoformat]: New version: [20240407] Old Version: [20240225]
+[2024-04-07 23:37:50] WARNING root fetch - processPackages [apple-health-extractor]: Timeout reached during download
+[2024-04-07 23:37:50] WARNING root fetch - processPackages [open-aoi]: Timeout reached during download
+[2024-04-07 23:37:50] WARNING root fetch - processPackages [highcharts-stock]: Skipping package: exceeds size limit 11535020>=10485760
+[2024-04-07 23:37:50] INFO root fetch - main [MainThread]: End processing [highcharts-stock] error
+[2024-04-07 23:37:50] INFO root fetch - processPackages [bd_to_avp]: Downloading https://files.pythonhosted.org/packages/00/db/7e18af63153f16cb6b9d0cd019ae969bcff7057bcdaa43a5b82e8224ed2d/bd_to_avp-0.1.8.tar.gz
+[2024-04-07 23:37:50] INFO root fetch - processPackages [open-aoi]: Downloading https://files.pythonhosted.org/packages/2e/0c/2869daa3fcce6ef21522f04169cfdef7edf737a59d03f86a95b6594d19b3/open_aoi-0.0.9.tar.gz
+[2024-04-07 23:37:50] INFO root fetch - processPackages [apple-health-extractor]: Downloading https://files.pythonhosted.org/packages/5b/53/c649697112bc24e4be76efe76572e27df52eb6d345f828e904b01835d96f/apple_health_extractor-0.1.2.tar.gz
+[2024-04-07 23:37:50] INFO root fetch - processPackages [geoformat]: Downloading https://files.pythonhosted.org/packages/33/a9/9c58512a210409f9cacd61b8fbacbb78c584a125d3df306ba63eda90b0de/geoformat-20240225.tar.gz
+[2024-04-07 23:37:50] WARNING root fetch - processPackages [open-aoi]: Timeout reached during download
+[2024-04-07 23:37:50] INFO root fetch - processPackages [open-aoi]: executing diffoscope
+[2024-04-07 23:37:50] INFO root fetch - processPackages [open-aoi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_aoi-0.0.8.tar.gz tmp/open_aoi-0.0.9.tar.gz --markdown 20240407/o/open-aoi/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 23:37:50] WARNING root fetch - processPackages [bd_to_avp]: Skipping package: exceeds size limit 16498870>=10485760
+[2024-04-07 23:37:50] INFO root fetch - main [MainThread]: End processing [bd_to_avp] error
+[2024-04-07 23:37:50] WARNING root fetch - processPackages [apple-health-extractor]: Timeout reached during download
+[2024-04-07 23:37:50] INFO root fetch - processPackages [apple-health-extractor]: executing diffoscope
+[2024-04-07 23:37:50] INFO root fetch - processPackages [apple-health-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apple_health_extractor-0.1.1.tar.gz tmp/apple_health_extractor-0.1.2.tar.gz --markdown 20240407/a/apple-health-extractor/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-07 23:37:51] WARNING root fetch - processPackages [geoformat]: Timeout reached during download
+[2024-04-07 23:37:51] INFO root fetch - processPackages [apple-health-extractor]: Remove: archive file [/home/abi/fetcher/tmp/apple_health_extractor-0.1.1.tar.gz]
+[2024-04-07 23:37:51] INFO root fetch - processPackages [apple-health-extractor]: Remove: archive file [/home/abi/fetcher/tmp/apple_health_extractor-0.1.2.tar.gz]
+[2024-04-07 23:37:51] INFO root fetch - main [MainThread]: End processing [apple-health-extractor]: success
+[2024-04-07 23:37:51] INFO root fetch - processPackages [open-aoi]: Remove: archive file [/home/abi/fetcher/tmp/open_aoi-0.0.8.tar.gz]
+[2024-04-07 23:37:51] INFO root fetch - processPackages [open-aoi]: Remove: archive file [/home/abi/fetcher/tmp/open_aoi-0.0.9.tar.gz]
+[2024-04-07 23:37:51] INFO root fetch - main [MainThread]: End processing [open-aoi]: success
+[2024-04-07 23:37:51] INFO root fetch - processPackages [geoformat]: Downloading https://files.pythonhosted.org/packages/9e/34/6c9591c01d82f9d37ccc5a38172c52d1826cba8657ca8177fe6dc7dc3900/geoformat-20240407.tar.gz
+[2024-04-07 23:37:51] WARNING root fetch - processPackages [geoformat]: Timeout reached during download
+[2024-04-07 23:37:51] INFO root fetch - processPackages [geoformat]: executing diffoscope
+[2024-04-07 23:37:51] INFO root fetch - processPackages [geoformat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geoformat-20240225.tar.gz tmp/geoformat-20240407.tar.gz --markdown 20240407/g/geoformat/20240225-20240407/diff.md --exclude *.pyd
+[2024-04-07 23:37:54] INFO root fetch - processPackages [geoformat]: Remove: archive file [/home/abi/fetcher/tmp/geoformat-20240225.tar.gz]
+[2024-04-07 23:37:54] INFO root fetch - processPackages [geoformat]: Remove: archive file [/home/abi/fetcher/tmp/geoformat-20240407.tar.gz]
+[2024-04-07 23:37:54] INFO root fetch - main [MainThread]: End processing [geoformat]: success
+[2024-04-07 23:37:54] INFO root fetch - main [MainThread]: Store serial: [22659538]
