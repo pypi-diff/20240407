@@ -4982,3 +4982,50 @@
 [2024-04-07 07:07:48] INFO root fetch - processPackages [rlotp]: Remove: archive file [/home/abi/fetcher/tmp/rlotp-0.0.8.tar.gz]
 [2024-04-07 07:07:48] INFO root fetch - main [MainThread]: End processing [rlotp]: success
 [2024-04-07 07:07:48] INFO root fetch - main [MainThread]: Store serial: [22653542]
+[2024-04-07 07:09:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653542]
+[2024-04-07 07:09:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 07:09:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-sale-margin-security
+[2024-04-07 07:09:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-sale-margin-delivered-security
+[2024-04-07 07:09:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alibabacloud-devops20210625
+[2024-04-07 07:09:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alibabacloud-devops20210625-py2
+[2024-04-07 07:09:56] INFO root fetch - processPackages [odoo-addon-sale-margin-delivered-security]: New version: [16.0.1.2.0] Old Version: [16.0.1.0.0.4]
+[2024-04-07 07:09:56] INFO root fetch - processPackages [odoo-addon-sale-margin-security]: New version: [16.0.3.1.0] Old Version: [16.0.2.0.0.5]
+[2024-04-07 07:09:56] INFO root fetch - processPackages [alibabacloud-devops20210625-py2]: New version: [4.9.0] Old Version: [4.8.0]
+[2024-04-07 07:09:56] INFO root fetch - processPackages [alibabacloud-devops20210625]: New version: [4.9.0] Old Version: [4.8.0]
+[2024-04-07 07:09:56] INFO root fetch - processPackages [odoo-addon-sale-margin-delivered-security]: Downloading https://files.pythonhosted.org/packages/07/6f/e793d4772fd5282c89fd178b1fa36745a488cde9d0c20bf73a720341fb15/odoo_addon_sale_margin_delivered_security-16.0.1.0.0.4-py3-none-any.whl
+[2024-04-07 07:09:56] INFO root fetch - processPackages [odoo-addon-sale-margin-security]: Downloading https://files.pythonhosted.org/packages/bc/96/af48dbdc2f0f9b09299986e27cd058caec9c2401e0048f89cc7ded715d22/odoo_addon_sale_margin_security-16.0.2.0.0.5-py3-none-any.whl
+[2024-04-07 07:09:56] WARNING root fetch - processPackages [odoo-addon-sale-margin-delivered-security]: Timeout reached during download
+[2024-04-07 07:09:56] WARNING root fetch - processPackages [odoo-addon-sale-margin-security]: Timeout reached during download
+[2024-04-07 07:09:56] INFO root fetch - processPackages [alibabacloud-devops20210625-py2]: Downloading https://files.pythonhosted.org/packages/34/a2/215e51814ced97f837da938ad8c01a6fb8d35a2692c324c17b0bf78480f8/alibabacloud_devops20210625_py2-4.8.0.tar.gz
+[2024-04-07 07:09:56] INFO root fetch - processPackages [alibabacloud-devops20210625]: Downloading https://files.pythonhosted.org/packages/e8/98/2bdb7bd5e1727da5e05ee30c5aaa86afb0fdc7693eb8bef753ae5ee0c0b6/alibabacloud_devops20210625-4.8.0.tar.gz
+[2024-04-07 07:09:57] INFO root fetch - processPackages [odoo-addon-sale-margin-security]: Downloading https://files.pythonhosted.org/packages/a2/08/48656d6dcc3534608efe076d0988f2816e38dce5247b8aca3ae4bc71ca8d/odoo_addon_sale_margin_security-16.0.3.1.0-py3-none-any.whl
+[2024-04-07 07:09:57] INFO root fetch - processPackages [odoo-addon-sale-margin-delivered-security]: Downloading https://files.pythonhosted.org/packages/bd/79/158a47c28de35350114b18a7056631360ca90826366730c0326398171743/odoo_addon_sale_margin_delivered_security-16.0.1.2.0-py3-none-any.whl
+[2024-04-07 07:09:57] WARNING root fetch - processPackages [odoo-addon-sale-margin-security]: Timeout reached during download
+[2024-04-07 07:09:57] INFO root fetch - processPackages [odoo-addon-sale-margin-security]: executing diffoscope
+[2024-04-07 07:09:57] INFO root fetch - processPackages [odoo-addon-sale-margin-security]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_margin_security-16.0.2.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_sale_margin_security-16.0.3.1.0-py3-none-any.whl.zip --markdown 20240407/o/odoo-addon-sale-margin-security/16.0.2.0.0.5-16.0.3.1.0/diff.md --exclude *.pyd
+[2024-04-07 07:09:57] WARNING root fetch - processPackages [alibabacloud-devops20210625-py2]: Timeout reached during download
+[2024-04-07 07:09:57] WARNING root fetch - processPackages [alibabacloud-devops20210625]: Timeout reached during download
+[2024-04-07 07:09:57] WARNING root fetch - processPackages [odoo-addon-sale-margin-delivered-security]: Timeout reached during download
+[2024-04-07 07:09:57] INFO root fetch - processPackages [odoo-addon-sale-margin-delivered-security]: executing diffoscope
+[2024-04-07 07:09:57] INFO root fetch - processPackages [odoo-addon-sale-margin-delivered-security]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_margin_delivered_security-16.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_sale_margin_delivered_security-16.0.1.2.0-py3-none-any.whl.zip --markdown 20240407/o/odoo-addon-sale-margin-delivered-security/16.0.1.0.0.4-16.0.1.2.0/diff.md --exclude *.pyd
+[2024-04-07 07:09:57] INFO root fetch - processPackages [alibabacloud-devops20210625-py2]: Downloading https://files.pythonhosted.org/packages/fb/43/db452c7d0a9ac769cd7572977b1675cb0da34b7be1e1d75ae0ab696fb61e/alibabacloud_devops20210625_py2-4.9.0.tar.gz
+[2024-04-07 07:09:57] INFO root fetch - processPackages [alibabacloud-devops20210625]: Downloading https://files.pythonhosted.org/packages/b1/a2/c1269813e59eb19f20e382e52b83b9dae2f7c297ac660aab9de2b4f3c3ac/alibabacloud_devops20210625-4.9.0.tar.gz
+[2024-04-07 07:09:57] WARNING root fetch - processPackages [alibabacloud-devops20210625-py2]: Timeout reached during download
+[2024-04-07 07:09:57] INFO root fetch - processPackages [alibabacloud-devops20210625-py2]: executing diffoscope
+[2024-04-07 07:09:57] INFO root fetch - processPackages [alibabacloud-devops20210625-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_devops20210625_py2-4.8.0.tar.gz tmp/alibabacloud_devops20210625_py2-4.9.0.tar.gz --markdown 20240407/a/alibabacloud-devops20210625-py2/4.8.0-4.9.0/diff.md --exclude *.pyd
+[2024-04-07 07:09:57] WARNING root fetch - processPackages [alibabacloud-devops20210625]: Timeout reached during download
+[2024-04-07 07:09:57] INFO root fetch - processPackages [alibabacloud-devops20210625]: executing diffoscope
+[2024-04-07 07:09:57] INFO root fetch - processPackages [alibabacloud-devops20210625]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_devops20210625-4.8.0.tar.gz tmp/alibabacloud_devops20210625-4.9.0.tar.gz --markdown 20240407/a/alibabacloud-devops20210625/4.8.0-4.9.0/diff.md --exclude *.pyd
+[2024-04-07 07:09:57] INFO root fetch - processPackages [odoo-addon-sale-margin-security]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_margin_security-16.0.2.0.0.5-py3-none-any.whl.zip]
+[2024-04-07 07:09:57] INFO root fetch - processPackages [odoo-addon-sale-margin-security]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_margin_security-16.0.3.1.0-py3-none-any.whl.zip]
+[2024-04-07 07:09:57] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-margin-security]: success
+[2024-04-07 07:09:57] INFO root fetch - processPackages [odoo-addon-sale-margin-delivered-security]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_margin_delivered_security-16.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-04-07 07:09:57] INFO root fetch - processPackages [odoo-addon-sale-margin-delivered-security]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_margin_delivered_security-16.0.1.2.0-py3-none-any.whl.zip]
+[2024-04-07 07:09:57] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-margin-delivered-security]: success
+[2024-04-07 07:09:58] INFO root fetch - processPackages [alibabacloud-devops20210625]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_devops20210625-4.8.0.tar.gz]
+[2024-04-07 07:09:58] INFO root fetch - processPackages [alibabacloud-devops20210625]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_devops20210625-4.9.0.tar.gz]
+[2024-04-07 07:09:58] INFO root fetch - main [MainThread]: End processing [alibabacloud-devops20210625]: success
+[2024-04-07 07:09:58] INFO root fetch - processPackages [alibabacloud-devops20210625-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_devops20210625_py2-4.8.0.tar.gz]
+[2024-04-07 07:09:58] INFO root fetch - processPackages [alibabacloud-devops20210625-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_devops20210625_py2-4.9.0.tar.gz]
+[2024-04-07 07:09:58] INFO root fetch - main [MainThread]: End processing [alibabacloud-devops20210625-py2]: success
+[2024-04-07 07:09:58] INFO root fetch - main [MainThread]: Store serial: [22653552]
