@@ -17064,3 +17064,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:41:57] INFO root fetch - processPackages [gpu4pyscf]: Remove: archive file [/home/abi/fetcher/tmp/gpu4pyscf-0.7.6.tar.gz]
 [2024-04-07 19:41:57] INFO root fetch - main [MainThread]: End processing [gpu4pyscf]: success
 [2024-04-07 19:41:57] INFO root fetch - main [MainThread]: Store serial: [22658011]
+[2024-04-07 19:44:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658011]
+[2024-04-07 19:44:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 19:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: audiometry-trainer
+[2024-04-07 19:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qstd-config
+[2024-04-07 19:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tree-sitter-go
+[2024-04-07 19:44:06] WARNING root fetch - processPackages [tree-sitter-go]: Skipping, unable to determine old version
+[2024-04-07 19:44:06] INFO root fetch - main [MainThread]: End processing [tree-sitter-go] error
+[2024-04-07 19:44:06] WARNING root fetch - processPackages [audiometry-trainer]: Skipping, unable to determine old version
+[2024-04-07 19:44:06] INFO root fetch - main [MainThread]: End processing [audiometry-trainer] error
+[2024-04-07 19:44:06] WARNING root fetch - processPackages [qstd-config]: Skipping, unable to determine old version
+[2024-04-07 19:44:06] INFO root fetch - main [MainThread]: End processing [qstd-config] error
+[2024-04-07 19:44:06] INFO root fetch - main [MainThread]: Store serial: [22658031]
