@@ -6681,3 +6681,39 @@
 [2024-04-07 08:48:40] INFO root fetch - processPackages [ts-soup]: Remove: archive file [/home/abi/fetcher/tmp/ts-soup-0.0.9.tar.gz]
 [2024-04-07 08:48:40] INFO root fetch - main [MainThread]: End processing [ts-soup]: success
 [2024-04-07 08:48:40] INFO root fetch - main [MainThread]: Store serial: [22654151]
+[2024-04-07 08:50:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654151]
+[2024-04-07 08:50:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 08:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FSRS-Optimizer
+[2024-04-07 08:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bestnlp
+[2024-04-07 08:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: corentin-regent-test
+[2024-04-07 08:50:48] INFO root fetch - processPackages [bestnlp]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-07 08:50:48] INFO root fetch - processPackages [corentin-regent-test]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-07 08:50:48] INFO root fetch - processPackages [FSRS-Optimizer]: New version: [4.9.1] Old Version: [4.9.0]
+[2024-04-07 08:50:48] INFO root fetch - processPackages [bestnlp]: Downloading https://files.pythonhosted.org/packages/7e/51/4bd73a4d3115156138ecb4c99a1e7e742b5221197e584bc3ed142274ce01/bestnlp-1.0.2-py3-none-any.whl
+[2024-04-07 08:50:48] INFO root fetch - processPackages [corentin-regent-test]: Downloading https://files.pythonhosted.org/packages/1c/b2/44b6d9eb283f031b6c00af8fb90d229539dc7092eeee90a5073a043eb4ac/corentin_regent_test-1.0.1.tar.gz
+[2024-04-07 08:50:48] INFO root fetch - processPackages [FSRS-Optimizer]: Downloading https://files.pythonhosted.org/packages/3b/99/ed9611766c54d3246138921362bf9c9277a2294c7e349cc2c73adad35fcf/FSRS-Optimizer-4.9.0.tar.gz
+[2024-04-07 08:50:48] WARNING root fetch - processPackages [bestnlp]: Timeout reached during download
+[2024-04-07 08:50:48] WARNING root fetch - processPackages [corentin-regent-test]: Timeout reached during download
+[2024-04-07 08:50:48] WARNING root fetch - processPackages [FSRS-Optimizer]: Timeout reached during download
+[2024-04-07 08:50:48] INFO root fetch - processPackages [FSRS-Optimizer]: Downloading https://files.pythonhosted.org/packages/27/db/53f188d4c7d7816753b79f8815d890ddec6e330cf3864087d6e403ae05ed/FSRS-Optimizer-4.9.1.tar.gz
+[2024-04-07 08:50:48] INFO root fetch - processPackages [bestnlp]: Downloading https://files.pythonhosted.org/packages/7c/03/5f654bcb00ac517d184ba51cacfac0d745320ea857aa4492b195f7dfdd6c/bestnlp-1.0.3-py3-none-any.whl
+[2024-04-07 08:50:48] INFO root fetch - processPackages [corentin-regent-test]: Downloading https://files.pythonhosted.org/packages/67/2b/d633f1999b72b4697bdb9ad0ea6ea5388c1a915975f334551abac12e74f5/corentin_regent_test-1.0.2.tar.gz
+[2024-04-07 08:50:48] WARNING root fetch - processPackages [FSRS-Optimizer]: Timeout reached during download
+[2024-04-07 08:50:48] INFO root fetch - processPackages [FSRS-Optimizer]: executing diffoscope
+[2024-04-07 08:50:48] INFO root fetch - processPackages [FSRS-Optimizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FSRS-Optimizer-4.9.0.tar.gz tmp/FSRS-Optimizer-4.9.1.tar.gz --markdown 20240407/F/FSRS-Optimizer/4.9.0-4.9.1/diff.md --exclude *.pyd
+[2024-04-07 08:50:48] WARNING root fetch - processPackages [bestnlp]: Timeout reached during download
+[2024-04-07 08:50:48] INFO root fetch - processPackages [bestnlp]: executing diffoscope
+[2024-04-07 08:50:48] INFO root fetch - processPackages [bestnlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bestnlp-1.0.2-py3-none-any.whl.zip tmp/bestnlp-1.0.3-py3-none-any.whl.zip --markdown 20240407/b/bestnlp/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2024-04-07 08:50:48] WARNING root fetch - processPackages [corentin-regent-test]: Timeout reached during download
+[2024-04-07 08:50:48] INFO root fetch - processPackages [corentin-regent-test]: executing diffoscope
+[2024-04-07 08:50:48] INFO root fetch - processPackages [corentin-regent-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corentin_regent_test-1.0.1.tar.gz tmp/corentin_regent_test-1.0.2.tar.gz --markdown 20240407/c/corentin-regent-test/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2024-04-07 08:50:49] INFO root fetch - processPackages [FSRS-Optimizer]: Remove: archive file [/home/abi/fetcher/tmp/FSRS-Optimizer-4.9.0.tar.gz]
+[2024-04-07 08:50:49] INFO root fetch - processPackages [FSRS-Optimizer]: Remove: archive file [/home/abi/fetcher/tmp/FSRS-Optimizer-4.9.1.tar.gz]
+[2024-04-07 08:50:49] INFO root fetch - main [MainThread]: End processing [FSRS-Optimizer]: success
+[2024-04-07 08:50:49] INFO root fetch - processPackages [corentin-regent-test]: Remove: archive file [/home/abi/fetcher/tmp/corentin_regent_test-1.0.1.tar.gz]
+[2024-04-07 08:50:49] INFO root fetch - processPackages [corentin-regent-test]: Remove: archive file [/home/abi/fetcher/tmp/corentin_regent_test-1.0.2.tar.gz]
+[2024-04-07 08:50:49] INFO root fetch - main [MainThread]: End processing [corentin-regent-test]: success
+[2024-04-07 08:50:49] INFO root fetch - processPackages [bestnlp]: Remove: archive file [/home/abi/fetcher/tmp/bestnlp-1.0.2-py3-none-any.whl.zip]
+[2024-04-07 08:50:49] INFO root fetch - processPackages [bestnlp]: Remove: archive file [/home/abi/fetcher/tmp/bestnlp-1.0.3-py3-none-any.whl.zip]
+[2024-04-07 08:50:49] INFO root fetch - main [MainThread]: End processing [bestnlp]: success
+[2024-04-07 08:50:49] INFO root fetch - main [MainThread]: Store serial: [22654159]
