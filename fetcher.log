@@ -19667,3 +19667,64 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:17:19] INFO root fetch - processPackages [astromcad]: Remove: archive file [/home/abi/fetcher/tmp/astromcad-0.1.5.tar.gz]
 [2024-04-07 22:17:19] INFO root fetch - main [MainThread]: End processing [astromcad]: success
 [2024-04-07 22:17:19] INFO root fetch - main [MainThread]: Store serial: [22658959]
+[2024-04-07 22:19:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658959]
+[2024-04-07 22:19:29] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 22:19:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pbt-simple
+[2024-04-07 22:19:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: astromcad
+[2024-04-07 22:19:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: programlib
+[2024-04-07 22:19:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vectara-cli
+[2024-04-07 22:19:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: neobridge
+[2024-04-07 22:19:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pytest_tagging
+[2024-04-07 22:19:29] INFO root fetch - processPackages [vectara-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 22:19:29] INFO root fetch - processPackages [astromcad]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-07 22:19:29] INFO root fetch - processPackages [pytest_tagging]: New version: [1.5.0] Old Version: [1.4.2]
+[2024-04-07 22:19:29] INFO root fetch - processPackages [pbt-simple]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-04-07 22:19:29] WARNING root fetch - processPackages [neobridge]: Skipping, unable to determine old version
+[2024-04-07 22:19:29] INFO root fetch - main [MainThread]: End processing [neobridge] error
+[2024-04-07 22:19:29] INFO root fetch - processPackages [vectara-cli]: Downloading https://files.pythonhosted.org/packages/2c/ee/38034782be8ce22c0047bcd128a8070a942598181089e251ad6a5806d92a/vectara-cli-0.1.8.tar.gz
+[2024-04-07 22:19:29] INFO root fetch - processPackages [astromcad]: Downloading https://files.pythonhosted.org/packages/dd/35/69f12ab2face8e1defddbec05f8f1f15bd29b3277543550ddac4c4a9d5cb/astromcad-0.1.5.tar.gz
+[2024-04-07 22:19:29] INFO root fetch - processPackages [pytest_tagging]: Downloading https://files.pythonhosted.org/packages/d0/59/b50a4d43274b0b247ed7b02bdfdbbc706627a9fbbc89722114be85f5e123/pytest_tagging-1.4.2.tar.gz
+[2024-04-07 22:19:29] WARNING root fetch - processPackages [vectara-cli]: Timeout reached during download
+[2024-04-07 22:19:29] WARNING root fetch - processPackages [pytest_tagging]: Timeout reached during download
+[2024-04-07 22:19:29] INFO root fetch - processPackages [pbt-simple]: Downloading https://files.pythonhosted.org/packages/9e/7f/db8f6b1edc234020f657787183f9b4f7e3a9e99bfdd4891ff0c9f6c406e3/pbt_simple-1.7.0.tar.gz
+[2024-04-07 22:19:29] INFO root fetch - processPackages [vectara-cli]: Downloading https://files.pythonhosted.org/packages/0a/a8/ecbeeefe05fb43a1b2dd6785e1bb1218f907a8ff5b7fec7cb2f57c206166/vectara-cli-0.1.9.tar.gz
+[2024-04-07 22:19:29] WARNING root fetch - processPackages [vectara-cli]: Timeout reached during download
+[2024-04-07 22:19:29] INFO root fetch - processPackages [vectara-cli]: executing diffoscope
+[2024-04-07 22:19:29] INFO root fetch - processPackages [vectara-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vectara-cli-0.1.8.tar.gz tmp/vectara-cli-0.1.9.tar.gz --markdown 20240407/v/vectara-cli/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 22:19:29] INFO root fetch - processPackages [programlib]: New version: [9.0.3] Old Version: [9.0.2]
+[2024-04-07 22:19:29] WARNING root fetch - processPackages [pbt-simple]: Timeout reached during download
+[2024-04-07 22:19:29] INFO root fetch - processPackages [pytest_tagging]: Downloading https://files.pythonhosted.org/packages/38/35/917ddfc5f5a2d4aaa8c5fb090994ed320855e35cc893594454a0ecc9e6e7/pytest_tagging-1.5.0.tar.gz
+[2024-04-07 22:19:29] WARNING root fetch - processPackages [astromcad]: Timeout reached during download
+[2024-04-07 22:19:29] WARNING root fetch - processPackages [pytest_tagging]: Timeout reached during download
+[2024-04-07 22:19:29] INFO root fetch - processPackages [pytest_tagging]: executing diffoscope
+[2024-04-07 22:19:29] INFO root fetch - processPackages [pytest_tagging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_tagging-1.4.2.tar.gz tmp/pytest_tagging-1.5.0.tar.gz --markdown 20240407/p/pytest_tagging/1.4.2-1.5.0/diff.md --exclude *.pyd
+[2024-04-07 22:19:30] INFO root fetch - processPackages [pbt-simple]: Downloading https://files.pythonhosted.org/packages/ba/ba/1b771cfe2aea1ab8d7c6d49421b3f2a168844ef0e4154a04aa90a5701fbd/pbt_simple-1.7.1.tar.gz
+[2024-04-07 22:19:30] INFO root fetch - processPackages [astromcad]: Downloading https://files.pythonhosted.org/packages/dd/b6/2e29d19b61eed00a977539ce9932e9e1ea9fab89425411cf64a8647ec895/astromcad-0.1.6.tar.gz
+[2024-04-07 22:19:30] INFO root fetch - processPackages [programlib]: Downloading https://files.pythonhosted.org/packages/37/5c/d71cd3dca0dc15fe517c72e8aa04a028091522e40f76866fa1caab72eb6d/programlib-9.0.2.tar.gz
+[2024-04-07 22:19:30] WARNING root fetch - processPackages [pbt-simple]: Timeout reached during download
+[2024-04-07 22:19:30] INFO root fetch - processPackages [pbt-simple]: executing diffoscope
+[2024-04-07 22:19:30] INFO root fetch - processPackages [pbt-simple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pbt_simple-1.7.0.tar.gz tmp/pbt_simple-1.7.1.tar.gz --markdown 20240407/p/pbt-simple/1.7.0-1.7.1/diff.md --exclude *.pyd
+[2024-04-07 22:19:30] WARNING root fetch - processPackages [programlib]: Timeout reached during download
+[2024-04-07 22:19:30] WARNING root fetch - processPackages [astromcad]: Timeout reached during download
+[2024-04-07 22:19:30] INFO root fetch - processPackages [astromcad]: executing diffoscope
+[2024-04-07 22:19:30] INFO root fetch - processPackages [astromcad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astromcad-0.1.5.tar.gz tmp/astromcad-0.1.6.tar.gz --markdown 20240407/a/astromcad/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2024-04-07 22:19:30] INFO root fetch - processPackages [vectara-cli]: Remove: archive file [/home/abi/fetcher/tmp/vectara-cli-0.1.8.tar.gz]
+[2024-04-07 22:19:30] INFO root fetch - processPackages [vectara-cli]: Remove: archive file [/home/abi/fetcher/tmp/vectara-cli-0.1.9.tar.gz]
+[2024-04-07 22:19:30] INFO root fetch - main [MainThread]: End processing [vectara-cli]: success
+[2024-04-07 22:19:30] INFO root fetch - processPackages [programlib]: Downloading https://files.pythonhosted.org/packages/87/68/8bde1bac9605e7ec884f688d17bf45a1206b163949faba2d6255bffe7932/programlib-9.0.3.tar.gz
+[2024-04-07 22:19:30] INFO root fetch - processPackages [pbt-simple]: Remove: archive file [/home/abi/fetcher/tmp/pbt_simple-1.7.0.tar.gz]
+[2024-04-07 22:19:30] INFO root fetch - processPackages [pbt-simple]: Remove: archive file [/home/abi/fetcher/tmp/pbt_simple-1.7.1.tar.gz]
+[2024-04-07 22:19:30] INFO root fetch - main [MainThread]: End processing [pbt-simple]: success
+[2024-04-07 22:19:30] WARNING root fetch - processPackages [programlib]: Timeout reached during download
+[2024-04-07 22:19:30] INFO root fetch - processPackages [programlib]: executing diffoscope
+[2024-04-07 22:19:30] INFO root fetch - processPackages [programlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/programlib-9.0.2.tar.gz tmp/programlib-9.0.3.tar.gz --markdown 20240407/p/programlib/9.0.2-9.0.3/diff.md --exclude *.pyd
+[2024-04-07 22:19:30] INFO root fetch - processPackages [pytest_tagging]: Remove: archive file [/home/abi/fetcher/tmp/pytest_tagging-1.4.2.tar.gz]
+[2024-04-07 22:19:30] INFO root fetch - processPackages [pytest_tagging]: Remove: archive file [/home/abi/fetcher/tmp/pytest_tagging-1.5.0.tar.gz]
+[2024-04-07 22:19:30] INFO root fetch - main [MainThread]: End processing [pytest_tagging]: success
+[2024-04-07 22:19:31] INFO root fetch - processPackages [programlib]: Remove: archive file [/home/abi/fetcher/tmp/programlib-9.0.2.tar.gz]
+[2024-04-07 22:19:31] INFO root fetch - processPackages [programlib]: Remove: archive file [/home/abi/fetcher/tmp/programlib-9.0.3.tar.gz]
+[2024-04-07 22:19:31] INFO root fetch - main [MainThread]: End processing [programlib]: success
+[2024-04-07 22:19:31] INFO root fetch - processPackages [astromcad]: Remove: archive file [/home/abi/fetcher/tmp/astromcad-0.1.5.tar.gz]
+[2024-04-07 22:19:31] INFO root fetch - processPackages [astromcad]: Remove: archive file [/home/abi/fetcher/tmp/astromcad-0.1.6.tar.gz]
+[2024-04-07 22:19:31] INFO root fetch - main [MainThread]: End processing [astromcad]: success
+[2024-04-07 22:19:31] INFO root fetch - main [MainThread]: Store serial: [22658984]
