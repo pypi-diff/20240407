@@ -17344,3 +17344,43 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 20:01:43] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.7.6.tar.gz]
 [2024-04-07 20:01:43] INFO root fetch - main [MainThread]: End processing [pypomes-core]: success
 [2024-04-07 20:01:43] INFO root fetch - main [MainThread]: Store serial: [22658134]
+[2024-04-07 20:03:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658134]
+[2024-04-07 20:03:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 20:03:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: buildz
+[2024-04-07 20:03:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gene-trajectory
+[2024-04-07 20:03:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anydi
+[2024-04-07 20:03:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: esrt
+[2024-04-07 20:03:52] INFO root fetch - processPackages [esrt]: New version: [1.31.0] Old Version: [1.27.0]
+[2024-04-07 20:03:52] INFO root fetch - processPackages [anydi]: New version: [0.23.0] Old Version: [0.22.3]
+[2024-04-07 20:03:52] INFO root fetch - processPackages [gene-trajectory]: New version: [1.0.0] Old Version: [0.1.8]
+[2024-04-07 20:03:52] INFO root fetch - processPackages [buildz]: New version: [0.4.7] Old Version: [0.4.6]
+[2024-04-07 20:03:52] ERROR root fetch - processPackages [esrt]: Unable to fetch info: No such project/version 'esrt' 1.31.0
+[2024-04-07 20:03:52] INFO root fetch - main [MainThread]: End processing [esrt] error
+[2024-04-07 20:03:52] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/32/5a/3deecdf52f7b5fdbb1fec064601e3ef267bd4eb90c80eb1a882b23c38f4d/anydi-0.22.3.tar.gz
+[2024-04-07 20:03:52] INFO root fetch - processPackages [buildz]: Downloading https://files.pythonhosted.org/packages/9e/04/083c7a70d591b0bee593535b8b59ed1a538fc9823c1f8eaa1ed4c634e950/buildz-0.4.6.tar.gz
+[2024-04-07 20:03:52] INFO root fetch - processPackages [gene-trajectory]: Downloading https://files.pythonhosted.org/packages/97/d4/023481007cd400c80cdb924246750eb44f17e1403e1404f2b53fe165aeb1/gene_trajectory-0.1.8.tar.gz
+[2024-04-07 20:03:52] WARNING root fetch - processPackages [gene-trajectory]: Timeout reached during download
+[2024-04-07 20:03:52] WARNING root fetch - processPackages [anydi]: Timeout reached during download
+[2024-04-07 20:03:52] WARNING root fetch - processPackages [buildz]: Timeout reached during download
+[2024-04-07 20:03:52] INFO root fetch - processPackages [gene-trajectory]: Downloading https://files.pythonhosted.org/packages/00/c7/b4d5d96e6d3b85508781301f844ed6d0172cf61de285012f347d17278e4d/gene_trajectory-1.0.0.tar.gz
+[2024-04-07 20:03:52] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/1b/25/0391552bfb8f6045360975f8a7fdb2629b17fc607b46a15de9a1e0099e3b/anydi-0.23.0.tar.gz
+[2024-04-07 20:03:52] INFO root fetch - processPackages [buildz]: Downloading https://files.pythonhosted.org/packages/5a/9f/a6ecc6a392d303552aeea726243af7c5523bd3b6b29e21e640ec212002ff/buildz-0.4.7.tar.gz
+[2024-04-07 20:03:52] WARNING root fetch - processPackages [gene-trajectory]: Timeout reached during download
+[2024-04-07 20:03:52] WARNING root fetch - processPackages [anydi]: Timeout reached during download
+[2024-04-07 20:03:52] INFO root fetch - processPackages [gene-trajectory]: executing diffoscope
+[2024-04-07 20:03:52] INFO root fetch - processPackages [gene-trajectory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gene_trajectory-0.1.8.tar.gz tmp/gene_trajectory-1.0.0.tar.gz --markdown 20240407/g/gene-trajectory/0.1.8-1.0.0/diff.md --exclude *.pyd
+[2024-04-07 20:03:52] INFO root fetch - processPackages [anydi]: executing diffoscope
+[2024-04-07 20:03:52] INFO root fetch - processPackages [anydi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anydi-0.22.3.tar.gz tmp/anydi-0.23.0.tar.gz --markdown 20240407/a/anydi/0.22.3-0.23.0/diff.md --exclude *.pyd
+[2024-04-07 20:03:52] WARNING root fetch - processPackages [buildz]: Timeout reached during download
+[2024-04-07 20:03:52] INFO root fetch - processPackages [buildz]: executing diffoscope
+[2024-04-07 20:03:52] INFO root fetch - processPackages [buildz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buildz-0.4.6.tar.gz tmp/buildz-0.4.7.tar.gz --markdown 20240407/b/buildz/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2024-04-07 20:03:53] INFO root fetch - processPackages [gene-trajectory]: Remove: archive file [/home/abi/fetcher/tmp/gene_trajectory-0.1.8.tar.gz]
+[2024-04-07 20:03:53] INFO root fetch - processPackages [gene-trajectory]: Remove: archive file [/home/abi/fetcher/tmp/gene_trajectory-1.0.0.tar.gz]
+[2024-04-07 20:03:53] INFO root fetch - main [MainThread]: End processing [gene-trajectory]: success
+[2024-04-07 20:03:53] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.22.3.tar.gz]
+[2024-04-07 20:03:53] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.23.0.tar.gz]
+[2024-04-07 20:03:53] INFO root fetch - main [MainThread]: End processing [anydi]: success
+[2024-04-07 20:03:53] INFO root fetch - processPackages [buildz]: Remove: archive file [/home/abi/fetcher/tmp/buildz-0.4.6.tar.gz]
+[2024-04-07 20:03:53] INFO root fetch - processPackages [buildz]: Remove: archive file [/home/abi/fetcher/tmp/buildz-0.4.7.tar.gz]
+[2024-04-07 20:03:53] INFO root fetch - main [MainThread]: End processing [buildz]: success
+[2024-04-07 20:03:53] INFO root fetch - main [MainThread]: Store serial: [22658146]
