@@ -7197,3 +7197,28 @@
 [2024-04-07 09:23:48] INFO root fetch - processPackages [linktools]: Remove: archive file [/home/abi/fetcher/tmp/linktools-0.8.3rc1.tar.gz]
 [2024-04-07 09:23:48] INFO root fetch - main [MainThread]: End processing [linktools]: success
 [2024-04-07 09:23:48] INFO root fetch - main [MainThread]: Store serial: [22654314]
+[2024-04-07 09:25:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654314]
+[2024-04-07 09:25:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 09:25:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-libtrust
+[2024-04-07 09:25:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlora
+[2024-04-07 09:25:57] INFO root fetch - processPackages [py-libtrust]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-04-07 09:25:57] INFO root fetch - processPackages [py-libtrust]: Downloading https://files.pythonhosted.org/packages/17/b7/c6518042c41cad1a148f5e5849ec4f502c8e9a9a124eac5a1faa9471cc8c/py_libtrust-2.0.0.tar.gz
+[2024-04-07 09:25:57] INFO root fetch - processPackages [mlora]: New version: [0.2.1.dev1] Old Version: [0.1]
+[2024-04-07 09:25:57] WARNING root fetch - processPackages [py-libtrust]: Timeout reached during download
+[2024-04-07 09:25:57] INFO root fetch - processPackages [mlora]: Downloading https://files.pythonhosted.org/packages/a1/37/82d90db2dd134b36fe5d7ac198a90bd63f5c1b953ae38c38f2e9b02762c5/mlora-0.1.tar.gz
+[2024-04-07 09:25:57] INFO root fetch - processPackages [py-libtrust]: Downloading https://files.pythonhosted.org/packages/60/ce/e0221f7ab82951c1458bcee935ffde9fd4f4cb8005c5b4c78c507af9e0ce/py_libtrust-2.1.0.tar.gz
+[2024-04-07 09:25:57] WARNING root fetch - processPackages [mlora]: Timeout reached during download
+[2024-04-07 09:25:57] WARNING root fetch - processPackages [py-libtrust]: Timeout reached during download
+[2024-04-07 09:25:57] INFO root fetch - processPackages [py-libtrust]: executing diffoscope
+[2024-04-07 09:25:57] INFO root fetch - processPackages [py-libtrust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_libtrust-2.0.0.tar.gz tmp/py_libtrust-2.1.0.tar.gz --markdown 20240407/p/py-libtrust/2.0.0-2.1.0/diff.md --exclude *.pyd
+[2024-04-07 09:25:57] INFO root fetch - processPackages [mlora]: Downloading https://files.pythonhosted.org/packages/b6/b7/4a50152a7525c893e55404384ea4704763b2d4e9058a6a018097281d76f2/mlora-0.2.1.dev1.tar.gz
+[2024-04-07 09:25:57] WARNING root fetch - processPackages [mlora]: Timeout reached during download
+[2024-04-07 09:25:57] INFO root fetch - processPackages [mlora]: executing diffoscope
+[2024-04-07 09:25:57] INFO root fetch - processPackages [mlora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlora-0.1.tar.gz tmp/mlora-0.2.1.dev1.tar.gz --markdown 20240407/m/mlora/0.1-0.2.1.dev1/diff.md --exclude *.pyd
+[2024-04-07 09:25:58] INFO root fetch - processPackages [py-libtrust]: Remove: archive file [/home/abi/fetcher/tmp/py_libtrust-2.0.0.tar.gz]
+[2024-04-07 09:25:58] INFO root fetch - processPackages [py-libtrust]: Remove: archive file [/home/abi/fetcher/tmp/py_libtrust-2.1.0.tar.gz]
+[2024-04-07 09:25:58] INFO root fetch - main [MainThread]: End processing [py-libtrust]: success
+[2024-04-07 09:25:58] INFO root fetch - processPackages [mlora]: Remove: archive file [/home/abi/fetcher/tmp/mlora-0.1.tar.gz]
+[2024-04-07 09:25:58] INFO root fetch - processPackages [mlora]: Remove: archive file [/home/abi/fetcher/tmp/mlora-0.2.1.dev1.tar.gz]
+[2024-04-07 09:25:58] INFO root fetch - main [MainThread]: End processing [mlora]: success
+[2024-04-07 09:25:58] INFO root fetch - main [MainThread]: Store serial: [22654323]
