@@ -4562,3 +4562,9 @@
 [2024-04-07 06:13:55] INFO root fetch - processPackages [feno]: Remove: archive file [/home/abi/fetcher/tmp/feno-0.1.5.tar.gz]
 [2024-04-07 06:13:55] INFO root fetch - main [MainThread]: End processing [feno]: success
 [2024-04-07 06:13:55] INFO root fetch - main [MainThread]: Store serial: [22653436]
+[2024-04-07 06:15:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653436]
+[2024-04-07 06:16:03] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 06:16:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: voiceos
+[2024-04-07 06:16:04] WARNING root fetch - processPackages [voiceos]: Skipping, unable to determine old version
+[2024-04-07 06:16:04] INFO root fetch - main [MainThread]: End processing [voiceos] error
+[2024-04-07 06:16:04] INFO root fetch - main [MainThread]: Store serial: [22653441]
