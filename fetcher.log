@@ -16338,3 +16338,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:02:36] INFO root fetch - processPackages [mybody-api-client]: Remove: archive file [/home/abi/fetcher/tmp/mybody_api_client-0.5.9.tar.gz]
 [2024-04-07 19:02:36] INFO root fetch - main [MainThread]: End processing [mybody-api-client]: success
 [2024-04-07 19:02:36] INFO root fetch - main [MainThread]: Store serial: [22657740]
+[2024-04-07 19:04:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657740]
+[2024-04-07 19:04:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 19:04:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: many
+[2024-04-07 19:04:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adpipwfwconst
+[2024-04-07 19:04:45] INFO root fetch - processPackages [adpipwfwconst]: New version: [0.1.1] Old Version: [0.1]
+[2024-04-07 19:04:45] INFO root fetch - processPackages [many]: New version: [0.7.0] Old Version: [0.6.9]
+[2024-04-07 19:04:45] INFO root fetch - processPackages [adpipwfwconst]: Downloading https://files.pythonhosted.org/packages/e5/92/372bfd913808c0a43e1449b482eb2c7901a6329560640c18015948e4f215/adpipwfwconst-0.1.tar.gz
+[2024-04-07 19:04:45] INFO root fetch - processPackages [many]: Downloading https://files.pythonhosted.org/packages/ea/7c/1b0c277bf72f01e404e5c1453766c5e96eda0fc85f2d3f691a9777349957/many-0.6.9.tar.gz
+[2024-04-07 19:04:45] WARNING root fetch - processPackages [adpipwfwconst]: Timeout reached during download
+[2024-04-07 19:04:46] WARNING root fetch - processPackages [many]: Timeout reached during download
+[2024-04-07 19:04:46] INFO root fetch - processPackages [adpipwfwconst]: Downloading https://files.pythonhosted.org/packages/44/dd/8104c7f4ea6a7a1bd1ab71c6e8d442d1e2ecf29e817a7a633badb2a824da/adpipwfwconst-0.1.1.tar.gz
+[2024-04-07 19:04:46] INFO root fetch - processPackages [many]: Downloading https://files.pythonhosted.org/packages/a0/19/d0df08ecc12b5d05e5ca990d7da0fa768504392bcbcc5ef3ad44ecc26f6b/many-0.7.0.tar.gz
+[2024-04-07 19:04:46] WARNING root fetch - processPackages [adpipwfwconst]: Timeout reached during download
+[2024-04-07 19:04:46] INFO root fetch - processPackages [adpipwfwconst]: executing diffoscope
+[2024-04-07 19:04:46] INFO root fetch - processPackages [adpipwfwconst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adpipwfwconst-0.1.tar.gz tmp/adpipwfwconst-0.1.1.tar.gz --markdown 20240407/a/adpipwfwconst/0.1-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 19:04:46] WARNING root fetch - processPackages [many]: Timeout reached during download
+[2024-04-07 19:04:46] INFO root fetch - processPackages [many]: executing diffoscope
+[2024-04-07 19:04:46] INFO root fetch - processPackages [many]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/many-0.6.9.tar.gz tmp/many-0.7.0.tar.gz --markdown 20240407/m/many/0.6.9-0.7.0/diff.md --exclude *.pyd
+[2024-04-07 19:04:46] INFO root fetch - processPackages [adpipwfwconst]: Remove: archive file [/home/abi/fetcher/tmp/adpipwfwconst-0.1.tar.gz]
+[2024-04-07 19:04:46] INFO root fetch - processPackages [adpipwfwconst]: Remove: archive file [/home/abi/fetcher/tmp/adpipwfwconst-0.1.1.tar.gz]
+[2024-04-07 19:04:46] INFO root fetch - main [MainThread]: End processing [adpipwfwconst]: success
+[2024-04-07 19:04:47] INFO root fetch - processPackages [many]: Remove: archive file [/home/abi/fetcher/tmp/many-0.6.9.tar.gz]
+[2024-04-07 19:04:47] INFO root fetch - processPackages [many]: Remove: archive file [/home/abi/fetcher/tmp/many-0.7.0.tar.gz]
+[2024-04-07 19:04:47] INFO root fetch - main [MainThread]: End processing [many]: success
+[2024-04-07 19:04:47] INFO root fetch - main [MainThread]: Store serial: [22657746]
