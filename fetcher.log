@@ -1396,3 +1396,31 @@
 [2024-04-07 02:10:16] INFO root fetch - processPackages [csv_test_package]: Remove: archive file [/home/abi/fetcher/tmp/csv_test_package-0.1.1.tar.gz]
 [2024-04-07 02:10:16] INFO root fetch - main [MainThread]: End processing [csv_test_package]: success
 [2024-04-07 02:10:16] INFO root fetch - main [MainThread]: Store serial: [22652059]
+[2024-04-07 02:12:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652059]
+[2024-04-07 02:12:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 02:12:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openbb-nightly
+[2024-04-07 02:12:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hex-renderer-py
+[2024-04-07 02:12:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mct-quantizers-nightly
+[2024-04-07 02:12:24] INFO root fetch - processPackages [openbb-nightly]: New version: [4.1.6.dev202404070011] Old Version: [4.1.6.dev202404060009]
+[2024-04-07 02:12:24] WARNING root fetch - processPackages [hex-renderer-py]: Skipping, unable to determine old version
+[2024-04-07 02:12:24] INFO root fetch - main [MainThread]: End processing [hex-renderer-py] error
+[2024-04-07 02:12:24] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/56/b6/144c987f67a83b12225b5443917d32f2c59e71518300b5dc4b0e37f52658/openbb_nightly-4.1.6.dev202404060009.tar.gz
+[2024-04-07 02:12:24] INFO root fetch - processPackages [mct-quantizers-nightly]: New version: [1.4.0.20240407.post1216] Old Version: [1.4.0.20240406.post1013]
+[2024-04-07 02:12:25] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/2a/75/2b0306a5ba205521ff33e2f802377e14960cf3d1f86852a06efa1ba56694/mct-quantizers-nightly-1.4.0.20240406.post1013.tar.gz
+[2024-04-07 02:12:25] WARNING root fetch - processPackages [openbb-nightly]: Timeout reached during download
+[2024-04-07 02:12:25] WARNING root fetch - processPackages [mct-quantizers-nightly]: Timeout reached during download
+[2024-04-07 02:12:25] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/1c/b4/7ab8cb21e92ee4afb7ab45aee73ea77e5a03e567caf846e208ae320a2684/openbb_nightly-4.1.6.dev202404070011.tar.gz
+[2024-04-07 02:12:25] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/7c/96/0fc9864472f6b44af9bf38e6ae04e98cf1a58fa7a7c77e06444c2c720bce/mct-quantizers-nightly-1.4.0.20240407.post1216.tar.gz
+[2024-04-07 02:12:26] WARNING root fetch - processPackages [mct-quantizers-nightly]: Timeout reached during download
+[2024-04-07 02:12:26] INFO root fetch - processPackages [mct-quantizers-nightly]: executing diffoscope
+[2024-04-07 02:12:26] INFO root fetch - processPackages [mct-quantizers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-quantizers-nightly-1.4.0.20240406.post1013.tar.gz tmp/mct-quantizers-nightly-1.4.0.20240407.post1216.tar.gz --markdown 20240407/m/mct-quantizers-nightly/1.4.0.20240406.post1013-1.4.0.20240407.post1216/diff.md --exclude *.pyd
+[2024-04-07 02:12:26] WARNING root fetch - processPackages [openbb-nightly]: Timeout reached during download
+[2024-04-07 02:12:26] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.4.0.20240406.post1013.tar.gz]
+[2024-04-07 02:12:26] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.4.0.20240407.post1216.tar.gz]
+[2024-04-07 02:12:26] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2024-04-07 02:12:26] INFO root fetch - main [MainThread]: End processing [mct-quantizers-nightly]: success
+[2024-04-07 02:12:26] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-4.1.6.dev202404060009.tar.gz tmp/openbb_nightly-4.1.6.dev202404070011.tar.gz --markdown 20240407/o/openbb-nightly/4.1.6.dev202404060009-4.1.6.dev202404070011/diff.md --exclude *.pyd
+[2024-04-07 02:12:29] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.6.dev202404060009.tar.gz]
+[2024-04-07 02:12:29] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.6.dev202404070011.tar.gz]
+[2024-04-07 02:12:29] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2024-04-07 02:12:29] INFO root fetch - main [MainThread]: Store serial: [22652098]
