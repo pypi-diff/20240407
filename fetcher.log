@@ -16222,3 +16222,41 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 18:53:57] INFO root fetch - processPackages [akello]: Remove: archive file [/home/abi/fetcher/tmp/akello-0.0.22.tar.gz]
 [2024-04-07 18:53:57] INFO root fetch - main [MainThread]: End processing [akello]: success
 [2024-04-07 18:53:57] INFO root fetch - main [MainThread]: Store serial: [22657709]
+[2024-04-07 18:56:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657709]
+[2024-04-07 18:56:06] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 18:58:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657709]
+[2024-04-07 18:58:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 18:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: json-handler-registry
+[2024-04-07 18:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gando
+[2024-04-07 18:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xibabel
+[2024-04-07 18:58:13] INFO root fetch - processPackages [xibabel]: New version: [0.0.1b3] Old Version: [0.0.1b2]
+[2024-04-07 18:58:13] INFO root fetch - processPackages [json-handler-registry]: New version: [1.5.1] Old Version: [1.5.0]
+[2024-04-07 18:58:13] INFO root fetch - processPackages [xibabel]: Downloading https://files.pythonhosted.org/packages/2b/58/8980a78101b24584714a52d9b9a6b5ea6fc3fd673c224c4618bfaa7f17a5/xibabel-0.0.1b2.tar.gz
+[2024-04-07 18:58:13] INFO root fetch - processPackages [gando]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-04-07 18:58:13] WARNING root fetch - processPackages [xibabel]: Timeout reached during download
+[2024-04-07 18:58:13] INFO root fetch - processPackages [json-handler-registry]: Downloading https://files.pythonhosted.org/packages/75/4b/b44457cc2f7a9fd7be9ebfc274cf7e18f69490c357d2e661ed79d633b275/json-handler-registry-1.5.0.tar.gz
+[2024-04-07 18:58:13] INFO root fetch - processPackages [gando]: Downloading https://files.pythonhosted.org/packages/5f/ad/9ce3a6ba3c5faf8984d231b1d4e350dc99ef5decdc96e34bfe1ccc8ba490/gando-0.9.7.tar.gz
+[2024-04-07 18:58:13] INFO root fetch - processPackages [xibabel]: Downloading https://files.pythonhosted.org/packages/9d/55/fc321826d8bade92ea0bf0b3367f8876e58fef3223277779cf3a58b1a236/xibabel-0.0.1b3.tar.gz
+[2024-04-07 18:58:13] WARNING root fetch - processPackages [json-handler-registry]: Timeout reached during download
+[2024-04-07 18:58:13] WARNING root fetch - processPackages [xibabel]: Timeout reached during download
+[2024-04-07 18:58:13] INFO root fetch - processPackages [xibabel]: executing diffoscope
+[2024-04-07 18:58:13] INFO root fetch - processPackages [xibabel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xibabel-0.0.1b2.tar.gz tmp/xibabel-0.0.1b3.tar.gz --markdown 20240407/x/xibabel/0.0.1b2-0.0.1b3/diff.md --exclude *.pyd
+[2024-04-07 18:58:13] WARNING root fetch - processPackages [gando]: Timeout reached during download
+[2024-04-07 18:58:13] INFO root fetch - processPackages [json-handler-registry]: Downloading https://files.pythonhosted.org/packages/32/af/adb493fc649e9d214e818be2011a495dd328cd634f4c7110a58e95211195/json-handler-registry-1.5.1.tar.gz
+[2024-04-07 18:58:13] WARNING root fetch - processPackages [json-handler-registry]: Timeout reached during download
+[2024-04-07 18:58:13] INFO root fetch - processPackages [json-handler-registry]: executing diffoscope
+[2024-04-07 18:58:13] INFO root fetch - processPackages [json-handler-registry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json-handler-registry-1.5.0.tar.gz tmp/json-handler-registry-1.5.1.tar.gz --markdown 20240407/j/json-handler-registry/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2024-04-07 18:58:14] INFO root fetch - processPackages [gando]: Downloading https://files.pythonhosted.org/packages/55/b4/3eacdbfcda93734a9bbee501af687c86bfb442a8f0f000f752e95377527e/gando-0.9.8.tar.gz
+[2024-04-07 18:58:14] WARNING root fetch - processPackages [gando]: Timeout reached during download
+[2024-04-07 18:58:14] INFO root fetch - processPackages [gando]: executing diffoscope
+[2024-04-07 18:58:14] INFO root fetch - processPackages [gando]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gando-0.9.7.tar.gz tmp/gando-0.9.8.tar.gz --markdown 20240407/g/gando/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2024-04-07 18:58:14] INFO root fetch - processPackages [xibabel]: Remove: archive file [/home/abi/fetcher/tmp/xibabel-0.0.1b2.tar.gz]
+[2024-04-07 18:58:14] INFO root fetch - processPackages [xibabel]: Remove: archive file [/home/abi/fetcher/tmp/xibabel-0.0.1b3.tar.gz]
+[2024-04-07 18:58:14] INFO root fetch - main [MainThread]: End processing [xibabel]: success
+[2024-04-07 18:58:14] INFO root fetch - processPackages [json-handler-registry]: Remove: archive file [/home/abi/fetcher/tmp/json-handler-registry-1.5.0.tar.gz]
+[2024-04-07 18:58:14] INFO root fetch - processPackages [json-handler-registry]: Remove: archive file [/home/abi/fetcher/tmp/json-handler-registry-1.5.1.tar.gz]
+[2024-04-07 18:58:14] INFO root fetch - main [MainThread]: End processing [json-handler-registry]: success
+[2024-04-07 18:58:14] INFO root fetch - processPackages [gando]: Remove: archive file [/home/abi/fetcher/tmp/gando-0.9.7.tar.gz]
+[2024-04-07 18:58:14] INFO root fetch - processPackages [gando]: Remove: archive file [/home/abi/fetcher/tmp/gando-0.9.8.tar.gz]
+[2024-04-07 18:58:14] INFO root fetch - main [MainThread]: End processing [gando]: success
+[2024-04-07 18:58:14] INFO root fetch - main [MainThread]: Store serial: [22657716]
