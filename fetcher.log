@@ -15320,3 +15320,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:54:45] INFO root fetch - processPackages [smartcitizen-connector]: Remove: archive file [/home/abi/fetcher/tmp/smartcitizen-connector-1.0.0.tar.gz]
 [2024-04-07 17:54:45] INFO root fetch - main [MainThread]: End processing [smartcitizen-connector]: success
 [2024-04-07 17:54:45] INFO root fetch - main [MainThread]: Store serial: [22657384]
+[2024-04-07 17:56:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657384]
+[2024-04-07 17:56:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 17:56:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: duckduckgo-search
+[2024-04-07 17:56:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vcf-generator
+[2024-04-07 17:56:54] INFO root fetch - processPackages [duckduckgo-search]: New version: [5.3.0b4] Old Version: [5.3.0b3]
+[2024-04-07 17:56:54] INFO root fetch - processPackages [vcf-generator]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-04-07 17:56:54] INFO root fetch - processPackages [vcf-generator]: Downloading https://files.pythonhosted.org/packages/83/97/bb443866d15ffbfd6d20ff5ef85167274a787c4882c08b100f283fc10fa8/vcf_generator-1.0.1.tar.gz
+[2024-04-07 17:56:54] INFO root fetch - processPackages [duckduckgo-search]: Downloading https://files.pythonhosted.org/packages/7f/da/4ef0cfbd7dc03c6754fc725ee099bb07957b996cc74a4139ce82baf56181/duckduckgo_search-5.3.0b3.tar.gz
+[2024-04-07 17:56:54] WARNING root fetch - processPackages [vcf-generator]: Timeout reached during download
+[2024-04-07 17:56:54] WARNING root fetch - processPackages [duckduckgo-search]: Timeout reached during download
+[2024-04-07 17:56:54] INFO root fetch - processPackages [vcf-generator]: Downloading https://files.pythonhosted.org/packages/43/70/a390caa313b79bc743f7bea6bf54007a837b138796d0486ff2d6c6a38e28/vcf_generator-1.1.0.tar.gz
+[2024-04-07 17:56:54] INFO root fetch - processPackages [duckduckgo-search]: Downloading https://files.pythonhosted.org/packages/44/2f/df4b6539488ed10780aaa1ad7381eaab837ca06720c61e588d8aaea7d4fb/duckduckgo_search-5.3.0b4.tar.gz
+[2024-04-07 17:56:54] WARNING root fetch - processPackages [vcf-generator]: Timeout reached during download
+[2024-04-07 17:56:54] INFO root fetch - processPackages [vcf-generator]: executing diffoscope
+[2024-04-07 17:56:54] INFO root fetch - processPackages [vcf-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vcf_generator-1.0.1.tar.gz tmp/vcf_generator-1.1.0.tar.gz --markdown 20240407/v/vcf-generator/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2024-04-07 17:56:54] WARNING root fetch - processPackages [duckduckgo-search]: Timeout reached during download
+[2024-04-07 17:56:54] INFO root fetch - processPackages [duckduckgo-search]: executing diffoscope
+[2024-04-07 17:56:54] INFO root fetch - processPackages [duckduckgo-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckduckgo_search-5.3.0b3.tar.gz tmp/duckduckgo_search-5.3.0b4.tar.gz --markdown 20240407/d/duckduckgo-search/5.3.0b3-5.3.0b4/diff.md --exclude *.pyd
+[2024-04-07 17:56:55] INFO root fetch - processPackages [vcf-generator]: Remove: archive file [/home/abi/fetcher/tmp/vcf_generator-1.0.1.tar.gz]
+[2024-04-07 17:56:55] INFO root fetch - processPackages [vcf-generator]: Remove: archive file [/home/abi/fetcher/tmp/vcf_generator-1.1.0.tar.gz]
+[2024-04-07 17:56:55] INFO root fetch - main [MainThread]: End processing [vcf-generator]: success
+[2024-04-07 17:56:55] INFO root fetch - processPackages [duckduckgo-search]: Remove: archive file [/home/abi/fetcher/tmp/duckduckgo_search-5.3.0b3.tar.gz]
+[2024-04-07 17:56:55] INFO root fetch - processPackages [duckduckgo-search]: Remove: archive file [/home/abi/fetcher/tmp/duckduckgo_search-5.3.0b4.tar.gz]
+[2024-04-07 17:56:55] INFO root fetch - main [MainThread]: End processing [duckduckgo-search]: success
+[2024-04-07 17:56:55] INFO root fetch - main [MainThread]: Store serial: [22657390]
