@@ -10580,3 +10580,20 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:19:26] INFO root fetch - processPackages [aridity]: Remove: archive file [/home/abi/fetcher/tmp/aridity-9.tar.gz]
 [2024-04-07 13:19:26] INFO root fetch - main [MainThread]: End processing [aridity]: success
 [2024-04-07 13:19:26] INFO root fetch - main [MainThread]: Store serial: [22655653]
+[2024-04-07 13:21:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655653]
+[2024-04-07 13:21:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 13:21:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-blocker
+[2024-04-07 13:21:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: matrixelement
+[2024-04-07 13:21:34] INFO root fetch - processPackages [nonebot-plugin-blocker]: New version: [0.4.7] Old Version: [0.4.6]
+[2024-04-07 13:21:34] INFO root fetch - processPackages [nonebot-plugin-blocker]: Downloading https://files.pythonhosted.org/packages/f4/60/89009e38e27ae96dd53053e09ffeb3b82a062264ca18af5fb0eda11d61e9/nonebot_plugin_blocker-0.4.6.tar.gz
+[2024-04-07 13:21:34] WARNING root fetch - processPackages [matrixelement]: Skipping, unable to determine old version
+[2024-04-07 13:21:34] INFO root fetch - main [MainThread]: End processing [matrixelement] error
+[2024-04-07 13:21:34] WARNING root fetch - processPackages [nonebot-plugin-blocker]: Timeout reached during download
+[2024-04-07 13:21:34] INFO root fetch - processPackages [nonebot-plugin-blocker]: Downloading https://files.pythonhosted.org/packages/0a/80/1ff1d72d1272646d8a7e2332f9da892d4a2e637b13c9904b21942778ba47/nonebot_plugin_blocker-0.4.7.tar.gz
+[2024-04-07 13:21:34] WARNING root fetch - processPackages [nonebot-plugin-blocker]: Timeout reached during download
+[2024-04-07 13:21:34] INFO root fetch - processPackages [nonebot-plugin-blocker]: executing diffoscope
+[2024-04-07 13:21:34] INFO root fetch - processPackages [nonebot-plugin-blocker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_blocker-0.4.6.tar.gz tmp/nonebot_plugin_blocker-0.4.7.tar.gz --markdown 20240407/n/nonebot-plugin-blocker/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2024-04-07 13:21:35] INFO root fetch - processPackages [nonebot-plugin-blocker]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_blocker-0.4.6.tar.gz]
+[2024-04-07 13:21:35] INFO root fetch - processPackages [nonebot-plugin-blocker]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_blocker-0.4.7.tar.gz]
+[2024-04-07 13:21:35] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-blocker]: success
+[2024-04-07 13:21:35] INFO root fetch - main [MainThread]: Store serial: [22655663]
