@@ -20029,3 +20029,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:43:31] INFO root fetch - processPackages [EasyOutput]: Remove: archive file [/home/abi/fetcher/tmp/easyoutput-0.0.9.tar.gz]
 [2024-04-07 22:43:31] INFO root fetch - main [MainThread]: End processing [EasyOutput]: success
 [2024-04-07 22:43:31] INFO root fetch - main [MainThread]: Store serial: [22659169]
+[2024-04-07 22:45:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659169]
+[2024-04-07 22:45:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 22:45:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hexdoc
+[2024-04-07 22:45:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: szamlazz.py
+[2024-04-07 22:45:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kafka-overwatch
+[2024-04-07 22:45:40] INFO root fetch - processPackages [kafka-overwatch]: New version: [0.2.0] Old Version: [0.0.2]
+[2024-04-07 22:45:40] INFO root fetch - processPackages [szamlazz.py]: New version: [1.4.0] Old Version: [1.3.0rc2]
+[2024-04-07 22:45:40] INFO root fetch - processPackages [hexdoc]: New version: [1!0.1.0a9] Old Version: [1!0.1.0a8]
+[2024-04-07 22:45:40] INFO root fetch - processPackages [kafka-overwatch]: Downloading https://files.pythonhosted.org/packages/5e/a2/957a3c4a145d9b91cabee5c7a4d62f51f69dc58649147fdc29bfbabc0dae/kafka_overwatch-0.0.2.tar.gz
+[2024-04-07 22:45:40] INFO root fetch - processPackages [szamlazz.py]: Downloading https://files.pythonhosted.org/packages/b3/a6/19a57c2f689d37c0260a402abc7cfee96766f45ddc42c97bce1a8271d8ff/szamlazz.py-1.3.0rc2.tar.gz
+[2024-04-07 22:45:40] INFO root fetch - processPackages [hexdoc]: Downloading https://files.pythonhosted.org/packages/41/3c/095a3abe0276460303a7fb44be7549f3b5eeee9ab93e540fe79d34c61915/hexdoc-1!0.1.0a8.tar.gz
+[2024-04-07 22:45:40] WARNING root fetch - processPackages [hexdoc]: Timeout reached during download
+[2024-04-07 22:45:40] WARNING root fetch - processPackages [szamlazz.py]: Timeout reached during download
+[2024-04-07 22:45:40] WARNING root fetch - processPackages [kafka-overwatch]: Timeout reached during download
+[2024-04-07 22:45:40] INFO root fetch - processPackages [kafka-overwatch]: Downloading https://files.pythonhosted.org/packages/8e/4d/90aa32217346ed97f42511dfde1c583fa368bab9b1b4333ae14fb50da625/kafka_overwatch-0.2.0.tar.gz
+[2024-04-07 22:45:40] INFO root fetch - processPackages [szamlazz.py]: Downloading https://files.pythonhosted.org/packages/80/e4/5817bab8f238ade4f775d1a6d21571513dfdfb2b9ccb3faaf2a9726a6099/szamlazz.py-1.4.0.tar.gz
+[2024-04-07 22:45:40] INFO root fetch - processPackages [hexdoc]: Downloading https://files.pythonhosted.org/packages/cd/f8/77bb4fb48d1590fa4afd9345e60063d3975f2401318af826181c3435d518/hexdoc-1!0.1.0a9.tar.gz
+[2024-04-07 22:45:41] WARNING root fetch - processPackages [kafka-overwatch]: Timeout reached during download
+[2024-04-07 22:45:41] INFO root fetch - processPackages [kafka-overwatch]: executing diffoscope
+[2024-04-07 22:45:41] INFO root fetch - processPackages [kafka-overwatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kafka_overwatch-0.0.2.tar.gz tmp/kafka_overwatch-0.2.0.tar.gz --markdown 20240407/k/kafka-overwatch/0.0.2-0.2.0/diff.md --exclude *.pyd
+[2024-04-07 22:45:41] WARNING root fetch - processPackages [szamlazz.py]: Timeout reached during download
+[2024-04-07 22:45:41] INFO root fetch - processPackages [szamlazz.py]: executing diffoscope
+[2024-04-07 22:45:41] INFO root fetch - processPackages [szamlazz.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/szamlazz.py-1.3.0rc2.tar.gz tmp/szamlazz.py-1.4.0.tar.gz --markdown 20240407/s/szamlazz.py/1.3.0rc2-1.4.0/diff.md --exclude *.pyd
+[2024-04-07 22:45:41] WARNING root fetch - processPackages [hexdoc]: Timeout reached during download
+[2024-04-07 22:45:41] INFO root fetch - processPackages [hexdoc]: executing diffoscope
+[2024-04-07 22:45:41] INFO root fetch - processPackages [hexdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hexdoc-1!0.1.0a8.tar.gz tmp/hexdoc-1!0.1.0a9.tar.gz --markdown 20240407/h/hexdoc/1!0.1.0a8-1!0.1.0a9/diff.md --exclude *.pyd
+[2024-04-07 22:45:41] INFO root fetch - processPackages [szamlazz.py]: Remove: archive file [/home/abi/fetcher/tmp/szamlazz.py-1.3.0rc2.tar.gz]
+[2024-04-07 22:45:41] INFO root fetch - processPackages [szamlazz.py]: Remove: archive file [/home/abi/fetcher/tmp/szamlazz.py-1.4.0.tar.gz]
+[2024-04-07 22:45:41] INFO root fetch - main [MainThread]: End processing [szamlazz.py]: success
+[2024-04-07 22:45:41] INFO root fetch - processPackages [kafka-overwatch]: Remove: archive file [/home/abi/fetcher/tmp/kafka_overwatch-0.0.2.tar.gz]
+[2024-04-07 22:45:41] INFO root fetch - processPackages [kafka-overwatch]: Remove: archive file [/home/abi/fetcher/tmp/kafka_overwatch-0.2.0.tar.gz]
+[2024-04-07 22:45:41] INFO root fetch - main [MainThread]: End processing [kafka-overwatch]: success
+[2024-04-07 22:45:42] INFO root fetch - processPackages [hexdoc]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc-1!0.1.0a8.tar.gz]
+[2024-04-07 22:45:42] INFO root fetch - processPackages [hexdoc]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc-1!0.1.0a9.tar.gz]
+[2024-04-07 22:45:42] INFO root fetch - main [MainThread]: End processing [hexdoc]: success
+[2024-04-07 22:45:42] INFO root fetch - main [MainThread]: Store serial: [22659179]
