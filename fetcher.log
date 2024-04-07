@@ -12692,3 +12692,50 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:36:56] INFO root fetch - processPackages [ratarmountcore]: Remove: archive file [/home/abi/fetcher/tmp/ratarmountcore-0.7.0.tar.gz]
 [2024-04-07 15:36:57] INFO root fetch - main [MainThread]: End processing [ratarmountcore]: success
 [2024-04-07 15:36:57] INFO root fetch - main [MainThread]: Store serial: [22656508]
+[2024-04-07 15:39:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656508]
+[2024-04-07 15:39:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 15:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ratarmount
+[2024-04-07 15:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rahavard
+[2024-04-07 15:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: myfunx
+[2024-04-07 15:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tensordict
+[2024-04-07 15:39:05] INFO root fetch - processPackages [rahavard]: New version: [0.0.9] Old Version: [0.0.12]
+[2024-04-07 15:39:05] INFO root fetch - processPackages [myfunx]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-07 15:39:05] INFO root fetch - processPackages [ratarmount]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-07 15:39:05] INFO root fetch - processPackages [tensordict]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-07 15:39:06] INFO root fetch - processPackages [ratarmount]: Downloading https://files.pythonhosted.org/packages/bf/9d/6c4f392e383fefcc503b63f8ad3ee1b1ceb6bd2b5113a980879120296147/ratarmount-0.9.2.tar.gz
+[2024-04-07 15:39:06] INFO root fetch - processPackages [rahavard]: Downloading https://files.pythonhosted.org/packages/94/30/8ced34b7fbe4f033e275660880366c19e2ccde91933b08b8e015d9373579/rahavard-0.0.12.tar.gz
+[2024-04-07 15:39:06] INFO root fetch - processPackages [myfunx]: Downloading https://files.pythonhosted.org/packages/c6/95/c9c6d5ba0d13ff87580175d56117e75a02369d30b7d3252cf76dd3d0712c/myfunx-0.5.1.tar.gz
+[2024-04-07 15:39:06] INFO root fetch - processPackages [tensordict]: Downloading https://files.pythonhosted.org/packages/61/22/d6141b850fd0997ea6ae7164cea2987dfeb5149036d767cb4250284951d7/tensordict-0.3.1-cp39-cp39-win_amd64.whl
+[2024-04-07 15:39:06] WARNING root fetch - processPackages [ratarmount]: Timeout reached during download
+[2024-04-07 15:39:06] INFO root fetch - processPackages [ratarmount]: Downloading https://files.pythonhosted.org/packages/c1/b9/5ef008709e4297ac30fd8f404425ec1c65f6df21ea4136735b23bc582f4f/ratarmount-0.9.3.tar.gz
+[2024-04-07 15:39:06] WARNING root fetch - processPackages [rahavard]: Timeout reached during download
+[2024-04-07 15:39:06] WARNING root fetch - processPackages [myfunx]: Timeout reached during download
+[2024-04-07 15:39:06] WARNING root fetch - processPackages [ratarmount]: Timeout reached during download
+[2024-04-07 15:39:06] INFO root fetch - processPackages [ratarmount]: executing diffoscope
+[2024-04-07 15:39:06] INFO root fetch - processPackages [ratarmount]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ratarmount-0.9.2.tar.gz tmp/ratarmount-0.9.3.tar.gz --markdown 20240407/r/ratarmount/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2024-04-07 15:39:06] WARNING root fetch - processPackages [tensordict]: Timeout reached during download
+[2024-04-07 15:39:06] INFO root fetch - processPackages [rahavard]: Downloading https://files.pythonhosted.org/packages/66/07/6477aa0e4d97de27a844828a75d1ff22e2dfb9e3dd094489ca589dfe63bf/rahavard-0.0.9.tar.gz
+[2024-04-07 15:39:06] INFO root fetch - processPackages [myfunx]: Downloading https://files.pythonhosted.org/packages/9b/ae/2e6a28f63dcef9d026924bf2be2fec5563b38916cc6906cd3c5b0327860b/myfunx-0.5.2.tar.gz
+[2024-04-07 15:39:06] INFO root fetch - processPackages [tensordict]: Downloading https://files.pythonhosted.org/packages/fb/b2/86d449773bf5cc3aeff118cedcb2d86d6f1358f79d36fa6598392f41a253/tensordict-0.3.2-cp39-cp39-win_amd64.whl
+[2024-04-07 15:39:06] WARNING root fetch - processPackages [rahavard]: Timeout reached during download
+[2024-04-07 15:39:06] INFO root fetch - processPackages [rahavard]: executing diffoscope
+[2024-04-07 15:39:06] INFO root fetch - processPackages [rahavard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rahavard-0.0.12.tar.gz tmp/rahavard-0.0.9.tar.gz --markdown 20240407/r/rahavard/0.0.12-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 15:39:06] WARNING root fetch - processPackages [myfunx]: Timeout reached during download
+[2024-04-07 15:39:06] INFO root fetch - processPackages [myfunx]: executing diffoscope
+[2024-04-07 15:39:06] INFO root fetch - processPackages [myfunx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfunx-0.5.1.tar.gz tmp/myfunx-0.5.2.tar.gz --markdown 20240407/m/myfunx/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2024-04-07 15:39:07] WARNING root fetch - processPackages [tensordict]: Timeout reached during download
+[2024-04-07 15:39:07] INFO root fetch - processPackages [tensordict]: executing diffoscope
+[2024-04-07 15:39:07] INFO root fetch - processPackages [tensordict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict-0.3.1-cp39-cp39-win_amd64.whl.zip tmp/tensordict-0.3.2-cp39-cp39-win_amd64.whl.zip --markdown 20240407/t/tensordict/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2024-04-07 15:39:07] INFO root fetch - processPackages [ratarmount]: Remove: archive file [/home/abi/fetcher/tmp/ratarmount-0.9.2.tar.gz]
+[2024-04-07 15:39:07] INFO root fetch - processPackages [ratarmount]: Remove: archive file [/home/abi/fetcher/tmp/ratarmount-0.9.3.tar.gz]
+[2024-04-07 15:39:07] INFO root fetch - main [MainThread]: End processing [ratarmount]: success
+[2024-04-07 15:39:07] INFO root fetch - processPackages [rahavard]: Remove: archive file [/home/abi/fetcher/tmp/rahavard-0.0.12.tar.gz]
+[2024-04-07 15:39:07] INFO root fetch - processPackages [rahavard]: Remove: archive file [/home/abi/fetcher/tmp/rahavard-0.0.9.tar.gz]
+[2024-04-07 15:39:07] INFO root fetch - main [MainThread]: End processing [rahavard]: success
+[2024-04-07 15:39:07] INFO root fetch - processPackages [myfunx]: Remove: archive file [/home/abi/fetcher/tmp/myfunx-0.5.1.tar.gz]
+[2024-04-07 15:39:07] INFO root fetch - processPackages [myfunx]: Remove: archive file [/home/abi/fetcher/tmp/myfunx-0.5.2.tar.gz]
+[2024-04-07 15:39:07] INFO root fetch - main [MainThread]: End processing [myfunx]: success
+[2024-04-07 15:39:07] INFO root fetch - processPackages [tensordict]: Remove: archive file [/home/abi/fetcher/tmp/tensordict-0.3.1-cp39-cp39-win_amd64.whl.zip]
+[2024-04-07 15:39:07] INFO root fetch - processPackages [tensordict]: Remove: archive file [/home/abi/fetcher/tmp/tensordict-0.3.2-cp39-cp39-win_amd64.whl.zip]
+[2024-04-07 15:39:07] INFO root fetch - main [MainThread]: End processing [tensordict]: success
+[2024-04-07 15:39:07] INFO root fetch - main [MainThread]: Store serial: [22656535]
