@@ -12964,3 +12964,22 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:54:28] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
 [2024-04-07 15:54:28] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2024-04-07 15:54:28] INFO root fetch - main [MainThread]: Store serial: [22656617]
+[2024-04-07 15:56:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656617]
+[2024-04-07 15:56:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 15:56:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sourcesage
+[2024-04-07 15:56:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: 2b4cad69c8f0478caa92a512e57b735aba978d0e
+[2024-04-07 15:56:37] INFO root fetch - processPackages [sourcesage]: New version: [4.0.8] Old Version: [4.0.7]
+[2024-04-07 15:56:37] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 15:56:38] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/4f/dd/2f7a9b66f2dffbe976e23d13fa06d029b1e06d8fcad2cb4cb646f7d834da/sourcesage-4.0.7.tar.gz
+[2024-04-07 15:56:38] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Downloading https://files.pythonhosted.org/packages/01/41/db784ddc21401cdfc90cf5135c9c817ed309e3b065cae306f76fcd8c0455/2b4cad69c8f0478caa92a512e57b735aba978d0e-0.1.8.tar.gz
+[2024-04-07 15:56:38] WARNING root fetch - processPackages [sourcesage]: Timeout reached during download
+[2024-04-07 15:56:38] WARNING root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Skipping package: exceeds size limit 27722932>=10485760
+[2024-04-07 15:56:38] INFO root fetch - main [MainThread]: End processing [2b4cad69c8f0478caa92a512e57b735aba978d0e] error
+[2024-04-07 15:56:38] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/53/ad/0a94732e2c9b70d4140a091aa95da8f14b71f5c05430e28ca454dd151571/sourcesage-4.0.8.tar.gz
+[2024-04-07 15:56:38] WARNING root fetch - processPackages [sourcesage]: Timeout reached during download
+[2024-04-07 15:56:38] INFO root fetch - processPackages [sourcesage]: executing diffoscope
+[2024-04-07 15:56:38] INFO root fetch - processPackages [sourcesage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sourcesage-4.0.7.tar.gz tmp/sourcesage-4.0.8.tar.gz --markdown 20240407/s/sourcesage/4.0.7-4.0.8/diff.md --exclude *.pyd
+[2024-04-07 15:56:39] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.0.7.tar.gz]
+[2024-04-07 15:56:39] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.0.8.tar.gz]
+[2024-04-07 15:56:39] INFO root fetch - main [MainThread]: End processing [sourcesage]: success
+[2024-04-07 15:56:39] INFO root fetch - main [MainThread]: Store serial: [22656626]
