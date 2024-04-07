@@ -16682,3 +16682,50 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:18:01] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.2.91.tar.gz]
 [2024-04-07 19:18:01] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2024-04-07 19:18:01] INFO root fetch - main [MainThread]: Store serial: [22657867]
+[2024-04-07 19:20:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657867]
+[2024-04-07 19:20:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 19:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easy-utils-dev
+[2024-04-07 19:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-bilichat
+[2024-04-07 19:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crewai-tools
+[2024-04-07 19:20:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lib-pcg-algopy
+[2024-04-07 19:20:10] INFO root fetch - processPackages [easy-utils-dev]: New version: [2.8.9] Old Version: [2.8.8]
+[2024-04-07 19:20:10] INFO root fetch - processPackages [crewai-tools]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-07 19:20:10] INFO root fetch - processPackages [easy-utils-dev]: Downloading https://files.pythonhosted.org/packages/d0/93/7d3610b6f67084ad67ecbd895c5e70590d1edff9babbc72a2d7802d125ad/easy_utils_dev-2.8.8.tar.gz
+[2024-04-07 19:20:10] INFO root fetch - processPackages [lib-pcg-algopy]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-07 19:20:10] INFO root fetch - processPackages [nonebot-plugin-bilichat]: New version: [5.4.0] Old Version: [5.3.2]
+[2024-04-07 19:20:11] WARNING root fetch - processPackages [easy-utils-dev]: Timeout reached during download
+[2024-04-07 19:20:11] INFO root fetch - processPackages [crewai-tools]: Downloading https://files.pythonhosted.org/packages/77/86/e51b18f64260b78ddcdab0192fd70d823b443937866cecab163f44485d92/crewai_tools-0.1.5.tar.gz
+[2024-04-07 19:20:11] INFO root fetch - processPackages [easy-utils-dev]: Downloading https://files.pythonhosted.org/packages/cb/9e/733069bda720d8bb6841ec493e820c3c09b9c4914d51ce9ac1c70aa88fe9/easy_utils_dev-2.8.9.tar.gz
+[2024-04-07 19:20:11] INFO root fetch - processPackages [lib-pcg-algopy]: Downloading https://files.pythonhosted.org/packages/ed/72/c979be4ce87f301d83b6ebd6d0837e5b0c23c8edf02a5339408a39c54201/lib_pcg_algopy-0.2.0.tar.gz
+[2024-04-07 19:20:11] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Downloading https://files.pythonhosted.org/packages/b9/df/110716ce1b77f23ff2fe1902a82c1a2cbb09e24a2e4dd7fda8f8da742c62/nonebot_plugin_bilichat-5.3.2.tar.gz
+[2024-04-07 19:20:11] WARNING root fetch - processPackages [crewai-tools]: Timeout reached during download
+[2024-04-07 19:20:11] WARNING root fetch - processPackages [easy-utils-dev]: Timeout reached during download
+[2024-04-07 19:20:11] INFO root fetch - processPackages [easy-utils-dev]: executing diffoscope
+[2024-04-07 19:20:11] INFO root fetch - processPackages [easy-utils-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_utils_dev-2.8.8.tar.gz tmp/easy_utils_dev-2.8.9.tar.gz --markdown 20240407/e/easy-utils-dev/2.8.8-2.8.9/diff.md --exclude *.pyd
+[2024-04-07 19:20:11] WARNING root fetch - processPackages [lib-pcg-algopy]: Timeout reached during download
+[2024-04-07 19:20:11] WARNING root fetch - processPackages [nonebot-plugin-bilichat]: Timeout reached during download
+[2024-04-07 19:20:11] INFO root fetch - processPackages [crewai-tools]: Downloading https://files.pythonhosted.org/packages/a2/22/fc5d6c6bae95b3cf641de85e3d8a4279113224f7ce795d6add95c6703e9f/crewai_tools-0.1.6.tar.gz
+[2024-04-07 19:20:11] INFO root fetch - processPackages [lib-pcg-algopy]: Downloading https://files.pythonhosted.org/packages/ff/6e/81034a849485e74b2b0f773df81b97444618f73d5e55c321cc70d9c4530c/lib_pcg_algopy-0.2.1.tar.gz
+[2024-04-07 19:20:11] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Downloading https://files.pythonhosted.org/packages/ab/3f/a3a94f992a9bc736161fc50dc422813cf010f927208efbb5bb48b0397163/nonebot_plugin_bilichat-5.4.0.tar.gz
+[2024-04-07 19:20:11] WARNING root fetch - processPackages [crewai-tools]: Timeout reached during download
+[2024-04-07 19:20:11] WARNING root fetch - processPackages [lib-pcg-algopy]: Timeout reached during download
+[2024-04-07 19:20:11] INFO root fetch - processPackages [crewai-tools]: executing diffoscope
+[2024-04-07 19:20:11] INFO root fetch - processPackages [lib-pcg-algopy]: executing diffoscope
+[2024-04-07 19:20:11] INFO root fetch - processPackages [crewai-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crewai_tools-0.1.5.tar.gz tmp/crewai_tools-0.1.6.tar.gz --markdown 20240407/c/crewai-tools/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2024-04-07 19:20:11] INFO root fetch - processPackages [lib-pcg-algopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib_pcg_algopy-0.2.0.tar.gz tmp/lib_pcg_algopy-0.2.1.tar.gz --markdown 20240407/l/lib-pcg-algopy/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2024-04-07 19:20:11] WARNING root fetch - processPackages [nonebot-plugin-bilichat]: Timeout reached during download
+[2024-04-07 19:20:11] INFO root fetch - processPackages [nonebot-plugin-bilichat]: executing diffoscope
+[2024-04-07 19:20:11] INFO root fetch - processPackages [nonebot-plugin-bilichat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bilichat-5.3.2.tar.gz tmp/nonebot_plugin_bilichat-5.4.0.tar.gz --markdown 20240407/n/nonebot-plugin-bilichat/5.3.2-5.4.0/diff.md --exclude *.pyd
+[2024-04-07 19:20:11] INFO root fetch - processPackages [easy-utils-dev]: Remove: archive file [/home/abi/fetcher/tmp/easy_utils_dev-2.8.8.tar.gz]
+[2024-04-07 19:20:11] INFO root fetch - processPackages [easy-utils-dev]: Remove: archive file [/home/abi/fetcher/tmp/easy_utils_dev-2.8.9.tar.gz]
+[2024-04-07 19:20:11] INFO root fetch - main [MainThread]: End processing [easy-utils-dev]: success
+[2024-04-07 19:20:12] INFO root fetch - processPackages [lib-pcg-algopy]: Remove: archive file [/home/abi/fetcher/tmp/lib_pcg_algopy-0.2.0.tar.gz]
+[2024-04-07 19:20:12] INFO root fetch - processPackages [lib-pcg-algopy]: Remove: archive file [/home/abi/fetcher/tmp/lib_pcg_algopy-0.2.1.tar.gz]
+[2024-04-07 19:20:12] INFO root fetch - main [MainThread]: End processing [lib-pcg-algopy]: success
+[2024-04-07 19:20:12] INFO root fetch - processPackages [crewai-tools]: Remove: archive file [/home/abi/fetcher/tmp/crewai_tools-0.1.5.tar.gz]
+[2024-04-07 19:20:12] INFO root fetch - processPackages [crewai-tools]: Remove: archive file [/home/abi/fetcher/tmp/crewai_tools-0.1.6.tar.gz]
+[2024-04-07 19:20:12] INFO root fetch - main [MainThread]: End processing [crewai-tools]: success
+[2024-04-07 19:20:12] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_bilichat-5.3.2.tar.gz]
+[2024-04-07 19:20:12] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_bilichat-5.4.0.tar.gz]
+[2024-04-07 19:20:12] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilichat]: success
+[2024-04-07 19:20:12] INFO root fetch - main [MainThread]: Store serial: [22657880]
