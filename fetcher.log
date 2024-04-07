@@ -10758,3 +10758,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:32:32] INFO root fetch - processPackages [sphinx-github-style]: Remove: archive file [/home/abi/fetcher/tmp/sphinx-github-style-1.2.1.tar.gz]
 [2024-04-07 13:32:32] INFO root fetch - main [MainThread]: End processing [sphinx-github-style]: success
 [2024-04-07 13:32:32] INFO root fetch - main [MainThread]: Store serial: [22655732]
+[2024-04-07 13:34:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655732]
+[2024-04-07 13:34:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 13:34:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: montpy
+[2024-04-07 13:34:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchserve-nightly
+[2024-04-07 13:34:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torch-model-archiver-nightly
+[2024-04-07 13:34:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torch-workflow-archiver-nightly
+[2024-04-07 13:34:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: DocumentAI-std
+[2024-04-07 13:34:40] INFO root fetch - processPackages [torchserve-nightly]: New version: [2024.4.6] Old Version: [2024.4.5]
+[2024-04-07 13:34:40] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2024.4.6] Old Version: [2024.4.5]
+[2024-04-07 13:34:41] WARNING root fetch - processPackages [montpy]: Skipping, unable to determine old version
+[2024-04-07 13:34:41] INFO root fetch - main [MainThread]: End processing [montpy] error
+[2024-04-07 13:34:41] WARNING root fetch - processPackages [DocumentAI-std]: Skipping, unable to determine old version
+[2024-04-07 13:34:41] INFO root fetch - main [MainThread]: End processing [DocumentAI-std] error
+[2024-04-07 13:34:41] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/46/61/9ea7571a9e9dee1daf217eea876b3e79bcc610ee604208c7947c7a89685f/torchserve_nightly-2024.4.5-py3-none-any.whl
+[2024-04-07 13:34:41] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/3d/91/ed9319172187e79fd7b72dce2ba0a0df7ef15175c823d230e9454948fa34/torch_model_archiver_nightly-2024.4.5-py3-none-any.whl
+[2024-04-07 13:34:41] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2024.4.7] Old Version: [2024.4.6]
+[2024-04-07 13:34:41] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 24332277>=10485760
+[2024-04-07 13:34:41] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2024-04-07 13:34:41] WARNING root fetch - processPackages [torch-model-archiver-nightly]: Timeout reached during download
+[2024-04-07 13:34:41] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/92/a0/6bef6b4cd2f36a1c09e1b491c069d5e103933c79b75cf7740bf66e8f18c8/torch_workflow_archiver_nightly-2024.4.6-py3-none-any.whl
+[2024-04-07 13:34:41] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/28/f6/a376a3e4936115bf7991ea4016d9629d03ec9bf33d1fbf55aa371e05366d/torch_model_archiver_nightly-2024.4.6-py3-none-any.whl
+[2024-04-07 13:34:41] WARNING root fetch - processPackages [torch-workflow-archiver-nightly]: Timeout reached during download
+[2024-04-07 13:34:41] WARNING root fetch - processPackages [torch-model-archiver-nightly]: Timeout reached during download
+[2024-04-07 13:34:41] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2024-04-07 13:34:41] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2024.4.5-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2024.4.6-py3-none-any.whl.zip --markdown 20240407/t/torch-model-archiver-nightly/2024.4.5-2024.4.6/diff.md --exclude *.pyd
+[2024-04-07 13:34:41] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/19/d4/48ed170e79102607db9758662c34c1e9a7d2cca453a976226f2d8dd11967/torch_workflow_archiver_nightly-2024.4.7-py3-none-any.whl
+[2024-04-07 13:34:41] WARNING root fetch - processPackages [torch-workflow-archiver-nightly]: Timeout reached during download
+[2024-04-07 13:34:41] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2024-04-07 13:34:41] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2024.4.6-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2024.4.7-py3-none-any.whl.zip --markdown 20240407/t/torch-workflow-archiver-nightly/2024.4.6-2024.4.7/diff.md --exclude *.pyd
+[2024-04-07 13:34:42] INFO root fetch - processPackages [torch-model-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_archiver_nightly-2024.4.5-py3-none-any.whl.zip]
+[2024-04-07 13:34:42] INFO root fetch - processPackages [torch-model-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_archiver_nightly-2024.4.6-py3-none-any.whl.zip]
+[2024-04-07 13:34:42] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2024-04-07 13:34:42] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.4.6-py3-none-any.whl.zip]
+[2024-04-07 13:34:42] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.4.7-py3-none-any.whl.zip]
+[2024-04-07 13:34:42] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2024-04-07 13:34:42] INFO root fetch - main [MainThread]: Store serial: [22655747]
