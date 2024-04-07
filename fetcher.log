@@ -9934,3 +9934,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 12:22:58] INFO root fetch - processPackages [vectara-cli]: Remove: archive file [/home/abi/fetcher/tmp/vectara-cli-0.1.7.tar.gz]
 [2024-04-07 12:22:58] INFO root fetch - main [MainThread]: End processing [vectara-cli]: success
 [2024-04-07 12:22:58] INFO root fetch - main [MainThread]: Store serial: [22655390]
+[2024-04-07 12:25:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655390]
+[2024-04-07 12:25:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 12:25:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iderare-pheno
+[2024-04-07 12:25:07] INFO root fetch - processPackages [iderare-pheno]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-07 12:25:07] INFO root fetch - processPackages [iderare-pheno]: Downloading https://files.pythonhosted.org/packages/66/a1/b6f08fe486baa143a7f2688c060414ecb7431aa089f062d2d802b9b311c5/iderare-pheno-0.3.4.tar.gz
+[2024-04-07 12:25:07] WARNING root fetch - processPackages [iderare-pheno]: Timeout reached during download
+[2024-04-07 12:25:07] INFO root fetch - processPackages [iderare-pheno]: Downloading https://files.pythonhosted.org/packages/c5/49/b5f409090d26a2c015fc317f7c32a7e2b69e8f5f845528ced605a2614b75/iderare-pheno-0.3.5.tar.gz
+[2024-04-07 12:25:08] WARNING root fetch - processPackages [iderare-pheno]: Timeout reached during download
+[2024-04-07 12:25:08] INFO root fetch - processPackages [iderare-pheno]: executing diffoscope
+[2024-04-07 12:25:08] INFO root fetch - processPackages [iderare-pheno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iderare-pheno-0.3.4.tar.gz tmp/iderare-pheno-0.3.5.tar.gz --markdown 20240407/i/iderare-pheno/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2024-04-07 12:25:10] INFO root fetch - processPackages [iderare-pheno]: Remove: archive file [/home/abi/fetcher/tmp/iderare-pheno-0.3.4.tar.gz]
+[2024-04-07 12:25:10] INFO root fetch - processPackages [iderare-pheno]: Remove: archive file [/home/abi/fetcher/tmp/iderare-pheno-0.3.5.tar.gz]
+[2024-04-07 12:25:10] INFO root fetch - main [MainThread]: End processing [iderare-pheno]: success
+[2024-04-07 12:25:10] INFO root fetch - main [MainThread]: Store serial: [22655390]
