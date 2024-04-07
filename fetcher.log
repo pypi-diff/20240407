@@ -6292,3 +6292,28 @@
 [2024-04-07 08:20:28] WARNING root fetch - processPackages [maxray]: Skipping, unable to determine old version
 [2024-04-07 08:20:28] INFO root fetch - main [MainThread]: End processing [maxray] error
 [2024-04-07 08:20:28] INFO root fetch - main [MainThread]: Store serial: [22653986]
+[2024-04-07 08:22:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653986]
+[2024-04-07 08:22:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 08:22:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xiaoranli
+[2024-04-07 08:22:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: user-agents-parser
+[2024-04-07 08:22:37] INFO root fetch - processPackages [user-agents-parser]: New version: [2.2.2] Old Version: [2.2.1]
+[2024-04-07 08:22:37] INFO root fetch - processPackages [xiaoranli]: New version: [0.7.8] Old Version: [0.7.19]
+[2024-04-07 08:22:37] INFO root fetch - processPackages [user-agents-parser]: Downloading https://files.pythonhosted.org/packages/36/28/0a4704aa1856d4ba6446d4634fe8c508fae371f43867875ab70e41dd742c/user-agents-parser-2.2.1.tar.gz
+[2024-04-07 08:22:37] INFO root fetch - processPackages [xiaoranli]: Downloading https://files.pythonhosted.org/packages/68/36/2f2da329e8484da8a344aec69b293e981bad5a8448a1483b95f8190c0b7b/xiaoranli-0.7.19-py3-none-any.whl
+[2024-04-07 08:22:37] WARNING root fetch - processPackages [user-agents-parser]: Timeout reached during download
+[2024-04-07 08:22:37] WARNING root fetch - processPackages [xiaoranli]: Timeout reached during download
+[2024-04-07 08:22:37] INFO root fetch - processPackages [user-agents-parser]: Downloading https://files.pythonhosted.org/packages/a1/fd/1492aeffd189c4fa9503e0000f11482e874eb28814c33ee2dde64cfe593c/user-agents-parser-2.2.2.tar.gz
+[2024-04-07 08:22:37] WARNING root fetch - processPackages [user-agents-parser]: Timeout reached during download
+[2024-04-07 08:22:37] INFO root fetch - processPackages [user-agents-parser]: executing diffoscope
+[2024-04-07 08:22:37] INFO root fetch - processPackages [user-agents-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/user-agents-parser-2.2.1.tar.gz tmp/user-agents-parser-2.2.2.tar.gz --markdown 20240407/u/user-agents-parser/2.2.1-2.2.2/diff.md --exclude *.pyd
+[2024-04-07 08:22:37] INFO root fetch - processPackages [xiaoranli]: Downloading https://files.pythonhosted.org/packages/e9/5b/e43b6250e9f8891fffdc1165cb4f968bb072984d6dfa0c333957416e2092/xiaoranli-0.7.8-py3-none-any.whl
+[2024-04-07 08:22:37] WARNING root fetch - processPackages [xiaoranli]: Timeout reached during download
+[2024-04-07 08:22:37] INFO root fetch - processPackages [xiaoranli]: executing diffoscope
+[2024-04-07 08:22:37] INFO root fetch - processPackages [xiaoranli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiaoranli-0.7.19-py3-none-any.whl.zip tmp/xiaoranli-0.7.8-py3-none-any.whl.zip --markdown 20240407/x/xiaoranli/0.7.19-0.7.8/diff.md --exclude *.pyd
+[2024-04-07 08:22:38] INFO root fetch - processPackages [user-agents-parser]: Remove: archive file [/home/abi/fetcher/tmp/user-agents-parser-2.2.1.tar.gz]
+[2024-04-07 08:22:38] INFO root fetch - processPackages [user-agents-parser]: Remove: archive file [/home/abi/fetcher/tmp/user-agents-parser-2.2.2.tar.gz]
+[2024-04-07 08:22:38] INFO root fetch - main [MainThread]: End processing [user-agents-parser]: success
+[2024-04-07 08:22:39] INFO root fetch - processPackages [xiaoranli]: Remove: archive file [/home/abi/fetcher/tmp/xiaoranli-0.7.19-py3-none-any.whl.zip]
+[2024-04-07 08:22:39] INFO root fetch - processPackages [xiaoranli]: Remove: archive file [/home/abi/fetcher/tmp/xiaoranli-0.7.8-py3-none-any.whl.zip]
+[2024-04-07 08:22:39] INFO root fetch - main [MainThread]: End processing [xiaoranli]: success
+[2024-04-07 08:22:39] INFO root fetch - main [MainThread]: Store serial: [22653990]
