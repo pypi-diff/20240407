@@ -8901,3 +8901,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 11:23:29] WARNING root fetch - processPackages [sns-package]: Skipping, unable to determine old version
 [2024-04-07 11:23:29] INFO root fetch - main [MainThread]: End processing [sns-package] error
 [2024-04-07 11:23:29] INFO root fetch - main [MainThread]: Store serial: [22655016]
+[2024-04-07 11:25:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655016]
+[2024-04-07 11:25:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 11:25:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ffconverter
+[2024-04-07 11:25:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bellek
+[2024-04-07 11:25:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PathMePy-Gustoon
+[2024-04-07 11:25:38] INFO root fetch - processPackages [ffconverter]: New version: [2.4.1] Old Version: [2.4.0]
+[2024-04-07 11:25:38] INFO root fetch - processPackages [PathMePy-Gustoon]: New version: [0.3] Old Version: [0.2.1]
+[2024-04-07 11:25:38] INFO root fetch - processPackages [bellek]: New version: [0.9.0] Old Version: [0.73.0]
+[2024-04-07 11:25:38] INFO root fetch - processPackages [ffconverter]: Downloading https://files.pythonhosted.org/packages/b8/70/733ac73841746c50717062c9b15be34a73bc209c0bedd8bf56cfe65deea8/ffconverter-2.4.0.tar.gz
+[2024-04-07 11:25:38] INFO root fetch - processPackages [PathMePy-Gustoon]: Downloading https://files.pythonhosted.org/packages/8a/e8/4059c700395b11d8d829e520e4bffc2134f68d2a42ae3004f058e3f7c0bc/PathMePy-Gustoon-0.2.1.tar.gz
+[2024-04-07 11:25:39] WARNING root fetch - processPackages [PathMePy-Gustoon]: Timeout reached during download
+[2024-04-07 11:25:39] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/29/44/64c4edb834b8e966e14da536b0cd382f80d9c6f7885e923a45fb9da039c5/bellek-0.73.0.tar.gz
+[2024-04-07 11:25:39] WARNING root fetch - processPackages [ffconverter]: Timeout reached during download
+[2024-04-07 11:25:39] INFO root fetch - processPackages [PathMePy-Gustoon]: Downloading https://files.pythonhosted.org/packages/24/91/c014428f86ac8d90461802756d3f7519398d340b9301b5cd116fa9259bb9/PathMePy-Gustoon-0.3.tar.gz
+[2024-04-07 11:25:39] INFO root fetch - processPackages [ffconverter]: Downloading https://files.pythonhosted.org/packages/3d/ce/6ec084f1dbe647f45c2908bd34d1a32e2c023885e7db4acb9ea0b7a5b85f/ffconverter-2.4.1.tar.gz
+[2024-04-07 11:25:39] WARNING root fetch - processPackages [bellek]: Timeout reached during download
+[2024-04-07 11:25:39] WARNING root fetch - processPackages [PathMePy-Gustoon]: Timeout reached during download
+[2024-04-07 11:25:39] INFO root fetch - processPackages [PathMePy-Gustoon]: executing diffoscope
+[2024-04-07 11:25:39] INFO root fetch - processPackages [PathMePy-Gustoon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PathMePy-Gustoon-0.2.1.tar.gz tmp/PathMePy-Gustoon-0.3.tar.gz --markdown 20240407/P/PathMePy-Gustoon/0.2.1-0.3/diff.md --exclude *.pyd
+[2024-04-07 11:25:39] WARNING root fetch - processPackages [ffconverter]: Timeout reached during download
+[2024-04-07 11:25:39] INFO root fetch - processPackages [ffconverter]: executing diffoscope
+[2024-04-07 11:25:39] INFO root fetch - processPackages [ffconverter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ffconverter-2.4.0.tar.gz tmp/ffconverter-2.4.1.tar.gz --markdown 20240407/f/ffconverter/2.4.0-2.4.1/diff.md --exclude *.pyd
+[2024-04-07 11:25:39] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/ec/cb/2e453e973c51c52f57d3533e8d2f7192b8c626e0078fe08fb907191e69fb/bellek-0.9.0.tar.gz
+[2024-04-07 11:25:39] WARNING root fetch - processPackages [bellek]: Timeout reached during download
+[2024-04-07 11:25:39] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-07 11:25:39] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.73.0.tar.gz tmp/bellek-0.9.0.tar.gz --markdown 20240407/b/bellek/0.73.0-0.9.0/diff.md --exclude *.pyd
+[2024-04-07 11:25:40] INFO root fetch - processPackages [PathMePy-Gustoon]: Remove: archive file [/home/abi/fetcher/tmp/PathMePy-Gustoon-0.2.1.tar.gz]
+[2024-04-07 11:25:40] INFO root fetch - processPackages [PathMePy-Gustoon]: Remove: archive file [/home/abi/fetcher/tmp/PathMePy-Gustoon-0.3.tar.gz]
+[2024-04-07 11:25:40] INFO root fetch - main [MainThread]: End processing [PathMePy-Gustoon]: success
+[2024-04-07 11:25:40] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.73.0.tar.gz]
+[2024-04-07 11:25:40] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.9.0.tar.gz]
+[2024-04-07 11:25:40] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-07 11:25:40] INFO root fetch - processPackages [ffconverter]: Remove: archive file [/home/abi/fetcher/tmp/ffconverter-2.4.0.tar.gz]
+[2024-04-07 11:25:40] INFO root fetch - processPackages [ffconverter]: Remove: archive file [/home/abi/fetcher/tmp/ffconverter-2.4.1.tar.gz]
+[2024-04-07 11:25:40] INFO root fetch - main [MainThread]: End processing [ffconverter]: success
+[2024-04-07 11:25:40] INFO root fetch - main [MainThread]: Store serial: [22655023]
