@@ -9973,3 +9973,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 12:27:25] INFO root fetch - processPackages [iderare-pheno]: Remove: archive file [/home/abi/fetcher/tmp/iderare-pheno-0.4.0.tar.gz]
 [2024-04-07 12:27:25] INFO root fetch - main [MainThread]: End processing [iderare-pheno]: success
 [2024-04-07 12:27:25] INFO root fetch - main [MainThread]: Store serial: [22655404]
+[2024-04-07 12:29:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655404]
+[2024-04-07 12:29:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 12:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lightning-template
+[2024-04-07 12:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AsyncKandinsky
+[2024-04-07 12:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pams
+[2024-04-07 12:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aws-sam-utils
+[2024-04-07 12:29:34] INFO root fetch - processPackages [AsyncKandinsky]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 12:29:34] INFO root fetch - processPackages [AsyncKandinsky]: Downloading https://files.pythonhosted.org/packages/7c/34/4e3aa95832baff86b828201904d5e87466b90d4c9fdb5b2c161908824e98/AsyncKandinsky-0.0.2.tar.gz
+[2024-04-07 12:29:34] WARNING root fetch - processPackages [aws-sam-utils]: Skipping, unable to determine old version
+[2024-04-07 12:29:34] INFO root fetch - main [MainThread]: End processing [aws-sam-utils] error
+[2024-04-07 12:29:34] INFO root fetch - processPackages [pams]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-07 12:29:34] INFO root fetch - processPackages [lightning-template]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-04-07 12:29:34] WARNING root fetch - processPackages [AsyncKandinsky]: Timeout reached during download
+[2024-04-07 12:29:34] INFO root fetch - processPackages [pams]: Downloading https://files.pythonhosted.org/packages/d5/1f/a3cda9f2b395698c59607d3a06f0a4964b5a58980c5a6d45ca22691aa1fa/pams-0.2.0.tar.gz
+[2024-04-07 12:29:34] INFO root fetch - processPackages [lightning-template]: Downloading https://files.pythonhosted.org/packages/fa/82/328c153c3cef3a0ada6222c40fa83b5ee818320650480328dd587f9e4f86/lightning-template-1.8.1.tar.gz
+[2024-04-07 12:29:34] INFO root fetch - processPackages [AsyncKandinsky]: Downloading https://files.pythonhosted.org/packages/30/08/799004a382fdc46e01ee69eef18c3367137a3014a6f2cf3f042b33052cca/AsyncKandinsky-0.0.3.tar.gz
+[2024-04-07 12:29:35] WARNING root fetch - processPackages [pams]: Timeout reached during download
+[2024-04-07 12:29:35] WARNING root fetch - processPackages [lightning-template]: Timeout reached during download
+[2024-04-07 12:29:35] WARNING root fetch - processPackages [AsyncKandinsky]: Timeout reached during download
+[2024-04-07 12:29:35] INFO root fetch - processPackages [AsyncKandinsky]: executing diffoscope
+[2024-04-07 12:29:35] INFO root fetch - processPackages [AsyncKandinsky]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AsyncKandinsky-0.0.2.tar.gz tmp/AsyncKandinsky-0.0.3.tar.gz --markdown 20240407/A/AsyncKandinsky/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 12:29:35] INFO root fetch - processPackages [lightning-template]: Downloading https://files.pythonhosted.org/packages/ff/41/87c6ba8561d19aeec49fa0fbbd99b05f100ec898ff58f8d9d271912f646a/lightning-template-1.9.0.tar.gz
+[2024-04-07 12:29:35] INFO root fetch - processPackages [pams]: Downloading https://files.pythonhosted.org/packages/13/73/cba2b22602b6a880694ecd7dc43a5c120c9069cf66c096c8dd26d423b3c8/pams-0.2.1.tar.gz
+[2024-04-07 12:29:35] WARNING root fetch - processPackages [pams]: Timeout reached during download
+[2024-04-07 12:29:35] INFO root fetch - processPackages [pams]: executing diffoscope
+[2024-04-07 12:29:35] INFO root fetch - processPackages [pams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pams-0.2.0.tar.gz tmp/pams-0.2.1.tar.gz --markdown 20240407/p/pams/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2024-04-07 12:29:35] WARNING root fetch - processPackages [lightning-template]: Timeout reached during download
+[2024-04-07 12:29:35] INFO root fetch - processPackages [lightning-template]: executing diffoscope
+[2024-04-07 12:29:35] INFO root fetch - processPackages [lightning-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning-template-1.8.1.tar.gz tmp/lightning-template-1.9.0.tar.gz --markdown 20240407/l/lightning-template/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2024-04-07 12:29:35] INFO root fetch - processPackages [AsyncKandinsky]: Remove: archive file [/home/abi/fetcher/tmp/AsyncKandinsky-0.0.2.tar.gz]
+[2024-04-07 12:29:35] INFO root fetch - processPackages [AsyncKandinsky]: Remove: archive file [/home/abi/fetcher/tmp/AsyncKandinsky-0.0.3.tar.gz]
+[2024-04-07 12:29:35] INFO root fetch - main [MainThread]: End processing [AsyncKandinsky]: success
+[2024-04-07 12:29:36] INFO root fetch - processPackages [pams]: Remove: archive file [/home/abi/fetcher/tmp/pams-0.2.0.tar.gz]
+[2024-04-07 12:29:36] INFO root fetch - processPackages [pams]: Remove: archive file [/home/abi/fetcher/tmp/pams-0.2.1.tar.gz]
+[2024-04-07 12:29:36] INFO root fetch - main [MainThread]: End processing [pams]: success
+[2024-04-07 12:29:36] INFO root fetch - processPackages [lightning-template]: Remove: archive file [/home/abi/fetcher/tmp/lightning-template-1.8.1.tar.gz]
+[2024-04-07 12:29:36] INFO root fetch - processPackages [lightning-template]: Remove: archive file [/home/abi/fetcher/tmp/lightning-template-1.9.0.tar.gz]
+[2024-04-07 12:29:36] INFO root fetch - main [MainThread]: End processing [lightning-template]: success
+[2024-04-07 12:29:36] INFO root fetch - main [MainThread]: Store serial: [22655418]
