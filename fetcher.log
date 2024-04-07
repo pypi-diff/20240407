@@ -4723,3 +4723,39 @@
 [2024-04-07 06:37:36] INFO root fetch - main [MainThread]: End processing [whereabouts]: success
 [2024-04-07 06:37:36] INFO root fetch - main [MainThread]: End processing [whereabouts]: success
 [2024-04-07 06:37:36] INFO root fetch - main [MainThread]: Store serial: [22653479]
+[2024-04-07 06:39:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653479]
+[2024-04-07 06:39:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 06:39:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whereabouts
+[2024-04-07 06:39:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: htscf
+[2024-04-07 06:39:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: argovisHelpers
+[2024-04-07 06:39:46] INFO root fetch - processPackages [whereabouts]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-07 06:39:46] INFO root fetch - processPackages [whereabouts]: Downloading https://files.pythonhosted.org/packages/94/16/3b43f690f1b852a39ccfa29cbeebcca1a2cb7f9cb64b477837bcaf543655/whereabouts-0.3.2.tar.gz
+[2024-04-07 06:39:46] INFO root fetch - processPackages [argovisHelpers]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 06:39:46] INFO root fetch - processPackages [htscf]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 06:39:47] WARNING root fetch - processPackages [whereabouts]: Timeout reached during download
+[2024-04-07 06:39:47] INFO root fetch - processPackages [argovisHelpers]: Downloading https://files.pythonhosted.org/packages/dc/fb/015a17f5953024b0ebd76d1f15a17c2d90e91891e9cc15d866d196c97a26/argovisHelpers-0.0.8.tar.gz
+[2024-04-07 06:39:47] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/48/31/ef6469f74ffa5f39aaf9ac67ecf2f5b17aec1b223d3f63572efd39a3958f/htscf-0.0.98.tar.gz
+[2024-04-07 06:39:47] INFO root fetch - processPackages [whereabouts]: Downloading https://files.pythonhosted.org/packages/a8/45/4cd4b89468c2d4479a6db84543d380ba6b43b4039bef272533cfa5e920c3/whereabouts-0.3.3.tar.gz
+[2024-04-07 06:39:47] WARNING root fetch - processPackages [argovisHelpers]: Timeout reached during download
+[2024-04-07 06:39:47] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 06:39:47] WARNING root fetch - processPackages [whereabouts]: Timeout reached during download
+[2024-04-07 06:39:47] INFO root fetch - processPackages [whereabouts]: executing diffoscope
+[2024-04-07 06:39:47] INFO root fetch - processPackages [whereabouts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whereabouts-0.3.2.tar.gz tmp/whereabouts-0.3.3.tar.gz --markdown 20240407/w/whereabouts/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2024-04-07 06:39:47] INFO root fetch - processPackages [argovisHelpers]: Downloading https://files.pythonhosted.org/packages/c4/9b/69aa0ac205011a5c0353157c71c7c7d7418cfde221bcf8db32db64d593e8/argovisHelpers-0.0.9.tar.gz
+[2024-04-07 06:39:47] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/79/48/b9c5a63d0fc652968c826af8815fadd5e1f69403909e12853b5a52d9c6b3/htscf-0.0.99.tar.gz
+[2024-04-07 06:39:47] WARNING root fetch - processPackages [argovisHelpers]: Timeout reached during download
+[2024-04-07 06:39:47] INFO root fetch - processPackages [argovisHelpers]: executing diffoscope
+[2024-04-07 06:39:47] INFO root fetch - processPackages [argovisHelpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argovisHelpers-0.0.8.tar.gz tmp/argovisHelpers-0.0.9.tar.gz --markdown 20240407/a/argovisHelpers/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 06:39:47] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 06:39:47] INFO root fetch - processPackages [htscf]: executing diffoscope
+[2024-04-07 06:39:47] INFO root fetch - processPackages [htscf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htscf-0.0.98.tar.gz tmp/htscf-0.0.99.tar.gz --markdown 20240407/h/htscf/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 06:39:47] INFO root fetch - processPackages [whereabouts]: Remove: archive file [/home/abi/fetcher/tmp/whereabouts-0.3.2.tar.gz]
+[2024-04-07 06:39:47] INFO root fetch - processPackages [whereabouts]: Remove: archive file [/home/abi/fetcher/tmp/whereabouts-0.3.3.tar.gz]
+[2024-04-07 06:39:47] INFO root fetch - main [MainThread]: End processing [whereabouts]: success
+[2024-04-07 06:39:48] INFO root fetch - processPackages [argovisHelpers]: Remove: archive file [/home/abi/fetcher/tmp/argovisHelpers-0.0.8.tar.gz]
+[2024-04-07 06:39:48] INFO root fetch - processPackages [argovisHelpers]: Remove: archive file [/home/abi/fetcher/tmp/argovisHelpers-0.0.9.tar.gz]
+[2024-04-07 06:39:48] INFO root fetch - main [MainThread]: End processing [argovisHelpers]: success
+[2024-04-07 06:39:48] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.98.tar.gz]
+[2024-04-07 06:39:48] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.99.tar.gz]
+[2024-04-07 06:39:48] INFO root fetch - main [MainThread]: End processing [htscf]: success
+[2024-04-07 06:39:48] INFO root fetch - main [MainThread]: Store serial: [22653488]
