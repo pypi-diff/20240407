@@ -11992,3 +11992,9 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:53:18] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.139.tar.gz]
 [2024-04-07 14:53:18] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
 [2024-04-07 14:53:18] INFO root fetch - main [MainThread]: Store serial: [22656295]
+[2024-04-07 14:55:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656295]
+[2024-04-07 14:55:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 14:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gif-steganography
+[2024-04-07 14:55:27] WARNING root fetch - processPackages [gif-steganography]: Skipping, unable to determine old version
+[2024-04-07 14:55:27] INFO root fetch - main [MainThread]: End processing [gif-steganography] error
+[2024-04-07 14:55:27] INFO root fetch - main [MainThread]: Store serial: [22656301]
