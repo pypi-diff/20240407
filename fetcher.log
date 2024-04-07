@@ -4413,3 +4413,55 @@
 [2024-04-07 06:05:06] INFO root fetch - processPackages [PygameToolsBox]: Remove: archive file [/home/abi/fetcher/tmp/PygameToolsBox-1.1.3.tar.gz]
 [2024-04-07 06:05:06] INFO root fetch - main [MainThread]: End processing [PygameToolsBox]: success
 [2024-04-07 06:05:06] INFO root fetch - main [MainThread]: Store serial: [22653385]
+[2024-04-07 06:07:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653385]
+[2024-04-07 06:07:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 06:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nncore
+[2024-04-07 06:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ml-backtest
+[2024-04-07 06:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: st_workflow
+[2024-04-07 06:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: opendp
+[2024-04-07 06:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: paradance
+[2024-04-07 06:07:15] INFO root fetch - processPackages [opendp]: New version: [0.9.2b20240207001] Old Version: [0.9.2a20240405001]
+[2024-04-07 06:07:15] INFO root fetch - processPackages [nncore]: New version: [0.4.0] Old Version: [0.3.8]
+[2024-04-07 06:07:15] INFO root fetch - processPackages [ml-backtest]: New version: [0.1.2] Old Version: [0.1.1a0]
+[2024-04-07 06:07:15] INFO root fetch - processPackages [st_workflow]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-07 06:07:15] INFO root fetch - processPackages [paradance]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-07 06:07:15] INFO root fetch - processPackages [st_workflow]: Downloading https://files.pythonhosted.org/packages/1f/ea/9771593719084fbf071a8bb4575f73b27cc59d46d4791d88e20f19926a8a/st_workflow-0.2.3.tar.gz
+[2024-04-07 06:07:15] INFO root fetch - processPackages [opendp]: Downloading https://files.pythonhosted.org/packages/e7/d2/a06d489391a24ee6a87a84778e754380d00462f24b3dd5a8de220ec98853/opendp-0.9.2a20240405001-py3-none-any.whl
+[2024-04-07 06:07:15] WARNING root fetch - processPackages [opendp]: Skipping package: exceeds size limit 36084280>=10485760
+[2024-04-07 06:07:15] INFO root fetch - main [MainThread]: End processing [opendp] error
+[2024-04-07 06:07:15] INFO root fetch - processPackages [nncore]: Downloading https://files.pythonhosted.org/packages/96/a2/3680a9d8a6d6f74c3fcef5cfd5a9bf625d6d8e86ececcf92e5047d4ef1cc/nncore-0.3.8.tar.gz
+[2024-04-07 06:07:15] INFO root fetch - processPackages [ml-backtest]: Downloading https://files.pythonhosted.org/packages/d1/5f/81541f9640d68369b5473b41c5795fb24a1a04455cbe1c364ac38895ff0d/ml_backtest-0.1.1a0.tar.gz
+[2024-04-07 06:07:15] WARNING root fetch - processPackages [st_workflow]: Timeout reached during download
+[2024-04-07 06:07:15] INFO root fetch - processPackages [paradance]: Downloading https://files.pythonhosted.org/packages/8f/4c/6a3c7d4731f17fd3b3e4130274d7bbae13be34f848072567de4b0ab61969/paradance-0.4.8.tar.gz
+[2024-04-07 06:07:15] WARNING root fetch - processPackages [nncore]: Timeout reached during download
+[2024-04-07 06:07:15] INFO root fetch - processPackages [st_workflow]: Downloading https://files.pythonhosted.org/packages/64/db/189b1bdcfee2d74e3c5cdd246b608a28bcc57e0fe413f781fc3db2161d88/st_workflow-0.2.4.tar.gz
+[2024-04-07 06:07:15] WARNING root fetch - processPackages [ml-backtest]: Timeout reached during download
+[2024-04-07 06:07:15] WARNING root fetch - processPackages [paradance]: Timeout reached during download
+[2024-04-07 06:07:15] INFO root fetch - processPackages [nncore]: Downloading https://files.pythonhosted.org/packages/3f/3c/b245af6d3c452fbdc82f7e4919b228c1a16afbff27376a07db5b1d931bb1/nncore-0.4.0.tar.gz
+[2024-04-07 06:07:15] WARNING root fetch - processPackages [st_workflow]: Timeout reached during download
+[2024-04-07 06:07:15] INFO root fetch - processPackages [st_workflow]: executing diffoscope
+[2024-04-07 06:07:15] INFO root fetch - processPackages [st_workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st_workflow-0.2.3.tar.gz tmp/st_workflow-0.2.4.tar.gz --markdown 20240407/s/st_workflow/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2024-04-07 06:07:16] INFO root fetch - processPackages [ml-backtest]: Downloading https://files.pythonhosted.org/packages/75/90/1012ae151cb84865bca2ccf87c73f46ab7d604caa530b208d15a617ab5fd/ml_backtest-0.1.2.tar.gz
+[2024-04-07 06:07:16] WARNING root fetch - processPackages [nncore]: Timeout reached during download
+[2024-04-07 06:07:16] INFO root fetch - processPackages [nncore]: executing diffoscope
+[2024-04-07 06:07:16] INFO root fetch - processPackages [nncore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nncore-0.3.8.tar.gz tmp/nncore-0.4.0.tar.gz --markdown 20240407/n/nncore/0.3.8-0.4.0/diff.md --exclude *.pyd
+[2024-04-07 06:07:16] INFO root fetch - processPackages [paradance]: Downloading https://files.pythonhosted.org/packages/ab/20/cc427c1600f67ef9036e4f225cc6bcdac42746ca6db329d2d1029be4c84e/paradance-0.4.9.tar.gz
+[2024-04-07 06:07:16] WARNING root fetch - processPackages [ml-backtest]: Timeout reached during download
+[2024-04-07 06:07:16] INFO root fetch - processPackages [ml-backtest]: executing diffoscope
+[2024-04-07 06:07:16] INFO root fetch - processPackages [ml-backtest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_backtest-0.1.1a0.tar.gz tmp/ml_backtest-0.1.2.tar.gz --markdown 20240407/m/ml-backtest/0.1.1a0-0.1.2/diff.md --exclude *.pyd
+[2024-04-07 06:07:16] WARNING root fetch - processPackages [paradance]: Timeout reached during download
+[2024-04-07 06:07:16] INFO root fetch - processPackages [paradance]: executing diffoscope
+[2024-04-07 06:07:16] INFO root fetch - processPackages [paradance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paradance-0.4.8.tar.gz tmp/paradance-0.4.9.tar.gz --markdown 20240407/p/paradance/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2024-04-07 06:07:16] INFO root fetch - processPackages [st_workflow]: Remove: archive file [/home/abi/fetcher/tmp/st_workflow-0.2.3.tar.gz]
+[2024-04-07 06:07:16] INFO root fetch - processPackages [st_workflow]: Remove: archive file [/home/abi/fetcher/tmp/st_workflow-0.2.4.tar.gz]
+[2024-04-07 06:07:16] INFO root fetch - main [MainThread]: End processing [st_workflow]: success
+[2024-04-07 06:07:16] INFO root fetch - processPackages [ml-backtest]: Remove: archive file [/home/abi/fetcher/tmp/ml_backtest-0.1.1a0.tar.gz]
+[2024-04-07 06:07:16] INFO root fetch - processPackages [ml-backtest]: Remove: archive file [/home/abi/fetcher/tmp/ml_backtest-0.1.2.tar.gz]
+[2024-04-07 06:07:16] INFO root fetch - main [MainThread]: End processing [ml-backtest]: success
+[2024-04-07 06:07:16] INFO root fetch - processPackages [nncore]: Remove: archive file [/home/abi/fetcher/tmp/nncore-0.3.8.tar.gz]
+[2024-04-07 06:07:16] INFO root fetch - processPackages [nncore]: Remove: archive file [/home/abi/fetcher/tmp/nncore-0.4.0.tar.gz]
+[2024-04-07 06:07:16] INFO root fetch - main [MainThread]: End processing [nncore]: success
+[2024-04-07 06:07:16] INFO root fetch - processPackages [paradance]: Remove: archive file [/home/abi/fetcher/tmp/paradance-0.4.8.tar.gz]
+[2024-04-07 06:07:16] INFO root fetch - processPackages [paradance]: Remove: archive file [/home/abi/fetcher/tmp/paradance-0.4.9.tar.gz]
+[2024-04-07 06:07:16] INFO root fetch - main [MainThread]: End processing [paradance]: success
+[2024-04-07 06:07:16] INFO root fetch - main [MainThread]: Store serial: [22653397]
