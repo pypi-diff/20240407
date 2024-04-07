@@ -8069,3 +8069,11 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 10:22:28] INFO root fetch - processPackages [webscout]: Remove: archive file [/home/abi/fetcher/tmp/webscout-1.2.6.tar.gz]
 [2024-04-07 10:22:28] INFO root fetch - main [MainThread]: End processing [webscout]: success
 [2024-04-07 10:22:28] INFO root fetch - main [MainThread]: Store serial: [22654710]
+[2024-04-07 10:24:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654710]
+[2024-04-07 10:24:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 10:24:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlx
+[2024-04-07 10:24:38] INFO root fetch - processPackages [mlx]: New version: [0.9.1.dev20240407] Old Version: [0.9.1]
+[2024-04-07 10:24:38] INFO root fetch - processPackages [mlx]: Downloading https://files.pythonhosted.org/packages/1a/4d/db965d36f516eb50b63bc732589057aa7cb2fc14c6c30f6504688a2b307c/mlx-0.9.1-cp39-cp39-macosx_14_0_arm64.whl
+[2024-04-07 10:24:39] WARNING root fetch - processPackages [mlx]: Skipping package: exceeds size limit 31967351>=10485760
+[2024-04-07 10:24:39] INFO root fetch - main [MainThread]: End processing [mlx] error
+[2024-04-07 10:24:39] INFO root fetch - main [MainThread]: Store serial: [22654721]
