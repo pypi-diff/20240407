@@ -14696,3 +14696,31 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:28:39] INFO root fetch - processPackages [dmjone]: Remove: archive file [/home/abi/fetcher/tmp/dmjone-0.1.9.2.tar.gz]
 [2024-04-07 17:28:39] INFO root fetch - main [MainThread]: End processing [dmjone]: success
 [2024-04-07 17:28:39] INFO root fetch - main [MainThread]: Store serial: [22657173]
+[2024-04-07 17:30:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657173]
+[2024-04-07 17:30:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 17:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alexmodulo
+[2024-04-07 17:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seldegen
+[2024-04-07 17:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mabel
+[2024-04-07 17:30:49] INFO root fetch - processPackages [seldegen]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-07 17:30:49] INFO root fetch - processPackages [seldegen]: Downloading https://files.pythonhosted.org/packages/a6/aa/61b03f56a45a16f55d90c47b9e8d92034f9001d007a2335b47a20cec5e77/seldegen-0.1.2.tar.gz
+[2024-04-07 17:30:49] WARNING root fetch - processPackages [alexmodulo]: Skipping, unable to determine old version
+[2024-04-07 17:30:49] INFO root fetch - main [MainThread]: End processing [alexmodulo] error
+[2024-04-07 17:30:49] INFO root fetch - processPackages [mabel]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-04-07 17:30:49] WARNING root fetch - processPackages [seldegen]: Timeout reached during download
+[2024-04-07 17:30:49] INFO root fetch - processPackages [seldegen]: Downloading https://files.pythonhosted.org/packages/f2/82/f7276fa6c4b214af7e5ed0556854c185ab8228c6d50a20229a4b21b6a2e7/seldegen-0.1.3.tar.gz
+[2024-04-07 17:30:49] INFO root fetch - processPackages [mabel]: Downloading https://files.pythonhosted.org/packages/4a/79/35fb3b283cb0729273d3bd0d760bcd73c7079230a9323cf8e3ab751681e6/mabel-0.6.8.tar.gz
+[2024-04-07 17:30:49] WARNING root fetch - processPackages [seldegen]: Timeout reached during download
+[2024-04-07 17:30:49] INFO root fetch - processPackages [seldegen]: executing diffoscope
+[2024-04-07 17:30:49] INFO root fetch - processPackages [seldegen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seldegen-0.1.2.tar.gz tmp/seldegen-0.1.3.tar.gz --markdown 20240407/s/seldegen/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2024-04-07 17:30:49] WARNING root fetch - processPackages [mabel]: Timeout reached during download
+[2024-04-07 17:30:49] INFO root fetch - processPackages [mabel]: Downloading https://files.pythonhosted.org/packages/26/51/ddd150a5c52368b5b19e51c9393b6ca80ae6b47840ec2eb86973222103c1/mabel-0.6.9.tar.gz
+[2024-04-07 17:30:50] WARNING root fetch - processPackages [mabel]: Timeout reached during download
+[2024-04-07 17:30:50] INFO root fetch - processPackages [mabel]: executing diffoscope
+[2024-04-07 17:30:50] INFO root fetch - processPackages [mabel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mabel-0.6.8.tar.gz tmp/mabel-0.6.9.tar.gz --markdown 20240407/m/mabel/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2024-04-07 17:30:50] INFO root fetch - processPackages [seldegen]: Remove: archive file [/home/abi/fetcher/tmp/seldegen-0.1.2.tar.gz]
+[2024-04-07 17:30:50] INFO root fetch - processPackages [seldegen]: Remove: archive file [/home/abi/fetcher/tmp/seldegen-0.1.3.tar.gz]
+[2024-04-07 17:30:50] INFO root fetch - main [MainThread]: End processing [seldegen]: success
+[2024-04-07 17:30:51] INFO root fetch - processPackages [mabel]: Remove: archive file [/home/abi/fetcher/tmp/mabel-0.6.8.tar.gz]
+[2024-04-07 17:30:51] INFO root fetch - processPackages [mabel]: Remove: archive file [/home/abi/fetcher/tmp/mabel-0.6.9.tar.gz]
+[2024-04-07 17:30:51] INFO root fetch - main [MainThread]: End processing [mabel]: success
+[2024-04-07 17:30:51] INFO root fetch - main [MainThread]: Store serial: [22657183]
