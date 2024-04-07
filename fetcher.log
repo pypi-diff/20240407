@@ -1672,3 +1672,30 @@
 [2024-04-07 02:30:46] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecs-service-extensions-2.0.1a99.tar.gz]
 [2024-04-07 02:30:46] INFO root fetch - main [MainThread]: End processing [cdk-ecs-service-extensions]: success
 [2024-04-07 02:30:46] INFO root fetch - main [MainThread]: Store serial: [22652236]
+[2024-04-07 02:32:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652236]
+[2024-04-07 02:32:54] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 02:34:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652236]
+[2024-04-07 02:35:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 02:35:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aeppl-nightly
+[2024-04-07 02:35:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymemgpt-nightly
+[2024-04-07 02:35:01] INFO root fetch - processPackages [pymemgpt-nightly]: New version: [0.3.8.dev20240406104002] Old Version: [0.3.8.dev20240405103854]
+[2024-04-07 02:35:01] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.5.dev20240406] Old Version: [0.1.5.dev20240405]
+[2024-04-07 02:35:01] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/d8/88/420958e06dc107496fcac75aa14b3feb6e1b1a37da36b2b134df2c7774c6/pymemgpt_nightly-0.3.8.dev20240405103854.tar.gz
+[2024-04-07 02:35:01] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/43/af/c0852a5f62b77c970bf0c0a2e613f7b8545b54cf3041901156e395e3dc24/aeppl-nightly-0.1.5.dev20240405.tar.gz
+[2024-04-07 02:35:01] WARNING root fetch - processPackages [pymemgpt-nightly]: Timeout reached during download
+[2024-04-07 02:35:01] WARNING root fetch - processPackages [aeppl-nightly]: Timeout reached during download
+[2024-04-07 02:35:01] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/c2/c8/df5283d9c9a649ba61a6f1a99b9ec0e30cf451e7b25a521027d40dcadfba/pymemgpt_nightly-0.3.8.dev20240406104002.tar.gz
+[2024-04-07 02:35:01] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/47/cb/c9604b84fcc8b760b1afacbad7141364d1a4beef8d0758388dbeb51d9dbd/aeppl-nightly-0.1.5.dev20240406.tar.gz
+[2024-04-07 02:35:01] WARNING root fetch - processPackages [pymemgpt-nightly]: Timeout reached during download
+[2024-04-07 02:35:01] INFO root fetch - processPackages [pymemgpt-nightly]: executing diffoscope
+[2024-04-07 02:35:01] INFO root fetch - processPackages [pymemgpt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemgpt_nightly-0.3.8.dev20240405103854.tar.gz tmp/pymemgpt_nightly-0.3.8.dev20240406104002.tar.gz --markdown 20240407/p/pymemgpt-nightly/0.3.8.dev20240405103854-0.3.8.dev20240406104002/diff.md --exclude *.pyd
+[2024-04-07 02:35:02] WARNING root fetch - processPackages [aeppl-nightly]: Timeout reached during download
+[2024-04-07 02:35:02] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2024-04-07 02:35:02] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl-nightly-0.1.5.dev20240405.tar.gz tmp/aeppl-nightly-0.1.5.dev20240406.tar.gz --markdown 20240407/a/aeppl-nightly/0.1.5.dev20240405-0.1.5.dev20240406/diff.md --exclude *.pyd
+[2024-04-07 02:35:02] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl-nightly-0.1.5.dev20240405.tar.gz]
+[2024-04-07 02:35:02] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl-nightly-0.1.5.dev20240406.tar.gz]
+[2024-04-07 02:35:02] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2024-04-07 02:35:02] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.8.dev20240405103854.tar.gz]
+[2024-04-07 02:35:02] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.8.dev20240406104002.tar.gz]
+[2024-04-07 02:35:02] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
+[2024-04-07 02:35:02] INFO root fetch - main [MainThread]: Store serial: [22652241]
