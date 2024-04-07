@@ -19653,3 +19653,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:15:07] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-04-07 22:15:07] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-04-07 22:15:07] INFO root fetch - main [MainThread]: Store serial: [22658950]
+[2024-04-07 22:17:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658950]
+[2024-04-07 22:17:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 22:17:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: astromcad
+[2024-04-07 22:17:16] INFO root fetch - processPackages [astromcad]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-07 22:17:16] INFO root fetch - processPackages [astromcad]: Downloading https://files.pythonhosted.org/packages/27/f7/02f043e3c587198ed43ae5dd47752c63b50297007711bb9238dafacd9f7e/astromcad-0.1.4.tar.gz
+[2024-04-07 22:17:17] WARNING root fetch - processPackages [astromcad]: Timeout reached during download
+[2024-04-07 22:17:17] INFO root fetch - processPackages [astromcad]: Downloading https://files.pythonhosted.org/packages/dd/35/69f12ab2face8e1defddbec05f8f1f15bd29b3277543550ddac4c4a9d5cb/astromcad-0.1.5.tar.gz
+[2024-04-07 22:17:18] WARNING root fetch - processPackages [astromcad]: Timeout reached during download
+[2024-04-07 22:17:18] INFO root fetch - processPackages [astromcad]: executing diffoscope
+[2024-04-07 22:17:18] INFO root fetch - processPackages [astromcad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astromcad-0.1.4.tar.gz tmp/astromcad-0.1.5.tar.gz --markdown 20240407/a/astromcad/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2024-04-07 22:17:19] INFO root fetch - processPackages [astromcad]: Remove: archive file [/home/abi/fetcher/tmp/astromcad-0.1.4.tar.gz]
+[2024-04-07 22:17:19] INFO root fetch - processPackages [astromcad]: Remove: archive file [/home/abi/fetcher/tmp/astromcad-0.1.5.tar.gz]
+[2024-04-07 22:17:19] INFO root fetch - main [MainThread]: End processing [astromcad]: success
+[2024-04-07 22:17:19] INFO root fetch - main [MainThread]: Store serial: [22658959]
