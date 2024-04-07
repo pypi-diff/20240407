@@ -10361,3 +10361,25 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:06:23] INFO root fetch - processPackages [rubymarshal]: Remove: archive file [/home/abi/fetcher/tmp/rubymarshal-1.2.7.tar.gz]
 [2024-04-07 13:06:23] INFO root fetch - main [MainThread]: End processing [rubymarshal]: success
 [2024-04-07 13:06:23] INFO root fetch - main [MainThread]: Store serial: [22655587]
+[2024-04-07 13:08:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655587]
+[2024-04-07 13:08:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 13:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: weac
+[2024-04-07 13:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-core-xe-esimd
+[2024-04-07 13:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: regmap
+[2024-04-07 13:08:32] INFO root fetch - processPackages [weac]: New version: [2.5.2] Old Version: [2.5.1]
+[2024-04-07 13:08:32] INFO root fetch - processPackages [bigdl-core-xe-esimd]: New version: [2.5.0b20240407] Old Version: [2.5.0b20240406]
+[2024-04-07 13:08:32] WARNING root fetch - processPackages [regmap]: Skipping, unable to determine old version
+[2024-04-07 13:08:32] INFO root fetch - main [MainThread]: End processing [regmap] error
+[2024-04-07 13:08:32] INFO root fetch - processPackages [weac]: Downloading https://files.pythonhosted.org/packages/e1/15/06753a4e974f9b51fc9cb01a420d50f3772effeae143c1c2452819f2ddd1/weac-2.5.1.tar.gz
+[2024-04-07 13:08:32] INFO root fetch - processPackages [bigdl-core-xe-esimd]: Downloading https://files.pythonhosted.org/packages/c2/ab/e3e3b8c6a58447c1a46781134e631606f12e3b10d70ac0965d4f6b0fb7a6/bigdl_core_xe_esimd-2.5.0b20240406-cp39-cp39-manylinux2010_x86_64.whl
+[2024-04-07 13:08:32] WARNING root fetch - processPackages [bigdl-core-xe-esimd]: Skipping package: exceeds size limit 61865774>=10485760
+[2024-04-07 13:08:32] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd] error
+[2024-04-07 13:08:32] WARNING root fetch - processPackages [weac]: Timeout reached during download
+[2024-04-07 13:08:32] INFO root fetch - processPackages [weac]: Downloading https://files.pythonhosted.org/packages/67/47/e73d401085f53e46ddd90c25b37fe7aba28357bc73f21a511e98c92a12c2/weac-2.5.2.tar.gz
+[2024-04-07 13:08:33] WARNING root fetch - processPackages [weac]: Timeout reached during download
+[2024-04-07 13:08:33] INFO root fetch - processPackages [weac]: executing diffoscope
+[2024-04-07 13:08:33] INFO root fetch - processPackages [weac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weac-2.5.1.tar.gz tmp/weac-2.5.2.tar.gz --markdown 20240407/w/weac/2.5.1-2.5.2/diff.md --exclude *.pyd
+[2024-04-07 13:08:33] INFO root fetch - processPackages [weac]: Remove: archive file [/home/abi/fetcher/tmp/weac-2.5.1.tar.gz]
+[2024-04-07 13:08:33] INFO root fetch - processPackages [weac]: Remove: archive file [/home/abi/fetcher/tmp/weac-2.5.2.tar.gz]
+[2024-04-07 13:08:33] INFO root fetch - main [MainThread]: End processing [weac]: success
+[2024-04-07 13:08:33] INFO root fetch - main [MainThread]: Store serial: [22655598]
