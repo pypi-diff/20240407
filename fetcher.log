@@ -1994,3 +1994,26 @@
 [2024-04-07 03:10:12] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.5.2.tar.gz]
 [2024-04-07 03:10:12] INFO root fetch - main [MainThread]: End processing [NNSOM]: success
 [2024-04-07 03:10:12] INFO root fetch - main [MainThread]: Store serial: [22652527]
+[2024-04-07 03:12:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652527]
+[2024-04-07 03:12:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 03:12:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netbound
+[2024-04-07 03:12:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pacemaker-lite
+[2024-04-07 03:12:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: climush
+[2024-04-07 03:12:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nlpx
+[2024-04-07 03:12:21] INFO root fetch - processPackages [netbound]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 03:12:21] WARNING root fetch - processPackages [nlpx]: Skipping, unable to determine old version
+[2024-04-07 03:12:21] WARNING root fetch - processPackages [climush]: Skipping, unable to determine old version
+[2024-04-07 03:12:21] INFO root fetch - main [MainThread]: End processing [nlpx] error
+[2024-04-07 03:12:21] WARNING root fetch - processPackages [pacemaker-lite]: Skipping, unable to determine old version
+[2024-04-07 03:12:21] INFO root fetch - main [MainThread]: End processing [climush] error
+[2024-04-07 03:12:21] INFO root fetch - main [MainThread]: End processing [pacemaker-lite] error
+[2024-04-07 03:12:21] INFO root fetch - processPackages [netbound]: Downloading https://files.pythonhosted.org/packages/9c/ee/f89027b09e67ef76da5b4193174903df8d97c42510bc6e06d0cb30c508a2/netbound-0.1.8.tar.gz
+[2024-04-07 03:12:21] WARNING root fetch - processPackages [netbound]: Timeout reached during download
+[2024-04-07 03:12:21] INFO root fetch - processPackages [netbound]: Downloading https://files.pythonhosted.org/packages/e1/c7/9bed379e99d5f984cf1fa304c3bebcf19b87ce8e3507b5ee0028fae5631f/netbound-0.1.9.tar.gz
+[2024-04-07 03:12:21] WARNING root fetch - processPackages [netbound]: Timeout reached during download
+[2024-04-07 03:12:21] INFO root fetch - processPackages [netbound]: executing diffoscope
+[2024-04-07 03:12:21] INFO root fetch - processPackages [netbound]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbound-0.1.8.tar.gz tmp/netbound-0.1.9.tar.gz --markdown 20240407/n/netbound/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 03:12:22] INFO root fetch - processPackages [netbound]: Remove: archive file [/home/abi/fetcher/tmp/netbound-0.1.8.tar.gz]
+[2024-04-07 03:12:22] INFO root fetch - processPackages [netbound]: Remove: archive file [/home/abi/fetcher/tmp/netbound-0.1.9.tar.gz]
+[2024-04-07 03:12:22] INFO root fetch - main [MainThread]: End processing [netbound]: success
+[2024-04-07 03:12:22] INFO root fetch - main [MainThread]: Store serial: [22652544]
