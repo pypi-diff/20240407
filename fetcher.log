@@ -11608,3 +11608,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:27:01] INFO root fetch - processPackages [special-octo-robot]: Remove: archive file [/home/abi/fetcher/tmp/special-octo-robot-0.0.2.tar.gz]
 [2024-04-07 14:27:01] INFO root fetch - main [MainThread]: End processing [special-octo-robot]: success
 [2024-04-07 14:27:01] INFO root fetch - main [MainThread]: Store serial: [22656177]
+[2024-04-07 14:29:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656177]
+[2024-04-07 14:29:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 14:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyweatherfr
+[2024-04-07 14:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sbcli-mig
+[2024-04-07 14:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dltrain
+[2024-04-07 14:29:09] INFO root fetch - processPackages [dltrain]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-07 14:29:10] INFO root fetch - processPackages [sbcli-mig]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-07 14:29:10] INFO root fetch - processPackages [pyweatherfr]: New version: [2.0.4] Old Version: [2.0.3]
+[2024-04-07 14:29:10] INFO root fetch - processPackages [dltrain]: Downloading https://files.pythonhosted.org/packages/4e/18/3b6e66a304d7df7859169daf05332d4e8a46fd0479e2eabf2247f1649a48/dltrain-0.0.1.tar.gz
+[2024-04-07 14:29:10] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/06/2f/2b2f1cfa7b91365cf5cd645c5967a8e8a8bd7f1c8e89f91d7e43e2aefc87/sbcli-mig-1.0.8.zip
+[2024-04-07 14:29:10] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/05/24/d71306755ee5d253e0134655b1bd0fefd4988e6db32b61740988a30723ce/pyweatherfr-2.0.3.tar.gz
+[2024-04-07 14:29:10] WARNING root fetch - processPackages [dltrain]: Timeout reached during download
+[2024-04-07 14:29:10] WARNING root fetch - processPackages [pyweatherfr]: Timeout reached during download
+[2024-04-07 14:29:10] WARNING root fetch - processPackages [sbcli-mig]: Timeout reached during download
+[2024-04-07 14:29:10] INFO root fetch - processPackages [dltrain]: Downloading https://files.pythonhosted.org/packages/5a/a4/047cdace89cd1199ce21db64f13d85ade34bc852016d2f593366dc719054/dltrain-0.0.2.tar.gz
+[2024-04-07 14:29:10] WARNING root fetch - processPackages [dltrain]: Timeout reached during download
+[2024-04-07 14:29:10] INFO root fetch - processPackages [dltrain]: executing diffoscope
+[2024-04-07 14:29:10] INFO root fetch - processPackages [dltrain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dltrain-0.0.1.tar.gz tmp/dltrain-0.0.2.tar.gz --markdown 20240407/d/dltrain/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-07 14:29:10] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/6d/c2/8ccfc62bab5f0e078905ba3e6f98d0e40d1929c2fb5a26aa84b8ffb91c73/pyweatherfr-2.0.4.tar.gz
+[2024-04-07 14:29:10] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/4b/15/9c1afe915f08547ce582aeae079f597b2a173df003109bcd1d0f0bbf037e/sbcli-mig-1.0.9.zip
+[2024-04-07 14:29:10] WARNING root fetch - processPackages [pyweatherfr]: Timeout reached during download
+[2024-04-07 14:29:10] INFO root fetch - processPackages [pyweatherfr]: executing diffoscope
+[2024-04-07 14:29:10] INFO root fetch - processPackages [pyweatherfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyweatherfr-2.0.3.tar.gz tmp/pyweatherfr-2.0.4.tar.gz --markdown 20240407/p/pyweatherfr/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2024-04-07 14:29:10] WARNING root fetch - processPackages [sbcli-mig]: Timeout reached during download
+[2024-04-07 14:29:10] INFO root fetch - processPackages [sbcli-mig]: executing diffoscope
+[2024-04-07 14:29:10] INFO root fetch - processPackages [sbcli-mig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbcli-mig-1.0.8.zip tmp/sbcli-mig-1.0.9.zip --markdown 20240407/s/sbcli-mig/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-07 14:29:11] INFO root fetch - processPackages [dltrain]: Remove: archive file [/home/abi/fetcher/tmp/dltrain-0.0.1.tar.gz]
+[2024-04-07 14:29:11] INFO root fetch - processPackages [dltrain]: Remove: archive file [/home/abi/fetcher/tmp/dltrain-0.0.2.tar.gz]
+[2024-04-07 14:29:11] INFO root fetch - main [MainThread]: End processing [dltrain]: success
+[2024-04-07 14:29:11] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-2.0.3.tar.gz]
+[2024-04-07 14:29:11] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-2.0.4.tar.gz]
+[2024-04-07 14:29:11] INFO root fetch - main [MainThread]: End processing [pyweatherfr]: success
+[2024-04-07 14:29:11] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.8.zip]
+[2024-04-07 14:29:11] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.9.zip]
+[2024-04-07 14:29:11] INFO root fetch - main [MainThread]: End processing [sbcli-mig]: success
+[2024-04-07 14:29:11] INFO root fetch - main [MainThread]: Store serial: [22656185]
