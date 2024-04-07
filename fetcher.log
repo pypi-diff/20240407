@@ -17846,3 +17846,53 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 20:32:22] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.83.tar.gz]
 [2024-04-07 20:32:22] INFO root fetch - main [MainThread]: End processing [composio-autogen]: success
 [2024-04-07 20:32:22] INFO root fetch - main [MainThread]: Store serial: [22658352]
+[2024-04-07 20:34:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658352]
+[2024-04-07 20:34:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 20:34:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyindrav2h
+[2024-04-07 20:34:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: discovery-capability
+[2024-04-07 20:34:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: beatrica-git
+[2024-04-07 20:34:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apple-health-extractor
+[2024-04-07 20:34:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: smaht-submitr
+[2024-04-07 20:34:33] INFO root fetch - processPackages [apple-health-extractor]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-07 20:34:33] WARNING root fetch - processPackages [beatrica-git]: Skipping, unable to determine old version
+[2024-04-07 20:34:33] INFO root fetch - main [MainThread]: End processing [beatrica-git] error
+[2024-04-07 20:34:33] INFO root fetch - processPackages [smaht-submitr]: New version: [0.7.0.2b7] Old Version: [0.7.0.2b6]
+[2024-04-07 20:34:33] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/e7/03/9945e6edf8e15822c966629555ae72e05f0ff8caa244108529bf147159a9/smaht_submitr-0.7.0.2b6.tar.gz
+[2024-04-07 20:34:33] INFO root fetch - processPackages [pyindrav2h]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-07 20:34:33] INFO root fetch - processPackages [apple-health-extractor]: Downloading https://files.pythonhosted.org/packages/b1/d9/71ff5887de9e752a51f3a6e97e8db52b5a2aba20093221166c70f08c5ea2/apple_health_extractor-0.1.0.tar.gz
+[2024-04-07 20:34:33] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 20:34:33] INFO root fetch - processPackages [discovery-capability]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-04-07 20:34:33] INFO root fetch - processPackages [pyindrav2h]: Downloading https://files.pythonhosted.org/packages/30/59/752fadac9d79357e20da0c0ea8462309843dfbdfc0b36667bac13f2ec598/pyindrav2h-0.0.3.tar.gz
+[2024-04-07 20:34:33] WARNING root fetch - processPackages [pyindrav2h]: Timeout reached during download
+[2024-04-07 20:34:33] WARNING root fetch - processPackages [apple-health-extractor]: Timeout reached during download
+[2024-04-07 20:34:33] INFO root fetch - processPackages [discovery-capability]: Downloading https://files.pythonhosted.org/packages/83/8f/f38725d6455cc1003611428fc791259aa621e8871affc4ce1bb32f282c8f/discovery-capability-0.9.5.tar.gz
+[2024-04-07 20:34:33] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/51/0d/0ff37c23588117c1d29d2cb1336daf15605ef20dcbdbf542da628d60c9d7/smaht_submitr-0.7.0.2b7.tar.gz
+[2024-04-07 20:34:33] INFO root fetch - processPackages [pyindrav2h]: Downloading https://files.pythonhosted.org/packages/bd/fe/7f18ddbb73eb32bab99290386a8ee1e34134173be7a1c4ff9d69e1b6f662/pyindrav2h-0.0.4.tar.gz
+[2024-04-07 20:34:33] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 20:34:33] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-07 20:34:33] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.7.0.2b6.tar.gz tmp/smaht_submitr-0.7.0.2b7.tar.gz --markdown 20240407/s/smaht-submitr/0.7.0.2b6-0.7.0.2b7/diff.md --exclude *.pyd
+[2024-04-07 20:34:33] INFO root fetch - processPackages [apple-health-extractor]: Downloading https://files.pythonhosted.org/packages/e5/0c/1b48c4e4a3379bcc5b16afa512eb289b7951e0a29f637fd7cb4fe3c5e482/apple_health_extractor-0.1.1.tar.gz
+[2024-04-07 20:34:33] WARNING root fetch - processPackages [pyindrav2h]: Timeout reached during download
+[2024-04-07 20:34:33] INFO root fetch - processPackages [pyindrav2h]: executing diffoscope
+[2024-04-07 20:34:33] INFO root fetch - processPackages [pyindrav2h]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyindrav2h-0.0.3.tar.gz tmp/pyindrav2h-0.0.4.tar.gz --markdown 20240407/p/pyindrav2h/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 20:34:34] WARNING root fetch - processPackages [apple-health-extractor]: Timeout reached during download
+[2024-04-07 20:34:34] INFO root fetch - processPackages [apple-health-extractor]: executing diffoscope
+[2024-04-07 20:34:34] INFO root fetch - processPackages [apple-health-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apple_health_extractor-0.1.0.tar.gz tmp/apple_health_extractor-0.1.1.tar.gz --markdown 20240407/a/apple-health-extractor/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 20:34:34] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.2b6.tar.gz]
+[2024-04-07 20:34:34] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.2b7.tar.gz]
+[2024-04-07 20:34:34] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-07 20:34:34] INFO root fetch - processPackages [pyindrav2h]: Remove: archive file [/home/abi/fetcher/tmp/pyindrav2h-0.0.3.tar.gz]
+[2024-04-07 20:34:34] INFO root fetch - processPackages [pyindrav2h]: Remove: archive file [/home/abi/fetcher/tmp/pyindrav2h-0.0.4.tar.gz]
+[2024-04-07 20:34:34] INFO root fetch - main [MainThread]: End processing [pyindrav2h]: success
+[2024-04-07 20:34:34] INFO root fetch - processPackages [apple-health-extractor]: Remove: archive file [/home/abi/fetcher/tmp/apple_health_extractor-0.1.0.tar.gz]
+[2024-04-07 20:34:34] INFO root fetch - processPackages [apple-health-extractor]: Remove: archive file [/home/abi/fetcher/tmp/apple_health_extractor-0.1.1.tar.gz]
+[2024-04-07 20:34:34] INFO root fetch - main [MainThread]: End processing [apple-health-extractor]: success
+[2024-04-07 20:34:35] WARNING root fetch - processPackages [discovery-capability]: Timeout reached during download
+[2024-04-07 20:34:35] INFO root fetch - processPackages [discovery-capability]: Downloading https://files.pythonhosted.org/packages/0d/e7/2d5a9cd35dad13a2bf242a085d468be8bce92c11b9877f6700e390adf170/discovery-capability-0.9.6.tar.gz
+[2024-04-07 20:34:36] WARNING root fetch - processPackages [discovery-capability]: Timeout reached during download
+[2024-04-07 20:34:36] INFO root fetch - processPackages [discovery-capability]: executing diffoscope
+[2024-04-07 20:34:36] INFO root fetch - processPackages [discovery-capability]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-capability-0.9.5.tar.gz tmp/discovery-capability-0.9.6.tar.gz --markdown 20240407/d/discovery-capability/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2024-04-07 20:34:39] INFO root fetch - processPackages [discovery-capability]: Remove: archive file [/home/abi/fetcher/tmp/discovery-capability-0.9.5.tar.gz]
+[2024-04-07 20:34:39] INFO root fetch - processPackages [discovery-capability]: Remove: archive file [/home/abi/fetcher/tmp/discovery-capability-0.9.6.tar.gz]
+[2024-04-07 20:34:39] INFO root fetch - main [MainThread]: End processing [discovery-capability]: success
+[2024-04-07 20:34:39] INFO root fetch - main [MainThread]: Store serial: [22658367]
