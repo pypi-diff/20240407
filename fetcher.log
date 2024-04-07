@@ -12337,3 +12337,72 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:15:08] INFO root fetch - processPackages [cloudify-common]: Remove: archive file [/home/abi/fetcher/tmp/cloudify-common-7.0.4.tar.gz]
 [2024-04-07 15:15:08] INFO root fetch - main [MainThread]: End processing [cloudify-common]: success
 [2024-04-07 15:15:08] INFO root fetch - main [MainThread]: Store serial: [22656401]
+[2024-04-07 15:17:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656401]
+[2024-04-07 15:17:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 15:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: open-aoi
+[2024-04-07 15:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smaht-submitr
+[2024-04-07 15:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-sync-model
+[2024-04-07 15:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gpt-all-star
+[2024-04-07 15:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rython-calc
+[2024-04-07 15:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: special-octo-robot
+[2024-04-07 15:17:17] INFO root fetch - processPackages [rython-calc]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-04-07 15:17:17] INFO root fetch - processPackages [open-aoi]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 15:17:17] INFO root fetch - processPackages [smaht-submitr]: New version: [0.7.0.1b99] Old Version: [0.7.0.1b98]
+[2024-04-07 15:17:17] INFO root fetch - processPackages [django-sync-model]: New version: [0.7.0] Old Version: [0.5.2]
+[2024-04-07 15:17:17] INFO root fetch - processPackages [rython-calc]: Downloading https://files.pythonhosted.org/packages/35/c7/075741cd10401608440091b5f8167f1930c786534e1044241d0a875bda1c/rython_calc-0.4.3.tar.gz
+[2024-04-07 15:17:17] INFO root fetch - processPackages [gpt-all-star]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-04-07 15:17:17] INFO root fetch - processPackages [special-octo-robot]: New version: [0.0.4] Old Version: [0.0.1]
+[2024-04-07 15:17:17] INFO root fetch - processPackages [open-aoi]: Downloading https://files.pythonhosted.org/packages/d2/cb/dd19e4630fb354010db3e6215502966625550ff7a5acbdbcedf536a6cd4d/open_aoi-0.0.8.tar.gz
+[2024-04-07 15:17:17] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/ea/07/44339a1a64e1888ff6de28462b4194037b88d9c54fcbe768091325a4d1ff/smaht_submitr-0.7.0.1b98.tar.gz
+[2024-04-07 15:17:17] WARNING root fetch - processPackages [rython-calc]: Timeout reached during download
+[2024-04-07 15:17:17] WARNING root fetch - processPackages [open-aoi]: Timeout reached during download
+[2024-04-07 15:17:17] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 15:17:17] INFO root fetch - processPackages [django-sync-model]: Downloading https://files.pythonhosted.org/packages/f5/a4/550a3e1c05af3d3909dd8d2d499e9a51116ef33f8c10b527b6c165c738df/django_sync_model-0.5.2.tar.gz
+[2024-04-07 15:17:17] INFO root fetch - processPackages [open-aoi]: Downloading https://files.pythonhosted.org/packages/2e/0c/2869daa3fcce6ef21522f04169cfdef7edf737a59d03f86a95b6594d19b3/open_aoi-0.0.9.tar.gz
+[2024-04-07 15:17:17] INFO root fetch - processPackages [rython-calc]: Downloading https://files.pythonhosted.org/packages/70/84/57c4109b3947e8c2e13422aa98525f46d361671c3daad84f5a1ef60945cb/rython_calc-0.4.4.tar.gz
+[2024-04-07 15:17:17] INFO root fetch - processPackages [gpt-all-star]: Downloading https://files.pythonhosted.org/packages/95/00/47f2780dce549d1ce8aad7cb17a7c758209c4539c6f75dcdbe0e9322ce0e/gpt_all_star-0.0.7.tar.gz
+[2024-04-07 15:17:17] INFO root fetch - processPackages [special-octo-robot]: Downloading https://files.pythonhosted.org/packages/6c/f3/1b238e64ee51aa555fed88d966e34ea864f3bca918f42d5b6e7154c2c209/special-octo-robot-0.0.1.tar.gz
+[2024-04-07 15:17:17] WARNING root fetch - processPackages [django-sync-model]: Timeout reached during download
+[2024-04-07 15:17:17] WARNING root fetch - processPackages [open-aoi]: Timeout reached during download
+[2024-04-07 15:17:17] INFO root fetch - processPackages [open-aoi]: executing diffoscope
+[2024-04-07 15:17:17] INFO root fetch - processPackages [open-aoi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_aoi-0.0.8.tar.gz tmp/open_aoi-0.0.9.tar.gz --markdown 20240407/o/open-aoi/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 15:17:17] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/2a/96/f17360d1393bfb1bde6ec1ff16ed61f95c4b73139c4353bd903094c9db8b/smaht_submitr-0.7.0.1b99.tar.gz
+[2024-04-07 15:17:17] WARNING root fetch - processPackages [rython-calc]: Timeout reached during download
+[2024-04-07 15:17:17] INFO root fetch - processPackages [rython-calc]: executing diffoscope
+[2024-04-07 15:17:17] INFO root fetch - processPackages [rython-calc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rython_calc-0.4.3.tar.gz tmp/rython_calc-0.4.4.tar.gz --markdown 20240407/r/rython-calc/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2024-04-07 15:17:17] WARNING root fetch - processPackages [special-octo-robot]: Timeout reached during download
+[2024-04-07 15:17:17] WARNING root fetch - processPackages [gpt-all-star]: Timeout reached during download
+[2024-04-07 15:17:17] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 15:17:17] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-07 15:17:17] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.7.0.1b98.tar.gz tmp/smaht_submitr-0.7.0.1b99.tar.gz --markdown 20240407/s/smaht-submitr/0.7.0.1b98-0.7.0.1b99/diff.md --exclude *.pyd
+[2024-04-07 15:17:18] INFO root fetch - processPackages [django-sync-model]: Downloading https://files.pythonhosted.org/packages/e5/2e/0ea4cbeb695350a824bdf9f60bddc89abf2045f560a48c00234edd304a39/django_sync_model-0.7.0.tar.gz
+[2024-04-07 15:17:18] INFO root fetch - processPackages [special-octo-robot]: Downloading https://files.pythonhosted.org/packages/fe/bc/49f900f32b13e51043380c61ae16647faec366f75b0bbc196b336796a6dd/special-octo-robot-0.0.4.tar.gz
+[2024-04-07 15:17:18] WARNING root fetch - processPackages [django-sync-model]: Timeout reached during download
+[2024-04-07 15:17:18] INFO root fetch - processPackages [django-sync-model]: executing diffoscope
+[2024-04-07 15:17:18] INFO root fetch - processPackages [django-sync-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_sync_model-0.5.2.tar.gz tmp/django_sync_model-0.7.0.tar.gz --markdown 20240407/d/django-sync-model/0.5.2-0.7.0/diff.md --exclude *.pyd
+[2024-04-07 15:17:18] INFO root fetch - processPackages [gpt-all-star]: Downloading https://files.pythonhosted.org/packages/96/40/c6f6b9dc146ffbf8c97d68b1ad200a51bb0f5a239c5e4d11725f1fff5f45/gpt_all_star-0.0.9.tar.gz
+[2024-04-07 15:17:18] WARNING root fetch - processPackages [special-octo-robot]: Timeout reached during download
+[2024-04-07 15:17:18] INFO root fetch - processPackages [special-octo-robot]: executing diffoscope
+[2024-04-07 15:17:18] INFO root fetch - processPackages [special-octo-robot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/special-octo-robot-0.0.1.tar.gz tmp/special-octo-robot-0.0.4.tar.gz --markdown 20240407/s/special-octo-robot/0.0.1-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 15:17:18] WARNING root fetch - processPackages [gpt-all-star]: Timeout reached during download
+[2024-04-07 15:17:18] INFO root fetch - processPackages [gpt-all-star]: executing diffoscope
+[2024-04-07 15:17:18] INFO root fetch - processPackages [gpt-all-star]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_all_star-0.0.7.tar.gz tmp/gpt_all_star-0.0.9.tar.gz --markdown 20240407/g/gpt-all-star/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 15:17:18] INFO root fetch - processPackages [open-aoi]: Remove: archive file [/home/abi/fetcher/tmp/open_aoi-0.0.8.tar.gz]
+[2024-04-07 15:17:18] INFO root fetch - processPackages [open-aoi]: Remove: archive file [/home/abi/fetcher/tmp/open_aoi-0.0.9.tar.gz]
+[2024-04-07 15:17:18] INFO root fetch - main [MainThread]: End processing [open-aoi]: success
+[2024-04-07 15:17:18] INFO root fetch - processPackages [rython-calc]: Remove: archive file [/home/abi/fetcher/tmp/rython_calc-0.4.3.tar.gz]
+[2024-04-07 15:17:18] INFO root fetch - processPackages [rython-calc]: Remove: archive file [/home/abi/fetcher/tmp/rython_calc-0.4.4.tar.gz]
+[2024-04-07 15:17:18] INFO root fetch - main [MainThread]: End processing [rython-calc]: success
+[2024-04-07 15:17:18] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b98.tar.gz]
+[2024-04-07 15:17:18] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b99.tar.gz]
+[2024-04-07 15:17:18] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-07 15:17:18] INFO root fetch - processPackages [django-sync-model]: Remove: archive file [/home/abi/fetcher/tmp/django_sync_model-0.5.2.tar.gz]
+[2024-04-07 15:17:18] INFO root fetch - processPackages [django-sync-model]: Remove: archive file [/home/abi/fetcher/tmp/django_sync_model-0.7.0.tar.gz]
+[2024-04-07 15:17:18] INFO root fetch - main [MainThread]: End processing [django-sync-model]: success
+[2024-04-07 15:17:18] INFO root fetch - processPackages [special-octo-robot]: Remove: archive file [/home/abi/fetcher/tmp/special-octo-robot-0.0.1.tar.gz]
+[2024-04-07 15:17:18] INFO root fetch - processPackages [special-octo-robot]: Remove: archive file [/home/abi/fetcher/tmp/special-octo-robot-0.0.4.tar.gz]
+[2024-04-07 15:17:18] INFO root fetch - main [MainThread]: End processing [special-octo-robot]: success
+[2024-04-07 15:17:19] INFO root fetch - processPackages [gpt-all-star]: Remove: archive file [/home/abi/fetcher/tmp/gpt_all_star-0.0.7.tar.gz]
+[2024-04-07 15:17:19] INFO root fetch - processPackages [gpt-all-star]: Remove: archive file [/home/abi/fetcher/tmp/gpt_all_star-0.0.9.tar.gz]
+[2024-04-07 15:17:19] INFO root fetch - main [MainThread]: End processing [gpt-all-star]: success
+[2024-04-07 15:17:19] INFO root fetch - main [MainThread]: Store serial: [22656427]
