@@ -13813,3 +13813,61 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:44:30] INFO root fetch - processPackages [chipmunkdb-python-client]: Remove: archive file [/home/abi/fetcher/tmp/chipmunkdb_python_client-2.0.9.tar.gz]
 [2024-04-07 16:44:30] INFO root fetch - main [MainThread]: End processing [chipmunkdb-python-client]: success
 [2024-04-07 16:44:30] INFO root fetch - main [MainThread]: Store serial: [22656885]
+[2024-04-07 16:46:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656885]
+[2024-04-07 16:46:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 16:46:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: camlab
+[2024-04-07 16:46:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smfsb
+[2024-04-07 16:46:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tcrutils
+[2024-04-07 16:46:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: semantic-router
+[2024-04-07 16:46:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: easy-utils-dev
+[2024-04-07 16:46:40] INFO root fetch - processPackages [smfsb]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-07 16:46:40] INFO root fetch - processPackages [camlab]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-07 16:46:40] INFO root fetch - processPackages [easy-utils-dev]: New version: [2.8.9] Old Version: [2.8.8]
+[2024-04-07 16:46:40] INFO root fetch - processPackages [tcrutils]: New version: [12.0.139] Old Version: [12.0.138]
+[2024-04-07 16:46:40] INFO root fetch - processPackages [semantic-router]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 16:46:40] INFO root fetch - processPackages [camlab]: Downloading https://files.pythonhosted.org/packages/c3/3f/8ca4f95c3ff8406adc4695784ce7e6f07f65f37ad9fceac2af920b30ae0d/camlab-0.0.7.tar.gz
+[2024-04-07 16:46:40] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/4c/c5/cc21aefdc427780f40abd36559f79f73878a45422455aba7425ce6492bd1/tcrutils-12.0.138.tar.gz
+[2024-04-07 16:46:40] INFO root fetch - processPackages [easy-utils-dev]: Downloading https://files.pythonhosted.org/packages/d0/93/7d3610b6f67084ad67ecbd895c5e70590d1edff9babbc72a2d7802d125ad/easy_utils_dev-2.8.8.tar.gz
+[2024-04-07 16:46:40] INFO root fetch - processPackages [smfsb]: Downloading https://files.pythonhosted.org/packages/90/c9/836af78520980274f45d342e2fc3ce466c205f7fd7978658d2974ec36235/smfsb-0.1.6.tar.gz
+[2024-04-07 16:46:41] WARNING root fetch - processPackages [easy-utils-dev]: Timeout reached during download
+[2024-04-07 16:46:41] WARNING root fetch - processPackages [camlab]: Timeout reached during download
+[2024-04-07 16:46:41] WARNING root fetch - processPackages [tcrutils]: Timeout reached during download
+[2024-04-07 16:46:41] INFO root fetch - processPackages [semantic-router]: Downloading https://files.pythonhosted.org/packages/69/f5/24f7ed2376beeca68004c749ee072334bcdbcd70becd7e5549ea5773efae/semantic_router-0.0.8.tar.gz
+[2024-04-07 16:46:41] INFO root fetch - processPackages [easy-utils-dev]: Downloading https://files.pythonhosted.org/packages/cb/9e/733069bda720d8bb6841ec493e820c3c09b9c4914d51ce9ac1c70aa88fe9/easy_utils_dev-2.8.9.tar.gz
+[2024-04-07 16:46:41] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/9f/05/1b92db4ff08f0427b7362b850b08f01bc825d50e7c3de461151fe075ca1c/tcrutils-12.0.139.tar.gz
+[2024-04-07 16:46:41] INFO root fetch - processPackages [camlab]: Downloading https://files.pythonhosted.org/packages/2c/a8/40a8b65ae0c0dec6ac06aceb79bacafedd2411b7c02ed26e26db26d7991b/camlab-0.0.8.tar.gz
+[2024-04-07 16:46:41] WARNING root fetch - processPackages [smfsb]: Timeout reached during download
+[2024-04-07 16:46:41] WARNING root fetch - processPackages [easy-utils-dev]: Timeout reached during download
+[2024-04-07 16:46:41] INFO root fetch - processPackages [easy-utils-dev]: executing diffoscope
+[2024-04-07 16:46:41] INFO root fetch - processPackages [easy-utils-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_utils_dev-2.8.8.tar.gz tmp/easy_utils_dev-2.8.9.tar.gz --markdown 20240407/e/easy-utils-dev/2.8.8-2.8.9/diff.md --exclude *.pyd
+[2024-04-07 16:46:41] WARNING root fetch - processPackages [semantic-router]: Timeout reached during download
+[2024-04-07 16:46:41] WARNING root fetch - processPackages [camlab]: Timeout reached during download
+[2024-04-07 16:46:41] INFO root fetch - processPackages [camlab]: executing diffoscope
+[2024-04-07 16:46:41] INFO root fetch - processPackages [camlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camlab-0.0.7.tar.gz tmp/camlab-0.0.8.tar.gz --markdown 20240407/c/camlab/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-07 16:46:41] WARNING root fetch - processPackages [tcrutils]: Timeout reached during download
+[2024-04-07 16:46:41] INFO root fetch - processPackages [tcrutils]: executing diffoscope
+[2024-04-07 16:46:41] INFO root fetch - processPackages [tcrutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcrutils-12.0.138.tar.gz tmp/tcrutils-12.0.139.tar.gz --markdown 20240407/t/tcrutils/12.0.138-12.0.139/diff.md --exclude *.pyd
+[2024-04-07 16:46:41] INFO root fetch - processPackages [smfsb]: Downloading https://files.pythonhosted.org/packages/30/e5/c9353b18e20eb52eda81fd8c11c16c9f401f7377d9bb17239c6de4d267d2/smfsb-0.1.7.tar.gz
+[2024-04-07 16:46:41] INFO root fetch - processPackages [semantic-router]: Downloading https://files.pythonhosted.org/packages/c6/e8/868f59ad8c7643feea9a25db402d4e84236189e1a9d89a4c840838be947f/semantic_router-0.0.9.tar.gz
+[2024-04-07 16:46:41] WARNING root fetch - processPackages [smfsb]: Timeout reached during download
+[2024-04-07 16:46:41] INFO root fetch - processPackages [smfsb]: executing diffoscope
+[2024-04-07 16:46:41] INFO root fetch - processPackages [smfsb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smfsb-0.1.6.tar.gz tmp/smfsb-0.1.7.tar.gz --markdown 20240407/s/smfsb/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2024-04-07 16:46:41] WARNING root fetch - processPackages [semantic-router]: Timeout reached during download
+[2024-04-07 16:46:41] INFO root fetch - processPackages [semantic-router]: executing diffoscope
+[2024-04-07 16:46:41] INFO root fetch - processPackages [semantic-router]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic_router-0.0.8.tar.gz tmp/semantic_router-0.0.9.tar.gz --markdown 20240407/s/semantic-router/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 16:46:41] INFO root fetch - processPackages [easy-utils-dev]: Remove: archive file [/home/abi/fetcher/tmp/easy_utils_dev-2.8.8.tar.gz]
+[2024-04-07 16:46:41] INFO root fetch - processPackages [easy-utils-dev]: Remove: archive file [/home/abi/fetcher/tmp/easy_utils_dev-2.8.9.tar.gz]
+[2024-04-07 16:46:41] INFO root fetch - main [MainThread]: End processing [easy-utils-dev]: success
+[2024-04-07 16:46:42] INFO root fetch - processPackages [camlab]: Remove: archive file [/home/abi/fetcher/tmp/camlab-0.0.7.tar.gz]
+[2024-04-07 16:46:42] INFO root fetch - processPackages [camlab]: Remove: archive file [/home/abi/fetcher/tmp/camlab-0.0.8.tar.gz]
+[2024-04-07 16:46:42] INFO root fetch - main [MainThread]: End processing [camlab]: success
+[2024-04-07 16:46:42] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.138.tar.gz]
+[2024-04-07 16:46:42] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.139.tar.gz]
+[2024-04-07 16:46:42] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
+[2024-04-07 16:46:42] INFO root fetch - processPackages [semantic-router]: Remove: archive file [/home/abi/fetcher/tmp/semantic_router-0.0.8.tar.gz]
+[2024-04-07 16:46:42] INFO root fetch - processPackages [semantic-router]: Remove: archive file [/home/abi/fetcher/tmp/semantic_router-0.0.9.tar.gz]
+[2024-04-07 16:46:42] INFO root fetch - main [MainThread]: End processing [semantic-router]: success
+[2024-04-07 16:46:42] INFO root fetch - processPackages [smfsb]: Remove: archive file [/home/abi/fetcher/tmp/smfsb-0.1.6.tar.gz]
+[2024-04-07 16:46:42] INFO root fetch - processPackages [smfsb]: Remove: archive file [/home/abi/fetcher/tmp/smfsb-0.1.7.tar.gz]
+[2024-04-07 16:46:42] INFO root fetch - main [MainThread]: End processing [smfsb]: success
+[2024-04-07 16:46:42] INFO root fetch - main [MainThread]: Store serial: [22656899]
