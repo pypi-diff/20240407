@@ -13307,3 +13307,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:16:12] INFO root fetch - processPackages [scikit-multilearn-ng]: Remove: archive file [/home/abi/fetcher/tmp/scikit-multilearn-ng-0.0.7.tar.gz]
 [2024-04-07 16:16:12] INFO root fetch - main [MainThread]: End processing [scikit-multilearn-ng]: success
 [2024-04-07 16:16:12] INFO root fetch - main [MainThread]: Store serial: [22656731]
+[2024-04-07 16:18:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656731]
+[2024-04-07 16:18:21] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 16:18:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydflow
+[2024-04-07 16:18:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mfoci
+[2024-04-07 16:18:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: LocalSolarWatt
+[2024-04-07 16:18:21] INFO root fetch - processPackages [mfoci]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-07 16:18:21] INFO root fetch - processPackages [LocalSolarWatt]: New version: [0.7] Old Version: [0.6.1]
+[2024-04-07 16:18:21] INFO root fetch - processPackages [pydflow]: New version: [1.8.9] Old Version: [1.8.8]
+[2024-04-07 16:18:21] INFO root fetch - processPackages [mfoci]: Downloading https://files.pythonhosted.org/packages/fd/de/fa1bec2b34c431d0c5da38dab2745b899507d74404f94fd89f04ac36504d/mfoci-0.1.0.tar.gz
+[2024-04-07 16:18:22] INFO root fetch - processPackages [LocalSolarWatt]: Downloading https://files.pythonhosted.org/packages/c3/a6/515cbda1db19980aabba4c83390bbe8fdf2e8924faac67b6f0641c555f95/LocalSolarWatt-0.6.1.tar.gz
+[2024-04-07 16:18:22] INFO root fetch - processPackages [pydflow]: Downloading https://files.pythonhosted.org/packages/8d/22/584c02b6b9a49c26a40cc22b7f10af25724fe70df5357e5a527c2c36729a/pydflow-1.8.8.tar.gz
+[2024-04-07 16:18:22] WARNING root fetch - processPackages [LocalSolarWatt]: Timeout reached during download
+[2024-04-07 16:18:22] WARNING root fetch - processPackages [mfoci]: Timeout reached during download
+[2024-04-07 16:18:22] INFO root fetch - processPackages [LocalSolarWatt]: Downloading https://files.pythonhosted.org/packages/fe/43/d468e61d22e8cb9aa04d55fe20518c8c75d2f066608baf7d223ddf1f205b/LocalSolarWatt-0.7.tar.gz
+[2024-04-07 16:18:22] INFO root fetch - processPackages [mfoci]: Downloading https://files.pythonhosted.org/packages/a1/22/296e66b641c32bece95764d7c36df528d4c15fbc9dc655aab285882bca5c/mfoci-0.1.1.tar.gz
+[2024-04-07 16:18:22] WARNING root fetch - processPackages [pydflow]: Timeout reached during download
+[2024-04-07 16:18:22] WARNING root fetch - processPackages [mfoci]: Timeout reached during download
+[2024-04-07 16:18:22] INFO root fetch - processPackages [mfoci]: executing diffoscope
+[2024-04-07 16:18:22] INFO root fetch - processPackages [mfoci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mfoci-0.1.0.tar.gz tmp/mfoci-0.1.1.tar.gz --markdown 20240407/m/mfoci/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 16:18:22] WARNING root fetch - processPackages [LocalSolarWatt]: Timeout reached during download
+[2024-04-07 16:18:22] INFO root fetch - processPackages [LocalSolarWatt]: executing diffoscope
+[2024-04-07 16:18:22] INFO root fetch - processPackages [LocalSolarWatt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LocalSolarWatt-0.6.1.tar.gz tmp/LocalSolarWatt-0.7.tar.gz --markdown 20240407/L/LocalSolarWatt/0.6.1-0.7/diff.md --exclude *.pyd
+[2024-04-07 16:18:22] INFO root fetch - processPackages [pydflow]: Downloading https://files.pythonhosted.org/packages/b8/ee/62435e12ce818ae5c15b7256f01e225eb1dd5e3d49e3bde8e913944b4caa/pydflow-1.8.9.tar.gz
+[2024-04-07 16:18:22] WARNING root fetch - processPackages [pydflow]: Timeout reached during download
+[2024-04-07 16:18:22] INFO root fetch - processPackages [pydflow]: executing diffoscope
+[2024-04-07 16:18:22] INFO root fetch - processPackages [pydflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydflow-1.8.8.tar.gz tmp/pydflow-1.8.9.tar.gz --markdown 20240407/p/pydflow/1.8.8-1.8.9/diff.md --exclude *.pyd
+[2024-04-07 16:18:23] INFO root fetch - processPackages [LocalSolarWatt]: Remove: archive file [/home/abi/fetcher/tmp/LocalSolarWatt-0.6.1.tar.gz]
+[2024-04-07 16:18:23] INFO root fetch - processPackages [LocalSolarWatt]: Remove: archive file [/home/abi/fetcher/tmp/LocalSolarWatt-0.7.tar.gz]
+[2024-04-07 16:18:23] INFO root fetch - main [MainThread]: End processing [LocalSolarWatt]: success
+[2024-04-07 16:18:23] INFO root fetch - processPackages [mfoci]: Remove: archive file [/home/abi/fetcher/tmp/mfoci-0.1.0.tar.gz]
+[2024-04-07 16:18:23] INFO root fetch - processPackages [mfoci]: Remove: archive file [/home/abi/fetcher/tmp/mfoci-0.1.1.tar.gz]
+[2024-04-07 16:18:23] INFO root fetch - main [MainThread]: End processing [mfoci]: success
+[2024-04-07 16:18:23] INFO root fetch - processPackages [pydflow]: Remove: archive file [/home/abi/fetcher/tmp/pydflow-1.8.8.tar.gz]
+[2024-04-07 16:18:23] INFO root fetch - processPackages [pydflow]: Remove: archive file [/home/abi/fetcher/tmp/pydflow-1.8.9.tar.gz]
+[2024-04-07 16:18:23] INFO root fetch - main [MainThread]: End processing [pydflow]: success
+[2024-04-07 16:18:23] INFO root fetch - main [MainThread]: Store serial: [22656740]
