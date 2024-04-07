@@ -19505,3 +19505,82 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:04:18] INFO root fetch - processPackages [django-formset]: Remove: archive file [/home/abi/fetcher/tmp/django-formset-1.3.9.tar.gz]
 [2024-04-07 22:04:18] INFO root fetch - main [MainThread]: End processing [django-formset]: success
 [2024-04-07 22:04:18] INFO root fetch - main [MainThread]: Store serial: [22658895]
+[2024-04-07 22:06:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658895]
+[2024-04-07 22:06:27] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 22:08:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658897]
+[2024-04-07 22:08:32] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-07 22:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aim-ui
+[2024-04-07 22:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotify-win-cli
+[2024-04-07 22:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dmjone
+[2024-04-07 22:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odooer
+[2024-04-07 22:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: todoist-auto
+[2024-04-07 22:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pypomes-core
+[2024-04-07 22:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aim
+[2024-04-07 22:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: akello
+[2024-04-07 22:08:33] INFO root fetch - processPackages [dmjone]: New version: [0.1.9.7] Old Version: [0.1.9.4]
+[2024-04-07 22:08:33] INFO root fetch - processPackages [aim-ui]: New version: [4.1.0.dev20230930] Old Version: [4.1.0.dev20230929]
+[2024-04-07 22:08:33] INFO root fetch - processPackages [akello]: New version: [0.0.23] Old Version: [0.0.22]
+[2024-04-07 22:08:33] INFO root fetch - processPackages [spotify-win-cli]: New version: [4.0.5] Old Version: [4.0.4]
+[2024-04-07 22:08:33] INFO root fetch - processPackages [pypomes-core]: New version: [0.7.7] Old Version: [0.7.4]
+[2024-04-07 22:08:33] WARNING root fetch - processPackages [odooer]: Skipping, unable to determine old version
+[2024-04-07 22:08:33] INFO root fetch - main [MainThread]: End processing [odooer] error
+[2024-04-07 22:08:33] INFO root fetch - processPackages [dmjone]: Downloading https://files.pythonhosted.org/packages/a8/f5/8d49a5246dcc880683260b3df18ab71b70967dd3628fc435419df9f3b2fe/dmjone-0.1.9.4.tar.gz
+[2024-04-07 22:08:33] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/2a/05/f8c2e155a815903b692d80c9a1647ba25d4a1f119791eaeb671026bcfa33/aim-ui-4.1.0.dev20230929.tar.gz
+[2024-04-07 22:08:33] INFO root fetch - processPackages [spotify-win-cli]: Downloading https://files.pythonhosted.org/packages/9c/98/353ce49d493b388f5d6a636ac1079c52c30624f6f2c15a1505a03460160a/spotify-win-cli-4.0.4.tar.gz
+[2024-04-07 22:08:33] INFO root fetch - processPackages [akello]: Downloading https://files.pythonhosted.org/packages/f2/fe/82715dd87d3b092ac3f932c15748f9d710ba44f509d4215c02a559d22d56/akello-0.0.22.tar.gz
+[2024-04-07 22:08:33] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/75/b7/6a9e30d3f6dbdc9f0e2c3538c6d6bc993a296afbfec6394365628e3bd32f/pypomes_core-0.7.4.tar.gz
+[2024-04-07 22:08:33] INFO root fetch - processPackages [todoist-auto]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-04-07 22:08:33] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 19246573>=10485760
+[2024-04-07 22:08:33] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2024-04-07 22:08:33] WARNING root fetch - processPackages [dmjone]: Timeout reached during download
+[2024-04-07 22:08:33] WARNING root fetch - processPackages [spotify-win-cli]: Timeout reached during download
+[2024-04-07 22:08:33] WARNING root fetch - processPackages [pypomes-core]: Timeout reached during download
+[2024-04-07 22:08:33] INFO root fetch - processPackages [aim]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-04-07 22:08:33] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/b1/78/baea81138dfb8700e7a2b795b192569b97f1b353b15e6374ef7c32ec9bd9/todoist_auto-8.0.0.tar.gz
+[2024-04-07 22:08:33] WARNING root fetch - processPackages [akello]: Timeout reached during download
+[2024-04-07 22:08:33] INFO root fetch - processPackages [dmjone]: Downloading https://files.pythonhosted.org/packages/55/30/31986711cebed643aaf828b784b072cb92d783c366828f4dbc2e7e65f77c/dmjone-0.1.9.7.tar.gz
+[2024-04-07 22:08:33] INFO root fetch - processPackages [spotify-win-cli]: Downloading https://files.pythonhosted.org/packages/84/5e/3fc929faeea873908faabdd116d0c033da38dea9921b21b519c2fb8be87b/spotify-win-cli-4.0.5.tar.gz
+[2024-04-07 22:08:33] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/e2/e4/ad9d9829e3237760502e0150ccaee6474dc0acef84c47a21957444ac5fd9/pypomes_core-0.7.7.tar.gz
+[2024-04-07 22:08:33] WARNING root fetch - processPackages [dmjone]: Timeout reached during download
+[2024-04-07 22:08:33] INFO root fetch - processPackages [dmjone]: executing diffoscope
+[2024-04-07 22:08:33] INFO root fetch - processPackages [dmjone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dmjone-0.1.9.4.tar.gz tmp/dmjone-0.1.9.7.tar.gz --markdown 20240407/d/dmjone/0.1.9.4-0.1.9.7/diff.md --exclude *.pyd
+[2024-04-07 22:08:33] WARNING root fetch - processPackages [spotify-win-cli]: Timeout reached during download
+[2024-04-07 22:08:33] INFO root fetch - processPackages [spotify-win-cli]: executing diffoscope
+[2024-04-07 22:08:33] INFO root fetch - processPackages [spotify-win-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotify-win-cli-4.0.4.tar.gz tmp/spotify-win-cli-4.0.5.tar.gz --markdown 20240407/s/spotify-win-cli/4.0.4-4.0.5/diff.md --exclude *.pyd
+[2024-04-07 22:08:33] INFO root fetch - processPackages [akello]: Downloading https://files.pythonhosted.org/packages/c8/ec/ec0ce820ecfee55e396ae751aacc1bfa85881b7dc82911d0586835dd37ff/akello-0.0.23.tar.gz
+[2024-04-07 22:08:33] WARNING root fetch - processPackages [todoist-auto]: Timeout reached during download
+[2024-04-07 22:08:33] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/4a/00/f7e303a3bd0a6d75c08ccd60562a0c5f00fa9f4c16c945fbffa86d96ab7d/aim-4.0.2.tar.gz
+[2024-04-07 22:08:33] WARNING root fetch - processPackages [pypomes-core]: Timeout reached during download
+[2024-04-07 22:08:33] INFO root fetch - processPackages [pypomes-core]: executing diffoscope
+[2024-04-07 22:08:33] INFO root fetch - processPackages [pypomes-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_core-0.7.4.tar.gz tmp/pypomes_core-0.7.7.tar.gz --markdown 20240407/p/pypomes-core/0.7.4-0.7.7/diff.md --exclude *.pyd
+[2024-04-07 22:08:33] WARNING root fetch - processPackages [akello]: Timeout reached during download
+[2024-04-07 22:08:33] INFO root fetch - processPackages [akello]: executing diffoscope
+[2024-04-07 22:08:33] INFO root fetch - processPackages [akello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akello-0.0.22.tar.gz tmp/akello-0.0.23.tar.gz --markdown 20240407/a/akello/0.0.22-0.0.23/diff.md --exclude *.pyd
+[2024-04-07 22:08:33] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/ad/42/49bc0ab11074d45b08e24c5a91b302992d6e5855e521f2a779d82a91eed5/todoist_auto-9.0.0.tar.gz
+[2024-04-07 22:08:34] WARNING root fetch - processPackages [aim]: Timeout reached during download
+[2024-04-07 22:08:34] WARNING root fetch - processPackages [todoist-auto]: Timeout reached during download
+[2024-04-07 22:08:34] INFO root fetch - processPackages [todoist-auto]: executing diffoscope
+[2024-04-07 22:08:34] INFO root fetch - processPackages [todoist-auto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/todoist_auto-8.0.0.tar.gz tmp/todoist_auto-9.0.0.tar.gz --markdown 20240407/t/todoist-auto/8.0.0-9.0.0/diff.md --exclude *.pyd
+[2024-04-07 22:08:34] INFO root fetch - processPackages [spotify-win-cli]: Remove: archive file [/home/abi/fetcher/tmp/spotify-win-cli-4.0.4.tar.gz]
+[2024-04-07 22:08:34] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/50/12/a5a7bf25fd6105558d11afbd3f7500aa63283494e429296746c821354590/aim-4.0.3.tar.gz
+[2024-04-07 22:08:34] INFO root fetch - processPackages [spotify-win-cli]: Remove: archive file [/home/abi/fetcher/tmp/spotify-win-cli-4.0.5.tar.gz]
+[2024-04-07 22:08:34] INFO root fetch - main [MainThread]: End processing [spotify-win-cli]: success
+[2024-04-07 22:08:34] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.7.4.tar.gz]
+[2024-04-07 22:08:34] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.7.7.tar.gz]
+[2024-04-07 22:08:34] INFO root fetch - main [MainThread]: End processing [pypomes-core]: success
+[2024-04-07 22:08:34] INFO root fetch - processPackages [dmjone]: Remove: archive file [/home/abi/fetcher/tmp/dmjone-0.1.9.4.tar.gz]
+[2024-04-07 22:08:34] INFO root fetch - processPackages [dmjone]: Remove: archive file [/home/abi/fetcher/tmp/dmjone-0.1.9.7.tar.gz]
+[2024-04-07 22:08:34] INFO root fetch - main [MainThread]: End processing [dmjone]: success
+[2024-04-07 22:08:34] WARNING root fetch - processPackages [aim]: Timeout reached during download
+[2024-04-07 22:08:34] INFO root fetch - processPackages [aim]: executing diffoscope
+[2024-04-07 22:08:34] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.2.tar.gz tmp/aim-4.0.3.tar.gz --markdown 20240407/a/aim/4.0.2-4.0.3/diff.md --exclude *.pyd
+[2024-04-07 22:08:34] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-8.0.0.tar.gz]
+[2024-04-07 22:08:34] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-9.0.0.tar.gz]
+[2024-04-07 22:08:34] INFO root fetch - main [MainThread]: End processing [todoist-auto]: success
+[2024-04-07 22:08:35] INFO root fetch - processPackages [akello]: Remove: archive file [/home/abi/fetcher/tmp/akello-0.0.22.tar.gz]
+[2024-04-07 22:08:35] INFO root fetch - processPackages [akello]: Remove: archive file [/home/abi/fetcher/tmp/akello-0.0.23.tar.gz]
+[2024-04-07 22:08:35] INFO root fetch - main [MainThread]: End processing [akello]: success
+[2024-04-07 22:08:39] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.2.tar.gz]
+[2024-04-07 22:08:39] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
+[2024-04-07 22:08:39] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2024-04-07 22:08:39] INFO root fetch - main [MainThread]: Store serial: [22658927]
