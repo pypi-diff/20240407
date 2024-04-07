@@ -20211,3 +20211,41 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:58:47] INFO root fetch - processPackages [crytic-compile]: Remove: archive file [/home/abi/fetcher/tmp/crytic-compile-0.3.7.tar.gz]
 [2024-04-07 22:58:47] INFO root fetch - main [MainThread]: End processing [crytic-compile]: success
 [2024-04-07 22:58:47] INFO root fetch - main [MainThread]: Store serial: [22659235]
+[2024-04-07 23:00:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659235]
+[2024-04-07 23:00:56] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 23:02:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659235]
+[2024-04-07 23:03:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 23:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: enkanetworkv2.py
+[2024-04-07 23:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ingredient-slicer
+[2024-04-07 23:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: programlib
+[2024-04-07 23:03:01] INFO root fetch - processPackages [programlib]: New version: [9.0.3] Old Version: [9.0.2]
+[2024-04-07 23:03:01] INFO root fetch - processPackages [programlib]: Downloading https://files.pythonhosted.org/packages/37/5c/d71cd3dca0dc15fe517c72e8aa04a028091522e40f76866fa1caab72eb6d/programlib-9.0.2.tar.gz
+[2024-04-07 23:03:01] INFO root fetch - processPackages [enkanetworkv2.py]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-04-07 23:03:01] INFO root fetch - processPackages [ingredient-slicer]: New version: [0.0.85] Old Version: [0.0.84]
+[2024-04-07 23:03:01] WARNING root fetch - processPackages [programlib]: Timeout reached during download
+[2024-04-07 23:03:02] INFO root fetch - processPackages [enkanetworkv2.py]: Downloading https://files.pythonhosted.org/packages/8c/af/2281cc655394872b58f54af7e8e50b0d0defbd28a8654c26e6e3b88de247/enkanetworkv2.py-2.0.1.tar.gz
+[2024-04-07 23:03:02] INFO root fetch - processPackages [ingredient-slicer]: Downloading https://files.pythonhosted.org/packages/ae/13/7c81776110bffb863ac9452029c820b00c05fe488c3cd222a7ab943c6866/ingredient_slicer-0.0.84.tar.gz
+[2024-04-07 23:03:02] INFO root fetch - processPackages [programlib]: Downloading https://files.pythonhosted.org/packages/87/68/8bde1bac9605e7ec884f688d17bf45a1206b163949faba2d6255bffe7932/programlib-9.0.3.tar.gz
+[2024-04-07 23:03:02] WARNING root fetch - processPackages [programlib]: Timeout reached during download
+[2024-04-07 23:03:02] INFO root fetch - processPackages [programlib]: executing diffoscope
+[2024-04-07 23:03:02] INFO root fetch - processPackages [programlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/programlib-9.0.2.tar.gz tmp/programlib-9.0.3.tar.gz --markdown 20240407/p/programlib/9.0.2-9.0.3/diff.md --exclude *.pyd
+[2024-04-07 23:03:02] WARNING root fetch - processPackages [ingredient-slicer]: Timeout reached during download
+[2024-04-07 23:03:02] WARNING root fetch - processPackages [enkanetworkv2.py]: Timeout reached during download
+[2024-04-07 23:03:02] INFO root fetch - processPackages [ingredient-slicer]: Downloading https://files.pythonhosted.org/packages/14/ca/639efd8f55ff439cc2b172327f169d27930134618a7f62a6f397c219aefa/ingredient_slicer-0.0.85.tar.gz
+[2024-04-07 23:03:02] INFO root fetch - processPackages [enkanetworkv2.py]: Downloading https://files.pythonhosted.org/packages/54/0a/b25c1ede6c2e97db120e7f23062d29841e07f9a3e2c38cca68102dcac722/enkanetworkv2.py-2.0.2.tar.gz
+[2024-04-07 23:03:02] WARNING root fetch - processPackages [ingredient-slicer]: Timeout reached during download
+[2024-04-07 23:03:02] INFO root fetch - processPackages [ingredient-slicer]: executing diffoscope
+[2024-04-07 23:03:02] INFO root fetch - processPackages [ingredient-slicer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ingredient_slicer-0.0.84.tar.gz tmp/ingredient_slicer-0.0.85.tar.gz --markdown 20240407/i/ingredient-slicer/0.0.84-0.0.85/diff.md --exclude *.pyd
+[2024-04-07 23:03:02] WARNING root fetch - processPackages [enkanetworkv2.py]: Timeout reached during download
+[2024-04-07 23:03:02] INFO root fetch - processPackages [enkanetworkv2.py]: executing diffoscope
+[2024-04-07 23:03:02] INFO root fetch - processPackages [enkanetworkv2.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enkanetworkv2.py-2.0.1.tar.gz tmp/enkanetworkv2.py-2.0.2.tar.gz --markdown 20240407/e/enkanetworkv2.py/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2024-04-07 23:03:02] INFO root fetch - processPackages [programlib]: Remove: archive file [/home/abi/fetcher/tmp/programlib-9.0.2.tar.gz]
+[2024-04-07 23:03:02] INFO root fetch - processPackages [programlib]: Remove: archive file [/home/abi/fetcher/tmp/programlib-9.0.3.tar.gz]
+[2024-04-07 23:03:02] INFO root fetch - main [MainThread]: End processing [programlib]: success
+[2024-04-07 23:03:03] INFO root fetch - processPackages [ingredient-slicer]: Remove: archive file [/home/abi/fetcher/tmp/ingredient_slicer-0.0.84.tar.gz]
+[2024-04-07 23:03:03] INFO root fetch - processPackages [ingredient-slicer]: Remove: archive file [/home/abi/fetcher/tmp/ingredient_slicer-0.0.85.tar.gz]
+[2024-04-07 23:03:03] INFO root fetch - main [MainThread]: End processing [ingredient-slicer]: success
+[2024-04-07 23:03:03] INFO root fetch - processPackages [enkanetworkv2.py]: Remove: archive file [/home/abi/fetcher/tmp/enkanetworkv2.py-2.0.1.tar.gz]
+[2024-04-07 23:03:03] INFO root fetch - processPackages [enkanetworkv2.py]: Remove: archive file [/home/abi/fetcher/tmp/enkanetworkv2.py-2.0.2.tar.gz]
+[2024-04-07 23:03:03] INFO root fetch - main [MainThread]: End processing [enkanetworkv2.py]: success
+[2024-04-07 23:03:03] INFO root fetch - main [MainThread]: Store serial: [22659244]
