@@ -3623,3 +3623,28 @@
 [2024-04-07 05:02:18] INFO root fetch - processPackages [fastcrud]: Remove: archive file [/home/abi/fetcher/tmp/fastcrud-0.9.1.tar.gz]
 [2024-04-07 05:02:18] INFO root fetch - main [MainThread]: End processing [fastcrud]: success
 [2024-04-07 05:02:18] INFO root fetch - main [MainThread]: Store serial: [22653103]
+[2024-04-07 05:04:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653103]
+[2024-04-07 05:04:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 05:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: climush
+[2024-04-07 05:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: istari
+[2024-04-07 05:04:26] INFO root fetch - processPackages [climush]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 05:04:26] INFO root fetch - processPackages [istari]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-07 05:04:26] INFO root fetch - processPackages [istari]: Downloading https://files.pythonhosted.org/packages/9a/73/b8c119b5d83ce8e78ee338b6d9c4a8dc93be5e1a1cb416fd9171590d3224/istari-0.0.7.tar.gz
+[2024-04-07 05:04:26] INFO root fetch - processPackages [climush]: Downloading https://files.pythonhosted.org/packages/af/ba/f6e46420407cb13a36db01fc6f556a15d08506b6a5ce14eabf64e99f3ca5/climush-0.0.2.tar.gz
+[2024-04-07 05:04:26] WARNING root fetch - processPackages [istari]: Timeout reached during download
+[2024-04-07 05:04:26] WARNING root fetch - processPackages [climush]: Timeout reached during download
+[2024-04-07 05:04:26] INFO root fetch - processPackages [climush]: Downloading https://files.pythonhosted.org/packages/3f/83/e050c43e97676ba8f29576a06aeb1d0f46bb5e7397b874aabba259de3c3a/climush-0.0.3.tar.gz
+[2024-04-07 05:04:26] WARNING root fetch - processPackages [climush]: Timeout reached during download
+[2024-04-07 05:04:26] INFO root fetch - processPackages [climush]: executing diffoscope
+[2024-04-07 05:04:26] INFO root fetch - processPackages [climush]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/climush-0.0.2.tar.gz tmp/climush-0.0.3.tar.gz --markdown 20240407/c/climush/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 05:04:26] INFO root fetch - processPackages [istari]: Downloading https://files.pythonhosted.org/packages/0d/6e/a09b6fba57e97f791241ee2beb6b0a0d30f004db60cd8fc2a2ce8daa4857/istari-0.0.8.tar.gz
+[2024-04-07 05:04:27] WARNING root fetch - processPackages [istari]: Timeout reached during download
+[2024-04-07 05:04:27] INFO root fetch - processPackages [istari]: executing diffoscope
+[2024-04-07 05:04:27] INFO root fetch - processPackages [istari]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/istari-0.0.7.tar.gz tmp/istari-0.0.8.tar.gz --markdown 20240407/i/istari/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-07 05:04:27] INFO root fetch - processPackages [climush]: Remove: archive file [/home/abi/fetcher/tmp/climush-0.0.2.tar.gz]
+[2024-04-07 05:04:27] INFO root fetch - processPackages [climush]: Remove: archive file [/home/abi/fetcher/tmp/climush-0.0.3.tar.gz]
+[2024-04-07 05:04:27] INFO root fetch - main [MainThread]: End processing [climush]: success
+[2024-04-07 05:04:27] INFO root fetch - processPackages [istari]: Remove: archive file [/home/abi/fetcher/tmp/istari-0.0.7.tar.gz]
+[2024-04-07 05:04:27] INFO root fetch - processPackages [istari]: Remove: archive file [/home/abi/fetcher/tmp/istari-0.0.8.tar.gz]
+[2024-04-07 05:04:27] INFO root fetch - main [MainThread]: End processing [istari]: success
+[2024-04-07 05:04:27] INFO root fetch - main [MainThread]: Store serial: [22653109]
