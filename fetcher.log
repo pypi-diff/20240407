@@ -14565,3 +14565,61 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:19:54] INFO root fetch - processPackages [docker-remote-sync]: Remove: archive file [/home/abi/fetcher/tmp/docker_remote_sync-0.6.tar.gz]
 [2024-04-07 17:19:54] INFO root fetch - main [MainThread]: End processing [docker-remote-sync]: success
 [2024-04-07 17:19:54] INFO root fetch - main [MainThread]: Store serial: [22657127]
+[2024-04-07 17:21:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657127]
+[2024-04-07 17:22:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 17:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: selva
+[2024-04-07 17:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: direnumerate
+[2024-04-07 17:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smaht-submitr
+[2024-04-07 17:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyfbsdk-stub-generator
+[2024-04-07 17:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lambkid
+[2024-04-07 17:22:03] INFO root fetch - processPackages [smaht-submitr]: New version: [0.7.0.2b5] Old Version: [0.7.0.2b3]
+[2024-04-07 17:22:03] INFO root fetch - processPackages [lambkid]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 17:22:03] INFO root fetch - processPackages [direnumerate]: New version: [3.2rc2] Old Version: [3.2rc1]
+[2024-04-07 17:22:03] INFO root fetch - processPackages [pyfbsdk-stub-generator]: New version: [2025.0.0] Old Version: [1.0.2]
+[2024-04-07 17:22:03] INFO root fetch - processPackages [selva]: New version: [0.9.0] Old Version: [0.8.3]
+[2024-04-07 17:22:03] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/f5/e2/0f10d0dbe6c05d442f47cf53eab08565f3195f06ca76f99de0ae52bc1cc8/smaht_submitr-0.7.0.2b3.tar.gz
+[2024-04-07 17:22:03] INFO root fetch - processPackages [lambkid]: Downloading https://files.pythonhosted.org/packages/a4/1d/a402c5f85ef6696c76f47780a2a9b4a6d1e22f67e018fac29ed5ab142ba1/lambkid-0.0.8.tar.gz
+[2024-04-07 17:22:03] WARNING root fetch - processPackages [lambkid]: Timeout reached during download
+[2024-04-07 17:22:03] INFO root fetch - processPackages [direnumerate]: Downloading https://files.pythonhosted.org/packages/3e/37/f0eaa5cc2e2e69314f15c1aa5ba0c84d834692ab11baeb538b0e3717c183/direnumerate-3.2rc1.tar.gz
+[2024-04-07 17:22:03] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 17:22:03] INFO root fetch - processPackages [selva]: Downloading https://files.pythonhosted.org/packages/10/3c/a4f173384a2c51021ef513126d672bfcc96290a84de2528f825e99d41bc1/selva-0.8.3.tar.gz
+[2024-04-07 17:22:03] INFO root fetch - processPackages [pyfbsdk-stub-generator]: Downloading https://files.pythonhosted.org/packages/c8/1d/913aab31ab573c625e40b9d20315233b24eb8fdc84f22263d7d271a98e01/pyfbsdk-stub-generator-1.0.2.tar.gz
+[2024-04-07 17:22:03] INFO root fetch - processPackages [lambkid]: Downloading https://files.pythonhosted.org/packages/4f/e8/fe3ffb0ac4fb24b3455167d57cb2cd8ab326fbb2f862aab16c13d38fde49/lambkid-0.0.9.tar.gz
+[2024-04-07 17:22:03] WARNING root fetch - processPackages [selva]: Timeout reached during download
+[2024-04-07 17:22:03] WARNING root fetch - processPackages [pyfbsdk-stub-generator]: Timeout reached during download
+[2024-04-07 17:22:03] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/82/84/444ea264ce3cf7abe5cc79322b528cda0522564f5c887a262c04f71b4afe/smaht_submitr-0.7.0.2b5.tar.gz
+[2024-04-07 17:22:03] WARNING root fetch - processPackages [lambkid]: Timeout reached during download
+[2024-04-07 17:22:03] INFO root fetch - processPackages [lambkid]: executing diffoscope
+[2024-04-07 17:22:03] INFO root fetch - processPackages [lambkid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lambkid-0.0.8.tar.gz tmp/lambkid-0.0.9.tar.gz --markdown 20240407/l/lambkid/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 17:22:03] WARNING root fetch - processPackages [direnumerate]: Timeout reached during download
+[2024-04-07 17:22:03] INFO root fetch - processPackages [selva]: Downloading https://files.pythonhosted.org/packages/7b/d4/a35c4189cd8ba3af3adf53a50a79d03e362c00c0d7e09327ca464cf3dc33/selva-0.9.0.tar.gz
+[2024-04-07 17:22:03] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 17:22:03] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-07 17:22:03] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.7.0.2b3.tar.gz tmp/smaht_submitr-0.7.0.2b5.tar.gz --markdown 20240407/s/smaht-submitr/0.7.0.2b3-0.7.0.2b5/diff.md --exclude *.pyd
+[2024-04-07 17:22:03] INFO root fetch - processPackages [pyfbsdk-stub-generator]: Downloading https://files.pythonhosted.org/packages/53/1b/6d318376a99ad43887b54aff81bb588817cf3c67bbb19a7206d4b5c01bed/pyfbsdk-stub-generator-2025.0.0.tar.gz
+[2024-04-07 17:22:04] INFO root fetch - processPackages [direnumerate]: Downloading https://files.pythonhosted.org/packages/1d/fd/9b041cd9dcb1381a97555bd15f029a8638efb8be61bac57eb5fd011c1634/direnumerate-3.2rc2.tar.gz
+[2024-04-07 17:22:04] WARNING root fetch - processPackages [pyfbsdk-stub-generator]: Timeout reached during download
+[2024-04-07 17:22:04] INFO root fetch - processPackages [pyfbsdk-stub-generator]: executing diffoscope
+[2024-04-07 17:22:04] INFO root fetch - processPackages [pyfbsdk-stub-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfbsdk-stub-generator-1.0.2.tar.gz tmp/pyfbsdk-stub-generator-2025.0.0.tar.gz --markdown 20240407/p/pyfbsdk-stub-generator/1.0.2-2025.0.0/diff.md --exclude *.pyd
+[2024-04-07 17:22:04] WARNING root fetch - processPackages [selva]: Timeout reached during download
+[2024-04-07 17:22:04] WARNING root fetch - processPackages [direnumerate]: Timeout reached during download
+[2024-04-07 17:22:04] INFO root fetch - processPackages [selva]: executing diffoscope
+[2024-04-07 17:22:04] INFO root fetch - processPackages [direnumerate]: executing diffoscope
+[2024-04-07 17:22:04] INFO root fetch - processPackages [selva]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selva-0.8.3.tar.gz tmp/selva-0.9.0.tar.gz --markdown 20240407/s/selva/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2024-04-07 17:22:04] INFO root fetch - processPackages [direnumerate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/direnumerate-3.2rc1.tar.gz tmp/direnumerate-3.2rc2.tar.gz --markdown 20240407/d/direnumerate/3.2rc1-3.2rc2/diff.md --exclude *.pyd
+[2024-04-07 17:22:04] INFO root fetch - processPackages [lambkid]: Remove: archive file [/home/abi/fetcher/tmp/lambkid-0.0.8.tar.gz]
+[2024-04-07 17:22:04] INFO root fetch - processPackages [lambkid]: Remove: archive file [/home/abi/fetcher/tmp/lambkid-0.0.9.tar.gz]
+[2024-04-07 17:22:04] INFO root fetch - main [MainThread]: End processing [lambkid]: success
+[2024-04-07 17:22:04] INFO root fetch - processPackages [pyfbsdk-stub-generator]: Remove: archive file [/home/abi/fetcher/tmp/pyfbsdk-stub-generator-1.0.2.tar.gz]
+[2024-04-07 17:22:04] INFO root fetch - processPackages [pyfbsdk-stub-generator]: Remove: archive file [/home/abi/fetcher/tmp/pyfbsdk-stub-generator-2025.0.0.tar.gz]
+[2024-04-07 17:22:04] INFO root fetch - main [MainThread]: End processing [pyfbsdk-stub-generator]: success
+[2024-04-07 17:22:04] INFO root fetch - processPackages [selva]: Remove: archive file [/home/abi/fetcher/tmp/selva-0.8.3.tar.gz]
+[2024-04-07 17:22:04] INFO root fetch - processPackages [selva]: Remove: archive file [/home/abi/fetcher/tmp/selva-0.9.0.tar.gz]
+[2024-04-07 17:22:04] INFO root fetch - main [MainThread]: End processing [selva]: success
+[2024-04-07 17:22:04] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.2b3.tar.gz]
+[2024-04-07 17:22:04] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.2b5.tar.gz]
+[2024-04-07 17:22:04] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-07 17:22:04] INFO root fetch - processPackages [direnumerate]: Remove: archive file [/home/abi/fetcher/tmp/direnumerate-3.2rc1.tar.gz]
+[2024-04-07 17:22:04] INFO root fetch - processPackages [direnumerate]: Remove: archive file [/home/abi/fetcher/tmp/direnumerate-3.2rc2.tar.gz]
+[2024-04-07 17:22:04] INFO root fetch - main [MainThread]: End processing [direnumerate]: success
+[2024-04-07 17:22:04] INFO root fetch - main [MainThread]: Store serial: [22657142]
