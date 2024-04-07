@@ -19842,3 +19842,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:28:15] INFO root fetch - processPackages [swiftest]: Remove: archive file [/home/abi/fetcher/tmp/swiftest-2024.4.0-cp312-cp312-macosx_12_0_x86_64.whl.zip]
 [2024-04-07 22:28:15] INFO root fetch - main [MainThread]: End processing [swiftest]: success
 [2024-04-07 22:28:15] INFO root fetch - main [MainThread]: Store serial: [22659094]
+[2024-04-07 22:30:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659094]
+[2024-04-07 22:30:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 22:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: automatic-meter-reader
+[2024-04-07 22:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: imcsdk-ecoen66
+[2024-04-07 22:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dotcon
+[2024-04-07 22:30:24] INFO root fetch - processPackages [dotcon]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-07 22:30:24] INFO root fetch - processPackages [automatic-meter-reader]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-04-07 22:30:24] INFO root fetch - processPackages [imcsdk-ecoen66]: New version: [0.9.32] Old Version: [0.9.31]
+[2024-04-07 22:30:24] INFO root fetch - processPackages [dotcon]: Downloading https://files.pythonhosted.org/packages/04/14/e09bc13fbad97d20c9484f7090ac137af4f2495786c85e919b9f90e89a81/dotcon-0.4.0.tar.gz
+[2024-04-07 22:30:24] INFO root fetch - processPackages [imcsdk-ecoen66]: Downloading https://files.pythonhosted.org/packages/b9/35/e0eced32940e8cc2354eb06792dc26f673f552cb474a3f4b4c3dac7e4288/imcsdk_ecoen66-0.9.31.tar.gz
+[2024-04-07 22:30:24] INFO root fetch - processPackages [automatic-meter-reader]: Downloading https://files.pythonhosted.org/packages/a3/7c/6184cb04cb2fec842bd3dc796a57496764d4c913d11b011f0f3a62bf593b/automatic-meter-reader-1.2.1.tar.gz
+[2024-04-07 22:30:25] WARNING root fetch - processPackages [dotcon]: Timeout reached during download
+[2024-04-07 22:30:25] WARNING root fetch - processPackages [automatic-meter-reader]: Timeout reached during download
+[2024-04-07 22:30:25] WARNING root fetch - processPackages [imcsdk-ecoen66]: Timeout reached during download
+[2024-04-07 22:30:25] INFO root fetch - processPackages [dotcon]: Downloading https://files.pythonhosted.org/packages/76/fd/7156ade4a5e7fac5a7227fc3a6fac234623e2ec9f82c10afe0a1c64f4e2a/dotcon-0.5.0.tar.gz
+[2024-04-07 22:30:25] INFO root fetch - processPackages [automatic-meter-reader]: Downloading https://files.pythonhosted.org/packages/19/1f/9372852aecb5482879d493d3ffe538f4731c7676a971a7ab2ebaa0c92fb2/automatic-meter-reader-1.2.2.tar.gz
+[2024-04-07 22:30:25] INFO root fetch - processPackages [imcsdk-ecoen66]: Downloading https://files.pythonhosted.org/packages/f1/3a/a458ba422e0f58e26f6fdf0d39de3782194e04e80e2d1cef0768d264d4e6/imcsdk_ecoen66-0.9.32.tar.gz
+[2024-04-07 22:30:25] WARNING root fetch - processPackages [dotcon]: Timeout reached during download
+[2024-04-07 22:30:25] INFO root fetch - processPackages [dotcon]: executing diffoscope
+[2024-04-07 22:30:25] INFO root fetch - processPackages [dotcon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dotcon-0.4.0.tar.gz tmp/dotcon-0.5.0.tar.gz --markdown 20240407/d/dotcon/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2024-04-07 22:30:25] WARNING root fetch - processPackages [automatic-meter-reader]: Timeout reached during download
+[2024-04-07 22:30:25] INFO root fetch - processPackages [automatic-meter-reader]: executing diffoscope
+[2024-04-07 22:30:25] INFO root fetch - processPackages [automatic-meter-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automatic-meter-reader-1.2.1.tar.gz tmp/automatic-meter-reader-1.2.2.tar.gz --markdown 20240407/a/automatic-meter-reader/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2024-04-07 22:30:25] WARNING root fetch - processPackages [imcsdk-ecoen66]: Timeout reached during download
+[2024-04-07 22:30:25] INFO root fetch - processPackages [imcsdk-ecoen66]: executing diffoscope
+[2024-04-07 22:30:25] INFO root fetch - processPackages [imcsdk-ecoen66]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imcsdk_ecoen66-0.9.31.tar.gz tmp/imcsdk_ecoen66-0.9.32.tar.gz --markdown 20240407/i/imcsdk-ecoen66/0.9.31-0.9.32/diff.md --exclude *.pyd
+[2024-04-07 22:30:25] INFO root fetch - processPackages [dotcon]: Remove: archive file [/home/abi/fetcher/tmp/dotcon-0.4.0.tar.gz]
+[2024-04-07 22:30:25] INFO root fetch - processPackages [dotcon]: Remove: archive file [/home/abi/fetcher/tmp/dotcon-0.5.0.tar.gz]
+[2024-04-07 22:30:25] INFO root fetch - main [MainThread]: End processing [dotcon]: success
+[2024-04-07 22:30:25] INFO root fetch - processPackages [automatic-meter-reader]: Remove: archive file [/home/abi/fetcher/tmp/automatic-meter-reader-1.2.1.tar.gz]
+[2024-04-07 22:30:25] INFO root fetch - processPackages [automatic-meter-reader]: Remove: archive file [/home/abi/fetcher/tmp/automatic-meter-reader-1.2.2.tar.gz]
+[2024-04-07 22:30:25] INFO root fetch - main [MainThread]: End processing [automatic-meter-reader]: success
+[2024-04-07 22:30:28] INFO root fetch - processPackages [imcsdk-ecoen66]: Remove: archive file [/home/abi/fetcher/tmp/imcsdk_ecoen66-0.9.31.tar.gz]
+[2024-04-07 22:30:28] INFO root fetch - processPackages [imcsdk-ecoen66]: Remove: archive file [/home/abi/fetcher/tmp/imcsdk_ecoen66-0.9.32.tar.gz]
+[2024-04-07 22:30:28] INFO root fetch - main [MainThread]: End processing [imcsdk-ecoen66]: success
+[2024-04-07 22:30:28] INFO root fetch - main [MainThread]: Store serial: [22659121]
