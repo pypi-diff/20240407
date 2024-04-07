@@ -4159,3 +4159,61 @@
 [2024-04-07 05:47:45] INFO root fetch - processPackages [pyeventmanager]: Remove: archive file [/home/abi/fetcher/tmp/pyeventmanager-0.5.5.tar.gz]
 [2024-04-07 05:47:45] INFO root fetch - main [MainThread]: End processing [pyeventmanager]: success
 [2024-04-07 05:47:45] INFO root fetch - main [MainThread]: Store serial: [22653311]
+[2024-04-07 05:49:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653311]
+[2024-04-07 05:49:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 05:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycommons
+[2024-04-07 05:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytector
+[2024-04-07 05:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: negmas
+[2024-04-07 05:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alibabacloud-waf-openapi20211001-py2
+[2024-04-07 05:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alibabacloud-waf-openapi20211001
+[2024-04-07 05:49:54] INFO root fetch - processPackages [pytector]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-07 05:49:54] INFO root fetch - processPackages [pytector]: Downloading https://files.pythonhosted.org/packages/a4/8a/879d8b0e8871f6713d7487ff62049282e0d26eb733c58d79e02d15d4a16d/pytector-0.0.5.tar.gz
+[2024-04-07 05:49:54] INFO root fetch - processPackages [alibabacloud-waf-openapi20211001-py2]: New version: [3.3.0] Old Version: [3.2.0]
+[2024-04-07 05:49:54] INFO root fetch - processPackages [alibabacloud-waf-openapi20211001]: New version: [3.3.0] Old Version: [3.2.0]
+[2024-04-07 05:49:54] INFO root fetch - processPackages [pycommons]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-04-07 05:49:54] INFO root fetch - processPackages [negmas]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-04-07 05:49:54] WARNING root fetch - processPackages [pytector]: Timeout reached during download
+[2024-04-07 05:49:54] INFO root fetch - processPackages [pycommons]: Downloading https://files.pythonhosted.org/packages/f5/b7/e2307174b50d3416008197b30b2fd81919d123479629cd660c1128d5abec/pycommons-0.8.8.tar.gz
+[2024-04-07 05:49:54] INFO root fetch - processPackages [alibabacloud-waf-openapi20211001-py2]: Downloading https://files.pythonhosted.org/packages/35/a8/41bfbfda90b2cf259b0e7ffe2b921542dfc6a685574ce54707adb511dd4a/alibabacloud_waf-openapi20211001_py2-3.2.0.tar.gz
+[2024-04-07 05:49:54] INFO root fetch - processPackages [pytector]: Downloading https://files.pythonhosted.org/packages/4c/20/8d3a426c3b2e99e8f961908e3de74704b85c10afb974388298ce5615dae0/pytector-0.0.6.tar.gz
+[2024-04-07 05:49:54] INFO root fetch - processPackages [alibabacloud-waf-openapi20211001]: Downloading https://files.pythonhosted.org/packages/88/1a/b4356cdfe52fe93d6532d917473c5bfe79a506da07e2ddf6497ce5cf61e2/alibabacloud_waf-openapi20211001-3.2.0.tar.gz
+[2024-04-07 05:49:54] INFO root fetch - processPackages [negmas]: Downloading https://files.pythonhosted.org/packages/7e/53/7b09f55cab8ce7355078c43b5974e49669949f096cc7540e09b3c7ecb30c/negmas-0.9.7.tar.gz
+[2024-04-07 05:49:54] WARNING root fetch - processPackages [pycommons]: Timeout reached during download
+[2024-04-07 05:49:54] WARNING root fetch - processPackages [alibabacloud-waf-openapi20211001-py2]: Timeout reached during download
+[2024-04-07 05:49:54] WARNING root fetch - processPackages [pytector]: Timeout reached during download
+[2024-04-07 05:49:54] INFO root fetch - processPackages [pytector]: executing diffoscope
+[2024-04-07 05:49:54] INFO root fetch - processPackages [pytector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytector-0.0.5.tar.gz tmp/pytector-0.0.6.tar.gz --markdown 20240407/p/pytector/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-07 05:49:54] WARNING root fetch - processPackages [alibabacloud-waf-openapi20211001]: Timeout reached during download
+[2024-04-07 05:49:54] INFO root fetch - processPackages [pycommons]: Downloading https://files.pythonhosted.org/packages/b6/ca/acae5b6b302dfdf392c815106b020283d0238189cbe02716e4a0c042a8df/pycommons-0.8.9.tar.gz
+[2024-04-07 05:49:54] INFO root fetch - processPackages [alibabacloud-waf-openapi20211001-py2]: Downloading https://files.pythonhosted.org/packages/53/39/6f6e9517680817cd03d0162468844b530ddd19193e7bd4536808051a9d9a/alibabacloud_waf-openapi20211001_py2-3.3.0.tar.gz
+[2024-04-07 05:49:55] INFO root fetch - processPackages [alibabacloud-waf-openapi20211001]: Downloading https://files.pythonhosted.org/packages/f9/61/adaa19eef7a7b2abe8471ca566c89101e9c0eef29c04a41db7ab059e1c92/alibabacloud_waf-openapi20211001-3.3.0.tar.gz
+[2024-04-07 05:49:55] WARNING root fetch - processPackages [alibabacloud-waf-openapi20211001-py2]: Timeout reached during download
+[2024-04-07 05:49:55] INFO root fetch - processPackages [alibabacloud-waf-openapi20211001-py2]: executing diffoscope
+[2024-04-07 05:49:55] INFO root fetch - processPackages [alibabacloud-waf-openapi20211001-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_waf-openapi20211001_py2-3.2.0.tar.gz tmp/alibabacloud_waf-openapi20211001_py2-3.3.0.tar.gz --markdown 20240407/a/alibabacloud-waf-openapi20211001-py2/3.2.0-3.3.0/diff.md --exclude *.pyd
+[2024-04-07 05:49:55] WARNING root fetch - processPackages [alibabacloud-waf-openapi20211001]: Timeout reached during download
+[2024-04-07 05:49:55] INFO root fetch - processPackages [alibabacloud-waf-openapi20211001]: executing diffoscope
+[2024-04-07 05:49:55] INFO root fetch - processPackages [alibabacloud-waf-openapi20211001]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_waf-openapi20211001-3.2.0.tar.gz tmp/alibabacloud_waf-openapi20211001-3.3.0.tar.gz --markdown 20240407/a/alibabacloud-waf-openapi20211001/3.2.0-3.3.0/diff.md --exclude *.pyd
+[2024-04-07 05:49:55] WARNING root fetch - processPackages [pycommons]: Timeout reached during download
+[2024-04-07 05:49:55] INFO root fetch - processPackages [pycommons]: executing diffoscope
+[2024-04-07 05:49:55] INFO root fetch - processPackages [pycommons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycommons-0.8.8.tar.gz tmp/pycommons-0.8.9.tar.gz --markdown 20240407/p/pycommons/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2024-04-07 05:49:55] INFO root fetch - processPackages [pytector]: Remove: archive file [/home/abi/fetcher/tmp/pytector-0.0.5.tar.gz]
+[2024-04-07 05:49:55] INFO root fetch - processPackages [pytector]: Remove: archive file [/home/abi/fetcher/tmp/pytector-0.0.6.tar.gz]
+[2024-04-07 05:49:55] INFO root fetch - main [MainThread]: End processing [pytector]: success
+[2024-04-07 05:49:55] WARNING root fetch - processPackages [negmas]: Timeout reached during download
+[2024-04-07 05:49:55] INFO root fetch - processPackages [negmas]: Downloading https://files.pythonhosted.org/packages/b4/78/d40938b19d85dddea58e8fe11a4d16397d9662f8b9a737af3b43f0e76785/negmas-0.9.8.tar.gz
+[2024-04-07 05:49:55] INFO root fetch - processPackages [alibabacloud-waf-openapi20211001-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_waf-openapi20211001_py2-3.2.0.tar.gz]
+[2024-04-07 05:49:55] INFO root fetch - processPackages [alibabacloud-waf-openapi20211001-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_waf-openapi20211001_py2-3.3.0.tar.gz]
+[2024-04-07 05:49:55] INFO root fetch - main [MainThread]: End processing [alibabacloud-waf-openapi20211001-py2]: success
+[2024-04-07 05:49:55] WARNING root fetch - processPackages [negmas]: Timeout reached during download
+[2024-04-07 05:49:55] INFO root fetch - processPackages [negmas]: executing diffoscope
+[2024-04-07 05:49:55] INFO root fetch - processPackages [negmas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/negmas-0.9.7.tar.gz tmp/negmas-0.9.8.tar.gz --markdown 20240407/n/negmas/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2024-04-07 05:49:55] INFO root fetch - processPackages [pycommons]: Remove: archive file [/home/abi/fetcher/tmp/pycommons-0.8.8.tar.gz]
+[2024-04-07 05:49:55] INFO root fetch - processPackages [pycommons]: Remove: archive file [/home/abi/fetcher/tmp/pycommons-0.8.9.tar.gz]
+[2024-04-07 05:49:55] INFO root fetch - main [MainThread]: End processing [pycommons]: success
+[2024-04-07 05:49:56] INFO root fetch - processPackages [alibabacloud-waf-openapi20211001]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_waf-openapi20211001-3.2.0.tar.gz]
+[2024-04-07 05:49:56] INFO root fetch - processPackages [alibabacloud-waf-openapi20211001]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_waf-openapi20211001-3.3.0.tar.gz]
+[2024-04-07 05:49:56] INFO root fetch - main [MainThread]: End processing [alibabacloud-waf-openapi20211001]: success
+[2024-04-07 05:49:57] INFO root fetch - processPackages [negmas]: Remove: archive file [/home/abi/fetcher/tmp/negmas-0.9.7.tar.gz]
+[2024-04-07 05:49:57] INFO root fetch - processPackages [negmas]: Remove: archive file [/home/abi/fetcher/tmp/negmas-0.9.8.tar.gz]
+[2024-04-07 05:49:57] INFO root fetch - main [MainThread]: End processing [negmas]: success
+[2024-04-07 05:49:57] INFO root fetch - main [MainThread]: Store serial: [22653326]
