@@ -17699,3 +17699,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 20:23:40] INFO root fetch - processPackages [gammarer.aws-secure-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-log-bucket-1.5.4.tar.gz]
 [2024-04-07 20:23:40] INFO root fetch - main [MainThread]: End processing [gammarer.aws-secure-log-bucket]: success
 [2024-04-07 20:23:40] INFO root fetch - main [MainThread]: Store serial: [22658261]
+[2024-04-07 20:25:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658261]
+[2024-04-07 20:25:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 20:25:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xarg-python
+[2024-04-07 20:25:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beatrica-git
+[2024-04-07 20:25:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gammarer.aws-secure-cloudfront-origin-bucket
+[2024-04-07 20:25:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tinyfetch
+[2024-04-07 20:25:49] INFO root fetch - processPackages [tinyfetch]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 20:25:49] WARNING root fetch - processPackages [beatrica-git]: Skipping, unable to determine old version
+[2024-04-07 20:25:49] INFO root fetch - main [MainThread]: End processing [beatrica-git] error
+[2024-04-07 20:25:49] INFO root fetch - processPackages [xarg-python]: New version: [1.4.3] Old Version: [1.4.2]
+[2024-04-07 20:25:49] INFO root fetch - processPackages [gammarer.aws-secure-cloudfront-origin-bucket]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-04-07 20:25:50] INFO root fetch - processPackages [xarg-python]: Downloading https://files.pythonhosted.org/packages/cf/1e/73df3cfed573d668e402c7f3803dd453e8e69e7c08f30359ebec348d4d44/xarg-python-1.4.2.tar.gz
+[2024-04-07 20:25:50] INFO root fetch - processPackages [tinyfetch]: Downloading https://files.pythonhosted.org/packages/54/36/b78711afaaac44a1d2887c0037c056477f9d90323de1dd13ab51e2f8c18f/tinyfetch-0.0.2.tar.gz
+[2024-04-07 20:25:50] INFO root fetch - processPackages [gammarer.aws-secure-cloudfront-origin-bucket]: Downloading https://files.pythonhosted.org/packages/f9/af/bb62410a3bb9483e1ce68dec41cc95706f02a6f45757b74a3d274068a0ec/gammarer.aws-secure-cloudfront-origin-bucket-1.4.0.tar.gz
+[2024-04-07 20:25:50] WARNING root fetch - processPackages [xarg-python]: Timeout reached during download
+[2024-04-07 20:25:50] WARNING root fetch - processPackages [tinyfetch]: Timeout reached during download
+[2024-04-07 20:25:50] WARNING root fetch - processPackages [gammarer.aws-secure-cloudfront-origin-bucket]: Timeout reached during download
+[2024-04-07 20:25:50] INFO root fetch - processPackages [xarg-python]: Downloading https://files.pythonhosted.org/packages/06/22/e9e68724cbf647ef5b1b14c958ad31ba17be4dce6b17c7299ff9cf4381ac/xarg-python-1.4.3.tar.gz
+[2024-04-07 20:25:50] INFO root fetch - processPackages [tinyfetch]: Downloading https://files.pythonhosted.org/packages/51/4b/80dcb98ec36fb5a907b48170628d6eaa1f4bf346e5c97c4fcf51974007cf/tinyfetch-0.0.3.tar.gz
+[2024-04-07 20:25:50] INFO root fetch - processPackages [gammarer.aws-secure-cloudfront-origin-bucket]: Downloading https://files.pythonhosted.org/packages/7e/64/a6e1a94d22e6179db2d8b75ad7f3435c808dff4e75435655c6f58c51e01b/gammarer.aws-secure-cloudfront-origin-bucket-1.4.1.tar.gz
+[2024-04-07 20:25:50] WARNING root fetch - processPackages [xarg-python]: Timeout reached during download
+[2024-04-07 20:25:50] INFO root fetch - processPackages [xarg-python]: executing diffoscope
+[2024-04-07 20:25:50] INFO root fetch - processPackages [xarg-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xarg-python-1.4.2.tar.gz tmp/xarg-python-1.4.3.tar.gz --markdown 20240407/x/xarg-python/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2024-04-07 20:25:50] WARNING root fetch - processPackages [tinyfetch]: Timeout reached during download
+[2024-04-07 20:25:50] INFO root fetch - processPackages [tinyfetch]: executing diffoscope
+[2024-04-07 20:25:50] INFO root fetch - processPackages [tinyfetch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyfetch-0.0.2.tar.gz tmp/tinyfetch-0.0.3.tar.gz --markdown 20240407/t/tinyfetch/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 20:25:50] WARNING root fetch - processPackages [gammarer.aws-secure-cloudfront-origin-bucket]: Timeout reached during download
+[2024-04-07 20:25:50] INFO root fetch - processPackages [gammarer.aws-secure-cloudfront-origin-bucket]: executing diffoscope
+[2024-04-07 20:25:50] INFO root fetch - processPackages [gammarer.aws-secure-cloudfront-origin-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarer.aws-secure-cloudfront-origin-bucket-1.4.0.tar.gz tmp/gammarer.aws-secure-cloudfront-origin-bucket-1.4.1.tar.gz --markdown 20240407/g/gammarer.aws-secure-cloudfront-origin-bucket/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2024-04-07 20:25:51] INFO root fetch - processPackages [xarg-python]: Remove: archive file [/home/abi/fetcher/tmp/xarg-python-1.4.2.tar.gz]
+[2024-04-07 20:25:51] INFO root fetch - processPackages [xarg-python]: Remove: archive file [/home/abi/fetcher/tmp/xarg-python-1.4.3.tar.gz]
+[2024-04-07 20:25:51] INFO root fetch - main [MainThread]: End processing [xarg-python]: success
+[2024-04-07 20:25:51] INFO root fetch - processPackages [tinyfetch]: Remove: archive file [/home/abi/fetcher/tmp/tinyfetch-0.0.2.tar.gz]
+[2024-04-07 20:25:51] INFO root fetch - processPackages [tinyfetch]: Remove: archive file [/home/abi/fetcher/tmp/tinyfetch-0.0.3.tar.gz]
+[2024-04-07 20:25:51] INFO root fetch - main [MainThread]: End processing [tinyfetch]: success
+[2024-04-07 20:25:51] INFO root fetch - processPackages [gammarer.aws-secure-cloudfront-origin-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-cloudfront-origin-bucket-1.4.0.tar.gz]
+[2024-04-07 20:25:51] INFO root fetch - processPackages [gammarer.aws-secure-cloudfront-origin-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarer.aws-secure-cloudfront-origin-bucket-1.4.1.tar.gz]
+[2024-04-07 20:25:51] INFO root fetch - main [MainThread]: End processing [gammarer.aws-secure-cloudfront-origin-bucket]: success
+[2024-04-07 20:25:51] INFO root fetch - main [MainThread]: Store serial: [22658291]
