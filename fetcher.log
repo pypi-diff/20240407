@@ -18935,3 +18935,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 21:35:53] INFO root fetch - processPackages [imcsdk-ecoen66]: Remove: archive file [/home/abi/fetcher/tmp/imcsdk_ecoen66-0.9.29.tar.gz]
 [2024-04-07 21:35:53] INFO root fetch - main [MainThread]: End processing [imcsdk-ecoen66]: success
 [2024-04-07 21:35:53] INFO root fetch - main [MainThread]: Store serial: [22658707]
+[2024-04-07 21:37:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658707]
+[2024-04-07 21:38:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 21:38:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: packg
+[2024-04-07 21:38:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pu-utils
+[2024-04-07 21:38:03] INFO root fetch - processPackages [pu-utils]: New version: [0.0.8.dev2] Old Version: [0.0.8.dev1]
+[2024-04-07 21:38:03] INFO root fetch - processPackages [packg]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-07 21:38:03] INFO root fetch - processPackages [pu-utils]: Downloading https://files.pythonhosted.org/packages/5a/ff/0121de4c7554a97f4c73bf35ac49c41322efcdb8b69f7d112de48a4bb767/pu_utils-0.0.8.dev1-py3-none-any.whl
+[2024-04-07 21:38:03] INFO root fetch - processPackages [packg]: Downloading https://files.pythonhosted.org/packages/35/f5/de411f4b1201d757eb0aab94b26e1480689d8322ab6621ed887351575c73/packg-0.9.2.tar.gz
+[2024-04-07 21:38:04] WARNING root fetch - processPackages [pu-utils]: Timeout reached during download
+[2024-04-07 21:38:04] WARNING root fetch - processPackages [packg]: Timeout reached during download
+[2024-04-07 21:38:04] INFO root fetch - processPackages [pu-utils]: Downloading https://files.pythonhosted.org/packages/7d/12/b8f5c244402e005d39fd4f0a22c7f0b2a00c5448091c74fff8a798f05c08/pu_utils-0.0.8.dev2-py3-none-any.whl
+[2024-04-07 21:38:04] INFO root fetch - processPackages [packg]: Downloading https://files.pythonhosted.org/packages/9a/d2/c8c96c46c7352d8d450cd3603781f17a1c2fb55e67cb7758cfe016ed7bad/packg-0.9.3.tar.gz
+[2024-04-07 21:38:04] WARNING root fetch - processPackages [packg]: Timeout reached during download
+[2024-04-07 21:38:04] INFO root fetch - processPackages [packg]: executing diffoscope
+[2024-04-07 21:38:04] INFO root fetch - processPackages [packg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packg-0.9.2.tar.gz tmp/packg-0.9.3.tar.gz --markdown 20240407/p/packg/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2024-04-07 21:38:04] WARNING root fetch - processPackages [pu-utils]: Timeout reached during download
+[2024-04-07 21:38:04] INFO root fetch - processPackages [pu-utils]: executing diffoscope
+[2024-04-07 21:38:04] INFO root fetch - processPackages [pu-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pu_utils-0.0.8.dev1-py3-none-any.whl.zip tmp/pu_utils-0.0.8.dev2-py3-none-any.whl.zip --markdown 20240407/p/pu-utils/0.0.8.dev1-0.0.8.dev2/diff.md --exclude *.pyd
+[2024-04-07 21:38:05] INFO root fetch - processPackages [packg]: Remove: archive file [/home/abi/fetcher/tmp/packg-0.9.2.tar.gz]
+[2024-04-07 21:38:05] INFO root fetch - processPackages [packg]: Remove: archive file [/home/abi/fetcher/tmp/packg-0.9.3.tar.gz]
+[2024-04-07 21:38:05] INFO root fetch - main [MainThread]: End processing [packg]: success
+[2024-04-07 21:38:05] INFO root fetch - processPackages [pu-utils]: Remove: archive file [/home/abi/fetcher/tmp/pu_utils-0.0.8.dev1-py3-none-any.whl.zip]
+[2024-04-07 21:38:05] INFO root fetch - processPackages [pu-utils]: Remove: archive file [/home/abi/fetcher/tmp/pu_utils-0.0.8.dev2-py3-none-any.whl.zip]
+[2024-04-07 21:38:05] INFO root fetch - main [MainThread]: End processing [pu-utils]: success
+[2024-04-07 21:38:05] INFO root fetch - main [MainThread]: Store serial: [22658722]
