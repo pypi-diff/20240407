@@ -8895,3 +8895,9 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 11:21:19] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221130.tar.gz]
 [2024-04-07 11:21:19] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2024-04-07 11:21:19] INFO root fetch - main [MainThread]: Store serial: [22655009]
+[2024-04-07 11:23:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655009]
+[2024-04-07 11:23:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 11:23:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sns-package
+[2024-04-07 11:23:29] WARNING root fetch - processPackages [sns-package]: Skipping, unable to determine old version
+[2024-04-07 11:23:29] INFO root fetch - main [MainThread]: End processing [sns-package] error
+[2024-04-07 11:23:29] INFO root fetch - main [MainThread]: Store serial: [22655016]
