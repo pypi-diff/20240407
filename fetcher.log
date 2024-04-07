@@ -18427,3 +18427,61 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 21:09:38] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
 [2024-04-07 21:09:38] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
 [2024-04-07 21:09:38] INFO root fetch - main [MainThread]: Store serial: [22658543]
+[2024-04-07 21:11:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658543]
+[2024-04-07 21:11:47] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 21:11:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: afeng-py-tools
+[2024-04-07 21:11:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smaht-submitr
+[2024-04-07 21:11:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: whitebox-workflows
+[2024-04-07 21:11:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gramps-ql
+[2024-04-07 21:11:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vectara-cli
+[2024-04-07 21:11:47] INFO root fetch - processPackages [vectara-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 21:11:47] INFO root fetch - processPackages [smaht-submitr]: New version: [0.7.0.2b9] Old Version: [0.7.0.2b8]
+[2024-04-07 21:11:47] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 21:11:47] INFO root fetch - processPackages [vectara-cli]: Downloading https://files.pythonhosted.org/packages/2c/ee/38034782be8ce22c0047bcd128a8070a942598181089e251ad6a5806d92a/vectara-cli-0.1.8.tar.gz
+[2024-04-07 21:11:47] INFO root fetch - processPackages [whitebox-workflows]: New version: [1.2.6] Old Version: [1.2.5]
+[2024-04-07 21:11:47] INFO root fetch - processPackages [gramps-ql]: New version: [0.2.0] Old Version: [0.1]
+[2024-04-07 21:11:47] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-04-07 21:11:47] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/c3/e0/eb011d9ef5bb6951e9bf842595c319ef40b08fa54db7c49ae1e8dcf7278f/smaht_submitr-0.7.0.2b8.tar.gz
+[2024-04-07 21:11:47] WARNING root fetch - processPackages [vectara-cli]: Timeout reached during download
+[2024-04-07 21:11:47] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 21:11:47] WARNING root fetch - processPackages [afeng-py-tools]: Timeout reached during download
+[2024-04-07 21:11:47] INFO root fetch - processPackages [whitebox-workflows]: Downloading https://files.pythonhosted.org/packages/fb/f5/ad0728f656fd5ff3f98fd16970f9dbe1785183eb5cf27dbab159a9544665/whitebox_workflows-1.2.5-cp38-abi3-win_amd64.whl
+[2024-04-07 21:11:47] INFO root fetch - processPackages [gramps-ql]: Downloading https://files.pythonhosted.org/packages/91/7a/9e12af55ef2750a5502945ac15b74014aeae8e83fcc9b84ca00f9b3c4684/gramps-ql-0.1.tar.gz
+[2024-04-07 21:11:47] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-04-07 21:11:47] INFO root fetch - processPackages [vectara-cli]: Downloading https://files.pythonhosted.org/packages/0a/a8/ecbeeefe05fb43a1b2dd6785e1bb1218f907a8ff5b7fec7cb2f57c206166/vectara-cli-0.1.9.tar.gz
+[2024-04-07 21:11:47] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/d0/3b/b54a02aeb1b871e1c8c326b77f3d19f905f02cb25becf2a409d7d4b26d92/smaht_submitr-0.7.0.2b9.tar.gz
+[2024-04-07 21:11:47] WARNING root fetch - processPackages [gramps-ql]: Timeout reached during download
+[2024-04-07 21:11:47] WARNING root fetch - processPackages [vectara-cli]: Timeout reached during download
+[2024-04-07 21:11:47] INFO root fetch - processPackages [vectara-cli]: executing diffoscope
+[2024-04-07 21:11:47] INFO root fetch - processPackages [vectara-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vectara-cli-0.1.8.tar.gz tmp/vectara-cli-0.1.9.tar.gz --markdown 20240407/v/vectara-cli/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 21:11:47] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 21:11:47] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-07 21:11:47] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.7.0.2b8.tar.gz tmp/smaht_submitr-0.7.0.2b9.tar.gz --markdown 20240407/s/smaht-submitr/0.7.0.2b8-0.7.0.2b9/diff.md --exclude *.pyd
+[2024-04-07 21:11:47] WARNING root fetch - processPackages [afeng-py-tools]: Timeout reached during download
+[2024-04-07 21:11:47] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-04-07 21:11:47] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240407/a/afeng-py-tools/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 21:11:48] INFO root fetch - processPackages [gramps-ql]: Downloading https://files.pythonhosted.org/packages/4f/d9/9e17d75dab35a7a239e90b57257139743ad21e14b8d0dac833fb16bcfe5d/gramps-ql-0.2.0.tar.gz
+[2024-04-07 21:11:48] WARNING root fetch - processPackages [gramps-ql]: Timeout reached during download
+[2024-04-07 21:11:48] INFO root fetch - processPackages [gramps-ql]: executing diffoscope
+[2024-04-07 21:11:48] INFO root fetch - processPackages [gramps-ql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gramps-ql-0.1.tar.gz tmp/gramps-ql-0.2.0.tar.gz --markdown 20240407/g/gramps-ql/0.1-0.2.0/diff.md --exclude *.pyd
+[2024-04-07 21:11:48] WARNING root fetch - processPackages [whitebox-workflows]: Timeout reached during download
+[2024-04-07 21:11:48] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.2b8.tar.gz]
+[2024-04-07 21:11:48] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.2b9.tar.gz]
+[2024-04-07 21:11:48] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-07 21:11:48] INFO root fetch - processPackages [vectara-cli]: Remove: archive file [/home/abi/fetcher/tmp/vectara-cli-0.1.8.tar.gz]
+[2024-04-07 21:11:48] INFO root fetch - processPackages [vectara-cli]: Remove: archive file [/home/abi/fetcher/tmp/vectara-cli-0.1.9.tar.gz]
+[2024-04-07 21:11:48] INFO root fetch - main [MainThread]: End processing [vectara-cli]: success
+[2024-04-07 21:11:48] INFO root fetch - processPackages [whitebox-workflows]: Downloading https://files.pythonhosted.org/packages/29/d4/2cda51221f32006b026b9257984b07590df272d7d526632f430c6321ef61/whitebox_workflows-1.2.6-cp38-abi3-macosx_11_0_arm64.whl
+[2024-04-07 21:11:48] INFO root fetch - processPackages [gramps-ql]: Remove: archive file [/home/abi/fetcher/tmp/gramps-ql-0.1.tar.gz]
+[2024-04-07 21:11:48] INFO root fetch - processPackages [gramps-ql]: Remove: archive file [/home/abi/fetcher/tmp/gramps-ql-0.2.0.tar.gz]
+[2024-04-07 21:11:48] INFO root fetch - main [MainThread]: End processing [gramps-ql]: success
+[2024-04-07 21:11:49] WARNING root fetch - processPackages [whitebox-workflows]: Timeout reached during download
+[2024-04-07 21:11:49] INFO root fetch - processPackages [whitebox-workflows]: executing diffoscope
+[2024-04-07 21:11:49] INFO root fetch - processPackages [whitebox-workflows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whitebox_workflows-1.2.5-cp38-abi3-win_amd64.whl.zip tmp/whitebox_workflows-1.2.6-cp38-abi3-macosx_11_0_arm64.whl.zip --markdown 20240407/w/whitebox-workflows/1.2.5-1.2.6/diff.md --exclude *.pyd
+[2024-04-07 21:11:49] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-04-07 21:11:49] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-04-07 21:11:49] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-04-07 21:11:50] INFO root fetch - processPackages [whitebox-workflows]: Remove: archive file [/home/abi/fetcher/tmp/whitebox_workflows-1.2.5-cp38-abi3-win_amd64.whl.zip]
+[2024-04-07 21:11:50] INFO root fetch - processPackages [whitebox-workflows]: Remove: archive file [/home/abi/fetcher/tmp/whitebox_workflows-1.2.6-cp38-abi3-macosx_11_0_arm64.whl.zip]
+[2024-04-07 21:11:50] INFO root fetch - main [MainThread]: End processing [whitebox-workflows]: success
+[2024-04-07 21:11:50] INFO root fetch - main [MainThread]: Store serial: [22658557]
