@@ -3598,3 +3598,28 @@
 [2024-04-07 05:00:07] INFO root fetch - processPackages [nasdaq-stock]: Remove: archive file [/home/abi/fetcher/tmp/nasdaq_stock-0.0.5.tar.gz]
 [2024-04-07 05:00:07] INFO root fetch - main [MainThread]: End processing [nasdaq-stock]: success
 [2024-04-07 05:00:07] INFO root fetch - main [MainThread]: Store serial: [22653097]
+[2024-04-07 05:02:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653097]
+[2024-04-07 05:02:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 05:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastcrud
+[2024-04-07 05:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zsx-pack
+[2024-04-07 05:02:16] INFO root fetch - processPackages [zsx-pack]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 05:02:16] INFO root fetch - processPackages [fastcrud]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-07 05:02:16] INFO root fetch - processPackages [zsx-pack]: Downloading https://files.pythonhosted.org/packages/d1/f8/8600874df9dcabf6fbee90e694639851e844677bc08ace26dc1bf42170e0/zsx_pack-0.0.2.tar.gz
+[2024-04-07 05:02:16] WARNING root fetch - processPackages [zsx-pack]: Timeout reached during download
+[2024-04-07 05:02:17] INFO root fetch - processPackages [fastcrud]: Downloading https://files.pythonhosted.org/packages/65/03/d3b58e3d09797960d244fdabca85b359227ca6d0d05233e56f8dbbfe3da9/fastcrud-0.9.0.tar.gz
+[2024-04-07 05:02:17] WARNING root fetch - processPackages [fastcrud]: Timeout reached during download
+[2024-04-07 05:02:17] INFO root fetch - processPackages [zsx-pack]: Downloading https://files.pythonhosted.org/packages/e3/70/3ae12d0c0d4c7fd15dd287353789733dc2c9807f65cc6c8cdc75a6d8355a/zsx_pack-0.0.3.tar.gz
+[2024-04-07 05:02:17] WARNING root fetch - processPackages [zsx-pack]: Timeout reached during download
+[2024-04-07 05:02:17] INFO root fetch - processPackages [zsx-pack]: executing diffoscope
+[2024-04-07 05:02:17] INFO root fetch - processPackages [zsx-pack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zsx_pack-0.0.2.tar.gz tmp/zsx_pack-0.0.3.tar.gz --markdown 20240407/z/zsx-pack/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 05:02:17] INFO root fetch - processPackages [fastcrud]: Downloading https://files.pythonhosted.org/packages/80/99/b99c854973c7d58e5e1d5cd75f589a743aba43155a64950e3f4812a61db8/fastcrud-0.9.1.tar.gz
+[2024-04-07 05:02:17] WARNING root fetch - processPackages [fastcrud]: Timeout reached during download
+[2024-04-07 05:02:17] INFO root fetch - processPackages [fastcrud]: executing diffoscope
+[2024-04-07 05:02:17] INFO root fetch - processPackages [fastcrud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastcrud-0.9.0.tar.gz tmp/fastcrud-0.9.1.tar.gz --markdown 20240407/f/fastcrud/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-07 05:02:17] INFO root fetch - processPackages [zsx-pack]: Remove: archive file [/home/abi/fetcher/tmp/zsx_pack-0.0.2.tar.gz]
+[2024-04-07 05:02:17] INFO root fetch - processPackages [zsx-pack]: Remove: archive file [/home/abi/fetcher/tmp/zsx_pack-0.0.3.tar.gz]
+[2024-04-07 05:02:17] INFO root fetch - main [MainThread]: End processing [zsx-pack]: success
+[2024-04-07 05:02:18] INFO root fetch - processPackages [fastcrud]: Remove: archive file [/home/abi/fetcher/tmp/fastcrud-0.9.0.tar.gz]
+[2024-04-07 05:02:18] INFO root fetch - processPackages [fastcrud]: Remove: archive file [/home/abi/fetcher/tmp/fastcrud-0.9.1.tar.gz]
+[2024-04-07 05:02:18] INFO root fetch - main [MainThread]: End processing [fastcrud]: success
+[2024-04-07 05:02:18] INFO root fetch - main [MainThread]: Store serial: [22653103]
