@@ -5188,3 +5188,28 @@
 [2024-04-07 07:22:52] INFO root fetch - processPackages [pylbm]: Remove: archive file [/home/abi/fetcher/tmp/pylbm-0.9.0.tar.gz]
 [2024-04-07 07:22:52] INFO root fetch - main [MainThread]: End processing [pylbm]: success
 [2024-04-07 07:22:52] INFO root fetch - main [MainThread]: Store serial: [22653586]
+[2024-04-07 07:24:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653586]
+[2024-04-07 07:25:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 07:25:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ftb-snbt-lib
+[2024-04-07 07:25:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vnpy-ib
+[2024-04-07 07:25:01] INFO root fetch - processPackages [ftb-snbt-lib]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-07 07:25:01] INFO root fetch - processPackages [vnpy-ib]: New version: [9.81.1.6] Old Version: [9.81.1.5]
+[2024-04-07 07:25:01] INFO root fetch - processPackages [ftb-snbt-lib]: Downloading https://files.pythonhosted.org/packages/46/88/d7a0d2f7653500fc761fc483485021f7c73649c2e94e923880e4ee2750b8/ftb-snbt-lib-0.2.1.tar.gz
+[2024-04-07 07:25:01] INFO root fetch - processPackages [vnpy-ib]: Downloading https://files.pythonhosted.org/packages/a2/eb/7eb3d908e654b2c825de87fbfa5b7271da5f1c9252ce385258e576489690/vnpy_ib-9.81.1.5.tar.gz
+[2024-04-07 07:25:01] WARNING root fetch - processPackages [ftb-snbt-lib]: Timeout reached during download
+[2024-04-07 07:25:01] WARNING root fetch - processPackages [vnpy-ib]: Timeout reached during download
+[2024-04-07 07:25:01] INFO root fetch - processPackages [ftb-snbt-lib]: Downloading https://files.pythonhosted.org/packages/ae/04/03979dc5ad0b5c2c08c8e2ba9485aa009379935149f7f12c197abb5898de/ftb-snbt-lib-0.2.2.tar.gz
+[2024-04-07 07:25:01] INFO root fetch - processPackages [vnpy-ib]: Downloading https://files.pythonhosted.org/packages/94/2c/d1f12c0239b32eb8861e7c3cdcee69b497a0c730be455da9c27ca11b88e2/vnpy_ib-9.81.1.6.tar.gz
+[2024-04-07 07:25:01] WARNING root fetch - processPackages [ftb-snbt-lib]: Timeout reached during download
+[2024-04-07 07:25:01] INFO root fetch - processPackages [ftb-snbt-lib]: executing diffoscope
+[2024-04-07 07:25:01] INFO root fetch - processPackages [ftb-snbt-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ftb-snbt-lib-0.2.1.tar.gz tmp/ftb-snbt-lib-0.2.2.tar.gz --markdown 20240407/f/ftb-snbt-lib/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2024-04-07 07:25:02] WARNING root fetch - processPackages [vnpy-ib]: Timeout reached during download
+[2024-04-07 07:25:02] INFO root fetch - processPackages [vnpy-ib]: executing diffoscope
+[2024-04-07 07:25:02] INFO root fetch - processPackages [vnpy-ib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnpy_ib-9.81.1.5.tar.gz tmp/vnpy_ib-9.81.1.6.tar.gz --markdown 20240407/v/vnpy-ib/9.81.1.5-9.81.1.6/diff.md --exclude *.pyd
+[2024-04-07 07:25:02] INFO root fetch - processPackages [ftb-snbt-lib]: Remove: archive file [/home/abi/fetcher/tmp/ftb-snbt-lib-0.2.1.tar.gz]
+[2024-04-07 07:25:02] INFO root fetch - processPackages [ftb-snbt-lib]: Remove: archive file [/home/abi/fetcher/tmp/ftb-snbt-lib-0.2.2.tar.gz]
+[2024-04-07 07:25:02] INFO root fetch - main [MainThread]: End processing [ftb-snbt-lib]: success
+[2024-04-07 07:25:02] INFO root fetch - processPackages [vnpy-ib]: Remove: archive file [/home/abi/fetcher/tmp/vnpy_ib-9.81.1.5.tar.gz]
+[2024-04-07 07:25:02] INFO root fetch - processPackages [vnpy-ib]: Remove: archive file [/home/abi/fetcher/tmp/vnpy_ib-9.81.1.6.tar.gz]
+[2024-04-07 07:25:02] INFO root fetch - main [MainThread]: End processing [vnpy-ib]: success
+[2024-04-07 07:25:02] INFO root fetch - main [MainThread]: Store serial: [22653592]
