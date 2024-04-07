@@ -16886,3 +16886,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:28:55] INFO root fetch - processPackages [dcm-classifier]: Remove: archive file [/home/abi/fetcher/tmp/dcm_classifier-0.7.0rc6.tar.gz]
 [2024-04-07 19:28:55] INFO root fetch - main [MainThread]: End processing [dcm-classifier]: success
 [2024-04-07 19:28:55] INFO root fetch - main [MainThread]: Store serial: [22657956]
+[2024-04-07 19:30:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657956]
+[2024-04-07 19:31:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 19:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: responses-validator
+[2024-04-07 19:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: easy-utils-dev
+[2024-04-07 19:31:04] INFO root fetch - processPackages [easy-utils-dev]: New version: [2.8.9] Old Version: [2.8.8]
+[2024-04-07 19:31:04] INFO root fetch - processPackages [easy-utils-dev]: Downloading https://files.pythonhosted.org/packages/d0/93/7d3610b6f67084ad67ecbd895c5e70590d1edff9babbc72a2d7802d125ad/easy_utils_dev-2.8.8.tar.gz
+[2024-04-07 19:31:04] INFO root fetch - processPackages [responses-validator]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-07 19:31:04] WARNING root fetch - processPackages [easy-utils-dev]: Timeout reached during download
+[2024-04-07 19:31:04] INFO root fetch - processPackages [responses-validator]: Downloading https://files.pythonhosted.org/packages/f9/52/dbfe6b3528f5e756cf71ab493aed77fff01065061562f7765c9b4aca24d8/responses_validator-0.1.0-cp312-cp312-win_amd64.whl
+[2024-04-07 19:31:04] INFO root fetch - processPackages [easy-utils-dev]: Downloading https://files.pythonhosted.org/packages/cb/9e/733069bda720d8bb6841ec493e820c3c09b9c4914d51ce9ac1c70aa88fe9/easy_utils_dev-2.8.9.tar.gz
+[2024-04-07 19:31:04] WARNING root fetch - processPackages [responses-validator]: Timeout reached during download
+[2024-04-07 19:31:04] WARNING root fetch - processPackages [easy-utils-dev]: Timeout reached during download
+[2024-04-07 19:31:04] INFO root fetch - processPackages [easy-utils-dev]: executing diffoscope
+[2024-04-07 19:31:04] INFO root fetch - processPackages [easy-utils-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_utils_dev-2.8.8.tar.gz tmp/easy_utils_dev-2.8.9.tar.gz --markdown 20240407/e/easy-utils-dev/2.8.8-2.8.9/diff.md --exclude *.pyd
+[2024-04-07 19:31:04] INFO root fetch - processPackages [responses-validator]: Downloading https://files.pythonhosted.org/packages/77/6a/7028532eb6bc66a20ecb91be18cdfa259f675d3710de5de52862c7aa8edb/responses_validator-0.1.1-cp312-cp312-win_amd64.whl
+[2024-04-07 19:31:05] WARNING root fetch - processPackages [responses-validator]: Timeout reached during download
+[2024-04-07 19:31:05] INFO root fetch - processPackages [responses-validator]: executing diffoscope
+[2024-04-07 19:31:05] INFO root fetch - processPackages [responses-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/responses_validator-0.1.0-cp312-cp312-win_amd64.whl.zip tmp/responses_validator-0.1.1-cp312-cp312-win_amd64.whl.zip --markdown 20240407/r/responses-validator/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 19:31:05] INFO root fetch - processPackages [easy-utils-dev]: Remove: archive file [/home/abi/fetcher/tmp/easy_utils_dev-2.8.8.tar.gz]
+[2024-04-07 19:31:05] INFO root fetch - processPackages [easy-utils-dev]: Remove: archive file [/home/abi/fetcher/tmp/easy_utils_dev-2.8.9.tar.gz]
+[2024-04-07 19:31:05] INFO root fetch - main [MainThread]: End processing [easy-utils-dev]: success
+[2024-04-07 19:31:05] INFO root fetch - processPackages [responses-validator]: Remove: archive file [/home/abi/fetcher/tmp/responses_validator-0.1.0-cp312-cp312-win_amd64.whl.zip]
+[2024-04-07 19:31:05] INFO root fetch - processPackages [responses-validator]: Remove: archive file [/home/abi/fetcher/tmp/responses_validator-0.1.1-cp312-cp312-win_amd64.whl.zip]
+[2024-04-07 19:31:05] INFO root fetch - main [MainThread]: End processing [responses-validator]: success
+[2024-04-07 19:31:05] INFO root fetch - main [MainThread]: Store serial: [22657968]
