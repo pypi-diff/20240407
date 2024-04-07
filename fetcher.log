@@ -6967,3 +6967,41 @@
 [2024-04-07 09:06:25] INFO root fetch - processPackages [n97fit]: Remove: archive file [/home/abi/fetcher/tmp/n97fit-1.0.2.tar.gz]
 [2024-04-07 09:06:25] INFO root fetch - main [MainThread]: End processing [n97fit]: success
 [2024-04-07 09:06:25] INFO root fetch - main [MainThread]: Store serial: [22654245]
+[2024-04-07 09:08:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654245]
+[2024-04-07 09:08:33] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 09:10:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654245]
+[2024-04-07 09:10:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 09:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-hub-nightly
+[2024-04-07 09:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yowasp-wavedrom
+[2024-04-07 09:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lifx-photons-interactor
+[2024-04-07 09:10:39] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2024-04-07 09:10:39] INFO root fetch - processPackages [yowasp-wavedrom]: New version: [3.5.0.6] Old Version: [3.5.0.5]
+[2024-04-07 09:10:39] INFO root fetch - processPackages [lifx-photons-interactor]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-07 09:10:39] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/e8/6b/02811fcd79aec590e7355647130c822f1bd53092a205ce986e6df7364f52/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl
+[2024-04-07 09:10:39] WARNING root fetch - processPackages [tf-hub-nightly]: Timeout reached during download
+[2024-04-07 09:10:39] INFO root fetch - processPackages [yowasp-wavedrom]: Downloading https://files.pythonhosted.org/packages/ef/b2/f2e6cc60b4e3c7aa8d60616ac23ba5beaa23311f9e9441f0ecdddcb97d5c/yowasp_wavedrom-3.5.0.5-py3-none-any.whl
+[2024-04-07 09:10:39] INFO root fetch - processPackages [lifx-photons-interactor]: Downloading https://files.pythonhosted.org/packages/63/c1/044584c09611d5449e82fa5f912b14d22b742e12dd911816014a34ba5f71/lifx-photons-interactor-0.9.0.tar.gz
+[2024-04-07 09:10:39] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/d1/9a/6b02d0906847e11386093420119d147f7306d7a9cad79e8e575a9d29ae76/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl
+[2024-04-07 09:10:39] WARNING root fetch - processPackages [tf-hub-nightly]: Timeout reached during download
+[2024-04-07 09:10:39] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2024-04-07 09:10:39] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20240407/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2024-04-07 09:10:39] WARNING root fetch - processPackages [yowasp-wavedrom]: Timeout reached during download
+[2024-04-07 09:10:40] INFO root fetch - processPackages [yowasp-wavedrom]: Downloading https://files.pythonhosted.org/packages/c4/8d/e2d8b8e47d3860d21e1714c647cc21dcad02a38a9d14cae30374ee1dbf64/yowasp_wavedrom-3.5.0.6-py3-none-any.whl
+[2024-04-07 09:10:40] WARNING root fetch - processPackages [yowasp-wavedrom]: Timeout reached during download
+[2024-04-07 09:10:40] INFO root fetch - processPackages [yowasp-wavedrom]: executing diffoscope
+[2024-04-07 09:10:40] INFO root fetch - processPackages [yowasp-wavedrom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yowasp_wavedrom-3.5.0.5-py3-none-any.whl.zip tmp/yowasp_wavedrom-3.5.0.6-py3-none-any.whl.zip --markdown 20240407/y/yowasp-wavedrom/3.5.0.5-3.5.0.6/diff.md --exclude *.pyd
+[2024-04-07 09:10:40] WARNING root fetch - processPackages [lifx-photons-interactor]: Timeout reached during download
+[2024-04-07 09:10:40] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip]
+[2024-04-07 09:10:40] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
+[2024-04-07 09:10:40] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2024-04-07 09:10:40] INFO root fetch - processPackages [lifx-photons-interactor]: Downloading https://files.pythonhosted.org/packages/0d/10/6cc771f1ffa15a8bcf24086b17209385736e0dac82a0273761c062637ba5/lifx-photons-interactor-0.9.1.tar.gz
+[2024-04-07 09:10:40] INFO root fetch - processPackages [yowasp-wavedrom]: Remove: archive file [/home/abi/fetcher/tmp/yowasp_wavedrom-3.5.0.5-py3-none-any.whl.zip]
+[2024-04-07 09:10:40] INFO root fetch - processPackages [yowasp-wavedrom]: Remove: archive file [/home/abi/fetcher/tmp/yowasp_wavedrom-3.5.0.6-py3-none-any.whl.zip]
+[2024-04-07 09:10:40] INFO root fetch - main [MainThread]: End processing [yowasp-wavedrom]: success
+[2024-04-07 09:10:40] WARNING root fetch - processPackages [lifx-photons-interactor]: Timeout reached during download
+[2024-04-07 09:10:40] INFO root fetch - processPackages [lifx-photons-interactor]: executing diffoscope
+[2024-04-07 09:10:40] INFO root fetch - processPackages [lifx-photons-interactor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifx-photons-interactor-0.9.0.tar.gz tmp/lifx-photons-interactor-0.9.1.tar.gz --markdown 20240407/l/lifx-photons-interactor/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-07 09:10:41] INFO root fetch - processPackages [lifx-photons-interactor]: Remove: archive file [/home/abi/fetcher/tmp/lifx-photons-interactor-0.9.0.tar.gz]
+[2024-04-07 09:10:41] INFO root fetch - processPackages [lifx-photons-interactor]: Remove: archive file [/home/abi/fetcher/tmp/lifx-photons-interactor-0.9.1.tar.gz]
+[2024-04-07 09:10:41] INFO root fetch - main [MainThread]: End processing [lifx-photons-interactor]: success
+[2024-04-07 09:10:41] INFO root fetch - main [MainThread]: Store serial: [22654255]
