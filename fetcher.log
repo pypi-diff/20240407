@@ -15345,3 +15345,56 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:56:55] INFO root fetch - processPackages [duckduckgo-search]: Remove: archive file [/home/abi/fetcher/tmp/duckduckgo_search-5.3.0b4.tar.gz]
 [2024-04-07 17:56:55] INFO root fetch - main [MainThread]: End processing [duckduckgo-search]: success
 [2024-04-07 17:56:55] INFO root fetch - main [MainThread]: Store serial: [22657390]
+[2024-04-07 17:58:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657390]
+[2024-04-07 17:59:04] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 17:59:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ruleopt
+[2024-04-07 17:59:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scanreq
+[2024-04-07 17:59:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: multigit-lib
+[2024-04-07 17:59:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nexus-cat
+[2024-04-07 17:59:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: easydebugger
+[2024-04-07 17:59:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: oru2xds
+[2024-04-07 17:59:04] WARNING root fetch - processPackages [easydebugger]: Skipping, unable to determine old version
+[2024-04-07 17:59:04] INFO root fetch - main [MainThread]: End processing [easydebugger] error
+[2024-04-07 17:59:04] INFO root fetch - processPackages [oru2xds]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-07 17:59:04] INFO root fetch - processPackages [multigit-lib]: New version: [0.0.1.post1] Old Version: [0.0.1]
+[2024-04-07 17:59:04] WARNING root fetch - processPackages [nexus-cat]: Skipping, unable to determine old version
+[2024-04-07 17:59:04] INFO root fetch - main [MainThread]: End processing [nexus-cat] error
+[2024-04-07 17:59:04] INFO root fetch - processPackages [scanreq]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-07 17:59:04] INFO root fetch - processPackages [oru2xds]: Downloading https://files.pythonhosted.org/packages/30/84/c1d703dc028c105d23e8bd6025d8a21bea79336316fed5e772284e51fac8/oru2xds-2.0.8.tar.gz
+[2024-04-07 17:59:04] INFO root fetch - processPackages [ruleopt]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-07 17:59:04] INFO root fetch - processPackages [multigit-lib]: Downloading https://files.pythonhosted.org/packages/90/1a/a09efb630a18bb061db2188826e98f785102bcc638dfee551660c1ef70bf/multigit_lib-0.0.1-py3-none-any.whl
+[2024-04-07 17:59:04] WARNING root fetch - processPackages [oru2xds]: Timeout reached during download
+[2024-04-07 17:59:04] INFO root fetch - processPackages [scanreq]: Downloading https://files.pythonhosted.org/packages/d7/31/2969dc47df1dc93a66d986411d9ef8437a1223749bf23b196b7733bcbf6c/scanreq-0.0.7.tar.gz
+[2024-04-07 17:59:04] WARNING root fetch - processPackages [multigit-lib]: Timeout reached during download
+[2024-04-07 17:59:04] INFO root fetch - processPackages [ruleopt]: Downloading https://files.pythonhosted.org/packages/02/ea/1967bcfd8d76129d1ab3d546d7fd70cfbad0887e3654e0dec9ce3cd3330c/ruleopt-0.1.4-cp39-cp39-win_amd64.whl
+[2024-04-07 17:59:04] INFO root fetch - processPackages [oru2xds]: Downloading https://files.pythonhosted.org/packages/2b/b6/fd060e2ee4a6f2bd68e4d1be3622482196f992387c487cf50fe6d3315563/oru2xds-2.0.9.tar.gz
+[2024-04-07 17:59:04] INFO root fetch - processPackages [multigit-lib]: Downloading https://files.pythonhosted.org/packages/3d/08/2850de30c6c6a9bcaa24f7e72f5bcd42fbe271c091dae9b102386488a1fe/multigit_lib-0.0.1.post1-py3-none-any.whl
+[2024-04-07 17:59:04] WARNING root fetch - processPackages [ruleopt]: Timeout reached during download
+[2024-04-07 17:59:04] WARNING root fetch - processPackages [scanreq]: Timeout reached during download
+[2024-04-07 17:59:04] WARNING root fetch - processPackages [oru2xds]: Timeout reached during download
+[2024-04-07 17:59:04] INFO root fetch - processPackages [oru2xds]: executing diffoscope
+[2024-04-07 17:59:04] INFO root fetch - processPackages [oru2xds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oru2xds-2.0.8.tar.gz tmp/oru2xds-2.0.9.tar.gz --markdown 20240407/o/oru2xds/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2024-04-07 17:59:04] WARNING root fetch - processPackages [multigit-lib]: Timeout reached during download
+[2024-04-07 17:59:04] INFO root fetch - processPackages [multigit-lib]: executing diffoscope
+[2024-04-07 17:59:04] INFO root fetch - processPackages [multigit-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multigit_lib-0.0.1-py3-none-any.whl.zip tmp/multigit_lib-0.0.1.post1-py3-none-any.whl.zip --markdown 20240407/m/multigit-lib/0.0.1-0.0.1.post1/diff.md --exclude *.pyd
+[2024-04-07 17:59:05] INFO root fetch - processPackages [ruleopt]: Downloading https://files.pythonhosted.org/packages/d6/e5/8c2518933018fd4903351c8ab1c5998471b5594602b131faa8aa591780a7/ruleopt-0.1.5-cp39-cp39-macosx_11_0_arm64.whl
+[2024-04-07 17:59:05] INFO root fetch - processPackages [scanreq]: Downloading https://files.pythonhosted.org/packages/3f/9f/a2fdc2662459c74b3814059127b53fc3d328dcce834027a1c1189a3dffe5/scanreq-0.0.8.tar.gz
+[2024-04-07 17:59:05] WARNING root fetch - processPackages [scanreq]: Timeout reached during download
+[2024-04-07 17:59:05] INFO root fetch - processPackages [scanreq]: executing diffoscope
+[2024-04-07 17:59:05] INFO root fetch - processPackages [scanreq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scanreq-0.0.7.tar.gz tmp/scanreq-0.0.8.tar.gz --markdown 20240407/s/scanreq/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-07 17:59:05] WARNING root fetch - processPackages [ruleopt]: Timeout reached during download
+[2024-04-07 17:59:05] INFO root fetch - processPackages [ruleopt]: executing diffoscope
+[2024-04-07 17:59:05] INFO root fetch - processPackages [ruleopt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ruleopt-0.1.4-cp39-cp39-win_amd64.whl.zip tmp/ruleopt-0.1.5-cp39-cp39-macosx_11_0_arm64.whl.zip --markdown 20240407/r/ruleopt/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2024-04-07 17:59:05] INFO root fetch - processPackages [oru2xds]: Remove: archive file [/home/abi/fetcher/tmp/oru2xds-2.0.8.tar.gz]
+[2024-04-07 17:59:05] INFO root fetch - processPackages [oru2xds]: Remove: archive file [/home/abi/fetcher/tmp/oru2xds-2.0.9.tar.gz]
+[2024-04-07 17:59:05] INFO root fetch - main [MainThread]: End processing [oru2xds]: success
+[2024-04-07 17:59:05] INFO root fetch - processPackages [multigit-lib]: Remove: archive file [/home/abi/fetcher/tmp/multigit_lib-0.0.1-py3-none-any.whl.zip]
+[2024-04-07 17:59:05] INFO root fetch - processPackages [multigit-lib]: Remove: archive file [/home/abi/fetcher/tmp/multigit_lib-0.0.1.post1-py3-none-any.whl.zip]
+[2024-04-07 17:59:05] INFO root fetch - main [MainThread]: End processing [multigit-lib]: success
+[2024-04-07 17:59:05] INFO root fetch - processPackages [scanreq]: Remove: archive file [/home/abi/fetcher/tmp/scanreq-0.0.7.tar.gz]
+[2024-04-07 17:59:05] INFO root fetch - processPackages [scanreq]: Remove: archive file [/home/abi/fetcher/tmp/scanreq-0.0.8.tar.gz]
+[2024-04-07 17:59:05] INFO root fetch - main [MainThread]: End processing [scanreq]: success
+[2024-04-07 17:59:06] INFO root fetch - processPackages [ruleopt]: Remove: archive file [/home/abi/fetcher/tmp/ruleopt-0.1.4-cp39-cp39-win_amd64.whl.zip]
+[2024-04-07 17:59:06] INFO root fetch - processPackages [ruleopt]: Remove: archive file [/home/abi/fetcher/tmp/ruleopt-0.1.5-cp39-cp39-macosx_11_0_arm64.whl.zip]
+[2024-04-07 17:59:06] INFO root fetch - main [MainThread]: End processing [ruleopt]: success
+[2024-04-07 17:59:06] INFO root fetch - main [MainThread]: Store serial: [22657418]
