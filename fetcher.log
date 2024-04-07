@@ -6336,3 +6336,22 @@
 [2024-04-07 08:26:56] INFO root fetch - processPackages [message-local]: Remove: archive file [/home/abi/fetcher/tmp/message-local-0.0.99.tar.gz]
 [2024-04-07 08:26:56] INFO root fetch - main [MainThread]: End processing [message-local]: success
 [2024-04-07 08:26:56] INFO root fetch - main [MainThread]: Store serial: [22653997]
+[2024-04-07 08:29:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653997]
+[2024-04-07 08:29:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 08:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hikyuu
+[2024-04-07 08:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addons-oca-stock-logistics-barcode
+[2024-04-07 08:29:05] INFO root fetch - processPackages [hikyuu]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-07 08:29:05] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: New version: [16.0.20240325.0] Old Version: [16.0.20231220.0]
+[2024-04-07 08:29:05] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: Downloading https://files.pythonhosted.org/packages/51/96/b7d8ab5becf2f710faf6a6791a7ccd0f1c6fd3e5695ca5517b37a2a215d1/odoo_addons_oca_stock_logistics_barcode-16.0.20231220.0-py3-none-any.whl
+[2024-04-07 08:29:05] INFO root fetch - processPackages [hikyuu]: Downloading https://files.pythonhosted.org/packages/9e/79/f2dc7a15d5b763c59a7b378f6fcd294cc64b5cfdc3dfdfb7637408a39da9/hikyuu-2.0.0-cp39-none-win_amd64.whl
+[2024-04-07 08:29:05] WARNING root fetch - processPackages [hikyuu]: Skipping package: exceeds size limit 15566258>=10485760
+[2024-04-07 08:29:05] INFO root fetch - main [MainThread]: End processing [hikyuu] error
+[2024-04-07 08:29:05] WARNING root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: Timeout reached during download
+[2024-04-07 08:29:05] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: Downloading https://files.pythonhosted.org/packages/34/96/18982f1c9fd8124412f81320f0a7a89a3eff7cc81f3a6aef60187cc8c831/odoo_addons_oca_stock_logistics_barcode-16.0.20240325.0-py3-none-any.whl
+[2024-04-07 08:29:05] WARNING root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: Timeout reached during download
+[2024-04-07 08:29:05] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: executing diffoscope
+[2024-04-07 08:29:05] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_stock_logistics_barcode-16.0.20231220.0-py3-none-any.whl.zip tmp/odoo_addons_oca_stock_logistics_barcode-16.0.20240325.0-py3-none-any.whl.zip --markdown 20240407/o/odoo-addons-oca-stock-logistics-barcode/16.0.20231220.0-16.0.20240325.0/diff.md --exclude *.pyd
+[2024-04-07 08:29:06] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_stock_logistics_barcode-16.0.20231220.0-py3-none-any.whl.zip]
+[2024-04-07 08:29:06] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_stock_logistics_barcode-16.0.20240325.0-py3-none-any.whl.zip]
+[2024-04-07 08:29:06] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-stock-logistics-barcode]: success
+[2024-04-07 08:29:06] INFO root fetch - main [MainThread]: Store serial: [22654010]
