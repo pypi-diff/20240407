@@ -7247,3 +7247,17 @@
 [2024-04-07 09:28:08] INFO root fetch - processPackages [minecraft-python]: Remove: archive file [/home/abi/fetcher/tmp/minecraft-python-161348.tar.gz]
 [2024-04-07 09:28:08] INFO root fetch - main [MainThread]: End processing [minecraft-python]: success
 [2024-04-07 09:28:08] INFO root fetch - main [MainThread]: Store serial: [22654330]
+[2024-04-07 09:30:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654330]
+[2024-04-07 09:30:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 09:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blue-krill
+[2024-04-07 09:30:17] INFO root fetch - processPackages [blue-krill]: New version: [2.0.2] Old Version: [2.0.0]
+[2024-04-07 09:30:18] INFO root fetch - processPackages [blue-krill]: Downloading https://files.pythonhosted.org/packages/cd/ac/ff9d8aaa8f57dcf78426c293f63396e238c269b484a03b86aad42fb2444a/blue_krill-2.0.0.tar.gz
+[2024-04-07 09:30:18] WARNING root fetch - processPackages [blue-krill]: Timeout reached during download
+[2024-04-07 09:30:18] INFO root fetch - processPackages [blue-krill]: Downloading https://files.pythonhosted.org/packages/13/fc/1580ced71aa7cb101300f1833723a3893542aef7d2771f1833eb4d2f4dca/blue_krill-2.0.2.tar.gz
+[2024-04-07 09:30:18] WARNING root fetch - processPackages [blue-krill]: Timeout reached during download
+[2024-04-07 09:30:18] INFO root fetch - processPackages [blue-krill]: executing diffoscope
+[2024-04-07 09:30:18] INFO root fetch - processPackages [blue-krill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blue_krill-2.0.0.tar.gz tmp/blue_krill-2.0.2.tar.gz --markdown 20240407/b/blue-krill/2.0.0-2.0.2/diff.md --exclude *.pyd
+[2024-04-07 09:30:19] INFO root fetch - processPackages [blue-krill]: Remove: archive file [/home/abi/fetcher/tmp/blue_krill-2.0.0.tar.gz]
+[2024-04-07 09:30:19] INFO root fetch - processPackages [blue-krill]: Remove: archive file [/home/abi/fetcher/tmp/blue_krill-2.0.2.tar.gz]
+[2024-04-07 09:30:19] INFO root fetch - main [MainThread]: End processing [blue-krill]: success
+[2024-04-07 09:30:19] INFO root fetch - main [MainThread]: Store serial: [22654369]
