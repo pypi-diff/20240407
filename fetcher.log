@@ -13763,3 +13763,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:40:10] INFO root fetch - processPackages [pystashlib]: Remove: archive file [/home/abi/fetcher/tmp/pystashlib-0.5.0.tar.gz]
 [2024-04-07 16:40:10] INFO root fetch - main [MainThread]: End processing [pystashlib]: success
 [2024-04-07 16:40:10] INFO root fetch - main [MainThread]: Store serial: [22656875]
+[2024-04-07 16:42:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656875]
+[2024-04-07 16:42:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 16:42:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bestdori-api
+[2024-04-07 16:42:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: discordanalytics
+[2024-04-07 16:42:19] INFO root fetch - processPackages [bestdori-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 16:42:19] INFO root fetch - processPackages [discordanalytics]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 16:42:19] INFO root fetch - processPackages [bestdori-api]: Downloading https://files.pythonhosted.org/packages/81/fd/cfb845fb249267b8cd7573748f153416613ff4d92557b0588175d0ffa06c/bestdori_api-0.1.8.tar.gz
+[2024-04-07 16:42:19] INFO root fetch - processPackages [discordanalytics]: Downloading https://files.pythonhosted.org/packages/00/07/3c35e87ab8fb458c31755eef526b98f4e2a1c4f43f514cd8b737ed9f5bcc/discordanalytics-0.0.2.tar.gz
+[2024-04-07 16:42:19] WARNING root fetch - processPackages [discordanalytics]: Timeout reached during download
+[2024-04-07 16:42:19] WARNING root fetch - processPackages [bestdori-api]: Timeout reached during download
+[2024-04-07 16:42:19] INFO root fetch - processPackages [bestdori-api]: Downloading https://files.pythonhosted.org/packages/e8/c6/efff1f1ea01c0bd24d5e120c25cc983a43678412b030542c4a6cfffdd9ea/bestdori_api-0.1.9.tar.gz
+[2024-04-07 16:42:19] WARNING root fetch - processPackages [bestdori-api]: Timeout reached during download
+[2024-04-07 16:42:19] INFO root fetch - processPackages [bestdori-api]: executing diffoscope
+[2024-04-07 16:42:19] INFO root fetch - processPackages [bestdori-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bestdori_api-0.1.8.tar.gz tmp/bestdori_api-0.1.9.tar.gz --markdown 20240407/b/bestdori-api/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 16:42:19] INFO root fetch - processPackages [discordanalytics]: Downloading https://files.pythonhosted.org/packages/70/34/ea247e540b5e76811a539f3fa8b8eb6bd98c02e8a850e8c1eedf8d849948/discordanalytics-0.0.3.tar.gz
+[2024-04-07 16:42:19] WARNING root fetch - processPackages [discordanalytics]: Timeout reached during download
+[2024-04-07 16:42:19] INFO root fetch - processPackages [discordanalytics]: executing diffoscope
+[2024-04-07 16:42:19] INFO root fetch - processPackages [discordanalytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discordanalytics-0.0.2.tar.gz tmp/discordanalytics-0.0.3.tar.gz --markdown 20240407/d/discordanalytics/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 16:42:20] INFO root fetch - processPackages [discordanalytics]: Remove: archive file [/home/abi/fetcher/tmp/discordanalytics-0.0.2.tar.gz]
+[2024-04-07 16:42:20] INFO root fetch - processPackages [discordanalytics]: Remove: archive file [/home/abi/fetcher/tmp/discordanalytics-0.0.3.tar.gz]
+[2024-04-07 16:42:20] INFO root fetch - main [MainThread]: End processing [discordanalytics]: success
+[2024-04-07 16:42:20] INFO root fetch - processPackages [bestdori-api]: Remove: archive file [/home/abi/fetcher/tmp/bestdori_api-0.1.8.tar.gz]
+[2024-04-07 16:42:20] INFO root fetch - processPackages [bestdori-api]: Remove: archive file [/home/abi/fetcher/tmp/bestdori_api-0.1.9.tar.gz]
+[2024-04-07 16:42:20] INFO root fetch - main [MainThread]: End processing [bestdori-api]: success
+[2024-04-07 16:42:20] INFO root fetch - main [MainThread]: Store serial: [22656880]
