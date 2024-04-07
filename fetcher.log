@@ -15849,3 +15849,45 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 18:29:36] INFO root fetch - processPackages [astromcad]: Remove: archive file [/home/abi/fetcher/tmp/astromcad-0.1.2.tar.gz]
 [2024-04-07 18:29:36] INFO root fetch - main [MainThread]: End processing [astromcad]: success
 [2024-04-07 18:29:36] INFO root fetch - main [MainThread]: Store serial: [22657568]
+[2024-04-07 18:31:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657568]
+[2024-04-07 18:31:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 18:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sslsv
+[2024-04-07 18:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oru2xds
+[2024-04-07 18:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: encode-utils-cli
+[2024-04-07 18:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyfdmss
+[2024-04-07 18:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ark-mainsail
+[2024-04-07 18:31:45] INFO root fetch - processPackages [encode-utils-cli]: New version: [1.0.3a0] Old Version: [1.0.2a0]
+[2024-04-07 18:31:45] INFO root fetch - processPackages [oru2xds]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-07 18:31:45] WARNING root fetch - processPackages [sslsv]: Skipping, unable to determine old version
+[2024-04-07 18:31:45] INFO root fetch - main [MainThread]: End processing [sslsv] error
+[2024-04-07 18:31:45] INFO root fetch - processPackages [pyfdmss]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 18:31:45] INFO root fetch - processPackages [encode-utils-cli]: Downloading https://files.pythonhosted.org/packages/4c/4e/1613802280544acc2acdc62b376ed728c1288eb56a42dbea618bbcc4954f/encode_utils_cli-1.0.2a0.tar.gz
+[2024-04-07 18:31:45] WARNING root fetch - processPackages [ark-mainsail]: Skipping, unable to determine old version
+[2024-04-07 18:31:45] INFO root fetch - main [MainThread]: End processing [ark-mainsail] error
+[2024-04-07 18:31:45] INFO root fetch - processPackages [oru2xds]: Downloading https://files.pythonhosted.org/packages/30/84/c1d703dc028c105d23e8bd6025d8a21bea79336316fed5e772284e51fac8/oru2xds-2.0.8.tar.gz
+[2024-04-07 18:31:45] INFO root fetch - processPackages [pyfdmss]: Downloading https://files.pythonhosted.org/packages/fd/a9/d3d2b70944740661e77c983c9fd136835fed8636379736b8e75d31f7c903/pyfdmss-0.0.8.tar.gz
+[2024-04-07 18:31:45] WARNING root fetch - processPackages [encode-utils-cli]: Timeout reached during download
+[2024-04-07 18:31:45] WARNING root fetch - processPackages [oru2xds]: Timeout reached during download
+[2024-04-07 18:31:45] INFO root fetch - processPackages [encode-utils-cli]: Downloading https://files.pythonhosted.org/packages/15/a2/0f00c589e2cc7938b3d10fa3f62c4ab88bddc61529a7ea5a8e10176d0267/encode_utils_cli-1.0.3a0.tar.gz
+[2024-04-07 18:31:45] WARNING root fetch - processPackages [pyfdmss]: Timeout reached during download
+[2024-04-07 18:31:45] INFO root fetch - processPackages [oru2xds]: Downloading https://files.pythonhosted.org/packages/2b/b6/fd060e2ee4a6f2bd68e4d1be3622482196f992387c487cf50fe6d3315563/oru2xds-2.0.9.tar.gz
+[2024-04-07 18:31:45] WARNING root fetch - processPackages [oru2xds]: Timeout reached during download
+[2024-04-07 18:31:45] INFO root fetch - processPackages [oru2xds]: executing diffoscope
+[2024-04-07 18:31:45] INFO root fetch - processPackages [oru2xds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oru2xds-2.0.8.tar.gz tmp/oru2xds-2.0.9.tar.gz --markdown 20240407/o/oru2xds/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2024-04-07 18:31:45] WARNING root fetch - processPackages [encode-utils-cli]: Timeout reached during download
+[2024-04-07 18:31:45] INFO root fetch - processPackages [encode-utils-cli]: executing diffoscope
+[2024-04-07 18:31:45] INFO root fetch - processPackages [encode-utils-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/encode_utils_cli-1.0.2a0.tar.gz tmp/encode_utils_cli-1.0.3a0.tar.gz --markdown 20240407/e/encode-utils-cli/1.0.2a0-1.0.3a0/diff.md --exclude *.pyd
+[2024-04-07 18:31:45] INFO root fetch - processPackages [pyfdmss]: Downloading https://files.pythonhosted.org/packages/80/85/3f4365e0b25f8be4b8d1f104bada465d2c6824043b400e92f0d8f1c8f4d7/pyfdmss-0.0.9.tar.gz
+[2024-04-07 18:31:45] WARNING root fetch - processPackages [pyfdmss]: Timeout reached during download
+[2024-04-07 18:31:45] INFO root fetch - processPackages [pyfdmss]: executing diffoscope
+[2024-04-07 18:31:45] INFO root fetch - processPackages [pyfdmss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfdmss-0.0.8.tar.gz tmp/pyfdmss-0.0.9.tar.gz --markdown 20240407/p/pyfdmss/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 18:31:46] INFO root fetch - processPackages [encode-utils-cli]: Remove: archive file [/home/abi/fetcher/tmp/encode_utils_cli-1.0.2a0.tar.gz]
+[2024-04-07 18:31:46] INFO root fetch - processPackages [encode-utils-cli]: Remove: archive file [/home/abi/fetcher/tmp/encode_utils_cli-1.0.3a0.tar.gz]
+[2024-04-07 18:31:46] INFO root fetch - main [MainThread]: End processing [encode-utils-cli]: success
+[2024-04-07 18:31:46] INFO root fetch - processPackages [oru2xds]: Remove: archive file [/home/abi/fetcher/tmp/oru2xds-2.0.8.tar.gz]
+[2024-04-07 18:31:46] INFO root fetch - processPackages [oru2xds]: Remove: archive file [/home/abi/fetcher/tmp/oru2xds-2.0.9.tar.gz]
+[2024-04-07 18:31:46] INFO root fetch - main [MainThread]: End processing [oru2xds]: success
+[2024-04-07 18:31:46] INFO root fetch - processPackages [pyfdmss]: Remove: archive file [/home/abi/fetcher/tmp/pyfdmss-0.0.8.tar.gz]
+[2024-04-07 18:31:46] INFO root fetch - processPackages [pyfdmss]: Remove: archive file [/home/abi/fetcher/tmp/pyfdmss-0.0.9.tar.gz]
+[2024-04-07 18:31:46] INFO root fetch - main [MainThread]: End processing [pyfdmss]: success
+[2024-04-07 18:31:46] INFO root fetch - main [MainThread]: Store serial: [22657584]
