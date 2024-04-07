@@ -2403,3 +2403,20 @@
 [2024-04-07 03:44:02] INFO root fetch - processPackages [funccache]: Remove: archive file [/home/abi/fetcher/tmp/funccache-2.0a1.tar.gz]
 [2024-04-07 03:44:02] INFO root fetch - main [MainThread]: End processing [funccache]: success
 [2024-04-07 03:44:02] INFO root fetch - main [MainThread]: Store serial: [22652705]
+[2024-04-07 03:46:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652705]
+[2024-04-07 03:46:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 03:46:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ncpcs-common
+[2024-04-07 03:46:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dogma-data
+[2024-04-07 03:46:10] WARNING root fetch - processPackages [dogma-data]: Skipping, unable to determine old version
+[2024-04-07 03:46:10] INFO root fetch - main [MainThread]: End processing [dogma-data] error
+[2024-04-07 03:46:10] INFO root fetch - processPackages [ncpcs-common]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-07 03:46:11] INFO root fetch - processPackages [ncpcs-common]: Downloading https://files.pythonhosted.org/packages/09/08/2b7e2e7105715abe25d9e02140930a26bde92decad4ade0bdcda1fac444b/ncpcs_common-1.1.1.tar.gz
+[2024-04-07 03:46:11] WARNING root fetch - processPackages [ncpcs-common]: Timeout reached during download
+[2024-04-07 03:46:11] INFO root fetch - processPackages [ncpcs-common]: Downloading https://files.pythonhosted.org/packages/ea/7d/ca57a024589045997a591d6d20c444c8ff16b7cc9257b3e26fc60dcb02b7/ncpcs_common-1.1.2.tar.gz
+[2024-04-07 03:46:11] WARNING root fetch - processPackages [ncpcs-common]: Timeout reached during download
+[2024-04-07 03:46:11] INFO root fetch - processPackages [ncpcs-common]: executing diffoscope
+[2024-04-07 03:46:11] INFO root fetch - processPackages [ncpcs-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ncpcs_common-1.1.1.tar.gz tmp/ncpcs_common-1.1.2.tar.gz --markdown 20240407/n/ncpcs-common/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2024-04-07 03:46:12] INFO root fetch - processPackages [ncpcs-common]: Remove: archive file [/home/abi/fetcher/tmp/ncpcs_common-1.1.1.tar.gz]
+[2024-04-07 03:46:12] INFO root fetch - processPackages [ncpcs-common]: Remove: archive file [/home/abi/fetcher/tmp/ncpcs_common-1.1.2.tar.gz]
+[2024-04-07 03:46:12] INFO root fetch - main [MainThread]: End processing [ncpcs-common]: success
+[2024-04-07 03:46:12] INFO root fetch - main [MainThread]: Store serial: [22652711]
