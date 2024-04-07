@@ -9495,3 +9495,31 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 11:56:18] INFO root fetch - processPackages [league-shop-base]: Remove: archive file [/home/abi/fetcher/tmp/league-shop-base-1.0.9.tar.gz]
 [2024-04-07 11:56:18] INFO root fetch - main [MainThread]: End processing [league-shop-base]: success
 [2024-04-07 11:56:18] INFO root fetch - main [MainThread]: Store serial: [22655221]
+[2024-04-07 11:58:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655221]
+[2024-04-07 11:58:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 11:58:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: busker
+[2024-04-07 11:58:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: feffery-antd-components
+[2024-04-07 11:58:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AsyncKandinsky
+[2024-04-07 11:58:26] WARNING root fetch - processPackages [AsyncKandinsky]: Skipping, unable to determine old version
+[2024-04-07 11:58:26] INFO root fetch - main [MainThread]: End processing [AsyncKandinsky] error
+[2024-04-07 11:58:26] INFO root fetch - processPackages [busker]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-04-07 11:58:26] INFO root fetch - processPackages [feffery-antd-components]: New version: [0.3.0rc9] Old Version: [0.3.0rc8]
+[2024-04-07 11:58:27] INFO root fetch - processPackages [busker]: Downloading https://files.pythonhosted.org/packages/e8/6e/ec129252a856052b88296049024ca09e00b0082233a4be0f9dbdee531170/busker-0.6.0.tar.gz
+[2024-04-07 11:58:27] INFO root fetch - processPackages [feffery-antd-components]: Downloading https://files.pythonhosted.org/packages/1d/bf/661a29a1f929a7fd09b496fb6709b4b26d971bdcdc5447f96708495c1759/feffery_antd_components-0.3.0rc8.tar.gz
+[2024-04-07 11:58:27] WARNING root fetch - processPackages [busker]: Timeout reached during download
+[2024-04-07 11:58:27] WARNING root fetch - processPackages [feffery-antd-components]: Timeout reached during download
+[2024-04-07 11:58:27] INFO root fetch - processPackages [busker]: Downloading https://files.pythonhosted.org/packages/77/6e/7f0d275856aefe4a6df391cdfc8f1e88a16fb1a2361c48dc53e14b258f9e/busker-0.7.0.tar.gz
+[2024-04-07 11:58:27] WARNING root fetch - processPackages [busker]: Timeout reached during download
+[2024-04-07 11:58:27] INFO root fetch - processPackages [busker]: executing diffoscope
+[2024-04-07 11:58:27] INFO root fetch - processPackages [busker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/busker-0.6.0.tar.gz tmp/busker-0.7.0.tar.gz --markdown 20240407/b/busker/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2024-04-07 11:58:27] INFO root fetch - processPackages [feffery-antd-components]: Downloading https://files.pythonhosted.org/packages/1e/70/5d7c32f6a10c6c051166e2371196054d403b8f5c459d3ded64975d7ab261/feffery_antd_components-0.3.0rc9.tar.gz
+[2024-04-07 11:58:27] WARNING root fetch - processPackages [feffery-antd-components]: Timeout reached during download
+[2024-04-07 11:58:27] INFO root fetch - processPackages [feffery-antd-components]: executing diffoscope
+[2024-04-07 11:58:27] INFO root fetch - processPackages [feffery-antd-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feffery_antd_components-0.3.0rc8.tar.gz tmp/feffery_antd_components-0.3.0rc9.tar.gz --markdown 20240407/f/feffery-antd-components/0.3.0rc8-0.3.0rc9/diff.md --exclude *.pyd
+[2024-04-07 11:58:28] INFO root fetch - processPackages [busker]: Remove: archive file [/home/abi/fetcher/tmp/busker-0.6.0.tar.gz]
+[2024-04-07 11:58:28] INFO root fetch - processPackages [busker]: Remove: archive file [/home/abi/fetcher/tmp/busker-0.7.0.tar.gz]
+[2024-04-07 11:58:28] INFO root fetch - main [MainThread]: End processing [busker]: success
+[2024-04-07 11:58:59] INFO root fetch - processPackages [feffery-antd-components]: Remove: archive file [/home/abi/fetcher/tmp/feffery_antd_components-0.3.0rc8.tar.gz]
+[2024-04-07 11:58:59] INFO root fetch - processPackages [feffery-antd-components]: Remove: archive file [/home/abi/fetcher/tmp/feffery_antd_components-0.3.0rc9.tar.gz]
+[2024-04-07 11:58:59] INFO root fetch - main [MainThread]: End processing [feffery-antd-components]: success
+[2024-04-07 11:58:59] INFO root fetch - main [MainThread]: Store serial: [22655230]
