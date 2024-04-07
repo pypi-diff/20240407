@@ -7730,3 +7730,53 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 
 [2024-04-07 10:02:52] INFO root fetch - main [MainThread]: End processing [modelbest-sdk] error
 [2024-04-07 10:02:52] INFO root fetch - main [MainThread]: Store serial: [22654542]
+[2024-04-07 10:04:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654542]
+[2024-04-07 10:05:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 10:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ynab-transaction-adjuster
+[2024-04-07 10:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aigic
+[2024-04-07 10:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: exl2conv
+[2024-04-07 10:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: langfun
+[2024-04-07 10:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: AppleAPI
+[2024-04-07 10:05:01] INFO root fetch - processPackages [ynab-transaction-adjuster]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-04-07 10:05:01] INFO root fetch - processPackages [ynab-transaction-adjuster]: Downloading https://files.pythonhosted.org/packages/20/5a/0f5672034ce0ad5b5670010621e8b532a95a1f916a761c96ddba0fd6d2d7/ynab_transaction_adjuster-0.3.6.tar.gz
+[2024-04-07 10:05:01] WARNING root fetch - processPackages [aigic]: Skipping, unable to determine old version
+[2024-04-07 10:05:01] INFO root fetch - main [MainThread]: End processing [aigic] error
+[2024-04-07 10:05:01] INFO root fetch - processPackages [exl2conv]: New version: [0.0.17.1] Old Version: [0.0.17]
+[2024-04-07 10:05:01] INFO root fetch - processPackages [AppleAPI]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-07 10:05:01] INFO root fetch - processPackages [langfun]: New version: [0.0.2.dev20240407] Old Version: [0.0.2.dev20240406]
+[2024-04-07 10:05:01] WARNING root fetch - processPackages [ynab-transaction-adjuster]: Timeout reached during download
+[2024-04-07 10:05:01] INFO root fetch - processPackages [exl2conv]: Downloading https://files.pythonhosted.org/packages/c7/01/3c7939762abf5cbc861a41e19e35055210359322e4e20780c40560a3b0d6/exl2conv-0.0.17.tar.gz
+[2024-04-07 10:05:01] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/31/89/409922c731cc256b6da5fbd1df0695b53015e4dcce7f48efb4400d4ba37b/langfun-0.0.2.dev20240406.tar.gz
+[2024-04-07 10:05:01] INFO root fetch - processPackages [AppleAPI]: Downloading https://files.pythonhosted.org/packages/42/83/f97266935ab7525aa0325f5e2b26f951181205bab743eed97e337bd3172f/AppleAPI-1.0.4.tar.gz
+[2024-04-07 10:05:01] INFO root fetch - processPackages [ynab-transaction-adjuster]: Downloading https://files.pythonhosted.org/packages/e9/70/095e1c889ec0235f2bcb26469c3b288705ea0952e6077f6468e804a9f487/ynab_transaction_adjuster-0.3.7.tar.gz
+[2024-04-07 10:05:01] WARNING root fetch - processPackages [AppleAPI]: Timeout reached during download
+[2024-04-07 10:05:01] WARNING root fetch - processPackages [langfun]: Timeout reached during download
+[2024-04-07 10:05:01] WARNING root fetch - processPackages [ynab-transaction-adjuster]: Timeout reached during download
+[2024-04-07 10:05:01] INFO root fetch - processPackages [ynab-transaction-adjuster]: executing diffoscope
+[2024-04-07 10:05:01] INFO root fetch - processPackages [ynab-transaction-adjuster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ynab_transaction_adjuster-0.3.6.tar.gz tmp/ynab_transaction_adjuster-0.3.7.tar.gz --markdown 20240407/y/ynab-transaction-adjuster/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2024-04-07 10:05:01] WARNING root fetch - processPackages [exl2conv]: Timeout reached during download
+[2024-04-07 10:05:01] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/4a/7d/84b5af4be1acf1bcc72457e4b177b1ee0794c39d4df8cca9dd93688a76eb/langfun-0.0.2.dev20240407.tar.gz
+[2024-04-07 10:05:01] INFO root fetch - processPackages [AppleAPI]: Downloading https://files.pythonhosted.org/packages/99/56/b56470de10dd00581006a9c2ef69709cafa5a0906372fc388ff4106889e0/AppleAPI-1.0.5.tar.gz
+[2024-04-07 10:05:02] INFO root fetch - processPackages [exl2conv]: Downloading https://files.pythonhosted.org/packages/74/20/e1da211f8721f503460d69835a4e40345ea5e918f6fb4d15356953a9ec98/exl2conv-0.0.17.1.tar.gz
+[2024-04-07 10:05:02] WARNING root fetch - processPackages [langfun]: Timeout reached during download
+[2024-04-07 10:05:02] INFO root fetch - processPackages [langfun]: executing diffoscope
+[2024-04-07 10:05:02] INFO root fetch - processPackages [langfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfun-0.0.2.dev20240406.tar.gz tmp/langfun-0.0.2.dev20240407.tar.gz --markdown 20240407/l/langfun/0.0.2.dev20240406-0.0.2.dev20240407/diff.md --exclude *.pyd
+[2024-04-07 10:05:02] WARNING root fetch - processPackages [AppleAPI]: Timeout reached during download
+[2024-04-07 10:05:02] INFO root fetch - processPackages [AppleAPI]: executing diffoscope
+[2024-04-07 10:05:02] INFO root fetch - processPackages [AppleAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AppleAPI-1.0.4.tar.gz tmp/AppleAPI-1.0.5.tar.gz --markdown 20240407/A/AppleAPI/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2024-04-07 10:05:02] WARNING root fetch - processPackages [exl2conv]: Timeout reached during download
+[2024-04-07 10:05:02] INFO root fetch - processPackages [exl2conv]: executing diffoscope
+[2024-04-07 10:05:02] INFO root fetch - processPackages [exl2conv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exl2conv-0.0.17.tar.gz tmp/exl2conv-0.0.17.1.tar.gz --markdown 20240407/e/exl2conv/0.0.17-0.0.17.1/diff.md --exclude *.pyd
+[2024-04-07 10:05:02] INFO root fetch - processPackages [ynab-transaction-adjuster]: Remove: archive file [/home/abi/fetcher/tmp/ynab_transaction_adjuster-0.3.6.tar.gz]
+[2024-04-07 10:05:02] INFO root fetch - processPackages [ynab-transaction-adjuster]: Remove: archive file [/home/abi/fetcher/tmp/ynab_transaction_adjuster-0.3.7.tar.gz]
+[2024-04-07 10:05:02] INFO root fetch - main [MainThread]: End processing [ynab-transaction-adjuster]: success
+[2024-04-07 10:05:02] INFO root fetch - processPackages [AppleAPI]: Remove: archive file [/home/abi/fetcher/tmp/AppleAPI-1.0.4.tar.gz]
+[2024-04-07 10:05:02] INFO root fetch - processPackages [AppleAPI]: Remove: archive file [/home/abi/fetcher/tmp/AppleAPI-1.0.5.tar.gz]
+[2024-04-07 10:05:02] INFO root fetch - main [MainThread]: End processing [AppleAPI]: success
+[2024-04-07 10:05:02] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240406.tar.gz]
+[2024-04-07 10:05:02] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240407.tar.gz]
+[2024-04-07 10:05:02] INFO root fetch - main [MainThread]: End processing [langfun]: success
+[2024-04-07 10:05:03] INFO root fetch - processPackages [exl2conv]: Remove: archive file [/home/abi/fetcher/tmp/exl2conv-0.0.17.tar.gz]
+[2024-04-07 10:05:03] INFO root fetch - processPackages [exl2conv]: Remove: archive file [/home/abi/fetcher/tmp/exl2conv-0.0.17.1.tar.gz]
+[2024-04-07 10:05:03] INFO root fetch - main [MainThread]: End processing [exl2conv]: success
+[2024-04-07 10:05:03] INFO root fetch - main [MainThread]: Store serial: [22654562]
