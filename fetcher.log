@@ -3189,3 +3189,158 @@
 [2024-04-07 04:47:05] INFO root fetch - processPackages [girder-large-image]: Remove: archive file [/home/abi/fetcher/tmp/girder-large-image-1.9.1.dev8.tar.gz]
 [2024-04-07 04:47:05] INFO root fetch - main [MainThread]: End processing [girder-large-image]: success
 [2024-04-07 04:47:05] INFO root fetch - main [MainThread]: Store serial: [22652986]
+[2024-04-07 04:49:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652986]
+[2024-04-07 04:49:13] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2024-04-07 04:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: large-image-source-bioformats
+[2024-04-07 04:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: large-image-source-deepzoom
+[2024-04-07 04:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ships
+[2024-04-07 04:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: large-image-source-dicom
+[2024-04-07 04:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: large-image-source-dummy
+[2024-04-07 04:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gink
+[2024-04-07 04:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: large-image-source-gdal
+[2024-04-07 04:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gink
+[2024-04-07 04:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: large-image-source-mapnik
+[2024-04-07 04:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: large-image-source-multi
+[2024-04-07 04:49:14] INFO root fetch - processPackages [ships]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-04-07 04:49:14] INFO root fetch - processPackages [gink]: New version: [0.20240407.1712458039] Old Version: [0.20240407.1712458030]
+[2024-04-07 04:49:14] INFO root fetch - processPackages [gink]: New version: [0.20240407.1712458039] Old Version: [0.20240407.1712458030]
+[2024-04-07 04:49:14] INFO root fetch - processPackages [large-image-source-bioformats]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-04-07 04:49:14] INFO root fetch - processPackages [large-image-source-dicom]: New version: [1.27.5.dev99] Old Version: [1.27.5.dev8]
+[2024-04-07 04:49:14] INFO root fetch - processPackages [large-image-source-deepzoom]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-04-07 04:49:14] INFO root fetch - processPackages [large-image-source-multi]: New version: [1.27.5.dev99] Old Version: [1.27.5.dev8]
+[2024-04-07 04:49:14] INFO root fetch - processPackages [large-image-source-dummy]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-04-07 04:49:14] INFO root fetch - processPackages [large-image-source-mapnik]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-04-07 04:49:14] INFO root fetch - processPackages [large-image-source-gdal]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-04-07 04:49:14] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/bb/5f/6232b37251c9525164339f879559d7698f48686d43627c6ea00c7f9adf8b/gink-0.20240407.1712458030.tar.gz
+[2024-04-07 04:49:14] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/bb/5f/6232b37251c9525164339f879559d7698f48686d43627c6ea00c7f9adf8b/gink-0.20240407.1712458030.tar.gz
+[2024-04-07 04:49:14] INFO root fetch - processPackages [ships]: Downloading https://files.pythonhosted.org/packages/00/af/3dbe13c1b005a14f7e3380a7e0f395c1cf5836e006c143004000ff7dba7e/ships-1.2.4.tar.gz
+[2024-04-07 04:49:14] INFO root fetch - processPackages [large-image-source-multi]: Downloading https://files.pythonhosted.org/packages/d9/21/b61b00f5731696ef089922ba38d16dc863f2344801b00e20bcce54ca43f0/large-image-source-multi-1.27.5.dev8.tar.gz
+[2024-04-07 04:49:14] INFO root fetch - processPackages [large-image-source-dicom]: Downloading https://files.pythonhosted.org/packages/88/6d/fd0d191c979c85e7c08491d59a4274bc7794776090ee162f84483dc50405/large-image-source-dicom-1.27.5.dev8.tar.gz
+[2024-04-07 04:49:14] INFO root fetch - processPackages [large-image-source-deepzoom]: Downloading https://files.pythonhosted.org/packages/16/46/821666cfb4c3a315b4ccc86d7ba529a1af49e4581bbd8b7ca8e1cb5fa4ba/large-image-source-deepzoom-1.9.1.dev6.tar.gz
+[2024-04-07 04:49:14] INFO root fetch - processPackages [large-image-source-bioformats]: Downloading https://files.pythonhosted.org/packages/9f/7d/764189c337fd7a890bec6278bb2e1d065d51af7f06726f3d00b6d3836aa4/large-image-source-bioformats-1.9.1.dev6.tar.gz
+[2024-04-07 04:49:14] INFO root fetch - processPackages [large-image-source-gdal]: Downloading https://files.pythonhosted.org/packages/06/09/9cc15777a61a9746370b4445caa7d36d66ce0b1a197652f2c9da003e5e01/large-image-source-gdal-1.9.1.dev6.tar.gz
+[2024-04-07 04:49:14] INFO root fetch - processPackages [large-image-source-mapnik]: Downloading https://files.pythonhosted.org/packages/ec/f8/40c5e595a0666f11af70b13b5528b91d61179bf3560aa54bf97025e81322/large-image-source-mapnik-1.9.1.dev6.tar.gz
+[2024-04-07 04:49:14] INFO root fetch - processPackages [large-image-source-dummy]: Downloading https://files.pythonhosted.org/packages/a7/47/6a6b2735ef16d597973161650868769abbd88ca81aa572367cb13d00618e/large-image-source-dummy-1.9.1.dev6.tar.gz
+[2024-04-07 04:49:14] WARNING root fetch - processPackages [ships]: Timeout reached during download
+[2024-04-07 04:49:14] WARNING root fetch - processPackages [gink]: Timeout reached during download
+[2024-04-07 04:49:14] WARNING root fetch - processPackages [gink]: Timeout reached during download
+[2024-04-07 04:49:14] WARNING root fetch - processPackages [large-image-source-multi]: Timeout reached during download
+[2024-04-07 04:49:14] WARNING root fetch - processPackages [large-image-source-deepzoom]: Timeout reached during download
+[2024-04-07 04:49:14] WARNING root fetch - processPackages [large-image-source-bioformats]: Timeout reached during download
+[2024-04-07 04:49:14] WARNING root fetch - processPackages [large-image-source-gdal]: Timeout reached during download
+[2024-04-07 04:49:14] WARNING root fetch - processPackages [large-image-source-dicom]: Timeout reached during download
+[2024-04-07 04:49:14] WARNING root fetch - processPackages [large-image-source-dummy]: Timeout reached during download
+[2024-04-07 04:49:14] INFO root fetch - processPackages [ships]: Downloading https://files.pythonhosted.org/packages/34/d6/1985121a09414a6676d56eef5cc7180043ab5ba9c312989e605b3f19d861/ships-1.2.5.tar.gz
+[2024-04-07 04:49:14] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/c9/28/b1eb96de756cccde84ca633b4b353de88dc402a02dd3b40e75d3599304fb/gink-0.20240407.1712458039.tar.gz
+[2024-04-07 04:49:14] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/c9/28/b1eb96de756cccde84ca633b4b353de88dc402a02dd3b40e75d3599304fb/gink-0.20240407.1712458039.tar.gz
+[2024-04-07 04:49:14] INFO root fetch - processPackages [large-image-source-deepzoom]: Downloading https://files.pythonhosted.org/packages/1f/75/67d4e66af91c90873acb456f65871c79b18f4690638c624ddd6f22d8dc5c/large-image-source-deepzoom-1.9.1.dev8.tar.gz
+[2024-04-07 04:49:14] INFO root fetch - processPackages [large-image-source-multi]: Downloading https://files.pythonhosted.org/packages/9d/71/93e085a35b7691409c73655acc502b9fa66e982e29f71b9f2eb0a8ffa885/large-image-source-multi-1.27.5.dev99.tar.gz
+[2024-04-07 04:49:14] INFO root fetch - processPackages [large-image-source-bioformats]: Downloading https://files.pythonhosted.org/packages/be/b1/457ea10f23a8022b9045522623e3c24789e308b80800b4fd679928bb7cf8/large-image-source-bioformats-1.9.1.dev8.tar.gz
+[2024-04-07 04:49:14] WARNING root fetch - processPackages [large-image-source-mapnik]: Timeout reached during download
+[2024-04-07 04:49:14] INFO root fetch - processPackages [large-image-source-dicom]: Downloading https://files.pythonhosted.org/packages/30/98/9360f895c54d507cacd42e533498360c54d795212721299d29320acb0d76/large-image-source-dicom-1.27.5.dev99.tar.gz
+[2024-04-07 04:49:15] INFO root fetch - processPackages [large-image-source-gdal]: Downloading https://files.pythonhosted.org/packages/23/56/8a639012c8318fe32f5c437aac0a345ff997578582ba8e1c5e83d93e4d88/large-image-source-gdal-1.9.1.dev8.tar.gz
+[2024-04-07 04:49:15] INFO root fetch - processPackages [large-image-source-dummy]: Downloading https://files.pythonhosted.org/packages/65/2c/392be6b06828c27c73b918dd280229b97af5bf7bdab89b8eb79ed22e60a4/large-image-source-dummy-1.9.1.dev8.tar.gz
+[2024-04-07 04:49:15] WARNING root fetch - processPackages [ships]: Timeout reached during download
+[2024-04-07 04:49:15] INFO root fetch - processPackages [ships]: executing diffoscope
+[2024-04-07 04:49:15] INFO root fetch - processPackages [ships]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ships-1.2.4.tar.gz tmp/ships-1.2.5.tar.gz --markdown 20240407/s/ships/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2024-04-07 04:49:15] WARNING root fetch - processPackages [large-image-source-deepzoom]: Timeout reached during download
+[2024-04-07 04:49:15] INFO root fetch - processPackages [large-image-source-deepzoom]: executing diffoscope
+[2024-04-07 04:49:15] INFO root fetch - processPackages [large-image-source-deepzoom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-deepzoom-1.9.1.dev6.tar.gz tmp/large-image-source-deepzoom-1.9.1.dev8.tar.gz --markdown 20240407/l/large-image-source-deepzoom/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2024-04-07 04:49:15] WARNING root fetch - processPackages [large-image-source-bioformats]: Timeout reached during download
+[2024-04-07 04:49:15] INFO root fetch - processPackages [large-image-source-bioformats]: executing diffoscope
+[2024-04-07 04:49:15] INFO root fetch - processPackages [large-image-source-bioformats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-bioformats-1.9.1.dev6.tar.gz tmp/large-image-source-bioformats-1.9.1.dev8.tar.gz --markdown 20240407/l/large-image-source-bioformats/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2024-04-07 04:49:15] WARNING root fetch - processPackages [large-image-source-multi]: Timeout reached during download
+[2024-04-07 04:49:15] INFO root fetch - processPackages [large-image-source-multi]: executing diffoscope
+[2024-04-07 04:49:15] INFO root fetch - processPackages [large-image-source-multi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-multi-1.27.5.dev8.tar.gz tmp/large-image-source-multi-1.27.5.dev99.tar.gz --markdown 20240407/l/large-image-source-multi/1.27.5.dev8-1.27.5.dev99/diff.md --exclude *.pyd
+[2024-04-07 04:49:15] WARNING root fetch - processPackages [gink]: Timeout reached during download
+[2024-04-07 04:49:15] INFO root fetch - processPackages [gink]: executing diffoscope
+[2024-04-07 04:49:15] INFO root fetch - processPackages [gink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gink-0.20240407.1712458030.tar.gz tmp/gink-0.20240407.1712458039.tar.gz --markdown 20240407/g/gink/0.20240407.1712458030-0.20240407.1712458039/diff.md --exclude *.pyd
+[2024-04-07 04:49:15] WARNING root fetch - processPackages [gink]: Timeout reached during download
+[2024-04-07 04:49:15] WARNING root fetch - processPackages [large-image-source-dummy]: Timeout reached during download
+[2024-04-07 04:49:15] INFO root fetch - processPackages [large-image-source-dummy]: executing diffoscope
+[2024-04-07 04:49:15] INFO root fetch - processPackages [large-image-source-dummy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-dummy-1.9.1.dev6.tar.gz tmp/large-image-source-dummy-1.9.1.dev8.tar.gz --markdown 20240407/l/large-image-source-dummy/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2024-04-07 04:49:15] WARNING root fetch - processPackages [large-image-source-dicom]: Timeout reached during download
+[2024-04-07 04:49:15] INFO root fetch - processPackages [gink]: executing diffoscope
+[2024-04-07 04:49:15] INFO root fetch - processPackages [gink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gink-0.20240407.1712458030.tar.gz tmp/gink-0.20240407.1712458039.tar.gz --markdown 20240407/g/gink/0.20240407.1712458030-0.20240407.1712458039/diff.md --exclude *.pyd
+[2024-04-07 04:49:15] INFO root fetch - processPackages [large-image-source-dicom]: executing diffoscope
+[2024-04-07 04:49:15] INFO root fetch - processPackages [large-image-source-dicom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-dicom-1.27.5.dev8.tar.gz tmp/large-image-source-dicom-1.27.5.dev99.tar.gz --markdown 20240407/l/large-image-source-dicom/1.27.5.dev8-1.27.5.dev99/diff.md --exclude *.pyd
+[2024-04-07 04:49:15] INFO root fetch - processPackages [large-image-source-mapnik]: Downloading https://files.pythonhosted.org/packages/cb/26/ae6c10f6388de2806ecc5e1ca9d5afad29ab6d5ac2e1d280a53970288577/large-image-source-mapnik-1.9.1.dev8.tar.gz
+[2024-04-07 04:49:15] WARNING root fetch - processPackages [large-image-source-gdal]: Timeout reached during download
+[2024-04-07 04:49:15] INFO root fetch - processPackages [large-image-source-gdal]: executing diffoscope
+[2024-04-07 04:49:15] INFO root fetch - processPackages [large-image-source-gdal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-gdal-1.9.1.dev6.tar.gz tmp/large-image-source-gdal-1.9.1.dev8.tar.gz --markdown 20240407/l/large-image-source-gdal/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2024-04-07 04:49:15] WARNING root fetch - processPackages [large-image-source-mapnik]: Timeout reached during download
+[2024-04-07 04:49:15] INFO root fetch - processPackages [large-image-source-mapnik]: executing diffoscope
+[2024-04-07 04:49:15] INFO root fetch - processPackages [large-image-source-mapnik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-mapnik-1.9.1.dev6.tar.gz tmp/large-image-source-mapnik-1.9.1.dev8.tar.gz --markdown 20240407/l/large-image-source-mapnik/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-deepzoom]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-deepzoom-1.9.1.dev6.tar.gz]
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-deepzoom]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-deepzoom-1.9.1.dev8.tar.gz]
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-deepzoom]: Start processing: large-image-source-nd2
+[2024-04-07 04:49:16] INFO root fetch - main [MainThread]: End processing [large-image-source-deepzoom]: success
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-bioformats]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-bioformats-1.9.1.dev6.tar.gz]
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-bioformats]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-bioformats-1.9.1.dev8.tar.gz]
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-bioformats]: Start processing: large-image-source-ometiff
+[2024-04-07 04:49:16] INFO root fetch - main [MainThread]: End processing [large-image-source-bioformats]: success
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-multi]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-multi-1.27.5.dev8.tar.gz]
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-multi]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-multi-1.27.5.dev99.tar.gz]
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-multi]: Start processing: large-image-source-openjpeg
+[2024-04-07 04:49:16] INFO root fetch - main [MainThread]: End processing [large-image-source-multi]: success
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-gdal]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-gdal-1.9.1.dev6.tar.gz]
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-gdal]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-gdal-1.9.1.dev8.tar.gz]
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-gdal]: Start processing: climush
+[2024-04-07 04:49:16] INFO root fetch - main [MainThread]: End processing [large-image-source-gdal]: success
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-nd2]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-04-07 04:49:16] INFO root fetch - processPackages [climush]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-dummy]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-dummy-1.9.1.dev6.tar.gz]
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-dummy]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-dummy-1.9.1.dev8.tar.gz]
+[2024-04-07 04:49:16] INFO root fetch - main [MainThread]: End processing [large-image-source-dummy]: success
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-dicom]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-dicom-1.27.5.dev8.tar.gz]
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-dicom]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-dicom-1.27.5.dev99.tar.gz]
+[2024-04-07 04:49:16] INFO root fetch - main [MainThread]: End processing [large-image-source-dicom]: success
+[2024-04-07 04:49:16] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240407.1712458030.tar.gz]
+[2024-04-07 04:49:16] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240407.1712458039.tar.gz]
+[2024-04-07 04:49:16] INFO root fetch - main [MainThread]: End processing [gink]: success
+[2024-04-07 04:49:16] INFO root fetch - processPackages [ships]: Remove: archive file [/home/abi/fetcher/tmp/ships-1.2.4.tar.gz]
+[2024-04-07 04:49:16] INFO root fetch - processPackages [ships]: Remove: archive file [/home/abi/fetcher/tmp/ships-1.2.5.tar.gz]
+[2024-04-07 04:49:16] INFO root fetch - main [MainThread]: End processing [ships]: success
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-mapnik]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-mapnik-1.9.1.dev6.tar.gz]
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-mapnik]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-mapnik-1.9.1.dev8.tar.gz]
+[2024-04-07 04:49:16] INFO root fetch - main [MainThread]: End processing [large-image-source-mapnik]: success
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-ometiff]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-nd2]: Downloading https://files.pythonhosted.org/packages/1a/29/7390d858dfa6f7980312cb40b7706fbad943f78bf477bf6315522dafc015/large-image-source-nd2-1.9.1.dev6.tar.gz
+[2024-04-07 04:49:16] INFO root fetch - processPackages [climush]: Downloading https://files.pythonhosted.org/packages/9d/64/5fd2f0c2c5a3df5bca98a480ce91a09500733830bb1fbea75abb45729b2a/climush-0.0.1.tar.gz
+[2024-04-07 04:49:16] WARNING root fetch - processPackages [climush]: Timeout reached during download
+[2024-04-07 04:49:16] INFO root fetch - main [MainThread]: End processing [gink]: success
+[2024-04-07 04:49:16] WARNING root fetch - processPackages [large-image-source-nd2]: Timeout reached during download
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-ometiff]: Downloading https://files.pythonhosted.org/packages/e8/92/40431cff52dd08697018589d4cd716496dc3b1a45d50f232d8d37f735798/large-image-source-ometiff-1.9.1.dev6.tar.gz
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-openjpeg]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-04-07 04:49:16] WARNING root fetch - processPackages [large-image-source-ometiff]: Timeout reached during download
+[2024-04-07 04:49:16] INFO root fetch - processPackages [climush]: Downloading https://files.pythonhosted.org/packages/af/ba/f6e46420407cb13a36db01fc6f556a15d08506b6a5ce14eabf64e99f3ca5/climush-0.0.2.tar.gz
+[2024-04-07 04:49:16] INFO root fetch - processPackages [large-image-source-nd2]: Downloading https://files.pythonhosted.org/packages/e2/73/86ec6d93de63690b5e2a8a2f6fc98fce9a12e4da38b4cfc37f1188c0240c/large-image-source-nd2-1.9.1.dev8.tar.gz
+[2024-04-07 04:49:17] WARNING root fetch - processPackages [climush]: Timeout reached during download
+[2024-04-07 04:49:17] INFO root fetch - processPackages [climush]: executing diffoscope
+[2024-04-07 04:49:17] INFO root fetch - processPackages [climush]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/climush-0.0.1.tar.gz tmp/climush-0.0.2.tar.gz --markdown 20240407/c/climush/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-07 04:49:17] WARNING root fetch - processPackages [large-image-source-nd2]: Timeout reached during download
+[2024-04-07 04:49:17] INFO root fetch - processPackages [large-image-source-nd2]: executing diffoscope
+[2024-04-07 04:49:17] INFO root fetch - processPackages [large-image-source-nd2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-nd2-1.9.1.dev6.tar.gz tmp/large-image-source-nd2-1.9.1.dev8.tar.gz --markdown 20240407/l/large-image-source-nd2/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2024-04-07 04:49:17] INFO root fetch - processPackages [large-image-source-openjpeg]: Downloading https://files.pythonhosted.org/packages/95/ea/1df84324de3d3648afee1380dfe201cc2df04f407dc2811e7244e4f911d8/large-image-source-openjpeg-1.9.1.dev6.tar.gz
+[2024-04-07 04:49:17] INFO root fetch - processPackages [large-image-source-ometiff]: Downloading https://files.pythonhosted.org/packages/8f/73/a25300dd64f045a5c3bad6c454d98e1d7dc0728d40536c8ec22fe913f92b/large-image-source-ometiff-1.9.1.dev8.tar.gz
+[2024-04-07 04:49:17] WARNING root fetch - processPackages [large-image-source-openjpeg]: Timeout reached during download
+[2024-04-07 04:49:17] WARNING root fetch - processPackages [large-image-source-ometiff]: Timeout reached during download
+[2024-04-07 04:49:17] INFO root fetch - processPackages [large-image-source-ometiff]: executing diffoscope
+[2024-04-07 04:49:17] INFO root fetch - processPackages [large-image-source-ometiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-ometiff-1.9.1.dev6.tar.gz tmp/large-image-source-ometiff-1.9.1.dev8.tar.gz --markdown 20240407/l/large-image-source-ometiff/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2024-04-07 04:49:17] INFO root fetch - processPackages [large-image-source-openjpeg]: Downloading https://files.pythonhosted.org/packages/b7/c9/95c7e2154104780b160e9968dd9863f2de88d77a5986bc280d05e4811ebd/large-image-source-openjpeg-1.9.1.dev8.tar.gz
+[2024-04-07 04:49:17] INFO root fetch - processPackages [large-image-source-nd2]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-nd2-1.9.1.dev6.tar.gz]
+[2024-04-07 04:49:17] INFO root fetch - processPackages [large-image-source-nd2]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-nd2-1.9.1.dev8.tar.gz]
+[2024-04-07 04:49:17] INFO root fetch - main [MainThread]: End processing [large-image-source-nd2]: success
+[2024-04-07 04:49:17] INFO root fetch - processPackages [climush]: Remove: archive file [/home/abi/fetcher/tmp/climush-0.0.1.tar.gz]
+[2024-04-07 04:49:17] INFO root fetch - processPackages [climush]: Remove: archive file [/home/abi/fetcher/tmp/climush-0.0.2.tar.gz]
+[2024-04-07 04:49:17] INFO root fetch - main [MainThread]: End processing [climush]: success
+[2024-04-07 04:49:17] INFO root fetch - processPackages [large-image-source-ometiff]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-ometiff-1.9.1.dev6.tar.gz]
+[2024-04-07 04:49:17] INFO root fetch - processPackages [large-image-source-ometiff]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-ometiff-1.9.1.dev8.tar.gz]
+[2024-04-07 04:49:17] INFO root fetch - main [MainThread]: End processing [large-image-source-ometiff]: success
+[2024-04-07 04:49:18] WARNING root fetch - processPackages [large-image-source-openjpeg]: Timeout reached during download
+[2024-04-07 04:49:18] INFO root fetch - processPackages [large-image-source-openjpeg]: executing diffoscope
+[2024-04-07 04:49:18] INFO root fetch - processPackages [large-image-source-openjpeg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-openjpeg-1.9.1.dev6.tar.gz tmp/large-image-source-openjpeg-1.9.1.dev8.tar.gz --markdown 20240407/l/large-image-source-openjpeg/1.9.1.dev6-1.9.1.dev8/diff.md --exclude *.pyd
+[2024-04-07 04:49:18] INFO root fetch - processPackages [large-image-source-openjpeg]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-openjpeg-1.9.1.dev6.tar.gz]
+[2024-04-07 04:49:18] INFO root fetch - processPackages [large-image-source-openjpeg]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-openjpeg-1.9.1.dev8.tar.gz]
+[2024-04-07 04:49:18] INFO root fetch - main [MainThread]: End processing [large-image-source-openjpeg]: success
+[2024-04-07 04:49:18] INFO root fetch - main [MainThread]: Store serial: [22653026]
