@@ -20715,3 +20715,31 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:33:30] INFO root fetch - processPackages [pthugefileviewer]: Remove: archive file [/home/abi/fetcher/tmp/pthugefileviewer-0.4.0.tar.gz]
 [2024-04-07 23:33:30] INFO root fetch - main [MainThread]: End processing [pthugefileviewer]: success
 [2024-04-07 23:33:30] INFO root fetch - main [MainThread]: Store serial: [22659498]
+[2024-04-07 23:35:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659498]
+[2024-04-07 23:35:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 23:35:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lagoon
+[2024-04-07 23:35:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pbt-simple
+[2024-04-07 23:35:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ppynet
+[2024-04-07 23:35:39] WARNING root fetch - processPackages [ppynet]: Skipping, unable to determine old version
+[2024-04-07 23:35:39] INFO root fetch - processPackages [pbt-simple]: New version: [1.7.2] Old Version: [1.7.1]
+[2024-04-07 23:35:39] INFO root fetch - main [MainThread]: End processing [ppynet] error
+[2024-04-07 23:35:39] INFO root fetch - processPackages [pbt-simple]: Downloading https://files.pythonhosted.org/packages/ba/ba/1b771cfe2aea1ab8d7c6d49421b3f2a168844ef0e4154a04aa90a5701fbd/pbt_simple-1.7.1.tar.gz
+[2024-04-07 23:35:39] INFO root fetch - processPackages [lagoon]: New version: [9] Old Version: [8]
+[2024-04-07 23:35:39] WARNING root fetch - processPackages [pbt-simple]: Timeout reached during download
+[2024-04-07 23:35:40] INFO root fetch - processPackages [lagoon]: Downloading https://files.pythonhosted.org/packages/9b/e4/64af46a32779162c86572ffff9a92a66209a3036bc864ed219d1244289da/lagoon-8.tar.gz
+[2024-04-07 23:35:40] INFO root fetch - processPackages [pbt-simple]: Downloading https://files.pythonhosted.org/packages/36/ea/8946f615412356e25882c1b73536f1137a81240285c39e67a44db670fd3f/pbt_simple-1.7.2.tar.gz
+[2024-04-07 23:35:40] WARNING root fetch - processPackages [lagoon]: Timeout reached during download
+[2024-04-07 23:35:40] WARNING root fetch - processPackages [pbt-simple]: Timeout reached during download
+[2024-04-07 23:35:40] INFO root fetch - processPackages [pbt-simple]: executing diffoscope
+[2024-04-07 23:35:40] INFO root fetch - processPackages [pbt-simple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pbt_simple-1.7.1.tar.gz tmp/pbt_simple-1.7.2.tar.gz --markdown 20240407/p/pbt-simple/1.7.1-1.7.2/diff.md --exclude *.pyd
+[2024-04-07 23:35:40] INFO root fetch - processPackages [lagoon]: Downloading https://files.pythonhosted.org/packages/63/7e/7ef2b3c852dfef88b42fe0314929ed672c5fad5917c40a0c569e74b16998/lagoon-9.tar.gz
+[2024-04-07 23:35:40] WARNING root fetch - processPackages [lagoon]: Timeout reached during download
+[2024-04-07 23:35:40] INFO root fetch - processPackages [lagoon]: executing diffoscope
+[2024-04-07 23:35:40] INFO root fetch - processPackages [lagoon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lagoon-8.tar.gz tmp/lagoon-9.tar.gz --markdown 20240407/l/lagoon/8-9/diff.md --exclude *.pyd
+[2024-04-07 23:35:40] INFO root fetch - processPackages [pbt-simple]: Remove: archive file [/home/abi/fetcher/tmp/pbt_simple-1.7.1.tar.gz]
+[2024-04-07 23:35:40] INFO root fetch - processPackages [pbt-simple]: Remove: archive file [/home/abi/fetcher/tmp/pbt_simple-1.7.2.tar.gz]
+[2024-04-07 23:35:40] INFO root fetch - main [MainThread]: End processing [pbt-simple]: success
+[2024-04-07 23:35:41] INFO root fetch - processPackages [lagoon]: Remove: archive file [/home/abi/fetcher/tmp/lagoon-8.tar.gz]
+[2024-04-07 23:35:41] INFO root fetch - processPackages [lagoon]: Remove: archive file [/home/abi/fetcher/tmp/lagoon-9.tar.gz]
+[2024-04-07 23:35:41] INFO root fetch - main [MainThread]: End processing [lagoon]: success
+[2024-04-07 23:35:41] INFO root fetch - main [MainThread]: Store serial: [22659524]
