@@ -12917,3 +12917,50 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:52:14] INFO root fetch - processPackages [dynamicpy]: Remove: archive file [/home/abi/fetcher/tmp/dynamicpy-1.3.0.tar.gz]
 [2024-04-07 15:52:14] INFO root fetch - main [MainThread]: End processing [dynamicpy]: success
 [2024-04-07 15:52:14] INFO root fetch - main [MainThread]: Store serial: [22656595]
+[2024-04-07 15:54:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656595]
+[2024-04-07 15:54:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 15:54:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: akshare
+[2024-04-07 15:54:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rwmapeditor-exgcdwu
+[2024-04-07 15:54:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tensordict-nightly
+[2024-04-07 15:54:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fin-maestro-kin
+[2024-04-07 15:54:24] INFO root fetch - processPackages [fin-maestro-kin]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-07 15:54:24] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: New version: [1.1] Old Version: [1.0]
+[2024-04-07 15:54:25] INFO root fetch - processPackages [tensordict-nightly]: New version: [2024.4.7] Old Version: [2024.4.6]
+[2024-04-07 15:54:25] INFO root fetch - processPackages [akshare]: New version: [1.9.99] Old Version: [1.9.98]
+[2024-04-07 15:54:25] INFO root fetch - processPackages [fin-maestro-kin]: Downloading https://files.pythonhosted.org/packages/7e/41/12d5da043175d2492024f8882f27f384bb750dec5bacd3a65874a4b947e6/fin_maestro_kin-0.2.1.tar.gz
+[2024-04-07 15:54:25] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/11/57/ff1cbc9d5841c87728e240e1f89091fa2245692e5913367684fae78dbddd/tensordict_nightly-2024.4.6-cp39-cp39-win_amd64.whl
+[2024-04-07 15:54:25] WARNING root fetch - processPackages [fin-maestro-kin]: Timeout reached during download
+[2024-04-07 15:54:25] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/ec/a4/f1c21d8fbb349e15f0bf76d32a496003bcff9b66215f81b940337a510e36/akshare-1.9.98.tar.gz
+[2024-04-07 15:54:25] WARNING root fetch - processPackages [tensordict-nightly]: Timeout reached during download
+[2024-04-07 15:54:25] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Downloading https://files.pythonhosted.org/packages/6d/e1/f3eff7bbbc871a54062927c096952cc3d41361d8d509c6e658430525c2cf/rwmapeditor_exgcdwu-1.0.tar.gz
+[2024-04-07 15:54:25] INFO root fetch - processPackages [fin-maestro-kin]: Downloading https://files.pythonhosted.org/packages/d3/5f/7faad776fedaa6410b3705f331ace79ed21697d74af2d5940207960995a1/fin_maestro_kin-0.2.2.tar.gz
+[2024-04-07 15:54:25] WARNING root fetch - processPackages [akshare]: Timeout reached during download
+[2024-04-07 15:54:25] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/1e/ef/477491cd1ad6f335c7bcf53626c31002af3c8279e8944a9a7c0cb5880d5a/tensordict_nightly-2024.4.7-cp39-cp39-manylinux1_x86_64.whl
+[2024-04-07 15:54:25] WARNING root fetch - processPackages [rwmapeditor-exgcdwu]: Timeout reached during download
+[2024-04-07 15:54:25] WARNING root fetch - processPackages [fin-maestro-kin]: Timeout reached during download
+[2024-04-07 15:54:25] INFO root fetch - processPackages [fin-maestro-kin]: executing diffoscope
+[2024-04-07 15:54:25] INFO root fetch - processPackages [fin-maestro-kin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fin_maestro_kin-0.2.1.tar.gz tmp/fin_maestro_kin-0.2.2.tar.gz --markdown 20240407/f/fin-maestro-kin/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2024-04-07 15:54:25] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/53/e8/f58e96016752567ca09f3f67abdc7e935d0afa919aded528d50590ed9170/akshare-1.9.99.tar.gz
+[2024-04-07 15:54:25] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Downloading https://files.pythonhosted.org/packages/65/c6/3c53cb24dd07b1d7beec08ceca5ab25a506eaa42749c80adabebaaa7575f/rwmapeditor_exgcdwu-1.1.tar.gz
+[2024-04-07 15:54:26] WARNING root fetch - processPackages [tensordict-nightly]: Timeout reached during download
+[2024-04-07 15:54:26] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2024-04-07 15:54:26] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2024.4.6-cp39-cp39-win_amd64.whl.zip tmp/tensordict_nightly-2024.4.7-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20240407/t/tensordict-nightly/2024.4.6-2024.4.7/diff.md --exclude *.pyd
+[2024-04-07 15:54:26] WARNING root fetch - processPackages [akshare]: Timeout reached during download
+[2024-04-07 15:54:26] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2024-04-07 15:54:26] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.98.tar.gz tmp/akshare-1.9.99.tar.gz --markdown 20240407/a/akshare/1.9.98-1.9.99/diff.md --exclude *.pyd
+[2024-04-07 15:54:26] WARNING root fetch - processPackages [rwmapeditor-exgcdwu]: Timeout reached during download
+[2024-04-07 15:54:26] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: executing diffoscope
+[2024-04-07 15:54:26] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rwmapeditor_exgcdwu-1.0.tar.gz tmp/rwmapeditor_exgcdwu-1.1.tar.gz --markdown 20240407/r/rwmapeditor-exgcdwu/1.0-1.1/diff.md --exclude *.pyd
+[2024-04-07 15:54:26] INFO root fetch - processPackages [fin-maestro-kin]: Remove: archive file [/home/abi/fetcher/tmp/fin_maestro_kin-0.2.1.tar.gz]
+[2024-04-07 15:54:26] INFO root fetch - processPackages [fin-maestro-kin]: Remove: archive file [/home/abi/fetcher/tmp/fin_maestro_kin-0.2.2.tar.gz]
+[2024-04-07 15:54:26] INFO root fetch - main [MainThread]: End processing [fin-maestro-kin]: success
+[2024-04-07 15:54:26] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Remove: archive file [/home/abi/fetcher/tmp/rwmapeditor_exgcdwu-1.0.tar.gz]
+[2024-04-07 15:54:26] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Remove: archive file [/home/abi/fetcher/tmp/rwmapeditor_exgcdwu-1.1.tar.gz]
+[2024-04-07 15:54:26] INFO root fetch - main [MainThread]: End processing [rwmapeditor-exgcdwu]: success
+[2024-04-07 15:54:27] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.6-cp39-cp39-win_amd64.whl.zip]
+[2024-04-07 15:54:27] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.7-cp39-cp39-manylinux1_x86_64.whl.zip]
+[2024-04-07 15:54:27] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2024-04-07 15:54:28] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.98.tar.gz]
+[2024-04-07 15:54:28] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
+[2024-04-07 15:54:28] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2024-04-07 15:54:28] INFO root fetch - main [MainThread]: Store serial: [22656617]
