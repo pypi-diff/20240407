@@ -3008,3 +3008,28 @@
 [2024-04-07 04:34:01] INFO root fetch - processPackages [PygameToolsBox]: Remove: archive file [/home/abi/fetcher/tmp/PygameToolsBox-1.0.9.tar.gz]
 [2024-04-07 04:34:01] INFO root fetch - main [MainThread]: End processing [PygameToolsBox]: success
 [2024-04-07 04:34:01] INFO root fetch - main [MainThread]: Store serial: [22652910]
+[2024-04-07 04:36:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652910]
+[2024-04-07 04:36:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 04:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ai2-kit
+[2024-04-07 04:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-process-hooker
+[2024-04-07 04:36:10] INFO root fetch - processPackages [ai2-kit]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-07 04:36:10] INFO root fetch - processPackages [py-process-hooker]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-04-07 04:36:10] INFO root fetch - processPackages [ai2-kit]: Downloading https://files.pythonhosted.org/packages/2f/ac/f68fb35a03f26fbbf6dcc4c0484b2a2c730f858907b176791f95259979fa/ai2_kit-0.9.8.tar.gz
+[2024-04-07 04:36:10] INFO root fetch - processPackages [py-process-hooker]: Downloading https://files.pythonhosted.org/packages/a9/9f/3d086faa73c627a7ce8eb45aeab1002f6c6321ffe1397583814c0a06755b/py_process_hooker-0.2.1.tar.gz
+[2024-04-07 04:36:10] WARNING root fetch - processPackages [ai2-kit]: Timeout reached during download
+[2024-04-07 04:36:10] WARNING root fetch - processPackages [py-process-hooker]: Timeout reached during download
+[2024-04-07 04:36:10] INFO root fetch - processPackages [ai2-kit]: Downloading https://files.pythonhosted.org/packages/92/7d/d7c2c21a8ae2d8df9e79cbff8b4677c6171799dbb041ec440b5827feeea9/ai2_kit-0.9.9.tar.gz
+[2024-04-07 04:36:10] INFO root fetch - processPackages [py-process-hooker]: Downloading https://files.pythonhosted.org/packages/00/8d/9dfdb04f458f5ee51df30cc48b63a60611ed6dba68d7d2399798f55a469f/py_process_hooker-0.3.0.tar.gz
+[2024-04-07 04:36:11] WARNING root fetch - processPackages [ai2-kit]: Timeout reached during download
+[2024-04-07 04:36:11] INFO root fetch - processPackages [ai2-kit]: executing diffoscope
+[2024-04-07 04:36:11] INFO root fetch - processPackages [ai2-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai2_kit-0.9.8.tar.gz tmp/ai2_kit-0.9.9.tar.gz --markdown 20240407/a/ai2-kit/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2024-04-07 04:36:11] INFO root fetch - processPackages [ai2-kit]: Remove: archive file [/home/abi/fetcher/tmp/ai2_kit-0.9.8.tar.gz]
+[2024-04-07 04:36:11] INFO root fetch - processPackages [ai2-kit]: Remove: archive file [/home/abi/fetcher/tmp/ai2_kit-0.9.9.tar.gz]
+[2024-04-07 04:36:11] INFO root fetch - main [MainThread]: End processing [ai2-kit]: success
+[2024-04-07 04:36:12] WARNING root fetch - processPackages [py-process-hooker]: Timeout reached during download
+[2024-04-07 04:36:12] INFO root fetch - processPackages [py-process-hooker]: executing diffoscope
+[2024-04-07 04:36:12] INFO root fetch - processPackages [py-process-hooker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_process_hooker-0.2.1.tar.gz tmp/py_process_hooker-0.3.0.tar.gz --markdown 20240407/p/py-process-hooker/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2024-04-07 04:36:13] INFO root fetch - processPackages [py-process-hooker]: Remove: archive file [/home/abi/fetcher/tmp/py_process_hooker-0.2.1.tar.gz]
+[2024-04-07 04:36:13] INFO root fetch - processPackages [py-process-hooker]: Remove: archive file [/home/abi/fetcher/tmp/py_process_hooker-0.3.0.tar.gz]
+[2024-04-07 04:36:14] INFO root fetch - main [MainThread]: End processing [py-process-hooker]: success
+[2024-04-07 04:36:14] INFO root fetch - main [MainThread]: Store serial: [22652922]
