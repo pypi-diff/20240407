@@ -15759,3 +15759,45 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 18:25:14] INFO root fetch - processPackages [lockerpm]: Remove: archive file [/home/abi/fetcher/tmp/lockerpm-0.3.9b1.tar.gz]
 [2024-04-07 18:25:14] INFO root fetch - main [MainThread]: End processing [lockerpm]: success
 [2024-04-07 18:25:14] INFO root fetch - main [MainThread]: Store serial: [22657543]
+[2024-04-07 18:27:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657543]
+[2024-04-07 18:27:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 18:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: case-convertos
+[2024-04-07 18:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SimplePyTorchUtils
+[2024-04-07 18:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyfdmss
+[2024-04-07 18:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: http-injector
+[2024-04-07 18:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: DocumentAI-std
+[2024-04-07 18:27:23] WARNING root fetch - processPackages [SimplePyTorchUtils]: Skipping, unable to determine old version
+[2024-04-07 18:27:23] INFO root fetch - main [MainThread]: End processing [SimplePyTorchUtils] error
+[2024-04-07 18:27:23] INFO root fetch - processPackages [DocumentAI-std]: New version: [0.2.0.dev1] Old Version: [0.2.0.dev0]
+[2024-04-07 18:27:23] INFO root fetch - processPackages [pyfdmss]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-07 18:27:23] WARNING root fetch - processPackages [case-convertos]: Skipping, unable to determine old version
+[2024-04-07 18:27:23] INFO root fetch - main [MainThread]: End processing [case-convertos] error
+[2024-04-07 18:27:23] INFO root fetch - processPackages [DocumentAI-std]: Downloading https://files.pythonhosted.org/packages/a8/6f/291769ed6a16ffac2cb4514e0fafb75af3ecf69b5db20f63a67903d1f9e2/DocumentAI_std-0.2.0.dev0.tar.gz
+[2024-04-07 18:27:23] INFO root fetch - processPackages [pyfdmss]: Downloading https://files.pythonhosted.org/packages/56/2a/e12b3518e3a2829738654383bf2a8619a55fcf47894d5fe07908a99c9b85/pyfdmss-0.0.5.tar.gz
+[2024-04-07 18:27:23] INFO root fetch - processPackages [http-injector]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-07 18:27:23] WARNING root fetch - processPackages [DocumentAI-std]: Timeout reached during download
+[2024-04-07 18:27:23] INFO root fetch - processPackages [http-injector]: Downloading https://files.pythonhosted.org/packages/25/3f/b0246d332c2bfee16441f901146ba37be1023d35d3a7c3cb3d70de0eb1a4/http_injector-1.0.4.tar.gz
+[2024-04-07 18:27:23] INFO root fetch - processPackages [DocumentAI-std]: Downloading https://files.pythonhosted.org/packages/5a/90/6eba0db41e0756083e34ed36a0e021fe858697f899ea78559fe63eaa55f4/DocumentAI_std-0.2.0.dev1.tar.gz
+[2024-04-07 18:27:24] WARNING root fetch - processPackages [DocumentAI-std]: Timeout reached during download
+[2024-04-07 18:27:24] INFO root fetch - processPackages [DocumentAI-std]: executing diffoscope
+[2024-04-07 18:27:24] INFO root fetch - processPackages [DocumentAI-std]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DocumentAI_std-0.2.0.dev0.tar.gz tmp/DocumentAI_std-0.2.0.dev1.tar.gz --markdown 20240407/D/DocumentAI-std/0.2.0.dev0-0.2.0.dev1/diff.md --exclude *.pyd
+[2024-04-07 18:27:24] WARNING root fetch - processPackages [http-injector]: Timeout reached during download
+[2024-04-07 18:27:24] INFO root fetch - processPackages [http-injector]: Downloading https://files.pythonhosted.org/packages/b2/ad/d0c23194bdef486e6f54dafdc4e6155028d83da026942915a9d0a9092837/http_injector-1.0.5.tar.gz
+[2024-04-07 18:27:24] WARNING root fetch - processPackages [http-injector]: Timeout reached during download
+[2024-04-07 18:27:24] INFO root fetch - processPackages [http-injector]: executing diffoscope
+[2024-04-07 18:27:24] INFO root fetch - processPackages [http-injector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/http_injector-1.0.4.tar.gz tmp/http_injector-1.0.5.tar.gz --markdown 20240407/h/http-injector/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2024-04-07 18:27:24] WARNING root fetch - processPackages [pyfdmss]: Timeout reached during download
+[2024-04-07 18:27:24] INFO root fetch - processPackages [pyfdmss]: Downloading https://files.pythonhosted.org/packages/8e/43/a14b0c35c2eb6da58eae5ff6133c41160e845d4e12f213c1dffadb6850fa/pyfdmss-0.0.6.tar.gz
+[2024-04-07 18:27:24] INFO root fetch - processPackages [DocumentAI-std]: Remove: archive file [/home/abi/fetcher/tmp/DocumentAI_std-0.2.0.dev0.tar.gz]
+[2024-04-07 18:27:24] INFO root fetch - processPackages [DocumentAI-std]: Remove: archive file [/home/abi/fetcher/tmp/DocumentAI_std-0.2.0.dev1.tar.gz]
+[2024-04-07 18:27:24] INFO root fetch - main [MainThread]: End processing [DocumentAI-std]: success
+[2024-04-07 18:27:24] WARNING root fetch - processPackages [pyfdmss]: Timeout reached during download
+[2024-04-07 18:27:24] INFO root fetch - processPackages [pyfdmss]: executing diffoscope
+[2024-04-07 18:27:24] INFO root fetch - processPackages [pyfdmss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfdmss-0.0.5.tar.gz tmp/pyfdmss-0.0.6.tar.gz --markdown 20240407/p/pyfdmss/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-07 18:27:24] INFO root fetch - processPackages [http-injector]: Remove: archive file [/home/abi/fetcher/tmp/http_injector-1.0.4.tar.gz]
+[2024-04-07 18:27:24] INFO root fetch - processPackages [http-injector]: Remove: archive file [/home/abi/fetcher/tmp/http_injector-1.0.5.tar.gz]
+[2024-04-07 18:27:24] INFO root fetch - main [MainThread]: End processing [http-injector]: success
+[2024-04-07 18:27:25] INFO root fetch - processPackages [pyfdmss]: Remove: archive file [/home/abi/fetcher/tmp/pyfdmss-0.0.5.tar.gz]
+[2024-04-07 18:27:25] INFO root fetch - processPackages [pyfdmss]: Remove: archive file [/home/abi/fetcher/tmp/pyfdmss-0.0.6.tar.gz]
+[2024-04-07 18:27:25] INFO root fetch - main [MainThread]: End processing [pyfdmss]: success
+[2024-04-07 18:27:25] INFO root fetch - main [MainThread]: Store serial: [22657557]
