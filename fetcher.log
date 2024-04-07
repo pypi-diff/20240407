@@ -4932,3 +4932,28 @@
 [2024-04-07 07:03:26] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog-workflow-local-0.0.91.tar.gz]
 [2024-04-07 07:03:26] INFO root fetch - main [MainThread]: End processing [dialog-workflow-local]: success
 [2024-04-07 07:03:26] INFO root fetch - main [MainThread]: Store serial: [22653530]
+[2024-04-07 07:05:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653530]
+[2024-04-07 07:05:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 07:05:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: didabox
+[2024-04-07 07:05:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytoon
+[2024-04-07 07:05:36] INFO root fetch - processPackages [didabox]: New version: [2.6.0] Old Version: [2.5.0]
+[2024-04-07 07:05:36] INFO root fetch - processPackages [pytoon]: New version: [1.4.0] Old Version: [1.3.2]
+[2024-04-07 07:05:36] INFO root fetch - processPackages [didabox]: Downloading https://files.pythonhosted.org/packages/8a/da/178ffb570443d7e36f7016e065d7a7203046900024a50f896c59102a5e42/didabox-2.5.0.tar.gz
+[2024-04-07 07:05:36] INFO root fetch - processPackages [pytoon]: Downloading https://files.pythonhosted.org/packages/ec/1b/61005db995ba3abd976a18975820d539084a9be1b87f22c1319d4216cd32/pytoon-1.3.2.tar.gz
+[2024-04-07 07:05:36] WARNING root fetch - processPackages [didabox]: Timeout reached during download
+[2024-04-07 07:05:36] INFO root fetch - processPackages [didabox]: Downloading https://files.pythonhosted.org/packages/f8/af/1d1b171766f4d4bbb6fc17ff921678fc302b8b16f7f053e17b711c969fad/didabox-2.6.0.tar.gz
+[2024-04-07 07:05:37] WARNING root fetch - processPackages [didabox]: Timeout reached during download
+[2024-04-07 07:05:37] INFO root fetch - processPackages [didabox]: executing diffoscope
+[2024-04-07 07:05:37] INFO root fetch - processPackages [didabox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/didabox-2.5.0.tar.gz tmp/didabox-2.6.0.tar.gz --markdown 20240407/d/didabox/2.5.0-2.6.0/diff.md --exclude *.pyd
+[2024-04-07 07:05:37] WARNING root fetch - processPackages [pytoon]: Timeout reached during download
+[2024-04-07 07:05:37] INFO root fetch - processPackages [pytoon]: Downloading https://files.pythonhosted.org/packages/ae/8b/15698ac71ad8e89b2db34a84ad16eeba91121a85060090be24ed2db96941/pytoon-1.4.0.tar.gz
+[2024-04-07 07:05:37] WARNING root fetch - processPackages [pytoon]: Timeout reached during download
+[2024-04-07 07:05:37] INFO root fetch - processPackages [pytoon]: executing diffoscope
+[2024-04-07 07:05:37] INFO root fetch - processPackages [pytoon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytoon-1.3.2.tar.gz tmp/pytoon-1.4.0.tar.gz --markdown 20240407/p/pytoon/1.3.2-1.4.0/diff.md --exclude *.pyd
+[2024-04-07 07:05:37] INFO root fetch - processPackages [didabox]: Remove: archive file [/home/abi/fetcher/tmp/didabox-2.5.0.tar.gz]
+[2024-04-07 07:05:37] INFO root fetch - processPackages [didabox]: Remove: archive file [/home/abi/fetcher/tmp/didabox-2.6.0.tar.gz]
+[2024-04-07 07:05:37] INFO root fetch - main [MainThread]: End processing [didabox]: success
+[2024-04-07 07:05:38] INFO root fetch - processPackages [pytoon]: Remove: archive file [/home/abi/fetcher/tmp/pytoon-1.3.2.tar.gz]
+[2024-04-07 07:05:38] INFO root fetch - processPackages [pytoon]: Remove: archive file [/home/abi/fetcher/tmp/pytoon-1.4.0.tar.gz]
+[2024-04-07 07:05:38] INFO root fetch - main [MainThread]: End processing [pytoon]: success
+[2024-04-07 07:05:38] INFO root fetch - main [MainThread]: Store serial: [22653536]
