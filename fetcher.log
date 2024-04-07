@@ -12580,3 +12580,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:28:15] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.2b1.tar.gz]
 [2024-04-07 15:28:15] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
 [2024-04-07 15:28:15] INFO root fetch - main [MainThread]: Store serial: [22656467]
+[2024-04-07 15:30:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656467]
+[2024-04-07 15:30:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 15:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rython-calc
+[2024-04-07 15:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: robust-extraction
+[2024-04-07 15:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smaht-submitr
+[2024-04-07 15:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: phc-ingestion
+[2024-04-07 15:30:23] INFO root fetch - processPackages [rython-calc]: New version: [0.4.5] Old Version: [0.4.4]
+[2024-04-07 15:30:23] INFO root fetch - processPackages [smaht-submitr]: New version: [0.7.0.2b2] Old Version: [0.7.0.2b1]
+[2024-04-07 15:30:23] INFO root fetch - processPackages [rython-calc]: Downloading https://files.pythonhosted.org/packages/70/84/57c4109b3947e8c2e13422aa98525f46d361671c3daad84f5a1ef60945cb/rython_calc-0.4.4.tar.gz
+[2024-04-07 15:30:23] WARNING root fetch - processPackages [robust-extraction]: Skipping, unable to determine old version
+[2024-04-07 15:30:23] INFO root fetch - main [MainThread]: End processing [robust-extraction] error
+[2024-04-07 15:30:23] INFO root fetch - processPackages [phc-ingestion]: New version: [0.8.0] Old Version: [0.7.4]
+[2024-04-07 15:30:23] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/dd/2f/6599eb4d494dfe24cb2bbda17d89b41215089819ac59ec40d890c0926331/smaht_submitr-0.7.0.2b1.tar.gz
+[2024-04-07 15:30:23] WARNING root fetch - processPackages [rython-calc]: Timeout reached during download
+[2024-04-07 15:30:24] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 15:30:24] INFO root fetch - processPackages [phc-ingestion]: Downloading https://files.pythonhosted.org/packages/5a/24/0651191e324215ef9e09e3cd1844143a8da2e26d5d2827a739ce9762834b/phc-ingestion-0.7.4.tar.gz
+[2024-04-07 15:30:24] INFO root fetch - processPackages [rython-calc]: Downloading https://files.pythonhosted.org/packages/b1/3d/b968265a587be0e22dc9766f3ccd25d82afd7b2b1c5f66fe226b9eeabc7b/rython_calc-0.4.5.tar.gz
+[2024-04-07 15:30:24] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/5b/2b/5da2e1167fc00a116d0c9ae0626ac86f8bb85714aea08d554da1ef37db8d/smaht_submitr-0.7.0.2b2.tar.gz
+[2024-04-07 15:30:24] WARNING root fetch - processPackages [rython-calc]: Timeout reached during download
+[2024-04-07 15:30:24] INFO root fetch - processPackages [rython-calc]: executing diffoscope
+[2024-04-07 15:30:24] INFO root fetch - processPackages [rython-calc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rython_calc-0.4.4.tar.gz tmp/rython_calc-0.4.5.tar.gz --markdown 20240407/r/rython-calc/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2024-04-07 15:30:24] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 15:30:24] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-07 15:30:24] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.7.0.2b1.tar.gz tmp/smaht_submitr-0.7.0.2b2.tar.gz --markdown 20240407/s/smaht-submitr/0.7.0.2b1-0.7.0.2b2/diff.md --exclude *.pyd
+[2024-04-07 15:30:24] WARNING root fetch - processPackages [phc-ingestion]: Timeout reached during download
+[2024-04-07 15:30:24] INFO root fetch - processPackages [phc-ingestion]: Downloading https://files.pythonhosted.org/packages/dd/a2/02c7a7571c91e4c4c75f9a0d62cc154d5dadbbd0ab7947ab925eb204cf7c/phc-ingestion-0.8.0.tar.gz
+[2024-04-07 15:30:24] WARNING root fetch - processPackages [phc-ingestion]: Timeout reached during download
+[2024-04-07 15:30:24] INFO root fetch - processPackages [phc-ingestion]: executing diffoscope
+[2024-04-07 15:30:24] INFO root fetch - processPackages [phc-ingestion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phc-ingestion-0.7.4.tar.gz tmp/phc-ingestion-0.8.0.tar.gz --markdown 20240407/p/phc-ingestion/0.7.4-0.8.0/diff.md --exclude *.pyd
+[2024-04-07 15:30:24] INFO root fetch - processPackages [rython-calc]: Remove: archive file [/home/abi/fetcher/tmp/rython_calc-0.4.4.tar.gz]
+[2024-04-07 15:30:24] INFO root fetch - processPackages [rython-calc]: Remove: archive file [/home/abi/fetcher/tmp/rython_calc-0.4.5.tar.gz]
+[2024-04-07 15:30:24] INFO root fetch - main [MainThread]: End processing [rython-calc]: success
+[2024-04-07 15:30:24] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.2b1.tar.gz]
+[2024-04-07 15:30:24] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.2b2.tar.gz]
+[2024-04-07 15:30:24] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-07 15:30:25] INFO root fetch - processPackages [phc-ingestion]: Remove: archive file [/home/abi/fetcher/tmp/phc-ingestion-0.7.4.tar.gz]
+[2024-04-07 15:30:25] INFO root fetch - processPackages [phc-ingestion]: Remove: archive file [/home/abi/fetcher/tmp/phc-ingestion-0.8.0.tar.gz]
+[2024-04-07 15:30:25] INFO root fetch - main [MainThread]: End processing [phc-ingestion]: success
+[2024-04-07 15:30:25] INFO root fetch - main [MainThread]: Store serial: [22656490]
