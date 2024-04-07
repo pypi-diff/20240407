@@ -2273,3 +2273,56 @@
 [2024-04-07 03:33:10] INFO root fetch - processPackages [ausankey]: Remove: archive file [/home/abi/fetcher/tmp/ausankey-1.3.tar.gz]
 [2024-04-07 03:33:10] INFO root fetch - main [MainThread]: End processing [ausankey]: success
 [2024-04-07 03:33:10] INFO root fetch - main [MainThread]: Store serial: [22652632]
+[2024-04-07 03:35:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652632]
+[2024-04-07 03:35:18] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 03:35:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ergastirio
+[2024-04-07 03:35:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-learngual
+[2024-04-07 03:35:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyTorchHelper
+[2024-04-07 03:35:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dogma-data
+[2024-04-07 03:35:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Agently
+[2024-04-07 03:35:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyAgrum-nightly
+[2024-04-07 03:35:18] WARNING root fetch - processPackages [PyTorchHelper]: Skipping, unable to determine old version
+[2024-04-07 03:35:18] INFO root fetch - main [MainThread]: End processing [PyTorchHelper] error
+[2024-04-07 03:35:18] INFO root fetch - processPackages [ergastirio]: New version: [0.9] Old Version: [0.8]
+[2024-04-07 03:35:18] WARNING root fetch - processPackages [dogma-data]: Skipping, unable to determine old version
+[2024-04-07 03:35:18] INFO root fetch - main [MainThread]: End processing [dogma-data] error
+[2024-04-07 03:35:18] INFO root fetch - processPackages [Agently]: New version: [3.2.2.1] Old Version: [3.2.2.0]
+[2024-04-07 03:35:18] INFO root fetch - processPackages [ergastirio]: Downloading https://files.pythonhosted.org/packages/61/7d/c683f388b59a46faa64f65a295b23a38a778d5c9d5ca081bd324d89a664f/ergastirio-0.8.tar.gz
+[2024-04-07 03:35:19] INFO root fetch - processPackages [django-learngual]: New version: [0.34] Old Version: [0.33]
+[2024-04-07 03:35:19] INFO root fetch - processPackages [Agently]: Downloading https://files.pythonhosted.org/packages/15/b2/f76400db9f8f69284fe9951dec9cad0618b26ff0e43f37226447a074401b/Agently-3.2.2.0.tar.gz
+[2024-04-07 03:35:19] WARNING root fetch - processPackages [ergastirio]: Timeout reached during download
+[2024-04-07 03:35:19] WARNING root fetch - processPackages [Agently]: Timeout reached during download
+[2024-04-07 03:35:19] INFO root fetch - processPackages [django-learngual]: Downloading https://files.pythonhosted.org/packages/d1/b3/702b7302f097412af357969ae38333216ce0e058d788793fdfd7b148a9f1/django-learngual-0.33.tar.gz
+[2024-04-07 03:35:19] INFO root fetch - processPackages [ergastirio]: Downloading https://files.pythonhosted.org/packages/c2/8d/5916468ebb64b91fb8f309adb235d4c6b724f39cd5a78c2ebd2f6f506007/ergastirio-0.9.tar.gz
+[2024-04-07 03:35:19] WARNING root fetch - processPackages [django-learngual]: Timeout reached during download
+[2024-04-07 03:35:19] INFO root fetch - processPackages [Agently]: Downloading https://files.pythonhosted.org/packages/a6/46/99e6df33e03e2906e5e3aa3139c37bfd159921d0a9d70426a7213dde383e/Agently-3.2.2.1.tar.gz
+[2024-04-07 03:35:19] WARNING root fetch - processPackages [ergastirio]: Timeout reached during download
+[2024-04-07 03:35:19] INFO root fetch - processPackages [ergastirio]: executing diffoscope
+[2024-04-07 03:35:19] INFO root fetch - processPackages [ergastirio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ergastirio-0.8.tar.gz tmp/ergastirio-0.9.tar.gz --markdown 20240407/e/ergastirio/0.8-0.9/diff.md --exclude *.pyd
+[2024-04-07 03:35:19] WARNING root fetch - processPackages [Agently]: Timeout reached during download
+[2024-04-07 03:35:19] INFO root fetch - processPackages [Agently]: executing diffoscope
+[2024-04-07 03:35:19] INFO root fetch - processPackages [Agently]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Agently-3.2.2.0.tar.gz tmp/Agently-3.2.2.1.tar.gz --markdown 20240407/A/Agently/3.2.2.0-3.2.2.1/diff.md --exclude *.pyd
+[2024-04-07 03:35:19] INFO root fetch - processPackages [django-learngual]: Downloading https://files.pythonhosted.org/packages/c2/bf/a6281a5c4122baef0d953b11712913879dbc2841994893eb531aaedc084c/django-learngual-0.34.tar.gz
+[2024-04-07 03:35:19] WARNING root fetch - processPackages [django-learngual]: Timeout reached during download
+[2024-04-07 03:35:19] INFO root fetch - processPackages [django-learngual]: executing diffoscope
+[2024-04-07 03:35:19] INFO root fetch - processPackages [django-learngual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-learngual-0.33.tar.gz tmp/django-learngual-0.34.tar.gz --markdown 20240407/d/django-learngual/0.33-0.34/diff.md --exclude *.pyd
+[2024-04-07 03:35:20] INFO root fetch - processPackages [ergastirio]: Remove: archive file [/home/abi/fetcher/tmp/ergastirio-0.8.tar.gz]
+[2024-04-07 03:35:20] INFO root fetch - processPackages [ergastirio]: Remove: archive file [/home/abi/fetcher/tmp/ergastirio-0.9.tar.gz]
+[2024-04-07 03:35:20] INFO root fetch - main [MainThread]: End processing [ergastirio]: success
+[2024-04-07 03:35:20] INFO root fetch - processPackages [pyAgrum-nightly]: New version: [1.9.0.9.dev202310191697564854] Old Version: [1.9.0.9.dev202310181697564854]
+[2024-04-07 03:35:20] INFO root fetch - processPackages [Agently]: Remove: archive file [/home/abi/fetcher/tmp/Agently-3.2.2.0.tar.gz]
+[2024-04-07 03:35:20] INFO root fetch - processPackages [Agently]: Remove: archive file [/home/abi/fetcher/tmp/Agently-3.2.2.1.tar.gz]
+[2024-04-07 03:35:20] INFO root fetch - main [MainThread]: End processing [Agently]: success
+[2024-04-07 03:35:20] INFO root fetch - processPackages [django-learngual]: Remove: archive file [/home/abi/fetcher/tmp/django-learngual-0.33.tar.gz]
+[2024-04-07 03:35:20] INFO root fetch - processPackages [django-learngual]: Remove: archive file [/home/abi/fetcher/tmp/django-learngual-0.34.tar.gz]
+[2024-04-07 03:35:20] INFO root fetch - main [MainThread]: End processing [django-learngual]: success
+[2024-04-07 03:35:20] INFO root fetch - processPackages [pyAgrum-nightly]: Downloading https://files.pythonhosted.org/packages/64/23/4308469c4be3abcfc53ec2ccbd7dcca1618077035522cae4b364a9c6cc56/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl
+[2024-04-07 03:35:20] WARNING root fetch - processPackages [pyAgrum-nightly]: Timeout reached during download
+[2024-04-07 03:35:21] INFO root fetch - processPackages [pyAgrum-nightly]: Downloading https://files.pythonhosted.org/packages/84/cc/6d2d3b13a2080cfbfa9792321774075d119b4fa37902c5a9d93d8eccf13d/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl
+[2024-04-07 03:35:21] WARNING root fetch - processPackages [pyAgrum-nightly]: Timeout reached during download
+[2024-04-07 03:35:21] INFO root fetch - processPackages [pyAgrum-nightly]: executing diffoscope
+[2024-04-07 03:35:21] INFO root fetch - processPackages [pyAgrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip --markdown 20240407/p/pyAgrum-nightly/1.9.0.9.dev202310181697564854-1.9.0.9.dev202310191697564854/diff.md --exclude *.pyd
+[2024-04-07 03:35:22] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl.zip]
+[2024-04-07 03:35:22] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip]
+[2024-04-07 03:35:22] INFO root fetch - main [MainThread]: End processing [pyAgrum-nightly]: success
+[2024-04-07 03:35:22] INFO root fetch - main [MainThread]: Store serial: [22652655]
