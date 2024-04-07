@@ -18316,3 +18316,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 20:58:48] INFO root fetch - main [MainThread]: End processing [adspkg]: success
 [2024-04-07 20:58:48] INFO root fetch - main [MainThread]: End processing [adspkg]: success
 [2024-04-07 20:58:48] INFO root fetch - main [MainThread]: Store serial: [22658509]
+[2024-04-07 21:00:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658509]
+[2024-04-07 21:00:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 21:00:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: youtube-comment-downloader
+[2024-04-07 21:00:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dotcon
+[2024-04-07 21:00:57] INFO root fetch - processPackages [dotcon]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-07 21:00:57] INFO root fetch - processPackages [youtube-comment-downloader]: New version: [0.1.72] Old Version: [0.1.70]
+[2024-04-07 21:00:57] INFO root fetch - processPackages [dotcon]: Downloading https://files.pythonhosted.org/packages/3e/25/571c2d9467df1aca06764dcd4d6b7a123b328a0b6fead15ee80594002015/dotcon-0.3.0.tar.gz
+[2024-04-07 21:00:57] INFO root fetch - processPackages [youtube-comment-downloader]: Downloading https://files.pythonhosted.org/packages/82/cd/0f4713d39b7cfdad4f5647f5477bbf3dba35d4bc6a5cc5570b5f529ecf80/youtube-comment-downloader-0.1.70.tar.gz
+[2024-04-07 21:00:57] WARNING root fetch - processPackages [youtube-comment-downloader]: Timeout reached during download
+[2024-04-07 21:00:57] WARNING root fetch - processPackages [dotcon]: Timeout reached during download
+[2024-04-07 21:00:57] INFO root fetch - processPackages [youtube-comment-downloader]: Downloading https://files.pythonhosted.org/packages/31/37/bb92fa3b5582e66d57136db87f95c0c404e82110d83883d30dbe1572cf3c/youtube-comment-downloader-0.1.72.tar.gz
+[2024-04-07 21:00:57] INFO root fetch - processPackages [dotcon]: Downloading https://files.pythonhosted.org/packages/04/14/e09bc13fbad97d20c9484f7090ac137af4f2495786c85e919b9f90e89a81/dotcon-0.4.0.tar.gz
+[2024-04-07 21:00:57] WARNING root fetch - processPackages [youtube-comment-downloader]: Timeout reached during download
+[2024-04-07 21:00:57] INFO root fetch - processPackages [youtube-comment-downloader]: executing diffoscope
+[2024-04-07 21:00:57] INFO root fetch - processPackages [youtube-comment-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/youtube-comment-downloader-0.1.70.tar.gz tmp/youtube-comment-downloader-0.1.72.tar.gz --markdown 20240407/y/youtube-comment-downloader/0.1.70-0.1.72/diff.md --exclude *.pyd
+[2024-04-07 21:00:57] WARNING root fetch - processPackages [dotcon]: Timeout reached during download
+[2024-04-07 21:00:57] INFO root fetch - processPackages [dotcon]: executing diffoscope
+[2024-04-07 21:00:57] INFO root fetch - processPackages [dotcon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dotcon-0.3.0.tar.gz tmp/dotcon-0.4.0.tar.gz --markdown 20240407/d/dotcon/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2024-04-07 21:00:58] INFO root fetch - processPackages [youtube-comment-downloader]: Remove: archive file [/home/abi/fetcher/tmp/youtube-comment-downloader-0.1.70.tar.gz]
+[2024-04-07 21:00:58] INFO root fetch - processPackages [youtube-comment-downloader]: Remove: archive file [/home/abi/fetcher/tmp/youtube-comment-downloader-0.1.72.tar.gz]
+[2024-04-07 21:00:58] INFO root fetch - main [MainThread]: End processing [youtube-comment-downloader]: success
+[2024-04-07 21:00:58] INFO root fetch - processPackages [dotcon]: Remove: archive file [/home/abi/fetcher/tmp/dotcon-0.3.0.tar.gz]
+[2024-04-07 21:00:58] INFO root fetch - processPackages [dotcon]: Remove: archive file [/home/abi/fetcher/tmp/dotcon-0.4.0.tar.gz]
+[2024-04-07 21:00:58] INFO root fetch - main [MainThread]: End processing [dotcon]: success
+[2024-04-07 21:00:58] INFO root fetch - main [MainThread]: Store serial: [22658515]
