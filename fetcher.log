@@ -7019,3 +7019,39 @@
 [2024-04-07 09:12:52] INFO root fetch - processPackages [pyfunvice]: Remove: archive file [/home/abi/fetcher/tmp/pyfunvice-0.1.4.tar.gz]
 [2024-04-07 09:12:52] INFO root fetch - main [MainThread]: End processing [pyfunvice]: success
 [2024-04-07 09:12:52] INFO root fetch - main [MainThread]: Store serial: [22654258]
+[2024-04-07 09:14:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654258]
+[2024-04-07 09:15:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 09:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfakefs
+[2024-04-07 09:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-libtrust
+[2024-04-07 09:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cefi
+[2024-04-07 09:15:02] INFO root fetch - processPackages [py-libtrust]: New version: [2.0.0] Old Version: [1.0.5]
+[2024-04-07 09:15:02] INFO root fetch - processPackages [pyfakefs]: New version: [5.4.0] Old Version: [5.3.5]
+[2024-04-07 09:15:02] INFO root fetch - processPackages [cefi]: New version: [4.4.6] Old Version: [4.4.5]
+[2024-04-07 09:15:02] INFO root fetch - processPackages [pyfakefs]: Downloading https://files.pythonhosted.org/packages/00/2f/0fb6e7c3119fd9935cc1608a3b79de70bad8c2b400654b7e38e35120ff91/pyfakefs-5.3.5.tar.gz
+[2024-04-07 09:15:02] INFO root fetch - processPackages [py-libtrust]: Downloading https://files.pythonhosted.org/packages/4b/12/5f89ec0c53d541b0a0f6df0b2798d9665ae6f8d25528c479499d522faea2/py-libtrust-1.0.5.tar.gz
+[2024-04-07 09:15:02] INFO root fetch - processPackages [cefi]: Downloading https://files.pythonhosted.org/packages/3d/89/2e3d3515e1a650cd94b0e7bc20a4778e1c87a0e6e393aab457a3ebb08ace/cefi-4.4.5.tar.gz
+[2024-04-07 09:15:02] WARNING root fetch - processPackages [cefi]: Timeout reached during download
+[2024-04-07 09:15:02] WARNING root fetch - processPackages [pyfakefs]: Timeout reached during download
+[2024-04-07 09:15:03] WARNING root fetch - processPackages [py-libtrust]: Timeout reached during download
+[2024-04-07 09:15:03] INFO root fetch - processPackages [cefi]: Downloading https://files.pythonhosted.org/packages/4d/99/d315f024daefa1dd3dd269de0f55054d4d1f6e1e88c70cf8fd8629f6ac3a/cefi-4.4.6.tar.gz
+[2024-04-07 09:15:03] INFO root fetch - processPackages [pyfakefs]: Downloading https://files.pythonhosted.org/packages/07/bd/f90ac3d871b2b7f6799d8b768c768526e509e15b50821fe21943a250d417/pyfakefs-5.4.0.tar.gz
+[2024-04-07 09:15:03] INFO root fetch - processPackages [py-libtrust]: Downloading https://files.pythonhosted.org/packages/17/b7/c6518042c41cad1a148f5e5849ec4f502c8e9a9a124eac5a1faa9471cc8c/py_libtrust-2.0.0.tar.gz
+[2024-04-07 09:15:03] WARNING root fetch - processPackages [cefi]: Timeout reached during download
+[2024-04-07 09:15:03] INFO root fetch - processPackages [cefi]: executing diffoscope
+[2024-04-07 09:15:03] INFO root fetch - processPackages [cefi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cefi-4.4.5.tar.gz tmp/cefi-4.4.6.tar.gz --markdown 20240407/c/cefi/4.4.5-4.4.6/diff.md --exclude *.pyd
+[2024-04-07 09:15:03] WARNING root fetch - processPackages [pyfakefs]: Timeout reached during download
+[2024-04-07 09:15:03] INFO root fetch - processPackages [pyfakefs]: executing diffoscope
+[2024-04-07 09:15:03] INFO root fetch - processPackages [pyfakefs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfakefs-5.3.5.tar.gz tmp/pyfakefs-5.4.0.tar.gz --markdown 20240407/p/pyfakefs/5.3.5-5.4.0/diff.md --exclude *.pyd
+[2024-04-07 09:15:03] WARNING root fetch - processPackages [py-libtrust]: Timeout reached during download
+[2024-04-07 09:15:03] INFO root fetch - processPackages [py-libtrust]: executing diffoscope
+[2024-04-07 09:15:03] INFO root fetch - processPackages [py-libtrust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-libtrust-1.0.5.tar.gz tmp/py_libtrust-2.0.0.tar.gz --markdown 20240407/p/py-libtrust/1.0.5-2.0.0/diff.md --exclude *.pyd
+[2024-04-07 09:15:03] INFO root fetch - processPackages [py-libtrust]: Remove: archive file [/home/abi/fetcher/tmp/py-libtrust-1.0.5.tar.gz]
+[2024-04-07 09:15:03] INFO root fetch - processPackages [py-libtrust]: Remove: archive file [/home/abi/fetcher/tmp/py_libtrust-2.0.0.tar.gz]
+[2024-04-07 09:15:03] INFO root fetch - main [MainThread]: End processing [py-libtrust]: success
+[2024-04-07 09:15:03] INFO root fetch - processPackages [cefi]: Remove: archive file [/home/abi/fetcher/tmp/cefi-4.4.5.tar.gz]
+[2024-04-07 09:15:03] INFO root fetch - processPackages [cefi]: Remove: archive file [/home/abi/fetcher/tmp/cefi-4.4.6.tar.gz]
+[2024-04-07 09:15:03] INFO root fetch - main [MainThread]: End processing [cefi]: success
+[2024-04-07 09:15:04] INFO root fetch - processPackages [pyfakefs]: Remove: archive file [/home/abi/fetcher/tmp/pyfakefs-5.3.5.tar.gz]
+[2024-04-07 09:15:04] INFO root fetch - processPackages [pyfakefs]: Remove: archive file [/home/abi/fetcher/tmp/pyfakefs-5.4.0.tar.gz]
+[2024-04-07 09:15:04] INFO root fetch - main [MainThread]: End processing [pyfakefs]: success
+[2024-04-07 09:15:04] INFO root fetch - main [MainThread]: Store serial: [22654267]
