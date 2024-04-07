@@ -11305,3 +11305,31 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:05:12] INFO root fetch - processPackages [qa-test]: Remove: archive file [/home/abi/fetcher/tmp/qa_test-0.0.5.tar.gz]
 [2024-04-07 14:05:12] INFO root fetch - main [MainThread]: End processing [qa-test]: success
 [2024-04-07 14:05:12] INFO root fetch - main [MainThread]: Store serial: [22655949]
+[2024-04-07 14:07:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655949]
+[2024-04-07 14:07:21] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 14:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: antchain-realperson
+[2024-04-07 14:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: matplotlib-visual
+[2024-04-07 14:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: isNullOrEmpty
+[2024-04-07 14:07:21] INFO root fetch - processPackages [matplotlib-visual]: New version: [0.8] Old Version: [0.7.1]
+[2024-04-07 14:07:21] WARNING root fetch - processPackages [isNullOrEmpty]: Skipping, unable to determine old version
+[2024-04-07 14:07:21] INFO root fetch - main [MainThread]: End processing [isNullOrEmpty] error
+[2024-04-07 14:07:21] INFO root fetch - processPackages [antchain-realperson]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-04-07 14:07:21] INFO root fetch - processPackages [matplotlib-visual]: Downloading https://files.pythonhosted.org/packages/a6/05/6667605ffe048d23ccf98edb460828734cbaa14df975c8fb8f3bc327cdd3/matplotlib_visual-0.7.1.tar.gz
+[2024-04-07 14:07:21] INFO root fetch - processPackages [antchain-realperson]: Downloading https://files.pythonhosted.org/packages/eb/a2/3f01d4e32b37abcbd4203da7171764d82654cdcc3c5345c10e16c8cc1026/antchain_realperson-1.8.0.tar.gz
+[2024-04-07 14:07:21] WARNING root fetch - processPackages [antchain-realperson]: Timeout reached during download
+[2024-04-07 14:07:21] WARNING root fetch - processPackages [matplotlib-visual]: Timeout reached during download
+[2024-04-07 14:07:21] INFO root fetch - processPackages [antchain-realperson]: Downloading https://files.pythonhosted.org/packages/4a/82/aad5948d1047eab3b05c7870556ffed9533375a00479896aaaa7ac706ece/antchain_realperson-1.9.0.tar.gz
+[2024-04-07 14:07:21] INFO root fetch - processPackages [matplotlib-visual]: Downloading https://files.pythonhosted.org/packages/62/be/b715a5e8bb27076d22d487f8e647c0d11208d0fa95b6abe5facb5900d290/matplotlib_visual-0.8.tar.gz
+[2024-04-07 14:07:22] WARNING root fetch - processPackages [antchain-realperson]: Timeout reached during download
+[2024-04-07 14:07:22] INFO root fetch - processPackages [antchain-realperson]: executing diffoscope
+[2024-04-07 14:07:22] INFO root fetch - processPackages [antchain-realperson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antchain_realperson-1.8.0.tar.gz tmp/antchain_realperson-1.9.0.tar.gz --markdown 20240407/a/antchain-realperson/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2024-04-07 14:07:22] WARNING root fetch - processPackages [matplotlib-visual]: Timeout reached during download
+[2024-04-07 14:07:22] INFO root fetch - processPackages [matplotlib-visual]: executing diffoscope
+[2024-04-07 14:07:22] INFO root fetch - processPackages [matplotlib-visual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matplotlib_visual-0.7.1.tar.gz tmp/matplotlib_visual-0.8.tar.gz --markdown 20240407/m/matplotlib-visual/0.7.1-0.8/diff.md --exclude *.pyd
+[2024-04-07 14:07:22] INFO root fetch - processPackages [matplotlib-visual]: Remove: archive file [/home/abi/fetcher/tmp/matplotlib_visual-0.7.1.tar.gz]
+[2024-04-07 14:07:22] INFO root fetch - processPackages [matplotlib-visual]: Remove: archive file [/home/abi/fetcher/tmp/matplotlib_visual-0.8.tar.gz]
+[2024-04-07 14:07:22] INFO root fetch - main [MainThread]: End processing [matplotlib-visual]: success
+[2024-04-07 14:07:22] INFO root fetch - processPackages [antchain-realperson]: Remove: archive file [/home/abi/fetcher/tmp/antchain_realperson-1.8.0.tar.gz]
+[2024-04-07 14:07:22] INFO root fetch - processPackages [antchain-realperson]: Remove: archive file [/home/abi/fetcher/tmp/antchain_realperson-1.9.0.tar.gz]
+[2024-04-07 14:07:22] INFO root fetch - main [MainThread]: End processing [antchain-realperson]: success
+[2024-04-07 14:07:22] INFO root fetch - main [MainThread]: Store serial: [22655962]
