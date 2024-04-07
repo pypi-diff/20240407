@@ -20082,3 +20082,45 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:47:52] INFO root fetch - processPackages [EasyOutput]: Remove: archive file [/home/abi/fetcher/tmp/easyoutput-0.0.9.tar.gz]
 [2024-04-07 22:47:52] INFO root fetch - main [MainThread]: End processing [EasyOutput]: success
 [2024-04-07 22:47:52] INFO root fetch - main [MainThread]: Store serial: [22659187]
+[2024-04-07 22:49:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659187]
+[2024-04-07 22:50:02] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 22:50:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fovus
+[2024-04-07 22:50:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py4phi
+[2024-04-07 22:50:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CnbcNews
+[2024-04-07 22:50:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quantumflux-optimizer
+[2024-04-07 22:50:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pdfconversorcall
+[2024-04-07 22:50:02] WARNING root fetch - processPackages [pdfconversorcall]: Skipping, unable to determine old version
+[2024-04-07 22:50:02] WARNING root fetch - processPackages [quantumflux-optimizer]: Skipping, unable to determine old version
+[2024-04-07 22:50:02] INFO root fetch - main [MainThread]: End processing [pdfconversorcall] error
+[2024-04-07 22:50:02] INFO root fetch - main [MainThread]: End processing [quantumflux-optimizer] error
+[2024-04-07 22:50:02] INFO root fetch - processPackages [CnbcNews]: New version: [5.2] Old Version: [5.1]
+[2024-04-07 22:50:02] INFO root fetch - processPackages [fovus]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-07 22:50:02] INFO root fetch - processPackages [py4phi]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-07 22:50:02] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/1e/74/958b116dfaca176014af867f6886d6b62c36c5c4e4fd5a26a777e11a12b7/CnbcNews-5.1.tar.gz
+[2024-04-07 22:50:02] INFO root fetch - processPackages [py4phi]: Downloading https://files.pythonhosted.org/packages/84/e4/39fb951076e6313b16f4a9b49973ca6763beb0754672a991e3dae89d0396/py4phi-0.9.0.tar.gz
+[2024-04-07 22:50:02] INFO root fetch - processPackages [fovus]: Downloading https://files.pythonhosted.org/packages/f1/c0/a4dd2e0c61704585bdca841ea8725ea766a28aec0b849d1254506e8a65bc/fovus-1.1.8-py3-none-any.whl
+[2024-04-07 22:50:02] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-07 22:50:02] WARNING root fetch - processPackages [py4phi]: Timeout reached during download
+[2024-04-07 22:50:02] WARNING root fetch - processPackages [fovus]: Timeout reached during download
+[2024-04-07 22:50:03] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/94/a0/64e1be50d1a7e14bc77c87adf7efb12cced430ef148fda78c43782419e01/CnbcNews-5.2.tar.gz
+[2024-04-07 22:50:03] INFO root fetch - processPackages [py4phi]: Downloading https://files.pythonhosted.org/packages/08/1f/9b0046617ac9722c2062a5cad3c211e6ab88d346f6de7a737ce7b2304ef5/py4phi-0.9.1.tar.gz
+[2024-04-07 22:50:03] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-07 22:50:03] INFO root fetch - processPackages [CnbcNews]: executing diffoscope
+[2024-04-07 22:50:03] INFO root fetch - processPackages [CnbcNews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CnbcNews-5.1.tar.gz tmp/CnbcNews-5.2.tar.gz --markdown 20240407/C/CnbcNews/5.1-5.2/diff.md --exclude *.pyd
+[2024-04-07 22:50:03] WARNING root fetch - processPackages [py4phi]: Timeout reached during download
+[2024-04-07 22:50:03] INFO root fetch - processPackages [py4phi]: executing diffoscope
+[2024-04-07 22:50:03] INFO root fetch - processPackages [py4phi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py4phi-0.9.0.tar.gz tmp/py4phi-0.9.1.tar.gz --markdown 20240407/p/py4phi/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-07 22:50:03] INFO root fetch - processPackages [fovus]: Downloading https://files.pythonhosted.org/packages/c1/f1/029dd56d05c770d6266c20505b366fc3143f86b85514545e2ef77ededba7/fovus-1.1.9-py3-none-any.whl
+[2024-04-07 22:50:03] WARNING root fetch - processPackages [fovus]: Timeout reached during download
+[2024-04-07 22:50:03] INFO root fetch - processPackages [fovus]: executing diffoscope
+[2024-04-07 22:50:03] INFO root fetch - processPackages [fovus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fovus-1.1.8-py3-none-any.whl.zip tmp/fovus-1.1.9-py3-none-any.whl.zip --markdown 20240407/f/fovus/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2024-04-07 22:50:03] INFO root fetch - processPackages [CnbcNews]: Remove: archive file [/home/abi/fetcher/tmp/CnbcNews-5.1.tar.gz]
+[2024-04-07 22:50:03] INFO root fetch - processPackages [CnbcNews]: Remove: archive file [/home/abi/fetcher/tmp/CnbcNews-5.2.tar.gz]
+[2024-04-07 22:50:03] INFO root fetch - main [MainThread]: End processing [CnbcNews]: success
+[2024-04-07 22:50:03] INFO root fetch - processPackages [py4phi]: Remove: archive file [/home/abi/fetcher/tmp/py4phi-0.9.0.tar.gz]
+[2024-04-07 22:50:03] INFO root fetch - processPackages [py4phi]: Remove: archive file [/home/abi/fetcher/tmp/py4phi-0.9.1.tar.gz]
+[2024-04-07 22:50:03] INFO root fetch - main [MainThread]: End processing [py4phi]: success
+[2024-04-07 22:50:04] INFO root fetch - processPackages [fovus]: Remove: archive file [/home/abi/fetcher/tmp/fovus-1.1.8-py3-none-any.whl.zip]
+[2024-04-07 22:50:04] INFO root fetch - processPackages [fovus]: Remove: archive file [/home/abi/fetcher/tmp/fovus-1.1.9-py3-none-any.whl.zip]
+[2024-04-07 22:50:04] INFO root fetch - main [MainThread]: End processing [fovus]: success
+[2024-04-07 22:50:04] INFO root fetch - main [MainThread]: Store serial: [22659206]
