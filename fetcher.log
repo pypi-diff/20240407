@@ -12778,3 +12778,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:43:32] INFO root fetch - processPackages [rython-calc]: Remove: archive file [/home/abi/fetcher/tmp/rython_calc-0.4.6.tar.gz]
 [2024-04-07 15:43:32] INFO root fetch - main [MainThread]: End processing [rython-calc]: success
 [2024-04-07 15:43:32] INFO root fetch - main [MainThread]: Store serial: [22656553]
+[2024-04-07 15:45:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656553]
+[2024-04-07 15:45:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 15:45:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Kodistubs
+[2024-04-07 15:45:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aurora-tr
+[2024-04-07 15:45:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: textual
+[2024-04-07 15:45:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qdls
+[2024-04-07 15:45:41] INFO root fetch - processPackages [qdls]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-07 15:45:41] WARNING root fetch - processPackages [aurora-tr]: Skipping, unable to determine old version
+[2024-04-07 15:45:41] INFO root fetch - main [MainThread]: End processing [aurora-tr] error
+[2024-04-07 15:45:41] INFO root fetch - processPackages [qdls]: Downloading https://files.pythonhosted.org/packages/b1/dc/a5e2e07cdd8ca93f4dfb2833b8f46220c66f99408adf419c3a20ae7244ee/qdls-0.1.1.tar.gz
+[2024-04-07 15:45:41] INFO root fetch - processPackages [textual]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-07 15:45:41] INFO root fetch - processPackages [Kodistubs]: New version: [21.0.0rc1] Old Version: [21.0.0]
+[2024-04-07 15:45:42] WARNING root fetch - processPackages [qdls]: Timeout reached during download
+[2024-04-07 15:45:42] INFO root fetch - processPackages [Kodistubs]: Downloading https://files.pythonhosted.org/packages/24/bc/5cf6fcb211cfcfe572b48897140806c88d2c2ab7597d51dcac2313950304/Kodistubs-21.0.0.tar.gz
+[2024-04-07 15:45:42] INFO root fetch - processPackages [qdls]: Downloading https://files.pythonhosted.org/packages/ff/ea/f064abe3547569cb5321db34376c0d6dcf2d5bb232e75101e02b9d44433f/qdls-0.1.2.tar.gz
+[2024-04-07 15:45:42] INFO root fetch - processPackages [textual]: Downloading https://files.pythonhosted.org/packages/17/d2/002affba91d339187f5699c26fecc3fa3bf966f17c5d08bb696c724b63ee/textual-0.9.0.tar.gz
+[2024-04-07 15:45:42] WARNING root fetch - processPackages [Kodistubs]: Timeout reached during download
+[2024-04-07 15:45:42] WARNING root fetch - processPackages [qdls]: Timeout reached during download
+[2024-04-07 15:45:42] INFO root fetch - processPackages [qdls]: executing diffoscope
+[2024-04-07 15:45:42] INFO root fetch - processPackages [qdls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qdls-0.1.1.tar.gz tmp/qdls-0.1.2.tar.gz --markdown 20240407/q/qdls/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-07 15:45:42] INFO root fetch - processPackages [Kodistubs]: Downloading https://files.pythonhosted.org/packages/67/74/1eeb8c1b5e519e14eca9f45a382077e9303e9255e945db2443027e4171a0/Kodistubs-21.0.0rc1.tar.gz
+[2024-04-07 15:45:42] WARNING root fetch - processPackages [textual]: Timeout reached during download
+[2024-04-07 15:45:42] WARNING root fetch - processPackages [Kodistubs]: Timeout reached during download
+[2024-04-07 15:45:42] INFO root fetch - processPackages [Kodistubs]: executing diffoscope
+[2024-04-07 15:45:42] INFO root fetch - processPackages [Kodistubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Kodistubs-21.0.0.tar.gz tmp/Kodistubs-21.0.0rc1.tar.gz --markdown 20240407/K/Kodistubs/21.0.0-21.0.0rc1/diff.md --exclude *.pyd
+[2024-04-07 15:45:42] INFO root fetch - processPackages [textual]: Downloading https://files.pythonhosted.org/packages/0e/7d/2155bf024c3bdf1dc6365e109a16bab46098e032e62666565176ebc9f84a/textual-0.9.1.tar.gz
+[2024-04-07 15:45:42] WARNING root fetch - processPackages [textual]: Timeout reached during download
+[2024-04-07 15:45:42] INFO root fetch - processPackages [textual]: executing diffoscope
+[2024-04-07 15:45:42] INFO root fetch - processPackages [textual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textual-0.9.0.tar.gz tmp/textual-0.9.1.tar.gz --markdown 20240407/t/textual/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-07 15:45:43] INFO root fetch - processPackages [qdls]: Remove: archive file [/home/abi/fetcher/tmp/qdls-0.1.1.tar.gz]
+[2024-04-07 15:45:43] INFO root fetch - processPackages [qdls]: Remove: archive file [/home/abi/fetcher/tmp/qdls-0.1.2.tar.gz]
+[2024-04-07 15:45:43] INFO root fetch - main [MainThread]: End processing [qdls]: success
+[2024-04-07 15:45:43] INFO root fetch - processPackages [Kodistubs]: Remove: archive file [/home/abi/fetcher/tmp/Kodistubs-21.0.0.tar.gz]
+[2024-04-07 15:45:43] INFO root fetch - processPackages [Kodistubs]: Remove: archive file [/home/abi/fetcher/tmp/Kodistubs-21.0.0rc1.tar.gz]
+[2024-04-07 15:45:43] INFO root fetch - main [MainThread]: End processing [Kodistubs]: success
+[2024-04-07 15:45:43] INFO root fetch - processPackages [textual]: Remove: archive file [/home/abi/fetcher/tmp/textual-0.9.0.tar.gz]
+[2024-04-07 15:45:43] INFO root fetch - processPackages [textual]: Remove: archive file [/home/abi/fetcher/tmp/textual-0.9.1.tar.gz]
+[2024-04-07 15:45:43] INFO root fetch - main [MainThread]: End processing [textual]: success
+[2024-04-07 15:45:43] INFO root fetch - main [MainThread]: Store serial: [22656568]
