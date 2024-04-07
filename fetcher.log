@@ -14902,3 +14902,64 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:39:33] INFO root fetch - processPackages [py3d]: Remove: archive file [/home/abi/fetcher/tmp/py3d-0.1.9.tar.gz]
 [2024-04-07 17:39:33] INFO root fetch - main [MainThread]: End processing [py3d]: success
 [2024-04-07 17:39:33] INFO root fetch - main [MainThread]: Store serial: [22657238]
+[2024-04-07 17:41:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657238]
+[2024-04-07 17:41:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 17:41:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: example-package-tony
+[2024-04-07 17:41:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eyepop
+[2024-04-07 17:41:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: camlab
+[2024-04-07 17:41:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: telegram-collector
+[2024-04-07 17:41:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nettowel
+[2024-04-07 17:41:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: encode-utils-cli
+[2024-04-07 17:41:41] INFO root fetch - processPackages [camlab]: New version: [0.0.8.2] Old Version: [0.0.8.1]
+[2024-04-07 17:41:41] INFO root fetch - processPackages [telegram-collector]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 17:41:41] INFO root fetch - processPackages [eyepop]: New version: [0.9.2] Old Version: [0.15.0]
+[2024-04-07 17:41:41] WARNING root fetch - processPackages [example-package-tony]: Skipping, unable to determine old version
+[2024-04-07 17:41:41] INFO root fetch - main [MainThread]: End processing [example-package-tony] error
+[2024-04-07 17:41:41] INFO root fetch - processPackages [encode-utils-cli]: New version: [1.0.3a0] Old Version: [1.0.2a0]
+[2024-04-07 17:41:41] INFO root fetch - processPackages [nettowel]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-04-07 17:41:41] INFO root fetch - processPackages [telegram-collector]: Downloading https://files.pythonhosted.org/packages/cf/6b/d795f55bc58ce47ec63c00f84b3db722350ac9aa54724d9ddb10b0e74f1d/telegram_collector-0.0.8.tar.gz
+[2024-04-07 17:41:41] INFO root fetch - processPackages [camlab]: Downloading https://files.pythonhosted.org/packages/41/4d/42f957e7d109b6f1a6649646131193c7e37f806f480d6d3961d4a6de168a/camlab-0.0.8.1.tar.gz
+[2024-04-07 17:41:41] INFO root fetch - processPackages [eyepop]: Downloading https://files.pythonhosted.org/packages/96/8a/40a3933a02444a40d385b4510db89064c8ef5d8e7f202756f5d44d0b1403/eyepop-0.15.0.tar.gz
+[2024-04-07 17:41:42] WARNING root fetch - processPackages [telegram-collector]: Timeout reached during download
+[2024-04-07 17:41:42] WARNING root fetch - processPackages [camlab]: Timeout reached during download
+[2024-04-07 17:41:42] WARNING root fetch - processPackages [eyepop]: Timeout reached during download
+[2024-04-07 17:41:42] INFO root fetch - processPackages [nettowel]: Downloading https://files.pythonhosted.org/packages/95/24/f1a7f4f489e0f5d8ead4b333f6e9ac94fa6d349dc3dd4ac4cf18350d2e78/nettowel-0.5.1.tar.gz
+[2024-04-07 17:41:42] INFO root fetch - processPackages [encode-utils-cli]: Downloading https://files.pythonhosted.org/packages/4c/4e/1613802280544acc2acdc62b376ed728c1288eb56a42dbea618bbcc4954f/encode_utils_cli-1.0.2a0.tar.gz
+[2024-04-07 17:41:42] INFO root fetch - processPackages [telegram-collector]: Downloading https://files.pythonhosted.org/packages/58/1a/ee9068adc0920b790ade2df5ec45821f0a6508fa20db8761e1cce449c456/telegram_collector-0.0.9.tar.gz
+[2024-04-07 17:41:42] INFO root fetch - processPackages [eyepop]: Downloading https://files.pythonhosted.org/packages/8d/76/baee6524d83a1cc10886c0bff9d6477e13ff8a24b73404338eaa33ae8cb6/eyepop-0.9.2.tar.gz
+[2024-04-07 17:41:42] INFO root fetch - processPackages [camlab]: Downloading https://files.pythonhosted.org/packages/97/e1/58ff16fb4e1c6605fec37d3235c7a2f05c5a8d17586228d01df327388781/camlab-0.0.8.2.tar.gz
+[2024-04-07 17:41:42] WARNING root fetch - processPackages [encode-utils-cli]: Timeout reached during download
+[2024-04-07 17:41:42] WARNING root fetch - processPackages [camlab]: Timeout reached during download
+[2024-04-07 17:41:42] INFO root fetch - processPackages [camlab]: executing diffoscope
+[2024-04-07 17:41:42] INFO root fetch - processPackages [camlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camlab-0.0.8.1.tar.gz tmp/camlab-0.0.8.2.tar.gz --markdown 20240407/c/camlab/0.0.8.1-0.0.8.2/diff.md --exclude *.pyd
+[2024-04-07 17:41:42] WARNING root fetch - processPackages [telegram-collector]: Timeout reached during download
+[2024-04-07 17:41:42] INFO root fetch - processPackages [telegram-collector]: executing diffoscope
+[2024-04-07 17:41:42] INFO root fetch - processPackages [telegram-collector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegram_collector-0.0.8.tar.gz tmp/telegram_collector-0.0.9.tar.gz --markdown 20240407/t/telegram-collector/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 17:41:42] WARNING root fetch - processPackages [eyepop]: Timeout reached during download
+[2024-04-07 17:41:42] INFO root fetch - processPackages [eyepop]: executing diffoscope
+[2024-04-07 17:41:42] INFO root fetch - processPackages [eyepop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eyepop-0.15.0.tar.gz tmp/eyepop-0.9.2.tar.gz --markdown 20240407/e/eyepop/0.15.0-0.9.2/diff.md --exclude *.pyd
+[2024-04-07 17:41:42] WARNING root fetch - processPackages [nettowel]: Timeout reached during download
+[2024-04-07 17:41:42] INFO root fetch - processPackages [encode-utils-cli]: Downloading https://files.pythonhosted.org/packages/15/a2/0f00c589e2cc7938b3d10fa3f62c4ab88bddc61529a7ea5a8e10176d0267/encode_utils_cli-1.0.3a0.tar.gz
+[2024-04-07 17:41:42] INFO root fetch - processPackages [nettowel]: Downloading https://files.pythonhosted.org/packages/e4/36/1b7eb2741e87bd7d4ce7ca9b9949c7b11786ecfd54ee100c48acdaa341c9/nettowel-0.6.0.tar.gz
+[2024-04-07 17:41:42] WARNING root fetch - processPackages [encode-utils-cli]: Timeout reached during download
+[2024-04-07 17:41:42] INFO root fetch - processPackages [encode-utils-cli]: executing diffoscope
+[2024-04-07 17:41:42] INFO root fetch - processPackages [encode-utils-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/encode_utils_cli-1.0.2a0.tar.gz tmp/encode_utils_cli-1.0.3a0.tar.gz --markdown 20240407/e/encode-utils-cli/1.0.2a0-1.0.3a0/diff.md --exclude *.pyd
+[2024-04-07 17:41:42] WARNING root fetch - processPackages [nettowel]: Timeout reached during download
+[2024-04-07 17:41:42] INFO root fetch - processPackages [nettowel]: executing diffoscope
+[2024-04-07 17:41:42] INFO root fetch - processPackages [nettowel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nettowel-0.5.1.tar.gz tmp/nettowel-0.6.0.tar.gz --markdown 20240407/n/nettowel/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2024-04-07 17:41:43] INFO root fetch - processPackages [telegram-collector]: Remove: archive file [/home/abi/fetcher/tmp/telegram_collector-0.0.8.tar.gz]
+[2024-04-07 17:41:43] INFO root fetch - processPackages [telegram-collector]: Remove: archive file [/home/abi/fetcher/tmp/telegram_collector-0.0.9.tar.gz]
+[2024-04-07 17:41:43] INFO root fetch - main [MainThread]: End processing [telegram-collector]: success
+[2024-04-07 17:41:43] INFO root fetch - processPackages [camlab]: Remove: archive file [/home/abi/fetcher/tmp/camlab-0.0.8.1.tar.gz]
+[2024-04-07 17:41:43] INFO root fetch - processPackages [camlab]: Remove: archive file [/home/abi/fetcher/tmp/camlab-0.0.8.2.tar.gz]
+[2024-04-07 17:41:43] INFO root fetch - main [MainThread]: End processing [camlab]: success
+[2024-04-07 17:41:43] INFO root fetch - processPackages [eyepop]: Remove: archive file [/home/abi/fetcher/tmp/eyepop-0.15.0.tar.gz]
+[2024-04-07 17:41:43] INFO root fetch - processPackages [eyepop]: Remove: archive file [/home/abi/fetcher/tmp/eyepop-0.9.2.tar.gz]
+[2024-04-07 17:41:43] INFO root fetch - main [MainThread]: End processing [eyepop]: success
+[2024-04-07 17:41:43] INFO root fetch - processPackages [encode-utils-cli]: Remove: archive file [/home/abi/fetcher/tmp/encode_utils_cli-1.0.2a0.tar.gz]
+[2024-04-07 17:41:43] INFO root fetch - processPackages [encode-utils-cli]: Remove: archive file [/home/abi/fetcher/tmp/encode_utils_cli-1.0.3a0.tar.gz]
+[2024-04-07 17:41:43] INFO root fetch - main [MainThread]: End processing [encode-utils-cli]: success
+[2024-04-07 17:41:43] INFO root fetch - processPackages [nettowel]: Remove: archive file [/home/abi/fetcher/tmp/nettowel-0.5.1.tar.gz]
+[2024-04-07 17:41:43] INFO root fetch - processPackages [nettowel]: Remove: archive file [/home/abi/fetcher/tmp/nettowel-0.6.0.tar.gz]
+[2024-04-07 17:41:43] INFO root fetch - main [MainThread]: End processing [nettowel]: success
+[2024-04-07 17:41:43] INFO root fetch - main [MainThread]: Store serial: [22657258]
