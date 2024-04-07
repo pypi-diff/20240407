@@ -5421,3 +5421,70 @@
 [2024-04-07 07:34:15] INFO root fetch - processPackages [streamjoy]: Remove: archive file [/home/abi/fetcher/tmp/streamjoy-0.0.6.tar.gz]
 [2024-04-07 07:34:15] INFO root fetch - main [MainThread]: End processing [streamjoy]: success
 [2024-04-07 07:34:15] INFO root fetch - main [MainThread]: Store serial: [22653650]
+[2024-04-07 07:36:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653650]
+[2024-04-07 07:36:23] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 07:36:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dekvenv
+[2024-04-07 07:36:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: htscf
+[2024-04-07 07:36:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-civo
+[2024-04-07 07:36:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-azuredevops
+[2024-04-07 07:36:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-cloudinit
+[2024-04-07 07:36:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: htscf
+[2024-04-07 07:36:23] INFO root fetch - processPackages [pulumi-cloudinit]: New version: [1.5.0a1712399322] Old Version: [1.5.0a1711734973]
+[2024-04-07 07:36:23] INFO root fetch - processPackages [pulumi-civo]: New version: [2.4.0a1712399187] Old Version: [2.4.0a1711734994]
+[2024-04-07 07:36:23] INFO root fetch - processPackages [dekvenv]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 07:36:23] INFO root fetch - processPackages [htscf]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 07:36:23] INFO root fetch - processPackages [pulumi-azuredevops]: New version: [3.1.0a1712399297] Old Version: [3.1.0a1711735015]
+[2024-04-07 07:36:23] INFO root fetch - processPackages [htscf]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 07:36:24] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/48/31/ef6469f74ffa5f39aaf9ac67ecf2f5b17aec1b223d3f63572efd39a3958f/htscf-0.0.98.tar.gz
+[2024-04-07 07:36:24] INFO root fetch - processPackages [pulumi-cloudinit]: Downloading https://files.pythonhosted.org/packages/7c/0d/852dca03f63ec4fb0f21cfc60bbf99672eff9f0375d4cf25a10e0cd94b0d/pulumi_cloudinit-1.5.0a1711734973.tar.gz
+[2024-04-07 07:36:24] INFO root fetch - processPackages [pulumi-civo]: Downloading https://files.pythonhosted.org/packages/55/00/12a7dd4866e10cd87d4c5d65e3151bd766001ffe5f4c8ef6e56afb9e51bd/pulumi_civo-2.4.0a1711734994.tar.gz
+[2024-04-07 07:36:24] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/48/31/ef6469f74ffa5f39aaf9ac67ecf2f5b17aec1b223d3f63572efd39a3958f/htscf-0.0.98.tar.gz
+[2024-04-07 07:36:24] INFO root fetch - processPackages [pulumi-azuredevops]: Downloading https://files.pythonhosted.org/packages/9b/7d/dc1bf4095a354a6ca7a099a2020d6ef0a3bc2bc6882fc842509aafb781dd/pulumi_azuredevops-3.1.0a1711735015.tar.gz
+[2024-04-07 07:36:24] INFO root fetch - processPackages [dekvenv]: Downloading https://files.pythonhosted.org/packages/4f/0b/06902f2f4ceee290cfab39fc5e233eaa2bb642fa6b79c9a76349ffa49eac/dekvenv-0.1.8.tar.gz
+[2024-04-07 07:36:24] WARNING root fetch - processPackages [pulumi-cloudinit]: Timeout reached during download
+[2024-04-07 07:36:24] WARNING root fetch - processPackages [pulumi-civo]: Timeout reached during download
+[2024-04-07 07:36:24] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 07:36:24] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 07:36:24] WARNING root fetch - processPackages [pulumi-azuredevops]: Timeout reached during download
+[2024-04-07 07:36:24] WARNING root fetch - processPackages [dekvenv]: Timeout reached during download
+[2024-04-07 07:36:24] INFO root fetch - processPackages [pulumi-cloudinit]: Downloading https://files.pythonhosted.org/packages/83/9b/684637242901b85daa49806d4e9fa5db68e610f2c1abe881841ab920e00d/pulumi_cloudinit-1.5.0a1712399322.tar.gz
+[2024-04-07 07:36:24] INFO root fetch - processPackages [pulumi-civo]: Downloading https://files.pythonhosted.org/packages/46/7d/d1da5013434f42fe01f4666fbb1535822a3619bec78dc70a300bd17e8ec0/pulumi_civo-2.4.0a1712399187.tar.gz
+[2024-04-07 07:36:24] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/79/48/b9c5a63d0fc652968c826af8815fadd5e1f69403909e12853b5a52d9c6b3/htscf-0.0.99.tar.gz
+[2024-04-07 07:36:24] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/79/48/b9c5a63d0fc652968c826af8815fadd5e1f69403909e12853b5a52d9c6b3/htscf-0.0.99.tar.gz
+[2024-04-07 07:36:24] INFO root fetch - processPackages [pulumi-azuredevops]: Downloading https://files.pythonhosted.org/packages/c8/1f/0e84c24d8e95fb298eaccc164f11c8a535e8ff1affb31502904b2fe709c0/pulumi_azuredevops-3.1.0a1712399297.tar.gz
+[2024-04-07 07:36:24] INFO root fetch - processPackages [dekvenv]: Downloading https://files.pythonhosted.org/packages/89/c5/ae26e7ab62e243bef554710c58d728eba22e25ad33a5e2f25b45dcb001d1/dekvenv-0.1.9.tar.gz
+[2024-04-07 07:36:24] WARNING root fetch - processPackages [pulumi-cloudinit]: Timeout reached during download
+[2024-04-07 07:36:24] INFO root fetch - processPackages [pulumi-cloudinit]: executing diffoscope
+[2024-04-07 07:36:24] INFO root fetch - processPackages [pulumi-cloudinit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_cloudinit-1.5.0a1711734973.tar.gz tmp/pulumi_cloudinit-1.5.0a1712399322.tar.gz --markdown 20240407/p/pulumi-cloudinit/1.5.0a1711734973-1.5.0a1712399322/diff.md --exclude *.pyd
+[2024-04-07 07:36:24] WARNING root fetch - processPackages [pulumi-civo]: Timeout reached during download
+[2024-04-07 07:36:24] INFO root fetch - processPackages [pulumi-civo]: executing diffoscope
+[2024-04-07 07:36:24] INFO root fetch - processPackages [pulumi-civo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_civo-2.4.0a1711734994.tar.gz tmp/pulumi_civo-2.4.0a1712399187.tar.gz --markdown 20240407/p/pulumi-civo/2.4.0a1711734994-2.4.0a1712399187/diff.md --exclude *.pyd
+[2024-04-07 07:36:24] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 07:36:24] INFO root fetch - processPackages [htscf]: executing diffoscope
+[2024-04-07 07:36:24] INFO root fetch - processPackages [htscf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htscf-0.0.98.tar.gz tmp/htscf-0.0.99.tar.gz --markdown 20240407/h/htscf/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 07:36:24] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 07:36:24] INFO root fetch - processPackages [htscf]: executing diffoscope
+[2024-04-07 07:36:24] INFO root fetch - processPackages [htscf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htscf-0.0.98.tar.gz tmp/htscf-0.0.99.tar.gz --markdown 20240407/h/htscf/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 07:36:24] WARNING root fetch - processPackages [pulumi-azuredevops]: Timeout reached during download
+[2024-04-07 07:36:24] INFO root fetch - processPackages [pulumi-azuredevops]: executing diffoscope
+[2024-04-07 07:36:24] INFO root fetch - processPackages [pulumi-azuredevops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_azuredevops-3.1.0a1711735015.tar.gz tmp/pulumi_azuredevops-3.1.0a1712399297.tar.gz --markdown 20240407/p/pulumi-azuredevops/3.1.0a1711735015-3.1.0a1712399297/diff.md --exclude *.pyd
+[2024-04-07 07:36:24] WARNING root fetch - processPackages [dekvenv]: Timeout reached during download
+[2024-04-07 07:36:24] INFO root fetch - processPackages [dekvenv]: executing diffoscope
+[2024-04-07 07:36:24] INFO root fetch - processPackages [dekvenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dekvenv-0.1.8.tar.gz tmp/dekvenv-0.1.9.tar.gz --markdown 20240407/d/dekvenv/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 07:36:25] INFO root fetch - processPackages [pulumi-cloudinit]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_cloudinit-1.5.0a1711734973.tar.gz]
+[2024-04-07 07:36:25] INFO root fetch - processPackages [pulumi-cloudinit]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_cloudinit-1.5.0a1712399322.tar.gz]
+[2024-04-07 07:36:25] INFO root fetch - main [MainThread]: End processing [pulumi-cloudinit]: success
+[2024-04-07 07:36:25] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.98.tar.gz]
+[2024-04-07 07:36:25] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.99.tar.gz]
+[2024-04-07 07:36:25] INFO root fetch - main [MainThread]: End processing [htscf]: success
+[2024-04-07 07:36:25] INFO root fetch - processPackages [pulumi-civo]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_civo-2.4.0a1711734994.tar.gz]
+[2024-04-07 07:36:25] INFO root fetch - processPackages [pulumi-civo]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_civo-2.4.0a1712399187.tar.gz]
+[2024-04-07 07:36:25] INFO root fetch - main [MainThread]: End processing [pulumi-civo]: success
+[2024-04-07 07:36:25] INFO root fetch - processPackages [dekvenv]: Remove: archive file [/home/abi/fetcher/tmp/dekvenv-0.1.8.tar.gz]
+[2024-04-07 07:36:25] INFO root fetch - processPackages [dekvenv]: Remove: archive file [/home/abi/fetcher/tmp/dekvenv-0.1.9.tar.gz]
+[2024-04-07 07:36:25] INFO root fetch - main [MainThread]: End processing [dekvenv]: success
+[2024-04-07 07:36:25] INFO root fetch - main [MainThread]: End processing [htscf]: success
+[2024-04-07 07:36:25] INFO root fetch - processPackages [pulumi-azuredevops]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_azuredevops-3.1.0a1711735015.tar.gz]
+[2024-04-07 07:36:25] INFO root fetch - processPackages [pulumi-azuredevops]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_azuredevops-3.1.0a1712399297.tar.gz]
+[2024-04-07 07:36:25] INFO root fetch - main [MainThread]: End processing [pulumi-azuredevops]: success
+[2024-04-07 07:36:25] INFO root fetch - main [MainThread]: Store serial: [22653670]
