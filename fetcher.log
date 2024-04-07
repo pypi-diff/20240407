@@ -9887,3 +9887,50 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 12:20:48] INFO root fetch - processPackages [nonebot-adapter-satori]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_adapter_satori-0.9.3.tar.gz]
 [2024-04-07 12:20:48] INFO root fetch - main [MainThread]: End processing [nonebot-adapter-satori]: success
 [2024-04-07 12:20:48] INFO root fetch - main [MainThread]: Store serial: [22655378]
+[2024-04-07 12:22:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655378]
+[2024-04-07 12:22:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 12:22:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-jaxtyping
+[2024-04-07 12:22:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ehdtd
+[2024-04-07 12:22:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vectara-cli
+[2024-04-07 12:22:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: duckduckgo-search
+[2024-04-07 12:22:57] INFO root fetch - processPackages [py-jaxtyping]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-07 12:22:57] INFO root fetch - processPackages [vectara-cli]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-07 12:22:57] INFO root fetch - processPackages [ehdtd]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-07 12:22:57] INFO root fetch - processPackages [duckduckgo-search]: New version: [5.3.0b3] Old Version: [5.3.0b2]
+[2024-04-07 12:22:57] INFO root fetch - processPackages [py-jaxtyping]: Downloading https://files.pythonhosted.org/packages/aa/99/3ddf588be23c38408f32c019841b399ad25fca46f2de67bb70c40c036d62/py-jaxtyping-0.1.1.tar.gz
+[2024-04-07 12:22:57] INFO root fetch - processPackages [vectara-cli]: Downloading https://files.pythonhosted.org/packages/ac/a1/8bd5ba27e344dfacacc1260ab1f396e90ee1dc29ec168240b6a1f8a930bd/vectara-cli-0.1.6.tar.gz
+[2024-04-07 12:22:57] INFO root fetch - processPackages [duckduckgo-search]: Downloading https://files.pythonhosted.org/packages/eb/28/fad31e01a3ac2c3a9c70126709ba6f6c4770fc395ce93912d847c0b10295/duckduckgo_search-5.3.0b2.tar.gz
+[2024-04-07 12:22:57] INFO root fetch - processPackages [ehdtd]: Downloading https://files.pythonhosted.org/packages/60/b8/f3db5d1a0404185d0ab7be1ab28f78f7d77dec6c3492e04b0f9878609460/ehdtd-0.1.3.tar.gz
+[2024-04-07 12:22:57] WARNING root fetch - processPackages [py-jaxtyping]: Timeout reached during download
+[2024-04-07 12:22:57] WARNING root fetch - processPackages [vectara-cli]: Timeout reached during download
+[2024-04-07 12:22:57] WARNING root fetch - processPackages [ehdtd]: Timeout reached during download
+[2024-04-07 12:22:57] WARNING root fetch - processPackages [duckduckgo-search]: Timeout reached during download
+[2024-04-07 12:22:57] INFO root fetch - processPackages [ehdtd]: Downloading https://files.pythonhosted.org/packages/8c/22/a05130a7ba96c649bf147c1ad3c65e04a08bbb45c60644c2707cc050dd06/ehdtd-0.1.4.tar.gz
+[2024-04-07 12:22:57] INFO root fetch - processPackages [py-jaxtyping]: Downloading https://files.pythonhosted.org/packages/7b/26/9ffa97ce45ac7c93be2cf5340cc72918c57820259518440e733c56c004e6/py-jaxtyping-0.1.2.tar.gz
+[2024-04-07 12:22:57] INFO root fetch - processPackages [vectara-cli]: Downloading https://files.pythonhosted.org/packages/75/c7/b2fae675af685f9b558407e320e3b29f873f9b0eb795994a220c7e5a675e/vectara-cli-0.1.7.tar.gz
+[2024-04-07 12:22:57] WARNING root fetch - processPackages [ehdtd]: Timeout reached during download
+[2024-04-07 12:22:57] INFO root fetch - processPackages [ehdtd]: executing diffoscope
+[2024-04-07 12:22:57] INFO root fetch - processPackages [ehdtd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ehdtd-0.1.3.tar.gz tmp/ehdtd-0.1.4.tar.gz --markdown 20240407/e/ehdtd/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2024-04-07 12:22:57] WARNING root fetch - processPackages [py-jaxtyping]: Timeout reached during download
+[2024-04-07 12:22:57] INFO root fetch - processPackages [py-jaxtyping]: executing diffoscope
+[2024-04-07 12:22:57] INFO root fetch - processPackages [py-jaxtyping]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-jaxtyping-0.1.1.tar.gz tmp/py-jaxtyping-0.1.2.tar.gz --markdown 20240407/p/py-jaxtyping/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-07 12:22:57] INFO root fetch - processPackages [duckduckgo-search]: Downloading https://files.pythonhosted.org/packages/7f/da/4ef0cfbd7dc03c6754fc725ee099bb07957b996cc74a4139ce82baf56181/duckduckgo_search-5.3.0b3.tar.gz
+[2024-04-07 12:22:57] WARNING root fetch - processPackages [vectara-cli]: Timeout reached during download
+[2024-04-07 12:22:57] INFO root fetch - processPackages [vectara-cli]: executing diffoscope
+[2024-04-07 12:22:57] INFO root fetch - processPackages [vectara-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vectara-cli-0.1.6.tar.gz tmp/vectara-cli-0.1.7.tar.gz --markdown 20240407/v/vectara-cli/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2024-04-07 12:22:57] WARNING root fetch - processPackages [duckduckgo-search]: Timeout reached during download
+[2024-04-07 12:22:57] INFO root fetch - processPackages [duckduckgo-search]: executing diffoscope
+[2024-04-07 12:22:57] INFO root fetch - processPackages [duckduckgo-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckduckgo_search-5.3.0b2.tar.gz tmp/duckduckgo_search-5.3.0b3.tar.gz --markdown 20240407/d/duckduckgo-search/5.3.0b2-5.3.0b3/diff.md --exclude *.pyd
+[2024-04-07 12:22:58] INFO root fetch - processPackages [ehdtd]: Remove: archive file [/home/abi/fetcher/tmp/ehdtd-0.1.3.tar.gz]
+[2024-04-07 12:22:58] INFO root fetch - processPackages [ehdtd]: Remove: archive file [/home/abi/fetcher/tmp/ehdtd-0.1.4.tar.gz]
+[2024-04-07 12:22:58] INFO root fetch - main [MainThread]: End processing [ehdtd]: success
+[2024-04-07 12:22:58] INFO root fetch - processPackages [py-jaxtyping]: Remove: archive file [/home/abi/fetcher/tmp/py-jaxtyping-0.1.1.tar.gz]
+[2024-04-07 12:22:58] INFO root fetch - processPackages [py-jaxtyping]: Remove: archive file [/home/abi/fetcher/tmp/py-jaxtyping-0.1.2.tar.gz]
+[2024-04-07 12:22:58] INFO root fetch - main [MainThread]: End processing [py-jaxtyping]: success
+[2024-04-07 12:22:58] INFO root fetch - processPackages [duckduckgo-search]: Remove: archive file [/home/abi/fetcher/tmp/duckduckgo_search-5.3.0b2.tar.gz]
+[2024-04-07 12:22:58] INFO root fetch - processPackages [duckduckgo-search]: Remove: archive file [/home/abi/fetcher/tmp/duckduckgo_search-5.3.0b3.tar.gz]
+[2024-04-07 12:22:58] INFO root fetch - main [MainThread]: End processing [duckduckgo-search]: success
+[2024-04-07 12:22:58] INFO root fetch - processPackages [vectara-cli]: Remove: archive file [/home/abi/fetcher/tmp/vectara-cli-0.1.6.tar.gz]
+[2024-04-07 12:22:58] INFO root fetch - processPackages [vectara-cli]: Remove: archive file [/home/abi/fetcher/tmp/vectara-cli-0.1.7.tar.gz]
+[2024-04-07 12:22:58] INFO root fetch - main [MainThread]: End processing [vectara-cli]: success
+[2024-04-07 12:22:58] INFO root fetch - main [MainThread]: Store serial: [22655390]
