@@ -7222,3 +7222,28 @@
 [2024-04-07 09:25:58] INFO root fetch - processPackages [mlora]: Remove: archive file [/home/abi/fetcher/tmp/mlora-0.2.1.dev1.tar.gz]
 [2024-04-07 09:25:58] INFO root fetch - main [MainThread]: End processing [mlora]: success
 [2024-04-07 09:25:58] INFO root fetch - main [MainThread]: Store serial: [22654323]
+[2024-04-07 09:28:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654323]
+[2024-04-07 09:28:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 09:28:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: phdu
+[2024-04-07 09:28:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: minecraft-python
+[2024-04-07 09:28:07] INFO root fetch - processPackages [phdu]: New version: [2.3.3] Old Version: [2.3.2]
+[2024-04-07 09:28:07] INFO root fetch - processPackages [phdu]: Downloading https://files.pythonhosted.org/packages/30/43/6a7fce0727b06278f5915d95b1019425520c5ebb444032d4e7829323cfdb/phdu-2.3.2.tar.gz
+[2024-04-07 09:28:07] WARNING root fetch - processPackages [phdu]: Timeout reached during download
+[2024-04-07 09:28:07] INFO root fetch - processPackages [phdu]: Downloading https://files.pythonhosted.org/packages/dd/ee/501bdd0c17b385adbdd46d130cc75aabebf65bb62e69c4b9fb8b36135d63/phdu-2.3.3.tar.gz
+[2024-04-07 09:28:07] INFO root fetch - processPackages [minecraft-python]: New version: [161348] Old Version: [160052.post1]
+[2024-04-07 09:28:07] WARNING root fetch - processPackages [phdu]: Timeout reached during download
+[2024-04-07 09:28:07] INFO root fetch - processPackages [phdu]: executing diffoscope
+[2024-04-07 09:28:07] INFO root fetch - processPackages [phdu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phdu-2.3.2.tar.gz tmp/phdu-2.3.3.tar.gz --markdown 20240407/p/phdu/2.3.2-2.3.3/diff.md --exclude *.pyd
+[2024-04-07 09:28:07] INFO root fetch - processPackages [minecraft-python]: Downloading https://files.pythonhosted.org/packages/4b/31/bf570dab08d95ac9abbbab18f809884e587e2af5268a894ffbbf7d520527/minecraft-python-160052.post1.tar.gz
+[2024-04-07 09:28:07] WARNING root fetch - processPackages [minecraft-python]: Timeout reached during download
+[2024-04-07 09:28:08] INFO root fetch - processPackages [minecraft-python]: Downloading https://files.pythonhosted.org/packages/bb/96/2ce2d27777f3528c850f0870857dbb187977b7a1d0a34dcbf43075bf5e4c/minecraft-python-161348.tar.gz
+[2024-04-07 09:28:08] INFO root fetch - processPackages [phdu]: Remove: archive file [/home/abi/fetcher/tmp/phdu-2.3.2.tar.gz]
+[2024-04-07 09:28:08] INFO root fetch - processPackages [phdu]: Remove: archive file [/home/abi/fetcher/tmp/phdu-2.3.3.tar.gz]
+[2024-04-07 09:28:08] INFO root fetch - main [MainThread]: End processing [phdu]: success
+[2024-04-07 09:28:08] WARNING root fetch - processPackages [minecraft-python]: Timeout reached during download
+[2024-04-07 09:28:08] INFO root fetch - processPackages [minecraft-python]: executing diffoscope
+[2024-04-07 09:28:08] INFO root fetch - processPackages [minecraft-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minecraft-python-160052.post1.tar.gz tmp/minecraft-python-161348.tar.gz --markdown 20240407/m/minecraft-python/160052.post1-161348/diff.md --exclude *.pyd
+[2024-04-07 09:28:08] INFO root fetch - processPackages [minecraft-python]: Remove: archive file [/home/abi/fetcher/tmp/minecraft-python-160052.post1.tar.gz]
+[2024-04-07 09:28:08] INFO root fetch - processPackages [minecraft-python]: Remove: archive file [/home/abi/fetcher/tmp/minecraft-python-161348.tar.gz]
+[2024-04-07 09:28:08] INFO root fetch - main [MainThread]: End processing [minecraft-python]: success
+[2024-04-07 09:28:08] INFO root fetch - main [MainThread]: Store serial: [22654330]
