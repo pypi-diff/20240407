@@ -10250,3 +10250,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 12:51:14] INFO root fetch - processPackages [investorzilla]: Remove: archive file [/home/abi/fetcher/tmp/investorzilla-3.2.3.tar.gz]
 [2024-04-07 12:51:14] INFO root fetch - main [MainThread]: End processing [investorzilla]: success
 [2024-04-07 12:51:14] INFO root fetch - main [MainThread]: Store serial: [22655549]
+[2024-04-07 12:53:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655549]
+[2024-04-07 12:53:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 12:53:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: q2gui
+[2024-04-07 12:53:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stockdex
+[2024-04-07 12:53:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: q2rad
+[2024-04-07 12:53:24] INFO root fetch - processPackages [stockdex]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-07 12:53:24] INFO root fetch - processPackages [stockdex]: Downloading https://files.pythonhosted.org/packages/37/05/ab4e68366df13ec9a36235d4dadc66588992f1ba567dcf5f7f29b8eb1348/stockdex-0.3.8.tar.gz
+[2024-04-07 12:53:24] INFO root fetch - processPackages [q2gui]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-07 12:53:24] INFO root fetch - processPackages [q2rad]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-07 12:53:24] WARNING root fetch - processPackages [stockdex]: Timeout reached during download
+[2024-04-07 12:53:24] INFO root fetch - processPackages [q2gui]: Downloading https://files.pythonhosted.org/packages/97/15/9a5e27167a28b919a9cddce6abb2321351e6113cdec2d4d638ba8252564d/q2gui-0.1.98.tar.gz
+[2024-04-07 12:53:24] INFO root fetch - processPackages [q2rad]: Downloading https://files.pythonhosted.org/packages/80/49/6ec4d4467c701099cbfa21472d6b7c426277eeae8e82db973157f4077dd1/q2rad-0.1.98.tar.gz
+[2024-04-07 12:53:24] INFO root fetch - processPackages [stockdex]: Downloading https://files.pythonhosted.org/packages/1d/4b/9ee626f45679c90979b1f21bfbe4b576b940580a865e0a0da19692b805d2/stockdex-0.3.9.tar.gz
+[2024-04-07 12:53:24] WARNING root fetch - processPackages [q2gui]: Timeout reached during download
+[2024-04-07 12:53:24] WARNING root fetch - processPackages [q2rad]: Timeout reached during download
+[2024-04-07 12:53:24] INFO root fetch - processPackages [q2gui]: Downloading https://files.pythonhosted.org/packages/58/3e/df0471f53d74fc7d0d5885ad90423ae0ffbcaec42bcc77a0b466ed7fef7f/q2gui-0.1.99.tar.gz
+[2024-04-07 12:53:24] INFO root fetch - processPackages [q2rad]: Downloading https://files.pythonhosted.org/packages/47/0e/9309c87c362671a5eef5895adc1cb5d29e984c27a0e09a60a83cada10f73/q2rad-0.1.99.tar.gz
+[2024-04-07 12:53:25] WARNING root fetch - processPackages [stockdex]: Timeout reached during download
+[2024-04-07 12:53:25] WARNING root fetch - processPackages [q2gui]: Timeout reached during download
+[2024-04-07 12:53:25] INFO root fetch - processPackages [q2gui]: executing diffoscope
+[2024-04-07 12:53:25] INFO root fetch - processPackages [q2gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2gui-0.1.98.tar.gz tmp/q2gui-0.1.99.tar.gz --markdown 20240407/q/q2gui/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2024-04-07 12:53:25] INFO root fetch - processPackages [stockdex]: executing diffoscope
+[2024-04-07 12:53:25] INFO root fetch - processPackages [stockdex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stockdex-0.3.8.tar.gz tmp/stockdex-0.3.9.tar.gz --markdown 20240407/s/stockdex/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-07 12:53:25] WARNING root fetch - processPackages [q2rad]: Timeout reached during download
+[2024-04-07 12:53:25] INFO root fetch - processPackages [q2rad]: executing diffoscope
+[2024-04-07 12:53:25] INFO root fetch - processPackages [q2rad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2rad-0.1.98.tar.gz tmp/q2rad-0.1.99.tar.gz --markdown 20240407/q/q2rad/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2024-04-07 12:53:25] INFO root fetch - processPackages [q2rad]: Remove: archive file [/home/abi/fetcher/tmp/q2rad-0.1.98.tar.gz]
+[2024-04-07 12:53:25] INFO root fetch - processPackages [q2rad]: Remove: archive file [/home/abi/fetcher/tmp/q2rad-0.1.99.tar.gz]
+[2024-04-07 12:53:25] INFO root fetch - main [MainThread]: End processing [q2rad]: success
+[2024-04-07 12:53:25] INFO root fetch - processPackages [q2gui]: Remove: archive file [/home/abi/fetcher/tmp/q2gui-0.1.98.tar.gz]
+[2024-04-07 12:53:25] INFO root fetch - processPackages [q2gui]: Remove: archive file [/home/abi/fetcher/tmp/q2gui-0.1.99.tar.gz]
+[2024-04-07 12:53:25] INFO root fetch - main [MainThread]: End processing [q2gui]: success
+[2024-04-07 12:53:26] INFO root fetch - processPackages [stockdex]: Remove: archive file [/home/abi/fetcher/tmp/stockdex-0.3.8.tar.gz]
+[2024-04-07 12:53:26] INFO root fetch - processPackages [stockdex]: Remove: archive file [/home/abi/fetcher/tmp/stockdex-0.3.9.tar.gz]
+[2024-04-07 12:53:26] INFO root fetch - main [MainThread]: End processing [stockdex]: success
+[2024-04-07 12:53:26] INFO root fetch - main [MainThread]: Store serial: [22655559]
