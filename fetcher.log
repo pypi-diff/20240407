@@ -16363,3 +16363,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:04:47] INFO root fetch - processPackages [many]: Remove: archive file [/home/abi/fetcher/tmp/many-0.7.0.tar.gz]
 [2024-04-07 19:04:47] INFO root fetch - main [MainThread]: End processing [many]: success
 [2024-04-07 19:04:47] INFO root fetch - main [MainThread]: Store serial: [22657746]
+[2024-04-07 19:06:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657746]
+[2024-04-07 19:06:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 19:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tunit
+[2024-04-07 19:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrecipes
+[2024-04-07 19:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simplebox
+[2024-04-07 19:06:55] INFO root fetch - processPackages [simplebox]: New version: [0.0.1a189] Old Version: [0.0.1a188]
+[2024-04-07 19:06:55] INFO root fetch - processPackages [pyrecipes]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-07 19:06:55] INFO root fetch - processPackages [tunit]: New version: [1.7.2] Old Version: [1.7.1]
+[2024-04-07 19:06:56] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/d1/b7/6f128998547d3e68153764c4ef28098a98efb35d898608ebd9ac2d8598bd/simplebox-0.0.1a188-py3-none-any.whl
+[2024-04-07 19:06:56] INFO root fetch - processPackages [pyrecipes]: Downloading https://files.pythonhosted.org/packages/f3/90/2b1801940a58fce07435a003ffcf1617123bdef4d1f6207a8114b974b345/pyrecipes-0.2.1.tar.gz
+[2024-04-07 19:06:56] INFO root fetch - processPackages [tunit]: Downloading https://files.pythonhosted.org/packages/ea/c3/70a07f0b15b35ef59200a3baf841879a0ddf3dd3dee49cd79254e28ea9ff/tunit-1.7.1.tar.gz
+[2024-04-07 19:06:56] WARNING root fetch - processPackages [tunit]: Timeout reached during download
+[2024-04-07 19:06:56] WARNING root fetch - processPackages [simplebox]: Timeout reached during download
+[2024-04-07 19:06:56] WARNING root fetch - processPackages [pyrecipes]: Timeout reached during download
+[2024-04-07 19:06:56] INFO root fetch - processPackages [tunit]: Downloading https://files.pythonhosted.org/packages/8c/91/f3bdae396c7d797d6fb7930a205aeae617149a690faf51d198f220d494c0/tunit-1.7.2.tar.gz
+[2024-04-07 19:06:56] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/fd/1b/eb918e0fcb37159da064a3c74f49957b043fd1206b86988f78c4467da383/simplebox-0.0.1a189-py3-none-any.whl
+[2024-04-07 19:06:56] WARNING root fetch - processPackages [tunit]: Timeout reached during download
+[2024-04-07 19:06:56] INFO root fetch - processPackages [tunit]: executing diffoscope
+[2024-04-07 19:06:56] INFO root fetch - processPackages [tunit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tunit-1.7.1.tar.gz tmp/tunit-1.7.2.tar.gz --markdown 20240407/t/tunit/1.7.1-1.7.2/diff.md --exclude *.pyd
+[2024-04-07 19:06:56] INFO root fetch - processPackages [pyrecipes]: Downloading https://files.pythonhosted.org/packages/fa/c5/4b23df2508a050e93b86b04a897debb2a48d2a935ad5eebdbb17a030c01e/pyrecipes-0.2.2.tar.gz
+[2024-04-07 19:06:56] WARNING root fetch - processPackages [simplebox]: Timeout reached during download
+[2024-04-07 19:06:56] INFO root fetch - processPackages [simplebox]: executing diffoscope
+[2024-04-07 19:06:56] INFO root fetch - processPackages [simplebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplebox-0.0.1a188-py3-none-any.whl.zip tmp/simplebox-0.0.1a189-py3-none-any.whl.zip --markdown 20240407/s/simplebox/0.0.1a188-0.0.1a189/diff.md --exclude *.pyd
+[2024-04-07 19:06:56] WARNING root fetch - processPackages [pyrecipes]: Timeout reached during download
+[2024-04-07 19:06:56] INFO root fetch - processPackages [pyrecipes]: executing diffoscope
+[2024-04-07 19:06:56] INFO root fetch - processPackages [pyrecipes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrecipes-0.2.1.tar.gz tmp/pyrecipes-0.2.2.tar.gz --markdown 20240407/p/pyrecipes/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2024-04-07 19:06:57] INFO root fetch - processPackages [tunit]: Remove: archive file [/home/abi/fetcher/tmp/tunit-1.7.1.tar.gz]
+[2024-04-07 19:06:57] INFO root fetch - processPackages [tunit]: Remove: archive file [/home/abi/fetcher/tmp/tunit-1.7.2.tar.gz]
+[2024-04-07 19:06:57] INFO root fetch - main [MainThread]: End processing [tunit]: success
+[2024-04-07 19:06:57] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a188-py3-none-any.whl.zip]
+[2024-04-07 19:06:57] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a189-py3-none-any.whl.zip]
+[2024-04-07 19:06:57] INFO root fetch - main [MainThread]: End processing [simplebox]: success
+[2024-04-07 19:06:58] INFO root fetch - processPackages [pyrecipes]: Remove: archive file [/home/abi/fetcher/tmp/pyrecipes-0.2.1.tar.gz]
+[2024-04-07 19:06:58] INFO root fetch - processPackages [pyrecipes]: Remove: archive file [/home/abi/fetcher/tmp/pyrecipes-0.2.2.tar.gz]
+[2024-04-07 19:06:58] INFO root fetch - main [MainThread]: End processing [pyrecipes]: success
+[2024-04-07 19:06:58] INFO root fetch - main [MainThread]: Store serial: [22657757]
