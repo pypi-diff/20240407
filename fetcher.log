@@ -14114,3 +14114,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:55:25] INFO root fetch - processPackages [siunitpy]: Remove: archive file [/home/abi/fetcher/tmp/siunitpy-0.1.1.tar.gz]
 [2024-04-07 16:55:25] INFO root fetch - main [MainThread]: End processing [siunitpy]: success
 [2024-04-07 16:55:25] INFO root fetch - main [MainThread]: Store serial: [22656973]
+[2024-04-07 16:57:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656973]
+[2024-04-07 16:57:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 16:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-telethon
+[2024-04-07 16:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DateTimeRange
+[2024-04-07 16:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cefi
+[2024-04-07 16:57:34] INFO root fetch - processPackages [cefi]: New version: [4.4.8] Old Version: [4.4.7]
+[2024-04-07 16:57:34] INFO root fetch - processPackages [cefi]: Downloading https://files.pythonhosted.org/packages/42/ad/282e649ef8c7f976a49c92ffa1c5c4efb8b2ec34ae5925c0349cc83fb5bd/cefi-4.4.7.tar.gz
+[2024-04-07 16:57:34] INFO root fetch - processPackages [django-telethon]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-04-07 16:57:34] INFO root fetch - processPackages [DateTimeRange]: New version: [2.2.1] Old Version: [2.2.0]
+[2024-04-07 16:57:34] WARNING root fetch - processPackages [cefi]: Timeout reached during download
+[2024-04-07 16:57:34] INFO root fetch - processPackages [django-telethon]: Downloading https://files.pythonhosted.org/packages/6d/65/84f7c18b6920a9d5635d42350129c37d7bebef8a904f9eb8b3e07a3b4257/django-telethon-1.3.2.tar.gz
+[2024-04-07 16:57:34] INFO root fetch - processPackages [DateTimeRange]: Downloading https://files.pythonhosted.org/packages/f0/61/528d586b6c844268ec351740688e4e28e441ae668684f9ac36a2c61f8ad9/DateTimeRange-2.2.0.tar.gz
+[2024-04-07 16:57:34] WARNING root fetch - processPackages [django-telethon]: Timeout reached during download
+[2024-04-07 16:57:34] INFO root fetch - processPackages [cefi]: Downloading https://files.pythonhosted.org/packages/9f/6f/b7eee3b4879d098e2a52f34c083c22464a458de6a14ec1108b2340d66a6a/cefi-4.4.8.tar.gz
+[2024-04-07 16:57:34] WARNING root fetch - processPackages [DateTimeRange]: Timeout reached during download
+[2024-04-07 16:57:35] WARNING root fetch - processPackages [cefi]: Timeout reached during download
+[2024-04-07 16:57:35] INFO root fetch - processPackages [cefi]: executing diffoscope
+[2024-04-07 16:57:35] INFO root fetch - processPackages [cefi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cefi-4.4.7.tar.gz tmp/cefi-4.4.8.tar.gz --markdown 20240407/c/cefi/4.4.7-4.4.8/diff.md --exclude *.pyd
+[2024-04-07 16:57:35] INFO root fetch - processPackages [django-telethon]: Downloading https://files.pythonhosted.org/packages/b5/e3/734351640e0805eea3bb0e2c61be0050eeb4e1cab0d152e93aad011acd83/django-telethon-1.3.3.tar.gz
+[2024-04-07 16:57:35] WARNING root fetch - processPackages [django-telethon]: Timeout reached during download
+[2024-04-07 16:57:35] INFO root fetch - processPackages [django-telethon]: executing diffoscope
+[2024-04-07 16:57:35] INFO root fetch - processPackages [django-telethon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-telethon-1.3.2.tar.gz tmp/django-telethon-1.3.3.tar.gz --markdown 20240407/d/django-telethon/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2024-04-07 16:57:35] INFO root fetch - processPackages [DateTimeRange]: Downloading https://files.pythonhosted.org/packages/d0/00/4c0aa0436a740058a3f541c973d38ce25af604b869fa436173b3359397bb/DateTimeRange-2.2.1.tar.gz
+[2024-04-07 16:57:35] WARNING root fetch - processPackages [DateTimeRange]: Timeout reached during download
+[2024-04-07 16:57:35] INFO root fetch - processPackages [DateTimeRange]: executing diffoscope
+[2024-04-07 16:57:35] INFO root fetch - processPackages [DateTimeRange]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DateTimeRange-2.2.0.tar.gz tmp/DateTimeRange-2.2.1.tar.gz --markdown 20240407/D/DateTimeRange/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2024-04-07 16:57:35] INFO root fetch - processPackages [cefi]: Remove: archive file [/home/abi/fetcher/tmp/cefi-4.4.7.tar.gz]
+[2024-04-07 16:57:35] INFO root fetch - processPackages [cefi]: Remove: archive file [/home/abi/fetcher/tmp/cefi-4.4.8.tar.gz]
+[2024-04-07 16:57:35] INFO root fetch - main [MainThread]: End processing [cefi]: success
+[2024-04-07 16:57:35] INFO root fetch - processPackages [django-telethon]: Remove: archive file [/home/abi/fetcher/tmp/django-telethon-1.3.2.tar.gz]
+[2024-04-07 16:57:35] INFO root fetch - processPackages [django-telethon]: Remove: archive file [/home/abi/fetcher/tmp/django-telethon-1.3.3.tar.gz]
+[2024-04-07 16:57:35] INFO root fetch - main [MainThread]: End processing [django-telethon]: success
+[2024-04-07 16:57:35] INFO root fetch - processPackages [DateTimeRange]: Remove: archive file [/home/abi/fetcher/tmp/DateTimeRange-2.2.0.tar.gz]
+[2024-04-07 16:57:35] INFO root fetch - processPackages [DateTimeRange]: Remove: archive file [/home/abi/fetcher/tmp/DateTimeRange-2.2.1.tar.gz]
+[2024-04-07 16:57:35] INFO root fetch - main [MainThread]: End processing [DateTimeRange]: success
+[2024-04-07 16:57:35] INFO root fetch - main [MainThread]: Store serial: [22656982]
