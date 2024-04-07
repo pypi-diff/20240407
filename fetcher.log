@@ -10705,3 +10705,31 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:28:09] INFO root fetch - processPackages [qa-test]: Remove: archive file [/home/abi/fetcher/tmp/qa_test-0.0.4.tar.gz]
 [2024-04-07 13:28:09] INFO root fetch - main [MainThread]: End processing [qa-test]: success
 [2024-04-07 13:28:09] INFO root fetch - main [MainThread]: Store serial: [22655712]
+[2024-04-07 13:30:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655712]
+[2024-04-07 13:30:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 13:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: magicalapi
+[2024-04-07 13:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nmbrs
+[2024-04-07 13:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: leaf-BasedLabs
+[2024-04-07 13:30:19] WARNING root fetch - processPackages [magicalapi]: Skipping, unable to determine old version
+[2024-04-07 13:30:19] INFO root fetch - main [MainThread]: End processing [magicalapi] error
+[2024-04-07 13:30:19] INFO root fetch - processPackages [nmbrs]: New version: [0.1.0] Old Version: [0.0.405]
+[2024-04-07 13:30:19] INFO root fetch - processPackages [leaf-BasedLabs]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-07 13:30:20] INFO root fetch - processPackages [nmbrs]: Downloading https://files.pythonhosted.org/packages/c1/97/eacd9604df809a9c360a3e5b52645cf8ea09f0eba24bf9126e13a4bfa3c4/nmbrs-0.0.405.tar.gz
+[2024-04-07 13:30:20] INFO root fetch - processPackages [leaf-BasedLabs]: Downloading https://files.pythonhosted.org/packages/9d/a2/923815177f6c7a7d320bcc3aeed05c598b9acf789d9f8882b9ed2863f6e2/leaf_BasedLabs-0.0.7.tar.gz
+[2024-04-07 13:30:20] WARNING root fetch - processPackages [nmbrs]: Timeout reached during download
+[2024-04-07 13:30:20] WARNING root fetch - processPackages [leaf-BasedLabs]: Timeout reached during download
+[2024-04-07 13:30:20] INFO root fetch - processPackages [nmbrs]: Downloading https://files.pythonhosted.org/packages/4d/a6/7c9b64fbd3831c7a249fbabf693669d01948f0aa32a7ff3feaaeb715353b/nmbrs-0.1.0.tar.gz
+[2024-04-07 13:30:20] INFO root fetch - processPackages [leaf-BasedLabs]: Downloading https://files.pythonhosted.org/packages/2e/9a/2a7383e56ad04508608b0c24f76c9a43d7e721a36fc0fe3e4e2907bb19ff/leaf_BasedLabs-0.0.8.tar.gz
+[2024-04-07 13:30:20] WARNING root fetch - processPackages [nmbrs]: Timeout reached during download
+[2024-04-07 13:30:20] INFO root fetch - processPackages [nmbrs]: executing diffoscope
+[2024-04-07 13:30:20] INFO root fetch - processPackages [nmbrs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nmbrs-0.0.405.tar.gz tmp/nmbrs-0.1.0.tar.gz --markdown 20240407/n/nmbrs/0.0.405-0.1.0/diff.md --exclude *.pyd
+[2024-04-07 13:30:20] WARNING root fetch - processPackages [leaf-BasedLabs]: Timeout reached during download
+[2024-04-07 13:30:20] INFO root fetch - processPackages [leaf-BasedLabs]: executing diffoscope
+[2024-04-07 13:30:20] INFO root fetch - processPackages [leaf-BasedLabs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leaf_BasedLabs-0.0.7.tar.gz tmp/leaf_BasedLabs-0.0.8.tar.gz --markdown 20240407/l/leaf-BasedLabs/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-07 13:30:21] INFO root fetch - processPackages [leaf-BasedLabs]: Remove: archive file [/home/abi/fetcher/tmp/leaf_BasedLabs-0.0.7.tar.gz]
+[2024-04-07 13:30:21] INFO root fetch - processPackages [leaf-BasedLabs]: Remove: archive file [/home/abi/fetcher/tmp/leaf_BasedLabs-0.0.8.tar.gz]
+[2024-04-07 13:30:21] INFO root fetch - main [MainThread]: End processing [leaf-BasedLabs]: success
+[2024-04-07 13:30:21] INFO root fetch - processPackages [nmbrs]: Remove: archive file [/home/abi/fetcher/tmp/nmbrs-0.0.405.tar.gz]
+[2024-04-07 13:30:21] INFO root fetch - processPackages [nmbrs]: Remove: archive file [/home/abi/fetcher/tmp/nmbrs-0.1.0.tar.gz]
+[2024-04-07 13:30:21] INFO root fetch - main [MainThread]: End processing [nmbrs]: success
+[2024-04-07 13:30:21] INFO root fetch - main [MainThread]: Store serial: [22655726]
