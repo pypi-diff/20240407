@@ -17451,3 +17451,20 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 20:08:20] INFO root fetch - processPackages [recce-nightly]: Remove: archive file [/home/abi/fetcher/tmp/recce-nightly-0.9.0.20240313.tar.gz]
 [2024-04-07 20:08:20] INFO root fetch - main [MainThread]: End processing [recce-nightly]: success
 [2024-04-07 20:08:20] INFO root fetch - main [MainThread]: Store serial: [22658174]
+[2024-04-07 20:10:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658174]
+[2024-04-07 20:10:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 20:10:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hello-world-pkg-2002
+[2024-04-07 20:10:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jsonschema-gen
+[2024-04-07 20:10:29] WARNING root fetch - processPackages [hello-world-pkg-2002]: Skipping, unable to determine old version
+[2024-04-07 20:10:29] INFO root fetch - main [MainThread]: End processing [hello-world-pkg-2002] error
+[2024-04-07 20:10:30] INFO root fetch - processPackages [jsonschema-gen]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-07 20:10:30] INFO root fetch - processPackages [jsonschema-gen]: Downloading https://files.pythonhosted.org/packages/7f/d6/0eda660e4fad6c34dc7b829dfd96cdbf8aaf523a3dcd3d7248c61bc67280/jsonschema_gen-0.1.0-py3-none-any.whl
+[2024-04-07 20:10:30] WARNING root fetch - processPackages [jsonschema-gen]: Timeout reached during download
+[2024-04-07 20:10:30] INFO root fetch - processPackages [jsonschema-gen]: Downloading https://files.pythonhosted.org/packages/c6/6e/7c0049f841179e0bf001a5a64536c23d4a51383f240569139d13875eb575/jsonschema_gen-0.1.1-py3-none-any.whl
+[2024-04-07 20:10:30] WARNING root fetch - processPackages [jsonschema-gen]: Timeout reached during download
+[2024-04-07 20:10:30] INFO root fetch - processPackages [jsonschema-gen]: executing diffoscope
+[2024-04-07 20:10:30] INFO root fetch - processPackages [jsonschema-gen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonschema_gen-0.1.0-py3-none-any.whl.zip tmp/jsonschema_gen-0.1.1-py3-none-any.whl.zip --markdown 20240407/j/jsonschema-gen/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 20:10:31] INFO root fetch - processPackages [jsonschema-gen]: Remove: archive file [/home/abi/fetcher/tmp/jsonschema_gen-0.1.0-py3-none-any.whl.zip]
+[2024-04-07 20:10:31] INFO root fetch - processPackages [jsonschema-gen]: Remove: archive file [/home/abi/fetcher/tmp/jsonschema_gen-0.1.1-py3-none-any.whl.zip]
+[2024-04-07 20:10:31] INFO root fetch - main [MainThread]: End processing [jsonschema-gen]: success
+[2024-04-07 20:10:31] INFO root fetch - main [MainThread]: Store serial: [22658181]
