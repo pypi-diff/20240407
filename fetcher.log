@@ -6653,3 +6653,31 @@
 [2024-04-07 08:46:30] INFO root fetch - processPackages [commit-check]: Remove: archive file [/home/abi/fetcher/tmp/commit_check-0.7.4-py3-none-any.whl.zip]
 [2024-04-07 08:46:30] INFO root fetch - main [MainThread]: End processing [commit-check]: success
 [2024-04-07 08:46:30] INFO root fetch - main [MainThread]: Store serial: [22654142]
+[2024-04-07 08:48:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654142]
+[2024-04-07 08:48:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 08:48:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ts-soup
+[2024-04-07 08:48:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cloud-orbit-api
+[2024-04-07 08:48:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: whereabouts
+[2024-04-07 08:48:39] INFO root fetch - processPackages [whereabouts]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-04-07 08:48:39] WARNING root fetch - processPackages [cloud-orbit-api]: Skipping, unable to determine old version
+[2024-04-07 08:48:39] INFO root fetch - main [MainThread]: End processing [cloud-orbit-api] error
+[2024-04-07 08:48:39] INFO root fetch - processPackages [whereabouts]: Downloading https://files.pythonhosted.org/packages/93/21/8754bdf369bd56c46f2584f76011181c8f1ed59c9d42c991cefd964c1f57/whereabouts-0.3.5.tar.gz
+[2024-04-07 08:48:39] INFO root fetch - processPackages [ts-soup]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 08:48:39] WARNING root fetch - processPackages [whereabouts]: Timeout reached during download
+[2024-04-07 08:48:39] INFO root fetch - processPackages [ts-soup]: Downloading https://files.pythonhosted.org/packages/af/2c/324c8cd293860c70049154e097a32cdde3af02fa4cc0c2d5139a5b884c6d/ts-soup-0.0.8.tar.gz
+[2024-04-07 08:48:39] INFO root fetch - processPackages [whereabouts]: Downloading https://files.pythonhosted.org/packages/62/f3/fdb608d76b32db4d474d5bd79f670d5fd51657ba3a535528e92281b6259c/whereabouts-0.3.6.tar.gz
+[2024-04-07 08:48:39] WARNING root fetch - processPackages [ts-soup]: Timeout reached during download
+[2024-04-07 08:48:39] WARNING root fetch - processPackages [whereabouts]: Timeout reached during download
+[2024-04-07 08:48:39] INFO root fetch - processPackages [whereabouts]: executing diffoscope
+[2024-04-07 08:48:39] INFO root fetch - processPackages [whereabouts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whereabouts-0.3.5.tar.gz tmp/whereabouts-0.3.6.tar.gz --markdown 20240407/w/whereabouts/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2024-04-07 08:48:39] INFO root fetch - processPackages [ts-soup]: Downloading https://files.pythonhosted.org/packages/a3/41/af6bed053fae213e29a5c196885a1c38272583aa11d03392a37b73519b7b/ts-soup-0.0.9.tar.gz
+[2024-04-07 08:48:39] WARNING root fetch - processPackages [ts-soup]: Timeout reached during download
+[2024-04-07 08:48:39] INFO root fetch - processPackages [ts-soup]: executing diffoscope
+[2024-04-07 08:48:39] INFO root fetch - processPackages [ts-soup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ts-soup-0.0.8.tar.gz tmp/ts-soup-0.0.9.tar.gz --markdown 20240407/t/ts-soup/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 08:48:39] INFO root fetch - processPackages [whereabouts]: Remove: archive file [/home/abi/fetcher/tmp/whereabouts-0.3.5.tar.gz]
+[2024-04-07 08:48:39] INFO root fetch - processPackages [whereabouts]: Remove: archive file [/home/abi/fetcher/tmp/whereabouts-0.3.6.tar.gz]
+[2024-04-07 08:48:39] INFO root fetch - main [MainThread]: End processing [whereabouts]: success
+[2024-04-07 08:48:40] INFO root fetch - processPackages [ts-soup]: Remove: archive file [/home/abi/fetcher/tmp/ts-soup-0.0.8.tar.gz]
+[2024-04-07 08:48:40] INFO root fetch - processPackages [ts-soup]: Remove: archive file [/home/abi/fetcher/tmp/ts-soup-0.0.9.tar.gz]
+[2024-04-07 08:48:40] INFO root fetch - main [MainThread]: End processing [ts-soup]: success
+[2024-04-07 08:48:40] INFO root fetch - main [MainThread]: Store serial: [22654151]
