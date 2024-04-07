@@ -4568,3 +4568,22 @@
 [2024-04-07 06:16:04] WARNING root fetch - processPackages [voiceos]: Skipping, unable to determine old version
 [2024-04-07 06:16:04] INFO root fetch - main [MainThread]: End processing [voiceos] error
 [2024-04-07 06:16:04] INFO root fetch - main [MainThread]: Store serial: [22653441]
+[2024-04-07 06:18:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653441]
+[2024-04-07 06:18:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 06:18:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scml-agents
+[2024-04-07 06:18:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dialog-workflow-local
+[2024-04-07 06:18:12] INFO root fetch - processPackages [dialog-workflow-local]: New version: [0.0.90] Old Version: [0.0.89]
+[2024-04-07 06:18:12] INFO root fetch - processPackages [dialog-workflow-local]: Downloading https://files.pythonhosted.org/packages/df/cb/1cdfc3290ae4ac760ca238bcc0eeff2343702def1d997ae9c2a181b3b164/dialog-workflow-local-0.0.89.tar.gz
+[2024-04-07 06:18:12] INFO root fetch - processPackages [scml-agents]: New version: [0.4.8] Old Version: [0.4.7]
+[2024-04-07 06:18:12] WARNING root fetch - processPackages [dialog-workflow-local]: Timeout reached during download
+[2024-04-07 06:18:12] INFO root fetch - processPackages [scml-agents]: Downloading https://files.pythonhosted.org/packages/c0/0f/84f92804562a1b3ffe351925739e3a2e71d2457b341d9d5e96bb48202584/scml-agents-0.4.7.tar.gz
+[2024-04-07 06:18:12] WARNING root fetch - processPackages [scml-agents]: Skipping package: exceeds size limit 30828715>=10485760
+[2024-04-07 06:18:12] INFO root fetch - main [MainThread]: End processing [scml-agents] error
+[2024-04-07 06:18:12] INFO root fetch - processPackages [dialog-workflow-local]: Downloading https://files.pythonhosted.org/packages/6b/b2/1d6ba2c92020fb8bb7848e2eea5840eec2294698b97c2da8c696a1754427/dialog-workflow-local-0.0.90.tar.gz
+[2024-04-07 06:18:13] WARNING root fetch - processPackages [dialog-workflow-local]: Timeout reached during download
+[2024-04-07 06:18:13] INFO root fetch - processPackages [dialog-workflow-local]: executing diffoscope
+[2024-04-07 06:18:13] INFO root fetch - processPackages [dialog-workflow-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dialog-workflow-local-0.0.89.tar.gz tmp/dialog-workflow-local-0.0.90.tar.gz --markdown 20240407/d/dialog-workflow-local/0.0.89-0.0.90/diff.md --exclude *.pyd
+[2024-04-07 06:18:13] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog-workflow-local-0.0.89.tar.gz]
+[2024-04-07 06:18:13] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog-workflow-local-0.0.90.tar.gz]
+[2024-04-07 06:18:13] INFO root fetch - main [MainThread]: End processing [dialog-workflow-local]: success
+[2024-04-07 06:18:13] INFO root fetch - main [MainThread]: Store serial: [22653446]
