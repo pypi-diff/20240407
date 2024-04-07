@@ -9372,3 +9372,9 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 11:45:21] INFO root fetch - main [MainThread]: End processing [OpsApi]: success
 [2024-04-07 11:45:21] INFO root fetch - main [MainThread]: End processing [OpsApi]: success
 [2024-04-07 11:45:21] INFO root fetch - main [MainThread]: Store serial: [22655162]
+[2024-04-07 11:47:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655162]
+[2024-04-07 11:47:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 11:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qa-test
+[2024-04-07 11:47:30] WARNING root fetch - processPackages [qa-test]: Skipping, unable to determine old version
+[2024-04-07 11:47:30] INFO root fetch - main [MainThread]: End processing [qa-test] error
+[2024-04-07 11:47:30] INFO root fetch - main [MainThread]: Store serial: [22655175]
