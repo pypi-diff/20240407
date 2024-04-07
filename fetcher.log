@@ -1465,3 +1465,11 @@
 [2024-04-07 02:18:54] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz]
 [2024-04-07 02:18:54] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-hyperledger-fabric-network]: success
 [2024-04-07 02:18:54] INFO root fetch - main [MainThread]: Store serial: [22652148]
+[2024-04-07 02:20:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652148]
+[2024-04-07 02:21:03] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 02:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NEURON-nightly
+[2024-04-07 02:21:03] INFO root fetch - processPackages [NEURON-nightly]: New version: [9.0a1.dev202] Old Version: [9.0a1.dev201]
+[2024-04-07 02:21:03] INFO root fetch - processPackages [NEURON-nightly]: Downloading https://files.pythonhosted.org/packages/41/d4/723607a8fe1df24b2c8868009743e251190d56bdeb12221eb346648448d4/NEURON_nightly-9.0a1.dev201-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-07 02:21:03] WARNING root fetch - processPackages [NEURON-nightly]: Skipping package: exceeds size limit 17255999>=10485760
+[2024-04-07 02:21:03] INFO root fetch - main [MainThread]: End processing [NEURON-nightly] error
+[2024-04-07 02:21:03] INFO root fetch - main [MainThread]: Store serial: [22652153]
