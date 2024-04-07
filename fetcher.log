@@ -11915,3 +11915,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:48:55] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-1.3.3.tar.gz]
 [2024-04-07 14:48:55] INFO root fetch - main [MainThread]: End processing [unicodedata-reader]: success
 [2024-04-07 14:48:55] INFO root fetch - main [MainThread]: Store serial: [22656275]
+[2024-04-07 14:50:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656275]
+[2024-04-07 14:51:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 14:51:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pre-commit-hooks-g
+[2024-04-07 14:51:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tb1-parser
+[2024-04-07 14:51:03] INFO root fetch - processPackages [tb1-parser]: New version: [0.5] Old Version: [0.4]
+[2024-04-07 14:51:03] INFO root fetch - processPackages [pre-commit-hooks-g]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-07 14:51:03] INFO root fetch - processPackages [tb1-parser]: Downloading https://files.pythonhosted.org/packages/91/ab/202c93e017ab604c009d23bcc30c5cc75625898136c918cd9bf1312152d7/tb1_parser-0.4.tar.gz
+[2024-04-07 14:51:03] WARNING root fetch - processPackages [tb1-parser]: Timeout reached during download
+[2024-04-07 14:51:03] INFO root fetch - processPackages [pre-commit-hooks-g]: Downloading https://files.pythonhosted.org/packages/49/51/7c88f85ac0b8fc17275bbd745b2002870baee5d587630585f28113922738/pre_commit_hooks_g-1.1.0.tar.gz
+[2024-04-07 14:51:04] INFO root fetch - processPackages [tb1-parser]: Downloading https://files.pythonhosted.org/packages/7c/a2/6af3b59fbb1d6f7910966893018d577c38a2b55ef52b556f636543c5dadb/tb1_parser-0.5.tar.gz
+[2024-04-07 14:51:04] WARNING root fetch - processPackages [pre-commit-hooks-g]: Timeout reached during download
+[2024-04-07 14:51:04] WARNING root fetch - processPackages [tb1-parser]: Timeout reached during download
+[2024-04-07 14:51:04] INFO root fetch - processPackages [tb1-parser]: executing diffoscope
+[2024-04-07 14:51:04] INFO root fetch - processPackages [tb1-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb1_parser-0.4.tar.gz tmp/tb1_parser-0.5.tar.gz --markdown 20240407/t/tb1-parser/0.4-0.5/diff.md --exclude *.pyd
+[2024-04-07 14:51:04] INFO root fetch - processPackages [pre-commit-hooks-g]: Downloading https://files.pythonhosted.org/packages/14/1d/dddcba04772a18be2eb750b372bf64986b52a0f1ffba0d76502d3f9d6915/pre_commit_hooks_g-1.2.0.tar.gz
+[2024-04-07 14:51:04] WARNING root fetch - processPackages [pre-commit-hooks-g]: Timeout reached during download
+[2024-04-07 14:51:04] INFO root fetch - processPackages [pre-commit-hooks-g]: executing diffoscope
+[2024-04-07 14:51:04] INFO root fetch - processPackages [pre-commit-hooks-g]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pre_commit_hooks_g-1.1.0.tar.gz tmp/pre_commit_hooks_g-1.2.0.tar.gz --markdown 20240407/p/pre-commit-hooks-g/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2024-04-07 14:51:04] INFO root fetch - processPackages [tb1-parser]: Remove: archive file [/home/abi/fetcher/tmp/tb1_parser-0.4.tar.gz]
+[2024-04-07 14:51:04] INFO root fetch - processPackages [tb1-parser]: Remove: archive file [/home/abi/fetcher/tmp/tb1_parser-0.5.tar.gz]
+[2024-04-07 14:51:04] INFO root fetch - main [MainThread]: End processing [tb1-parser]: success
+[2024-04-07 14:51:05] INFO root fetch - processPackages [pre-commit-hooks-g]: Remove: archive file [/home/abi/fetcher/tmp/pre_commit_hooks_g-1.1.0.tar.gz]
+[2024-04-07 14:51:05] INFO root fetch - processPackages [pre-commit-hooks-g]: Remove: archive file [/home/abi/fetcher/tmp/pre_commit_hooks_g-1.2.0.tar.gz]
+[2024-04-07 14:51:05] INFO root fetch - main [MainThread]: End processing [pre-commit-hooks-g]: success
+[2024-04-07 14:51:05] INFO root fetch - main [MainThread]: Store serial: [22656280]
