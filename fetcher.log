@@ -14871,3 +14871,34 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:37:22] INFO root fetch - processPackages [podcast-archiver]: Remove: archive file [/home/abi/fetcher/tmp/podcast_archiver-1.3.3.tar.gz]
 [2024-04-07 17:37:22] INFO root fetch - main [MainThread]: End processing [podcast-archiver]: success
 [2024-04-07 17:37:22] INFO root fetch - main [MainThread]: Store serial: [22657224]
+[2024-04-07 17:39:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657224]
+[2024-04-07 17:39:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 17:39:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py3d
+[2024-04-07 17:39:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sourcesage
+[2024-04-07 17:39:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rembus
+[2024-04-07 17:39:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MultiGATE
+[2024-04-07 17:39:31] WARNING root fetch - processPackages [MultiGATE]: Skipping, unable to determine old version
+[2024-04-07 17:39:31] INFO root fetch - main [MainThread]: End processing [MultiGATE] error
+[2024-04-07 17:39:31] INFO root fetch - processPackages [sourcesage]: New version: [4.0.9] Old Version: [4.0.8]
+[2024-04-07 17:39:31] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/53/ad/0a94732e2c9b70d4140a091aa95da8f14b71f5c05430e28ca454dd151571/sourcesage-4.0.8.tar.gz
+[2024-04-07 17:39:31] WARNING root fetch - processPackages [rembus]: Skipping, unable to determine old version
+[2024-04-07 17:39:31] INFO root fetch - main [MainThread]: End processing [rembus] error
+[2024-04-07 17:39:31] INFO root fetch - processPackages [py3d]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 17:39:31] WARNING root fetch - processPackages [sourcesage]: Timeout reached during download
+[2024-04-07 17:39:32] INFO root fetch - processPackages [py3d]: Downloading https://files.pythonhosted.org/packages/ed/a9/a05c44c1c9aa694e130c9d19cdc9859cfe777d1cd54002e7af34b37a840d/py3d-0.1.8.tar.gz
+[2024-04-07 17:39:32] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/ca/64/8ca9fec7286b0648ebe8224d4bd0e7190c6d20738e2c7ceb5f5c89f2346b/sourcesage-4.0.9.tar.gz
+[2024-04-07 17:39:32] WARNING root fetch - processPackages [py3d]: Timeout reached during download
+[2024-04-07 17:39:32] WARNING root fetch - processPackages [sourcesage]: Timeout reached during download
+[2024-04-07 17:39:32] INFO root fetch - processPackages [sourcesage]: executing diffoscope
+[2024-04-07 17:39:32] INFO root fetch - processPackages [sourcesage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sourcesage-4.0.8.tar.gz tmp/sourcesage-4.0.9.tar.gz --markdown 20240407/s/sourcesage/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2024-04-07 17:39:32] INFO root fetch - processPackages [py3d]: Downloading https://files.pythonhosted.org/packages/6f/e8/f37aed7244bfb8dde96399a57b78193b3257dc10559f13dfea723db768d4/py3d-0.1.9.tar.gz
+[2024-04-07 17:39:32] WARNING root fetch - processPackages [py3d]: Timeout reached during download
+[2024-04-07 17:39:32] INFO root fetch - processPackages [py3d]: executing diffoscope
+[2024-04-07 17:39:32] INFO root fetch - processPackages [py3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3d-0.1.8.tar.gz tmp/py3d-0.1.9.tar.gz --markdown 20240407/p/py3d/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 17:39:32] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.0.8.tar.gz]
+[2024-04-07 17:39:32] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.0.9.tar.gz]
+[2024-04-07 17:39:32] INFO root fetch - main [MainThread]: End processing [sourcesage]: success
+[2024-04-07 17:39:33] INFO root fetch - processPackages [py3d]: Remove: archive file [/home/abi/fetcher/tmp/py3d-0.1.8.tar.gz]
+[2024-04-07 17:39:33] INFO root fetch - processPackages [py3d]: Remove: archive file [/home/abi/fetcher/tmp/py3d-0.1.9.tar.gz]
+[2024-04-07 17:39:33] INFO root fetch - main [MainThread]: End processing [py3d]: success
+[2024-04-07 17:39:33] INFO root fetch - main [MainThread]: Store serial: [22657238]
