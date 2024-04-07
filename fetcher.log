@@ -4143,3 +4143,19 @@
 [2024-04-07 05:43:29] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
 [2024-04-07 05:43:29] INFO root fetch - main [MainThread]: End processing [litellm]: success
 [2024-04-07 05:43:29] INFO root fetch - main [MainThread]: Store serial: [22653308]
+[2024-04-07 05:45:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653308]
+[2024-04-07 05:45:37] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 05:47:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653308]
+[2024-04-07 05:47:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 05:47:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyeventmanager
+[2024-04-07 05:47:44] INFO root fetch - processPackages [pyeventmanager]: New version: [0.5.5] Old Version: [0.5.4]
+[2024-04-07 05:47:44] INFO root fetch - processPackages [pyeventmanager]: Downloading https://files.pythonhosted.org/packages/95/32/6960bc8752ab9e11adae871c65b4ce454e1452c5d0800921914c8a20c651/pyeventmanager-0.5.4.tar.gz
+[2024-04-07 05:47:44] WARNING root fetch - processPackages [pyeventmanager]: Timeout reached during download
+[2024-04-07 05:47:45] INFO root fetch - processPackages [pyeventmanager]: Downloading https://files.pythonhosted.org/packages/81/d4/c9af0477b1d605ed5608113770f501c340ef3e2ce075c009e16bf85d1270/pyeventmanager-0.5.5.tar.gz
+[2024-04-07 05:47:45] WARNING root fetch - processPackages [pyeventmanager]: Timeout reached during download
+[2024-04-07 05:47:45] INFO root fetch - processPackages [pyeventmanager]: executing diffoscope
+[2024-04-07 05:47:45] INFO root fetch - processPackages [pyeventmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeventmanager-0.5.4.tar.gz tmp/pyeventmanager-0.5.5.tar.gz --markdown 20240407/p/pyeventmanager/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2024-04-07 05:47:45] INFO root fetch - processPackages [pyeventmanager]: Remove: archive file [/home/abi/fetcher/tmp/pyeventmanager-0.5.4.tar.gz]
+[2024-04-07 05:47:45] INFO root fetch - processPackages [pyeventmanager]: Remove: archive file [/home/abi/fetcher/tmp/pyeventmanager-0.5.5.tar.gz]
+[2024-04-07 05:47:45] INFO root fetch - main [MainThread]: End processing [pyeventmanager]: success
+[2024-04-07 05:47:45] INFO root fetch - main [MainThread]: Store serial: [22653311]
