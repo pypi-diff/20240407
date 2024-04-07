@@ -9948,3 +9948,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 12:25:10] INFO root fetch - processPackages [iderare-pheno]: Remove: archive file [/home/abi/fetcher/tmp/iderare-pheno-0.3.5.tar.gz]
 [2024-04-07 12:25:10] INFO root fetch - main [MainThread]: End processing [iderare-pheno]: success
 [2024-04-07 12:25:10] INFO root fetch - main [MainThread]: Store serial: [22655390]
+[2024-04-07 12:27:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655390]
+[2024-04-07 12:27:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 12:27:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iderare-pheno
+[2024-04-07 12:27:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zood
+[2024-04-07 12:27:20] INFO root fetch - processPackages [iderare-pheno]: New version: [0.4.0] Old Version: [0.3.5]
+[2024-04-07 12:27:20] INFO root fetch - processPackages [zood]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-07 12:27:20] INFO root fetch - processPackages [iderare-pheno]: Downloading https://files.pythonhosted.org/packages/c5/49/b5f409090d26a2c015fc317f7c32a7e2b69e8f5f845528ced605a2614b75/iderare-pheno-0.3.5.tar.gz
+[2024-04-07 12:27:20] INFO root fetch - processPackages [zood]: Downloading https://files.pythonhosted.org/packages/89/e1/2abadf4115e1c497b2e87231a9a0a251c0e44ed694e151e7f25bec80a101/zood-0.9.8.tar.gz
+[2024-04-07 12:27:20] WARNING root fetch - processPackages [zood]: Timeout reached during download
+[2024-04-07 12:27:20] INFO root fetch - processPackages [zood]: Downloading https://files.pythonhosted.org/packages/13/67/343c8b411342d4b9f36abe60fc2985c346b2e83ac8868ed88fac755fa3eb/zood-0.9.9.tar.gz
+[2024-04-07 12:27:20] WARNING root fetch - processPackages [zood]: Timeout reached during download
+[2024-04-07 12:27:20] INFO root fetch - processPackages [zood]: executing diffoscope
+[2024-04-07 12:27:20] INFO root fetch - processPackages [zood]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zood-0.9.8.tar.gz tmp/zood-0.9.9.tar.gz --markdown 20240407/z/zood/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2024-04-07 12:27:20] WARNING root fetch - processPackages [iderare-pheno]: Timeout reached during download
+[2024-04-07 12:27:21] INFO root fetch - processPackages [iderare-pheno]: Downloading https://files.pythonhosted.org/packages/ef/b5/589293b2f35f98e4231ca13598b6f56db55822c0727f204a87206a06e333/iderare-pheno-0.4.0.tar.gz
+[2024-04-07 12:27:21] INFO root fetch - processPackages [zood]: Remove: archive file [/home/abi/fetcher/tmp/zood-0.9.8.tar.gz]
+[2024-04-07 12:27:21] INFO root fetch - processPackages [zood]: Remove: archive file [/home/abi/fetcher/tmp/zood-0.9.9.tar.gz]
+[2024-04-07 12:27:21] INFO root fetch - main [MainThread]: End processing [zood]: success
+[2024-04-07 12:27:21] WARNING root fetch - processPackages [iderare-pheno]: Timeout reached during download
+[2024-04-07 12:27:21] INFO root fetch - processPackages [iderare-pheno]: executing diffoscope
+[2024-04-07 12:27:21] INFO root fetch - processPackages [iderare-pheno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iderare-pheno-0.3.5.tar.gz tmp/iderare-pheno-0.4.0.tar.gz --markdown 20240407/i/iderare-pheno/0.3.5-0.4.0/diff.md --exclude *.pyd
+[2024-04-07 12:27:25] INFO root fetch - processPackages [iderare-pheno]: Remove: archive file [/home/abi/fetcher/tmp/iderare-pheno-0.3.5.tar.gz]
+[2024-04-07 12:27:25] INFO root fetch - processPackages [iderare-pheno]: Remove: archive file [/home/abi/fetcher/tmp/iderare-pheno-0.4.0.tar.gz]
+[2024-04-07 12:27:25] INFO root fetch - main [MainThread]: End processing [iderare-pheno]: success
+[2024-04-07 12:27:25] INFO root fetch - main [MainThread]: Store serial: [22655404]
