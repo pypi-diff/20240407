@@ -7261,3 +7261,39 @@
 [2024-04-07 09:30:19] INFO root fetch - processPackages [blue-krill]: Remove: archive file [/home/abi/fetcher/tmp/blue_krill-2.0.2.tar.gz]
 [2024-04-07 09:30:19] INFO root fetch - main [MainThread]: End processing [blue-krill]: success
 [2024-04-07 09:30:19] INFO root fetch - main [MainThread]: Store serial: [22654369]
+[2024-04-07 09:32:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654369]
+[2024-04-07 09:32:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 09:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moby-distribution
+[2024-04-07 09:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: heatmap_cli
+[2024-04-07 09:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: releasecmd
+[2024-04-07 09:32:28] INFO root fetch - processPackages [moby-distribution]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-04-07 09:32:28] INFO root fetch - processPackages [heatmap_cli]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-07 09:32:28] INFO root fetch - processPackages [releasecmd]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-07 09:32:28] INFO root fetch - processPackages [moby-distribution]: Downloading https://files.pythonhosted.org/packages/c8/bc/be29bff94a99bd218fd075d907263fbf8d815c56076b5c6e2fa2001d239b/moby_distribution-0.6.0.tar.gz
+[2024-04-07 09:32:28] INFO root fetch - processPackages [heatmap_cli]: Downloading https://files.pythonhosted.org/packages/89/3e/1667a0d6257328a7ee164f2d02fa5cb906e15b8317152b4e5b6389990a48/heatmap_cli-0.9.2.tar.gz
+[2024-04-07 09:32:28] INFO root fetch - processPackages [releasecmd]: Downloading https://files.pythonhosted.org/packages/d8/e2/ad57cfecf9498dd057cfe1d4396f9f11d6cc6c9650a592b31fccf13231c1/releasecmd-0.8.1.tar.gz
+[2024-04-07 09:32:28] WARNING root fetch - processPackages [moby-distribution]: Timeout reached during download
+[2024-04-07 09:32:28] WARNING root fetch - processPackages [heatmap_cli]: Timeout reached during download
+[2024-04-07 09:32:28] WARNING root fetch - processPackages [releasecmd]: Timeout reached during download
+[2024-04-07 09:32:28] INFO root fetch - processPackages [moby-distribution]: Downloading https://files.pythonhosted.org/packages/f7/38/f16a70b9f600291259a2cd65479cc6d2215fce79e8da7d7e76beb92761ac/moby_distribution-0.7.0.tar.gz
+[2024-04-07 09:32:28] INFO root fetch - processPackages [heatmap_cli]: Downloading https://files.pythonhosted.org/packages/cc/a1/f410c7350b196bcf8384439baacdbf7e8db2363ac46eb6d4872308462d8e/heatmap_cli-0.9.3.tar.gz
+[2024-04-07 09:32:28] INFO root fetch - processPackages [releasecmd]: Downloading https://files.pythonhosted.org/packages/a1/94/ae8b73f629bc894f4fad8313b0db20b60f1b027bc4aa2dbd6e814ef41a17/releasecmd-0.9.0.tar.gz
+[2024-04-07 09:32:28] WARNING root fetch - processPackages [moby-distribution]: Timeout reached during download
+[2024-04-07 09:32:28] INFO root fetch - processPackages [moby-distribution]: executing diffoscope
+[2024-04-07 09:32:28] INFO root fetch - processPackages [moby-distribution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moby_distribution-0.6.0.tar.gz tmp/moby_distribution-0.7.0.tar.gz --markdown 20240407/m/moby-distribution/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2024-04-07 09:32:28] WARNING root fetch - processPackages [heatmap_cli]: Timeout reached during download
+[2024-04-07 09:32:28] INFO root fetch - processPackages [heatmap_cli]: executing diffoscope
+[2024-04-07 09:32:28] INFO root fetch - processPackages [heatmap_cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heatmap_cli-0.9.2.tar.gz tmp/heatmap_cli-0.9.3.tar.gz --markdown 20240407/h/heatmap_cli/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2024-04-07 09:32:28] WARNING root fetch - processPackages [releasecmd]: Timeout reached during download
+[2024-04-07 09:32:28] INFO root fetch - processPackages [releasecmd]: executing diffoscope
+[2024-04-07 09:32:28] INFO root fetch - processPackages [releasecmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/releasecmd-0.8.1.tar.gz tmp/releasecmd-0.9.0.tar.gz --markdown 20240407/r/releasecmd/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2024-04-07 09:32:29] INFO root fetch - processPackages [moby-distribution]: Remove: archive file [/home/abi/fetcher/tmp/moby_distribution-0.6.0.tar.gz]
+[2024-04-07 09:32:29] INFO root fetch - processPackages [moby-distribution]: Remove: archive file [/home/abi/fetcher/tmp/moby_distribution-0.7.0.tar.gz]
+[2024-04-07 09:32:29] INFO root fetch - main [MainThread]: End processing [moby-distribution]: success
+[2024-04-07 09:32:29] INFO root fetch - processPackages [releasecmd]: Remove: archive file [/home/abi/fetcher/tmp/releasecmd-0.8.1.tar.gz]
+[2024-04-07 09:32:29] INFO root fetch - processPackages [releasecmd]: Remove: archive file [/home/abi/fetcher/tmp/releasecmd-0.9.0.tar.gz]
+[2024-04-07 09:32:29] INFO root fetch - main [MainThread]: End processing [releasecmd]: success
+[2024-04-07 09:32:29] INFO root fetch - processPackages [heatmap_cli]: Remove: archive file [/home/abi/fetcher/tmp/heatmap_cli-0.9.2.tar.gz]
+[2024-04-07 09:32:29] INFO root fetch - processPackages [heatmap_cli]: Remove: archive file [/home/abi/fetcher/tmp/heatmap_cli-0.9.3.tar.gz]
+[2024-04-07 09:32:29] INFO root fetch - main [MainThread]: End processing [heatmap_cli]: success
+[2024-04-07 09:32:29] INFO root fetch - main [MainThread]: Store serial: [22654381]
