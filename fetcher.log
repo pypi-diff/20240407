@@ -11940,3 +11940,55 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:51:05] INFO root fetch - processPackages [pre-commit-hooks-g]: Remove: archive file [/home/abi/fetcher/tmp/pre_commit_hooks_g-1.2.0.tar.gz]
 [2024-04-07 14:51:05] INFO root fetch - main [MainThread]: End processing [pre-commit-hooks-g]: success
 [2024-04-07 14:51:05] INFO root fetch - main [MainThread]: Store serial: [22656280]
+[2024-04-07 14:53:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656280]
+[2024-04-07 14:53:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 14:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: systembridgebackend
+[2024-04-07 14:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mxlm
+[2024-04-07 14:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ado_wrapper
+[2024-04-07 14:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tcrutils
+[2024-04-07 14:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gramps-desktop
+[2024-04-07 14:53:16] INFO root fetch - processPackages [gramps-desktop]: New version: [5.2.2] Old Version: [5.2.1]
+[2024-04-07 14:53:16] INFO root fetch - processPackages [ado_wrapper]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-07 14:53:16] INFO root fetch - processPackages [mxlm]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-07 14:53:16] INFO root fetch - processPackages [tcrutils]: New version: [12.0.139] Old Version: [12.0.138]
+[2024-04-07 14:53:16] INFO root fetch - processPackages [systembridgebackend]: New version: [4.2.0] Old Version: [4.1.6]
+[2024-04-07 14:53:16] INFO root fetch - processPackages [ado_wrapper]: Downloading https://files.pythonhosted.org/packages/76/9e/37cd25c2315370aaf8b86a8aeebd82b26151604de7b73a97fcb4ca519fd1/ado_wrapper-0.0.3.tar.gz
+[2024-04-07 14:53:16] INFO root fetch - processPackages [mxlm]: Downloading https://files.pythonhosted.org/packages/ed/74/46a944cb522d0f4c2af414dc3bff4b7b42a2863d21da5f0c1f56437728b5/mxlm-0.0.1.tar.gz
+[2024-04-07 14:53:16] INFO root fetch - processPackages [systembridgebackend]: Downloading https://files.pythonhosted.org/packages/ba/6e/9dacdf00e7775abe9b70a1bef781bb620feccdfb6747742e148e46392c47/systembridgebackend-4.1.6.tar.gz
+[2024-04-07 14:53:16] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/4c/c5/cc21aefdc427780f40abd36559f79f73878a45422455aba7425ce6492bd1/tcrutils-12.0.138.tar.gz
+[2024-04-07 14:53:16] INFO root fetch - processPackages [gramps-desktop]: Downloading https://files.pythonhosted.org/packages/a8/0b/d0e5783adf26d51da64980e5ffd33fe0bb5061d9f000bb1ed6485d3cc711/gramps-desktop-5.2.1.tar.gz
+[2024-04-07 14:53:16] WARNING root fetch - processPackages [tcrutils]: Timeout reached during download
+[2024-04-07 14:53:16] WARNING root fetch - processPackages [gramps-desktop]: Skipping package: exceeds size limit 20713870>=10485760
+[2024-04-07 14:53:16] INFO root fetch - main [MainThread]: End processing [gramps-desktop] error
+[2024-04-07 14:53:16] WARNING root fetch - processPackages [ado_wrapper]: Timeout reached during download
+[2024-04-07 14:53:16] WARNING root fetch - processPackages [mxlm]: Timeout reached during download
+[2024-04-07 14:53:16] WARNING root fetch - processPackages [systembridgebackend]: Timeout reached during download
+[2024-04-07 14:53:17] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/9f/05/1b92db4ff08f0427b7362b850b08f01bc825d50e7c3de461151fe075ca1c/tcrutils-12.0.139.tar.gz
+[2024-04-07 14:53:17] INFO root fetch - processPackages [ado_wrapper]: Downloading https://files.pythonhosted.org/packages/f0/09/8943f191cfce57bf9d9e04c72fc87bd0202e6c613db6d35db23a7272ac36/ado_wrapper-0.0.4.tar.gz
+[2024-04-07 14:53:17] INFO root fetch - processPackages [systembridgebackend]: Downloading https://files.pythonhosted.org/packages/e2/5a/135c8d4809fe52940b029561465f57a56c2f3f2c79d5d086d6fdcc957f31/systembridgebackend-4.2.0.tar.gz
+[2024-04-07 14:53:17] INFO root fetch - processPackages [mxlm]: Downloading https://files.pythonhosted.org/packages/2b/e4/8a3bd8d0e1493aa260b51dc76648f0ec1e2dab66da4f8e7e8e967847fcdf/mxlm-0.0.2.tar.gz
+[2024-04-07 14:53:17] WARNING root fetch - processPackages [tcrutils]: Timeout reached during download
+[2024-04-07 14:53:17] INFO root fetch - processPackages [tcrutils]: executing diffoscope
+[2024-04-07 14:53:17] INFO root fetch - processPackages [tcrutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcrutils-12.0.138.tar.gz tmp/tcrutils-12.0.139.tar.gz --markdown 20240407/t/tcrutils/12.0.138-12.0.139/diff.md --exclude *.pyd
+[2024-04-07 14:53:17] WARNING root fetch - processPackages [ado_wrapper]: Timeout reached during download
+[2024-04-07 14:53:17] INFO root fetch - processPackages [ado_wrapper]: executing diffoscope
+[2024-04-07 14:53:17] INFO root fetch - processPackages [ado_wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ado_wrapper-0.0.3.tar.gz tmp/ado_wrapper-0.0.4.tar.gz --markdown 20240407/a/ado_wrapper/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 14:53:17] WARNING root fetch - processPackages [mxlm]: Timeout reached during download
+[2024-04-07 14:53:17] INFO root fetch - processPackages [mxlm]: executing diffoscope
+[2024-04-07 14:53:17] INFO root fetch - processPackages [mxlm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mxlm-0.0.1.tar.gz tmp/mxlm-0.0.2.tar.gz --markdown 20240407/m/mxlm/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-07 14:53:17] WARNING root fetch - processPackages [systembridgebackend]: Timeout reached during download
+[2024-04-07 14:53:17] INFO root fetch - processPackages [systembridgebackend]: executing diffoscope
+[2024-04-07 14:53:17] INFO root fetch - processPackages [systembridgebackend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systembridgebackend-4.1.6.tar.gz tmp/systembridgebackend-4.2.0.tar.gz --markdown 20240407/s/systembridgebackend/4.1.6-4.2.0/diff.md --exclude *.pyd
+[2024-04-07 14:53:17] INFO root fetch - processPackages [mxlm]: Remove: archive file [/home/abi/fetcher/tmp/mxlm-0.0.1.tar.gz]
+[2024-04-07 14:53:17] INFO root fetch - processPackages [mxlm]: Remove: archive file [/home/abi/fetcher/tmp/mxlm-0.0.2.tar.gz]
+[2024-04-07 14:53:17] INFO root fetch - main [MainThread]: End processing [mxlm]: success
+[2024-04-07 14:53:18] INFO root fetch - processPackages [systembridgebackend]: Remove: archive file [/home/abi/fetcher/tmp/systembridgebackend-4.1.6.tar.gz]
+[2024-04-07 14:53:18] INFO root fetch - processPackages [systembridgebackend]: Remove: archive file [/home/abi/fetcher/tmp/systembridgebackend-4.2.0.tar.gz]
+[2024-04-07 14:53:18] INFO root fetch - main [MainThread]: End processing [systembridgebackend]: success
+[2024-04-07 14:53:18] INFO root fetch - processPackages [ado_wrapper]: Remove: archive file [/home/abi/fetcher/tmp/ado_wrapper-0.0.3.tar.gz]
+[2024-04-07 14:53:18] INFO root fetch - processPackages [ado_wrapper]: Remove: archive file [/home/abi/fetcher/tmp/ado_wrapper-0.0.4.tar.gz]
+[2024-04-07 14:53:18] INFO root fetch - main [MainThread]: End processing [ado_wrapper]: success
+[2024-04-07 14:53:18] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.138.tar.gz]
+[2024-04-07 14:53:18] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.139.tar.gz]
+[2024-04-07 14:53:18] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
+[2024-04-07 14:53:18] INFO root fetch - main [MainThread]: Store serial: [22656295]
