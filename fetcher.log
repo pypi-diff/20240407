@@ -4893,3 +4893,28 @@
 [2024-04-07 06:59:06] INFO root fetch - processPackages [runtimepy]: Remove: archive file [/home/abi/fetcher/tmp/runtimepy-3.9.0.tar.gz]
 [2024-04-07 06:59:06] INFO root fetch - main [MainThread]: End processing [runtimepy]: success
 [2024-04-07 06:59:06] INFO root fetch - main [MainThread]: Store serial: [22653521]
+[2024-04-07 07:01:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653521]
+[2024-04-07 07:01:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 07:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stigg-api-client
+[2024-04-07 07:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stigg-api-client-v2
+[2024-04-07 07:01:14] INFO root fetch - processPackages [stigg-api-client]: New version: [1.98.1] Old Version: [1.98.0]
+[2024-04-07 07:01:14] INFO root fetch - processPackages [stigg-api-client-v2]: New version: [1.98.1] Old Version: [1.98.0]
+[2024-04-07 07:01:15] INFO root fetch - processPackages [stigg-api-client-v2]: Downloading https://files.pythonhosted.org/packages/9e/ad/1fefc56e33c405d4aa0b5a382414f77d27efc7861a1cedce255c72c8f7d7/stigg_api_client_v2-1.98.0.tar.gz
+[2024-04-07 07:01:15] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/98/38/1422eb2135687adff8e0844dc4afcdcdd3c44140b3b89335819f7a678037/stigg_api_client-1.98.0.tar.gz
+[2024-04-07 07:01:15] WARNING root fetch - processPackages [stigg-api-client]: Timeout reached during download
+[2024-04-07 07:01:15] WARNING root fetch - processPackages [stigg-api-client-v2]: Timeout reached during download
+[2024-04-07 07:01:15] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/da/d2/6b7a0c4e4205896d09042773fe56913ad646e6493900cc11613eabb26e05/stigg_api_client-1.98.1.tar.gz
+[2024-04-07 07:01:15] INFO root fetch - processPackages [stigg-api-client-v2]: Downloading https://files.pythonhosted.org/packages/e4/6e/6806296621be882a70042a1d47ba321aad0c99c69b0e1a5f16346a41b4b5/stigg_api_client_v2-1.98.1.tar.gz
+[2024-04-07 07:01:15] WARNING root fetch - processPackages [stigg-api-client]: Timeout reached during download
+[2024-04-07 07:01:15] INFO root fetch - processPackages [stigg-api-client]: executing diffoscope
+[2024-04-07 07:01:15] INFO root fetch - processPackages [stigg-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client-1.98.0.tar.gz tmp/stigg_api_client-1.98.1.tar.gz --markdown 20240407/s/stigg-api-client/1.98.0-1.98.1/diff.md --exclude *.pyd
+[2024-04-07 07:01:15] WARNING root fetch - processPackages [stigg-api-client-v2]: Timeout reached during download
+[2024-04-07 07:01:15] INFO root fetch - processPackages [stigg-api-client-v2]: executing diffoscope
+[2024-04-07 07:01:15] INFO root fetch - processPackages [stigg-api-client-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client_v2-1.98.0.tar.gz tmp/stigg_api_client_v2-1.98.1.tar.gz --markdown 20240407/s/stigg-api-client-v2/1.98.0-1.98.1/diff.md --exclude *.pyd
+[2024-04-07 07:01:16] INFO root fetch - processPackages [stigg-api-client]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client-1.98.0.tar.gz]
+[2024-04-07 07:01:16] INFO root fetch - processPackages [stigg-api-client]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client-1.98.1.tar.gz]
+[2024-04-07 07:01:16] INFO root fetch - main [MainThread]: End processing [stigg-api-client]: success
+[2024-04-07 07:01:16] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.0.tar.gz]
+[2024-04-07 07:01:16] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.1.tar.gz]
+[2024-04-07 07:01:16] INFO root fetch - main [MainThread]: End processing [stigg-api-client-v2]: success
+[2024-04-07 07:01:16] INFO root fetch - main [MainThread]: Store serial: [22653527]
