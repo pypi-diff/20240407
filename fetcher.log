@@ -16570,3 +16570,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:11:22] INFO root fetch - processPackages [alibabacloud-easygene20210315]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_easygene20210315-1.3.1.tar.gz]
 [2024-04-07 19:11:22] INFO root fetch - main [MainThread]: End processing [alibabacloud-easygene20210315]: success
 [2024-04-07 19:11:22] INFO root fetch - main [MainThread]: Store serial: [22657833]
+[2024-04-07 19:13:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657833]
+[2024-04-07 19:13:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 19:13:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unicodedata-reader
+[2024-04-07 19:13:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypomes-core
+[2024-04-07 19:13:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dynamic-indicators-tools
+[2024-04-07 19:13:34] INFO root fetch - processPackages [unicodedata-reader]: New version: [1.3.4] Old Version: [1.3.3]
+[2024-04-07 19:13:34] INFO root fetch - processPackages [unicodedata-reader]: Downloading https://files.pythonhosted.org/packages/c9/91/db56178c788672cc5a5891617dbba0e71976083cc0d7ccbf5e04ca88f14f/unicodedata_reader-1.3.3.tar.gz
+[2024-04-07 19:13:34] INFO root fetch - processPackages [dynamic-indicators-tools]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-07 19:13:34] INFO root fetch - processPackages [pypomes-core]: New version: [0.7.5] Old Version: [0.7.4]
+[2024-04-07 19:13:34] WARNING root fetch - processPackages [unicodedata-reader]: Timeout reached during download
+[2024-04-07 19:13:34] INFO root fetch - processPackages [dynamic-indicators-tools]: Downloading https://files.pythonhosted.org/packages/14/f5/e540f483fda18adc6076de5f8829ca5bda7b8c87a71b5c161a91b8790b5a/dynamic_indicators_tools-1.0.1.tar.gz
+[2024-04-07 19:13:34] INFO root fetch - processPackages [unicodedata-reader]: Downloading https://files.pythonhosted.org/packages/9a/cb/0ef85dd406eea977942ae98b6c3b83396745b8c599906d56da3852b3a2ee/unicodedata_reader-1.3.4.tar.gz
+[2024-04-07 19:13:34] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/75/b7/6a9e30d3f6dbdc9f0e2c3538c6d6bc993a296afbfec6394365628e3bd32f/pypomes_core-0.7.4.tar.gz
+[2024-04-07 19:13:34] WARNING root fetch - processPackages [dynamic-indicators-tools]: Timeout reached during download
+[2024-04-07 19:13:34] WARNING root fetch - processPackages [unicodedata-reader]: Timeout reached during download
+[2024-04-07 19:13:34] INFO root fetch - processPackages [unicodedata-reader]: executing diffoscope
+[2024-04-07 19:13:34] INFO root fetch - processPackages [unicodedata-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unicodedata_reader-1.3.3.tar.gz tmp/unicodedata_reader-1.3.4.tar.gz --markdown 20240407/u/unicodedata-reader/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2024-04-07 19:13:34] INFO root fetch - processPackages [dynamic-indicators-tools]: Downloading https://files.pythonhosted.org/packages/fd/c0/1ce5553b8687e66a2ca4936e2f20f58e7a47ff201e2d9ed2b0d16876e1c7/dynamic_indicators_tools-1.0.2.tar.gz
+[2024-04-07 19:13:34] WARNING root fetch - processPackages [pypomes-core]: Timeout reached during download
+[2024-04-07 19:13:35] WARNING root fetch - processPackages [dynamic-indicators-tools]: Timeout reached during download
+[2024-04-07 19:13:35] INFO root fetch - processPackages [dynamic-indicators-tools]: executing diffoscope
+[2024-04-07 19:13:35] INFO root fetch - processPackages [dynamic-indicators-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dynamic_indicators_tools-1.0.1.tar.gz tmp/dynamic_indicators_tools-1.0.2.tar.gz --markdown 20240407/d/dynamic-indicators-tools/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2024-04-07 19:13:35] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/fe/3e/f3c943eac66575f497d09a190df9a64cf82f3599c13b8db67c96a2256602/pypomes_core-0.7.5.tar.gz
+[2024-04-07 19:13:35] WARNING root fetch - processPackages [pypomes-core]: Timeout reached during download
+[2024-04-07 19:13:35] INFO root fetch - processPackages [pypomes-core]: executing diffoscope
+[2024-04-07 19:13:35] INFO root fetch - processPackages [pypomes-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_core-0.7.4.tar.gz tmp/pypomes_core-0.7.5.tar.gz --markdown 20240407/p/pypomes-core/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2024-04-07 19:13:35] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-1.3.3.tar.gz]
+[2024-04-07 19:13:35] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-1.3.4.tar.gz]
+[2024-04-07 19:13:35] INFO root fetch - main [MainThread]: End processing [unicodedata-reader]: success
+[2024-04-07 19:13:35] INFO root fetch - processPackages [dynamic-indicators-tools]: Remove: archive file [/home/abi/fetcher/tmp/dynamic_indicators_tools-1.0.1.tar.gz]
+[2024-04-07 19:13:35] INFO root fetch - processPackages [dynamic-indicators-tools]: Remove: archive file [/home/abi/fetcher/tmp/dynamic_indicators_tools-1.0.2.tar.gz]
+[2024-04-07 19:13:35] INFO root fetch - main [MainThread]: End processing [dynamic-indicators-tools]: success
+[2024-04-07 19:13:35] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.7.4.tar.gz]
+[2024-04-07 19:13:35] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.7.5.tar.gz]
+[2024-04-07 19:13:35] INFO root fetch - main [MainThread]: End processing [pypomes-core]: success
+[2024-04-07 19:13:35] INFO root fetch - main [MainThread]: Store serial: [22657842]
