@@ -17574,3 +17574,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 20:17:07] INFO root fetch - processPackages [decoder-plus-plus]: Remove: archive file [/home/abi/fetcher/tmp/decoder-plus-plus-1.7.0.tar.gz]
 [2024-04-07 20:17:07] INFO root fetch - main [MainThread]: End processing [decoder-plus-plus]: success
 [2024-04-07 20:17:07] INFO root fetch - main [MainThread]: Store serial: [22658219]
+[2024-04-07 20:19:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658219]
+[2024-04-07 20:19:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 20:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langkit
+[2024-04-07 20:19:17] INFO root fetch - processPackages [langkit]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 20:19:17] INFO root fetch - processPackages [langkit]: Downloading https://files.pythonhosted.org/packages/ce/e3/7969ef4cda66f7a8d2dc2a61af3bb067c395b8fc3c8bf9e6777139afa351/langkit-0.0.8.tar.gz
+[2024-04-07 20:19:18] WARNING root fetch - processPackages [langkit]: Timeout reached during download
+[2024-04-07 20:19:18] INFO root fetch - processPackages [langkit]: Downloading https://files.pythonhosted.org/packages/32/28/704a6d98bd58a324050772e6b9dc1479ab2f09c77c3a83a38e3697af8ef3/langkit-0.0.9.tar.gz
+[2024-04-07 20:19:18] WARNING root fetch - processPackages [langkit]: Timeout reached during download
+[2024-04-07 20:19:18] INFO root fetch - processPackages [langkit]: executing diffoscope
+[2024-04-07 20:19:18] INFO root fetch - processPackages [langkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langkit-0.0.8.tar.gz tmp/langkit-0.0.9.tar.gz --markdown 20240407/l/langkit/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 20:19:19] INFO root fetch - processPackages [langkit]: Remove: archive file [/home/abi/fetcher/tmp/langkit-0.0.8.tar.gz]
+[2024-04-07 20:19:19] INFO root fetch - processPackages [langkit]: Remove: archive file [/home/abi/fetcher/tmp/langkit-0.0.9.tar.gz]
+[2024-04-07 20:19:19] INFO root fetch - main [MainThread]: End processing [langkit]: success
+[2024-04-07 20:19:19] INFO root fetch - main [MainThread]: Store serial: [22658224]
