@@ -12406,3 +12406,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:17:19] INFO root fetch - processPackages [gpt-all-star]: Remove: archive file [/home/abi/fetcher/tmp/gpt_all_star-0.0.9.tar.gz]
 [2024-04-07 15:17:19] INFO root fetch - main [MainThread]: End processing [gpt-all-star]: success
 [2024-04-07 15:17:19] INFO root fetch - main [MainThread]: Store serial: [22656427]
+[2024-04-07 15:19:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656427]
+[2024-04-07 15:19:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 15:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyEvALL
+[2024-04-07 15:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tb1-parser
+[2024-04-07 15:19:29] INFO root fetch - processPackages [tb1-parser]: New version: [0.8] Old Version: [0.7]
+[2024-04-07 15:19:29] INFO root fetch - processPackages [tb1-parser]: Downloading https://files.pythonhosted.org/packages/64/b0/2baa935c4dbd4709a170c5f293fb7c7561765b7e421b3dc32e9a8a56a68f/tb1_parser-0.7.tar.gz
+[2024-04-07 15:19:29] INFO root fetch - processPackages [PyEvALL]: New version: [0.1.62] Old Version: [0.1.60]
+[2024-04-07 15:19:29] WARNING root fetch - processPackages [tb1-parser]: Timeout reached during download
+[2024-04-07 15:19:29] INFO root fetch - processPackages [PyEvALL]: Downloading https://files.pythonhosted.org/packages/4c/f6/f6f33e41113c24998d99839a4cea045c78a1f315cef85af03b33ed42f551/PyEvALL-0.1.60.tar.gz
+[2024-04-07 15:19:29] INFO root fetch - processPackages [tb1-parser]: Downloading https://files.pythonhosted.org/packages/1f/9b/c94ace300558d01cd601d416598d4b6cecf6e9aa215221d1dbe8a3caad15/tb1_parser-0.8.tar.gz
+[2024-04-07 15:19:29] WARNING root fetch - processPackages [PyEvALL]: Timeout reached during download
+[2024-04-07 15:19:29] WARNING root fetch - processPackages [tb1-parser]: Timeout reached during download
+[2024-04-07 15:19:29] INFO root fetch - processPackages [tb1-parser]: executing diffoscope
+[2024-04-07 15:19:29] INFO root fetch - processPackages [tb1-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb1_parser-0.7.tar.gz tmp/tb1_parser-0.8.tar.gz --markdown 20240407/t/tb1-parser/0.7-0.8/diff.md --exclude *.pyd
+[2024-04-07 15:19:29] INFO root fetch - processPackages [PyEvALL]: Downloading https://files.pythonhosted.org/packages/63/b5/968ce73163a406768f4ff5491dc87e131bbe566b26716e1949c5184dc6ce/PyEvALL-0.1.62.tar.gz
+[2024-04-07 15:19:29] WARNING root fetch - processPackages [PyEvALL]: Timeout reached during download
+[2024-04-07 15:19:29] INFO root fetch - processPackages [PyEvALL]: executing diffoscope
+[2024-04-07 15:19:29] INFO root fetch - processPackages [PyEvALL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyEvALL-0.1.60.tar.gz tmp/PyEvALL-0.1.62.tar.gz --markdown 20240407/P/PyEvALL/0.1.60-0.1.62/diff.md --exclude *.pyd
+[2024-04-07 15:19:30] INFO root fetch - processPackages [tb1-parser]: Remove: archive file [/home/abi/fetcher/tmp/tb1_parser-0.7.tar.gz]
+[2024-04-07 15:19:30] INFO root fetch - processPackages [tb1-parser]: Remove: archive file [/home/abi/fetcher/tmp/tb1_parser-0.8.tar.gz]
+[2024-04-07 15:19:30] INFO root fetch - main [MainThread]: End processing [tb1-parser]: success
+[2024-04-07 15:19:30] INFO root fetch - processPackages [PyEvALL]: Remove: archive file [/home/abi/fetcher/tmp/PyEvALL-0.1.60.tar.gz]
+[2024-04-07 15:19:30] INFO root fetch - processPackages [PyEvALL]: Remove: archive file [/home/abi/fetcher/tmp/PyEvALL-0.1.62.tar.gz]
+[2024-04-07 15:19:30] INFO root fetch - main [MainThread]: End processing [PyEvALL]: success
+[2024-04-07 15:19:30] INFO root fetch - main [MainThread]: Store serial: [22656432]
