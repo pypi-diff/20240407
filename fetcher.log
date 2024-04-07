@@ -10794,3 +10794,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:34:42] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.4.7-py3-none-any.whl.zip]
 [2024-04-07 13:34:42] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
 [2024-04-07 13:34:42] INFO root fetch - main [MainThread]: Store serial: [22655747]
+[2024-04-07 13:36:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655747]
+[2024-04-07 13:36:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 13:36:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ruleopt
+[2024-04-07 13:36:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: package98452
+[2024-04-07 13:36:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-signalfx
+[2024-04-07 13:36:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dekdjtools
+[2024-04-07 13:36:51] WARNING root fetch - processPackages [package98452]: Skipping, unable to determine old version
+[2024-04-07 13:36:51] INFO root fetch - main [MainThread]: End processing [package98452] error
+[2024-04-07 13:36:51] INFO root fetch - processPackages [dekdjtools]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-07 13:36:51] INFO root fetch - processPackages [ruleopt]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-07 13:36:51] INFO root fetch - processPackages [pulumi-signalfx]: New version: [7.2.0a1712488848] Old Version: [7.2.0a1711742187]
+[2024-04-07 13:36:51] INFO root fetch - processPackages [dekdjtools]: Downloading https://files.pythonhosted.org/packages/83/d6/445ad590b650a489569e57f23735ad1dd268f56605dec1b82e6960d4dfd0/dekdjtools-0.1.5.tar.gz
+[2024-04-07 13:36:51] INFO root fetch - processPackages [pulumi-signalfx]: Downloading https://files.pythonhosted.org/packages/89/80/26c9d5a71237bf8b6f004967e9ef08d1eb26cc9bac0937c3d9ff4b22cc68/pulumi_signalfx-7.2.0a1711742187.tar.gz
+[2024-04-07 13:36:51] INFO root fetch - processPackages [ruleopt]: Downloading https://files.pythonhosted.org/packages/0d/0b/f6efdb65f71e702171557a7a2d1d333f2d3a2eb685cd79b0194c71106cc0/ruleopt-0.1.3-cp39-cp39-win_amd64.whl
+[2024-04-07 13:36:51] WARNING root fetch - processPackages [dekdjtools]: Timeout reached during download
+[2024-04-07 13:36:51] WARNING root fetch - processPackages [pulumi-signalfx]: Timeout reached during download
+[2024-04-07 13:36:51] INFO root fetch - processPackages [pulumi-signalfx]: Downloading https://files.pythonhosted.org/packages/08/e4/81014c65d2345c8f3967951dd0539c76e41240e46257a51f609370754eee/pulumi_signalfx-7.2.0a1712488848.tar.gz
+[2024-04-07 13:36:51] INFO root fetch - processPackages [dekdjtools]: Downloading https://files.pythonhosted.org/packages/58/40/85f15d40cb5a6dad00cf7435dee12594796d127c22974738782a76a6d4b1/dekdjtools-0.1.6.tar.gz
+[2024-04-07 13:36:51] WARNING root fetch - processPackages [dekdjtools]: Timeout reached during download
+[2024-04-07 13:36:51] WARNING root fetch - processPackages [ruleopt]: Timeout reached during download
+[2024-04-07 13:36:51] INFO root fetch - processPackages [dekdjtools]: executing diffoscope
+[2024-04-07 13:36:51] INFO root fetch - processPackages [dekdjtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dekdjtools-0.1.5.tar.gz tmp/dekdjtools-0.1.6.tar.gz --markdown 20240407/d/dekdjtools/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2024-04-07 13:36:51] WARNING root fetch - processPackages [pulumi-signalfx]: Timeout reached during download
+[2024-04-07 13:36:51] INFO root fetch - processPackages [pulumi-signalfx]: executing diffoscope
+[2024-04-07 13:36:51] INFO root fetch - processPackages [pulumi-signalfx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_signalfx-7.2.0a1711742187.tar.gz tmp/pulumi_signalfx-7.2.0a1712488848.tar.gz --markdown 20240407/p/pulumi-signalfx/7.2.0a1711742187-7.2.0a1712488848/diff.md --exclude *.pyd
+[2024-04-07 13:36:52] INFO root fetch - processPackages [ruleopt]: Downloading https://files.pythonhosted.org/packages/02/ea/1967bcfd8d76129d1ab3d546d7fd70cfbad0887e3654e0dec9ce3cd3330c/ruleopt-0.1.4-cp39-cp39-win_amd64.whl
+[2024-04-07 13:36:52] WARNING root fetch - processPackages [ruleopt]: Timeout reached during download
+[2024-04-07 13:36:52] INFO root fetch - processPackages [ruleopt]: executing diffoscope
+[2024-04-07 13:36:52] INFO root fetch - processPackages [ruleopt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ruleopt-0.1.3-cp39-cp39-win_amd64.whl.zip tmp/ruleopt-0.1.4-cp39-cp39-win_amd64.whl.zip --markdown 20240407/r/ruleopt/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2024-04-07 13:36:52] INFO root fetch - processPackages [dekdjtools]: Remove: archive file [/home/abi/fetcher/tmp/dekdjtools-0.1.5.tar.gz]
+[2024-04-07 13:36:52] INFO root fetch - processPackages [dekdjtools]: Remove: archive file [/home/abi/fetcher/tmp/dekdjtools-0.1.6.tar.gz]
+[2024-04-07 13:36:52] INFO root fetch - main [MainThread]: End processing [dekdjtools]: success
+[2024-04-07 13:36:52] INFO root fetch - processPackages [pulumi-signalfx]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_signalfx-7.2.0a1711742187.tar.gz]
+[2024-04-07 13:36:52] INFO root fetch - processPackages [pulumi-signalfx]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_signalfx-7.2.0a1712488848.tar.gz]
+[2024-04-07 13:36:52] INFO root fetch - main [MainThread]: End processing [pulumi-signalfx]: success
+[2024-04-07 13:36:53] INFO root fetch - processPackages [ruleopt]: Remove: archive file [/home/abi/fetcher/tmp/ruleopt-0.1.3-cp39-cp39-win_amd64.whl.zip]
+[2024-04-07 13:36:53] INFO root fetch - processPackages [ruleopt]: Remove: archive file [/home/abi/fetcher/tmp/ruleopt-0.1.4-cp39-cp39-win_amd64.whl.zip]
+[2024-04-07 13:36:53] INFO root fetch - main [MainThread]: End processing [ruleopt]: success
+[2024-04-07 13:36:53] INFO root fetch - main [MainThread]: Store serial: [22655770]
