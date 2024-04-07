@@ -18721,3 +18721,23 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 21:27:05] INFO root fetch - processPackages [Flask]: Remove: archive file [/home/abi/fetcher/tmp/flask-3.0.2.tar.gz]
 [2024-04-07 21:27:05] INFO root fetch - main [MainThread]: End processing [Flask]: success
 [2024-04-07 21:27:05] INFO root fetch - main [MainThread]: Store serial: [22658645]
+[2024-04-07 21:29:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658645]
+[2024-04-07 21:29:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 21:29:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tree-sitter-json
+[2024-04-07 21:29:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: app-lib-py
+[2024-04-07 21:29:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llmsh
+[2024-04-07 21:29:14] INFO root fetch - processPackages [app-lib-py]: New version: [0.0.8] Old Version: [0.0.12]
+[2024-04-07 21:29:14] WARNING root fetch - processPackages [tree-sitter-json]: Skipping, unable to determine old version
+[2024-04-07 21:29:14] INFO root fetch - main [MainThread]: End processing [tree-sitter-json] error
+[2024-04-07 21:29:14] WARNING root fetch - processPackages [llmsh]: Skipping, unable to determine old version
+[2024-04-07 21:29:14] INFO root fetch - main [MainThread]: End processing [llmsh] error
+[2024-04-07 21:29:14] INFO root fetch - processPackages [app-lib-py]: Downloading https://files.pythonhosted.org/packages/00/a8/0877032cbc1b60f45da116829931b59dbc36749578110ad5ca86e122d21e/app_lib_py-0.0.12.tar.gz
+[2024-04-07 21:29:14] WARNING root fetch - processPackages [app-lib-py]: Timeout reached during download
+[2024-04-07 21:29:14] INFO root fetch - processPackages [app-lib-py]: Downloading https://files.pythonhosted.org/packages/a2/54/469ab9dcb5d1bd588ce0a138c9931c250c051c176560115d7d2b2aa8080a/app_lib_py-0.0.8.tar.gz
+[2024-04-07 21:29:14] WARNING root fetch - processPackages [app-lib-py]: Timeout reached during download
+[2024-04-07 21:29:14] INFO root fetch - processPackages [app-lib-py]: executing diffoscope
+[2024-04-07 21:29:14] INFO root fetch - processPackages [app-lib-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/app_lib_py-0.0.12.tar.gz tmp/app_lib_py-0.0.8.tar.gz --markdown 20240407/a/app-lib-py/0.0.12-0.0.8/diff.md --exclude *.pyd
+[2024-04-07 21:29:15] INFO root fetch - processPackages [app-lib-py]: Remove: archive file [/home/abi/fetcher/tmp/app_lib_py-0.0.12.tar.gz]
+[2024-04-07 21:29:15] INFO root fetch - processPackages [app-lib-py]: Remove: archive file [/home/abi/fetcher/tmp/app_lib_py-0.0.8.tar.gz]
+[2024-04-07 21:29:15] INFO root fetch - main [MainThread]: End processing [app-lib-py]: success
+[2024-04-07 21:29:15] INFO root fetch - main [MainThread]: Store serial: [22658665]
