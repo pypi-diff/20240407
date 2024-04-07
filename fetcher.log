@@ -17181,3 +17181,27 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:50:51] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.7.tar.gz]
 [2024-04-07 19:50:51] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
 [2024-04-07 19:50:51] INFO root fetch - main [MainThread]: Store serial: [22658060]
+[2024-04-07 19:52:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658060]
+[2024-04-07 19:53:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 19:53:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gpu4pyscf-cuda11x
+[2024-04-07 19:53:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gpu4pyscf-cuda12x
+[2024-04-07 19:53:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prosperity2submit
+[2024-04-07 19:53:00] INFO root fetch - processPackages [prosperity2submit]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-04-07 19:53:00] INFO root fetch - processPackages [prosperity2submit]: Downloading https://files.pythonhosted.org/packages/15/b7/23973625f9cd4613ae788d315d255a7ff95b0033f785d4fa154ea98898e1/prosperity2submit-0.1.1.tar.gz
+[2024-04-07 19:53:00] INFO root fetch - processPackages [gpu4pyscf-cuda12x]: New version: [0.7.6] Old Version: [0.7.5]
+[2024-04-07 19:53:00] INFO root fetch - processPackages [gpu4pyscf-cuda11x]: New version: [0.7.6] Old Version: [0.7.5]
+[2024-04-07 19:53:01] WARNING root fetch - processPackages [prosperity2submit]: Timeout reached during download
+[2024-04-07 19:53:01] INFO root fetch - processPackages [gpu4pyscf-cuda12x]: Downloading https://files.pythonhosted.org/packages/67/9b/322d3f567f9f5085860095a41721e7b4cd156a0f408aa8bdca90f21c19ea/gpu4pyscf_cuda12x-0.7.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-07 19:53:01] INFO root fetch - processPackages [gpu4pyscf-cuda11x]: Downloading https://files.pythonhosted.org/packages/8b/ab/b79ee5a82eb9ebcc7a98a00c04710448764d72a5f836ae78cd8712abd1a8/gpu4pyscf_cuda11x-0.7.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-07 19:53:01] WARNING root fetch - processPackages [gpu4pyscf-cuda12x]: Skipping package: exceeds size limit 134747148>=10485760
+[2024-04-07 19:53:01] INFO root fetch - main [MainThread]: End processing [gpu4pyscf-cuda12x] error
+[2024-04-07 19:53:01] WARNING root fetch - processPackages [gpu4pyscf-cuda11x]: Skipping package: exceeds size limit 134933552>=10485760
+[2024-04-07 19:53:01] INFO root fetch - main [MainThread]: End processing [gpu4pyscf-cuda11x] error
+[2024-04-07 19:53:01] INFO root fetch - processPackages [prosperity2submit]: Downloading https://files.pythonhosted.org/packages/2f/03/88dac950868a8e8b967c96a56b3a89f6d627f806ef5397051a784d9a09be/prosperity2submit-0.2.0.tar.gz
+[2024-04-07 19:53:01] WARNING root fetch - processPackages [prosperity2submit]: Timeout reached during download
+[2024-04-07 19:53:01] INFO root fetch - processPackages [prosperity2submit]: executing diffoscope
+[2024-04-07 19:53:01] INFO root fetch - processPackages [prosperity2submit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prosperity2submit-0.1.1.tar.gz tmp/prosperity2submit-0.2.0.tar.gz --markdown 20240407/p/prosperity2submit/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2024-04-07 19:53:01] INFO root fetch - processPackages [prosperity2submit]: Remove: archive file [/home/abi/fetcher/tmp/prosperity2submit-0.1.1.tar.gz]
+[2024-04-07 19:53:01] INFO root fetch - processPackages [prosperity2submit]: Remove: archive file [/home/abi/fetcher/tmp/prosperity2submit-0.2.0.tar.gz]
+[2024-04-07 19:53:01] INFO root fetch - main [MainThread]: End processing [prosperity2submit]: success
+[2024-04-07 19:53:01] INFO root fetch - main [MainThread]: Store serial: [22658067]
