@@ -7383,3 +7383,39 @@
 [2024-04-07 09:34:39] INFO root fetch - processPackages [antchain-saas]: Remove: archive file [/home/abi/fetcher/tmp/antchain_saas-1.1.30.tar.gz]
 [2024-04-07 09:34:39] INFO root fetch - main [MainThread]: End processing [antchain-saas]: success
 [2024-04-07 09:34:39] INFO root fetch - main [MainThread]: Store serial: [22654415]
+[2024-04-07 09:36:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654415]
+[2024-04-07 09:36:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 09:36:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: japanese-address-parser-py
+[2024-04-07 09:36:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sphinxcontrib-yowasp-wavedrom
+[2024-04-07 09:36:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mdpython
+[2024-04-07 09:36:49] INFO root fetch - processPackages [mdpython]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-07 09:36:49] INFO root fetch - processPackages [japanese-address-parser-py]: New version: [0.1.0b12] Old Version: [0.1.0b11]
+[2024-04-07 09:36:49] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: New version: [1.1] Old Version: [1.0]
+[2024-04-07 09:36:49] INFO root fetch - processPackages [mdpython]: Downloading https://files.pythonhosted.org/packages/9f/4b/7434d69b0ed20016ab2ecb2f5659172cf8992d30d2c2fd5133978e5287f8/mdpython-0.0.1.tar.gz
+[2024-04-07 09:36:49] INFO root fetch - processPackages [japanese-address-parser-py]: Downloading https://files.pythonhosted.org/packages/cf/f2/ad221f8dec9f43f37703758fa73d0d146e323da522ae2da2f2ac00db0eb4/japanese_address_parser_py-0.1.0b11.tar.gz
+[2024-04-07 09:36:49] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: Downloading https://files.pythonhosted.org/packages/15/36/d7b64f7b5179e751866e804ccb05eaffd426b58aa8cdc8cf6fa84c1b59c0/sphinxcontrib_yowasp_wavedrom-1.0-py3-none-any.whl
+[2024-04-07 09:36:49] WARNING root fetch - processPackages [mdpython]: Timeout reached during download
+[2024-04-07 09:36:49] WARNING root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: Timeout reached during download
+[2024-04-07 09:36:50] INFO root fetch - processPackages [mdpython]: Downloading https://files.pythonhosted.org/packages/85/d2/2fc7a6013d10c5b8844b051c30042047873d222408344e76f2379d35212d/mdpython-0.0.2.tar.gz
+[2024-04-07 09:36:50] WARNING root fetch - processPackages [japanese-address-parser-py]: Timeout reached during download
+[2024-04-07 09:36:50] WARNING root fetch - processPackages [mdpython]: Timeout reached during download
+[2024-04-07 09:36:50] INFO root fetch - processPackages [mdpython]: executing diffoscope
+[2024-04-07 09:36:50] INFO root fetch - processPackages [mdpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdpython-0.0.1.tar.gz tmp/mdpython-0.0.2.tar.gz --markdown 20240407/m/mdpython/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-07 09:36:50] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: Downloading https://files.pythonhosted.org/packages/86/9f/0955adecac62bd3f5c5135ac2ce7ea801e379c0532533be116349b372f64/sphinxcontrib_yowasp_wavedrom-1.1-py3-none-any.whl
+[2024-04-07 09:36:50] INFO root fetch - processPackages [japanese-address-parser-py]: Downloading https://files.pythonhosted.org/packages/3d/0e/88ae3076d6b7531a215fe84122bafb41ef22792e5793d6cca0f8946e63df/japanese_address_parser_py-0.1.0b12.tar.gz
+[2024-04-07 09:36:50] WARNING root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: Timeout reached during download
+[2024-04-07 09:36:50] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: executing diffoscope
+[2024-04-07 09:36:50] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib_yowasp_wavedrom-1.0-py3-none-any.whl.zip tmp/sphinxcontrib_yowasp_wavedrom-1.1-py3-none-any.whl.zip --markdown 20240407/s/sphinxcontrib-yowasp-wavedrom/1.0-1.1/diff.md --exclude *.pyd
+[2024-04-07 09:36:50] WARNING root fetch - processPackages [japanese-address-parser-py]: Timeout reached during download
+[2024-04-07 09:36:50] INFO root fetch - processPackages [japanese-address-parser-py]: executing diffoscope
+[2024-04-07 09:36:50] INFO root fetch - processPackages [japanese-address-parser-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/japanese_address_parser_py-0.1.0b11.tar.gz tmp/japanese_address_parser_py-0.1.0b12.tar.gz --markdown 20240407/j/japanese-address-parser-py/0.1.0b11-0.1.0b12/diff.md --exclude *.pyd
+[2024-04-07 09:36:50] INFO root fetch - processPackages [mdpython]: Remove: archive file [/home/abi/fetcher/tmp/mdpython-0.0.1.tar.gz]
+[2024-04-07 09:36:50] INFO root fetch - processPackages [mdpython]: Remove: archive file [/home/abi/fetcher/tmp/mdpython-0.0.2.tar.gz]
+[2024-04-07 09:36:50] INFO root fetch - main [MainThread]: End processing [mdpython]: success
+[2024-04-07 09:36:50] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_yowasp_wavedrom-1.0-py3-none-any.whl.zip]
+[2024-04-07 09:36:50] INFO root fetch - processPackages [sphinxcontrib-yowasp-wavedrom]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_yowasp_wavedrom-1.1-py3-none-any.whl.zip]
+[2024-04-07 09:36:50] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-yowasp-wavedrom]: success
+[2024-04-07 09:36:51] INFO root fetch - processPackages [japanese-address-parser-py]: Remove: archive file [/home/abi/fetcher/tmp/japanese_address_parser_py-0.1.0b11.tar.gz]
+[2024-04-07 09:36:51] INFO root fetch - processPackages [japanese-address-parser-py]: Remove: archive file [/home/abi/fetcher/tmp/japanese_address_parser_py-0.1.0b12.tar.gz]
+[2024-04-07 09:36:51] INFO root fetch - main [MainThread]: End processing [japanese-address-parser-py]: success
+[2024-04-07 09:36:51] INFO root fetch - main [MainThread]: Store serial: [22654429]
