@@ -14150,3 +14150,86 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:57:35] INFO root fetch - processPackages [DateTimeRange]: Remove: archive file [/home/abi/fetcher/tmp/DateTimeRange-2.2.1.tar.gz]
 [2024-04-07 16:57:35] INFO root fetch - main [MainThread]: End processing [DateTimeRange]: success
 [2024-04-07 16:57:35] INFO root fetch - main [MainThread]: Store serial: [22656982]
+[2024-04-07 16:59:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656982]
+[2024-04-07 16:59:45] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-07 16:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thothglyph-doc
+[2024-04-07 16:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dcicutils
+[2024-04-07 16:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cartesify-backend
+[2024-04-07 16:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dmjone
+[2024-04-07 16:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: moyanlib
+[2024-04-07 16:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: easy-utils-dev
+[2024-04-07 16:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bttc
+[2024-04-07 16:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rhetorikos
+[2024-04-07 16:59:45] INFO root fetch - processPackages [dmjone]: New version: [0.1.8] Old Version: [0.1.6]
+[2024-04-07 16:59:45] INFO root fetch - processPackages [easy-utils-dev]: New version: [2.8.9] Old Version: [2.8.8]
+[2024-04-07 16:59:45] INFO root fetch - processPackages [bttc]: New version: [0.0.73] Old Version: [0.0.72]
+[2024-04-07 16:59:45] INFO root fetch - processPackages [dmjone]: Downloading https://files.pythonhosted.org/packages/5e/12/96378fcab657c5bb3011863de91eef8571a565c21abdad9799648c1e44b0/dmjone-0.1.6.tar.gz
+[2024-04-07 16:59:45] INFO root fetch - processPackages [thothglyph-doc]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-07 16:59:45] INFO root fetch - processPackages [cartesify-backend]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 16:59:45] WARNING root fetch - processPackages [rhetorikos]: Skipping, unable to determine old version
+[2024-04-07 16:59:45] INFO root fetch - main [MainThread]: End processing [rhetorikos] error
+[2024-04-07 16:59:45] INFO root fetch - processPackages [moyanlib]: New version: [1.5.1712501925] Old Version: [1.5.1712028240]
+[2024-04-07 16:59:45] INFO root fetch - processPackages [easy-utils-dev]: Downloading https://files.pythonhosted.org/packages/d0/93/7d3610b6f67084ad67ecbd895c5e70590d1edff9babbc72a2d7802d125ad/easy_utils_dev-2.8.8.tar.gz
+[2024-04-07 16:59:45] INFO root fetch - processPackages [dcicutils]: New version: [8.8.2.1b1] Old Version: [8.8.2]
+[2024-04-07 16:59:46] INFO root fetch - processPackages [cartesify-backend]: Downloading https://files.pythonhosted.org/packages/8d/66/8ba7d886e1f2e507b220841f3d5f9a8a14aa25b06d8aad875257555719e3/cartesify_backend-0.0.8.tar.gz
+[2024-04-07 16:59:46] WARNING root fetch - processPackages [easy-utils-dev]: Timeout reached during download
+[2024-04-07 16:59:46] WARNING root fetch - processPackages [dmjone]: Timeout reached during download
+[2024-04-07 16:59:46] INFO root fetch - processPackages [bttc]: Downloading https://files.pythonhosted.org/packages/98/67/ce9b97b9a172ec0556c4bb449617d945a202ddba76cc066e99c2336eedd6/bttc-0.0.72.tar.gz
+[2024-04-07 16:59:46] INFO root fetch - processPackages [thothglyph-doc]: Downloading https://files.pythonhosted.org/packages/9e/56/9d31482b0763f1a5c28278698468339bc7bf18aacbf3144d5851006e8cbe/thothglyph_doc-0.2.0.tar.gz
+[2024-04-07 16:59:46] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/6c/23/f06e51251bd9f180f3cdc4d09ce06cd2a20453444dd146604a259bd36541/dcicutils-8.8.2.tar.gz
+[2024-04-07 16:59:46] INFO root fetch - processPackages [easy-utils-dev]: Downloading https://files.pythonhosted.org/packages/cb/9e/733069bda720d8bb6841ec493e820c3c09b9c4914d51ce9ac1c70aa88fe9/easy_utils_dev-2.8.9.tar.gz
+[2024-04-07 16:59:46] INFO root fetch - processPackages [moyanlib]: Downloading https://files.pythonhosted.org/packages/7f/6a/2dfd38f6aed0f5c6966901be1ac6ea273a288b6149c6ffe4b11c9fdf18a9/moyanlib-1.5.1712028240.tar.gz
+[2024-04-07 16:59:46] WARNING root fetch - processPackages [bttc]: Timeout reached during download
+[2024-04-07 16:59:46] WARNING root fetch - processPackages [easy-utils-dev]: Timeout reached during download
+[2024-04-07 16:59:46] INFO root fetch - processPackages [easy-utils-dev]: executing diffoscope
+[2024-04-07 16:59:46] INFO root fetch - processPackages [easy-utils-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_utils_dev-2.8.8.tar.gz tmp/easy_utils_dev-2.8.9.tar.gz --markdown 20240407/e/easy-utils-dev/2.8.8-2.8.9/diff.md --exclude *.pyd
+[2024-04-07 16:59:46] WARNING root fetch - processPackages [dcicutils]: Timeout reached during download
+[2024-04-07 16:59:46] WARNING root fetch - processPackages [cartesify-backend]: Timeout reached during download
+[2024-04-07 16:59:46] INFO root fetch - processPackages [dmjone]: Downloading https://files.pythonhosted.org/packages/85/4e/2ce7960433ce5035c672546ae89532ef9d6d95b4f4b344cbc85d8e9634f9/dmjone-0.1.8.tar.gz
+[2024-04-07 16:59:46] WARNING root fetch - processPackages [moyanlib]: Timeout reached during download
+[2024-04-07 16:59:46] INFO root fetch - processPackages [bttc]: Downloading https://files.pythonhosted.org/packages/48/77/a9d6c8632be567aabbc178731f95ca69024d59e46a266f48bdab91c67dbd/bttc-0.0.73.tar.gz
+[2024-04-07 16:59:46] WARNING root fetch - processPackages [dmjone]: Timeout reached during download
+[2024-04-07 16:59:46] INFO root fetch - processPackages [dmjone]: executing diffoscope
+[2024-04-07 16:59:46] INFO root fetch - processPackages [dmjone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dmjone-0.1.6.tar.gz tmp/dmjone-0.1.8.tar.gz --markdown 20240407/d/dmjone/0.1.6-0.1.8/diff.md --exclude *.pyd
+[2024-04-07 16:59:46] WARNING root fetch - processPackages [thothglyph-doc]: Timeout reached during download
+[2024-04-07 16:59:46] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/81/ef/c4cdd210bac742594e8f4d0d72bb564c1cd6f70cb062c7cbd8fa365ea47d/dcicutils-8.8.2.1b1.tar.gz
+[2024-04-07 16:59:46] INFO root fetch - processPackages [cartesify-backend]: Downloading https://files.pythonhosted.org/packages/d6/92/3a1ee788fa672cfa95a4e1ec9713ec76ef023911989a189d6709beb81dde/cartesify_backend-0.0.9.tar.gz
+[2024-04-07 16:59:46] INFO root fetch - processPackages [moyanlib]: Downloading https://files.pythonhosted.org/packages/f9/ba/43d821f9b6187822f581e3798daa559e537b6c66e0f820697caacb20a5b5/moyanlib-1.5.1712501925.tar.gz
+[2024-04-07 16:59:46] WARNING root fetch - processPackages [dcicutils]: Timeout reached during download
+[2024-04-07 16:59:46] INFO root fetch - processPackages [thothglyph-doc]: Downloading https://files.pythonhosted.org/packages/d0/57/127e14a6a133e9ab09f806be2bed566b37498127d83620567cdc5bc7b023/thothglyph_doc-0.2.1.tar.gz
+[2024-04-07 16:59:46] INFO root fetch - processPackages [dcicutils]: executing diffoscope
+[2024-04-07 16:59:46] INFO root fetch - processPackages [dcicutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicutils-8.8.2.tar.gz tmp/dcicutils-8.8.2.1b1.tar.gz --markdown 20240407/d/dcicutils/8.8.2-8.8.2.1b1/diff.md --exclude *.pyd
+[2024-04-07 16:59:46] WARNING root fetch - processPackages [moyanlib]: Timeout reached during download
+[2024-04-07 16:59:46] INFO root fetch - processPackages [moyanlib]: executing diffoscope
+[2024-04-07 16:59:46] INFO root fetch - processPackages [moyanlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moyanlib-1.5.1712028240.tar.gz tmp/moyanlib-1.5.1712501925.tar.gz --markdown 20240407/m/moyanlib/1.5.1712028240-1.5.1712501925/diff.md --exclude *.pyd
+[2024-04-07 16:59:46] WARNING root fetch - processPackages [cartesify-backend]: Timeout reached during download
+[2024-04-07 16:59:46] INFO root fetch - processPackages [cartesify-backend]: executing diffoscope
+[2024-04-07 16:59:46] INFO root fetch - processPackages [cartesify-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cartesify_backend-0.0.8.tar.gz tmp/cartesify_backend-0.0.9.tar.gz --markdown 20240407/c/cartesify-backend/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 16:59:46] WARNING root fetch - processPackages [bttc]: Timeout reached during download
+[2024-04-07 16:59:46] INFO root fetch - processPackages [bttc]: executing diffoscope
+[2024-04-07 16:59:46] INFO root fetch - processPackages [bttc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bttc-0.0.72.tar.gz tmp/bttc-0.0.73.tar.gz --markdown 20240407/b/bttc/0.0.72-0.0.73/diff.md --exclude *.pyd
+[2024-04-07 16:59:46] WARNING root fetch - processPackages [thothglyph-doc]: Timeout reached during download
+[2024-04-07 16:59:46] INFO root fetch - processPackages [thothglyph-doc]: executing diffoscope
+[2024-04-07 16:59:46] INFO root fetch - processPackages [thothglyph-doc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thothglyph_doc-0.2.0.tar.gz tmp/thothglyph_doc-0.2.1.tar.gz --markdown 20240407/t/thothglyph-doc/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2024-04-07 16:59:47] INFO root fetch - processPackages [easy-utils-dev]: Remove: archive file [/home/abi/fetcher/tmp/easy_utils_dev-2.8.8.tar.gz]
+[2024-04-07 16:59:47] INFO root fetch - processPackages [easy-utils-dev]: Remove: archive file [/home/abi/fetcher/tmp/easy_utils_dev-2.8.9.tar.gz]
+[2024-04-07 16:59:47] INFO root fetch - main [MainThread]: End processing [easy-utils-dev]: success
+[2024-04-07 16:59:47] INFO root fetch - processPackages [dmjone]: Remove: archive file [/home/abi/fetcher/tmp/dmjone-0.1.6.tar.gz]
+[2024-04-07 16:59:47] INFO root fetch - processPackages [dmjone]: Remove: archive file [/home/abi/fetcher/tmp/dmjone-0.1.8.tar.gz]
+[2024-04-07 16:59:47] INFO root fetch - main [MainThread]: End processing [dmjone]: success
+[2024-04-07 16:59:47] INFO root fetch - processPackages [cartesify-backend]: Remove: archive file [/home/abi/fetcher/tmp/cartesify_backend-0.0.8.tar.gz]
+[2024-04-07 16:59:47] INFO root fetch - processPackages [cartesify-backend]: Remove: archive file [/home/abi/fetcher/tmp/cartesify_backend-0.0.9.tar.gz]
+[2024-04-07 16:59:47] INFO root fetch - main [MainThread]: End processing [cartesify-backend]: success
+[2024-04-07 16:59:47] INFO root fetch - processPackages [moyanlib]: Remove: archive file [/home/abi/fetcher/tmp/moyanlib-1.5.1712028240.tar.gz]
+[2024-04-07 16:59:47] INFO root fetch - processPackages [moyanlib]: Remove: archive file [/home/abi/fetcher/tmp/moyanlib-1.5.1712501925.tar.gz]
+[2024-04-07 16:59:47] INFO root fetch - main [MainThread]: End processing [moyanlib]: success
+[2024-04-07 16:59:47] INFO root fetch - processPackages [bttc]: Remove: archive file [/home/abi/fetcher/tmp/bttc-0.0.72.tar.gz]
+[2024-04-07 16:59:47] INFO root fetch - processPackages [bttc]: Remove: archive file [/home/abi/fetcher/tmp/bttc-0.0.73.tar.gz]
+[2024-04-07 16:59:47] INFO root fetch - main [MainThread]: End processing [bttc]: success
+[2024-04-07 16:59:47] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.2.tar.gz]
+[2024-04-07 16:59:47] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.2.1b1.tar.gz]
+[2024-04-07 16:59:47] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
+[2024-04-07 16:59:47] INFO root fetch - processPackages [thothglyph-doc]: Remove: archive file [/home/abi/fetcher/tmp/thothglyph_doc-0.2.0.tar.gz]
+[2024-04-07 16:59:47] INFO root fetch - processPackages [thothglyph-doc]: Remove: archive file [/home/abi/fetcher/tmp/thothglyph_doc-0.2.1.tar.gz]
+[2024-04-07 16:59:47] INFO root fetch - main [MainThread]: End processing [thothglyph-doc]: success
+[2024-04-07 16:59:47] INFO root fetch - main [MainThread]: Store serial: [22657007]
