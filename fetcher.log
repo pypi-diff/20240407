@@ -18555,3 +18555,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 21:16:09] INFO root fetch - processPackages [osm-rawdata]: Remove: archive file [/home/abi/fetcher/tmp/osm-rawdata-0.2.4.tar.gz]
 [2024-04-07 21:16:09] INFO root fetch - main [MainThread]: End processing [osm-rawdata]: success
 [2024-04-07 21:16:09] INFO root fetch - main [MainThread]: Store serial: [22658586]
+[2024-04-07 21:18:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658586]
+[2024-04-07 21:18:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 21:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smartboiler
+[2024-04-07 21:18:18] INFO root fetch - processPackages [smartboiler]: New version: [0.0.3.0.0.6.2] Old Version: [0.0.3.0.0.6.1]
+[2024-04-07 21:18:18] INFO root fetch - processPackages [smartboiler]: Downloading https://files.pythonhosted.org/packages/33/e1/ba783b3e9018a58a12aac6a2def1c69d0e832c472fa87a16b936e1375e0c/smartboiler-0.0.3.0.0.6.1.tar.gz
+[2024-04-07 21:18:18] WARNING root fetch - processPackages [smartboiler]: Timeout reached during download
+[2024-04-07 21:18:19] INFO root fetch - processPackages [smartboiler]: Downloading https://files.pythonhosted.org/packages/8c/10/8dd4b4f7a48ff400d6947e39a1e63fd1e909a8ab58afa5a24d52094a4778/smartboiler-0.0.3.0.0.6.2.tar.gz
+[2024-04-07 21:18:19] WARNING root fetch - processPackages [smartboiler]: Timeout reached during download
+[2024-04-07 21:18:19] INFO root fetch - processPackages [smartboiler]: executing diffoscope
+[2024-04-07 21:18:19] INFO root fetch - processPackages [smartboiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartboiler-0.0.3.0.0.6.1.tar.gz tmp/smartboiler-0.0.3.0.0.6.2.tar.gz --markdown 20240407/s/smartboiler/0.0.3.0.0.6.1-0.0.3.0.0.6.2/diff.md --exclude *.pyd
+[2024-04-07 21:18:19] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.6.1.tar.gz]
+[2024-04-07 21:18:19] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.6.2.tar.gz]
+[2024-04-07 21:18:19] INFO root fetch - main [MainThread]: End processing [smartboiler]: success
+[2024-04-07 21:18:19] INFO root fetch - main [MainThread]: Store serial: [22658589]
