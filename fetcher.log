@@ -13871,3 +13871,83 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:46:42] INFO root fetch - processPackages [smfsb]: Remove: archive file [/home/abi/fetcher/tmp/smfsb-0.1.7.tar.gz]
 [2024-04-07 16:46:42] INFO root fetch - main [MainThread]: End processing [smfsb]: success
 [2024-04-07 16:46:42] INFO root fetch - main [MainThread]: Store serial: [22656899]
+[2024-04-07 16:48:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656899]
+[2024-04-07 16:48:51] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-07 16:48:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: genflowly-lambda-utils
+[2024-04-07 16:48:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: inngest
+[2024-04-07 16:48:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: semantic-router
+[2024-04-07 16:48:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: camlab
+[2024-04-07 16:48:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: composio-core
+[2024-04-07 16:48:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Dav-vesit-codes
+[2024-04-07 16:48:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: composio-langchain
+[2024-04-07 16:48:52] INFO root fetch - processPackages [composio-langchain]: New version: [0.1.76] Old Version: [0.1.75]
+[2024-04-07 16:48:52] INFO root fetch - processPackages [composio-core]: New version: [0.1.76] Old Version: [0.1.75]
+[2024-04-07 16:48:52] INFO root fetch - processPackages [camlab]: New version: [0.0.8.1] Old Version: [0.0.8]
+[2024-04-07 16:48:52] INFO root fetch - processPackages [Dav-vesit-codes]: New version: [0.2] Old Version: [0.1]
+[2024-04-07 16:48:52] INFO root fetch - processPackages [semantic-router]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 16:48:52] INFO root fetch - processPackages [inngest]: New version: [0.3.8] Old Version: [0.3.7a0]
+[2024-04-07 16:48:52] INFO root fetch - processPackages [genflowly-lambda-utils]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-07 16:48:52] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/b5/07/011b8a665cd9707486ca625a3ce8b452e672204f509ccaa6df9d141c5605/composio_langchain-0.1.75.tar.gz
+[2024-04-07 16:48:52] INFO root fetch - processPackages [camlab]: Downloading https://files.pythonhosted.org/packages/2c/a8/40a8b65ae0c0dec6ac06aceb79bacafedd2411b7c02ed26e26db26d7991b/camlab-0.0.8.tar.gz
+[2024-04-07 16:48:52] INFO root fetch - processPackages [semantic-router]: Downloading https://files.pythonhosted.org/packages/69/f5/24f7ed2376beeca68004c749ee072334bcdbcd70becd7e5549ea5773efae/semantic_router-0.0.8.tar.gz
+[2024-04-07 16:48:52] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/1e/98/e760f4f7b7e0a2137d039c8142c86f140d5de2532986e2772ee6c93bb20f/composio_core-0.1.75.tar.gz
+[2024-04-07 16:48:52] INFO root fetch - processPackages [Dav-vesit-codes]: Downloading https://files.pythonhosted.org/packages/c7/85/83634b717091dc7fecc73edf224ef99899aead44bbca8b7e624eb2638916/Dav_vesit_codes-0.1.tar.gz
+[2024-04-07 16:48:52] WARNING root fetch - processPackages [composio-langchain]: Timeout reached during download
+[2024-04-07 16:48:52] WARNING root fetch - processPackages [semantic-router]: Timeout reached during download
+[2024-04-07 16:48:52] WARNING root fetch - processPackages [camlab]: Timeout reached during download
+[2024-04-07 16:48:52] INFO root fetch - processPackages [inngest]: Downloading https://files.pythonhosted.org/packages/c5/04/e43892c3771972b20b69cb67b2cbad13287957c3611c3970cba28734bea9/inngest-0.3.7a0.tar.gz
+[2024-04-07 16:48:52] WARNING root fetch - processPackages [composio-core]: Timeout reached during download
+[2024-04-07 16:48:52] INFO root fetch - processPackages [genflowly-lambda-utils]: Downloading https://files.pythonhosted.org/packages/84/0d/d47eedc1f513bd96447244fbd3b285f929c3172e3443cdb9706b5c1f07b5/genflowly-lambda-utils-0.0.3.tar.gz
+[2024-04-07 16:48:52] WARNING root fetch - processPackages [Dav-vesit-codes]: Timeout reached during download
+[2024-04-07 16:48:52] INFO root fetch - processPackages [semantic-router]: Downloading https://files.pythonhosted.org/packages/c6/e8/868f59ad8c7643feea9a25db402d4e84236189e1a9d89a4c840838be947f/semantic_router-0.0.9.tar.gz
+[2024-04-07 16:48:52] INFO root fetch - processPackages [Dav-vesit-codes]: Downloading https://files.pythonhosted.org/packages/93/0d/4f60e42c37d202a34a2e8a9084f536df511671fdca2e95a4f9b3c447af6d/Dav_vesit_codes-0.2.tar.gz
+[2024-04-07 16:48:52] WARNING root fetch - processPackages [genflowly-lambda-utils]: Timeout reached during download
+[2024-04-07 16:48:52] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/1a/f8/832a0b69fec797e7b2fffa67a35d8f2b2825bf78e375e77139cb8b75157e/composio_langchain-0.1.76.tar.gz
+[2024-04-07 16:48:52] INFO root fetch - processPackages [camlab]: Downloading https://files.pythonhosted.org/packages/41/4d/42f957e7d109b6f1a6649646131193c7e37f806f480d6d3961d4a6de168a/camlab-0.0.8.1.tar.gz
+[2024-04-07 16:48:52] WARNING root fetch - processPackages [semantic-router]: Timeout reached during download
+[2024-04-07 16:48:52] INFO root fetch - processPackages [semantic-router]: executing diffoscope
+[2024-04-07 16:48:52] INFO root fetch - processPackages [semantic-router]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic_router-0.0.8.tar.gz tmp/semantic_router-0.0.9.tar.gz --markdown 20240407/s/semantic-router/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 16:48:52] WARNING root fetch - processPackages [inngest]: Timeout reached during download
+[2024-04-07 16:48:52] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/07/66/6e321aa3c89dcc3e93296d6409be2a10cab95d913220bf03c55d2af6590a/composio_core-0.1.76.tar.gz
+[2024-04-07 16:48:52] WARNING root fetch - processPackages [Dav-vesit-codes]: Timeout reached during download
+[2024-04-07 16:48:52] INFO root fetch - processPackages [Dav-vesit-codes]: executing diffoscope
+[2024-04-07 16:48:52] INFO root fetch - processPackages [Dav-vesit-codes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Dav_vesit_codes-0.1.tar.gz tmp/Dav_vesit_codes-0.2.tar.gz --markdown 20240407/D/Dav-vesit-codes/0.1-0.2/diff.md --exclude *.pyd
+[2024-04-07 16:48:52] WARNING root fetch - processPackages [composio-langchain]: Timeout reached during download
+[2024-04-07 16:48:52] WARNING root fetch - processPackages [camlab]: Timeout reached during download
+[2024-04-07 16:48:52] INFO root fetch - processPackages [camlab]: executing diffoscope
+[2024-04-07 16:48:52] INFO root fetch - processPackages [camlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camlab-0.0.8.tar.gz tmp/camlab-0.0.8.1.tar.gz --markdown 20240407/c/camlab/0.0.8-0.0.8.1/diff.md --exclude *.pyd
+[2024-04-07 16:48:52] INFO root fetch - processPackages [composio-langchain]: executing diffoscope
+[2024-04-07 16:48:52] INFO root fetch - processPackages [composio-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_langchain-0.1.75.tar.gz tmp/composio_langchain-0.1.76.tar.gz --markdown 20240407/c/composio-langchain/0.1.75-0.1.76/diff.md --exclude *.pyd
+[2024-04-07 16:48:52] INFO root fetch - processPackages [genflowly-lambda-utils]: Downloading https://files.pythonhosted.org/packages/df/2f/642a6253ada6b53a9b76b5a2d763506333c4763b4b2cfeb255bfb416a718/genflowly-lambda-utils-0.0.4.tar.gz
+[2024-04-07 16:48:52] WARNING root fetch - processPackages [composio-core]: Timeout reached during download
+[2024-04-07 16:48:52] INFO root fetch - processPackages [composio-core]: executing diffoscope
+[2024-04-07 16:48:52] INFO root fetch - processPackages [composio-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_core-0.1.75.tar.gz tmp/composio_core-0.1.76.tar.gz --markdown 20240407/c/composio-core/0.1.75-0.1.76/diff.md --exclude *.pyd
+[2024-04-07 16:48:52] INFO root fetch - processPackages [inngest]: Downloading https://files.pythonhosted.org/packages/4e/be/6af3c80e98198eaf9d43381f17fb76dd8fd86e8c650e9598c2b9ed0d742c/inngest-0.3.8.tar.gz
+[2024-04-07 16:48:52] WARNING root fetch - processPackages [genflowly-lambda-utils]: Timeout reached during download
+[2024-04-07 16:48:52] INFO root fetch - processPackages [genflowly-lambda-utils]: executing diffoscope
+[2024-04-07 16:48:52] INFO root fetch - processPackages [genflowly-lambda-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genflowly-lambda-utils-0.0.3.tar.gz tmp/genflowly-lambda-utils-0.0.4.tar.gz --markdown 20240407/g/genflowly-lambda-utils/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 16:48:53] WARNING root fetch - processPackages [inngest]: Timeout reached during download
+[2024-04-07 16:48:53] INFO root fetch - processPackages [inngest]: executing diffoscope
+[2024-04-07 16:48:53] INFO root fetch - processPackages [inngest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inngest-0.3.7a0.tar.gz tmp/inngest-0.3.8.tar.gz --markdown 20240407/i/inngest/0.3.7a0-0.3.8/diff.md --exclude *.pyd
+[2024-04-07 16:48:53] INFO root fetch - processPackages [Dav-vesit-codes]: Remove: archive file [/home/abi/fetcher/tmp/Dav_vesit_codes-0.1.tar.gz]
+[2024-04-07 16:48:53] INFO root fetch - processPackages [Dav-vesit-codes]: Remove: archive file [/home/abi/fetcher/tmp/Dav_vesit_codes-0.2.tar.gz]
+[2024-04-07 16:48:53] INFO root fetch - main [MainThread]: End processing [Dav-vesit-codes]: success
+[2024-04-07 16:48:53] INFO root fetch - processPackages [semantic-router]: Remove: archive file [/home/abi/fetcher/tmp/semantic_router-0.0.8.tar.gz]
+[2024-04-07 16:48:53] INFO root fetch - processPackages [semantic-router]: Remove: archive file [/home/abi/fetcher/tmp/semantic_router-0.0.9.tar.gz]
+[2024-04-07 16:48:53] INFO root fetch - main [MainThread]: End processing [semantic-router]: success
+[2024-04-07 16:48:53] INFO root fetch - processPackages [camlab]: Remove: archive file [/home/abi/fetcher/tmp/camlab-0.0.8.tar.gz]
+[2024-04-07 16:48:53] INFO root fetch - processPackages [camlab]: Remove: archive file [/home/abi/fetcher/tmp/camlab-0.0.8.1.tar.gz]
+[2024-04-07 16:48:53] INFO root fetch - main [MainThread]: End processing [camlab]: success
+[2024-04-07 16:48:53] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.75.tar.gz]
+[2024-04-07 16:48:53] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.76.tar.gz]
+[2024-04-07 16:48:53] INFO root fetch - main [MainThread]: End processing [composio-core]: success
+[2024-04-07 16:48:53] INFO root fetch - processPackages [genflowly-lambda-utils]: Remove: archive file [/home/abi/fetcher/tmp/genflowly-lambda-utils-0.0.3.tar.gz]
+[2024-04-07 16:48:53] INFO root fetch - processPackages [genflowly-lambda-utils]: Remove: archive file [/home/abi/fetcher/tmp/genflowly-lambda-utils-0.0.4.tar.gz]
+[2024-04-07 16:48:53] INFO root fetch - main [MainThread]: End processing [genflowly-lambda-utils]: success
+[2024-04-07 16:48:53] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.1.75.tar.gz]
+[2024-04-07 16:48:53] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.1.76.tar.gz]
+[2024-04-07 16:48:53] INFO root fetch - main [MainThread]: End processing [composio-langchain]: success
+[2024-04-07 16:48:53] INFO root fetch - processPackages [inngest]: Remove: archive file [/home/abi/fetcher/tmp/inngest-0.3.7a0.tar.gz]
+[2024-04-07 16:48:53] INFO root fetch - processPackages [inngest]: Remove: archive file [/home/abi/fetcher/tmp/inngest-0.3.8.tar.gz]
+[2024-04-07 16:48:53] INFO root fetch - main [MainThread]: End processing [inngest]: success
+[2024-04-07 16:48:53] INFO root fetch - main [MainThread]: Store serial: [22656919]
