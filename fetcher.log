@@ -16911,3 +16911,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:31:05] INFO root fetch - processPackages [responses-validator]: Remove: archive file [/home/abi/fetcher/tmp/responses_validator-0.1.1-cp312-cp312-win_amd64.whl.zip]
 [2024-04-07 19:31:05] INFO root fetch - main [MainThread]: End processing [responses-validator]: success
 [2024-04-07 19:31:05] INFO root fetch - main [MainThread]: Store serial: [22657968]
+[2024-04-07 19:33:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657968]
+[2024-04-07 19:33:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 19:33:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: medimage-pkg
+[2024-04-07 19:33:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pysupuesto
+[2024-04-07 19:33:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimic-replay
+[2024-04-07 19:33:14] INFO root fetch - processPackages [medimage-pkg]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-07 19:33:14] INFO root fetch - processPackages [mimic-replay]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-04-07 19:33:14] INFO root fetch - processPackages [pysupuesto]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-07 19:33:14] INFO root fetch - processPackages [medimage-pkg]: Downloading https://files.pythonhosted.org/packages/b9/f8/25f9ea21120a725ab1cf6a7765f793e05310348c7eb378596f8ee147a4f8/medimage_pkg-0.9.0.tar.gz
+[2024-04-07 19:33:14] INFO root fetch - processPackages [pysupuesto]: Downloading https://files.pythonhosted.org/packages/28/ba/e1ab081e7cddb4c2ad0036403909577736e418e1131d69c0e64a7a9bdabc/pysupuesto-0.2.2.tar.gz
+[2024-04-07 19:33:14] INFO root fetch - processPackages [mimic-replay]: Downloading https://files.pythonhosted.org/packages/04/cd/e0e9610f60f429b44af666a649da91dc063c8950cdc0310e200b59003a5a/mimic_replay-1.1.3.tar.gz
+[2024-04-07 19:33:14] WARNING root fetch - processPackages [medimage-pkg]: Timeout reached during download
+[2024-04-07 19:33:14] WARNING root fetch - processPackages [mimic-replay]: Timeout reached during download
+[2024-04-07 19:33:14] WARNING root fetch - processPackages [pysupuesto]: Timeout reached during download
+[2024-04-07 19:33:14] INFO root fetch - processPackages [medimage-pkg]: Downloading https://files.pythonhosted.org/packages/b3/10/c06e097d21735bd47a066b9ceddfe1036c21e910f22df7604a8005dd8c2f/medimage_pkg-0.9.1.tar.gz
+[2024-04-07 19:33:14] INFO root fetch - processPackages [mimic-replay]: Downloading https://files.pythonhosted.org/packages/f3/2f/e8f776c9fc049785a386bd707b6b588d7e4b95629d99be045fbb7b45e5d9/mimic_replay-1.1.4.tar.gz
+[2024-04-07 19:33:14] INFO root fetch - processPackages [pysupuesto]: Downloading https://files.pythonhosted.org/packages/5c/8c/dc2b99a90f59c65333db165ef5d483f84ab71ccc229a1872af1ab7ec0ab3/pysupuesto-0.2.3.tar.gz
+[2024-04-07 19:33:14] WARNING root fetch - processPackages [mimic-replay]: Timeout reached during download
+[2024-04-07 19:33:14] INFO root fetch - processPackages [mimic-replay]: executing diffoscope
+[2024-04-07 19:33:14] INFO root fetch - processPackages [mimic-replay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimic_replay-1.1.3.tar.gz tmp/mimic_replay-1.1.4.tar.gz --markdown 20240407/m/mimic-replay/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2024-04-07 19:33:14] WARNING root fetch - processPackages [medimage-pkg]: Timeout reached during download
+[2024-04-07 19:33:14] INFO root fetch - processPackages [medimage-pkg]: executing diffoscope
+[2024-04-07 19:33:14] INFO root fetch - processPackages [medimage-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medimage_pkg-0.9.0.tar.gz tmp/medimage_pkg-0.9.1.tar.gz --markdown 20240407/m/medimage-pkg/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-07 19:33:14] WARNING root fetch - processPackages [pysupuesto]: Timeout reached during download
+[2024-04-07 19:33:14] INFO root fetch - processPackages [pysupuesto]: executing diffoscope
+[2024-04-07 19:33:14] INFO root fetch - processPackages [pysupuesto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysupuesto-0.2.2.tar.gz tmp/pysupuesto-0.2.3.tar.gz --markdown 20240407/p/pysupuesto/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2024-04-07 19:33:15] INFO root fetch - processPackages [mimic-replay]: Remove: archive file [/home/abi/fetcher/tmp/mimic_replay-1.1.3.tar.gz]
+[2024-04-07 19:33:15] INFO root fetch - processPackages [mimic-replay]: Remove: archive file [/home/abi/fetcher/tmp/mimic_replay-1.1.4.tar.gz]
+[2024-04-07 19:33:15] INFO root fetch - main [MainThread]: End processing [mimic-replay]: success
+[2024-04-07 19:33:15] INFO root fetch - processPackages [pysupuesto]: Remove: archive file [/home/abi/fetcher/tmp/pysupuesto-0.2.2.tar.gz]
+[2024-04-07 19:33:15] INFO root fetch - processPackages [pysupuesto]: Remove: archive file [/home/abi/fetcher/tmp/pysupuesto-0.2.3.tar.gz]
+[2024-04-07 19:33:15] INFO root fetch - main [MainThread]: End processing [pysupuesto]: success
+[2024-04-07 19:33:15] INFO root fetch - processPackages [medimage-pkg]: Remove: archive file [/home/abi/fetcher/tmp/medimage_pkg-0.9.0.tar.gz]
+[2024-04-07 19:33:15] INFO root fetch - processPackages [medimage-pkg]: Remove: archive file [/home/abi/fetcher/tmp/medimage_pkg-0.9.1.tar.gz]
+[2024-04-07 19:33:15] INFO root fetch - main [MainThread]: End processing [medimage-pkg]: success
+[2024-04-07 19:33:15] INFO root fetch - main [MainThread]: Store serial: [22657977]
