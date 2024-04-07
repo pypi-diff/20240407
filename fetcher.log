@@ -20377,3 +20377,33 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:13:58] WARNING root fetch - processPackages [dpq]: Skipping, unable to determine old version
 [2024-04-07 23:13:58] INFO root fetch - main [MainThread]: End processing [dpq] error
 [2024-04-07 23:13:58] INFO root fetch - main [MainThread]: Store serial: [22659292]
+[2024-04-07 23:16:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659292]
+[2024-04-07 23:16:07] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-07 23:18:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659292]
+[2024-04-07 23:18:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 23:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytoon
+[2024-04-07 23:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-himark
+[2024-04-07 23:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: enkanetworkv2.py
+[2024-04-07 23:18:13] WARNING root fetch - processPackages [pytest-himark]: Skipping, unable to determine old version
+[2024-04-07 23:18:13] INFO root fetch - main [MainThread]: End processing [pytest-himark] error
+[2024-04-07 23:18:13] INFO root fetch - processPackages [enkanetworkv2.py]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-04-07 23:18:13] INFO root fetch - processPackages [pytoon]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-04-07 23:18:13] INFO root fetch - processPackages [enkanetworkv2.py]: Downloading https://files.pythonhosted.org/packages/8c/af/2281cc655394872b58f54af7e8e50b0d0defbd28a8654c26e6e3b88de247/enkanetworkv2.py-2.0.1.tar.gz
+[2024-04-07 23:18:13] INFO root fetch - processPackages [pytoon]: Downloading https://files.pythonhosted.org/packages/ae/8b/15698ac71ad8e89b2db34a84ad16eeba91121a85060090be24ed2db96941/pytoon-1.4.0.tar.gz
+[2024-04-07 23:18:14] WARNING root fetch - processPackages [pytoon]: Timeout reached during download
+[2024-04-07 23:18:14] WARNING root fetch - processPackages [enkanetworkv2.py]: Timeout reached during download
+[2024-04-07 23:18:14] INFO root fetch - processPackages [enkanetworkv2.py]: Downloading https://files.pythonhosted.org/packages/54/0a/b25c1ede6c2e97db120e7f23062d29841e07f9a3e2c38cca68102dcac722/enkanetworkv2.py-2.0.2.tar.gz
+[2024-04-07 23:18:14] INFO root fetch - processPackages [pytoon]: Downloading https://files.pythonhosted.org/packages/29/28/6a2c157236f6fed1f2b386d14f1f8602bc7b0ffc46f137ac71a7caf7d839/pytoon-1.4.1.tar.gz
+[2024-04-07 23:18:14] WARNING root fetch - processPackages [enkanetworkv2.py]: Timeout reached during download
+[2024-04-07 23:18:14] INFO root fetch - processPackages [enkanetworkv2.py]: executing diffoscope
+[2024-04-07 23:18:14] INFO root fetch - processPackages [enkanetworkv2.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enkanetworkv2.py-2.0.1.tar.gz tmp/enkanetworkv2.py-2.0.2.tar.gz --markdown 20240407/e/enkanetworkv2.py/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2024-04-07 23:18:14] WARNING root fetch - processPackages [pytoon]: Timeout reached during download
+[2024-04-07 23:18:14] INFO root fetch - processPackages [pytoon]: executing diffoscope
+[2024-04-07 23:18:14] INFO root fetch - processPackages [pytoon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytoon-1.4.0.tar.gz tmp/pytoon-1.4.1.tar.gz --markdown 20240407/p/pytoon/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2024-04-07 23:18:15] INFO root fetch - processPackages [pytoon]: Remove: archive file [/home/abi/fetcher/tmp/pytoon-1.4.0.tar.gz]
+[2024-04-07 23:18:15] INFO root fetch - processPackages [pytoon]: Remove: archive file [/home/abi/fetcher/tmp/pytoon-1.4.1.tar.gz]
+[2024-04-07 23:18:15] INFO root fetch - main [MainThread]: End processing [pytoon]: success
+[2024-04-07 23:18:15] INFO root fetch - processPackages [enkanetworkv2.py]: Remove: archive file [/home/abi/fetcher/tmp/enkanetworkv2.py-2.0.1.tar.gz]
+[2024-04-07 23:18:15] INFO root fetch - processPackages [enkanetworkv2.py]: Remove: archive file [/home/abi/fetcher/tmp/enkanetworkv2.py-2.0.2.tar.gz]
+[2024-04-07 23:18:15] INFO root fetch - main [MainThread]: End processing [enkanetworkv2.py]: success
+[2024-04-07 23:18:15] INFO root fetch - main [MainThread]: Store serial: [22659303]
