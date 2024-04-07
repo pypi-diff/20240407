@@ -17033,3 +17033,20 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:37:37] INFO root fetch - processPackages [featransform]: Remove: archive file [/home/abi/fetcher/tmp/featransform-0.9.1-py3-none-any.whl.zip]
 [2024-04-07 19:37:37] INFO root fetch - main [MainThread]: End processing [featransform]: success
 [2024-04-07 19:37:37] INFO root fetch - main [MainThread]: Store serial: [22658001]
+[2024-04-07 19:39:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658001]
+[2024-04-07 19:39:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 19:39:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qiskit-zx-transpiler
+[2024-04-07 19:39:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hich-restrict
+[2024-04-07 19:39:45] INFO root fetch - processPackages [hich-restrict]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-07 19:39:45] INFO root fetch - processPackages [hich-restrict]: Downloading https://files.pythonhosted.org/packages/e6/25/0f58f6b061334c91ed4659559fd91e458ca689871fb29017dc3c5e8dab03/hich_restrict-0.1.0-py3-none-any.whl
+[2024-04-07 19:39:45] WARNING root fetch - processPackages [qiskit-zx-transpiler]: Skipping, unable to determine old version
+[2024-04-07 19:39:45] INFO root fetch - main [MainThread]: End processing [qiskit-zx-transpiler] error
+[2024-04-07 19:39:46] WARNING root fetch - processPackages [hich-restrict]: Timeout reached during download
+[2024-04-07 19:39:46] INFO root fetch - processPackages [hich-restrict]: Downloading https://files.pythonhosted.org/packages/b4/dd/bb95f6f3ab915b53e2e5acdbdf3da69e22d423ae351557915dea2c5c32c2/hich_restrict-0.1.1-py3-none-any.whl
+[2024-04-07 19:39:46] WARNING root fetch - processPackages [hich-restrict]: Timeout reached during download
+[2024-04-07 19:39:46] INFO root fetch - processPackages [hich-restrict]: executing diffoscope
+[2024-04-07 19:39:46] INFO root fetch - processPackages [hich-restrict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hich_restrict-0.1.0-py3-none-any.whl.zip tmp/hich_restrict-0.1.1-py3-none-any.whl.zip --markdown 20240407/h/hich-restrict/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 19:39:46] INFO root fetch - processPackages [hich-restrict]: Remove: archive file [/home/abi/fetcher/tmp/hich_restrict-0.1.0-py3-none-any.whl.zip]
+[2024-04-07 19:39:46] INFO root fetch - processPackages [hich-restrict]: Remove: archive file [/home/abi/fetcher/tmp/hich_restrict-0.1.1-py3-none-any.whl.zip]
+[2024-04-07 19:39:46] INFO root fetch - main [MainThread]: End processing [hich-restrict]: success
+[2024-04-07 19:39:46] INFO root fetch - main [MainThread]: Store serial: [22658008]
