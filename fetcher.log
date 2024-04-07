@@ -8251,3 +8251,34 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 10:42:03] INFO root fetch - processPackages [asaniczka]: Remove: archive file [/home/abi/fetcher/tmp/asaniczka-3.1.4.tar.gz]
 [2024-04-07 10:42:03] INFO root fetch - main [MainThread]: End processing [asaniczka]: success
 [2024-04-07 10:42:03] INFO root fetch - main [MainThread]: Store serial: [22654810]
+[2024-04-07 10:44:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654810]
+[2024-04-07 10:44:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 10:44:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alibabacloud-dfs20180620
+[2024-04-07 10:44:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alibabacloud-dfs20180620-py2
+[2024-04-07 10:44:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ait-openapi
+[2024-04-07 10:44:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: key2pane
+[2024-04-07 10:44:12] WARNING root fetch - processPackages [key2pane]: Skipping, unable to determine old version
+[2024-04-07 10:44:12] INFO root fetch - main [MainThread]: End processing [key2pane] error
+[2024-04-07 10:44:12] WARNING root fetch - processPackages [ait-openapi]: Skipping, unable to determine old version
+[2024-04-07 10:44:12] INFO root fetch - main [MainThread]: End processing [ait-openapi] error
+[2024-04-07 10:44:12] INFO root fetch - processPackages [alibabacloud-dfs20180620]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-07 10:44:12] INFO root fetch - processPackages [alibabacloud-dfs20180620-py2]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-07 10:44:12] INFO root fetch - processPackages [alibabacloud-dfs20180620-py2]: Downloading https://files.pythonhosted.org/packages/12/d3/89e0f603099c4e1922743d462ecd8e459673ceb32c80bec3171c917f156e/alibabacloud_dfs20180620_py2-1.0.1.tar.gz
+[2024-04-07 10:44:12] INFO root fetch - processPackages [alibabacloud-dfs20180620]: Downloading https://files.pythonhosted.org/packages/56/af/73abe7c0f57587417fb75373adb8059c4660de7a880e10128115e8209557/alibabacloud_dfs20180620-1.0.1.tar.gz
+[2024-04-07 10:44:12] WARNING root fetch - processPackages [alibabacloud-dfs20180620-py2]: Timeout reached during download
+[2024-04-07 10:44:13] WARNING root fetch - processPackages [alibabacloud-dfs20180620]: Timeout reached during download
+[2024-04-07 10:44:13] INFO root fetch - processPackages [alibabacloud-dfs20180620-py2]: Downloading https://files.pythonhosted.org/packages/84/5e/8ae0437bf27692e397ceee9c22d57a2963bcea5796022af88fcdff86da44/alibabacloud_dfs20180620_py2-1.0.2.tar.gz
+[2024-04-07 10:44:13] INFO root fetch - processPackages [alibabacloud-dfs20180620]: Downloading https://files.pythonhosted.org/packages/cf/7f/439836a99559cff600264f106fbff194e4bfb4b929d2bd7053c80baeec4e/alibabacloud_dfs20180620-1.0.2.tar.gz
+[2024-04-07 10:44:13] WARNING root fetch - processPackages [alibabacloud-dfs20180620-py2]: Timeout reached during download
+[2024-04-07 10:44:13] WARNING root fetch - processPackages [alibabacloud-dfs20180620]: Timeout reached during download
+[2024-04-07 10:44:13] INFO root fetch - processPackages [alibabacloud-dfs20180620-py2]: executing diffoscope
+[2024-04-07 10:44:13] INFO root fetch - processPackages [alibabacloud-dfs20180620-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_dfs20180620_py2-1.0.1.tar.gz tmp/alibabacloud_dfs20180620_py2-1.0.2.tar.gz --markdown 20240407/a/alibabacloud-dfs20180620-py2/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2024-04-07 10:44:13] INFO root fetch - processPackages [alibabacloud-dfs20180620]: executing diffoscope
+[2024-04-07 10:44:13] INFO root fetch - processPackages [alibabacloud-dfs20180620]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_dfs20180620-1.0.1.tar.gz tmp/alibabacloud_dfs20180620-1.0.2.tar.gz --markdown 20240407/a/alibabacloud-dfs20180620/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2024-04-07 10:44:13] INFO root fetch - processPackages [alibabacloud-dfs20180620]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_dfs20180620-1.0.1.tar.gz]
+[2024-04-07 10:44:13] INFO root fetch - processPackages [alibabacloud-dfs20180620]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_dfs20180620-1.0.2.tar.gz]
+[2024-04-07 10:44:13] INFO root fetch - main [MainThread]: End processing [alibabacloud-dfs20180620]: success
+[2024-04-07 10:44:13] INFO root fetch - processPackages [alibabacloud-dfs20180620-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_dfs20180620_py2-1.0.1.tar.gz]
+[2024-04-07 10:44:13] INFO root fetch - processPackages [alibabacloud-dfs20180620-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_dfs20180620_py2-1.0.2.tar.gz]
+[2024-04-07 10:44:13] INFO root fetch - main [MainThread]: End processing [alibabacloud-dfs20180620-py2]: success
+[2024-04-07 10:44:13] INFO root fetch - main [MainThread]: Store serial: [22654823]
