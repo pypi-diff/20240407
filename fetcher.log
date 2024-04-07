@@ -12168,3 +12168,61 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:06:21] INFO root fetch - processPackages [sqllineage]: Remove: archive file [/home/abi/fetcher/tmp/sqllineage-1.5.2.tar.gz]
 [2024-04-07 15:06:21] INFO root fetch - main [MainThread]: End processing [sqllineage]: success
 [2024-04-07 15:06:21] INFO root fetch - main [MainThread]: Store serial: [22656344]
+[2024-04-07 15:08:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656344]
+[2024-04-07 15:08:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 15:08:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hiddifypanel
+[2024-04-07 15:08:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opteryx
+[2024-04-07 15:08:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tb1-parser
+[2024-04-07 15:08:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: profiling-decorator
+[2024-04-07 15:08:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: smaht-submitr
+[2024-04-07 15:08:30] INFO root fetch - processPackages [tb1-parser]: New version: [0.7] Old Version: [0.6]
+[2024-04-07 15:08:30] INFO root fetch - processPackages [profiling-decorator]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-07 15:08:30] INFO root fetch - processPackages [smaht-submitr]: New version: [0.7.0.1b98] Old Version: [0.7.0.1b96]
+[2024-04-07 15:08:30] INFO root fetch - processPackages [hiddifypanel]: New version: [8.8.99] Old Version: [8.8.97]
+[2024-04-07 15:08:30] INFO root fetch - processPackages [profiling-decorator]: Downloading https://files.pythonhosted.org/packages/b6/50/f733c94845392f0c3646451218187080f32fd4181e66dfc5ab5a271a736a/profiling_decorator-0.0.1.tar.gz
+[2024-04-07 15:08:30] INFO root fetch - processPackages [opteryx]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-07 15:08:30] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/3b/4c/15ca81d9764c196bd632b929c178a21ce2569604e1b7958aaf21f3591f24/hiddifypanel-8.8.97.tar.gz
+[2024-04-07 15:08:30] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/f8/8a/e6c80dab6edf988af330133213ce7181270ecb7d2c58a89353a4285f79d3/smaht_submitr-0.7.0.1b96.tar.gz
+[2024-04-07 15:08:31] INFO root fetch - processPackages [tb1-parser]: Downloading https://files.pythonhosted.org/packages/8e/33/27645bd0b921973a331915fb975ddccb097818cf698b2187caf37626f5b5/tb1_parser-0.6.tar.gz
+[2024-04-07 15:08:31] WARNING root fetch - processPackages [profiling-decorator]: Timeout reached during download
+[2024-04-07 15:08:31] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 15:08:31] WARNING root fetch - processPackages [tb1-parser]: Timeout reached during download
+[2024-04-07 15:08:31] INFO root fetch - processPackages [profiling-decorator]: Downloading https://files.pythonhosted.org/packages/fa/9e/9a4443de96c05ae2d16f89466d063515d9a7861ea272641a6eb28787e0a8/profiling_decorator-0.0.2.tar.gz
+[2024-04-07 15:08:31] INFO root fetch - processPackages [opteryx]: Downloading https://files.pythonhosted.org/packages/5e/91/765e2a472f1ca3feaa2526a4bbec45d770e3d67f120965da4092459d8d99/opteryx-0.9.2.tar.gz
+[2024-04-07 15:08:31] WARNING root fetch - processPackages [profiling-decorator]: Timeout reached during download
+[2024-04-07 15:08:31] INFO root fetch - processPackages [profiling-decorator]: executing diffoscope
+[2024-04-07 15:08:31] INFO root fetch - processPackages [profiling-decorator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profiling_decorator-0.0.1.tar.gz tmp/profiling_decorator-0.0.2.tar.gz --markdown 20240407/p/profiling-decorator/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-07 15:08:31] INFO root fetch - processPackages [tb1-parser]: Downloading https://files.pythonhosted.org/packages/64/b0/2baa935c4dbd4709a170c5f293fb7c7561765b7e421b3dc32e9a8a56a68f/tb1_parser-0.7.tar.gz
+[2024-04-07 15:08:31] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/ea/07/44339a1a64e1888ff6de28462b4194037b88d9c54fcbe768091325a4d1ff/smaht_submitr-0.7.0.1b98.tar.gz
+[2024-04-07 15:08:31] WARNING root fetch - processPackages [tb1-parser]: Timeout reached during download
+[2024-04-07 15:08:31] INFO root fetch - processPackages [tb1-parser]: executing diffoscope
+[2024-04-07 15:08:31] INFO root fetch - processPackages [tb1-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb1_parser-0.6.tar.gz tmp/tb1_parser-0.7.tar.gz --markdown 20240407/t/tb1-parser/0.6-0.7/diff.md --exclude *.pyd
+[2024-04-07 15:08:31] WARNING root fetch - processPackages [opteryx]: Timeout reached during download
+[2024-04-07 15:08:31] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 15:08:31] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-07 15:08:31] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.7.0.1b96.tar.gz tmp/smaht_submitr-0.7.0.1b98.tar.gz --markdown 20240407/s/smaht-submitr/0.7.0.1b96-0.7.0.1b98/diff.md --exclude *.pyd
+[2024-04-07 15:08:31] INFO root fetch - processPackages [opteryx]: Downloading https://files.pythonhosted.org/packages/64/71/44793ad728906cb5f308a98ffac1dea36c22000fac4080dd51bc5c9a0ef4/opteryx-0.9.3.tar.gz
+[2024-04-07 15:08:31] INFO root fetch - processPackages [profiling-decorator]: Remove: archive file [/home/abi/fetcher/tmp/profiling_decorator-0.0.1.tar.gz]
+[2024-04-07 15:08:31] INFO root fetch - processPackages [profiling-decorator]: Remove: archive file [/home/abi/fetcher/tmp/profiling_decorator-0.0.2.tar.gz]
+[2024-04-07 15:08:31] INFO root fetch - main [MainThread]: End processing [profiling-decorator]: success
+[2024-04-07 15:08:32] INFO root fetch - processPackages [tb1-parser]: Remove: archive file [/home/abi/fetcher/tmp/tb1_parser-0.6.tar.gz]
+[2024-04-07 15:08:32] INFO root fetch - processPackages [tb1-parser]: Remove: archive file [/home/abi/fetcher/tmp/tb1_parser-0.7.tar.gz]
+[2024-04-07 15:08:32] INFO root fetch - main [MainThread]: End processing [tb1-parser]: success
+[2024-04-07 15:08:32] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b96.tar.gz]
+[2024-04-07 15:08:32] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b98.tar.gz]
+[2024-04-07 15:08:32] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-07 15:08:32] WARNING root fetch - processPackages [opteryx]: Timeout reached during download
+[2024-04-07 15:08:32] INFO root fetch - processPackages [opteryx]: executing diffoscope
+[2024-04-07 15:08:32] INFO root fetch - processPackages [opteryx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opteryx-0.9.2.tar.gz tmp/opteryx-0.9.3.tar.gz --markdown 20240407/o/opteryx/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2024-04-07 15:08:33] WARNING root fetch - processPackages [hiddifypanel]: Timeout reached during download
+[2024-04-07 15:08:33] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/ef/74/ab9bc5ebe1c31d96fcff0642f25280d3eebba3d867bbf874c9e8c9fe2a23/hiddifypanel-8.8.99.tar.gz
+[2024-04-07 15:08:33] INFO root fetch - processPackages [opteryx]: Remove: archive file [/home/abi/fetcher/tmp/opteryx-0.9.2.tar.gz]
+[2024-04-07 15:08:33] INFO root fetch - processPackages [opteryx]: Remove: archive file [/home/abi/fetcher/tmp/opteryx-0.9.3.tar.gz]
+[2024-04-07 15:08:33] INFO root fetch - main [MainThread]: End processing [opteryx]: success
+[2024-04-07 15:08:33] WARNING root fetch - processPackages [hiddifypanel]: Timeout reached during download
+[2024-04-07 15:08:33] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2024-04-07 15:08:33] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-8.8.97.tar.gz tmp/hiddifypanel-8.8.99.tar.gz --markdown 20240407/h/hiddifypanel/8.8.97-8.8.99/diff.md --exclude *.pyd
+[2024-04-07 15:08:37] INFO root fetch - processPackages [hiddifypanel]: Remove: archive file [/home/abi/fetcher/tmp/hiddifypanel-8.8.97.tar.gz]
+[2024-04-07 15:08:37] INFO root fetch - processPackages [hiddifypanel]: Remove: archive file [/home/abi/fetcher/tmp/hiddifypanel-8.8.99.tar.gz]
+[2024-04-07 15:08:37] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2024-04-07 15:08:37] INFO root fetch - main [MainThread]: Store serial: [22656369]
