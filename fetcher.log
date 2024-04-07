@@ -16864,3 +16864,25 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:26:44] INFO root fetch - processPackages [inmanta-module-podman]: Remove: archive file [/home/abi/fetcher/tmp/inmanta_module_podman-0.3.0-py3-none-any.whl.zip]
 [2024-04-07 19:26:44] INFO root fetch - main [MainThread]: End processing [inmanta-module-podman]: success
 [2024-04-07 19:26:44] INFO root fetch - main [MainThread]: Store serial: [22657932]
+[2024-04-07 19:28:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657932]
+[2024-04-07 19:28:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 19:28:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: savant-rs
+[2024-04-07 19:28:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jupyter-repl-msgbridge
+[2024-04-07 19:28:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dcm-classifier
+[2024-04-07 19:28:53] WARNING root fetch - processPackages [jupyter-repl-msgbridge]: Skipping, unable to determine old version
+[2024-04-07 19:28:53] INFO root fetch - main [MainThread]: End processing [jupyter-repl-msgbridge] error
+[2024-04-07 19:28:53] INFO root fetch - processPackages [savant-rs]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-07 19:28:53] INFO root fetch - processPackages [dcm-classifier]: New version: [0.7.0rc6] Old Version: [0.7.0rc5]
+[2024-04-07 19:28:53] INFO root fetch - processPackages [savant-rs]: Downloading https://files.pythonhosted.org/packages/27/7d/692e2bab3a8d72896f5e9f191b48afa977af60164afe8bc141e4dc44d403/savant_rs-0.2.9-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-07 19:28:53] WARNING root fetch - processPackages [savant-rs]: Skipping package: exceeds size limit 13159013>=10485760
+[2024-04-07 19:28:53] INFO root fetch - main [MainThread]: End processing [savant-rs] error
+[2024-04-07 19:28:53] INFO root fetch - processPackages [dcm-classifier]: Downloading https://files.pythonhosted.org/packages/a4/d7/cec040f7632bd8823add67c26735565dd4443301bcc7fc86deccea5f1f68/dcm_classifier-0.7.0rc5.tar.gz
+[2024-04-07 19:28:53] WARNING root fetch - processPackages [dcm-classifier]: Timeout reached during download
+[2024-04-07 19:28:54] INFO root fetch - processPackages [dcm-classifier]: Downloading https://files.pythonhosted.org/packages/56/fe/194a520f68a64263619637cb2a6574b6ffc853df007ebb891b50a5a752ab/dcm_classifier-0.7.0rc6.tar.gz
+[2024-04-07 19:28:54] WARNING root fetch - processPackages [dcm-classifier]: Timeout reached during download
+[2024-04-07 19:28:54] INFO root fetch - processPackages [dcm-classifier]: executing diffoscope
+[2024-04-07 19:28:54] INFO root fetch - processPackages [dcm-classifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcm_classifier-0.7.0rc5.tar.gz tmp/dcm_classifier-0.7.0rc6.tar.gz --markdown 20240407/d/dcm-classifier/0.7.0rc5-0.7.0rc6/diff.md --exclude *.pyd
+[2024-04-07 19:28:55] INFO root fetch - processPackages [dcm-classifier]: Remove: archive file [/home/abi/fetcher/tmp/dcm_classifier-0.7.0rc5.tar.gz]
+[2024-04-07 19:28:55] INFO root fetch - processPackages [dcm-classifier]: Remove: archive file [/home/abi/fetcher/tmp/dcm_classifier-0.7.0rc6.tar.gz]
+[2024-04-07 19:28:55] INFO root fetch - main [MainThread]: End processing [dcm-classifier]: success
+[2024-04-07 19:28:55] INFO root fetch - main [MainThread]: Store serial: [22657956]
