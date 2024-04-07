@@ -4849,3 +4849,17 @@
 [2024-04-07 06:50:29] INFO root fetch - processPackages [mavsdk]: Remove: archive file [/home/abi/fetcher/tmp/mavsdk-2.3.0-py3-none-win_amd64.whl.zip]
 [2024-04-07 06:50:29] INFO root fetch - main [MainThread]: End processing [mavsdk]: success
 [2024-04-07 06:50:29] INFO root fetch - main [MainThread]: Store serial: [22653510]
+[2024-04-07 06:52:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653510]
+[2024-04-07 06:52:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 06:52:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytector
+[2024-04-07 06:52:38] INFO root fetch - processPackages [pytector]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-04-07 06:52:38] INFO root fetch - processPackages [pytector]: Downloading https://files.pythonhosted.org/packages/dd/23/16cdd49862d51c5e0391602868dcfd0fabdd13e4d2f40a7b678754fc7d08/pytector-0.0.7.tar.gz
+[2024-04-07 06:52:38] WARNING root fetch - processPackages [pytector]: Timeout reached during download
+[2024-04-07 06:52:38] INFO root fetch - processPackages [pytector]: Downloading https://files.pythonhosted.org/packages/36/f2/0b0f18480b177d5a72fd637f48b445a3b53bde2bf823485367b0522e8002/pytector-0.0.9.tar.gz
+[2024-04-07 06:52:38] WARNING root fetch - processPackages [pytector]: Timeout reached during download
+[2024-04-07 06:52:38] INFO root fetch - processPackages [pytector]: executing diffoscope
+[2024-04-07 06:52:38] INFO root fetch - processPackages [pytector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytector-0.0.7.tar.gz tmp/pytector-0.0.9.tar.gz --markdown 20240407/p/pytector/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 06:52:39] INFO root fetch - processPackages [pytector]: Remove: archive file [/home/abi/fetcher/tmp/pytector-0.0.7.tar.gz]
+[2024-04-07 06:52:39] INFO root fetch - processPackages [pytector]: Remove: archive file [/home/abi/fetcher/tmp/pytector-0.0.9.tar.gz]
+[2024-04-07 06:52:39] INFO root fetch - main [MainThread]: End processing [pytector]: success
+[2024-04-07 06:52:39] INFO root fetch - main [MainThread]: Store serial: [22653515]
