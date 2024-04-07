@@ -15462,3 +15462,56 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 18:07:44] WARNING root fetch - processPackages [tempyenv]: Skipping, unable to determine old version
 [2024-04-07 18:07:44] INFO root fetch - main [MainThread]: End processing [tempyenv] error
 [2024-04-07 18:07:44] INFO root fetch - main [MainThread]: Store serial: [22657446]
+[2024-04-07 18:09:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657446]
+[2024-04-07 18:09:53] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 18:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oru2xds
+[2024-04-07 18:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chaturbate-poller
+[2024-04-07 18:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: meter-digits-recognizer
+[2024-04-07 18:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: evcc
+[2024-04-07 18:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: DocumentAI-std
+[2024-04-07 18:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: edastatmil-milser
+[2024-04-07 18:09:54] INFO root fetch - processPackages [oru2xds]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-07 18:09:54] WARNING root fetch - processPackages [edastatmil-milser]: Skipping, unable to determine old version
+[2024-04-07 18:09:54] INFO root fetch - main [MainThread]: End processing [edastatmil-milser] error
+[2024-04-07 18:09:54] INFO root fetch - processPackages [DocumentAI-std]: New version: [0.2.0.dev1] Old Version: [0.2.0.dev0]
+[2024-04-07 18:09:54] WARNING root fetch - processPackages [evcc]: Skipping, unable to determine old version
+[2024-04-07 18:09:54] INFO root fetch - processPackages [meter-digits-recognizer]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-07 18:09:54] INFO root fetch - main [MainThread]: End processing [evcc] error
+[2024-04-07 18:09:54] INFO root fetch - processPackages [chaturbate-poller]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-07 18:09:54] INFO root fetch - processPackages [oru2xds]: Downloading https://files.pythonhosted.org/packages/30/84/c1d703dc028c105d23e8bd6025d8a21bea79336316fed5e772284e51fac8/oru2xds-2.0.8.tar.gz
+[2024-04-07 18:09:54] WARNING root fetch - processPackages [oru2xds]: Timeout reached during download
+[2024-04-07 18:09:54] INFO root fetch - processPackages [meter-digits-recognizer]: Downloading https://files.pythonhosted.org/packages/b1/c1/b567b4007cbb8b03d7f52b861cca16c2d475fad5be3e607ef38ee2c24e07/meter-digits-recognizer-0.2.0.tar.gz
+[2024-04-07 18:09:54] INFO root fetch - processPackages [chaturbate-poller]: Downloading https://files.pythonhosted.org/packages/f2/bb/d8cac44684624f4f3cbd013ac724e73225fc25f4495632a638bfc66de55e/chaturbate_poller-0.2.0.tar.gz
+[2024-04-07 18:09:54] INFO root fetch - processPackages [oru2xds]: Downloading https://files.pythonhosted.org/packages/2b/b6/fd060e2ee4a6f2bd68e4d1be3622482196f992387c487cf50fe6d3315563/oru2xds-2.0.9.tar.gz
+[2024-04-07 18:09:54] WARNING root fetch - processPackages [chaturbate-poller]: Timeout reached during download
+[2024-04-07 18:09:54] WARNING root fetch - processPackages [oru2xds]: Timeout reached during download
+[2024-04-07 18:09:54] INFO root fetch - processPackages [oru2xds]: executing diffoscope
+[2024-04-07 18:09:54] INFO root fetch - processPackages [oru2xds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oru2xds-2.0.8.tar.gz tmp/oru2xds-2.0.9.tar.gz --markdown 20240407/o/oru2xds/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2024-04-07 18:09:54] INFO root fetch - processPackages [DocumentAI-std]: Downloading https://files.pythonhosted.org/packages/a8/6f/291769ed6a16ffac2cb4514e0fafb75af3ecf69b5db20f63a67903d1f9e2/DocumentAI_std-0.2.0.dev0.tar.gz
+[2024-04-07 18:09:54] WARNING root fetch - processPackages [DocumentAI-std]: Timeout reached during download
+[2024-04-07 18:09:54] INFO root fetch - processPackages [chaturbate-poller]: Downloading https://files.pythonhosted.org/packages/3b/8d/5336c2a6f9e18062694a0e8e0427c23cf8f08456dd63c920b935feb8cf9c/chaturbate_poller-0.3.0.tar.gz
+[2024-04-07 18:09:54] WARNING root fetch - processPackages [chaturbate-poller]: Timeout reached during download
+[2024-04-07 18:09:54] INFO root fetch - processPackages [chaturbate-poller]: executing diffoscope
+[2024-04-07 18:09:54] INFO root fetch - processPackages [chaturbate-poller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chaturbate_poller-0.2.0.tar.gz tmp/chaturbate_poller-0.3.0.tar.gz --markdown 20240407/c/chaturbate-poller/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2024-04-07 18:09:54] INFO root fetch - processPackages [DocumentAI-std]: Downloading https://files.pythonhosted.org/packages/5a/90/6eba0db41e0756083e34ed36a0e021fe858697f899ea78559fe63eaa55f4/DocumentAI_std-0.2.0.dev1.tar.gz
+[2024-04-07 18:09:54] WARNING root fetch - processPackages [meter-digits-recognizer]: Timeout reached during download
+[2024-04-07 18:09:55] WARNING root fetch - processPackages [DocumentAI-std]: Timeout reached during download
+[2024-04-07 18:09:55] INFO root fetch - processPackages [DocumentAI-std]: executing diffoscope
+[2024-04-07 18:09:55] INFO root fetch - processPackages [DocumentAI-std]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DocumentAI_std-0.2.0.dev0.tar.gz tmp/DocumentAI_std-0.2.0.dev1.tar.gz --markdown 20240407/D/DocumentAI-std/0.2.0.dev0-0.2.0.dev1/diff.md --exclude *.pyd
+[2024-04-07 18:09:55] INFO root fetch - processPackages [meter-digits-recognizer]: Downloading https://files.pythonhosted.org/packages/c2/76/6af611b8baa3717891d3313bc5162cccea51a399657cb4c9ec40903dcc58/meter-digits-recognizer-0.2.1.tar.gz
+[2024-04-07 18:09:55] INFO root fetch - processPackages [oru2xds]: Remove: archive file [/home/abi/fetcher/tmp/oru2xds-2.0.8.tar.gz]
+[2024-04-07 18:09:55] INFO root fetch - processPackages [oru2xds]: Remove: archive file [/home/abi/fetcher/tmp/oru2xds-2.0.9.tar.gz]
+[2024-04-07 18:09:55] INFO root fetch - main [MainThread]: End processing [oru2xds]: success
+[2024-04-07 18:09:55] INFO root fetch - processPackages [chaturbate-poller]: Remove: archive file [/home/abi/fetcher/tmp/chaturbate_poller-0.2.0.tar.gz]
+[2024-04-07 18:09:55] INFO root fetch - processPackages [chaturbate-poller]: Remove: archive file [/home/abi/fetcher/tmp/chaturbate_poller-0.3.0.tar.gz]
+[2024-04-07 18:09:55] INFO root fetch - main [MainThread]: End processing [chaturbate-poller]: success
+[2024-04-07 18:09:55] WARNING root fetch - processPackages [meter-digits-recognizer]: Timeout reached during download
+[2024-04-07 18:09:55] INFO root fetch - processPackages [meter-digits-recognizer]: executing diffoscope
+[2024-04-07 18:09:55] INFO root fetch - processPackages [meter-digits-recognizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meter-digits-recognizer-0.2.0.tar.gz tmp/meter-digits-recognizer-0.2.1.tar.gz --markdown 20240407/m/meter-digits-recognizer/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2024-04-07 18:09:55] INFO root fetch - processPackages [DocumentAI-std]: Remove: archive file [/home/abi/fetcher/tmp/DocumentAI_std-0.2.0.dev0.tar.gz]
+[2024-04-07 18:09:55] INFO root fetch - processPackages [DocumentAI-std]: Remove: archive file [/home/abi/fetcher/tmp/DocumentAI_std-0.2.0.dev1.tar.gz]
+[2024-04-07 18:09:55] INFO root fetch - main [MainThread]: End processing [DocumentAI-std]: success
+[2024-04-07 18:09:56] INFO root fetch - processPackages [meter-digits-recognizer]: Remove: archive file [/home/abi/fetcher/tmp/meter-digits-recognizer-0.2.0.tar.gz]
+[2024-04-07 18:09:56] INFO root fetch - processPackages [meter-digits-recognizer]: Remove: archive file [/home/abi/fetcher/tmp/meter-digits-recognizer-0.2.1.tar.gz]
+[2024-04-07 18:09:56] INFO root fetch - main [MainThread]: End processing [meter-digits-recognizer]: success
+[2024-04-07 18:09:56] INFO root fetch - main [MainThread]: Store serial: [22657468]
