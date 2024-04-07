@@ -8384,3 +8384,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 10:52:53] INFO root fetch - processPackages [deepeval]: Remove: archive file [/home/abi/fetcher/tmp/deepeval-0.9.9.tar.gz]
 [2024-04-07 10:52:53] INFO root fetch - main [MainThread]: End processing [deepeval]: success
 [2024-04-07 10:52:53] INFO root fetch - main [MainThread]: Store serial: [22654851]
+[2024-04-07 10:54:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654851]
+[2024-04-07 10:55:01] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 10:55:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dmjone
+[2024-04-07 10:55:01] INFO root fetch - processPackages [dmjone]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-07 10:55:01] INFO root fetch - processPackages [dmjone]: Downloading https://files.pythonhosted.org/packages/7e/4a/e24753b3bfac02356560a884f48291b50d47224cbbd0bd64ee224edd2902/dmjone-0.1.5.tar.gz
+[2024-04-07 10:55:02] WARNING root fetch - processPackages [dmjone]: Timeout reached during download
+[2024-04-07 10:55:02] INFO root fetch - processPackages [dmjone]: Downloading https://files.pythonhosted.org/packages/5e/12/96378fcab657c5bb3011863de91eef8571a565c21abdad9799648c1e44b0/dmjone-0.1.6.tar.gz
+[2024-04-07 10:55:02] WARNING root fetch - processPackages [dmjone]: Timeout reached during download
+[2024-04-07 10:55:02] INFO root fetch - processPackages [dmjone]: executing diffoscope
+[2024-04-07 10:55:02] INFO root fetch - processPackages [dmjone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dmjone-0.1.5.tar.gz tmp/dmjone-0.1.6.tar.gz --markdown 20240407/d/dmjone/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2024-04-07 10:55:02] INFO root fetch - processPackages [dmjone]: Remove: archive file [/home/abi/fetcher/tmp/dmjone-0.1.5.tar.gz]
+[2024-04-07 10:55:02] INFO root fetch - processPackages [dmjone]: Remove: archive file [/home/abi/fetcher/tmp/dmjone-0.1.6.tar.gz]
+[2024-04-07 10:55:02] INFO root fetch - main [MainThread]: End processing [dmjone]: success
+[2024-04-07 10:55:02] INFO root fetch - main [MainThread]: Store serial: [22654854]
