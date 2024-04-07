@@ -4918,3 +4918,17 @@
 [2024-04-07 07:01:16] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.1.tar.gz]
 [2024-04-07 07:01:16] INFO root fetch - main [MainThread]: End processing [stigg-api-client-v2]: success
 [2024-04-07 07:01:16] INFO root fetch - main [MainThread]: Store serial: [22653527]
+[2024-04-07 07:03:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653527]
+[2024-04-07 07:03:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 07:03:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dialog-workflow-local
+[2024-04-07 07:03:25] INFO root fetch - processPackages [dialog-workflow-local]: New version: [0.0.91] Old Version: [0.0.90]
+[2024-04-07 07:03:25] INFO root fetch - processPackages [dialog-workflow-local]: Downloading https://files.pythonhosted.org/packages/6b/b2/1d6ba2c92020fb8bb7848e2eea5840eec2294698b97c2da8c696a1754427/dialog-workflow-local-0.0.90.tar.gz
+[2024-04-07 07:03:25] WARNING root fetch - processPackages [dialog-workflow-local]: Timeout reached during download
+[2024-04-07 07:03:25] INFO root fetch - processPackages [dialog-workflow-local]: Downloading https://files.pythonhosted.org/packages/f3/a7/2306e7d686c2db47ae12c80d195d124d529e0037b02cd3267786bc9959f5/dialog-workflow-local-0.0.91.tar.gz
+[2024-04-07 07:03:25] WARNING root fetch - processPackages [dialog-workflow-local]: Timeout reached during download
+[2024-04-07 07:03:25] INFO root fetch - processPackages [dialog-workflow-local]: executing diffoscope
+[2024-04-07 07:03:25] INFO root fetch - processPackages [dialog-workflow-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dialog-workflow-local-0.0.90.tar.gz tmp/dialog-workflow-local-0.0.91.tar.gz --markdown 20240407/d/dialog-workflow-local/0.0.90-0.0.91/diff.md --exclude *.pyd
+[2024-04-07 07:03:26] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog-workflow-local-0.0.90.tar.gz]
+[2024-04-07 07:03:26] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog-workflow-local-0.0.91.tar.gz]
+[2024-04-07 07:03:26] INFO root fetch - main [MainThread]: End processing [dialog-workflow-local]: success
+[2024-04-07 07:03:26] INFO root fetch - main [MainThread]: Store serial: [22653530]
