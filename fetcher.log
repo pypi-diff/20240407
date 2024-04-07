@@ -9113,3 +9113,50 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 11:32:14] INFO root fetch - processPackages [cdk8s-plus-27]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-plus-27-2.7.9.tar.gz]
 [2024-04-07 11:32:14] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-27]: success
 [2024-04-07 11:32:14] INFO root fetch - main [MainThread]: Store serial: [22655078]
+[2024-04-07 11:34:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655078]
+[2024-04-07 11:34:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 11:34:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-ghtiles
+[2024-04-07 11:34:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fhempy
+[2024-04-07 11:34:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cleanpy
+[2024-04-07 11:34:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pelican-markdown-include
+[2024-04-07 11:34:23] INFO root fetch - processPackages [fhempy]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-07 11:34:23] INFO root fetch - processPackages [nonebot-plugin-ghtiles]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-07 11:34:23] INFO root fetch - processPackages [pelican-markdown-include]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-07 11:34:23] INFO root fetch - processPackages [cleanpy]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-07 11:34:23] INFO root fetch - processPackages [fhempy]: Downloading https://files.pythonhosted.org/packages/d2/9f/6c8a1b574ab9ebcb16717b47728d87e796444aafde42304c0ca6f1aa435c/fhempy-0.1.98.tar.gz
+[2024-04-07 11:34:23] INFO root fetch - processPackages [nonebot-plugin-ghtiles]: Downloading https://files.pythonhosted.org/packages/48/4e/32afeee55b55f34970ce5bc7d4f7f306c64527c0ba26afcb47ee4079694b/nonebot_plugin_ghtiles-0.1.2.tar.gz
+[2024-04-07 11:34:23] INFO root fetch - processPackages [cleanpy]: Downloading https://files.pythonhosted.org/packages/6e/63/7da258df71f6d35bffa0f449158951888ba2a5e105cb421b777382ad864f/cleanpy-0.4.0.tar.gz
+[2024-04-07 11:34:23] INFO root fetch - processPackages [pelican-markdown-include]: Downloading https://files.pythonhosted.org/packages/ed/0c/de8d110a8c4a551778dcf3e38760fb5f4069924828ddc442315501c1889c/pelican_markdown_include-1.0.2.tar.gz
+[2024-04-07 11:34:23] WARNING root fetch - processPackages [nonebot-plugin-ghtiles]: Timeout reached during download
+[2024-04-07 11:34:23] WARNING root fetch - processPackages [pelican-markdown-include]: Timeout reached during download
+[2024-04-07 11:34:23] WARNING root fetch - processPackages [cleanpy]: Timeout reached during download
+[2024-04-07 11:34:23] INFO root fetch - processPackages [nonebot-plugin-ghtiles]: Downloading https://files.pythonhosted.org/packages/73/83/65a6a27f9ffb94245e6d046b1118d0260b60afd2aeb44235591f1612fd49/nonebot_plugin_ghtiles-0.1.3.tar.gz
+[2024-04-07 11:34:23] INFO root fetch - processPackages [cleanpy]: Downloading https://files.pythonhosted.org/packages/43/77/da13eece913a0d728bc6736884e00365263e4538327a4cfa2be51b708a7d/cleanpy-0.5.0.tar.gz
+[2024-04-07 11:34:23] INFO root fetch - processPackages [pelican-markdown-include]: Downloading https://files.pythonhosted.org/packages/cb/be/392ef8333eadebe5e0b7264a4ce0bb8ac7a88a9e6ed8d83dac8eb8a3a307/pelican_markdown_include-1.0.3.tar.gz
+[2024-04-07 11:34:24] WARNING root fetch - processPackages [fhempy]: Timeout reached during download
+[2024-04-07 11:34:24] WARNING root fetch - processPackages [nonebot-plugin-ghtiles]: Timeout reached during download
+[2024-04-07 11:34:24] INFO root fetch - processPackages [nonebot-plugin-ghtiles]: executing diffoscope
+[2024-04-07 11:34:24] INFO root fetch - processPackages [nonebot-plugin-ghtiles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_ghtiles-0.1.2.tar.gz tmp/nonebot_plugin_ghtiles-0.1.3.tar.gz --markdown 20240407/n/nonebot-plugin-ghtiles/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2024-04-07 11:34:24] WARNING root fetch - processPackages [cleanpy]: Timeout reached during download
+[2024-04-07 11:34:24] INFO root fetch - processPackages [cleanpy]: executing diffoscope
+[2024-04-07 11:34:24] INFO root fetch - processPackages [cleanpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cleanpy-0.4.0.tar.gz tmp/cleanpy-0.5.0.tar.gz --markdown 20240407/c/cleanpy/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2024-04-07 11:34:24] WARNING root fetch - processPackages [pelican-markdown-include]: Timeout reached during download
+[2024-04-07 11:34:24] INFO root fetch - processPackages [pelican-markdown-include]: executing diffoscope
+[2024-04-07 11:34:24] INFO root fetch - processPackages [pelican-markdown-include]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pelican_markdown_include-1.0.2.tar.gz tmp/pelican_markdown_include-1.0.3.tar.gz --markdown 20240407/p/pelican-markdown-include/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2024-04-07 11:34:24] INFO root fetch - processPackages [fhempy]: Downloading https://files.pythonhosted.org/packages/10/f0/a98a9f9c84c66f700cf969aeda5c6d9fa1047cde3a99fc922c76be9e951e/fhempy-0.1.99.tar.gz
+[2024-04-07 11:34:24] WARNING root fetch - processPackages [fhempy]: Timeout reached during download
+[2024-04-07 11:34:24] INFO root fetch - processPackages [fhempy]: executing diffoscope
+[2024-04-07 11:34:24] INFO root fetch - processPackages [fhempy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fhempy-0.1.98.tar.gz tmp/fhempy-0.1.99.tar.gz --markdown 20240407/f/fhempy/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2024-04-07 11:34:24] INFO root fetch - processPackages [nonebot-plugin-ghtiles]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ghtiles-0.1.2.tar.gz]
+[2024-04-07 11:34:24] INFO root fetch - processPackages [nonebot-plugin-ghtiles]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ghtiles-0.1.3.tar.gz]
+[2024-04-07 11:34:24] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-ghtiles]: success
+[2024-04-07 11:34:24] INFO root fetch - processPackages [pelican-markdown-include]: Remove: archive file [/home/abi/fetcher/tmp/pelican_markdown_include-1.0.2.tar.gz]
+[2024-04-07 11:34:24] INFO root fetch - processPackages [pelican-markdown-include]: Remove: archive file [/home/abi/fetcher/tmp/pelican_markdown_include-1.0.3.tar.gz]
+[2024-04-07 11:34:24] INFO root fetch - main [MainThread]: End processing [pelican-markdown-include]: success
+[2024-04-07 11:34:24] INFO root fetch - processPackages [cleanpy]: Remove: archive file [/home/abi/fetcher/tmp/cleanpy-0.4.0.tar.gz]
+[2024-04-07 11:34:24] INFO root fetch - processPackages [cleanpy]: Remove: archive file [/home/abi/fetcher/tmp/cleanpy-0.5.0.tar.gz]
+[2024-04-07 11:34:24] INFO root fetch - main [MainThread]: End processing [cleanpy]: success
+[2024-04-07 11:34:25] INFO root fetch - processPackages [fhempy]: Remove: archive file [/home/abi/fetcher/tmp/fhempy-0.1.98.tar.gz]
+[2024-04-07 11:34:25] INFO root fetch - processPackages [fhempy]: Remove: archive file [/home/abi/fetcher/tmp/fhempy-0.1.99.tar.gz]
+[2024-04-07 11:34:25] INFO root fetch - main [MainThread]: End processing [fhempy]: success
+[2024-04-07 11:34:25] INFO root fetch - main [MainThread]: Store serial: [22655090]
