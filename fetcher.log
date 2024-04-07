@@ -16729,3 +16729,64 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:20:12] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_bilichat-5.4.0.tar.gz]
 [2024-04-07 19:20:12] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilichat]: success
 [2024-04-07 19:20:12] INFO root fetch - main [MainThread]: Store serial: [22657880]
+[2024-04-07 19:22:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657880]
+[2024-04-07 19:22:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 19:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crewai
+[2024-04-07 19:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: KANGROLL
+[2024-04-07 19:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: molecularnetwork
+[2024-04-07 19:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: holboxai
+[2024-04-07 19:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: inmanta-module-files
+[2024-04-07 19:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: patent-chart
+[2024-04-07 19:22:21] INFO root fetch - processPackages [molecularnetwork]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-04-07 19:22:21] INFO root fetch - processPackages [crewai]: New version: [0.5.5] Old Version: [0.5.3]
+[2024-04-07 19:22:21] INFO root fetch - processPackages [molecularnetwork]: Downloading https://files.pythonhosted.org/packages/24/3f/8a43fafa6b73e3244cfdbaed8d8e3eef329a0d820aefdec937ca9fc16074/molecularnetwork-0.3.5.tar.gz
+[2024-04-07 19:22:21] INFO root fetch - processPackages [patent-chart]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-04-07 19:22:21] INFO root fetch - processPackages [inmanta-module-files]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-04-07 19:22:21] INFO root fetch - processPackages [crewai]: Downloading https://files.pythonhosted.org/packages/e9/e3/15cbe7ed14b2b805613edd70fe8d16de0f00ad49e45f0496db0d34c3274c/crewai-0.5.3.tar.gz
+[2024-04-07 19:22:21] INFO root fetch - processPackages [holboxai]: New version: [0.8] Old Version: [0.7]
+[2024-04-07 19:22:21] WARNING root fetch - processPackages [KANGROLL]: Skipping, unable to determine old version
+[2024-04-07 19:22:21] INFO root fetch - main [MainThread]: End processing [KANGROLL] error
+[2024-04-07 19:22:21] WARNING root fetch - processPackages [crewai]: Timeout reached during download
+[2024-04-07 19:22:21] WARNING root fetch - processPackages [molecularnetwork]: Timeout reached during download
+[2024-04-07 19:22:21] INFO root fetch - processPackages [holboxai]: Downloading https://files.pythonhosted.org/packages/a0/55/acfa187a3c37831264a2016b12994c36234bbfffe8d3f6a21ae74d703815/holboxai-0.7.tar.gz
+[2024-04-07 19:22:21] INFO root fetch - processPackages [inmanta-module-files]: Downloading https://files.pythonhosted.org/packages/71/c3/40bf12b30d0ea11106eb88b033778c81feffdac2fcc105eecc4b1a30bed7/inmanta_module_files-0.1.1-py3-none-any.whl
+[2024-04-07 19:22:21] INFO root fetch - processPackages [crewai]: Downloading https://files.pythonhosted.org/packages/4e/2d/131d296cf0495637bfea59b11af0767de8fa11466880e3d702ab43a360d0/crewai-0.5.5.tar.gz
+[2024-04-07 19:22:21] INFO root fetch - processPackages [patent-chart]: Downloading https://files.pythonhosted.org/packages/04/4e/086ecf7a68bee2bec2b23221292d3bb330f13b17e52221ea401dea2031ae/patent_chart-0.2.7.tar.gz
+[2024-04-07 19:22:21] INFO root fetch - processPackages [molecularnetwork]: Downloading https://files.pythonhosted.org/packages/c6/ea/ce97b883323199dae37b27a04ba502a7bf3649db8f744316b2163ef245a0/molecularnetwork-0.3.6.tar.gz
+[2024-04-07 19:22:21] WARNING root fetch - processPackages [inmanta-module-files]: Timeout reached during download
+[2024-04-07 19:22:21] WARNING root fetch - processPackages [holboxai]: Timeout reached during download
+[2024-04-07 19:22:21] WARNING root fetch - processPackages [crewai]: Timeout reached during download
+[2024-04-07 19:22:21] INFO root fetch - processPackages [crewai]: executing diffoscope
+[2024-04-07 19:22:21] INFO root fetch - processPackages [crewai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crewai-0.5.3.tar.gz tmp/crewai-0.5.5.tar.gz --markdown 20240407/c/crewai/0.5.3-0.5.5/diff.md --exclude *.pyd
+[2024-04-07 19:22:21] WARNING root fetch - processPackages [patent-chart]: Timeout reached during download
+[2024-04-07 19:22:21] WARNING root fetch - processPackages [molecularnetwork]: Timeout reached during download
+[2024-04-07 19:22:21] INFO root fetch - processPackages [molecularnetwork]: executing diffoscope
+[2024-04-07 19:22:21] INFO root fetch - processPackages [molecularnetwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/molecularnetwork-0.3.5.tar.gz tmp/molecularnetwork-0.3.6.tar.gz --markdown 20240407/m/molecularnetwork/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2024-04-07 19:22:21] INFO root fetch - processPackages [inmanta-module-files]: Downloading https://files.pythonhosted.org/packages/99/fe/45316aded86cda51d0eeae722737f14852a0778ec7ee0ff901ad53cea59f/inmanta_module_files-0.2.0-py3-none-any.whl
+[2024-04-07 19:22:22] INFO root fetch - processPackages [holboxai]: Downloading https://files.pythonhosted.org/packages/19/b9/f451a3d2db1b97819fa90850e684986e080497db8d6e454c2e51317a4d52/holboxai-0.8.tar.gz
+[2024-04-07 19:22:22] INFO root fetch - processPackages [patent-chart]: Downloading https://files.pythonhosted.org/packages/cb/4c/dbca22f8d51ab689c532d796296eb42e09719beff7b9501802fac9ccdad7/patent_chart-0.2.8.tar.gz
+[2024-04-07 19:22:22] WARNING root fetch - processPackages [inmanta-module-files]: Timeout reached during download
+[2024-04-07 19:22:22] INFO root fetch - processPackages [inmanta-module-files]: executing diffoscope
+[2024-04-07 19:22:22] INFO root fetch - processPackages [inmanta-module-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inmanta_module_files-0.1.1-py3-none-any.whl.zip tmp/inmanta_module_files-0.2.0-py3-none-any.whl.zip --markdown 20240407/i/inmanta-module-files/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2024-04-07 19:22:22] WARNING root fetch - processPackages [holboxai]: Timeout reached during download
+[2024-04-07 19:22:22] INFO root fetch - processPackages [holboxai]: executing diffoscope
+[2024-04-07 19:22:22] INFO root fetch - processPackages [holboxai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/holboxai-0.7.tar.gz tmp/holboxai-0.8.tar.gz --markdown 20240407/h/holboxai/0.7-0.8/diff.md --exclude *.pyd
+[2024-04-07 19:22:22] INFO root fetch - processPackages [crewai]: Remove: archive file [/home/abi/fetcher/tmp/crewai-0.5.3.tar.gz]
+[2024-04-07 19:22:22] INFO root fetch - processPackages [crewai]: Remove: archive file [/home/abi/fetcher/tmp/crewai-0.5.5.tar.gz]
+[2024-04-07 19:22:22] INFO root fetch - main [MainThread]: End processing [crewai]: success
+[2024-04-07 19:22:22] WARNING root fetch - processPackages [patent-chart]: Timeout reached during download
+[2024-04-07 19:22:22] INFO root fetch - processPackages [patent-chart]: executing diffoscope
+[2024-04-07 19:22:22] INFO root fetch - processPackages [patent-chart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/patent_chart-0.2.7.tar.gz tmp/patent_chart-0.2.8.tar.gz --markdown 20240407/p/patent-chart/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2024-04-07 19:22:22] INFO root fetch - processPackages [molecularnetwork]: Remove: archive file [/home/abi/fetcher/tmp/molecularnetwork-0.3.5.tar.gz]
+[2024-04-07 19:22:22] INFO root fetch - processPackages [molecularnetwork]: Remove: archive file [/home/abi/fetcher/tmp/molecularnetwork-0.3.6.tar.gz]
+[2024-04-07 19:22:22] INFO root fetch - main [MainThread]: End processing [molecularnetwork]: success
+[2024-04-07 19:22:22] INFO root fetch - processPackages [inmanta-module-files]: Remove: archive file [/home/abi/fetcher/tmp/inmanta_module_files-0.1.1-py3-none-any.whl.zip]
+[2024-04-07 19:22:22] INFO root fetch - processPackages [inmanta-module-files]: Remove: archive file [/home/abi/fetcher/tmp/inmanta_module_files-0.2.0-py3-none-any.whl.zip]
+[2024-04-07 19:22:22] INFO root fetch - main [MainThread]: End processing [inmanta-module-files]: success
+[2024-04-07 19:22:22] INFO root fetch - processPackages [holboxai]: Remove: archive file [/home/abi/fetcher/tmp/holboxai-0.7.tar.gz]
+[2024-04-07 19:22:22] INFO root fetch - processPackages [holboxai]: Remove: archive file [/home/abi/fetcher/tmp/holboxai-0.8.tar.gz]
+[2024-04-07 19:22:22] INFO root fetch - main [MainThread]: End processing [holboxai]: success
+[2024-04-07 19:22:23] INFO root fetch - processPackages [patent-chart]: Remove: archive file [/home/abi/fetcher/tmp/patent_chart-0.2.7.tar.gz]
+[2024-04-07 19:22:23] INFO root fetch - processPackages [patent-chart]: Remove: archive file [/home/abi/fetcher/tmp/patent_chart-0.2.8.tar.gz]
+[2024-04-07 19:22:23] INFO root fetch - main [MainThread]: End processing [patent-chart]: success
+[2024-04-07 19:22:23] INFO root fetch - main [MainThread]: Store serial: [22657897]
