@@ -12483,3 +12483,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:21:43] INFO root fetch - processPackages [Bootstrap-Flask]: Remove: archive file [/home/abi/fetcher/tmp/Bootstrap-Flask-2.4.0.tar.gz]
 [2024-04-07 15:21:43] INFO root fetch - main [MainThread]: End processing [Bootstrap-Flask]: success
 [2024-04-07 15:21:43] INFO root fetch - main [MainThread]: Store serial: [22656446]
+[2024-04-07 15:23:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656446]
+[2024-04-07 15:23:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 15:23:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: profiling-decorator
+[2024-04-07 15:23:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seeder
+[2024-04-07 15:23:52] INFO root fetch - processPackages [profiling-decorator]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-07 15:23:52] INFO root fetch - processPackages [seeder]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-07 15:23:52] INFO root fetch - processPackages [profiling-decorator]: Downloading https://files.pythonhosted.org/packages/9e/7a/95fdae2198f68e564e205ee6216801b9013d70ce729d733d568e66c38262/profiling_decorator-0.0.3.tar.gz
+[2024-04-07 15:23:52] INFO root fetch - processPackages [seeder]: Downloading https://files.pythonhosted.org/packages/4b/fd/05b513208290c3a1ea5c457da90c154c0dd027c599c04bbd9b5b6185a059/seeder-0.0.3.tar.gz
+[2024-04-07 15:23:52] WARNING root fetch - processPackages [profiling-decorator]: Timeout reached during download
+[2024-04-07 15:23:52] WARNING root fetch - processPackages [seeder]: Timeout reached during download
+[2024-04-07 15:23:52] INFO root fetch - processPackages [seeder]: Downloading https://files.pythonhosted.org/packages/08/b7/bbdead4f4b3f7eaaf57c6c25cc5dbb0ab29cf0c1f0119e9d26559a74c063/seeder-0.0.4.tar.gz
+[2024-04-07 15:23:52] INFO root fetch - processPackages [profiling-decorator]: Downloading https://files.pythonhosted.org/packages/04/00/5e3e19a1bd8562a6c6a68a25d759cba2315ac22bf66c4813ac33e0f40604/profiling_decorator-0.0.4.tar.gz
+[2024-04-07 15:23:52] WARNING root fetch - processPackages [seeder]: Timeout reached during download
+[2024-04-07 15:23:52] INFO root fetch - processPackages [seeder]: executing diffoscope
+[2024-04-07 15:23:52] INFO root fetch - processPackages [seeder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seeder-0.0.3.tar.gz tmp/seeder-0.0.4.tar.gz --markdown 20240407/s/seeder/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 15:23:52] WARNING root fetch - processPackages [profiling-decorator]: Timeout reached during download
+[2024-04-07 15:23:52] INFO root fetch - processPackages [profiling-decorator]: executing diffoscope
+[2024-04-07 15:23:52] INFO root fetch - processPackages [profiling-decorator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profiling_decorator-0.0.3.tar.gz tmp/profiling_decorator-0.0.4.tar.gz --markdown 20240407/p/profiling-decorator/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 15:23:53] INFO root fetch - processPackages [seeder]: Remove: archive file [/home/abi/fetcher/tmp/seeder-0.0.3.tar.gz]
+[2024-04-07 15:23:53] INFO root fetch - processPackages [seeder]: Remove: archive file [/home/abi/fetcher/tmp/seeder-0.0.4.tar.gz]
+[2024-04-07 15:23:53] INFO root fetch - main [MainThread]: End processing [seeder]: success
+[2024-04-07 15:23:53] INFO root fetch - processPackages [profiling-decorator]: Remove: archive file [/home/abi/fetcher/tmp/profiling_decorator-0.0.3.tar.gz]
+[2024-04-07 15:23:53] INFO root fetch - processPackages [profiling-decorator]: Remove: archive file [/home/abi/fetcher/tmp/profiling_decorator-0.0.4.tar.gz]
+[2024-04-07 15:23:53] INFO root fetch - main [MainThread]: End processing [profiling-decorator]: success
+[2024-04-07 15:23:53] INFO root fetch - main [MainThread]: Store serial: [22656452]
