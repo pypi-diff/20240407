@@ -5823,3 +5823,39 @@
 [2024-04-07 07:56:09] INFO root fetch - processPackages [pulumi-datadog]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_datadog-4.9.0a1653604828.tar.gz]
 [2024-04-07 07:56:09] INFO root fetch - main [MainThread]: End processing [pulumi-datadog]: success
 [2024-04-07 07:56:09] INFO root fetch - main [MainThread]: Store serial: [22653780]
+[2024-04-07 07:58:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653780]
+[2024-04-07 07:58:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 07:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-datadog
+[2024-04-07 07:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datalibro-utils
+[2024-04-07 07:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dekpkglock
+[2024-04-07 07:58:17] INFO root fetch - processPackages [dekpkglock]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-07 07:58:17] INFO root fetch - processPackages [pulumi-datadog]: New version: [4.9.0a1653604828] Old Version: [4.9.0a1650908051]
+[2024-04-07 07:58:17] INFO root fetch - processPackages [dekpkglock]: Downloading https://files.pythonhosted.org/packages/7e/3b/24cd519f35e2b96902046d38ce13d18025161f7818162e3335df740637d5/dekpkglock-0.1.5.tar.gz
+[2024-04-07 07:58:17] INFO root fetch - processPackages [datalibro-utils]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-04-07 07:58:17] INFO root fetch - processPackages [pulumi-datadog]: Downloading https://files.pythonhosted.org/packages/d8/b5/8991a5e2174de51c32d71e18a0d3eb5ac2f6bb5fe9f15ca8f908cee6e214/pulumi_datadog-4.9.0a1650908051.tar.gz
+[2024-04-07 07:58:17] WARNING root fetch - processPackages [dekpkglock]: Timeout reached during download
+[2024-04-07 07:58:17] INFO root fetch - processPackages [datalibro-utils]: Downloading https://files.pythonhosted.org/packages/85/86/59ba19b97d397ec6c948194924b2af71f9ebad40bc8010a9fe870afca675/datalibro_utils-2.3.0.tar.gz
+[2024-04-07 07:58:17] WARNING root fetch - processPackages [pulumi-datadog]: Timeout reached during download
+[2024-04-07 07:58:17] INFO root fetch - processPackages [pulumi-datadog]: Downloading https://files.pythonhosted.org/packages/de/b3/aee4697d07beb69799f35031c032637a1c998c8ba8a18ace02fb30a3011f/pulumi_datadog-4.9.0a1653604828.tar.gz
+[2024-04-07 07:58:18] WARNING root fetch - processPackages [datalibro-utils]: Timeout reached during download
+[2024-04-07 07:58:18] INFO root fetch - processPackages [dekpkglock]: Downloading https://files.pythonhosted.org/packages/d5/fd/39757c1ed4e38ae87d7d008c4a7c99b64187d0f542e9deb2a4fff354588b/dekpkglock-0.1.6.tar.gz
+[2024-04-07 07:58:18] WARNING root fetch - processPackages [pulumi-datadog]: Timeout reached during download
+[2024-04-07 07:58:18] INFO root fetch - processPackages [pulumi-datadog]: executing diffoscope
+[2024-04-07 07:58:18] INFO root fetch - processPackages [pulumi-datadog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_datadog-4.9.0a1650908051.tar.gz tmp/pulumi_datadog-4.9.0a1653604828.tar.gz --markdown 20240407/p/pulumi-datadog/4.9.0a1650908051-4.9.0a1653604828/diff.md --exclude *.pyd
+[2024-04-07 07:58:18] WARNING root fetch - processPackages [dekpkglock]: Timeout reached during download
+[2024-04-07 07:58:18] INFO root fetch - processPackages [dekpkglock]: executing diffoscope
+[2024-04-07 07:58:18] INFO root fetch - processPackages [dekpkglock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dekpkglock-0.1.5.tar.gz tmp/dekpkglock-0.1.6.tar.gz --markdown 20240407/d/dekpkglock/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2024-04-07 07:58:18] INFO root fetch - processPackages [datalibro-utils]: Downloading https://files.pythonhosted.org/packages/f1/32/c431a92b59c97fdb8b33050e3c9c9fea800c942496ca6d86b6e21ce4748c/datalibro_utils-2.3.1.tar.gz
+[2024-04-07 07:58:18] WARNING root fetch - processPackages [datalibro-utils]: Timeout reached during download
+[2024-04-07 07:58:18] INFO root fetch - processPackages [datalibro-utils]: executing diffoscope
+[2024-04-07 07:58:18] INFO root fetch - processPackages [datalibro-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datalibro_utils-2.3.0.tar.gz tmp/datalibro_utils-2.3.1.tar.gz --markdown 20240407/d/datalibro-utils/2.3.0-2.3.1/diff.md --exclude *.pyd
+[2024-04-07 07:58:18] INFO root fetch - processPackages [dekpkglock]: Remove: archive file [/home/abi/fetcher/tmp/dekpkglock-0.1.5.tar.gz]
+[2024-04-07 07:58:18] INFO root fetch - processPackages [dekpkglock]: Remove: archive file [/home/abi/fetcher/tmp/dekpkglock-0.1.6.tar.gz]
+[2024-04-07 07:58:18] INFO root fetch - main [MainThread]: End processing [dekpkglock]: success
+[2024-04-07 07:58:18] INFO root fetch - processPackages [datalibro-utils]: Remove: archive file [/home/abi/fetcher/tmp/datalibro_utils-2.3.0.tar.gz]
+[2024-04-07 07:58:18] INFO root fetch - processPackages [datalibro-utils]: Remove: archive file [/home/abi/fetcher/tmp/datalibro_utils-2.3.1.tar.gz]
+[2024-04-07 07:58:18] INFO root fetch - main [MainThread]: End processing [datalibro-utils]: success
+[2024-04-07 07:58:20] INFO root fetch - processPackages [pulumi-datadog]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_datadog-4.9.0a1650908051.tar.gz]
+[2024-04-07 07:58:20] INFO root fetch - processPackages [pulumi-datadog]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_datadog-4.9.0a1653604828.tar.gz]
+[2024-04-07 07:58:20] INFO root fetch - main [MainThread]: End processing [pulumi-datadog]: success
+[2024-04-07 07:58:20] INFO root fetch - main [MainThread]: Store serial: [22653789]
