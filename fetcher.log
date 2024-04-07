@@ -19045,3 +19045,20 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 21:44:34] INFO root fetch - processPackages [hiddifypanel]: Remove: archive file [/home/abi/fetcher/tmp/hiddifypanel-8.8.99.tar.gz]
 [2024-04-07 21:44:34] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2024-04-07 21:44:34] INFO root fetch - main [MainThread]: Store serial: [22658750]
+[2024-04-07 21:46:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658750]
+[2024-04-07 21:46:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 21:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbrownell-DevTools
+[2024-04-07 21:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uhw
+[2024-04-07 21:46:44] INFO root fetch - processPackages [dbrownell-DevTools]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-07 21:46:44] WARNING root fetch - processPackages [uhw]: Skipping, unable to determine old version
+[2024-04-07 21:46:44] INFO root fetch - main [MainThread]: End processing [uhw] error
+[2024-04-07 21:46:44] INFO root fetch - processPackages [dbrownell-DevTools]: Downloading https://files.pythonhosted.org/packages/e4/4d/0e19372b5607400e51d720966eaf41f18a1b6b007cc87ac6eb6d9f8becb6/dbrownell_DevTools-0.8.1-py3-none-any.whl
+[2024-04-07 21:46:44] WARNING root fetch - processPackages [dbrownell-DevTools]: Timeout reached during download
+[2024-04-07 21:46:44] INFO root fetch - processPackages [dbrownell-DevTools]: Downloading https://files.pythonhosted.org/packages/6a/4c/d64b516137d9b57df6580e99ae3c7beb287715418efefbdf0c8260ba6e5d/dbrownell_DevTools-0.9.0-py3-none-any.whl
+[2024-04-07 21:46:44] WARNING root fetch - processPackages [dbrownell-DevTools]: Timeout reached during download
+[2024-04-07 21:46:44] INFO root fetch - processPackages [dbrownell-DevTools]: executing diffoscope
+[2024-04-07 21:46:44] INFO root fetch - processPackages [dbrownell-DevTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbrownell_DevTools-0.8.1-py3-none-any.whl.zip tmp/dbrownell_DevTools-0.9.0-py3-none-any.whl.zip --markdown 20240407/d/dbrownell-DevTools/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2024-04-07 21:46:45] INFO root fetch - processPackages [dbrownell-DevTools]: Remove: archive file [/home/abi/fetcher/tmp/dbrownell_DevTools-0.8.1-py3-none-any.whl.zip]
+[2024-04-07 21:46:45] INFO root fetch - processPackages [dbrownell-DevTools]: Remove: archive file [/home/abi/fetcher/tmp/dbrownell_DevTools-0.9.0-py3-none-any.whl.zip]
+[2024-04-07 21:46:45] INFO root fetch - main [MainThread]: End processing [dbrownell-DevTools]: success
+[2024-04-07 21:46:45] INFO root fetch - main [MainThread]: Store serial: [22658757]
