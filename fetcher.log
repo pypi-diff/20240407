@@ -10661,3 +10661,47 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 13:25:58] INFO root fetch - processPackages [airbyte-source-github]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_github-1.7.1.dev202404071124.tar.gz]
 [2024-04-07 13:25:58] INFO root fetch - main [MainThread]: End processing [airbyte-source-github]: success
 [2024-04-07 13:25:58] INFO root fetch - main [MainThread]: Store serial: [22655690]
+[2024-04-07 13:28:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655690]
+[2024-04-07 13:28:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 13:28:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dash-spread-grid
+[2024-04-07 13:28:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qa-test
+[2024-04-07 13:28:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-core-xe-21
+[2024-04-07 13:28:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: magicalapi
+[2024-04-07 13:28:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ehdtd-daemon
+[2024-04-07 13:28:07] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-07 13:28:07] INFO root fetch - processPackages [ehdtd-daemon]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-07 13:28:07] INFO root fetch - processPackages [qa-test]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-07 13:28:07] WARNING root fetch - processPackages [magicalapi]: Skipping, unable to determine old version
+[2024-04-07 13:28:07] INFO root fetch - main [MainThread]: End processing [magicalapi] error
+[2024-04-07 13:28:07] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/77/59/7119f0b04af1daaef620f3e309033ceb24c2da9a82895480db28cd6e1ae9/dash_spread_grid-0.0.4.tar.gz
+[2024-04-07 13:28:07] INFO root fetch - processPackages [bigdl-core-xe-21]: New version: [2.5.0b20240407] Old Version: [2.5.0b20240406]
+[2024-04-07 13:28:07] INFO root fetch - processPackages [ehdtd-daemon]: Downloading https://files.pythonhosted.org/packages/13/4c/60bf1d2b4e44b41c76f644c0a819cfc40247e76aed95550078acce401d91/ehdtd_daemon-0.1.4.tar.gz
+[2024-04-07 13:28:07] INFO root fetch - processPackages [qa-test]: Downloading https://files.pythonhosted.org/packages/5a/fe/c913d7a414ce969e50e829961a32741981556b42800f34eb0f6d5730954b/qa_test-0.0.3.tar.gz
+[2024-04-07 13:28:07] WARNING root fetch - processPackages [ehdtd-daemon]: Timeout reached during download
+[2024-04-07 13:28:07] WARNING root fetch - processPackages [dash-spread-grid]: Timeout reached during download
+[2024-04-07 13:28:07] INFO root fetch - processPackages [bigdl-core-xe-21]: Downloading https://files.pythonhosted.org/packages/d2/45/49458b71b241bc9bd92fdbfeb83c628aaeb6501380ff410be61ad7cdd377/bigdl_core_xe_21-2.5.0b20240406-cp39-cp39-win_amd64.whl
+[2024-04-07 13:28:07] INFO root fetch - processPackages [ehdtd-daemon]: Downloading https://files.pythonhosted.org/packages/97/d8/094aa64d8e7be1684890a7580e8ce73137b691e9f1dff7ce85c32dc8fd6e/ehdtd_daemon-0.1.5.tar.gz
+[2024-04-07 13:28:07] WARNING root fetch - processPackages [bigdl-core-xe-21]: Skipping package: exceeds size limit 25408589>=10485760
+[2024-04-07 13:28:07] WARNING root fetch - processPackages [ehdtd-daemon]: Timeout reached during download
+[2024-04-07 13:28:07] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-21] error
+[2024-04-07 13:28:07] INFO root fetch - processPackages [ehdtd-daemon]: executing diffoscope
+[2024-04-07 13:28:07] INFO root fetch - processPackages [ehdtd-daemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ehdtd_daemon-0.1.4.tar.gz tmp/ehdtd_daemon-0.1.5.tar.gz --markdown 20240407/e/ehdtd-daemon/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2024-04-07 13:28:07] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/62/cd/77f27cf2fdbea440c5f9a7eea3c01d1f221115bdaa723951cff93b07a558/dash_spread_grid-0.0.5.tar.gz
+[2024-04-07 13:28:07] WARNING root fetch - processPackages [dash-spread-grid]: Timeout reached during download
+[2024-04-07 13:28:07] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-04-07 13:28:07] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.4.tar.gz tmp/dash_spread_grid-0.0.5.tar.gz --markdown 20240407/d/dash-spread-grid/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-07 13:28:07] WARNING root fetch - processPackages [qa-test]: Timeout reached during download
+[2024-04-07 13:28:07] INFO root fetch - processPackages [qa-test]: Downloading https://files.pythonhosted.org/packages/cf/b5/34f6ff457d017c001a1caa17212da9f84469f01534d61c377d5828d18ace/qa_test-0.0.4.tar.gz
+[2024-04-07 13:28:08] INFO root fetch - processPackages [ehdtd-daemon]: Remove: archive file [/home/abi/fetcher/tmp/ehdtd_daemon-0.1.4.tar.gz]
+[2024-04-07 13:28:08] INFO root fetch - processPackages [ehdtd-daemon]: Remove: archive file [/home/abi/fetcher/tmp/ehdtd_daemon-0.1.5.tar.gz]
+[2024-04-07 13:28:08] INFO root fetch - main [MainThread]: End processing [ehdtd-daemon]: success
+[2024-04-07 13:28:08] WARNING root fetch - processPackages [qa-test]: Timeout reached during download
+[2024-04-07 13:28:08] INFO root fetch - processPackages [qa-test]: executing diffoscope
+[2024-04-07 13:28:08] INFO root fetch - processPackages [qa-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qa_test-0.0.3.tar.gz tmp/qa_test-0.0.4.tar.gz --markdown 20240407/q/qa-test/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 13:28:09] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.4.tar.gz]
+[2024-04-07 13:28:09] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.5.tar.gz]
+[2024-04-07 13:28:09] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-04-07 13:28:09] INFO root fetch - processPackages [qa-test]: Remove: archive file [/home/abi/fetcher/tmp/qa_test-0.0.3.tar.gz]
+[2024-04-07 13:28:09] INFO root fetch - processPackages [qa-test]: Remove: archive file [/home/abi/fetcher/tmp/qa_test-0.0.4.tar.gz]
+[2024-04-07 13:28:09] INFO root fetch - main [MainThread]: End processing [qa-test]: success
+[2024-04-07 13:28:09] INFO root fetch - main [MainThread]: Store serial: [22655712]
