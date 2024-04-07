@@ -3845,3 +3845,31 @@
 [2024-04-07 05:19:35] INFO root fetch - processPackages [KS-Constants]: Remove: archive file [/home/abi/fetcher/tmp/KS_Constants-1.2.9.tar.gz]
 [2024-04-07 05:19:35] INFO root fetch - main [MainThread]: End processing [KS-Constants]: success
 [2024-04-07 05:19:35] INFO root fetch - main [MainThread]: Store serial: [22653175]
+[2024-04-07 05:21:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653175]
+[2024-04-07 05:21:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 05:21:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keras-nightly
+[2024-04-07 05:21:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LanusStats
+[2024-04-07 05:21:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cc-feishu
+[2024-04-07 05:21:43] INFO root fetch - processPackages [keras-nightly]: New version: [3.2.0.dev2024040503] Old Version: [3.2.0.dev2024040423]
+[2024-04-07 05:21:43] INFO root fetch - processPackages [cc-feishu]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-07 05:21:43] WARNING root fetch - processPackages [LanusStats]: Skipping, unable to determine old version
+[2024-04-07 05:21:43] INFO root fetch - main [MainThread]: End processing [LanusStats] error
+[2024-04-07 05:21:43] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/82/e7/929346231523687949e1442b34052f08e01134c2536b0cf6365fbd0f0361/keras-nightly-3.2.0.dev2024040423.tar.gz
+[2024-04-07 05:21:43] INFO root fetch - processPackages [cc-feishu]: Downloading https://files.pythonhosted.org/packages/5d/49/9021f2d21bcda7fb2bcf19943d4f9042f538289dee8f8d7c0ab1cc744f75/cc-feishu-0.1.3.tar.gz
+[2024-04-07 05:21:43] WARNING root fetch - processPackages [cc-feishu]: Timeout reached during download
+[2024-04-07 05:21:43] WARNING root fetch - processPackages [keras-nightly]: Timeout reached during download
+[2024-04-07 05:21:44] INFO root fetch - processPackages [cc-feishu]: Downloading https://files.pythonhosted.org/packages/1c/6b/6f79fe1aecbca363365720a0f5b98d77c56bd90c8c99db23d6221400ef9a/cc-feishu-0.1.4.tar.gz
+[2024-04-07 05:21:44] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/db/a1/d5f76d03d81db813aada31baf8609df5597d5dceeabcd4700af306d5bb12/keras-nightly-3.2.0.dev2024040503.tar.gz
+[2024-04-07 05:21:44] WARNING root fetch - processPackages [cc-feishu]: Timeout reached during download
+[2024-04-07 05:21:44] INFO root fetch - processPackages [cc-feishu]: executing diffoscope
+[2024-04-07 05:21:44] INFO root fetch - processPackages [cc-feishu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cc-feishu-0.1.3.tar.gz tmp/cc-feishu-0.1.4.tar.gz --markdown 20240407/c/cc-feishu/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2024-04-07 05:21:44] WARNING root fetch - processPackages [keras-nightly]: Timeout reached during download
+[2024-04-07 05:21:44] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2024-04-07 05:21:44] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-nightly-3.2.0.dev2024040423.tar.gz tmp/keras-nightly-3.2.0.dev2024040503.tar.gz --markdown 20240407/k/keras-nightly/3.2.0.dev2024040423-3.2.0.dev2024040503/diff.md --exclude *.pyd
+[2024-04-07 05:21:44] INFO root fetch - processPackages [cc-feishu]: Remove: archive file [/home/abi/fetcher/tmp/cc-feishu-0.1.3.tar.gz]
+[2024-04-07 05:21:44] INFO root fetch - processPackages [cc-feishu]: Remove: archive file [/home/abi/fetcher/tmp/cc-feishu-0.1.4.tar.gz]
+[2024-04-07 05:21:44] INFO root fetch - main [MainThread]: End processing [cc-feishu]: success
+[2024-04-07 05:21:46] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nightly-3.2.0.dev2024040423.tar.gz]
+[2024-04-07 05:21:46] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nightly-3.2.0.dev2024040503.tar.gz]
+[2024-04-07 05:21:46] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2024-04-07 05:21:46] INFO root fetch - main [MainThread]: Store serial: [22653189]
