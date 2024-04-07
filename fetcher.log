@@ -12831,3 +12831,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:47:53] INFO root fetch - processPackages [keylight]: Remove: archive file [/home/abi/fetcher/tmp/keylight-0.1.3.tar.gz]
 [2024-04-07 15:47:53] INFO root fetch - main [MainThread]: End processing [keylight]: success
 [2024-04-07 15:47:53] INFO root fetch - main [MainThread]: Store serial: [22656571]
+[2024-04-07 15:49:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656571]
+[2024-04-07 15:50:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 15:50:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: causadb
+[2024-04-07 15:50:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sourcesage
+[2024-04-07 15:50:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rahavard
+[2024-04-07 15:50:02] INFO root fetch - processPackages [rahavard]: New version: [0.0.9] Old Version: [0.0.12]
+[2024-04-07 15:50:02] INFO root fetch - processPackages [rahavard]: Downloading https://files.pythonhosted.org/packages/94/30/8ced34b7fbe4f033e275660880366c19e2ccde91933b08b8e015d9373579/rahavard-0.0.12.tar.gz
+[2024-04-07 15:50:02] INFO root fetch - processPackages [sourcesage]: New version: [4.0.6] Old Version: [4.0.5]
+[2024-04-07 15:50:02] INFO root fetch - processPackages [causadb]: New version: [1.8.4] Old Version: [1.8.3]
+[2024-04-07 15:50:02] WARNING root fetch - processPackages [rahavard]: Timeout reached during download
+[2024-04-07 15:50:02] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/e3/53/6ca64d80eca6e8ecaddaff2602f2f43daf7c67d4ab450750755bb1c17d8b/sourcesage-4.0.5.tar.gz
+[2024-04-07 15:50:02] INFO root fetch - processPackages [causadb]: Downloading https://files.pythonhosted.org/packages/8b/7f/3d5d0f3221acf1b0b72a4ff9189f365c825da69993f9e5e632b3f1adda31/causadb-1.8.3.tar.gz
+[2024-04-07 15:50:02] INFO root fetch - processPackages [rahavard]: Downloading https://files.pythonhosted.org/packages/66/07/6477aa0e4d97de27a844828a75d1ff22e2dfb9e3dd094489ca589dfe63bf/rahavard-0.0.9.tar.gz
+[2024-04-07 15:50:02] WARNING root fetch - processPackages [rahavard]: Timeout reached during download
+[2024-04-07 15:50:02] INFO root fetch - processPackages [rahavard]: executing diffoscope
+[2024-04-07 15:50:02] INFO root fetch - processPackages [rahavard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rahavard-0.0.12.tar.gz tmp/rahavard-0.0.9.tar.gz --markdown 20240407/r/rahavard/0.0.12-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 15:50:02] WARNING root fetch - processPackages [causadb]: Timeout reached during download
+[2024-04-07 15:50:02] WARNING root fetch - processPackages [sourcesage]: Timeout reached during download
+[2024-04-07 15:50:02] INFO root fetch - processPackages [causadb]: Downloading https://files.pythonhosted.org/packages/c0/d2/2ded587819fdd5fe08ccc3a11fdc0d4fbf0ca65821d4e769ba91be65fd4c/causadb-1.8.4.tar.gz
+[2024-04-07 15:50:03] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/58/f3/a044084a1e0a4efcf80bc520551dcc362b7728cdb5bb3ab784e1db1e79c4/sourcesage-4.0.6.tar.gz
+[2024-04-07 15:50:03] WARNING root fetch - processPackages [causadb]: Timeout reached during download
+[2024-04-07 15:50:03] INFO root fetch - processPackages [causadb]: executing diffoscope
+[2024-04-07 15:50:03] INFO root fetch - processPackages [causadb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/causadb-1.8.3.tar.gz tmp/causadb-1.8.4.tar.gz --markdown 20240407/c/causadb/1.8.3-1.8.4/diff.md --exclude *.pyd
+[2024-04-07 15:50:03] WARNING root fetch - processPackages [sourcesage]: Timeout reached during download
+[2024-04-07 15:50:03] INFO root fetch - processPackages [sourcesage]: executing diffoscope
+[2024-04-07 15:50:03] INFO root fetch - processPackages [sourcesage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sourcesage-4.0.5.tar.gz tmp/sourcesage-4.0.6.tar.gz --markdown 20240407/s/sourcesage/4.0.5-4.0.6/diff.md --exclude *.pyd
+[2024-04-07 15:50:03] INFO root fetch - processPackages [rahavard]: Remove: archive file [/home/abi/fetcher/tmp/rahavard-0.0.12.tar.gz]
+[2024-04-07 15:50:03] INFO root fetch - processPackages [rahavard]: Remove: archive file [/home/abi/fetcher/tmp/rahavard-0.0.9.tar.gz]
+[2024-04-07 15:50:03] INFO root fetch - main [MainThread]: End processing [rahavard]: success
+[2024-04-07 15:50:03] INFO root fetch - processPackages [causadb]: Remove: archive file [/home/abi/fetcher/tmp/causadb-1.8.3.tar.gz]
+[2024-04-07 15:50:03] INFO root fetch - processPackages [causadb]: Remove: archive file [/home/abi/fetcher/tmp/causadb-1.8.4.tar.gz]
+[2024-04-07 15:50:03] INFO root fetch - main [MainThread]: End processing [causadb]: success
+[2024-04-07 15:50:03] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.0.5.tar.gz]
+[2024-04-07 15:50:03] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.0.6.tar.gz]
+[2024-04-07 15:50:03] INFO root fetch - main [MainThread]: End processing [sourcesage]: success
+[2024-04-07 15:50:03] INFO root fetch - main [MainThread]: Store serial: [22656580]
