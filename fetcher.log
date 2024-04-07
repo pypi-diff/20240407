@@ -6355,3 +6355,61 @@
 [2024-04-07 08:29:06] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_stock_logistics_barcode-16.0.20240325.0-py3-none-any.whl.zip]
 [2024-04-07 08:29:06] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-stock-logistics-barcode]: success
 [2024-04-07 08:29:06] INFO root fetch - main [MainThread]: Store serial: [22654010]
+[2024-04-07 08:31:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654010]
+[2024-04-07 08:31:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 08:31:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: antchain-nftc
+[2024-04-07 08:31:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SnakeNest
+[2024-04-07 08:31:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CINOSUM
+[2024-04-07 08:31:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: historical-binance
+[2024-04-07 08:31:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: htscf
+[2024-04-07 08:31:15] INFO root fetch - processPackages [CINOSUM]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-07 08:31:15] INFO root fetch - processPackages [htscf]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 08:31:15] INFO root fetch - processPackages [CINOSUM]: Downloading https://files.pythonhosted.org/packages/47/be/b0807f77a030866378a9799d64b6c7ce7c29f7aa6cd49130abb06dcc8d71/CINOSUM-1.0.3.tar.gz
+[2024-04-07 08:31:15] INFO root fetch - processPackages [SnakeNest]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-07 08:31:15] INFO root fetch - processPackages [historical-binance]: New version: [0.1.7.1] Old Version: [0.1.6]
+[2024-04-07 08:31:15] INFO root fetch - processPackages [antchain-nftc]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-07 08:31:15] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/48/31/ef6469f74ffa5f39aaf9ac67ecf2f5b17aec1b223d3f63572efd39a3958f/htscf-0.0.98.tar.gz
+[2024-04-07 08:31:15] INFO root fetch - processPackages [historical-binance]: Downloading https://files.pythonhosted.org/packages/e1/02/00c15634ee2baa5fe5a08af2fa98e81229f4c1460e0dfe3c84381b264d8f/historical_binance-0.1.6-py3-none-any.whl
+[2024-04-07 08:31:15] WARNING root fetch - processPackages [CINOSUM]: Timeout reached during download
+[2024-04-07 08:31:15] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 08:31:15] INFO root fetch - processPackages [SnakeNest]: Downloading https://files.pythonhosted.org/packages/92/41/1b733866ff317b829bc332bdfd9595a9be32ebc041273dedc54c78720d4c/snakenest-0.2.0-py3-none-any.whl
+[2024-04-07 08:31:15] INFO root fetch - processPackages [antchain-nftc]: Downloading https://files.pythonhosted.org/packages/70/d0/07aaf551363dca8be98b05dd2dbc394a2c5c0cac5ce037ed661c64532e84/antchain_nftc-1.0.8.tar.gz
+[2024-04-07 08:31:15] WARNING root fetch - processPackages [historical-binance]: Timeout reached during download
+[2024-04-07 08:31:15] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/79/48/b9c5a63d0fc652968c826af8815fadd5e1f69403909e12853b5a52d9c6b3/htscf-0.0.99.tar.gz
+[2024-04-07 08:31:15] INFO root fetch - processPackages [CINOSUM]: Downloading https://files.pythonhosted.org/packages/a7/c8/e7aa2b3c5cd2b7a7f2c9e57c70139ff8f270d495dcf002dde88b0590fe85/CINOSUM-1.0.4.tar.gz
+[2024-04-07 08:31:15] WARNING root fetch - processPackages [SnakeNest]: Timeout reached during download
+[2024-04-07 08:31:15] WARNING root fetch - processPackages [antchain-nftc]: Timeout reached during download
+[2024-04-07 08:31:15] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 08:31:15] INFO root fetch - processPackages [htscf]: executing diffoscope
+[2024-04-07 08:31:15] INFO root fetch - processPackages [htscf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htscf-0.0.98.tar.gz tmp/htscf-0.0.99.tar.gz --markdown 20240407/h/htscf/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 08:31:15] WARNING root fetch - processPackages [CINOSUM]: Timeout reached during download
+[2024-04-07 08:31:15] INFO root fetch - processPackages [CINOSUM]: executing diffoscope
+[2024-04-07 08:31:15] INFO root fetch - processPackages [CINOSUM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CINOSUM-1.0.3.tar.gz tmp/CINOSUM-1.0.4.tar.gz --markdown 20240407/C/CINOSUM/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2024-04-07 08:31:15] INFO root fetch - processPackages [historical-binance]: Downloading https://files.pythonhosted.org/packages/8e/74/beda0bdef573c096f079d38f0b51e4c6c7c35d53a950d17ef56a3713f6aa/historical_binance-0.1.7.1-py3-none-any.whl
+[2024-04-07 08:31:15] INFO root fetch - processPackages [SnakeNest]: Downloading https://files.pythonhosted.org/packages/31/a1/b137c9464c72be13812af266e7a96a8c51330d5ba43907898e6ecec81732/snakenest-0.2.1-py3-none-any.whl
+[2024-04-07 08:31:15] INFO root fetch - processPackages [antchain-nftc]: Downloading https://files.pythonhosted.org/packages/a0/5d/8ad4372b715b6b24700a1942458941881a34cf2277755309e68024f1d6b1/antchain_nftc-1.0.9.tar.gz
+[2024-04-07 08:31:15] WARNING root fetch - processPackages [historical-binance]: Timeout reached during download
+[2024-04-07 08:31:15] INFO root fetch - processPackages [historical-binance]: executing diffoscope
+[2024-04-07 08:31:15] INFO root fetch - processPackages [historical-binance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/historical_binance-0.1.6-py3-none-any.whl.zip tmp/historical_binance-0.1.7.1-py3-none-any.whl.zip --markdown 20240407/h/historical-binance/0.1.6-0.1.7.1/diff.md --exclude *.pyd
+[2024-04-07 08:31:15] WARNING root fetch - processPackages [SnakeNest]: Timeout reached during download
+[2024-04-07 08:31:15] INFO root fetch - processPackages [SnakeNest]: executing diffoscope
+[2024-04-07 08:31:15] INFO root fetch - processPackages [SnakeNest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snakenest-0.2.0-py3-none-any.whl.zip tmp/snakenest-0.2.1-py3-none-any.whl.zip --markdown 20240407/S/SnakeNest/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2024-04-07 08:31:15] WARNING root fetch - processPackages [antchain-nftc]: Timeout reached during download
+[2024-04-07 08:31:15] INFO root fetch - processPackages [antchain-nftc]: executing diffoscope
+[2024-04-07 08:31:15] INFO root fetch - processPackages [antchain-nftc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antchain_nftc-1.0.8.tar.gz tmp/antchain_nftc-1.0.9.tar.gz --markdown 20240407/a/antchain-nftc/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-07 08:31:16] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.98.tar.gz]
+[2024-04-07 08:31:16] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.99.tar.gz]
+[2024-04-07 08:31:16] INFO root fetch - main [MainThread]: End processing [htscf]: success
+[2024-04-07 08:31:16] INFO root fetch - processPackages [historical-binance]: Remove: archive file [/home/abi/fetcher/tmp/historical_binance-0.1.6-py3-none-any.whl.zip]
+[2024-04-07 08:31:16] INFO root fetch - processPackages [historical-binance]: Remove: archive file [/home/abi/fetcher/tmp/historical_binance-0.1.7.1-py3-none-any.whl.zip]
+[2024-04-07 08:31:16] INFO root fetch - main [MainThread]: End processing [historical-binance]: success
+[2024-04-07 08:31:16] INFO root fetch - processPackages [SnakeNest]: Remove: archive file [/home/abi/fetcher/tmp/snakenest-0.2.0-py3-none-any.whl.zip]
+[2024-04-07 08:31:16] INFO root fetch - processPackages [SnakeNest]: Remove: archive file [/home/abi/fetcher/tmp/snakenest-0.2.1-py3-none-any.whl.zip]
+[2024-04-07 08:31:16] INFO root fetch - main [MainThread]: End processing [SnakeNest]: success
+[2024-04-07 08:31:16] INFO root fetch - processPackages [CINOSUM]: Remove: archive file [/home/abi/fetcher/tmp/CINOSUM-1.0.3.tar.gz]
+[2024-04-07 08:31:16] INFO root fetch - processPackages [CINOSUM]: Remove: archive file [/home/abi/fetcher/tmp/CINOSUM-1.0.4.tar.gz]
+[2024-04-07 08:31:16] INFO root fetch - main [MainThread]: End processing [CINOSUM]: success
+[2024-04-07 08:31:16] INFO root fetch - processPackages [antchain-nftc]: Remove: archive file [/home/abi/fetcher/tmp/antchain_nftc-1.0.8.tar.gz]
+[2024-04-07 08:31:16] INFO root fetch - processPackages [antchain-nftc]: Remove: archive file [/home/abi/fetcher/tmp/antchain_nftc-1.0.9.tar.gz]
+[2024-04-07 08:31:16] INFO root fetch - main [MainThread]: End processing [antchain-nftc]: success
+[2024-04-07 08:31:16] INFO root fetch - main [MainThread]: Store serial: [22654022]
