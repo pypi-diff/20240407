@@ -5721,3 +5721,28 @@
 [2024-04-07 07:49:34] INFO root fetch - processPackages [mlora]: Remove: archive file [/home/abi/fetcher/tmp/mlora-0.2.1.tar.gz]
 [2024-04-07 07:49:34] INFO root fetch - main [MainThread]: End processing [mlora]: success
 [2024-04-07 07:49:34] INFO root fetch - main [MainThread]: Store serial: [22653746]
+[2024-04-07 07:51:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653746]
+[2024-04-07 07:51:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 07:51:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openpipe
+[2024-04-07 07:51:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: huojiweiguoba
+[2024-04-07 07:51:43] INFO root fetch - processPackages [huojiweiguoba]: New version: [9.0] Old Version: [8.0]
+[2024-04-07 07:51:44] INFO root fetch - processPackages [openpipe]: New version: [4.7.0] Old Version: [4.6.0]
+[2024-04-07 07:51:44] INFO root fetch - processPackages [huojiweiguoba]: Downloading https://files.pythonhosted.org/packages/9b/6f/b64a46e83d6bfc0f46bb336114ec9f43e3939f86a70108c310351b4f02b4/huojiweiguoba-8.0.tar.gz
+[2024-04-07 07:51:44] INFO root fetch - processPackages [openpipe]: Downloading https://files.pythonhosted.org/packages/b7/c7/dbbdde9068befe1fbcf06a3522cce0e5bb9024a6e8cbd7e285ee96e04b01/openpipe-4.6.0.tar.gz
+[2024-04-07 07:51:44] WARNING root fetch - processPackages [huojiweiguoba]: Timeout reached during download
+[2024-04-07 07:51:44] WARNING root fetch - processPackages [openpipe]: Timeout reached during download
+[2024-04-07 07:51:44] INFO root fetch - processPackages [huojiweiguoba]: Downloading https://files.pythonhosted.org/packages/3a/79/586f36e886e9e8dcfc4129b51554721e3019a3b5fc5ca074d349a5747db3/huojiweiguoba-9.0.tar.gz
+[2024-04-07 07:51:44] INFO root fetch - processPackages [openpipe]: Downloading https://files.pythonhosted.org/packages/ac/84/488fac8627d8a07e6fde10d992982189a838e2e31057c1aa422202eef2eb/openpipe-4.7.0.tar.gz
+[2024-04-07 07:51:44] WARNING root fetch - processPackages [huojiweiguoba]: Timeout reached during download
+[2024-04-07 07:51:44] INFO root fetch - processPackages [huojiweiguoba]: executing diffoscope
+[2024-04-07 07:51:44] INFO root fetch - processPackages [huojiweiguoba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huojiweiguoba-8.0.tar.gz tmp/huojiweiguoba-9.0.tar.gz --markdown 20240407/h/huojiweiguoba/8.0-9.0/diff.md --exclude *.pyd
+[2024-04-07 07:51:44] WARNING root fetch - processPackages [openpipe]: Timeout reached during download
+[2024-04-07 07:51:44] INFO root fetch - processPackages [openpipe]: executing diffoscope
+[2024-04-07 07:51:44] INFO root fetch - processPackages [openpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openpipe-4.6.0.tar.gz tmp/openpipe-4.7.0.tar.gz --markdown 20240407/o/openpipe/4.6.0-4.7.0/diff.md --exclude *.pyd
+[2024-04-07 07:51:45] INFO root fetch - processPackages [huojiweiguoba]: Remove: archive file [/home/abi/fetcher/tmp/huojiweiguoba-8.0.tar.gz]
+[2024-04-07 07:51:45] INFO root fetch - processPackages [huojiweiguoba]: Remove: archive file [/home/abi/fetcher/tmp/huojiweiguoba-9.0.tar.gz]
+[2024-04-07 07:51:45] INFO root fetch - main [MainThread]: End processing [huojiweiguoba]: success
+[2024-04-07 07:51:45] INFO root fetch - processPackages [openpipe]: Remove: archive file [/home/abi/fetcher/tmp/openpipe-4.6.0.tar.gz]
+[2024-04-07 07:51:45] INFO root fetch - processPackages [openpipe]: Remove: archive file [/home/abi/fetcher/tmp/openpipe-4.7.0.tar.gz]
+[2024-04-07 07:51:45] INFO root fetch - main [MainThread]: End processing [openpipe]: success
+[2024-04-07 07:51:45] INFO root fetch - main [MainThread]: Store serial: [22653752]
