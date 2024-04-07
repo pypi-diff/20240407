@@ -17557,3 +17557,20 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 20:14:54] INFO root fetch - processPackages [LOLZTEAM]: Remove: archive file [/home/abi/fetcher/tmp/LOLZTEAM-1.3.0.tar.gz]
 [2024-04-07 20:14:54] INFO root fetch - main [MainThread]: End processing [LOLZTEAM]: success
 [2024-04-07 20:14:54] INFO root fetch - main [MainThread]: Store serial: [22658212]
+[2024-04-07 20:17:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658212]
+[2024-04-07 20:17:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 20:17:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: electrostats
+[2024-04-07 20:17:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: decoder-plus-plus
+[2024-04-07 20:17:05] INFO root fetch - processPackages [decoder-plus-plus]: New version: [1.7.0] Old Version: [1.5.0]
+[2024-04-07 20:17:05] INFO root fetch - processPackages [decoder-plus-plus]: Downloading https://files.pythonhosted.org/packages/27/77/b071fa45390a66c2bc1f9ebdb7a77fdd76abeefa37e43e9078c241a91b78/decoder-plus-plus-1.5.0.tar.gz
+[2024-04-07 20:17:05] WARNING root fetch - processPackages [electrostats]: Skipping, unable to determine old version
+[2024-04-07 20:17:05] INFO root fetch - main [MainThread]: End processing [electrostats] error
+[2024-04-07 20:17:05] WARNING root fetch - processPackages [decoder-plus-plus]: Timeout reached during download
+[2024-04-07 20:17:05] INFO root fetch - processPackages [decoder-plus-plus]: Downloading https://files.pythonhosted.org/packages/50/6b/dcb01f29573fd088079afbf857427b5f6e9d3e27de127bcfa6f32f07b535/decoder-plus-plus-1.7.0.tar.gz
+[2024-04-07 20:17:06] WARNING root fetch - processPackages [decoder-plus-plus]: Timeout reached during download
+[2024-04-07 20:17:06] INFO root fetch - processPackages [decoder-plus-plus]: executing diffoscope
+[2024-04-07 20:17:06] INFO root fetch - processPackages [decoder-plus-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decoder-plus-plus-1.5.0.tar.gz tmp/decoder-plus-plus-1.7.0.tar.gz --markdown 20240407/d/decoder-plus-plus/1.5.0-1.7.0/diff.md --exclude *.pyd
+[2024-04-07 20:17:07] INFO root fetch - processPackages [decoder-plus-plus]: Remove: archive file [/home/abi/fetcher/tmp/decoder-plus-plus-1.5.0.tar.gz]
+[2024-04-07 20:17:07] INFO root fetch - processPackages [decoder-plus-plus]: Remove: archive file [/home/abi/fetcher/tmp/decoder-plus-plus-1.7.0.tar.gz]
+[2024-04-07 20:17:07] INFO root fetch - main [MainThread]: End processing [decoder-plus-plus]: success
+[2024-04-07 20:17:07] INFO root fetch - main [MainThread]: Store serial: [22658219]
