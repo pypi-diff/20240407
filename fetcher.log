@@ -17167,3 +17167,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 19:48:40] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.5.dev9.tar.gz]
 [2024-04-07 19:48:40] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-07 19:48:40] INFO root fetch - main [MainThread]: Store serial: [22658057]
+[2024-04-07 19:50:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658057]
+[2024-04-07 19:50:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 19:50:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dash-spread-grid
+[2024-04-07 19:50:49] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-07 19:50:49] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/a3/3e/bad9b494f58cb28ab68104dcc5042615d559a9b5acb19fbbdd0684944b5a/dash_spread_grid-0.0.6.tar.gz
+[2024-04-07 19:50:49] WARNING root fetch - processPackages [dash-spread-grid]: Timeout reached during download
+[2024-04-07 19:50:50] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/df/a5/3f85fec96aad094f1dd84a75a7aea5b9bf3471a373d96ec31effe8dde0d4/dash_spread_grid-0.0.7.tar.gz
+[2024-04-07 19:50:50] WARNING root fetch - processPackages [dash-spread-grid]: Timeout reached during download
+[2024-04-07 19:50:50] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-04-07 19:50:50] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.6.tar.gz tmp/dash_spread_grid-0.0.7.tar.gz --markdown 20240407/d/dash-spread-grid/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2024-04-07 19:50:51] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.6.tar.gz]
+[2024-04-07 19:50:51] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.7.tar.gz]
+[2024-04-07 19:50:51] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-04-07 19:50:51] INFO root fetch - main [MainThread]: Store serial: [22658060]
