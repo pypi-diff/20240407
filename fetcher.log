@@ -8318,3 +8318,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 10:46:28] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
 [2024-04-07 10:46:28] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2024-04-07 10:46:28] INFO root fetch - main [MainThread]: Store serial: [22654830]
+[2024-04-07 10:48:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654830]
+[2024-04-07 10:48:37] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 10:48:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tk-config-tools
+[2024-04-07 10:48:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly-cpu
+[2024-04-07 10:48:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qz-pdf-export
+[2024-04-07 10:48:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Mopidy-SevenSegmentDisplay
+[2024-04-07 10:48:37] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-04-07 10:48:37] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Downloading https://files.pythonhosted.org/packages/d2/51/9564e08df7174f4807bfc55ee0b606eeb7c8ffcb82ebaf310e79830ec94d/Mopidy-SevenSegmentDisplay-0.7.3.tar.gz
+[2024-04-07 10:48:37] WARNING root fetch - processPackages [tk-config-tools]: Skipping, unable to determine old version
+[2024-04-07 10:48:37] INFO root fetch - main [MainThread]: End processing [tk-config-tools] error
+[2024-04-07 10:48:37] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.17.0.dev20240407] Old Version: [2.17.0.dev20240406]
+[2024-04-07 10:48:37] INFO root fetch - processPackages [qz-pdf-export]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-07 10:48:37] WARNING root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Timeout reached during download
+[2024-04-07 10:48:37] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/c1/82/83282d142165905efaa977f4e6d87414411b474e1508f3e7aff0cf8954e6/tf_nightly_cpu-2.17.0.dev20240406-cp39-cp39-win_amd64.whl
+[2024-04-07 10:48:37] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Downloading https://files.pythonhosted.org/packages/98/bd/41c3cf8eedef53162e2f7b5a07d5f588057fa7183fd8b9b340ef813171eb/Mopidy-SevenSegmentDisplay-0.7.4.tar.gz
+[2024-04-07 10:48:37] INFO root fetch - processPackages [qz-pdf-export]: Downloading https://files.pythonhosted.org/packages/35/b8/571d8b721b3fadbd13933f877d7acf834ff42b6578d4c1076edd39681f1e/qz_pdf_export-0.1.8.tar.gz
+[2024-04-07 10:48:37] WARNING root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Timeout reached during download
+[2024-04-07 10:48:37] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: executing diffoscope
+[2024-04-07 10:48:37] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Mopidy-SevenSegmentDisplay-0.7.3.tar.gz tmp/Mopidy-SevenSegmentDisplay-0.7.4.tar.gz --markdown 20240407/M/Mopidy-SevenSegmentDisplay/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2024-04-07 10:48:37] WARNING root fetch - processPackages [tf-nightly-cpu]: Timeout reached during download
+[2024-04-07 10:48:37] WARNING root fetch - processPackages [qz-pdf-export]: Timeout reached during download
+[2024-04-07 10:48:37] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/bb/25/bf9a408a835aa8644e2032acc7fc03e5d31c99feefcce60feaa9160f81bc/tf_nightly_cpu-2.17.0.dev20240407-cp39-cp39-win_amd64.whl
+[2024-04-07 10:48:38] INFO root fetch - processPackages [qz-pdf-export]: Downloading https://files.pythonhosted.org/packages/6a/db/a7f65bb00098a850ebb8f3e3ac5538f611176778af5c278c50c56c360c0a/qz_pdf_export-0.1.9.tar.gz
+[2024-04-07 10:48:38] WARNING root fetch - processPackages [tf-nightly-cpu]: Timeout reached during download
+[2024-04-07 10:48:38] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2024-04-07 10:48:38] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.17.0.dev20240406-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.17.0.dev20240407-cp39-cp39-win_amd64.whl.zip --markdown 20240407/t/tf-nightly-cpu/2.17.0.dev20240406-2.17.0.dev20240407/diff.md --exclude *.pyd
+[2024-04-07 10:48:38] WARNING root fetch - processPackages [qz-pdf-export]: Timeout reached during download
+[2024-04-07 10:48:38] INFO root fetch - processPackages [qz-pdf-export]: executing diffoscope
+[2024-04-07 10:48:38] INFO root fetch - processPackages [qz-pdf-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qz_pdf_export-0.1.8.tar.gz tmp/qz_pdf_export-0.1.9.tar.gz --markdown 20240407/q/qz-pdf-export/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-07 10:48:38] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Remove: archive file [/home/abi/fetcher/tmp/Mopidy-SevenSegmentDisplay-0.7.3.tar.gz]
+[2024-04-07 10:48:38] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Remove: archive file [/home/abi/fetcher/tmp/Mopidy-SevenSegmentDisplay-0.7.4.tar.gz]
+[2024-04-07 10:48:38] INFO root fetch - main [MainThread]: End processing [Mopidy-SevenSegmentDisplay]: success
+[2024-04-07 10:48:38] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240406-cp39-cp39-win_amd64.whl.zip]
+[2024-04-07 10:48:38] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240407-cp39-cp39-win_amd64.whl.zip]
+[2024-04-07 10:48:38] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2024-04-07 10:48:38] INFO root fetch - processPackages [qz-pdf-export]: Remove: archive file [/home/abi/fetcher/tmp/qz_pdf_export-0.1.8.tar.gz]
+[2024-04-07 10:48:38] INFO root fetch - processPackages [qz-pdf-export]: Remove: archive file [/home/abi/fetcher/tmp/qz_pdf_export-0.1.9.tar.gz]
+[2024-04-07 10:48:38] INFO root fetch - main [MainThread]: End processing [qz-pdf-export]: success
+[2024-04-07 10:48:38] INFO root fetch - main [MainThread]: Store serial: [22654846]
