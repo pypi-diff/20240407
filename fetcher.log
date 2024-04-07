@@ -15096,3 +15096,133 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:46:05] INFO root fetch - processPackages [affixapi]: Remove: archive file [/home/abi/fetcher/tmp/affixapi-1.1.50.tar.gz]
 [2024-04-07 17:46:05] INFO root fetch - main [MainThread]: End processing [affixapi]: success
 [2024-04-07 17:46:05] INFO root fetch - main [MainThread]: Store serial: [22657306]
+[2024-04-07 17:48:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657306]
+[2024-04-07 17:48:13] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2024-04-07 17:48:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipaddress-finder-dsa
+[2024-04-07 17:48:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vectara-cli
+[2024-04-07 17:48:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: camlab
+[2024-04-07 17:48:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aett-postgres
+[2024-04-07 17:48:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aett-domain
+[2024-04-07 17:48:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aett-dynamodb
+[2024-04-07 17:48:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aett-s3
+[2024-04-07 17:48:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aett-eventstore
+[2024-04-07 17:48:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: navis
+[2024-04-07 17:48:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: aett-mongodb
+[2024-04-07 17:48:13] INFO root fetch - processPackages [camlab]: New version: [0.0.8.3] Old Version: [0.0.8.2]
+[2024-04-07 17:48:13] INFO root fetch - processPackages [vectara-cli]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-07 17:48:13] INFO root fetch - processPackages [aett-dynamodb]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-04-07 17:48:13] INFO root fetch - processPackages [camlab]: Downloading https://files.pythonhosted.org/packages/97/e1/58ff16fb4e1c6605fec37d3235c7a2f05c5a8d17586228d01df327388781/camlab-0.0.8.2.tar.gz
+[2024-04-07 17:48:13] INFO root fetch - processPackages [aett-postgres]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-04-07 17:48:13] INFO root fetch - processPackages [aett-domain]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-04-07 17:48:13] INFO root fetch - processPackages [aett-eventstore]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-04-07 17:48:13] WARNING root fetch - processPackages [aett-s3]: Skipping, unable to determine old version
+[2024-04-07 17:48:13] INFO root fetch - processPackages [aett-s3]: Start processing: tui-dsmt
+[2024-04-07 17:48:13] INFO root fetch - main [MainThread]: End processing [aett-s3] error
+[2024-04-07 17:48:13] INFO root fetch - processPackages [aett-mongodb]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-04-07 17:48:13] INFO root fetch - processPackages [navis]: New version: [1.6.0] Old Version: [1.5.0]
+[2024-04-07 17:48:13] INFO root fetch - processPackages [tui-dsmt]: New version: [202404070905] Old Version: [202404051439]
+[2024-04-07 17:48:13] INFO root fetch - processPackages [vectara-cli]: Downloading https://files.pythonhosted.org/packages/75/c7/b2fae675af685f9b558407e320e3b29f873f9b0eb795994a220c7e5a675e/vectara-cli-0.1.7.tar.gz
+[2024-04-07 17:48:14] WARNING root fetch - processPackages [camlab]: Timeout reached during download
+[2024-04-07 17:48:14] INFO root fetch - processPackages [tui-dsmt]: Downloading https://files.pythonhosted.org/packages/cf/0b/bf29bc6f883c5c001508286388669653864486c1b65b6f1917697df73de2/tui_dsmt-202404051439.tar.gz
+[2024-04-07 17:48:14] WARNING root fetch - processPackages [ipaddress-finder-dsa]: Skipping, unable to determine old version
+[2024-04-07 17:48:14] INFO root fetch - processPackages [ipaddress-finder-dsa]: Start processing: tui-dsmt
+[2024-04-07 17:48:14] INFO root fetch - main [MainThread]: End processing [ipaddress-finder-dsa] error
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-postgres]: Downloading https://files.pythonhosted.org/packages/b6/5f/834de15ef29fe2741d353cdd2909b05c12b58f5c97b406de2f347d078e7a/aett-postgres-0.6.0.tar.gz
+[2024-04-07 17:48:14] WARNING root fetch - processPackages [vectara-cli]: Timeout reached during download
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-dynamodb]: Downloading https://files.pythonhosted.org/packages/fe/c5/5a01aa118771679f0a03c5aacdc8a5ff1ba9c3c54801a725362e74022b24/aett-dynamodb-0.6.0.tar.gz
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-eventstore]: Downloading https://files.pythonhosted.org/packages/87/48/28380dccba11c6008ef025e6f5469e5e5ae4a22e5618ab25f4dd6c74c83d/aett-eventstore-0.6.0.tar.gz
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-domain]: Downloading https://files.pythonhosted.org/packages/d5/3e/95ec6b98f4bd05678380ae8bcaccde79ff73b5338476db3c452a8b9ac755/aett-domain-0.6.0.tar.gz
+[2024-04-07 17:48:14] INFO root fetch - processPackages [tui-dsmt]: New version: [202404071540] Old Version: [202404071539]
+[2024-04-07 17:48:14] INFO root fetch - processPackages [navis]: Downloading https://files.pythonhosted.org/packages/27/ad/746dc8903cc6f639bd8caba987ec79f4233d5399a2b94e99e66b5c63951a/navis-1.5.0.tar.gz
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-mongodb]: Downloading https://files.pythonhosted.org/packages/d5/28/24f2f65a7355ca40ec5fc5a8e7e70b04cedcb0c1fffa4778910e76a715e8/aett-mongodb-0.6.0.tar.gz
+[2024-04-07 17:48:14] INFO root fetch - processPackages [camlab]: Downloading https://files.pythonhosted.org/packages/fb/1b/7fa4192650739e8a43a67f0f4ff4010e250dd8e49c89e4c39bc0ed16186c/camlab-0.0.8.3.tar.gz
+[2024-04-07 17:48:14] WARNING root fetch - processPackages [aett-postgres]: Timeout reached during download
+[2024-04-07 17:48:14] WARNING root fetch - processPackages [aett-dynamodb]: Timeout reached during download
+[2024-04-07 17:48:14] WARNING root fetch - processPackages [tui-dsmt]: Timeout reached during download
+[2024-04-07 17:48:14] INFO root fetch - processPackages [vectara-cli]: Downloading https://files.pythonhosted.org/packages/2c/ee/38034782be8ce22c0047bcd128a8070a942598181089e251ad6a5806d92a/vectara-cli-0.1.8.tar.gz
+[2024-04-07 17:48:14] WARNING root fetch - processPackages [aett-eventstore]: Timeout reached during download
+[2024-04-07 17:48:14] INFO root fetch - processPackages [tui-dsmt]: Downloading https://files.pythonhosted.org/packages/6f/42/77f215f846b06b5f8e6e7707562df8b0f51450e34801c98554d54cfa6fa0/tui_dsmt-202404071539.tar.gz
+[2024-04-07 17:48:14] INFO root fetch - processPackages [tui-dsmt]: Downloading https://files.pythonhosted.org/packages/34/eb/254721c505a474e5698dde7da6620b8196e2c350878ad7ba0341c36c3f32/tui_dsmt-202404070905.tar.gz
+[2024-04-07 17:48:14] WARNING root fetch - processPackages [camlab]: Timeout reached during download
+[2024-04-07 17:48:14] INFO root fetch - processPackages [camlab]: executing diffoscope
+[2024-04-07 17:48:14] INFO root fetch - processPackages [camlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camlab-0.0.8.2.tar.gz tmp/camlab-0.0.8.3.tar.gz --markdown 20240407/c/camlab/0.0.8.2-0.0.8.3/diff.md --exclude *.pyd
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-postgres]: Downloading https://files.pythonhosted.org/packages/0a/8d/41dbd1114e5e27e72bb8cd2a3d98dcfaff6ae76768d60c18ab7b33359a63/aett-postgres-0.7.0.tar.gz
+[2024-04-07 17:48:14] WARNING root fetch - processPackages [aett-mongodb]: Timeout reached during download
+[2024-04-07 17:48:14] WARNING root fetch - processPackages [vectara-cli]: Timeout reached during download
+[2024-04-07 17:48:14] WARNING root fetch - processPackages [aett-domain]: Timeout reached during download
+[2024-04-07 17:48:14] INFO root fetch - processPackages [vectara-cli]: executing diffoscope
+[2024-04-07 17:48:14] INFO root fetch - processPackages [vectara-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vectara-cli-0.1.7.tar.gz tmp/vectara-cli-0.1.8.tar.gz --markdown 20240407/v/vectara-cli/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-dynamodb]: Downloading https://files.pythonhosted.org/packages/e1/72/e600c2b0618207ca9b3a40e83260322104870380162cd0e6210c78a2481d/aett-dynamodb-0.7.0.tar.gz
+[2024-04-07 17:48:14] WARNING root fetch - processPackages [tui-dsmt]: Timeout reached during download
+[2024-04-07 17:48:14] WARNING root fetch - processPackages [aett-postgres]: Timeout reached during download
+[2024-04-07 17:48:14] INFO root fetch - processPackages [tui-dsmt]: executing diffoscope
+[2024-04-07 17:48:14] INFO root fetch - processPackages [tui-dsmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tui_dsmt-202404051439.tar.gz tmp/tui_dsmt-202404070905.tar.gz --markdown 20240407/t/tui-dsmt/202404051439-202404070905/diff.md --exclude *.pyd
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-postgres]: executing diffoscope
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aett-postgres-0.6.0.tar.gz tmp/aett-postgres-0.7.0.tar.gz --markdown 20240407/a/aett-postgres/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2024-04-07 17:48:14] WARNING root fetch - processPackages [tui-dsmt]: Timeout reached during download
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-eventstore]: Downloading https://files.pythonhosted.org/packages/ad/fc/98dd87b5bd8d0ded2384cc3c45ba13228509a72e64618fa2ebf1157317f7/aett-eventstore-0.7.0.tar.gz
+[2024-04-07 17:48:14] WARNING root fetch - processPackages [aett-dynamodb]: Timeout reached during download
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-dynamodb]: executing diffoscope
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-dynamodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aett-dynamodb-0.6.0.tar.gz tmp/aett-dynamodb-0.7.0.tar.gz --markdown 20240407/a/aett-dynamodb/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-mongodb]: Downloading https://files.pythonhosted.org/packages/0f/d2/f4f72f0dad2ac6f46d15ca5e2402cd76cfcdd0fd236ec0d575faf9b6b20a/aett-mongodb-0.7.0.tar.gz
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-domain]: Downloading https://files.pythonhosted.org/packages/bb/75/10c374e9b836b7943c2d3ea7731c1dedf2c6453648203d750e28f1718a69/aett-domain-0.7.0.tar.gz
+[2024-04-07 17:48:14] WARNING root fetch - processPackages [aett-eventstore]: Timeout reached during download
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-eventstore]: executing diffoscope
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-eventstore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aett-eventstore-0.6.0.tar.gz tmp/aett-eventstore-0.7.0.tar.gz --markdown 20240407/a/aett-eventstore/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2024-04-07 17:48:14] INFO root fetch - processPackages [tui-dsmt]: Downloading https://files.pythonhosted.org/packages/98/b1/234673ab8537cf87a8cbfdf86357445bdf610fe48600511080e874b415ee/tui_dsmt-202404071540-py3-none-any.whl
+[2024-04-07 17:48:14] WARNING root fetch - processPackages [aett-domain]: Timeout reached during download
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-domain]: executing diffoscope
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-domain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aett-domain-0.6.0.tar.gz tmp/aett-domain-0.7.0.tar.gz --markdown 20240407/a/aett-domain/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2024-04-07 17:48:14] WARNING root fetch - processPackages [aett-mongodb]: Timeout reached during download
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-mongodb]: executing diffoscope
+[2024-04-07 17:48:14] INFO root fetch - processPackages [aett-mongodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aett-mongodb-0.6.0.tar.gz tmp/aett-mongodb-0.7.0.tar.gz --markdown 20240407/a/aett-mongodb/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2024-04-07 17:48:15] WARNING root fetch - processPackages [tui-dsmt]: Timeout reached during download
+[2024-04-07 17:48:15] INFO root fetch - processPackages [tui-dsmt]: executing diffoscope
+[2024-04-07 17:48:15] INFO root fetch - processPackages [tui-dsmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tui_dsmt-202404071539.tar.gz tmp/tui_dsmt-202404071540-py3-none-any.whl.zip --markdown 20240407/t/tui-dsmt/202404071539-202404071540/diff.md --exclude *.pyd
+[2024-04-07 17:48:15] INFO root fetch - processPackages [camlab]: Remove: archive file [/home/abi/fetcher/tmp/camlab-0.0.8.2.tar.gz]
+[2024-04-07 17:48:15] INFO root fetch - processPackages [camlab]: Remove: archive file [/home/abi/fetcher/tmp/camlab-0.0.8.3.tar.gz]
+[2024-04-07 17:48:15] INFO root fetch - processPackages [camlab]: Start processing: sourcesage
+[2024-04-07 17:48:15] INFO root fetch - main [MainThread]: End processing [camlab]: success
+[2024-04-07 17:48:15] INFO root fetch - processPackages [sourcesage]: New version: [4.1.1] Old Version: [4.0.9]
+[2024-04-07 17:48:15] INFO root fetch - processPackages [aett-postgres]: Remove: archive file [/home/abi/fetcher/tmp/aett-postgres-0.6.0.tar.gz]
+[2024-04-07 17:48:15] INFO root fetch - processPackages [aett-postgres]: Remove: archive file [/home/abi/fetcher/tmp/aett-postgres-0.7.0.tar.gz]
+[2024-04-07 17:48:15] INFO root fetch - main [MainThread]: End processing [aett-postgres]: success
+[2024-04-07 17:48:15] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/ca/64/8ca9fec7286b0648ebe8224d4bd0e7190c6d20738e2c7ceb5f5c89f2346b/sourcesage-4.0.9.tar.gz
+[2024-04-07 17:48:15] INFO root fetch - processPackages [aett-dynamodb]: Remove: archive file [/home/abi/fetcher/tmp/aett-dynamodb-0.6.0.tar.gz]
+[2024-04-07 17:48:15] INFO root fetch - processPackages [aett-dynamodb]: Remove: archive file [/home/abi/fetcher/tmp/aett-dynamodb-0.7.0.tar.gz]
+[2024-04-07 17:48:15] INFO root fetch - main [MainThread]: End processing [aett-dynamodb]: success
+[2024-04-07 17:48:15] WARNING root fetch - processPackages [sourcesage]: Timeout reached during download
+[2024-04-07 17:48:15] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202404051439.tar.gz]
+[2024-04-07 17:48:15] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202404070905.tar.gz]
+[2024-04-07 17:48:15] INFO root fetch - main [MainThread]: End processing [tui-dsmt]: success
+[2024-04-07 17:48:15] INFO root fetch - processPackages [vectara-cli]: Remove: archive file [/home/abi/fetcher/tmp/vectara-cli-0.1.7.tar.gz]
+[2024-04-07 17:48:15] INFO root fetch - processPackages [vectara-cli]: Remove: archive file [/home/abi/fetcher/tmp/vectara-cli-0.1.8.tar.gz]
+[2024-04-07 17:48:15] INFO root fetch - main [MainThread]: End processing [vectara-cli]: success
+[2024-04-07 17:48:15] INFO root fetch - processPackages [aett-domain]: Remove: archive file [/home/abi/fetcher/tmp/aett-domain-0.6.0.tar.gz]
+[2024-04-07 17:48:15] INFO root fetch - processPackages [aett-domain]: Remove: archive file [/home/abi/fetcher/tmp/aett-domain-0.7.0.tar.gz]
+[2024-04-07 17:48:15] INFO root fetch - main [MainThread]: End processing [aett-domain]: success
+[2024-04-07 17:48:15] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/14/f3/a0dc5a0047753de52801ec3b0d26dabb99a57a452880487849f1927f0432/sourcesage-4.1.1.tar.gz
+[2024-04-07 17:48:15] INFO root fetch - processPackages [aett-eventstore]: Remove: archive file [/home/abi/fetcher/tmp/aett-eventstore-0.6.0.tar.gz]
+[2024-04-07 17:48:15] INFO root fetch - processPackages [aett-eventstore]: Remove: archive file [/home/abi/fetcher/tmp/aett-eventstore-0.7.0.tar.gz]
+[2024-04-07 17:48:15] INFO root fetch - main [MainThread]: End processing [aett-eventstore]: success
+[2024-04-07 17:48:15] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202404071539.tar.gz]
+[2024-04-07 17:48:15] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202404071540-py3-none-any.whl.zip]
+[2024-04-07 17:48:15] INFO root fetch - main [MainThread]: End processing [tui-dsmt]: success
+[2024-04-07 17:48:15] INFO root fetch - processPackages [aett-mongodb]: Remove: archive file [/home/abi/fetcher/tmp/aett-mongodb-0.6.0.tar.gz]
+[2024-04-07 17:48:15] INFO root fetch - processPackages [aett-mongodb]: Remove: archive file [/home/abi/fetcher/tmp/aett-mongodb-0.7.0.tar.gz]
+[2024-04-07 17:48:15] INFO root fetch - main [MainThread]: End processing [aett-mongodb]: success
+[2024-04-07 17:48:15] WARNING root fetch - processPackages [sourcesage]: Timeout reached during download
+[2024-04-07 17:48:15] INFO root fetch - processPackages [sourcesage]: executing diffoscope
+[2024-04-07 17:48:15] INFO root fetch - processPackages [sourcesage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sourcesage-4.0.9.tar.gz tmp/sourcesage-4.1.1.tar.gz --markdown 20240407/s/sourcesage/4.0.9-4.1.1/diff.md --exclude *.pyd
+[2024-04-07 17:48:16] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.0.9.tar.gz]
+[2024-04-07 17:48:16] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.1.1.tar.gz]
+[2024-04-07 17:48:16] INFO root fetch - main [MainThread]: End processing [sourcesage]: success
+[2024-04-07 17:48:16] WARNING root fetch - processPackages [navis]: Timeout reached during download
+[2024-04-07 17:48:16] INFO root fetch - processPackages [navis]: Downloading https://files.pythonhosted.org/packages/3d/9f/b3b1c6559b667f4154471168309f4848ae7c5b725c3d303f51b329c644ef/navis-1.6.0.tar.gz
+[2024-04-07 17:48:16] WARNING root fetch - processPackages [navis]: Timeout reached during download
+[2024-04-07 17:48:16] INFO root fetch - processPackages [navis]: executing diffoscope
+[2024-04-07 17:48:16] INFO root fetch - processPackages [navis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/navis-1.5.0.tar.gz tmp/navis-1.6.0.tar.gz --markdown 20240407/n/navis/1.5.0-1.6.0/diff.md --exclude *.pyd
+[2024-04-07 17:48:18] INFO root fetch - processPackages [navis]: Remove: archive file [/home/abi/fetcher/tmp/navis-1.5.0.tar.gz]
+[2024-04-07 17:48:18] INFO root fetch - processPackages [navis]: Remove: archive file [/home/abi/fetcher/tmp/navis-1.6.0.tar.gz]
+[2024-04-07 17:48:18] INFO root fetch - main [MainThread]: End processing [navis]: success
+[2024-04-07 17:48:18] INFO root fetch - main [MainThread]: Store serial: [22657346]
