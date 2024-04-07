@@ -19753,3 +19753,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 22:21:42] INFO root fetch - processPackages [hex-renderer-py]: Remove: archive file [/home/abi/fetcher/tmp/hex_renderer_py-0.1.2-cp38-none-win32.whl.zip]
 [2024-04-07 22:21:42] INFO root fetch - main [MainThread]: End processing [hex-renderer-py]: success
 [2024-04-07 22:21:42] INFO root fetch - main [MainThread]: Store serial: [22659023]
+[2024-04-07 22:23:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659023]
+[2024-04-07 22:23:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 22:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kodexa
+[2024-04-07 22:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: electrostats
+[2024-04-07 22:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: siglent-scpi
+[2024-04-07 22:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chaturbate-poller
+[2024-04-07 22:23:51] INFO root fetch - processPackages [chaturbate-poller]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-07 22:23:51] INFO root fetch - processPackages [kodexa]: New version: [7.0.8590158740] Old Version: [7.0.8551368104]
+[2024-04-07 22:23:51] INFO root fetch - processPackages [chaturbate-poller]: Downloading https://files.pythonhosted.org/packages/f2/bb/d8cac44684624f4f3cbd013ac724e73225fc25f4495632a638bfc66de55e/chaturbate_poller-0.2.0.tar.gz
+[2024-04-07 22:23:51] WARNING root fetch - processPackages [siglent-scpi]: Skipping, unable to determine old version
+[2024-04-07 22:23:51] INFO root fetch - main [MainThread]: End processing [siglent-scpi] error
+[2024-04-07 22:23:51] INFO root fetch - processPackages [electrostats]: New version: [0.2] Old Version: [0.1]
+[2024-04-07 22:23:51] INFO root fetch - processPackages [kodexa]: Downloading https://files.pythonhosted.org/packages/77/ac/d2e19432427672cd305be1b5ef259d6ae70b6160510af8d25521fad12438/kodexa-7.0.8551368104.tar.gz
+[2024-04-07 22:23:51] WARNING root fetch - processPackages [chaturbate-poller]: Timeout reached during download
+[2024-04-07 22:23:51] WARNING root fetch - processPackages [kodexa]: Timeout reached during download
+[2024-04-07 22:23:51] INFO root fetch - processPackages [electrostats]: Downloading https://files.pythonhosted.org/packages/b2/ec/856956a5933c6245eb4bf525146cf8cf60992282e9528f5d89c409b2dfaf/electrostats-0.1.tar.gz
+[2024-04-07 22:23:51] INFO root fetch - processPackages [chaturbate-poller]: Downloading https://files.pythonhosted.org/packages/3b/8d/5336c2a6f9e18062694a0e8e0427c23cf8f08456dd63c920b935feb8cf9c/chaturbate_poller-0.3.0.tar.gz
+[2024-04-07 22:23:52] INFO root fetch - processPackages [kodexa]: Downloading https://files.pythonhosted.org/packages/82/b1/e56c2b15c20c51192983529e47a26d08bfa822b0cc3724ce27edc26230cb/kodexa-7.0.8590158740.tar.gz
+[2024-04-07 22:23:52] WARNING root fetch - processPackages [chaturbate-poller]: Timeout reached during download
+[2024-04-07 22:23:52] INFO root fetch - processPackages [chaturbate-poller]: executing diffoscope
+[2024-04-07 22:23:52] INFO root fetch - processPackages [chaturbate-poller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chaturbate_poller-0.2.0.tar.gz tmp/chaturbate_poller-0.3.0.tar.gz --markdown 20240407/c/chaturbate-poller/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2024-04-07 22:23:52] WARNING root fetch - processPackages [kodexa]: Timeout reached during download
+[2024-04-07 22:23:52] INFO root fetch - processPackages [kodexa]: executing diffoscope
+[2024-04-07 22:23:52] INFO root fetch - processPackages [kodexa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kodexa-7.0.8551368104.tar.gz tmp/kodexa-7.0.8590158740.tar.gz --markdown 20240407/k/kodexa/7.0.8551368104-7.0.8590158740/diff.md --exclude *.pyd
+[2024-04-07 22:23:52] WARNING root fetch - processPackages [electrostats]: Timeout reached during download
+[2024-04-07 22:23:52] INFO root fetch - processPackages [electrostats]: Downloading https://files.pythonhosted.org/packages/9d/db/9c40c2b3e4934b2e873755bc77d0dea283097c49ca313a58bc61c6feb47a/electrostats-0.2.tar.gz
+[2024-04-07 22:23:52] WARNING root fetch - processPackages [electrostats]: Timeout reached during download
+[2024-04-07 22:23:52] INFO root fetch - processPackages [electrostats]: executing diffoscope
+[2024-04-07 22:23:52] INFO root fetch - processPackages [electrostats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/electrostats-0.1.tar.gz tmp/electrostats-0.2.tar.gz --markdown 20240407/e/electrostats/0.1-0.2/diff.md --exclude *.pyd
+[2024-04-07 22:23:52] INFO root fetch - processPackages [chaturbate-poller]: Remove: archive file [/home/abi/fetcher/tmp/chaturbate_poller-0.2.0.tar.gz]
+[2024-04-07 22:23:52] INFO root fetch - processPackages [chaturbate-poller]: Remove: archive file [/home/abi/fetcher/tmp/chaturbate_poller-0.3.0.tar.gz]
+[2024-04-07 22:23:52] INFO root fetch - main [MainThread]: End processing [chaturbate-poller]: success
+[2024-04-07 22:23:52] INFO root fetch - processPackages [kodexa]: Remove: archive file [/home/abi/fetcher/tmp/kodexa-7.0.8551368104.tar.gz]
+[2024-04-07 22:23:52] INFO root fetch - processPackages [kodexa]: Remove: archive file [/home/abi/fetcher/tmp/kodexa-7.0.8590158740.tar.gz]
+[2024-04-07 22:23:52] INFO root fetch - main [MainThread]: End processing [kodexa]: success
+[2024-04-07 22:23:53] INFO root fetch - processPackages [electrostats]: Remove: archive file [/home/abi/fetcher/tmp/electrostats-0.1.tar.gz]
+[2024-04-07 22:23:53] INFO root fetch - processPackages [electrostats]: Remove: archive file [/home/abi/fetcher/tmp/electrostats-0.2.tar.gz]
+[2024-04-07 22:23:53] INFO root fetch - main [MainThread]: End processing [electrostats]: success
+[2024-04-07 22:23:53] INFO root fetch - main [MainThread]: Store serial: [22659067]
