@@ -7136,3 +7136,64 @@
 [2024-04-07 09:21:36] WARNING root fetch - processPackages [dentalcaries]: Skipping, unable to determine old version
 [2024-04-07 09:21:36] INFO root fetch - main [MainThread]: End processing [dentalcaries] error
 [2024-04-07 09:21:36] INFO root fetch - main [MainThread]: Store serial: [22654295]
+[2024-04-07 09:23:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654295]
+[2024-04-07 09:23:45] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 09:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gen-random-string
+[2024-04-07 09:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dekpkglock
+[2024-04-07 09:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: phdu
+[2024-04-07 09:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ScrollableContainers
+[2024-04-07 09:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: linktools
+[2024-04-07 09:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rov-collector
+[2024-04-07 09:23:45] WARNING root fetch - processPackages [gen-random-string]: Skipping, unable to determine old version
+[2024-04-07 09:23:45] INFO root fetch - main [MainThread]: End processing [gen-random-string] error
+[2024-04-07 09:23:45] INFO root fetch - processPackages [ScrollableContainers]: New version: [2.0.1a0] Old Version: [2.0.1]
+[2024-04-07 09:23:45] INFO root fetch - processPackages [dekpkglock]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-07 09:23:45] INFO root fetch - processPackages [phdu]: New version: [2.3.3] Old Version: [2.3.2]
+[2024-04-07 09:23:45] INFO root fetch - processPackages [rov-collector]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-04-07 09:23:45] INFO root fetch - processPackages [linktools]: New version: [0.8.3rc1] Old Version: [0.8.3rc0]
+[2024-04-07 09:23:45] INFO root fetch - processPackages [dekpkglock]: Downloading https://files.pythonhosted.org/packages/d5/fd/39757c1ed4e38ae87d7d008c4a7c99b64187d0f542e9deb2a4fff354588b/dekpkglock-0.1.6.tar.gz
+[2024-04-07 09:23:45] INFO root fetch - processPackages [ScrollableContainers]: Downloading https://files.pythonhosted.org/packages/09/f8/fb9d925a4e913f6875969b524e1b3e5731e1a18cc4fabb8c6fa8e1e78dd8/scrollablecontainers-2.0.1.tar.gz
+[2024-04-07 09:23:45] WARNING root fetch - processPackages [dekpkglock]: Timeout reached during download
+[2024-04-07 09:23:46] INFO root fetch - processPackages [phdu]: Downloading https://files.pythonhosted.org/packages/30/43/6a7fce0727b06278f5915d95b1019425520c5ebb444032d4e7829323cfdb/phdu-2.3.2.tar.gz
+[2024-04-07 09:23:46] WARNING root fetch - processPackages [ScrollableContainers]: Timeout reached during download
+[2024-04-07 09:23:46] INFO root fetch - processPackages [rov-collector]: Downloading https://files.pythonhosted.org/packages/e9/7e/65113341c405b3073abb052734506a2807a55dbfe8466937a575bf3acf24/rov_collector-1.1.3.tar.gz
+[2024-04-07 09:23:46] INFO root fetch - processPackages [ScrollableContainers]: Downloading https://files.pythonhosted.org/packages/8a/49/47d46068c31d25a1afa37a62d831e7fcd5aa1611d1a2b6e5f270cbe813b8/scrollablecontainers-2.0.1a0.tar.gz
+[2024-04-07 09:23:46] WARNING root fetch - processPackages [phdu]: Timeout reached during download
+[2024-04-07 09:23:46] INFO root fetch - processPackages [dekpkglock]: Downloading https://files.pythonhosted.org/packages/21/14/7c88884544d2ccbcff66d952ac28f912c9e6935254b190912484e3f37518/dekpkglock-0.1.7.tar.gz
+[2024-04-07 09:23:46] INFO root fetch - processPackages [linktools]: Downloading https://files.pythonhosted.org/packages/ba/bd/f0ebe0f10ddc204fae6e8b30f1bb787ab27701f1f7f2b44573e1b2fdf670/linktools-0.8.3rc0.tar.gz
+[2024-04-07 09:23:46] WARNING root fetch - processPackages [rov-collector]: Timeout reached during download
+[2024-04-07 09:23:46] WARNING root fetch - processPackages [dekpkglock]: Timeout reached during download
+[2024-04-07 09:23:46] WARNING root fetch - processPackages [ScrollableContainers]: Timeout reached during download
+[2024-04-07 09:23:46] INFO root fetch - processPackages [ScrollableContainers]: executing diffoscope
+[2024-04-07 09:23:46] INFO root fetch - processPackages [ScrollableContainers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrollablecontainers-2.0.1.tar.gz tmp/scrollablecontainers-2.0.1a0.tar.gz --markdown 20240407/S/ScrollableContainers/2.0.1-2.0.1a0/diff.md --exclude *.pyd
+[2024-04-07 09:23:46] INFO root fetch - processPackages [dekpkglock]: executing diffoscope
+[2024-04-07 09:23:46] INFO root fetch - processPackages [dekpkglock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dekpkglock-0.1.6.tar.gz tmp/dekpkglock-0.1.7.tar.gz --markdown 20240407/d/dekpkglock/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2024-04-07 09:23:46] INFO root fetch - processPackages [phdu]: Downloading https://files.pythonhosted.org/packages/dd/ee/501bdd0c17b385adbdd46d130cc75aabebf65bb62e69c4b9fb8b36135d63/phdu-2.3.3.tar.gz
+[2024-04-07 09:23:46] WARNING root fetch - processPackages [linktools]: Timeout reached during download
+[2024-04-07 09:23:46] INFO root fetch - processPackages [rov-collector]: Downloading https://files.pythonhosted.org/packages/d2/61/d457b9a28e579bd3830027c47f805f281155c0bceafb8ea5ee8385e21fc1/rov_collector-1.1.4.tar.gz
+[2024-04-07 09:23:46] WARNING root fetch - processPackages [phdu]: Timeout reached during download
+[2024-04-07 09:23:46] INFO root fetch - processPackages [phdu]: executing diffoscope
+[2024-04-07 09:23:46] INFO root fetch - processPackages [phdu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phdu-2.3.2.tar.gz tmp/phdu-2.3.3.tar.gz --markdown 20240407/p/phdu/2.3.2-2.3.3/diff.md --exclude *.pyd
+[2024-04-07 09:23:46] INFO root fetch - processPackages [linktools]: Downloading https://files.pythonhosted.org/packages/af/8a/88acdd98737141a3340555cbb0855df67ccdada8a7159450484f18f99a3b/linktools-0.8.3rc1.tar.gz
+[2024-04-07 09:23:46] WARNING root fetch - processPackages [rov-collector]: Timeout reached during download
+[2024-04-07 09:23:46] INFO root fetch - processPackages [rov-collector]: executing diffoscope
+[2024-04-07 09:23:46] INFO root fetch - processPackages [rov-collector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rov_collector-1.1.3.tar.gz tmp/rov_collector-1.1.4.tar.gz --markdown 20240407/r/rov-collector/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2024-04-07 09:23:46] WARNING root fetch - processPackages [linktools]: Timeout reached during download
+[2024-04-07 09:23:46] INFO root fetch - processPackages [linktools]: executing diffoscope
+[2024-04-07 09:23:46] INFO root fetch - processPackages [linktools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linktools-0.8.3rc0.tar.gz tmp/linktools-0.8.3rc1.tar.gz --markdown 20240407/l/linktools/0.8.3rc0-0.8.3rc1/diff.md --exclude *.pyd
+[2024-04-07 09:23:47] INFO root fetch - processPackages [ScrollableContainers]: Remove: archive file [/home/abi/fetcher/tmp/scrollablecontainers-2.0.1.tar.gz]
+[2024-04-07 09:23:47] INFO root fetch - processPackages [ScrollableContainers]: Remove: archive file [/home/abi/fetcher/tmp/scrollablecontainers-2.0.1a0.tar.gz]
+[2024-04-07 09:23:47] INFO root fetch - main [MainThread]: End processing [ScrollableContainers]: success
+[2024-04-07 09:23:47] INFO root fetch - processPackages [dekpkglock]: Remove: archive file [/home/abi/fetcher/tmp/dekpkglock-0.1.6.tar.gz]
+[2024-04-07 09:23:47] INFO root fetch - processPackages [dekpkglock]: Remove: archive file [/home/abi/fetcher/tmp/dekpkglock-0.1.7.tar.gz]
+[2024-04-07 09:23:47] INFO root fetch - main [MainThread]: End processing [dekpkglock]: success
+[2024-04-07 09:23:47] INFO root fetch - processPackages [phdu]: Remove: archive file [/home/abi/fetcher/tmp/phdu-2.3.2.tar.gz]
+[2024-04-07 09:23:47] INFO root fetch - processPackages [phdu]: Remove: archive file [/home/abi/fetcher/tmp/phdu-2.3.3.tar.gz]
+[2024-04-07 09:23:47] INFO root fetch - main [MainThread]: End processing [phdu]: success
+[2024-04-07 09:23:47] INFO root fetch - processPackages [rov-collector]: Remove: archive file [/home/abi/fetcher/tmp/rov_collector-1.1.3.tar.gz]
+[2024-04-07 09:23:47] INFO root fetch - processPackages [rov-collector]: Remove: archive file [/home/abi/fetcher/tmp/rov_collector-1.1.4.tar.gz]
+[2024-04-07 09:23:47] INFO root fetch - main [MainThread]: End processing [rov-collector]: success
+[2024-04-07 09:23:48] INFO root fetch - processPackages [linktools]: Remove: archive file [/home/abi/fetcher/tmp/linktools-0.8.3rc0.tar.gz]
+[2024-04-07 09:23:48] INFO root fetch - processPackages [linktools]: Remove: archive file [/home/abi/fetcher/tmp/linktools-0.8.3rc1.tar.gz]
+[2024-04-07 09:23:48] INFO root fetch - main [MainThread]: End processing [linktools]: success
+[2024-04-07 09:23:48] INFO root fetch - main [MainThread]: Store serial: [22654314]
