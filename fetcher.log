@@ -21041,3 +21041,53 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 23:55:25] INFO root fetch - processPackages [alphaiq-sdk]: Remove: archive file [/home/abi/fetcher/tmp/alphaiq-sdk-0.2.7.tar.gz]
 [2024-04-07 23:55:25] INFO root fetch - main [MainThread]: End processing [alphaiq-sdk]: success
 [2024-04-07 23:55:25] INFO root fetch - main [MainThread]: Store serial: [22659607]
+[2024-04-07 23:57:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22659607]
+[2024-04-07 23:57:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 23:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blint
+[2024-04-07 23:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llm-structured-output
+[2024-04-07 23:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vigor
+[2024-04-07 23:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apple-health-extractor
+[2024-04-07 23:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rapidfuzz
+[2024-04-07 23:57:34] INFO root fetch - processPackages [apple-health-extractor]: New version: [0.1.5] Old Version: [0.1.3]
+[2024-04-07 23:57:34] INFO root fetch - processPackages [rapidfuzz]: New version: [3.8.0] Old Version: [3.7.0]
+[2024-04-07 23:57:34] INFO root fetch - processPackages [vigor]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-07 23:57:34] WARNING root fetch - processPackages [llm-structured-output]: Skipping, unable to determine old version
+[2024-04-07 23:57:34] INFO root fetch - main [MainThread]: End processing [llm-structured-output] error
+[2024-04-07 23:57:34] INFO root fetch - processPackages [blint]: New version: [2.0.7] Old Version: [2.0.6]
+[2024-04-07 23:57:34] INFO root fetch - processPackages [apple-health-extractor]: Downloading https://files.pythonhosted.org/packages/b1/02/9a7b54b3ba74826ff8f71cf4a94a46f11d2e9b99d426074a469502b392d6/apple_health_extractor-0.1.3.tar.gz
+[2024-04-07 23:57:34] WARNING root fetch - processPackages [apple-health-extractor]: Timeout reached during download
+[2024-04-07 23:57:34] INFO root fetch - processPackages [vigor]: Downloading https://files.pythonhosted.org/packages/c8/eb/df3bcea08515598cb8175f5786c3374ce79aa8447afaa3907a517100674a/vigor-0.1.1.tar.gz
+[2024-04-07 23:57:34] INFO root fetch - processPackages [blint]: Downloading https://files.pythonhosted.org/packages/1b/dc/8d3dc24752065c355544c263253866776853189b872c304a1f3298889975/blint-2.0.6.tar.gz
+[2024-04-07 23:57:34] INFO root fetch - processPackages [rapidfuzz]: Downloading https://files.pythonhosted.org/packages/65/75/e52ee00ebf8c13f8ca60b61641dfc1b8786b0d0d2fd4065cb337c861fe3e/rapidfuzz-3.7.0.tar.gz
+[2024-04-07 23:57:34] INFO root fetch - processPackages [apple-health-extractor]: Downloading https://files.pythonhosted.org/packages/b9/eb/31325469b079d1e4ec62bb7d7a7223f71d83b0104d60b8d21c5a83884032/apple_health_extractor-0.1.5.tar.gz
+[2024-04-07 23:57:34] WARNING root fetch - processPackages [vigor]: Timeout reached during download
+[2024-04-07 23:57:34] WARNING root fetch - processPackages [blint]: Timeout reached during download
+[2024-04-07 23:57:34] WARNING root fetch - processPackages [apple-health-extractor]: Timeout reached during download
+[2024-04-07 23:57:34] INFO root fetch - processPackages [apple-health-extractor]: executing diffoscope
+[2024-04-07 23:57:34] INFO root fetch - processPackages [apple-health-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apple_health_extractor-0.1.3.tar.gz tmp/apple_health_extractor-0.1.5.tar.gz --markdown 20240407/a/apple-health-extractor/0.1.3-0.1.5/diff.md --exclude *.pyd
+[2024-04-07 23:57:34] WARNING root fetch - processPackages [rapidfuzz]: Timeout reached during download
+[2024-04-07 23:57:34] INFO root fetch - processPackages [vigor]: Downloading https://files.pythonhosted.org/packages/68/c7/5261fcf16b9eb74cf923a875920508c1add9094ff463351a43b5e6da5f84/vigor-0.1.2.tar.gz
+[2024-04-07 23:57:34] INFO root fetch - processPackages [blint]: Downloading https://files.pythonhosted.org/packages/78/08/bdcaf0092e8e33959c8941947698cd563fe12fba1cd7708041619adece21/blint-2.0.7.tar.gz
+[2024-04-07 23:57:35] WARNING root fetch - processPackages [vigor]: Timeout reached during download
+[2024-04-07 23:57:35] INFO root fetch - processPackages [vigor]: executing diffoscope
+[2024-04-07 23:57:35] INFO root fetch - processPackages [vigor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vigor-0.1.1.tar.gz tmp/vigor-0.1.2.tar.gz --markdown 20240407/v/vigor/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-07 23:57:35] WARNING root fetch - processPackages [blint]: Timeout reached during download
+[2024-04-07 23:57:35] INFO root fetch - processPackages [blint]: executing diffoscope
+[2024-04-07 23:57:35] INFO root fetch - processPackages [blint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blint-2.0.6.tar.gz tmp/blint-2.0.7.tar.gz --markdown 20240407/b/blint/2.0.6-2.0.7/diff.md --exclude *.pyd
+[2024-04-07 23:57:35] INFO root fetch - processPackages [rapidfuzz]: Downloading https://files.pythonhosted.org/packages/fc/8e/de1d1ee1a7d80c990391385ad65b1f6d09726c2440aa43877cd0670a3308/rapidfuzz-3.8.0.tar.gz
+[2024-04-07 23:57:35] WARNING root fetch - processPackages [rapidfuzz]: Timeout reached during download
+[2024-04-07 23:57:35] INFO root fetch - processPackages [rapidfuzz]: executing diffoscope
+[2024-04-07 23:57:35] INFO root fetch - processPackages [rapidfuzz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidfuzz-3.7.0.tar.gz tmp/rapidfuzz-3.8.0.tar.gz --markdown 20240407/r/rapidfuzz/3.7.0-3.8.0/diff.md --exclude *.pyd
+[2024-04-07 23:57:35] INFO root fetch - processPackages [apple-health-extractor]: Remove: archive file [/home/abi/fetcher/tmp/apple_health_extractor-0.1.3.tar.gz]
+[2024-04-07 23:57:35] INFO root fetch - processPackages [apple-health-extractor]: Remove: archive file [/home/abi/fetcher/tmp/apple_health_extractor-0.1.5.tar.gz]
+[2024-04-07 23:57:35] INFO root fetch - main [MainThread]: End processing [apple-health-extractor]: success
+[2024-04-07 23:57:35] INFO root fetch - processPackages [vigor]: Remove: archive file [/home/abi/fetcher/tmp/vigor-0.1.1.tar.gz]
+[2024-04-07 23:57:35] INFO root fetch - processPackages [vigor]: Remove: archive file [/home/abi/fetcher/tmp/vigor-0.1.2.tar.gz]
+[2024-04-07 23:57:35] INFO root fetch - main [MainThread]: End processing [vigor]: success
+[2024-04-07 23:57:35] INFO root fetch - processPackages [blint]: Remove: archive file [/home/abi/fetcher/tmp/blint-2.0.6.tar.gz]
+[2024-04-07 23:57:35] INFO root fetch - processPackages [blint]: Remove: archive file [/home/abi/fetcher/tmp/blint-2.0.7.tar.gz]
+[2024-04-07 23:57:35] INFO root fetch - main [MainThread]: End processing [blint]: success
+[2024-04-07 23:57:40] INFO root fetch - processPackages [rapidfuzz]: Remove: archive file [/home/abi/fetcher/tmp/rapidfuzz-3.7.0.tar.gz]
+[2024-04-07 23:57:40] INFO root fetch - processPackages [rapidfuzz]: Remove: archive file [/home/abi/fetcher/tmp/rapidfuzz-3.8.0.tar.gz]
+[2024-04-07 23:57:40] INFO root fetch - main [MainThread]: End processing [rapidfuzz]: success
+[2024-04-07 23:57:40] INFO root fetch - main [MainThread]: Store serial: [22659630]
