@@ -3518,3 +3518,45 @@
 [2024-04-07 04:53:40] INFO root fetch - processPackages [aws-delete-all]: Remove: archive file [/home/abi/fetcher/tmp/aws-delete-all-0.5.4.1.tar.gz]
 [2024-04-07 04:53:40] INFO root fetch - main [MainThread]: End processing [aws-delete-all]: success
 [2024-04-07 04:53:40] INFO root fetch - main [MainThread]: Store serial: [22653069]
+[2024-04-07 04:55:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653069]
+[2024-04-07 04:55:50] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 04:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dataprepkitRazan
+[2024-04-07 04:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyeventmanager
+[2024-04-07 04:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: geminiai-chat-python
+[2024-04-07 04:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PygameToolsBox
+[2024-04-07 04:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zsx-pack
+[2024-04-07 04:55:50] WARNING root fetch - processPackages [zsx-pack]: Skipping, unable to determine old version
+[2024-04-07 04:55:50] INFO root fetch - main [MainThread]: End processing [zsx-pack] error
+[2024-04-07 04:55:50] INFO root fetch - processPackages [pyeventmanager]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-04-07 04:55:50] INFO root fetch - processPackages [pyeventmanager]: Downloading https://files.pythonhosted.org/packages/3d/01/9c43fe1a64ead961bf6ef7dd28bf2a06d02d193098795f00525097634508/pyeventmanager-0.5.3.tar.gz
+[2024-04-07 04:55:50] WARNING root fetch - processPackages [dataprepkitRazan]: Skipping, unable to determine old version
+[2024-04-07 04:55:50] INFO root fetch - main [MainThread]: End processing [dataprepkitRazan] error
+[2024-04-07 04:55:50] INFO root fetch - processPackages [geminiai-chat-python]: New version: [0.4] Old Version: [0.3]
+[2024-04-07 04:55:50] INFO root fetch - processPackages [PygameToolsBox]: New version: [1.1.1] Old Version: [1.1]
+[2024-04-07 04:55:51] WARNING root fetch - processPackages [pyeventmanager]: Timeout reached during download
+[2024-04-07 04:55:51] INFO root fetch - processPackages [PygameToolsBox]: Downloading https://files.pythonhosted.org/packages/f1/03/5b6ea4305d305a4b3311278be618a5188351db3564823c6a0f2aab73ab62/PygameToolsBox-1.1.tar.gz
+[2024-04-07 04:55:51] INFO root fetch - processPackages [geminiai-chat-python]: Downloading https://files.pythonhosted.org/packages/59/68/19667f1d05564465d67f6298a4a4a26f779d0605c039c4578dfbb80a6cb2/geminiai-chat-python-0.3.tar.gz
+[2024-04-07 04:55:51] WARNING root fetch - processPackages [PygameToolsBox]: Timeout reached during download
+[2024-04-07 04:55:51] INFO root fetch - processPackages [pyeventmanager]: Downloading https://files.pythonhosted.org/packages/95/32/6960bc8752ab9e11adae871c65b4ce454e1452c5d0800921914c8a20c651/pyeventmanager-0.5.4.tar.gz
+[2024-04-07 04:55:51] WARNING root fetch - processPackages [geminiai-chat-python]: Timeout reached during download
+[2024-04-07 04:55:51] WARNING root fetch - processPackages [pyeventmanager]: Timeout reached during download
+[2024-04-07 04:55:51] INFO root fetch - processPackages [pyeventmanager]: executing diffoscope
+[2024-04-07 04:55:51] INFO root fetch - processPackages [pyeventmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeventmanager-0.5.3.tar.gz tmp/pyeventmanager-0.5.4.tar.gz --markdown 20240407/p/pyeventmanager/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2024-04-07 04:55:51] INFO root fetch - processPackages [PygameToolsBox]: Downloading https://files.pythonhosted.org/packages/8f/b9/33c1e2a76cf0c3e6be00b377979d1968913952933b4734c6ac4e8b5e6895/PygameToolsBox-1.1.1.tar.gz
+[2024-04-07 04:55:51] WARNING root fetch - processPackages [PygameToolsBox]: Timeout reached during download
+[2024-04-07 04:55:51] INFO root fetch - processPackages [PygameToolsBox]: executing diffoscope
+[2024-04-07 04:55:51] INFO root fetch - processPackages [PygameToolsBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PygameToolsBox-1.1.tar.gz tmp/PygameToolsBox-1.1.1.tar.gz --markdown 20240407/P/PygameToolsBox/1.1-1.1.1/diff.md --exclude *.pyd
+[2024-04-07 04:55:51] INFO root fetch - processPackages [geminiai-chat-python]: Downloading https://files.pythonhosted.org/packages/67/34/e937af9e99e79566813a8db3ed0f9537510dcaded846d99ddf9cb3d99463/geminiai-chat-python-0.4.tar.gz
+[2024-04-07 04:55:51] WARNING root fetch - processPackages [geminiai-chat-python]: Timeout reached during download
+[2024-04-07 04:55:51] INFO root fetch - processPackages [geminiai-chat-python]: executing diffoscope
+[2024-04-07 04:55:51] INFO root fetch - processPackages [geminiai-chat-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geminiai-chat-python-0.3.tar.gz tmp/geminiai-chat-python-0.4.tar.gz --markdown 20240407/g/geminiai-chat-python/0.3-0.4/diff.md --exclude *.pyd
+[2024-04-07 04:55:51] INFO root fetch - processPackages [pyeventmanager]: Remove: archive file [/home/abi/fetcher/tmp/pyeventmanager-0.5.3.tar.gz]
+[2024-04-07 04:55:51] INFO root fetch - processPackages [pyeventmanager]: Remove: archive file [/home/abi/fetcher/tmp/pyeventmanager-0.5.4.tar.gz]
+[2024-04-07 04:55:51] INFO root fetch - main [MainThread]: End processing [pyeventmanager]: success
+[2024-04-07 04:55:52] INFO root fetch - processPackages [PygameToolsBox]: Remove: archive file [/home/abi/fetcher/tmp/PygameToolsBox-1.1.tar.gz]
+[2024-04-07 04:55:52] INFO root fetch - processPackages [PygameToolsBox]: Remove: archive file [/home/abi/fetcher/tmp/PygameToolsBox-1.1.1.tar.gz]
+[2024-04-07 04:55:52] INFO root fetch - main [MainThread]: End processing [PygameToolsBox]: success
+[2024-04-07 04:55:52] INFO root fetch - processPackages [geminiai-chat-python]: Remove: archive file [/home/abi/fetcher/tmp/geminiai-chat-python-0.3.tar.gz]
+[2024-04-07 04:55:52] INFO root fetch - processPackages [geminiai-chat-python]: Remove: archive file [/home/abi/fetcher/tmp/geminiai-chat-python-0.4.tar.gz]
+[2024-04-07 04:55:52] INFO root fetch - main [MainThread]: End processing [geminiai-chat-python]: success
+[2024-04-07 04:55:52] INFO root fetch - main [MainThread]: Store serial: [22653086]
