@@ -8398,3 +8398,64 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 10:55:02] INFO root fetch - processPackages [dmjone]: Remove: archive file [/home/abi/fetcher/tmp/dmjone-0.1.6.tar.gz]
 [2024-04-07 10:55:02] INFO root fetch - main [MainThread]: End processing [dmjone]: success
 [2024-04-07 10:55:02] INFO root fetch - main [MainThread]: Store serial: [22654854]
+[2024-04-07 10:57:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654854]
+[2024-04-07 10:57:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 10:57:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: metaapi-cloud-copyfactory-sdk
+[2024-04-07 10:57:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: train-test-sim
+[2024-04-07 10:57:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mkdocs-nbconvert
+[2024-04-07 10:57:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: metaapi-cloud-metastats-sdk
+[2024-04-07 10:57:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jo3mnist
+[2024-04-07 10:57:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: scbsp
+[2024-04-07 10:57:13] WARNING root fetch - processPackages [train-test-sim]: Skipping, unable to determine old version
+[2024-04-07 10:57:13] INFO root fetch - main [MainThread]: End processing [train-test-sim] error
+[2024-04-07 10:57:13] INFO root fetch - processPackages [metaapi-cloud-metastats-sdk]: New version: [5.0.0] Old Version: [4.0.1]
+[2024-04-07 10:57:13] INFO root fetch - processPackages [mkdocs-nbconvert]: New version: [0.3] Old Version: [0.2.2]
+[2024-04-07 10:57:13] INFO root fetch - processPackages [scbsp]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-07 10:57:13] INFO root fetch - processPackages [metaapi-cloud-copyfactory-sdk]: New version: [9.0.1] Old Version: [8.0.0]
+[2024-04-07 10:57:13] INFO root fetch - processPackages [jo3mnist]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-07 10:57:13] INFO root fetch - processPackages [metaapi-cloud-metastats-sdk]: Downloading https://files.pythonhosted.org/packages/ce/9c/c39b6b4ab7d46864c1079316cddc2119b95977962658358b9e11f3ff65d8/metaapi_cloud_metastats_sdk-4.0.1.tar.gz
+[2024-04-07 10:57:13] INFO root fetch - processPackages [metaapi-cloud-copyfactory-sdk]: Downloading https://files.pythonhosted.org/packages/b7/61/0c26e6b97ced99b45aa54ad6d2c9a8a9ee63da609a9f70860816f006ab29/metaapi_cloud_copyfactory_sdk-8.0.0.tar.gz
+[2024-04-07 10:57:13] INFO root fetch - processPackages [mkdocs-nbconvert]: Downloading https://files.pythonhosted.org/packages/df/7e/3f674f72e0a38d8599f100b326317387ab09bb2bbfa763bc18e688e596b8/mkdocs-nbconvert-0.2.2.tar.gz
+[2024-04-07 10:57:13] INFO root fetch - processPackages [jo3mnist]: Downloading https://files.pythonhosted.org/packages/fc/e1/971978cf897604f33d1022c212310f102a9f77164451b65971e04aa67019/jo3mnist-0.0.3.tar.gz
+[2024-04-07 10:57:13] INFO root fetch - processPackages [scbsp]: Downloading https://files.pythonhosted.org/packages/b5/49/6387e5b5a90e0c297c3906d8f0c27cf33aa137e5ec1c42a8d102061f2cba/scbsp-0.2.3.tar.gz
+[2024-04-07 10:57:13] WARNING root fetch - processPackages [metaapi-cloud-copyfactory-sdk]: Timeout reached during download
+[2024-04-07 10:57:14] WARNING root fetch - processPackages [mkdocs-nbconvert]: Timeout reached during download
+[2024-04-07 10:57:14] WARNING root fetch - processPackages [metaapi-cloud-metastats-sdk]: Timeout reached during download
+[2024-04-07 10:57:14] WARNING root fetch - processPackages [scbsp]: Timeout reached during download
+[2024-04-07 10:57:14] WARNING root fetch - processPackages [jo3mnist]: Timeout reached during download
+[2024-04-07 10:57:14] INFO root fetch - processPackages [metaapi-cloud-copyfactory-sdk]: Downloading https://files.pythonhosted.org/packages/31/11/774cce585929b69baccfe35a2cce84545a533acf17dc643548d1c57dd7a2/metaapi_cloud_copyfactory_sdk-9.0.1.tar.gz
+[2024-04-07 10:57:14] INFO root fetch - processPackages [mkdocs-nbconvert]: Downloading https://files.pythonhosted.org/packages/94/9f/853e6c727b48f6b2531a6edfc1e7002d33c2d1de317d7220c9fe167aeaec/mkdocs-nbconvert-0.3.tar.gz
+[2024-04-07 10:57:14] INFO root fetch - processPackages [metaapi-cloud-metastats-sdk]: Downloading https://files.pythonhosted.org/packages/1b/a2/c996ba95fbcfa4b64406fe4c3f82272230c65d3e2e25e8fab5d3cec3edaa/metaapi_cloud_metastats_sdk-5.0.0.tar.gz
+[2024-04-07 10:57:14] INFO root fetch - processPackages [scbsp]: Downloading https://files.pythonhosted.org/packages/61/4a/3f7592210e78b1add85537215688dfdd9d3fa0563de1515ab112febcac53/scbsp-0.2.4.tar.gz
+[2024-04-07 10:57:14] INFO root fetch - processPackages [jo3mnist]: Downloading https://files.pythonhosted.org/packages/ba/e1/b754863827e0f4803b87cbe69985a1a3b5b1f331acb311d848cc1e4e4710/jo3mnist-0.0.4.tar.gz
+[2024-04-07 10:57:14] WARNING root fetch - processPackages [mkdocs-nbconvert]: Timeout reached during download
+[2024-04-07 10:57:14] INFO root fetch - processPackages [mkdocs-nbconvert]: executing diffoscope
+[2024-04-07 10:57:14] INFO root fetch - processPackages [mkdocs-nbconvert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-nbconvert-0.2.2.tar.gz tmp/mkdocs-nbconvert-0.3.tar.gz --markdown 20240407/m/mkdocs-nbconvert/0.2.2-0.3/diff.md --exclude *.pyd
+[2024-04-07 10:57:14] WARNING root fetch - processPackages [metaapi-cloud-metastats-sdk]: Timeout reached during download
+[2024-04-07 10:57:14] INFO root fetch - processPackages [metaapi-cloud-metastats-sdk]: executing diffoscope
+[2024-04-07 10:57:14] INFO root fetch - processPackages [metaapi-cloud-metastats-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaapi_cloud_metastats_sdk-4.0.1.tar.gz tmp/metaapi_cloud_metastats_sdk-5.0.0.tar.gz --markdown 20240407/m/metaapi-cloud-metastats-sdk/4.0.1-5.0.0/diff.md --exclude *.pyd
+[2024-04-07 10:57:14] WARNING root fetch - processPackages [metaapi-cloud-copyfactory-sdk]: Timeout reached during download
+[2024-04-07 10:57:14] INFO root fetch - processPackages [metaapi-cloud-copyfactory-sdk]: executing diffoscope
+[2024-04-07 10:57:14] INFO root fetch - processPackages [metaapi-cloud-copyfactory-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaapi_cloud_copyfactory_sdk-8.0.0.tar.gz tmp/metaapi_cloud_copyfactory_sdk-9.0.1.tar.gz --markdown 20240407/m/metaapi-cloud-copyfactory-sdk/8.0.0-9.0.1/diff.md --exclude *.pyd
+[2024-04-07 10:57:14] WARNING root fetch - processPackages [scbsp]: Timeout reached during download
+[2024-04-07 10:57:14] INFO root fetch - processPackages [scbsp]: executing diffoscope
+[2024-04-07 10:57:14] INFO root fetch - processPackages [scbsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scbsp-0.2.3.tar.gz tmp/scbsp-0.2.4.tar.gz --markdown 20240407/s/scbsp/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2024-04-07 10:57:14] WARNING root fetch - processPackages [jo3mnist]: Timeout reached during download
+[2024-04-07 10:57:14] INFO root fetch - processPackages [jo3mnist]: executing diffoscope
+[2024-04-07 10:57:14] INFO root fetch - processPackages [jo3mnist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jo3mnist-0.0.3.tar.gz tmp/jo3mnist-0.0.4.tar.gz --markdown 20240407/j/jo3mnist/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 10:57:15] INFO root fetch - processPackages [mkdocs-nbconvert]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-nbconvert-0.2.2.tar.gz]
+[2024-04-07 10:57:15] INFO root fetch - processPackages [mkdocs-nbconvert]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-nbconvert-0.3.tar.gz]
+[2024-04-07 10:57:15] INFO root fetch - main [MainThread]: End processing [mkdocs-nbconvert]: success
+[2024-04-07 10:57:15] INFO root fetch - processPackages [scbsp]: Remove: archive file [/home/abi/fetcher/tmp/scbsp-0.2.3.tar.gz]
+[2024-04-07 10:57:15] INFO root fetch - processPackages [scbsp]: Remove: archive file [/home/abi/fetcher/tmp/scbsp-0.2.4.tar.gz]
+[2024-04-07 10:57:15] INFO root fetch - main [MainThread]: End processing [scbsp]: success
+[2024-04-07 10:57:15] INFO root fetch - processPackages [metaapi-cloud-metastats-sdk]: Remove: archive file [/home/abi/fetcher/tmp/metaapi_cloud_metastats_sdk-4.0.1.tar.gz]
+[2024-04-07 10:57:15] INFO root fetch - processPackages [metaapi-cloud-metastats-sdk]: Remove: archive file [/home/abi/fetcher/tmp/metaapi_cloud_metastats_sdk-5.0.0.tar.gz]
+[2024-04-07 10:57:15] INFO root fetch - main [MainThread]: End processing [metaapi-cloud-metastats-sdk]: success
+[2024-04-07 10:57:15] INFO root fetch - processPackages [jo3mnist]: Remove: archive file [/home/abi/fetcher/tmp/jo3mnist-0.0.3.tar.gz]
+[2024-04-07 10:57:15] INFO root fetch - processPackages [jo3mnist]: Remove: archive file [/home/abi/fetcher/tmp/jo3mnist-0.0.4.tar.gz]
+[2024-04-07 10:57:15] INFO root fetch - main [MainThread]: End processing [jo3mnist]: success
+[2024-04-07 10:57:15] INFO root fetch - processPackages [metaapi-cloud-copyfactory-sdk]: Remove: archive file [/home/abi/fetcher/tmp/metaapi_cloud_copyfactory_sdk-8.0.0.tar.gz]
+[2024-04-07 10:57:15] INFO root fetch - processPackages [metaapi-cloud-copyfactory-sdk]: Remove: archive file [/home/abi/fetcher/tmp/metaapi_cloud_copyfactory_sdk-9.0.1.tar.gz]
+[2024-04-07 10:57:15] INFO root fetch - main [MainThread]: End processing [metaapi-cloud-copyfactory-sdk]: success
+[2024-04-07 10:57:15] INFO root fetch - main [MainThread]: Store serial: [22654870]
