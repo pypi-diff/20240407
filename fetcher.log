@@ -6231,3 +6231,58 @@
 [2024-04-07 08:16:01] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake-bpy-module-latest-20240406.tar.gz]
 [2024-04-07 08:16:01] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
 [2024-04-07 08:16:01] INFO root fetch - main [MainThread]: Store serial: [22653962]
+[2024-04-07 08:18:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653962]
+[2024-04-07 08:18:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-07 08:18:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ks3sdk
+[2024-04-07 08:18:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Alexandersr
+[2024-04-07 08:18:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-pagerduty
+[2024-04-07 08:18:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: htscf
+[2024-04-07 08:18:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-okta
+[2024-04-07 08:18:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: SigProfilerTopography
+[2024-04-07 08:18:17] INFO root fetch - processPackages [htscf]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 08:18:17] INFO root fetch - processPackages [pulumi-pagerduty]: New version: [4.9.0a1709566454] Old Version: [4.9.0a1709366773]
+[2024-04-07 08:18:17] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/48/31/ef6469f74ffa5f39aaf9ac67ecf2f5b17aec1b223d3f63572efd39a3958f/htscf-0.0.98.tar.gz
+[2024-04-07 08:18:17] WARNING root fetch - processPackages [Alexandersr]: Skipping, unable to determine old version
+[2024-04-07 08:18:17] INFO root fetch - main [MainThread]: End processing [Alexandersr] error
+[2024-04-07 08:18:17] INFO root fetch - processPackages [pulumi-pagerduty]: Downloading https://files.pythonhosted.org/packages/ba/dc/468cc1cc3ab57e83660f1775ea0d9f1dcfc62c6de9c10832b834d737ec1a/pulumi_pagerduty-4.9.0a1709366773.tar.gz
+[2024-04-07 08:18:17] INFO root fetch - processPackages [ks3sdk]: New version: [1.6.2] Old Version: [1.6.1]
+[2024-04-07 08:18:17] INFO root fetch - processPackages [pulumi-okta]: New version: [4.9.0a1712469516] Old Version: [4.9.0a1711738803]
+[2024-04-07 08:18:17] INFO root fetch - processPackages [SigProfilerTopography]: New version: [1.0.9] Old Version: [1.0.87]
+[2024-04-07 08:18:17] INFO root fetch - processPackages [ks3sdk]: Downloading https://files.pythonhosted.org/packages/6a/cf/909a730fd6232b74ea0c09a0bcdc280055ca71880fba938b34722fe46ae1/ks3sdk-1.6.1.tar.gz
+[2024-04-07 08:18:17] INFO root fetch - processPackages [SigProfilerTopography]: Downloading https://files.pythonhosted.org/packages/85/c2/cf59b7bf98576b123feaaa18b67f472651c951c08cbc2ce278d6fd3d3ef4/SigProfilerTopography-1.0.87-py3-none-any.whl
+[2024-04-07 08:18:17] INFO root fetch - processPackages [pulumi-okta]: Downloading https://files.pythonhosted.org/packages/f0/01/2680ce419d7f30612879d42724b9b53a4e0d40543947933a708cd58f758d/pulumi_okta-4.9.0a1711738803.tar.gz
+[2024-04-07 08:18:17] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 08:18:17] WARNING root fetch - processPackages [pulumi-pagerduty]: Timeout reached during download
+[2024-04-07 08:18:18] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/79/48/b9c5a63d0fc652968c826af8815fadd5e1f69403909e12853b5a52d9c6b3/htscf-0.0.99.tar.gz
+[2024-04-07 08:18:18] INFO root fetch - processPackages [pulumi-pagerduty]: Downloading https://files.pythonhosted.org/packages/ea/4e/a77d2efabe6daeb6878eeed9b4c2b3c43c2b854c19e3be4b3d627c2c0427/pulumi_pagerduty-4.9.0a1709566454.tar.gz
+[2024-04-07 08:18:18] WARNING root fetch - processPackages [SigProfilerTopography]: Skipping package: exceeds size limit 39820498>=10485760
+[2024-04-07 08:18:18] INFO root fetch - main [MainThread]: End processing [SigProfilerTopography] error
+[2024-04-07 08:18:18] WARNING root fetch - processPackages [pulumi-okta]: Timeout reached during download
+[2024-04-07 08:18:18] WARNING root fetch - processPackages [ks3sdk]: Timeout reached during download
+[2024-04-07 08:18:18] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 08:18:18] INFO root fetch - processPackages [htscf]: executing diffoscope
+[2024-04-07 08:18:18] INFO root fetch - processPackages [htscf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htscf-0.0.98.tar.gz tmp/htscf-0.0.99.tar.gz --markdown 20240407/h/htscf/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 08:18:18] WARNING root fetch - processPackages [pulumi-pagerduty]: Timeout reached during download
+[2024-04-07 08:18:18] INFO root fetch - processPackages [pulumi-pagerduty]: executing diffoscope
+[2024-04-07 08:18:18] INFO root fetch - processPackages [pulumi-pagerduty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_pagerduty-4.9.0a1709366773.tar.gz tmp/pulumi_pagerduty-4.9.0a1709566454.tar.gz --markdown 20240407/p/pulumi-pagerduty/4.9.0a1709366773-4.9.0a1709566454/diff.md --exclude *.pyd
+[2024-04-07 08:18:18] INFO root fetch - processPackages [pulumi-okta]: Downloading https://files.pythonhosted.org/packages/3c/b1/f956eff83d01ac9bb9c865451307d10a9a417c361f03625562c0156a84a9/pulumi_okta-4.9.0a1712469516.tar.gz
+[2024-04-07 08:18:18] INFO root fetch - processPackages [ks3sdk]: Downloading https://files.pythonhosted.org/packages/bd/61/9558a72fcb9f7a49a07a1aebf00ad3e2f909760fac1df5f462e730ae8571/ks3sdk-1.6.2.tar.gz
+[2024-04-07 08:18:18] WARNING root fetch - processPackages [ks3sdk]: Timeout reached during download
+[2024-04-07 08:18:18] INFO root fetch - processPackages [ks3sdk]: executing diffoscope
+[2024-04-07 08:18:18] INFO root fetch - processPackages [ks3sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ks3sdk-1.6.1.tar.gz tmp/ks3sdk-1.6.2.tar.gz --markdown 20240407/k/ks3sdk/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2024-04-07 08:18:18] WARNING root fetch - processPackages [pulumi-okta]: Timeout reached during download
+[2024-04-07 08:18:18] INFO root fetch - processPackages [pulumi-okta]: executing diffoscope
+[2024-04-07 08:18:18] INFO root fetch - processPackages [pulumi-okta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_okta-4.9.0a1711738803.tar.gz tmp/pulumi_okta-4.9.0a1712469516.tar.gz --markdown 20240407/p/pulumi-okta/4.9.0a1711738803-4.9.0a1712469516/diff.md --exclude *.pyd
+[2024-04-07 08:18:18] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.98.tar.gz]
+[2024-04-07 08:18:18] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.99.tar.gz]
+[2024-04-07 08:18:18] INFO root fetch - main [MainThread]: End processing [htscf]: success
+[2024-04-07 08:18:19] INFO root fetch - processPackages [ks3sdk]: Remove: archive file [/home/abi/fetcher/tmp/ks3sdk-1.6.1.tar.gz]
+[2024-04-07 08:18:19] INFO root fetch - processPackages [ks3sdk]: Remove: archive file [/home/abi/fetcher/tmp/ks3sdk-1.6.2.tar.gz]
+[2024-04-07 08:18:19] INFO root fetch - main [MainThread]: End processing [ks3sdk]: success
+[2024-04-07 08:18:19] INFO root fetch - processPackages [pulumi-pagerduty]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_pagerduty-4.9.0a1709366773.tar.gz]
+[2024-04-07 08:18:19] INFO root fetch - processPackages [pulumi-pagerduty]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_pagerduty-4.9.0a1709566454.tar.gz]
+[2024-04-07 08:18:19] INFO root fetch - main [MainThread]: End processing [pulumi-pagerduty]: success
+[2024-04-07 08:18:19] INFO root fetch - processPackages [pulumi-okta]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_okta-4.9.0a1711738803.tar.gz]
+[2024-04-07 08:18:19] INFO root fetch - processPackages [pulumi-okta]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_okta-4.9.0a1712469516.tar.gz]
+[2024-04-07 08:18:19] INFO root fetch - main [MainThread]: End processing [pulumi-okta]: success
+[2024-04-07 08:18:19] INFO root fetch - main [MainThread]: Store serial: [22653980]
