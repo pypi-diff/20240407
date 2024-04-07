@@ -1520,3 +1520,61 @@
 [2024-04-07 02:23:15] INFO root fetch - processPackages [lightning]: Remove: archive file [/home/abi/fetcher/tmp/lightning-2.3.0.dev20240407.tar.gz]
 [2024-04-07 02:23:15] INFO root fetch - main [MainThread]: End processing [lightning]: success
 [2024-04-07 02:23:15] INFO root fetch - main [MainThread]: Store serial: [22652166]
+[2024-04-07 02:25:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652166]
+[2024-04-07 02:25:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-07 02:25:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prosperity2bt
+[2024-04-07 02:25:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-tweet-queue
+[2024-04-07 02:25:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gpti
+[2024-04-07 02:25:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: canvasxpress
+[2024-04-07 02:25:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: grss
+[2024-04-07 02:25:24] INFO root fetch - processPackages [cdk-tweet-queue]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-07 02:25:24] INFO root fetch - processPackages [gpti]: New version: [1.4] Old Version: [1.3]
+[2024-04-07 02:25:24] INFO root fetch - processPackages [prosperity2bt]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-07 02:25:24] INFO root fetch - processPackages [canvasxpress]: New version: [2024.4.7.2406] Old Version: [2024.3.31.2523]
+[2024-04-07 02:25:24] INFO root fetch - processPackages [grss]: New version: [3.9.0] Old Version: [3.8.7]
+[2024-04-07 02:25:24] INFO root fetch - processPackages [cdk-tweet-queue]: Downloading https://files.pythonhosted.org/packages/f2/a9/33fbe548cea174e015412108a563be3bbbdacbb6982d1ef6bf71d4abb509/cdk-tweet-queue-2.0.98.tar.gz
+[2024-04-07 02:25:24] INFO root fetch - processPackages [gpti]: Downloading https://files.pythonhosted.org/packages/d3/27/f674489103502a6267715b5f624cb70d3b8522e3179db334a7f8f711758b/gpti-1.3.tar.gz
+[2024-04-07 02:25:24] INFO root fetch - processPackages [prosperity2bt]: Downloading https://files.pythonhosted.org/packages/7a/9d/6fbdf2e6f5ef0d1e482378cd730c54e5e70b3166f434e3eedfaffca479bb/prosperity2bt-0.1.3.tar.gz
+[2024-04-07 02:25:24] INFO root fetch - processPackages [canvasxpress]: Downloading https://files.pythonhosted.org/packages/54/87/bc67057ef7d2e9cba5083f26a4aff703aea7425931985b752f366d4b77ae/canvasxpress-2024.3.31.2523.tar.gz
+[2024-04-07 02:25:24] INFO root fetch - processPackages [grss]: Downloading https://files.pythonhosted.org/packages/90/89/390b58b8fc34949487a9fc4d3618de6eb60c5e90fda341b98fc6dbcbc2d1/grss-3.8.7.tar.gz
+[2024-04-07 02:25:24] WARNING root fetch - processPackages [cdk-tweet-queue]: Timeout reached during download
+[2024-04-07 02:25:24] WARNING root fetch - processPackages [prosperity2bt]: Timeout reached during download
+[2024-04-07 02:25:24] INFO root fetch - processPackages [cdk-tweet-queue]: Downloading https://files.pythonhosted.org/packages/b9/df/ffba41b66fc7796cb2c763da82c2012cc28d0708e1dcb7775c98d3d9e491/cdk-tweet-queue-2.0.99.tar.gz
+[2024-04-07 02:25:24] WARNING root fetch - processPackages [gpti]: Timeout reached during download
+[2024-04-07 02:25:24] INFO root fetch - processPackages [prosperity2bt]: Downloading https://files.pythonhosted.org/packages/00/6d/24a8d418c7d19d6622aaa1a749b611870b9effd9461f45a9efd5c508d53c/prosperity2bt-0.1.4.tar.gz
+[2024-04-07 02:25:24] WARNING root fetch - processPackages [cdk-tweet-queue]: Timeout reached during download
+[2024-04-07 02:25:24] INFO root fetch - processPackages [cdk-tweet-queue]: executing diffoscope
+[2024-04-07 02:25:24] INFO root fetch - processPackages [cdk-tweet-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-tweet-queue-2.0.98.tar.gz tmp/cdk-tweet-queue-2.0.99.tar.gz --markdown 20240407/c/cdk-tweet-queue/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2024-04-07 02:25:24] WARNING root fetch - processPackages [canvasxpress]: Timeout reached during download
+[2024-04-07 02:25:24] INFO root fetch - processPackages [gpti]: Downloading https://files.pythonhosted.org/packages/2d/8b/f7f98eb59253882d2ac2901172c5f0fc86398867b1650df163b86661025c/gpti-1.4.tar.gz
+[2024-04-07 02:25:24] WARNING root fetch - processPackages [prosperity2bt]: Timeout reached during download
+[2024-04-07 02:25:24] INFO root fetch - processPackages [prosperity2bt]: executing diffoscope
+[2024-04-07 02:25:24] INFO root fetch - processPackages [prosperity2bt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prosperity2bt-0.1.3.tar.gz tmp/prosperity2bt-0.1.4.tar.gz --markdown 20240407/p/prosperity2bt/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2024-04-07 02:25:24] WARNING root fetch - processPackages [gpti]: Timeout reached during download
+[2024-04-07 02:25:24] INFO root fetch - processPackages [gpti]: executing diffoscope
+[2024-04-07 02:25:24] INFO root fetch - processPackages [gpti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpti-1.3.tar.gz tmp/gpti-1.4.tar.gz --markdown 20240407/g/gpti/1.3-1.4/diff.md --exclude *.pyd
+[2024-04-07 02:25:24] INFO root fetch - processPackages [canvasxpress]: Downloading https://files.pythonhosted.org/packages/9a/a9/4718ff49db620984b31b1c5070c0c97d69f6a1fea76ac5e8ff4a3df6b7a7/canvasxpress-2024.4.7.2406.tar.gz
+[2024-04-07 02:25:24] WARNING root fetch - processPackages [grss]: Timeout reached during download
+[2024-04-07 02:25:25] INFO root fetch - processPackages [grss]: Downloading https://files.pythonhosted.org/packages/24/ee/93f9bb46e67cbaab7f070049005c5c0a0544548117bb733ca557fd92eaec/grss-3.9.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-07 02:25:25] WARNING root fetch - processPackages [canvasxpress]: Timeout reached during download
+[2024-04-07 02:25:25] INFO root fetch - processPackages [canvasxpress]: executing diffoscope
+[2024-04-07 02:25:25] INFO root fetch - processPackages [canvasxpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canvasxpress-2024.3.31.2523.tar.gz tmp/canvasxpress-2024.4.7.2406.tar.gz --markdown 20240407/c/canvasxpress/2024.3.31.2523-2024.4.7.2406/diff.md --exclude *.pyd
+[2024-04-07 02:25:25] INFO root fetch - processPackages [cdk-tweet-queue]: Remove: archive file [/home/abi/fetcher/tmp/cdk-tweet-queue-2.0.98.tar.gz]
+[2024-04-07 02:25:25] INFO root fetch - processPackages [cdk-tweet-queue]: Remove: archive file [/home/abi/fetcher/tmp/cdk-tweet-queue-2.0.99.tar.gz]
+[2024-04-07 02:25:25] INFO root fetch - main [MainThread]: End processing [cdk-tweet-queue]: success
+[2024-04-07 02:25:25] INFO root fetch - processPackages [prosperity2bt]: Remove: archive file [/home/abi/fetcher/tmp/prosperity2bt-0.1.3.tar.gz]
+[2024-04-07 02:25:25] INFO root fetch - processPackages [prosperity2bt]: Remove: archive file [/home/abi/fetcher/tmp/prosperity2bt-0.1.4.tar.gz]
+[2024-04-07 02:25:25] INFO root fetch - main [MainThread]: End processing [prosperity2bt]: success
+[2024-04-07 02:25:25] INFO root fetch - processPackages [gpti]: Remove: archive file [/home/abi/fetcher/tmp/gpti-1.3.tar.gz]
+[2024-04-07 02:25:25] INFO root fetch - processPackages [gpti]: Remove: archive file [/home/abi/fetcher/tmp/gpti-1.4.tar.gz]
+[2024-04-07 02:25:25] INFO root fetch - main [MainThread]: End processing [gpti]: success
+[2024-04-07 02:25:28] WARNING root fetch - processPackages [grss]: Timeout reached during download
+[2024-04-07 02:25:28] INFO root fetch - processPackages [grss]: executing diffoscope
+[2024-04-07 02:25:28] INFO root fetch - processPackages [grss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grss-3.8.7.tar.gz tmp/grss-3.9.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240407/g/grss/3.8.7-3.9.0/diff.md --exclude *.pyd
+[2024-04-07 02:25:29] INFO root fetch - processPackages [grss]: Remove: archive file [/home/abi/fetcher/tmp/grss-3.8.7.tar.gz]
+[2024-04-07 02:25:29] INFO root fetch - processPackages [grss]: Remove: archive file [/home/abi/fetcher/tmp/grss-3.9.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-07 02:25:29] INFO root fetch - main [MainThread]: End processing [grss]: success
+[2024-04-07 02:26:24] INFO root fetch - processPackages [canvasxpress]: Remove: archive file [/home/abi/fetcher/tmp/canvasxpress-2024.3.31.2523.tar.gz]
+[2024-04-07 02:26:24] INFO root fetch - processPackages [canvasxpress]: Remove: archive file [/home/abi/fetcher/tmp/canvasxpress-2024.4.7.2406.tar.gz]
+[2024-04-07 02:26:24] INFO root fetch - main [MainThread]: End processing [canvasxpress]: success
+[2024-04-07 02:26:24] INFO root fetch - main [MainThread]: Store serial: [22652186]
