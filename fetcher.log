@@ -18212,3 +18212,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 20:52:14] INFO root fetch - processPackages [pytincture]: Remove: archive file [/home/abi/fetcher/tmp/pytincture-0.4.4.tar.gz]
 [2024-04-07 20:52:14] INFO root fetch - main [MainThread]: End processing [pytincture]: success
 [2024-04-07 20:52:14] INFO root fetch - main [MainThread]: Store serial: [22658470]
+[2024-04-07 20:54:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658470]
+[2024-04-07 20:54:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 20:54:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: manos
+[2024-04-07 20:54:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fasttrackpy
+[2024-04-07 20:54:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: isobar_ext
+[2024-04-07 20:54:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: advanced-alchemy
+[2024-04-07 20:54:23] INFO root fetch - processPackages [isobar_ext]: New version: [0.9.0] Old Version: [0.5.1]
+[2024-04-07 20:54:23] INFO root fetch - processPackages [fasttrackpy]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-07 20:54:23] INFO root fetch - processPackages [advanced-alchemy]: New version: [0.9.0] Old Version: [0.8.4]
+[2024-04-07 20:54:23] WARNING root fetch - processPackages [manos]: Skipping, unable to determine old version
+[2024-04-07 20:54:23] INFO root fetch - main [MainThread]: End processing [manos] error
+[2024-04-07 20:54:23] INFO root fetch - processPackages [isobar_ext]: Downloading https://files.pythonhosted.org/packages/03/c0/6e77e2ab0f824916dc6956547f2425c25c5b50e7bd3751fffa89cd728ffd/isobar_ext-0.5.1.tar.gz
+[2024-04-07 20:54:23] INFO root fetch - processPackages [fasttrackpy]: Downloading https://files.pythonhosted.org/packages/13/56/dd048308ee8e474e73cc6bed755e11bab00bfbecadfdcab8186671c8e299/fasttrackpy-0.4.1.tar.gz
+[2024-04-07 20:54:23] INFO root fetch - processPackages [advanced-alchemy]: Downloading https://files.pythonhosted.org/packages/79/40/b9009d0b878a2ffaf9e95150d5a21af777fd4b35d4e8b64c779d2a11c612/advanced_alchemy-0.8.4.tar.gz
+[2024-04-07 20:54:23] WARNING root fetch - processPackages [fasttrackpy]: Timeout reached during download
+[2024-04-07 20:54:23] WARNING root fetch - processPackages [isobar_ext]: Timeout reached during download
+[2024-04-07 20:54:24] WARNING root fetch - processPackages [advanced-alchemy]: Timeout reached during download
+[2024-04-07 20:54:24] INFO root fetch - processPackages [fasttrackpy]: Downloading https://files.pythonhosted.org/packages/a9/6e/10809284ac21696ed5593cce81216d1ed6e701077a5de6c28d719d4780b2/fasttrackpy-0.4.2.tar.gz
+[2024-04-07 20:54:24] INFO root fetch - processPackages [isobar_ext]: Downloading https://files.pythonhosted.org/packages/b8/f3/fae0ef98d92bd1465da08781918825a3ff1658b1f653f889fb4aa1517e8d/isobar_ext-0.9.0.tar.gz
+[2024-04-07 20:54:24] WARNING root fetch - processPackages [fasttrackpy]: Timeout reached during download
+[2024-04-07 20:54:24] INFO root fetch - processPackages [fasttrackpy]: executing diffoscope
+[2024-04-07 20:54:24] INFO root fetch - processPackages [fasttrackpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fasttrackpy-0.4.1.tar.gz tmp/fasttrackpy-0.4.2.tar.gz --markdown 20240407/f/fasttrackpy/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2024-04-07 20:54:24] WARNING root fetch - processPackages [isobar_ext]: Timeout reached during download
+[2024-04-07 20:54:24] INFO root fetch - processPackages [isobar_ext]: executing diffoscope
+[2024-04-07 20:54:24] INFO root fetch - processPackages [isobar_ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isobar_ext-0.5.1.tar.gz tmp/isobar_ext-0.9.0.tar.gz --markdown 20240407/i/isobar_ext/0.5.1-0.9.0/diff.md --exclude *.pyd
+[2024-04-07 20:54:24] INFO root fetch - processPackages [advanced-alchemy]: Downloading https://files.pythonhosted.org/packages/e6/53/ef5831d7aad4348cfd7030150ba704015cb90d61152deaf4315ee1f93ee2/advanced_alchemy-0.9.0.tar.gz
+[2024-04-07 20:54:24] WARNING root fetch - processPackages [advanced-alchemy]: Timeout reached during download
+[2024-04-07 20:54:24] INFO root fetch - processPackages [advanced-alchemy]: executing diffoscope
+[2024-04-07 20:54:24] INFO root fetch - processPackages [advanced-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/advanced_alchemy-0.8.4.tar.gz tmp/advanced_alchemy-0.9.0.tar.gz --markdown 20240407/a/advanced-alchemy/0.8.4-0.9.0/diff.md --exclude *.pyd
+[2024-04-07 20:54:24] INFO root fetch - processPackages [fasttrackpy]: Remove: archive file [/home/abi/fetcher/tmp/fasttrackpy-0.4.1.tar.gz]
+[2024-04-07 20:54:24] INFO root fetch - processPackages [fasttrackpy]: Remove: archive file [/home/abi/fetcher/tmp/fasttrackpy-0.4.2.tar.gz]
+[2024-04-07 20:54:24] INFO root fetch - main [MainThread]: End processing [fasttrackpy]: success
+[2024-04-07 20:54:25] INFO root fetch - processPackages [isobar_ext]: Remove: archive file [/home/abi/fetcher/tmp/isobar_ext-0.5.1.tar.gz]
+[2024-04-07 20:54:25] INFO root fetch - processPackages [isobar_ext]: Remove: archive file [/home/abi/fetcher/tmp/isobar_ext-0.9.0.tar.gz]
+[2024-04-07 20:54:25] INFO root fetch - main [MainThread]: End processing [isobar_ext]: success
+[2024-04-07 20:54:25] INFO root fetch - processPackages [advanced-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/advanced_alchemy-0.8.4.tar.gz]
+[2024-04-07 20:54:25] INFO root fetch - processPackages [advanced-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/advanced_alchemy-0.9.0.tar.gz]
+[2024-04-07 20:54:25] INFO root fetch - main [MainThread]: End processing [advanced-alchemy]: success
+[2024-04-07 20:54:25] INFO root fetch - main [MainThread]: Store serial: [22658486]
