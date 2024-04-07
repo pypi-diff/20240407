@@ -16260,3 +16260,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 18:58:14] INFO root fetch - processPackages [gando]: Remove: archive file [/home/abi/fetcher/tmp/gando-0.9.8.tar.gz]
 [2024-04-07 18:58:14] INFO root fetch - main [MainThread]: End processing [gando]: success
 [2024-04-07 18:58:14] INFO root fetch - main [MainThread]: Store serial: [22657716]
+[2024-04-07 19:00:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657716]
+[2024-04-07 19:00:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 19:00:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: molecularnetwork
+[2024-04-07 19:00:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libauc
+[2024-04-07 19:00:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cancer_data
+[2024-04-07 19:00:23] INFO root fetch - processPackages [libauc]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-04-07 19:00:23] INFO root fetch - processPackages [molecularnetwork]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-04-07 19:00:23] INFO root fetch - processPackages [cancer_data]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-04-07 19:00:23] INFO root fetch - processPackages [libauc]: Downloading https://files.pythonhosted.org/packages/a4/35/26de16f80ec46fe79f02cf9d767e46c03d3aa9880a8ea67bbec53b6dba20/libauc-1.3.2.tar.gz
+[2024-04-07 19:00:23] INFO root fetch - processPackages [molecularnetwork]: Downloading https://files.pythonhosted.org/packages/24/3f/8a43fafa6b73e3244cfdbaed8d8e3eef329a0d820aefdec937ca9fc16074/molecularnetwork-0.3.5.tar.gz
+[2024-04-07 19:00:23] INFO root fetch - processPackages [cancer_data]: Downloading https://files.pythonhosted.org/packages/f6/16/ad788b92b0ed3390d33c8e57c858bcbf26db7ab1774ca8716fd3c1ccc18b/cancer_data-0.3.5.tar.gz
+[2024-04-07 19:00:23] WARNING root fetch - processPackages [cancer_data]: Timeout reached during download
+[2024-04-07 19:00:23] WARNING root fetch - processPackages [libauc]: Timeout reached during download
+[2024-04-07 19:00:23] WARNING root fetch - processPackages [molecularnetwork]: Timeout reached during download
+[2024-04-07 19:00:24] INFO root fetch - processPackages [cancer_data]: Downloading https://files.pythonhosted.org/packages/69/5b/46b96e864b44786df7ea88e3e654a690ccf7f716e1b36604666509eae468/cancer_data-0.3.6.tar.gz
+[2024-04-07 19:00:24] INFO root fetch - processPackages [libauc]: Downloading https://files.pythonhosted.org/packages/70/8c/e7f8b8b17d42d8d687a8eb9479f4ad46415dd21835044e7c8f578a4880c0/libauc-1.3.3.tar.gz
+[2024-04-07 19:00:24] INFO root fetch - processPackages [molecularnetwork]: Downloading https://files.pythonhosted.org/packages/c6/ea/ce97b883323199dae37b27a04ba502a7bf3649db8f744316b2163ef245a0/molecularnetwork-0.3.6.tar.gz
+[2024-04-07 19:00:24] WARNING root fetch - processPackages [cancer_data]: Timeout reached during download
+[2024-04-07 19:00:24] INFO root fetch - processPackages [cancer_data]: executing diffoscope
+[2024-04-07 19:00:24] INFO root fetch - processPackages [cancer_data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cancer_data-0.3.5.tar.gz tmp/cancer_data-0.3.6.tar.gz --markdown 20240407/c/cancer_data/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2024-04-07 19:00:24] WARNING root fetch - processPackages [libauc]: Timeout reached during download
+[2024-04-07 19:00:24] INFO root fetch - processPackages [libauc]: executing diffoscope
+[2024-04-07 19:00:24] INFO root fetch - processPackages [libauc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libauc-1.3.2.tar.gz tmp/libauc-1.3.3.tar.gz --markdown 20240407/l/libauc/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2024-04-07 19:00:24] WARNING root fetch - processPackages [molecularnetwork]: Timeout reached during download
+[2024-04-07 19:00:24] INFO root fetch - processPackages [molecularnetwork]: executing diffoscope
+[2024-04-07 19:00:24] INFO root fetch - processPackages [molecularnetwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/molecularnetwork-0.3.5.tar.gz tmp/molecularnetwork-0.3.6.tar.gz --markdown 20240407/m/molecularnetwork/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2024-04-07 19:00:24] INFO root fetch - processPackages [cancer_data]: Remove: archive file [/home/abi/fetcher/tmp/cancer_data-0.3.5.tar.gz]
+[2024-04-07 19:00:24] INFO root fetch - processPackages [cancer_data]: Remove: archive file [/home/abi/fetcher/tmp/cancer_data-0.3.6.tar.gz]
+[2024-04-07 19:00:24] INFO root fetch - main [MainThread]: End processing [cancer_data]: success
+[2024-04-07 19:00:24] INFO root fetch - processPackages [molecularnetwork]: Remove: archive file [/home/abi/fetcher/tmp/molecularnetwork-0.3.5.tar.gz]
+[2024-04-07 19:00:24] INFO root fetch - processPackages [molecularnetwork]: Remove: archive file [/home/abi/fetcher/tmp/molecularnetwork-0.3.6.tar.gz]
+[2024-04-07 19:00:24] INFO root fetch - main [MainThread]: End processing [molecularnetwork]: success
+[2024-04-07 19:00:25] INFO root fetch - processPackages [libauc]: Remove: archive file [/home/abi/fetcher/tmp/libauc-1.3.2.tar.gz]
+[2024-04-07 19:00:25] INFO root fetch - processPackages [libauc]: Remove: archive file [/home/abi/fetcher/tmp/libauc-1.3.3.tar.gz]
+[2024-04-07 19:00:25] INFO root fetch - main [MainThread]: End processing [libauc]: success
+[2024-04-07 19:00:25] INFO root fetch - main [MainThread]: Store serial: [22657725]
