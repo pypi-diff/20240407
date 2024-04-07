@@ -8282,3 +8282,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 10:44:13] INFO root fetch - processPackages [alibabacloud-dfs20180620-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_dfs20180620_py2-1.0.2.tar.gz]
 [2024-04-07 10:44:13] INFO root fetch - main [MainThread]: End processing [alibabacloud-dfs20180620-py2]: success
 [2024-04-07 10:44:13] INFO root fetch - main [MainThread]: Store serial: [22654823]
+[2024-04-07 10:46:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654823]
+[2024-04-07 10:46:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 10:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfp-nightly
+[2024-04-07 10:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dtaas-cli
+[2024-04-07 10:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yowasp-wavedrom
+[2024-04-07 10:46:22] INFO root fetch - processPackages [yowasp-wavedrom]: New version: [3.5.0.6] Old Version: [3.5.0.5]
+[2024-04-07 10:46:22] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2024-04-07 10:46:22] INFO root fetch - processPackages [yowasp-wavedrom]: Downloading https://files.pythonhosted.org/packages/ef/b2/f2e6cc60b4e3c7aa8d60616ac23ba5beaa23311f9e9441f0ecdddcb97d5c/yowasp_wavedrom-3.5.0.5-py3-none-any.whl
+[2024-04-07 10:46:22] INFO root fetch - processPackages [dtaas-cli]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-07 10:46:22] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/be/16/ebf16b1094e104257af6265eee53833e4f737ef6d11426d959009fa9952a/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl
+[2024-04-07 10:46:22] WARNING root fetch - processPackages [yowasp-wavedrom]: Timeout reached during download
+[2024-04-07 10:46:22] INFO root fetch - processPackages [dtaas-cli]: Downloading https://files.pythonhosted.org/packages/62/7c/e7787f151de75a20047e468be80ed7a42d06395c7b2cfcf4df0b1e3ec9e9/dtaas_cli-0.1.0.tar.gz
+[2024-04-07 10:46:22] INFO root fetch - processPackages [yowasp-wavedrom]: Downloading https://files.pythonhosted.org/packages/c4/8d/e2d8b8e47d3860d21e1714c647cc21dcad02a38a9d14cae30374ee1dbf64/yowasp_wavedrom-3.5.0.6-py3-none-any.whl
+[2024-04-07 10:46:22] WARNING root fetch - processPackages [dtaas-cli]: Timeout reached during download
+[2024-04-07 10:46:22] WARNING root fetch - processPackages [yowasp-wavedrom]: Timeout reached during download
+[2024-04-07 10:46:22] INFO root fetch - processPackages [yowasp-wavedrom]: executing diffoscope
+[2024-04-07 10:46:22] INFO root fetch - processPackages [yowasp-wavedrom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yowasp_wavedrom-3.5.0.5-py3-none-any.whl.zip tmp/yowasp_wavedrom-3.5.0.6-py3-none-any.whl.zip --markdown 20240407/y/yowasp-wavedrom/3.5.0.5-3.5.0.6/diff.md --exclude *.pyd
+[2024-04-07 10:46:22] INFO root fetch - processPackages [dtaas-cli]: Downloading https://files.pythonhosted.org/packages/ac/86/986772ca01c550cf61fa8ac3cf57df951c0109f99624cce6bab2660b5992/dtaas_cli-0.1.1.tar.gz
+[2024-04-07 10:46:23] WARNING root fetch - processPackages [dtaas-cli]: Timeout reached during download
+[2024-04-07 10:46:23] INFO root fetch - processPackages [dtaas-cli]: executing diffoscope
+[2024-04-07 10:46:23] INFO root fetch - processPackages [dtaas-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtaas_cli-0.1.0.tar.gz tmp/dtaas_cli-0.1.1.tar.gz --markdown 20240407/d/dtaas-cli/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-07 10:46:23] INFO root fetch - processPackages [yowasp-wavedrom]: Remove: archive file [/home/abi/fetcher/tmp/yowasp_wavedrom-3.5.0.5-py3-none-any.whl.zip]
+[2024-04-07 10:46:23] INFO root fetch - processPackages [yowasp-wavedrom]: Remove: archive file [/home/abi/fetcher/tmp/yowasp_wavedrom-3.5.0.6-py3-none-any.whl.zip]
+[2024-04-07 10:46:23] INFO root fetch - main [MainThread]: End processing [yowasp-wavedrom]: success
+[2024-04-07 10:46:23] INFO root fetch - processPackages [dtaas-cli]: Remove: archive file [/home/abi/fetcher/tmp/dtaas_cli-0.1.0.tar.gz]
+[2024-04-07 10:46:23] INFO root fetch - processPackages [dtaas-cli]: Remove: archive file [/home/abi/fetcher/tmp/dtaas_cli-0.1.1.tar.gz]
+[2024-04-07 10:46:23] INFO root fetch - main [MainThread]: End processing [dtaas-cli]: success
+[2024-04-07 10:46:23] WARNING root fetch - processPackages [tfp-nightly]: Timeout reached during download
+[2024-04-07 10:46:24] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/f1/98/c1f5a754a26ea1f08e3558803ffb67dd65482de4f6bfadc5415573cd3cb7/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl
+[2024-04-07 10:46:25] WARNING root fetch - processPackages [tfp-nightly]: Timeout reached during download
+[2024-04-07 10:46:25] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2024-04-07 10:46:25] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20240407/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
+[2024-04-07 10:46:28] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip]
+[2024-04-07 10:46:28] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
+[2024-04-07 10:46:28] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2024-04-07 10:46:28] INFO root fetch - main [MainThread]: Store serial: [22654830]
