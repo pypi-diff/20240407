@@ -14373,3 +14373,31 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 17:06:18] ERROR root fetch - processPackages [esrt]: Unable to fetch info: No such project/version 'esrt' 1.30.0
 [2024-04-07 17:06:18] INFO root fetch - main [MainThread]: End processing [esrt] error
 [2024-04-07 17:06:18] INFO root fetch - main [MainThread]: Store serial: [22657048]
+[2024-04-07 17:08:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657048]
+[2024-04-07 17:08:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 17:08:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jupyter-repl-msgbridge
+[2024-04-07 17:08:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipex-llm
+[2024-04-07 17:08:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ddb_single
+[2024-04-07 17:08:28] INFO root fetch - processPackages [ddb_single]: New version: [0.4.9] Old Version: [0.4.7]
+[2024-04-07 17:08:28] WARNING root fetch - processPackages [jupyter-repl-msgbridge]: Skipping, unable to determine old version
+[2024-04-07 17:08:28] INFO root fetch - main [MainThread]: End processing [jupyter-repl-msgbridge] error
+[2024-04-07 17:08:28] INFO root fetch - processPackages [ddb_single]: Downloading https://files.pythonhosted.org/packages/d1/de/8899823c20b665e6e029ae3b11cc487dca030a78e3ac942f8d7c6715861c/ddb_single-0.4.7.zip
+[2024-04-07 17:08:28] INFO root fetch - processPackages [ipex-llm]: New version: [2.1.0b20240407] Old Version: [2.1.0b20240406]
+[2024-04-07 17:08:28] WARNING root fetch - processPackages [ddb_single]: Timeout reached during download
+[2024-04-07 17:08:28] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/76/00/ab221ea8a2b69353d2237574c1dc422a7f46d1ce777236987400c98f11c4/ipex_llm-2.1.0b20240406-py3-none-win_amd64.whl
+[2024-04-07 17:08:28] INFO root fetch - processPackages [ddb_single]: Downloading https://files.pythonhosted.org/packages/91/1a/d9f18b8ebb12afc042122bfdf6e24c6316aa24f23dccee58d1b9a7d15cb3/ddb_single-0.4.9.tar.gz
+[2024-04-07 17:08:28] WARNING root fetch - processPackages [ddb_single]: Timeout reached during download
+[2024-04-07 17:08:28] INFO root fetch - processPackages [ddb_single]: executing diffoscope
+[2024-04-07 17:08:28] INFO root fetch - processPackages [ddb_single]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddb_single-0.4.7.zip tmp/ddb_single-0.4.9.tar.gz --markdown 20240407/d/ddb_single/0.4.7-0.4.9/diff.md --exclude *.pyd
+[2024-04-07 17:08:28] WARNING root fetch - processPackages [ipex-llm]: Timeout reached during download
+[2024-04-07 17:08:29] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/a4/90/338abe405c5d3243a6fab7ad70f9ea6b1c6c531efb2275864510f8ae28b1/ipex_llm-2.1.0b20240407-py3-none-win_amd64.whl
+[2024-04-07 17:08:29] INFO root fetch - processPackages [ddb_single]: Remove: archive file [/home/abi/fetcher/tmp/ddb_single-0.4.7.zip]
+[2024-04-07 17:08:29] INFO root fetch - processPackages [ddb_single]: Remove: archive file [/home/abi/fetcher/tmp/ddb_single-0.4.9.tar.gz]
+[2024-04-07 17:08:29] INFO root fetch - main [MainThread]: End processing [ddb_single]: success
+[2024-04-07 17:08:29] WARNING root fetch - processPackages [ipex-llm]: Timeout reached during download
+[2024-04-07 17:08:29] INFO root fetch - processPackages [ipex-llm]: executing diffoscope
+[2024-04-07 17:08:29] INFO root fetch - processPackages [ipex-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipex_llm-2.1.0b20240406-py3-none-win_amd64.whl.zip tmp/ipex_llm-2.1.0b20240407-py3-none-win_amd64.whl.zip --markdown 20240407/i/ipex-llm/2.1.0b20240406-2.1.0b20240407/diff.md --exclude *.pyd
+[2024-04-07 17:08:57] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240406-py3-none-win_amd64.whl.zip]
+[2024-04-07 17:08:57] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240407-py3-none-win_amd64.whl.zip]
+[2024-04-07 17:08:57] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
+[2024-04-07 17:08:57] INFO root fetch - main [MainThread]: Store serial: [22657059]
