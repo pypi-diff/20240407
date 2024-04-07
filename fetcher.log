@@ -16205,3 +16205,20 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 18:51:46] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1700084435.tar.gz]
 [2024-04-07 18:51:46] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
 [2024-04-07 18:51:46] INFO root fetch - main [MainThread]: Store serial: [22657701]
+[2024-04-07 18:53:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22657701]
+[2024-04-07 18:53:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 18:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: akello
+[2024-04-07 18:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edastatmil-milser
+[2024-04-07 18:53:56] WARNING root fetch - processPackages [edastatmil-milser]: Skipping, unable to determine old version
+[2024-04-07 18:53:56] INFO root fetch - main [MainThread]: End processing [edastatmil-milser] error
+[2024-04-07 18:53:56] INFO root fetch - processPackages [akello]: New version: [0.0.22] Old Version: [0.0.21]
+[2024-04-07 18:53:56] INFO root fetch - processPackages [akello]: Downloading https://files.pythonhosted.org/packages/d6/69/b1ec793d350fd2bc38337bfe7ea709c726c1a055dbd53f2ce6de4886ceb9/akello-0.0.21.tar.gz
+[2024-04-07 18:53:56] WARNING root fetch - processPackages [akello]: Timeout reached during download
+[2024-04-07 18:53:56] INFO root fetch - processPackages [akello]: Downloading https://files.pythonhosted.org/packages/f2/fe/82715dd87d3b092ac3f932c15748f9d710ba44f509d4215c02a559d22d56/akello-0.0.22.tar.gz
+[2024-04-07 18:53:56] WARNING root fetch - processPackages [akello]: Timeout reached during download
+[2024-04-07 18:53:56] INFO root fetch - processPackages [akello]: executing diffoscope
+[2024-04-07 18:53:56] INFO root fetch - processPackages [akello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akello-0.0.21.tar.gz tmp/akello-0.0.22.tar.gz --markdown 20240407/a/akello/0.0.21-0.0.22/diff.md --exclude *.pyd
+[2024-04-07 18:53:57] INFO root fetch - processPackages [akello]: Remove: archive file [/home/abi/fetcher/tmp/akello-0.0.21.tar.gz]
+[2024-04-07 18:53:57] INFO root fetch - processPackages [akello]: Remove: archive file [/home/abi/fetcher/tmp/akello-0.0.22.tar.gz]
+[2024-04-07 18:53:57] INFO root fetch - main [MainThread]: End processing [akello]: success
+[2024-04-07 18:53:57] INFO root fetch - main [MainThread]: Store serial: [22657709]
