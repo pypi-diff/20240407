@@ -11898,3 +11898,20 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 14:46:45] INFO root fetch - processPackages [novelai-api]: Remove: archive file [/home/abi/fetcher/tmp/novelai-api-0.9.tar.gz]
 [2024-04-07 14:46:45] INFO root fetch - main [MainThread]: End processing [novelai-api]: success
 [2024-04-07 14:46:45] INFO root fetch - main [MainThread]: Store serial: [22656266]
+[2024-04-07 14:48:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656266]
+[2024-04-07 14:48:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 14:48:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: example-package-ved
+[2024-04-07 14:48:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unicodedata-reader
+[2024-04-07 14:48:54] INFO root fetch - processPackages [unicodedata-reader]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-04-07 14:48:54] INFO root fetch - processPackages [unicodedata-reader]: Downloading https://files.pythonhosted.org/packages/d9/21/34e0a8c911a52f1129007702d88e5beca5716e1196bf7b70360f8a38af1f/unicodedata_reader-1.3.2.tar.gz
+[2024-04-07 14:48:54] WARNING root fetch - processPackages [example-package-ved]: Skipping, unable to determine old version
+[2024-04-07 14:48:54] INFO root fetch - main [MainThread]: End processing [example-package-ved] error
+[2024-04-07 14:48:54] WARNING root fetch - processPackages [unicodedata-reader]: Timeout reached during download
+[2024-04-07 14:48:54] INFO root fetch - processPackages [unicodedata-reader]: Downloading https://files.pythonhosted.org/packages/c9/91/db56178c788672cc5a5891617dbba0e71976083cc0d7ccbf5e04ca88f14f/unicodedata_reader-1.3.3.tar.gz
+[2024-04-07 14:48:54] WARNING root fetch - processPackages [unicodedata-reader]: Timeout reached during download
+[2024-04-07 14:48:54] INFO root fetch - processPackages [unicodedata-reader]: executing diffoscope
+[2024-04-07 14:48:54] INFO root fetch - processPackages [unicodedata-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unicodedata_reader-1.3.2.tar.gz tmp/unicodedata_reader-1.3.3.tar.gz --markdown 20240407/u/unicodedata-reader/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2024-04-07 14:48:55] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-1.3.2.tar.gz]
+[2024-04-07 14:48:55] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-1.3.3.tar.gz]
+[2024-04-07 14:48:55] INFO root fetch - main [MainThread]: End processing [unicodedata-reader]: success
+[2024-04-07 14:48:55] INFO root fetch - main [MainThread]: Store serial: [22656275]
