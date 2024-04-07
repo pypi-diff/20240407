@@ -10307,3 +10307,12 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 12:57:43] INFO root fetch - processPackages [underactuated]: Remove: archive file [/home/abi/fetcher/tmp/underactuated-2024.4.7.tar.gz]
 [2024-04-07 12:57:43] INFO root fetch - main [MainThread]: End processing [underactuated]: success
 [2024-04-07 12:57:43] INFO root fetch - main [MainThread]: Store serial: [22655567]
+[2024-04-07 12:59:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22655567]
+[2024-04-07 12:59:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 12:59:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: numpy-fn
+[2024-04-07 12:59:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odooer
+[2024-04-07 12:59:51] WARNING root fetch - processPackages [numpy-fn]: Skipping, unable to determine old version
+[2024-04-07 12:59:51] INFO root fetch - main [MainThread]: End processing [numpy-fn] error
+[2024-04-07 12:59:51] WARNING root fetch - processPackages [odooer]: Skipping, unable to determine old version
+[2024-04-07 12:59:51] INFO root fetch - main [MainThread]: End processing [odooer] error
+[2024-04-07 12:59:51] INFO root fetch - main [MainThread]: Store serial: [22655575]
