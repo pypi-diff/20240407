@@ -13616,3 +13616,44 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 16:33:37] INFO root fetch - processPackages [mkdocs-addresses]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_addresses-0.3.0.tar.gz]
 [2024-04-07 16:33:37] INFO root fetch - main [MainThread]: End processing [mkdocs-addresses]: success
 [2024-04-07 16:33:37] INFO root fetch - main [MainThread]: Store serial: [22656825]
+[2024-04-07 16:35:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656825]
+[2024-04-07 16:35:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 16:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygamd
+[2024-04-07 16:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tkutils
+[2024-04-07 16:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vedro-httpx
+[2024-04-07 16:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: faxdatasdk
+[2024-04-07 16:35:47] INFO root fetch - processPackages [faxdatasdk]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-07 16:35:47] INFO root fetch - processPackages [pygamd]: New version: [1.4.5] Old Version: [1.4.4]
+[2024-04-07 16:35:47] INFO root fetch - processPackages [vedro-httpx]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-07 16:35:47] INFO root fetch - processPackages [tkutils]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-07 16:35:48] INFO root fetch - processPackages [faxdatasdk]: Downloading https://files.pythonhosted.org/packages/36/90/d8d867571ca384ca62420c07cf50c1f0814f9ed43bf6c320ffdd77f51c4d/faxdatasdk-0.0.3.tar.gz
+[2024-04-07 16:35:48] INFO root fetch - processPackages [pygamd]: Downloading https://files.pythonhosted.org/packages/80/f9/c7df6da29adfc2ade474416b8196dee405905b58c855a965201013d97cab/pygamd-1.4.4.tar.gz
+[2024-04-07 16:35:48] INFO root fetch - processPackages [vedro-httpx]: Downloading https://files.pythonhosted.org/packages/15/f2/478af17aedf17c52961010531dc9124e3a9daa3a80a8498e97b15d94487b/vedro-httpx-0.3.0.tar.gz
+[2024-04-07 16:35:48] INFO root fetch - processPackages [tkutils]: Downloading https://files.pythonhosted.org/packages/48/0f/0ea4ed8147b3fcdc583eabef9e0862d640e15545ef6a23b540c8474ae8de/tkutils-1.1.1.tar.gz
+[2024-04-07 16:35:48] WARNING root fetch - processPackages [pygamd]: Skipping package: exceeds size limit 48345368>=10485760
+[2024-04-07 16:35:48] INFO root fetch - main [MainThread]: End processing [pygamd] error
+[2024-04-07 16:35:48] WARNING root fetch - processPackages [vedro-httpx]: Timeout reached during download
+[2024-04-07 16:35:48] WARNING root fetch - processPackages [faxdatasdk]: Timeout reached during download
+[2024-04-07 16:35:48] WARNING root fetch - processPackages [tkutils]: Timeout reached during download
+[2024-04-07 16:35:48] INFO root fetch - processPackages [vedro-httpx]: Downloading https://files.pythonhosted.org/packages/e2/ea/56f1e91c6803c7eb224c145be971195cad5225410bf78e62a877e21a0191/vedro-httpx-0.4.0.tar.gz
+[2024-04-07 16:35:48] INFO root fetch - processPackages [faxdatasdk]: Downloading https://files.pythonhosted.org/packages/60/e7/d09bf177d7d204657041dc2a85bd3066ba0e71c097b3680c681c53460a10/faxdatasdk-0.0.4.tar.gz
+[2024-04-07 16:35:48] INFO root fetch - processPackages [tkutils]: Downloading https://files.pythonhosted.org/packages/35/a2/831197c70e9cf94871636d1120ac0789d846bb4faf16adf4c5cf83ea0a69/tkutils-1.1.2.tar.gz
+[2024-04-07 16:35:48] WARNING root fetch - processPackages [vedro-httpx]: Timeout reached during download
+[2024-04-07 16:35:48] INFO root fetch - processPackages [vedro-httpx]: executing diffoscope
+[2024-04-07 16:35:48] INFO root fetch - processPackages [vedro-httpx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vedro-httpx-0.3.0.tar.gz tmp/vedro-httpx-0.4.0.tar.gz --markdown 20240407/v/vedro-httpx/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2024-04-07 16:35:48] WARNING root fetch - processPackages [faxdatasdk]: Timeout reached during download
+[2024-04-07 16:35:48] INFO root fetch - processPackages [faxdatasdk]: executing diffoscope
+[2024-04-07 16:35:48] INFO root fetch - processPackages [faxdatasdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faxdatasdk-0.0.3.tar.gz tmp/faxdatasdk-0.0.4.tar.gz --markdown 20240407/f/faxdatasdk/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-07 16:35:48] WARNING root fetch - processPackages [tkutils]: Timeout reached during download
+[2024-04-07 16:35:48] INFO root fetch - processPackages [tkutils]: executing diffoscope
+[2024-04-07 16:35:48] INFO root fetch - processPackages [tkutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkutils-1.1.1.tar.gz tmp/tkutils-1.1.2.tar.gz --markdown 20240407/t/tkutils/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2024-04-07 16:35:49] INFO root fetch - processPackages [vedro-httpx]: Remove: archive file [/home/abi/fetcher/tmp/vedro-httpx-0.3.0.tar.gz]
+[2024-04-07 16:35:49] INFO root fetch - processPackages [vedro-httpx]: Remove: archive file [/home/abi/fetcher/tmp/vedro-httpx-0.4.0.tar.gz]
+[2024-04-07 16:35:49] INFO root fetch - main [MainThread]: End processing [vedro-httpx]: success
+[2024-04-07 16:35:49] INFO root fetch - processPackages [faxdatasdk]: Remove: archive file [/home/abi/fetcher/tmp/faxdatasdk-0.0.3.tar.gz]
+[2024-04-07 16:35:49] INFO root fetch - processPackages [faxdatasdk]: Remove: archive file [/home/abi/fetcher/tmp/faxdatasdk-0.0.4.tar.gz]
+[2024-04-07 16:35:49] INFO root fetch - main [MainThread]: End processing [faxdatasdk]: success
+[2024-04-07 16:35:49] INFO root fetch - processPackages [tkutils]: Remove: archive file [/home/abi/fetcher/tmp/tkutils-1.1.1.tar.gz]
+[2024-04-07 16:35:49] INFO root fetch - processPackages [tkutils]: Remove: archive file [/home/abi/fetcher/tmp/tkutils-1.1.2.tar.gz]
+[2024-04-07 16:35:49] INFO root fetch - main [MainThread]: End processing [tkutils]: success
+[2024-04-07 16:35:49] INFO root fetch - main [MainThread]: Store serial: [22656840]
