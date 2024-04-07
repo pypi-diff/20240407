@@ -3909,3 +3909,17 @@
 [2024-04-07 05:23:57] INFO root fetch - processPackages [aviatrix-migration]: Remove: archive file [/home/abi/fetcher/tmp/aviatrix_migration-0.2.85-cp39-cp39-win_amd64.whl.zip]
 [2024-04-07 05:23:57] INFO root fetch - main [MainThread]: End processing [aviatrix-migration]: success
 [2024-04-07 05:23:57] INFO root fetch - main [MainThread]: Store serial: [22653238]
+[2024-04-07 05:26:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653238]
+[2024-04-07 05:26:05] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 05:26:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tablemaster
+[2024-04-07 05:26:06] INFO root fetch - processPackages [tablemaster]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-04-07 05:26:06] INFO root fetch - processPackages [tablemaster]: Downloading https://files.pythonhosted.org/packages/23/6d/a32efbc10a4dccee4368999157e1862f4f16462d2635769cf5cbdfc3cd69/tablemaster-1.1.4.tar.gz
+[2024-04-07 05:26:06] WARNING root fetch - processPackages [tablemaster]: Timeout reached during download
+[2024-04-07 05:26:06] INFO root fetch - processPackages [tablemaster]: Downloading https://files.pythonhosted.org/packages/27/8f/b78a5ccdee19394e4e67f329923d4f2d98cfa858bdcb8d6b728aa7068d53/tablemaster-1.1.5.tar.gz
+[2024-04-07 05:26:06] WARNING root fetch - processPackages [tablemaster]: Timeout reached during download
+[2024-04-07 05:26:06] INFO root fetch - processPackages [tablemaster]: executing diffoscope
+[2024-04-07 05:26:06] INFO root fetch - processPackages [tablemaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tablemaster-1.1.4.tar.gz tmp/tablemaster-1.1.5.tar.gz --markdown 20240407/t/tablemaster/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2024-04-07 05:26:07] INFO root fetch - processPackages [tablemaster]: Remove: archive file [/home/abi/fetcher/tmp/tablemaster-1.1.4.tar.gz]
+[2024-04-07 05:26:07] INFO root fetch - processPackages [tablemaster]: Remove: archive file [/home/abi/fetcher/tmp/tablemaster-1.1.5.tar.gz]
+[2024-04-07 05:26:07] INFO root fetch - main [MainThread]: End processing [tablemaster]: success
+[2024-04-07 05:26:07] INFO root fetch - main [MainThread]: Store serial: [22653240]
