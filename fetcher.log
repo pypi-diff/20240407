@@ -12555,3 +12555,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 15:26:03] INFO root fetch - processPackages [django-diary]: Remove: archive file [/home/abi/fetcher/tmp/django-diary-4.2.7.2.tar.gz]
 [2024-04-07 15:26:03] INFO root fetch - main [MainThread]: End processing [django-diary]: success
 [2024-04-07 15:26:03] INFO root fetch - main [MainThread]: Store serial: [22656461]
+[2024-04-07 15:28:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22656461]
+[2024-04-07 15:28:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-07 15:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smaht-submitr
+[2024-04-07 15:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: telegram-collector
+[2024-04-07 15:28:13] INFO root fetch - processPackages [telegram-collector]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-07 15:28:13] INFO root fetch - processPackages [smaht-submitr]: New version: [0.7.0.2b1] Old Version: [0.7.0.1b99]
+[2024-04-07 15:28:14] INFO root fetch - processPackages [telegram-collector]: Downloading https://files.pythonhosted.org/packages/cf/6b/d795f55bc58ce47ec63c00f84b3db722350ac9aa54724d9ddb10b0e74f1d/telegram_collector-0.0.8.tar.gz
+[2024-04-07 15:28:14] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/2a/96/f17360d1393bfb1bde6ec1ff16ed61f95c4b73139c4353bd903094c9db8b/smaht_submitr-0.7.0.1b99.tar.gz
+[2024-04-07 15:28:14] WARNING root fetch - processPackages [telegram-collector]: Timeout reached during download
+[2024-04-07 15:28:14] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 15:28:14] INFO root fetch - processPackages [telegram-collector]: Downloading https://files.pythonhosted.org/packages/58/1a/ee9068adc0920b790ade2df5ec45821f0a6508fa20db8761e1cce449c456/telegram_collector-0.0.9.tar.gz
+[2024-04-07 15:28:14] WARNING root fetch - processPackages [telegram-collector]: Timeout reached during download
+[2024-04-07 15:28:14] INFO root fetch - processPackages [telegram-collector]: executing diffoscope
+[2024-04-07 15:28:14] INFO root fetch - processPackages [telegram-collector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegram_collector-0.0.8.tar.gz tmp/telegram_collector-0.0.9.tar.gz --markdown 20240407/t/telegram-collector/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-07 15:28:14] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/dd/2f/6599eb4d494dfe24cb2bbda17d89b41215089819ac59ec40d890c0926331/smaht_submitr-0.7.0.2b1.tar.gz
+[2024-04-07 15:28:14] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-07 15:28:14] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-07 15:28:14] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.7.0.1b99.tar.gz tmp/smaht_submitr-0.7.0.2b1.tar.gz --markdown 20240407/s/smaht-submitr/0.7.0.1b99-0.7.0.2b1/diff.md --exclude *.pyd
+[2024-04-07 15:28:14] INFO root fetch - processPackages [telegram-collector]: Remove: archive file [/home/abi/fetcher/tmp/telegram_collector-0.0.8.tar.gz]
+[2024-04-07 15:28:14] INFO root fetch - processPackages [telegram-collector]: Remove: archive file [/home/abi/fetcher/tmp/telegram_collector-0.0.9.tar.gz]
+[2024-04-07 15:28:14] INFO root fetch - main [MainThread]: End processing [telegram-collector]: success
+[2024-04-07 15:28:15] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b99.tar.gz]
+[2024-04-07 15:28:15] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.2b1.tar.gz]
+[2024-04-07 15:28:15] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-07 15:28:15] INFO root fetch - main [MainThread]: Store serial: [22656467]
