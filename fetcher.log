@@ -1949,3 +1949,17 @@
 [2024-04-07 03:03:41] INFO root fetch - processPackages [flask-redis-caching]: Remove: archive file [/home/abi/fetcher/tmp/flask_redis_caching-1.0.4.tar.gz]
 [2024-04-07 03:03:41] INFO root fetch - main [MainThread]: End processing [flask-redis-caching]: success
 [2024-04-07 03:03:41] INFO root fetch - main [MainThread]: Store serial: [22652515]
+[2024-04-07 03:05:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22652515]
+[2024-04-07 03:05:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-07 03:05:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: akhdefo-functions
+[2024-04-07 03:05:50] INFO root fetch - processPackages [akhdefo-functions]: New version: [2.5.0] Old Version: [2.4.29]
+[2024-04-07 03:05:50] INFO root fetch - processPackages [akhdefo-functions]: Downloading https://files.pythonhosted.org/packages/9d/18/18346e0b5e3b2d6eaea26d47c185b6f9a31196e508cda2df2186e6287474/akhdefo_functions-2.4.29-py3-none-any.whl
+[2024-04-07 03:05:50] WARNING root fetch - processPackages [akhdefo-functions]: Timeout reached during download
+[2024-04-07 03:05:50] INFO root fetch - processPackages [akhdefo-functions]: Downloading https://files.pythonhosted.org/packages/bc/be/b994ce2373955f6d5d709ac00d9d2226d6c1e7e7bd407bd9e3d80ed40a14/akhdefo_functions-2.5.0-py3-none-any.whl
+[2024-04-07 03:05:50] WARNING root fetch - processPackages [akhdefo-functions]: Timeout reached during download
+[2024-04-07 03:05:50] INFO root fetch - processPackages [akhdefo-functions]: executing diffoscope
+[2024-04-07 03:05:50] INFO root fetch - processPackages [akhdefo-functions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akhdefo_functions-2.4.29-py3-none-any.whl.zip tmp/akhdefo_functions-2.5.0-py3-none-any.whl.zip --markdown 20240407/a/akhdefo-functions/2.4.29-2.5.0/diff.md --exclude *.pyd
+[2024-04-07 03:05:51] INFO root fetch - processPackages [akhdefo-functions]: Remove: archive file [/home/abi/fetcher/tmp/akhdefo_functions-2.4.29-py3-none-any.whl.zip]
+[2024-04-07 03:05:51] INFO root fetch - processPackages [akhdefo-functions]: Remove: archive file [/home/abi/fetcher/tmp/akhdefo_functions-2.5.0-py3-none-any.whl.zip]
+[2024-04-07 03:05:51] INFO root fetch - main [MainThread]: End processing [akhdefo-functions]: success
+[2024-04-07 03:05:51] INFO root fetch - main [MainThread]: Store serial: [22652517]
