@@ -17749,3 +17749,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-07 20:28:01] WARNING root fetch - processPackages [highcharts-core]: Skipping package: exceeds size limit 12088743>=10485760
 [2024-04-07 20:28:01] INFO root fetch - main [MainThread]: End processing [highcharts-core] error
 [2024-04-07 20:28:01] INFO root fetch - main [MainThread]: Store serial: [22658317]
+[2024-04-07 20:30:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22658317]
+[2024-04-07 20:30:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-07 20:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pcg-skel
+[2024-04-07 20:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Mopidy-SevenSegmentDisplay
+[2024-04-07 20:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: afeng-py-tools
+[2024-04-07 20:30:10] INFO root fetch - processPackages [pcg-skel]: New version: [1.0.0] Old Version: [0.3.5]
+[2024-04-07 20:30:10] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: New version: [0.7.6] Old Version: [0.7.5]
+[2024-04-07 20:30:10] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 20:30:10] INFO root fetch - processPackages [pcg-skel]: Downloading https://files.pythonhosted.org/packages/41/57/9aa3d9848297ab72be46ff68a383f60050c0bb2beb26694fcefced3fbb38/pcg_skel-0.3.5.tar.gz
+[2024-04-07 20:30:10] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Downloading https://files.pythonhosted.org/packages/ed/b9/5b3b999d95ab18fbeb77dcef688d4df5989d0831364325c438663010f501/Mopidy-SevenSegmentDisplay-0.7.5.tar.gz
+[2024-04-07 20:30:10] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-04-07 20:30:11] WARNING root fetch - processPackages [pcg-skel]: Timeout reached during download
+[2024-04-07 20:30:11] WARNING root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Timeout reached during download
+[2024-04-07 20:30:11] WARNING root fetch - processPackages [afeng-py-tools]: Timeout reached during download
+[2024-04-07 20:30:11] INFO root fetch - processPackages [pcg-skel]: Downloading https://files.pythonhosted.org/packages/ce/99/3af55a93cf7643de7cac2b3752e69e0ccd28cfb4892f1c507288dedfcb3c/pcg_skel-1.0.0.tar.gz
+[2024-04-07 20:30:11] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Downloading https://files.pythonhosted.org/packages/54/5c/963b47582bb2cfa600aa881bcac11d0e41dd4fa40a9ebae43f30a6e1d601/Mopidy-SevenSegmentDisplay-0.7.6.tar.gz
+[2024-04-07 20:30:11] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-04-07 20:30:11] WARNING root fetch - processPackages [pcg-skel]: Timeout reached during download
+[2024-04-07 20:30:11] INFO root fetch - processPackages [pcg-skel]: executing diffoscope
+[2024-04-07 20:30:11] INFO root fetch - processPackages [pcg-skel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcg_skel-0.3.5.tar.gz tmp/pcg_skel-1.0.0.tar.gz --markdown 20240407/p/pcg-skel/0.3.5-1.0.0/diff.md --exclude *.pyd
+[2024-04-07 20:30:11] WARNING root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Timeout reached during download
+[2024-04-07 20:30:11] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: executing diffoscope
+[2024-04-07 20:30:11] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Mopidy-SevenSegmentDisplay-0.7.5.tar.gz tmp/Mopidy-SevenSegmentDisplay-0.7.6.tar.gz --markdown 20240407/M/Mopidy-SevenSegmentDisplay/0.7.5-0.7.6/diff.md --exclude *.pyd
+[2024-04-07 20:30:11] WARNING root fetch - processPackages [afeng-py-tools]: Timeout reached during download
+[2024-04-07 20:30:11] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-04-07 20:30:11] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240407/a/afeng-py-tools/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 20:30:12] INFO root fetch - processPackages [pcg-skel]: Remove: archive file [/home/abi/fetcher/tmp/pcg_skel-0.3.5.tar.gz]
+[2024-04-07 20:30:12] INFO root fetch - processPackages [pcg-skel]: Remove: archive file [/home/abi/fetcher/tmp/pcg_skel-1.0.0.tar.gz]
+[2024-04-07 20:30:12] INFO root fetch - main [MainThread]: End processing [pcg-skel]: success
+[2024-04-07 20:30:12] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Remove: archive file [/home/abi/fetcher/tmp/Mopidy-SevenSegmentDisplay-0.7.5.tar.gz]
+[2024-04-07 20:30:12] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Remove: archive file [/home/abi/fetcher/tmp/Mopidy-SevenSegmentDisplay-0.7.6.tar.gz]
+[2024-04-07 20:30:12] INFO root fetch - main [MainThread]: End processing [Mopidy-SevenSegmentDisplay]: success
+[2024-04-07 20:30:12] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-04-07 20:30:12] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-04-07 20:30:12] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-04-07 20:30:12] INFO root fetch - main [MainThread]: Store serial: [22658332]
