@@ -6875,3 +6875,50 @@
 [2024-04-07 08:59:51] INFO root fetch - processPackages [pulumi-oci]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_oci-1.9.0a1693981063.tar.gz]
 [2024-04-07 08:59:51] INFO root fetch - main [MainThread]: End processing [pulumi-oci]: success
 [2024-04-07 08:59:51] INFO root fetch - main [MainThread]: Store serial: [22654214]
+[2024-04-07 09:01:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22654214]
+[2024-04-07 09:02:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 09:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: historical-binance
+[2024-04-07 09:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: avro.py
+[2024-04-07 09:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: htscf
+[2024-04-07 09:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-models-nightly
+[2024-04-07 09:02:00] INFO root fetch - processPackages [historical-binance]: New version: [0.1.7.1] Old Version: [0.1.6]
+[2024-04-07 09:02:00] INFO root fetch - processPackages [htscf]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-07 09:02:00] INFO root fetch - processPackages [avro.py]: New version: [2024.4.7] Old Version: [2024.3.31]
+[2024-04-07 09:02:00] INFO root fetch - processPackages [historical-binance]: Downloading https://files.pythonhosted.org/packages/e1/02/00c15634ee2baa5fe5a08af2fa98e81229f4c1460e0dfe3c84381b264d8f/historical_binance-0.1.6-py3-none-any.whl
+[2024-04-07 09:02:00] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/48/31/ef6469f74ffa5f39aaf9ac67ecf2f5b17aec1b223d3f63572efd39a3958f/htscf-0.0.98.tar.gz
+[2024-04-07 09:02:00] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2024-04-07 09:02:00] INFO root fetch - processPackages [tf-models-nightly]: Downloading https://files.pythonhosted.org/packages/73/e9/06af7a12cda1722ec668213b9e91a8a2e918011d3ef8e9a98146ee4f76ef/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl
+[2024-04-07 09:02:00] WARNING root fetch - processPackages [historical-binance]: Timeout reached during download
+[2024-04-07 09:02:00] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 09:02:00] INFO root fetch - processPackages [avro.py]: Downloading https://files.pythonhosted.org/packages/88/ac/415ab0cca326d633f378822722fdf496568b72d60cd79dd329728faddb67/avro.py-2024.3.31.tar.gz
+[2024-04-07 09:02:00] INFO root fetch - processPackages [historical-binance]: Downloading https://files.pythonhosted.org/packages/8e/74/beda0bdef573c096f079d38f0b51e4c6c7c35d53a950d17ef56a3713f6aa/historical_binance-0.1.7.1-py3-none-any.whl
+[2024-04-07 09:02:00] INFO root fetch - processPackages [htscf]: Downloading https://files.pythonhosted.org/packages/79/48/b9c5a63d0fc652968c826af8815fadd5e1f69403909e12853b5a52d9c6b3/htscf-0.0.99.tar.gz
+[2024-04-07 09:02:00] WARNING root fetch - processPackages [avro.py]: Timeout reached during download
+[2024-04-07 09:02:00] WARNING root fetch - processPackages [historical-binance]: Timeout reached during download
+[2024-04-07 09:02:00] INFO root fetch - processPackages [historical-binance]: executing diffoscope
+[2024-04-07 09:02:00] INFO root fetch - processPackages [historical-binance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/historical_binance-0.1.6-py3-none-any.whl.zip tmp/historical_binance-0.1.7.1-py3-none-any.whl.zip --markdown 20240407/h/historical-binance/0.1.6-0.1.7.1/diff.md --exclude *.pyd
+[2024-04-07 09:02:00] WARNING root fetch - processPackages [htscf]: Timeout reached during download
+[2024-04-07 09:02:00] INFO root fetch - processPackages [htscf]: executing diffoscope
+[2024-04-07 09:02:00] INFO root fetch - processPackages [htscf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htscf-0.0.98.tar.gz tmp/htscf-0.0.99.tar.gz --markdown 20240407/h/htscf/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-07 09:02:00] INFO root fetch - processPackages [avro.py]: Downloading https://files.pythonhosted.org/packages/88/6d/42c6af7dbdafc8935cc2dc6cecdde476153794078e30c5cd7149dcc6e1ff/avro.py-2024.4.7.tar.gz
+[2024-04-07 09:02:00] WARNING root fetch - processPackages [avro.py]: Timeout reached during download
+[2024-04-07 09:02:00] INFO root fetch - processPackages [avro.py]: executing diffoscope
+[2024-04-07 09:02:00] INFO root fetch - processPackages [avro.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avro.py-2024.3.31.tar.gz tmp/avro.py-2024.4.7.tar.gz --markdown 20240407/a/avro.py/2024.3.31-2024.4.7/diff.md --exclude *.pyd
+[2024-04-07 09:02:01] WARNING root fetch - processPackages [tf-models-nightly]: Timeout reached during download
+[2024-04-07 09:02:01] INFO root fetch - processPackages [tf-models-nightly]: Downloading https://files.pythonhosted.org/packages/e2/76/79c5fb2cd23f346ee912b9c289c2a9bab6fc8d178658f931ac9a023224c6/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl
+[2024-04-07 09:02:01] INFO root fetch - processPackages [historical-binance]: Remove: archive file [/home/abi/fetcher/tmp/historical_binance-0.1.6-py3-none-any.whl.zip]
+[2024-04-07 09:02:01] INFO root fetch - processPackages [historical-binance]: Remove: archive file [/home/abi/fetcher/tmp/historical_binance-0.1.7.1-py3-none-any.whl.zip]
+[2024-04-07 09:02:01] INFO root fetch - main [MainThread]: End processing [historical-binance]: success
+[2024-04-07 09:02:01] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.98.tar.gz]
+[2024-04-07 09:02:01] INFO root fetch - processPackages [htscf]: Remove: archive file [/home/abi/fetcher/tmp/htscf-0.0.99.tar.gz]
+[2024-04-07 09:02:01] INFO root fetch - main [MainThread]: End processing [htscf]: success
+[2024-04-07 09:02:01] INFO root fetch - processPackages [avro.py]: Remove: archive file [/home/abi/fetcher/tmp/avro.py-2024.3.31.tar.gz]
+[2024-04-07 09:02:01] INFO root fetch - processPackages [avro.py]: Remove: archive file [/home/abi/fetcher/tmp/avro.py-2024.4.7.tar.gz]
+[2024-04-07 09:02:01] INFO root fetch - main [MainThread]: End processing [avro.py]: success
+[2024-04-07 09:02:01] WARNING root fetch - processPackages [tf-models-nightly]: Timeout reached during download
+[2024-04-07 09:02:01] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2024-04-07 09:02:01] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20240407/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/diff.md --exclude *.pyd
+[2024-04-07 09:02:05] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip]
+[2024-04-07 09:02:05] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip]
+[2024-04-07 09:02:05] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2024-04-07 09:02:05] INFO root fetch - main [MainThread]: Store serial: [22654228]
