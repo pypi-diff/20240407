@@ -5859,3 +5859,50 @@
 [2024-04-07 07:58:20] INFO root fetch - processPackages [pulumi-datadog]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_datadog-4.9.0a1653604828.tar.gz]
 [2024-04-07 07:58:20] INFO root fetch - main [MainThread]: End processing [pulumi-datadog]: success
 [2024-04-07 07:58:20] INFO root fetch - main [MainThread]: Store serial: [22653789]
+[2024-04-07 08:00:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22653789]
+[2024-04-07 08:00:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-07 08:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-ec
+[2024-04-07 08:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plyvel-ci
+[2024-04-07 08:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tuneapi
+[2024-04-07 08:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: crawlab-ai
+[2024-04-07 08:00:29] INFO root fetch - processPackages [tuneapi]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-07 08:00:29] INFO root fetch - processPackages [tuneapi]: Downloading https://files.pythonhosted.org/packages/b0/db/05adcf600a632385bb193a0a99040b912766c1e280491fc840e1d202c022/tuneapi-0.2.3.tar.gz
+[2024-04-07 08:00:29] INFO root fetch - processPackages [crawlab-ai]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-07 08:00:29] INFO root fetch - processPackages [pulumi-ec]: New version: [0.8.1a1712468034] Old Version: [0.8.1a1712399688]
+[2024-04-07 08:00:29] INFO root fetch - processPackages [plyvel-ci]: New version: [1.5.1] Old Version: [1.5.0]
+[2024-04-07 08:00:29] INFO root fetch - processPackages [pulumi-ec]: Downloading https://files.pythonhosted.org/packages/41/2f/78efbe1717642075b836f4952dd3ab0fc823de124682dc2802d6dbbef5cf/pulumi_ec-0.8.1a1712399688.tar.gz
+[2024-04-07 08:00:29] WARNING root fetch - processPackages [tuneapi]: Timeout reached during download
+[2024-04-07 08:00:29] INFO root fetch - processPackages [crawlab-ai]: Downloading https://files.pythonhosted.org/packages/34/12/c29f9c7fc76a5714f74d3297cb311912f8d49a8c4cd256df6ba4bed7a217/crawlab-ai-0.0.2.tar.gz
+[2024-04-07 08:00:29] WARNING root fetch - processPackages [pulumi-ec]: Timeout reached during download
+[2024-04-07 08:00:29] INFO root fetch - processPackages [plyvel-ci]: Downloading https://files.pythonhosted.org/packages/b1/94/91b74647711cdeae8d621d115a57eea7eca8e8e6edd3a4c2ce3dc7ece30f/plyvel-ci-1.5.0.tar.gz
+[2024-04-07 08:00:29] INFO root fetch - processPackages [tuneapi]: Downloading https://files.pythonhosted.org/packages/03/59/807ac3852f5b4da85e072021da26310c3a7e46a28f2dc92fd52197e03f88/tuneapi-0.2.4.tar.gz
+[2024-04-07 08:00:29] WARNING root fetch - processPackages [crawlab-ai]: Timeout reached during download
+[2024-04-07 08:00:29] WARNING root fetch - processPackages [plyvel-ci]: Timeout reached during download
+[2024-04-07 08:00:29] WARNING root fetch - processPackages [tuneapi]: Timeout reached during download
+[2024-04-07 08:00:29] INFO root fetch - processPackages [tuneapi]: executing diffoscope
+[2024-04-07 08:00:29] INFO root fetch - processPackages [tuneapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tuneapi-0.2.3.tar.gz tmp/tuneapi-0.2.4.tar.gz --markdown 20240407/t/tuneapi/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2024-04-07 08:00:29] INFO root fetch - processPackages [pulumi-ec]: Downloading https://files.pythonhosted.org/packages/88/ea/32e5e4786e5b54127b8f89a70c430f7603878ff38a632dde25f33c27e382/pulumi_ec-0.8.1a1712468034.tar.gz
+[2024-04-07 08:00:30] INFO root fetch - processPackages [crawlab-ai]: Downloading https://files.pythonhosted.org/packages/60/30/207557b87cdfedaffda338c15c903ba5a4ab546e5f741414903a09477526/crawlab-ai-0.0.3.tar.gz
+[2024-04-07 08:00:30] INFO root fetch - processPackages [plyvel-ci]: Downloading https://files.pythonhosted.org/packages/72/6b/09529d1a55efdfe0740b3deeb4df0184c8b4b7fdc47d387fa94e90d20851/plyvel_ci-1.5.1-cp39-cp39-macosx_10_9_universal2.whl
+[2024-04-07 08:00:30] WARNING root fetch - processPackages [pulumi-ec]: Timeout reached during download
+[2024-04-07 08:00:30] INFO root fetch - processPackages [pulumi-ec]: executing diffoscope
+[2024-04-07 08:00:30] INFO root fetch - processPackages [pulumi-ec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_ec-0.8.1a1712399688.tar.gz tmp/pulumi_ec-0.8.1a1712468034.tar.gz --markdown 20240407/p/pulumi-ec/0.8.1a1712399688-0.8.1a1712468034/diff.md --exclude *.pyd
+[2024-04-07 08:00:30] WARNING root fetch - processPackages [crawlab-ai]: Timeout reached during download
+[2024-04-07 08:00:30] INFO root fetch - processPackages [crawlab-ai]: executing diffoscope
+[2024-04-07 08:00:30] INFO root fetch - processPackages [crawlab-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawlab-ai-0.0.2.tar.gz tmp/crawlab-ai-0.0.3.tar.gz --markdown 20240407/c/crawlab-ai/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-07 08:00:30] INFO root fetch - processPackages [tuneapi]: Remove: archive file [/home/abi/fetcher/tmp/tuneapi-0.2.3.tar.gz]
+[2024-04-07 08:00:30] INFO root fetch - processPackages [tuneapi]: Remove: archive file [/home/abi/fetcher/tmp/tuneapi-0.2.4.tar.gz]
+[2024-04-07 08:00:30] INFO root fetch - main [MainThread]: End processing [tuneapi]: success
+[2024-04-07 08:00:30] INFO root fetch - processPackages [pulumi-ec]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_ec-0.8.1a1712399688.tar.gz]
+[2024-04-07 08:00:30] INFO root fetch - processPackages [pulumi-ec]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_ec-0.8.1a1712468034.tar.gz]
+[2024-04-07 08:00:30] INFO root fetch - main [MainThread]: End processing [pulumi-ec]: success
+[2024-04-07 08:00:30] INFO root fetch - processPackages [crawlab-ai]: Remove: archive file [/home/abi/fetcher/tmp/crawlab-ai-0.0.2.tar.gz]
+[2024-04-07 08:00:30] INFO root fetch - processPackages [crawlab-ai]: Remove: archive file [/home/abi/fetcher/tmp/crawlab-ai-0.0.3.tar.gz]
+[2024-04-07 08:00:30] INFO root fetch - main [MainThread]: End processing [crawlab-ai]: success
+[2024-04-07 08:00:31] WARNING root fetch - processPackages [plyvel-ci]: Timeout reached during download
+[2024-04-07 08:00:31] INFO root fetch - processPackages [plyvel-ci]: executing diffoscope
+[2024-04-07 08:00:31] INFO root fetch - processPackages [plyvel-ci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240407:/home/abi/fetcher/20240407:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plyvel-ci-1.5.0.tar.gz tmp/plyvel_ci-1.5.1-cp39-cp39-macosx_10_9_universal2.whl.zip --markdown 20240407/p/plyvel-ci/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2024-04-07 08:00:31] INFO root fetch - processPackages [plyvel-ci]: Remove: archive file [/home/abi/fetcher/tmp/plyvel-ci-1.5.0.tar.gz]
+[2024-04-07 08:00:31] INFO root fetch - processPackages [plyvel-ci]: Remove: archive file [/home/abi/fetcher/tmp/plyvel_ci-1.5.1-cp39-cp39-macosx_10_9_universal2.whl.zip]
+[2024-04-07 08:00:31] INFO root fetch - main [MainThread]: End processing [plyvel-ci]: success
+[2024-04-07 08:00:31] INFO root fetch - main [MainThread]: Store serial: [22653844]
